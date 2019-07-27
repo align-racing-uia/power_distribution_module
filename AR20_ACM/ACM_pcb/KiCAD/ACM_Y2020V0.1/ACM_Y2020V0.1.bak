@@ -17,20 +17,20 @@ $EndDescr
 $Comp
 L TC2030-MCP-NL:TC2030-MCP-NL J1
 U 1 1 5D389624
-P 925 1075
-F 0 "J1" H 1925 1340 50  0000 C CNN
-F 1 "TC2030-MCP-NL" H 1925 1249 50  0000 C CNN
-F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 2775 1175 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/TC2030-MCP-NL_PCB_Footprint_RevD.pdf" H 2775 1075 50  0001 L CNN
-F 4 "TC2030-MCP-NL PCB Footprint (no legs)" H 2775 975 50  0001 L CNN "Description"
-F 5 "" H 2775 875 50  0001 L CNN "Height"
-F 6 "Microchip" H 2775 775 50  0001 L CNN "Manufacturer_Name"
-F 7 "TC2030-MCP-NL" H 2775 675 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "579-TC2030-MCP-NL" H 2775 575 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-TC2030-MCP-NL" H 2775 475 50  0001 L CNN "Mouser Price/Stock"
-F 10 "8252561" H 2775 375 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/8252561" H 2775 275 50  0001 L CNN "RS Price/Stock"
-	1    925  1075
+P 1075 1400
+F 0 "J1" H 2075 1665 50  0000 C CNN
+F 1 "TC2030-MCP-NL" H 2075 1574 50  0000 C CNN
+F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 2925 1500 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/TC2030-MCP-NL_PCB_Footprint_RevD.pdf" H 2925 1400 50  0001 L CNN
+F 4 "TC2030-MCP-NL PCB Footprint (no legs)" H 2925 1300 50  0001 L CNN "Description"
+F 5 "" H 2925 1200 50  0001 L CNN "Height"
+F 6 "Microchip" H 2925 1100 50  0001 L CNN "Manufacturer_Name"
+F 7 "TC2030-MCP-NL" H 2925 1000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "579-TC2030-MCP-NL" H 2925 900 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-TC2030-MCP-NL" H 2925 800 50  0001 L CNN "Mouser Price/Stock"
+F 10 "8252561" H 2925 700 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/8252561" H 2925 600 50  0001 L CNN "RS Price/Stock"
+	1    1075 1400
 	1    0    0    -1  
 $EndComp
 Text HLabel 2775 5075 2    50   Input ~ 0
@@ -39,23 +39,23 @@ Text HLabel 2775 4975 2    50   Input ~ 0
 MISO
 Text HLabel 2775 4875 2    50   Input ~ 0
 MOSI
-Text HLabel 925  1175 0    50   Input ~ 0
+Text HLabel 3075 1500 2    50   Input ~ 0
 MOSI
-Text HLabel 2925 1075 2    50   Input ~ 0
+Text HLabel 1075 1600 0    50   Input ~ 0
 Reset
-Text HLabel 2925 1175 2    50   Input ~ 0
+Text HLabel 1075 1500 0    50   Input ~ 0
 SCK
-Text HLabel 2925 1275 2    50   Input ~ 0
+Text HLabel 1075 1400 0    50   Input ~ 0
 MISO
 $Comp
 L power:GND #PWR0101
 U 1 1 5D3A6728
-P 625 875
-F 0 "#PWR0101" H 625 625 50  0001 C CNN
-F 1 "GND" H 630 702 50  0000 C CNN
-F 2 "" H 625 875 50  0001 C CNN
-F 3 "" H 625 875 50  0001 C CNN
-	1    625  875 
+P 3175 1675
+F 0 "#PWR0101" H 3175 1425 50  0001 C CNN
+F 1 "GND" H 3180 1502 50  0000 C CNN
+F 2 "" H 3175 1675 50  0001 C CNN
+F 3 "" H 3175 1675 50  0001 C CNN
+	1    3175 1675
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -69,25 +69,15 @@ F 3 "" H 2175 7275 50  0001 C CNN
 	1    2175 7275
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	925  1075 925  875 
-Wire Wire Line
-	925  875  625  875 
-Wire Wire Line
-	925  1275 925  1525
-Wire Wire Line
-	925  1525 625  1525
-Wire Wire Line
-	625  1525 625  1425
 $Comp
 L power:+5V #PWR0103
 U 1 1 5D3A42C5
-P 625 1425
-F 0 "#PWR0103" H 625 1275 50  0001 C CNN
-F 1 "+5V" H 640 1598 50  0000 C CNN
-F 2 "" H 625 1425 50  0001 C CNN
-F 3 "" H 625 1425 50  0001 C CNN
-	1    625  1425
+P 3175 1325
+F 0 "#PWR0103" H 3175 1175 50  0001 C CNN
+F 1 "+5V" H 3190 1498 50  0000 C CNN
+F 2 "" H 3175 1325 50  0001 C CNN
+F 3 "" H 3175 1325 50  0001 C CNN
+	1    3175 1325
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -224,17 +214,6 @@ F 1 "MCP25625-x-SS" H 9475 3450 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-28-1EP_6x6mm_P0.65mm_EP4.8x4.8mm" H 9575 4600 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005282B.pdf" H 9475 5500 50  0001 C CNN
 	1    9475 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x20_Odd_Even J2
-U 1 1 5D3E347E
-P 5600 2075
-F 0 "J2" H 5650 3192 50  0000 C CNN
-F 1 "Conn_02x20_Odd_Even" H 5650 3101 50  0000 C CNN
-F 2 "Connector_PinSocket_1.00mm:PinSocket_2x20_P1.00mm_Vertical_SMD" H 5600 2075 50  0001 C CNN
-F 3 "~" H 5600 2075 50  0001 C CNN
-	1    5600 2075
 	1    0    0    -1  
 $EndComp
 Text HLabel 2775 6975 2    50   Input ~ 0
@@ -580,7 +559,7 @@ U 1 1 5D452681
 P 5450 4400
 F 0 "D1" H 5450 4184 50  0000 C CNN
 F 1 "15V" H 5450 4275 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" H 5450 4400 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 5450 4400 50  0001 C CNN
 F 3 "~" H 5450 4400 50  0001 C CNN
 	1    5450 4400
 	-1   0    0    1   
@@ -613,4 +592,260 @@ Wire Wire Line
 	5300 4400 5200 4400
 Wire Wire Line
 	5200 4400 5200 4475
+Wire Wire Line
+	3075 1400 3175 1400
+Wire Wire Line
+	3175 1400 3175 1325
+Wire Wire Line
+	3075 1600 3175 1600
+Wire Wire Line
+	3175 1600 3175 1675
+Wire Wire Line
+	5900 1175 6000 1175
+Wire Wire Line
+	6000 1175 6000 1275
+Wire Wire Line
+	5900 1275 6000 1275
+Connection ~ 6000 1275
+Wire Wire Line
+	6000 1275 6000 1375
+$Comp
+L power:+12V #PWR0121
+U 1 1 5D3DBA57
+P 5150 1075
+F 0 "#PWR0121" H 5150 925 50  0001 C CNN
+F 1 "+12V" H 5165 1248 50  0000 C CNN
+F 2 "" H 5150 1075 50  0001 C CNN
+F 3 "" H 5150 1075 50  0001 C CNN
+	1    5150 1075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1075 5150 1175
+Wire Wire Line
+	5150 1175 5400 1175
+$Comp
+L power:+5V #PWR0122
+U 1 1 5D3DED37
+P 4950 1075
+F 0 "#PWR0122" H 4950 925 50  0001 C CNN
+F 1 "+5V" H 4965 1248 50  0000 C CNN
+F 2 "" H 4950 1075 50  0001 C CNN
+F 3 "" H 4950 1075 50  0001 C CNN
+	1    4950 1075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1075 4950 1275
+Wire Wire Line
+	4950 1275 5325 1275
+Wire Wire Line
+	5400 1375 5325 1375
+Wire Wire Line
+	5325 1375 5325 1275
+Connection ~ 5325 1275
+Wire Wire Line
+	5325 1275 5400 1275
+$Comp
+L Device:D_Small D2
+U 1 1 5D3ED873
+P 5450 4900
+F 0 "D2" H 5450 5000 50  0000 C CNN
+F 1 "D_Small" H 5450 5075 50  0000 C CNN
+F 2 "Diode_SMD:D_0402_1005Metric" V 5450 4900 50  0001 C CNN
+F 3 "~" V 5450 4900 50  0001 C CNN
+	1    5450 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5D3F2B57
+P 5200 4950
+F 0 "#PWR0123" H 5200 4700 50  0001 C CNN
+F 1 "GND" H 5205 4777 50  0000 C CNN
+F 2 "" H 5200 4950 50  0001 C CNN
+F 3 "" H 5200 4950 50  0001 C CNN
+	1    5200 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4950 5200 4900
+Wire Wire Line
+	5200 4900 5350 4900
+Wire Wire Line
+	5550 4900 5675 4900
+Connection ~ 5675 4900
+Text Notes 4700 4375 0    39   ~ 0
+Zener diode for\novervoltage protection
+Text Notes 4700 4900 0    39   ~ 0
+Diode for reverse\npolarity protection
+Text Notes 5725 4575 0    39   ~ 0
+Polyfuse for\novercurrent protection
+$Comp
+L Connector_Generic:Conn_02x15_Odd_Even J2
+U 1 1 5D40B272
+P 5600 1875
+F 0 "J2" H 5650 2792 50  0000 C CNN
+F 1 "Conn_02x15_Odd_Even" H 5650 2701 50  0000 C CNN
+F 2 "Connector_PinSocket_0.8mm:PinSocket_2x15_P0.08mm_Vertical_SMD" H 5600 1875 50  0001 C CNN
+F 3 "~" H 5600 1875 50  0001 C CNN
+	1    5600 1875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1375 6000 1375
+$Comp
+L SMLP36RGB2W3R:SMLP36RGB2W3R LED1
+U 1 1 5D41B8EC
+P 8575 1450
+F 0 "LED1" H 9325 1715 50  0000 C CNN
+F 1 "SMLP36RGB2W3R" H 9325 1624 50  0000 C CNN
+F 2 "SMLP36RGB2W3R:SMLP36RGB2W3R" H 9925 1550 50  0001 L CNN
+F 3 "http://www.rohm.com/web/global/datasheet/SMLP36RGB2W(R)" H 9925 1450 50  0001 L CNN
+F 4 "LED,RGB,35/110/35mcd,top-looking,1510 ROHM SMLP36RGB2W3R, SML-P36 Series 3 RGB LED, 475 (Blue) nm, 535 (Green) nm, 629 (Red) nm 6-Pin Milky White" H 9925 1350 50  0001 L CNN "Description"
+F 5 "" H 9925 1250 50  0001 L CNN "Height"
+F 6 "ROHM Semiconductor" H 9925 1150 50  0001 L CNN "Manufacturer_Name"
+F 7 "SMLP36RGB2W3R" H 9925 1050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "755-SMLP36RGB2W3R" H 9925 950 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=755-SMLP36RGB2W3R" H 9925 850 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1246884" H 9925 750 50  0001 L CNN "RS Part Number"
+F 11 "https://uk.rs-online.com/web/p/products/1246884" H 9925 650 50  0001 L CNN "RS Price/Stock"
+	1    8575 1450
+	1    0    0    -1  
+$EndComp
+Text Notes 9050 1075 0    79   ~ 16
+LED Circuit
+$Comp
+L Device:R R4
+U 1 1 5D423C3A
+P 7825 1450
+F 0 "R4" V 7618 1450 50  0000 C CNN
+F 1 "200 Ohm" V 7709 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7755 1450 50  0001 C CNN
+F 3 "~" H 7825 1450 50  0001 C CNN
+	1    7825 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5D4245DB
+P 8125 1550
+F 0 "R5" V 7918 1550 50  0000 C CNN
+F 1 "290 Ohm" V 8009 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8055 1550 50  0001 C CNN
+F 3 "~" H 8125 1550 50  0001 C CNN
+	1    8125 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D42477A
+P 8425 1650
+F 0 "R6" V 8218 1650 50  0000 C CNN
+F 1 "190 Ohm" V 8309 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8355 1650 50  0001 C CNN
+F 3 "~" H 8425 1650 50  0001 C CNN
+	1    8425 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8275 1550 8575 1550
+Wire Wire Line
+	7975 1450 8575 1450
+Wire Wire Line
+	7975 1550 7675 1550
+Wire Wire Line
+	8275 1650 7675 1650
+Text HLabel 7675 1450 0    50   Input ~ 0
+GREEN_LED
+Text HLabel 7675 1550 0    50   Input ~ 0
+RED_LED
+Text HLabel 7675 1650 0    50   Input ~ 0
+BLUE_LED
+$Comp
+L power:+5V #PWR0124
+U 1 1 5D43A565
+P 10175 1375
+F 0 "#PWR0124" H 10175 1225 50  0001 C CNN
+F 1 "+5V" H 10190 1548 50  0000 C CNN
+F 2 "" H 10175 1375 50  0001 C CNN
+F 3 "" H 10175 1375 50  0001 C CNN
+	1    10175 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10075 1650 10175 1650
+Wire Wire Line
+	10175 1650 10175 1550
+Wire Wire Line
+	10075 1550 10175 1550
+Connection ~ 10175 1550
+Wire Wire Line
+	10175 1550 10175 1450
+Wire Wire Line
+	10075 1450 10175 1450
+Connection ~ 10175 1450
+Wire Wire Line
+	10175 1450 10175 1375
+Text HLabel 2775 6775 2    50   Input ~ 0
+GREEN_LED
+Text HLabel 2775 4675 2    50   Input ~ 0
+RED_LED
+Text HLabel 2775 4775 2    50   Input ~ 0
+BLUE_LED
+Text HLabel 1575 6475 0    50   Input ~ 0
+U-Pin8
+Text HLabel 1575 6575 0    50   Input ~ 0
+U-Pin10
+Text HLabel 2775 5475 2    50   Input ~ 0
+U-Pin12
+Text HLabel 2775 5575 2    50   Input ~ 0
+U-Pin14
+Text HLabel 2775 5675 2    50   Input ~ 0
+U-Pin16
+Text HLabel 2775 5775 2    50   Input ~ 0
+U-Pin18
+Text HLabel 2775 5875 2    50   Input ~ 0
+U-Pin20
+Text HLabel 2775 5975 2    50   Input ~ 0
+U-Pin22
+Text HLabel 2775 6275 2    50   Input ~ 0
+U-Pin24
+Text HLabel 2775 6375 2    50   Input ~ 0
+U-Pin26
+Text HLabel 5900 1475 2    50   Input ~ 0
+U-Pin8
+$Comp
+L power:GND #PWR?
+U 1 1 5D47FCD3
+P 6350 1275
+F 0 "#PWR?" H 6350 1025 50  0001 C CNN
+F 1 "GND" H 6355 1102 50  0000 C CNN
+F 2 "" H 6350 1275 50  0001 C CNN
+F 3 "" H 6350 1275 50  0001 C CNN
+	1    6350 1275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1275 6350 1275
+Text HLabel 5900 1575 2    50   Input ~ 0
+U-Pin10
+Text HLabel 5900 1675 2    50   Input ~ 0
+U-Pin12
+Text HLabel 5900 1775 2    50   Input ~ 0
+U-Pin14
+Text HLabel 5900 1875 2    50   Input ~ 0
+U-Pin16
+Text HLabel 5900 1975 2    50   Input ~ 0
+U-Pin18
+Text HLabel 5900 2075 2    50   Input ~ 0
+U-Pin20
+Text HLabel 5900 2175 2    50   Input ~ 0
+U-Pin22
+Text HLabel 5900 2275 2    50   Input ~ 0
+U-Pin24
+Text HLabel 5900 2375 2    50   Input ~ 0
+U-Pin26
+Text HLabel 5900 2475 2    50   Input ~ 0
+U-Pin28
 $EndSCHEMATC
