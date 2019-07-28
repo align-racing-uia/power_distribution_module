@@ -1,4 +1,4 @@
-## ACM 2019
+## ACM 2020
 
 ###### Changelog:
 
@@ -16,3 +16,6 @@
 - Generated:Bill of Materials
 - Added:	JAE IL-WX Series 0.8mm Pitch 30 Way connector
 - Added:	RGB LED
+- Added: P-mosfet for reverse polarity-protection
+- Positioned power management (OC, OV, RP) in a 12x4mm space.
+- Started tracing

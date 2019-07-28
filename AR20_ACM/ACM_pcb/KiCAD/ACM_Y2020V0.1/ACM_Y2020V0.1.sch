@@ -185,13 +185,6 @@ F 3 "" H 3275 5700 50  0001 C CNN
 	1    3275 5700
 	1    0    0    -1  
 $EndComp
-Connection ~ 3275 6050
-Wire Wire Line
-	3275 6050 3275 6000
-Wire Wire Line
-	3275 6075 3275 6050
-Wire Wire Line
-	3450 6050 3275 6050
 Text HLabel 3450 6050 2    50   Input ~ 0
 Reset
 $Comp
@@ -439,11 +432,11 @@ F 3 "" H 8050 5075 50  0001 C CNN
 	1    8050 5075
 	1    0    0    -1  
 $EndComp
-Text HLabel 10100 5400 2    50   Input ~ 0
+Text HLabel 10075 5400 2    50   Input ~ 0
 CLK_MCP
 Text HLabel 2775 4575 2    50   Input ~ 0
 CLK_MCP
-Text Notes 3175 4600 0    50   ~ 0
+Text Notes 3200 4600 0    50   ~ 0
 Close as possible to MCP-chip
 Wire Wire Line
 	2775 5175 3000 5175
@@ -459,7 +452,7 @@ Wire Wire Line
 	3000 5275 2775 5275
 Text Notes 9275 2925 0    79   ~ 16
 CAN MCU
-Text Notes 5275 4075 0    79   ~ 16
+Text Notes 5100 3700 0    79   ~ 16
 Power and protection circuits
 Text Notes 1925 3850 0    79   ~ 16
 Main MCU
@@ -495,103 +488,90 @@ Wire Wire Line
 $Comp
 L Regulator_Linear:SPX3819M5-L-5-0 U3
 U 1 1 5D43ECBB
-P 6100 5000
-F 0 "U3" H 6100 5342 50  0000 C CNN
-F 1 "SPX3819M5-L-5-0" H 6100 5251 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6100 5325 50  0001 C CNN
-F 3 "https://www.exar.com/content/document.ashx?id=22106&languageid=1033&type=Datasheet&partnumber=SPX3819&filename=SPX3819.pdf&part=SPX3819" H 6100 5000 50  0001 C CNN
-	1    6100 5000
+P 6975 5400
+F 0 "U3" H 6975 5742 50  0000 C CNN
+F 1 "SPX3819M5-L-5-0" H 6975 5651 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6975 5725 50  0001 C CNN
+F 3 "https://www.exar.com/content/document.ashx?id=22106&languageid=1033&type=Datasheet&partnumber=SPX3819&filename=SPX3819.pdf&part=SPX3819" H 6975 5400 50  0001 C CNN
+	1    6975 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+12V #PWR0116
 U 1 1 5D442037
-P 5675 4350
-F 0 "#PWR0116" H 5675 4200 50  0001 C CNN
-F 1 "+12V" H 5690 4523 50  0000 C CNN
-F 2 "" H 5675 4350 50  0001 C CNN
-F 3 "" H 5675 4350 50  0001 C CNN
-	1    5675 4350
+P 5975 4025
+F 0 "#PWR0116" H 5975 3875 50  0001 C CNN
+F 1 "+12V" H 5990 4198 50  0000 C CNN
+F 2 "" H 5975 4025 50  0001 C CNN
+F 3 "" H 5975 4025 50  0001 C CNN
+	1    5975 4025
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0117
 U 1 1 5D4432D9
-P 6100 5300
-F 0 "#PWR0117" H 6100 5050 50  0001 C CNN
-F 1 "GND" H 6105 5127 50  0000 C CNN
-F 2 "" H 6100 5300 50  0001 C CNN
-F 3 "" H 6100 5300 50  0001 C CNN
-	1    6100 5300
+P 6975 5700
+F 0 "#PWR0117" H 6975 5450 50  0001 C CNN
+F 1 "GND" H 6980 5527 50  0000 C CNN
+F 2 "" H 6975 5700 50  0001 C CNN
+F 3 "" H 6975 5700 50  0001 C CNN
+	1    6975 5700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 4900 5675 4900
+	7425 5300 7425 5075
 Wire Wire Line
-	6550 4900 6550 4675
-Wire Wire Line
-	6400 4900 6550 4900
+	7275 5300 7425 5300
 $Comp
 L power:+5V #PWR0118
 U 1 1 5D442E86
-P 6550 4675
-F 0 "#PWR0118" H 6550 4525 50  0001 C CNN
-F 1 "+5V" H 6565 4848 50  0000 C CNN
-F 2 "" H 6550 4675 50  0001 C CNN
-F 3 "" H 6550 4675 50  0001 C CNN
-	1    6550 4675
+P 7425 5075
+F 0 "#PWR0118" H 7425 4925 50  0001 C CNN
+F 1 "+5V" H 7440 5248 50  0000 C CNN
+F 2 "" H 7425 5075 50  0001 C CNN
+F 3 "" H 7425 5075 50  0001 C CNN
+	1    7425 5075
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Polyfuse_Small F1
 U 1 1 5D45109C
-P 5675 4600
-F 0 "F1" H 5800 4550 50  0000 R CNN
-F 1 "200mA" H 6000 4625 50  0000 R CNN
-F 2 "Fuse:Fuse_0603_1608Metric" H 5725 4400 50  0001 L CNN
-F 3 "~" H 5675 4600 50  0001 C CNN
-	1    5675 4600
+P 5975 4200
+F 0 "F1" H 6100 4150 50  0000 R CNN
+F 1 "250mA" H 6300 4225 50  0000 R CNN
+F 2 "Fuse:Fuse_0603_1608Metric" H 6025 4000 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2571643.pdf?_ga=2.98152344.620744209.1564174328-1415930916.1560114588&_gac=1.180027990.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 5975 4200 50  0001 C CNN
+F 4 "https://no.farnell.com/bel-fuse-circuit-protection/0zcm0010ff2g/fuse-resettable-ptc-15vdc-0-1a/dp/2834930" H 5975 4200 50  0001 C CNN "Farnell"
+	1    5975 4200
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:D_Zener D1
 U 1 1 5D452681
-P 5450 4400
-F 0 "D1" H 5450 4184 50  0000 C CNN
-F 1 "15V" H 5450 4275 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323F" H 5450 4400 50  0001 C CNN
-F 3 "~" H 5450 4400 50  0001 C CNN
-	1    5450 4400
+P 5700 4500
+F 0 "D1" H 5700 4284 50  0000 C CNN
+F 1 "15V" H 5700 4375 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 5700 4500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2174102.pdf?_ga=2.266027912.620744209.1564174328-1415930916.1560114588&_gac=1.256115449.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 5700 4500 50  0001 C CNN
+F 4 "https://no.farnell.com/nexperia/bzx585-c15-115/diode-zener-0-3w-15v-sod523/dp/1907634" H 5700 4500 50  0001 C CNN "Farnell"
+	1    5700 4500
 	-1   0    0    1   
 $EndComp
-Text HLabel 10775 3900 2    50   Input ~ 0
-CANH
-Text HLabel 10775 4200 2    50   Input ~ 0
-CANL
-Wire Wire Line
-	5675 4500 5675 4400
-Wire Wire Line
-	5675 4700 5675 4900
 $Comp
 L power:GND #PWR0119
 U 1 1 5D458B9B
-P 5200 4475
-F 0 "#PWR0119" H 5200 4225 50  0001 C CNN
-F 1 "GND" H 5205 4302 50  0000 C CNN
-F 2 "" H 5200 4475 50  0001 C CNN
-F 3 "" H 5200 4475 50  0001 C CNN
-	1    5200 4475
+P 5450 4575
+F 0 "#PWR0119" H 5450 4325 50  0001 C CNN
+F 1 "GND" H 5455 4402 50  0000 C CNN
+F 2 "" H 5450 4575 50  0001 C CNN
+F 3 "" H 5450 4575 50  0001 C CNN
+	1    5450 4575
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 4400 5675 4400
-Connection ~ 5675 4400
+	5550 4500 5450 4500
 Wire Wire Line
-	5675 4400 5675 4350
-Wire Wire Line
-	5300 4400 5200 4400
-Wire Wire Line
-	5200 4400 5200 4475
+	5450 4500 5450 4575
 Wire Wire Line
 	3075 1400 3175 1400
 Wire Wire Line
@@ -600,15 +580,6 @@ Wire Wire Line
 	3075 1600 3175 1600
 Wire Wire Line
 	3175 1600 3175 1675
-Wire Wire Line
-	5900 1175 6000 1175
-Wire Wire Line
-	6000 1175 6000 1275
-Wire Wire Line
-	5900 1275 6000 1275
-Connection ~ 6000 1275
-Wire Wire Line
-	6000 1275 6000 1375
 $Comp
 L power:+12V #PWR0121
 U 1 1 5D3DBA57
@@ -637,49 +608,22 @@ F 3 "" H 4950 1075 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4950 1075 4950 1275
-Wire Wire Line
-	4950 1275 5325 1275
-Wire Wire Line
-	5400 1375 5325 1375
-Wire Wire Line
-	5325 1375 5325 1275
-Connection ~ 5325 1275
-Wire Wire Line
-	5325 1275 5400 1275
-$Comp
-L Device:D_Small D2
-U 1 1 5D3ED873
-P 5450 4900
-F 0 "D2" H 5450 5000 50  0000 C CNN
-F 1 "D_Small" H 5450 5075 50  0000 C CNN
-F 2 "Diode_SMD:D_0402_1005Metric" V 5450 4900 50  0001 C CNN
-F 3 "~" V 5450 4900 50  0001 C CNN
-	1    5450 4900
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR0123
 U 1 1 5D3F2B57
-P 5200 4950
-F 0 "#PWR0123" H 5200 4700 50  0001 C CNN
-F 1 "GND" H 5205 4777 50  0000 C CNN
-F 2 "" H 5200 4950 50  0001 C CNN
-F 3 "" H 5200 4950 50  0001 C CNN
-	1    5200 4950
+P 5675 5600
+F 0 "#PWR0123" H 5675 5350 50  0001 C CNN
+F 1 "GND" H 5680 5427 50  0000 C CNN
+F 2 "" H 5675 5600 50  0001 C CNN
+F 3 "" H 5675 5600 50  0001 C CNN
+	1    5675 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5200 4950 5200 4900
-Wire Wire Line
-	5200 4900 5350 4900
-Wire Wire Line
-	5550 4900 5675 4900
-Connection ~ 5675 4900
-Text Notes 4700 4375 0    39   ~ 0
+Text Notes 4950 4475 0    39   ~ 0
 Zener diode for\novervoltage protection
-Text Notes 4700 4900 0    39   ~ 0
-Diode for reverse\npolarity protection
-Text Notes 5725 4575 0    39   ~ 0
+Text Notes 5075 5025 0    39   ~ 0
+P-mosfet for reverse\npolarity protection
+Text Notes 6050 4250 0    39   ~ 0
 Polyfuse for\novercurrent protection
 $Comp
 L Connector_Generic:Conn_02x15_Odd_Even J2
@@ -688,12 +632,11 @@ P 5600 1875
 F 0 "J2" H 5650 2792 50  0000 C CNN
 F 1 "Conn_02x15_Odd_Even" H 5650 2701 50  0000 C CNN
 F 2 "Connector_PinSocket_0.8mm:PinSocket_2x15_P0.08mm_Vertical_SMD" H 5600 1875 50  0001 C CNN
-F 3 "~" H 5600 1875 50  0001 C CNN
+F 3 "https://docs-emea.rs-online.com/webdocs/0fc1/0900766b80fc155d.pdf" H 5600 1875 50  0001 C CNN
+F 4 "https://no.rs-online.com/web/p/pcb-sockets/0437152/" H 5600 1875 50  0001 C CNN "RS"
 	1    5600 1875
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5900 1375 6000 1375
 $Comp
 L SMLP36RGB2W3R:SMLP36RGB2W3R LED1
 U 1 1 5D41B8EC
@@ -789,65 +732,229 @@ Wire Wire Line
 	10175 1450 10175 1375
 Text HLabel 2775 6775 2    50   Input ~ 0
 GREEN_LED
-Text HLabel 2775 4675 2    50   Input ~ 0
+Text HLabel 2850 4675 2    50   Input ~ 0
 RED_LED
-Text HLabel 2775 4775 2    50   Input ~ 0
+Text HLabel 2850 4800 2    50   Input ~ 0
 BLUE_LED
-Text HLabel 1575 6475 0    50   Input ~ 0
-U-Pin8
-Text HLabel 1575 6575 0    50   Input ~ 0
-U-Pin10
-Text HLabel 2775 5475 2    50   Input ~ 0
-U-Pin12
-Text HLabel 2775 5575 2    50   Input ~ 0
-U-Pin14
-Text HLabel 2775 5675 2    50   Input ~ 0
-U-Pin16
-Text HLabel 2775 5775 2    50   Input ~ 0
-U-Pin18
-Text HLabel 2775 5875 2    50   Input ~ 0
-U-Pin20
-Text HLabel 2775 5975 2    50   Input ~ 0
-U-Pin22
-Text HLabel 2775 6275 2    50   Input ~ 0
-U-Pin24
-Text HLabel 2775 6375 2    50   Input ~ 0
-U-Pin26
 Text HLabel 5900 1475 2    50   Input ~ 0
 U-Pin8
 $Comp
 L power:GND #PWR0120
 U 1 1 5D47FCD3
-P 6350 1275
-F 0 "#PWR0120" H 6350 1025 50  0001 C CNN
-F 1 "GND" H 6355 1102 50  0000 C CNN
-F 2 "" H 6350 1275 50  0001 C CNN
-F 3 "" H 6350 1275 50  0001 C CNN
-	1    6350 1275
+P 6425 1875
+F 0 "#PWR0120" H 6425 1625 50  0001 C CNN
+F 1 "GND" H 6430 1702 50  0000 C CNN
+F 2 "" H 6425 1875 50  0001 C CNN
+F 3 "" H 6425 1875 50  0001 C CNN
+	1    6425 1875
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 1275 6350 1275
 Text HLabel 5900 1575 2    50   Input ~ 0
 U-Pin10
 Text HLabel 5900 1675 2    50   Input ~ 0
 U-Pin12
 Text HLabel 5900 1775 2    50   Input ~ 0
 U-Pin14
-Text HLabel 5900 1875 2    50   Input ~ 0
-U-Pin16
-Text HLabel 5900 1975 2    50   Input ~ 0
-U-Pin18
+Text HLabel 5900 1175 2    50   Input ~ 0
+U-Pin2
+Text HLabel 5900 1275 2    50   Input ~ 0
+U-Pin4
 Text HLabel 5900 2075 2    50   Input ~ 0
 U-Pin20
 Text HLabel 5900 2175 2    50   Input ~ 0
 U-Pin22
 Text HLabel 5900 2275 2    50   Input ~ 0
 U-Pin24
-Text HLabel 5900 2375 2    50   Input ~ 0
+Text HLabel 6175 2375 2    50   Input ~ 0
 U-Pin26
-Text HLabel 5900 2475 2    50   Input ~ 0
+Text HLabel 6175 2475 2    50   Input ~ 0
 U-Pin28
-Text Notes 3300 6175 0    50   ~ 0
+Text Notes 3425 6225 0    50   ~ 0
 Legg ut RESET for Debugwire
+$Comp
+L power:GND #PWR0125
+U 1 1 5D493FC3
+P 8500 4050
+F 0 "#PWR0125" H 8500 3800 50  0001 C CNN
+F 1 "GND" H 8505 3877 50  0000 C CNN
+F 2 "" H 8500 4050 50  0001 C CNN
+F 3 "" H 8500 4050 50  0001 C CNN
+	1    8500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4050 8500 4000
+Wire Wire Line
+	8500 4000 8875 4000
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 5D49C78B
+P 5875 5000
+F 0 "Q1" H 6081 5046 50  0000 L CNN
+F 1 "Q_PMOS_DGS" H 6081 4955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6075 5100 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2040104.pdf?_ga=2.59461290.620744209.1564174328-1415930916.1560114588&_gac=1.194072415.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 5875 5000 50  0001 C CNN
+F 4 "2543551" H 5875 5000 50  0001 C CNN "Farnell"
+	1    5875 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5975 5200 5975 5300
+Text Notes 2225 4125 0    50   ~ 0
+Trenger flere Decupling Caps?
+Text Notes 5650 5275 2    50   ~ 0
+NB! Vgs max: ±10V!\n2.4V zener diode\nfor Vgs -2.4V
+$Comp
+L Device:R R7
+U 1 1 5D4B82FB
+P 5675 5450
+F 0 "R7" H 5745 5496 50  0000 L CNN
+F 1 "100K Ohm" H 5745 5405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5605 5450 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2310790.pdf?_ga=2.261974922.620744209.1564174328-1415930916.1560114588&_gac=1.24838472.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 5675 5450 50  0001 C CNN
+F 4 "https://no.farnell.com/vishay/crcw0402100kfked/res-100k-1-0-063w-0402-thick-film/dp/1469671" H 5675 5450 50  0001 C CNN "Farnell"
+	1    5675 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D2
+U 1 1 5D4B9259
+P 5825 5300
+F 0 "D2" H 5825 5084 50  0000 C CNN
+F 1 "2.4V" H 5825 5175 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 5825 5300 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2174102.pdf?_ga=2.89435932.620744209.1564174328-1415930916.1560114588&_gac=1.184758107.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 5825 5300 50  0001 C CNN
+F 4 "https://no.farnell.com/nexperia/bzx585-c2v4-115/diode-zener-0-3w-2-4v-sod523/dp/1907635" H 5825 5300 50  0001 C CNN "Farnell"
+	1    5825 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5675 5000 5675 5300
+Connection ~ 5675 5300
+Wire Wire Line
+	5975 4025 5975 4100
+Wire Wire Line
+	5975 4300 5975 4500
+Wire Wire Line
+	5850 4500 5975 4500
+Connection ~ 5975 4500
+Wire Wire Line
+	5975 4500 5975 4800
+Wire Wire Line
+	5975 5300 6675 5300
+Connection ~ 5975 5300
+Wire Wire Line
+	4950 1275 5400 1275
+Wire Wire Line
+	5900 1875 6025 1875
+Wire Wire Line
+	5900 1975 6025 1975
+Wire Wire Line
+	6025 1975 6025 1875
+Connection ~ 6025 1875
+Text HLabel 5900 2575 2    50   Input ~ 0
+U-Pin30
+Text HLabel 5400 1375 0    50   Input ~ 0
+U-Pin5
+Text HLabel 5400 1475 0    50   Input ~ 0
+U-Pin7
+Text HLabel 5400 1575 0    50   Input ~ 0
+U-Pin9
+Text HLabel 5400 1675 0    50   Input ~ 0
+U-Pin11
+Text HLabel 5400 1775 0    50   Input ~ 0
+U-Pin13
+Text HLabel 5400 1875 0    50   Input ~ 0
+U-Pin15
+Text HLabel 5400 1975 0    50   Input ~ 0
+U-Pin17
+Text HLabel 5400 2075 0    50   Input ~ 0
+U-Pin19
+Text HLabel 5400 2175 0    50   Input ~ 0
+U-Pin21
+Text HLabel 5400 2275 0    50   Input ~ 0
+U-Pin23
+Text HLabel 5400 2375 0    50   Input ~ 0
+U-Pin25
+Text HLabel 5400 2475 0    50   Input ~ 0
+U-Pin27
+Text HLabel 5400 2575 0    50   Input ~ 0
+U-Pin29
+Text HLabel 5900 1375 2    50   Input ~ 0
+U-Pin6
+Wire Wire Line
+	6025 1875 6425 1875
+Text HLabel 1575 6275 0    50   Input ~ 0
+U-Pin24
+Text HLabel 1575 6375 0    50   Input ~ 0
+U-Pin30
+Text HLabel 1575 6475 0    50   Input ~ 0
+U-Pin11
+Text HLabel 1575 6575 0    50   Input ~ 0
+U-Pin9
+Text HLabel 2775 6875 2    50   Input ~ 0
+U-Pin23
+Text HLabel 2775 6675 2    50   Input ~ 0
+U-Pin22
+Text HLabel 2775 6575 2    50   Input ~ 0
+U-Pin20
+Text HLabel 2775 6375 2    50   Input ~ 0
+U-Pin14
+Text HLabel 2775 6275 2    50   Input ~ 0
+U-Pin12
+Text HLabel 3450 6125 2    50   Input ~ 0
+U-Pin10
+Wire Wire Line
+	3450 6125 3275 6125
+Wire Wire Line
+	3275 6125 3275 6075
+Wire Wire Line
+	3275 6075 3375 6075
+Wire Wire Line
+	3375 6075 3375 6050
+Wire Wire Line
+	3375 6050 3450 6050
+Connection ~ 3275 6075
+Wire Wire Line
+	3275 6075 3275 6000
+Text HLabel 2775 5975 2    50   Input ~ 0
+U-Pin8
+Text HLabel 2775 5875 2    50   Input ~ 0
+U-Pin6
+Text HLabel 2775 5775 2    50   Input ~ 0
+U-Pin4
+Text HLabel 2775 5675 2    50   Input ~ 0
+U-Pin2
+Text HLabel 2775 5575 2    50   Input ~ 0
+U-Pin5
+Text HLabel 2775 5475 2    50   Input ~ 0
+U-Pin7
+Text HLabel 2850 4625 2    50   Input ~ 0
+U-Pin21
+Text HLabel 2850 4750 2    50   Input ~ 0
+U-Pin19
+Wire Wire Line
+	2775 4675 2800 4675
+Wire Wire Line
+	2800 4675 2800 4625
+Wire Wire Line
+	2800 4625 2850 4625
+Wire Wire Line
+	2850 4675 2800 4675
+Connection ~ 2800 4675
+Wire Wire Line
+	2775 4775 2800 4775
+Wire Wire Line
+	2800 4775 2800 4750
+Wire Wire Line
+	2800 4750 2850 4750
+Wire Wire Line
+	2850 4800 2800 4800
+Wire Wire Line
+	2800 4800 2800 4775
+Connection ~ 2800 4775
+Text HLabel 10775 3900 2    50   Input ~ 0
+U-Pin27
+Text HLabel 10775 4200 2    50   Input ~ 0
+U-Pin29
 $EndSCHEMATC
