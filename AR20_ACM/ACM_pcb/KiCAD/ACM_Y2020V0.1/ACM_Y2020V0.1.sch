@@ -35,9 +35,9 @@ F 11 "http://uk.rs-online.com/web/p/products/8252561" H 2925 600 50  0001 L CNN 
 $EndComp
 Text HLabel 2775 5075 2    50   Input ~ 0
 SCK
-Text HLabel 2775 4975 2    50   Input ~ 0
+Text HLabel 2800 4950 2    25   Input ~ 0
 MISO
-Text HLabel 2775 4875 2    50   Input ~ 0
+Text HLabel 2800 4850 2    25   Input ~ 0
 MOSI
 Text HLabel 3075 1500 2    50   Input ~ 0
 MOSI
@@ -138,29 +138,29 @@ Place as close as \npossible to pin 4 and 5
 $Comp
 L Device:Resonator_Small Y1
 U 1 1 5D3C125F
-P 3200 5225
-F 0 "Y1" V 3475 5200 50  0000 C CNN
-F 1 "16.0Mhz" V 3400 5200 50  0000 C CNN
-F 2 "CSTNE16M0V530000R0:CSTNE16M0V530000R0" H 3175 5225 50  0001 C CNN
-F 3 "~" H 3175 5225 50  0001 C CNN
-	1    3200 5225
+P 3700 5250
+F 0 "Y1" V 3975 5225 50  0000 C CNN
+F 1 "16.0Mhz" V 3900 5225 50  0000 C CNN
+F 2 "CSTNE16M0V530000R0:CSTNE16M0V530000R0" H 3675 5250 50  0001 C CNN
+F 3 "~" H 3675 5250 50  0001 C CNN
+	1    3700 5250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0107
 U 1 1 5D3C307D
-P 3450 5275
-F 0 "#PWR0107" H 3450 5025 50  0001 C CNN
-F 1 "GND" H 3455 5102 50  0000 C CNN
-F 2 "" H 3450 5275 50  0001 C CNN
-F 3 "" H 3450 5275 50  0001 C CNN
-	1    3450 5275
+P 3950 5300
+F 0 "#PWR0107" H 3950 5050 50  0001 C CNN
+F 1 "GND" H 3955 5127 50  0000 C CNN
+F 2 "" H 3950 5300 50  0001 C CNN
+F 3 "" H 3950 5300 50  0001 C CNN
+	1    3950 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 5225 3450 5225
+	3900 5250 3950 5250
 Wire Wire Line
-	3450 5225 3450 5275
+	3950 5250 3950 5300
 $Comp
 L Device:R R1
 U 1 1 5D3CAE32
@@ -439,17 +439,9 @@ CLK_MCP
 Text Notes 3200 4600 0    50   ~ 0
 Close as possible to MCP-chip
 Wire Wire Line
-	2775 5175 3000 5175
+	3500 5150 3600 5150
 Wire Wire Line
-	3000 5175 3000 5125
-Wire Wire Line
-	3000 5125 3100 5125
-Wire Wire Line
-	3100 5325 3000 5325
-Wire Wire Line
-	3000 5325 3000 5275
-Wire Wire Line
-	3000 5275 2775 5275
+	3600 5350 3500 5350
 Text Notes 9275 2925 0    79   ~ 16
 CAN MCU
 Text Notes 5100 3700 0    79   ~ 16
@@ -583,31 +575,25 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR0121
 U 1 1 5D3DBA57
-P 5150 1075
-F 0 "#PWR0121" H 5150 925 50  0001 C CNN
-F 1 "+12V" H 5165 1248 50  0000 C CNN
-F 2 "" H 5150 1075 50  0001 C CNN
-F 3 "" H 5150 1075 50  0001 C CNN
-	1    5150 1075
+P 5475 2850
+F 0 "#PWR0121" H 5475 2700 50  0001 C CNN
+F 1 "+12V" H 5490 3023 50  0000 C CNN
+F 2 "" H 5475 2850 50  0001 C CNN
+F 3 "" H 5475 2850 50  0001 C CNN
+	1    5475 2850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 1075 5150 1175
-Wire Wire Line
-	5150 1175 5400 1175
 $Comp
 L power:+5V #PWR0122
 U 1 1 5D3DED37
-P 4950 1075
-F 0 "#PWR0122" H 4950 925 50  0001 C CNN
-F 1 "+5V" H 4965 1248 50  0000 C CNN
-F 2 "" H 4950 1075 50  0001 C CNN
-F 3 "" H 4950 1075 50  0001 C CNN
-	1    4950 1075
+P 5075 2825
+F 0 "#PWR0122" H 5075 2675 50  0001 C CNN
+F 1 "+5V" H 5090 2998 50  0000 C CNN
+F 2 "" H 5075 2825 50  0001 C CNN
+F 3 "" H 5075 2825 50  0001 C CNN
+	1    5075 2825
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 1075 4950 1275
 $Comp
 L power:GND #PWR0123
 U 1 1 5D3F2B57
@@ -730,11 +716,11 @@ Wire Wire Line
 Connection ~ 10175 1450
 Wire Wire Line
 	10175 1450 10175 1375
-Text HLabel 2775 6775 2    50   Input ~ 0
+Text HLabel 2800 6750 2    25   Input ~ 0
 GREEN_LED
-Text HLabel 2850 4675 2    50   Input ~ 0
+Text HLabel 2850 4675 2    25   Input ~ 0
 RED_LED
-Text HLabel 2850 4800 2    50   Input ~ 0
+Text HLabel 2850 4800 2    25   Input ~ 0
 BLUE_LED
 Text HLabel 5900 1475 2    50   Input ~ 0
 U-Pin8
@@ -749,7 +735,7 @@ F 3 "" H 6425 1875 50  0001 C CNN
 	1    6425 1875
 	1    0    0    -1  
 $EndComp
-Text HLabel 5900 1575 2    50   Input ~ 0
+Text HLabel 5925 1575 2    50   Input ~ 0
 U-Pin10
 Text HLabel 5900 1675 2    50   Input ~ 0
 U-Pin12
@@ -844,8 +830,6 @@ Wire Wire Line
 	5975 5300 6675 5300
 Connection ~ 5975 5300
 Wire Wire Line
-	4950 1275 5400 1275
-Wire Wire Line
 	5900 1875 6025 1875
 Wire Wire Line
 	5900 1975 6025 1975
@@ -874,12 +858,12 @@ Text HLabel 5400 2175 0    50   Input ~ 0
 U-Pin21
 Text HLabel 5400 2275 0    50   Input ~ 0
 U-Pin23
-Text HLabel 5400 2375 0    50   Input ~ 0
+Text HLabel 5350 2375 0    50   Input ~ 0
 U-Pin25
-Text HLabel 5400 2475 0    50   Input ~ 0
-U-Pin27
-Text HLabel 5400 2575 0    50   Input ~ 0
-U-Pin29
+Text HLabel 5400 1175 0    50   Input ~ 0
+U-Pin1
+Text HLabel 5400 1275 0    50   Input ~ 0
+U-Pin3
 Text HLabel 5900 1375 2    50   Input ~ 0
 U-Pin6
 Wire Wire Line
@@ -892,8 +876,6 @@ Text HLabel 1575 6475 0    50   Input ~ 0
 U-Pin11
 Text HLabel 1575 6575 0    50   Input ~ 0
 U-Pin9
-Text HLabel 2775 6875 2    50   Input ~ 0
-U-Pin23
 Text HLabel 2775 6675 2    50   Input ~ 0
 U-Pin22
 Text HLabel 2775 6575 2    50   Input ~ 0
@@ -902,7 +884,7 @@ Text HLabel 2775 6375 2    50   Input ~ 0
 U-Pin14
 Text HLabel 2775 6275 2    50   Input ~ 0
 U-Pin12
-Text HLabel 3450 6125 2    50   Input ~ 0
+Text HLabel 3475 6125 2    50   Input ~ 0
 U-Pin10
 Wire Wire Line
 	3450 6125 3275 6125
@@ -929,9 +911,9 @@ Text HLabel 2775 5575 2    50   Input ~ 0
 U-Pin5
 Text HLabel 2775 5475 2    50   Input ~ 0
 U-Pin7
-Text HLabel 2850 4625 2    50   Input ~ 0
+Text HLabel 2850 4625 2    25   Input ~ 0
 U-Pin21
-Text HLabel 2850 4750 2    50   Input ~ 0
+Text HLabel 2850 4750 2    25   Input ~ 0
 U-Pin19
 Wire Wire Line
 	2775 4675 2800 4675
@@ -954,7 +936,66 @@ Wire Wire Line
 	2800 4800 2800 4775
 Connection ~ 2800 4775
 Text HLabel 10775 3900 2    50   Input ~ 0
-U-Pin27
+U-Pin3
 Text HLabel 10775 4200 2    50   Input ~ 0
-U-Pin29
+U-Pin1
+Wire Wire Line
+	5400 2575 5300 2575
+Wire Wire Line
+	5300 2575 5300 2900
+Wire Wire Line
+	5300 2900 5475 2900
+Wire Wire Line
+	5475 2900 5475 2850
+Wire Wire Line
+	5400 2475 5250 2475
+Wire Wire Line
+	5250 2475 5250 2900
+Wire Wire Line
+	5250 2900 5075 2900
+Wire Wire Line
+	5075 2900 5075 2825
+Wire Wire Line
+	2775 5175 3500 5175
+Wire Wire Line
+	3500 5175 3500 5150
+Wire Wire Line
+	3500 5350 3500 5275
+Wire Wire Line
+	3500 5275 2775 5275
+Text HLabel 2800 4900 2    25   Input ~ 0
+U-Pin17
+Text HLabel 2800 5000 2    25   Input ~ 0
+U-Pin15
+Wire Wire Line
+	2800 5000 2775 5000
+Wire Wire Line
+	2775 5000 2775 4975
+Wire Wire Line
+	2775 4975 2775 4950
+Wire Wire Line
+	2775 4950 2800 4950
+Connection ~ 2775 4975
+Wire Wire Line
+	2800 4900 2775 4900
+Wire Wire Line
+	2775 4900 2775 4875
+Wire Wire Line
+	2775 4875 2775 4850
+Wire Wire Line
+	2775 4850 2800 4850
+Connection ~ 2775 4875
+Text HLabel 2775 6875 2    50   Input ~ 0
+U-Pin23
+Wire Wire Line
+	2775 6775 2775 6800
+Wire Wire Line
+	2775 6800 2800 6800
+Wire Wire Line
+	2775 6775 2775 6750
+Wire Wire Line
+	2775 6750 2800 6750
+Connection ~ 2775 6775
+Text HLabel 2800 6800 2    25   Input ~ 0
+U-Pin25
 $EndSCHEMATC

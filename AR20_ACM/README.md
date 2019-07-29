@@ -19,3 +19,6 @@
 - Added: P-mosfet for reverse polarity-protection
 - Positioned power management (OC, OV, RP) in a 12x4mm space.
 - Started tracing
+**29.07.2019:**
+- Moved: Protection circuit
+- Changed board layout
