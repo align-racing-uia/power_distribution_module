@@ -35,9 +35,9 @@ F 11 "http://uk.rs-online.com/web/p/products/8252561" H 2925 600 50  0001 L CNN 
 $EndComp
 Text HLabel 2775 5075 2    50   Input ~ 0
 SCK
-Text HLabel 2800 4950 2    25   Input ~ 0
+Text HLabel 2850 4975 2    50   Input ~ 0
 MISO
-Text HLabel 2800 4850 2    25   Input ~ 0
+Text HLabel 2850 4875 2    50   Input ~ 0
 MOSI
 Text HLabel 3075 1500 2    50   Input ~ 0
 MOSI
@@ -96,10 +96,6 @@ Wire Wire Line
 Wire Wire Line
 	2175 4125 2175 4275
 Connection ~ 2175 4275
-Wire Wire Line
-	1575 4575 1575 4275
-Wire Wire Line
-	1575 4275 2175 4275
 $Comp
 L Device:C C1
 U 1 1 5D3B17F8
@@ -185,7 +181,7 @@ F 3 "" H 3275 5700 50  0001 C CNN
 	1    3275 5700
 	1    0    0    -1  
 $EndComp
-Text HLabel 3450 6050 2    50   Input ~ 0
+Text HLabel 3450 6075 2    50   Input ~ 0
 Reset
 $Comp
 L MCU_Microchip_ATmega:ATmega328PB-AU U1
@@ -716,14 +712,12 @@ Wire Wire Line
 Connection ~ 10175 1450
 Wire Wire Line
 	10175 1450 10175 1375
-Text HLabel 2800 6750 2    25   Input ~ 0
+Text HLabel 2775 6775 2    50   Input ~ 0
 GREEN_LED
-Text HLabel 2850 4675 2    25   Input ~ 0
+Text HLabel 2850 4675 2    50   Input ~ 0
 RED_LED
-Text HLabel 2850 4800 2    25   Input ~ 0
+Text HLabel 2875 4775 2    50   Input ~ 0
 BLUE_LED
-Text HLabel 5900 1475 2    50   Input ~ 0
-U-Pin8
 $Comp
 L power:GND #PWR0120
 U 1 1 5D47FCD3
@@ -735,8 +729,6 @@ F 3 "" H 6425 1875 50  0001 C CNN
 	1    6425 1875
 	1    0    0    -1  
 $EndComp
-Text HLabel 5925 1575 2    50   Input ~ 0
-U-Pin10
 Text HLabel 5900 1675 2    50   Input ~ 0
 U-Pin12
 Text HLabel 5900 1775 2    50   Input ~ 0
@@ -846,20 +838,6 @@ Text HLabel 5400 1575 0    50   Input ~ 0
 U-Pin9
 Text HLabel 5400 1675 0    50   Input ~ 0
 U-Pin11
-Text HLabel 5400 1775 0    50   Input ~ 0
-U-Pin13
-Text HLabel 5400 1875 0    50   Input ~ 0
-U-Pin15
-Text HLabel 5400 1975 0    50   Input ~ 0
-U-Pin17
-Text HLabel 5400 2075 0    50   Input ~ 0
-U-Pin19
-Text HLabel 5400 2175 0    50   Input ~ 0
-U-Pin21
-Text HLabel 5400 2275 0    50   Input ~ 0
-U-Pin23
-Text HLabel 5350 2375 0    50   Input ~ 0
-U-Pin25
 Text HLabel 5400 1175 0    50   Input ~ 0
 U-Pin1
 Text HLabel 5400 1275 0    50   Input ~ 0
@@ -884,18 +862,6 @@ Text HLabel 2775 6375 2    50   Input ~ 0
 U-Pin14
 Text HLabel 2775 6275 2    50   Input ~ 0
 U-Pin12
-Text HLabel 3475 6125 2    50   Input ~ 0
-U-Pin10
-Wire Wire Line
-	3450 6125 3275 6125
-Wire Wire Line
-	3275 6125 3275 6075
-Wire Wire Line
-	3275 6075 3375 6075
-Wire Wire Line
-	3375 6075 3375 6050
-Wire Wire Line
-	3375 6050 3450 6050
 Connection ~ 3275 6075
 Wire Wire Line
 	3275 6075 3275 6000
@@ -911,30 +877,6 @@ Text HLabel 2775 5575 2    50   Input ~ 0
 U-Pin5
 Text HLabel 2775 5475 2    50   Input ~ 0
 U-Pin7
-Text HLabel 2850 4625 2    25   Input ~ 0
-U-Pin21
-Text HLabel 2850 4750 2    25   Input ~ 0
-U-Pin19
-Wire Wire Line
-	2775 4675 2800 4675
-Wire Wire Line
-	2800 4675 2800 4625
-Wire Wire Line
-	2800 4625 2850 4625
-Wire Wire Line
-	2850 4675 2800 4675
-Connection ~ 2800 4675
-Wire Wire Line
-	2775 4775 2800 4775
-Wire Wire Line
-	2800 4775 2800 4750
-Wire Wire Line
-	2800 4750 2850 4750
-Wire Wire Line
-	2850 4800 2800 4800
-Wire Wire Line
-	2800 4800 2800 4775
-Connection ~ 2800 4775
 Text HLabel 10775 3900 2    50   Input ~ 0
 U-Pin3
 Text HLabel 10775 4200 2    50   Input ~ 0
@@ -963,39 +905,81 @@ Wire Wire Line
 	3500 5350 3500 5275
 Wire Wire Line
 	3500 5275 2775 5275
-Text HLabel 2800 4900 2    25   Input ~ 0
-U-Pin17
-Text HLabel 2800 5000 2    25   Input ~ 0
-U-Pin15
-Wire Wire Line
-	2800 5000 2775 5000
-Wire Wire Line
-	2775 5000 2775 4975
-Wire Wire Line
-	2775 4975 2775 4950
-Wire Wire Line
-	2775 4950 2800 4950
-Connection ~ 2775 4975
-Wire Wire Line
-	2800 4900 2775 4900
-Wire Wire Line
-	2775 4900 2775 4875
-Wire Wire Line
-	2775 4875 2775 4850
-Wire Wire Line
-	2775 4850 2800 4850
-Connection ~ 2775 4875
 Text HLabel 2775 6875 2    50   Input ~ 0
 U-Pin23
+Text HLabel 5900 1575 2    50   Input ~ 0
+Reset
+Text HLabel 5900 1475 2    50   Input ~ 0
+U-Pin8
 Wire Wire Line
-	2775 6775 2775 6800
+	3275 6075 3450 6075
+Text HLabel 5400 1775 0    50   Input ~ 0
+SCK
 Wire Wire Line
-	2775 6800 2800 6800
+	2775 4675 2850 4675
 Wire Wire Line
-	2775 6775 2775 6750
+	2775 4775 2875 4775
 Wire Wire Line
-	2775 6750 2800 6750
-Connection ~ 2775 6775
-Text HLabel 2800 6800 2    25   Input ~ 0
-U-Pin25
+	2775 4875 2850 4875
+Wire Wire Line
+	2775 4975 2850 4975
+Text HLabel 5400 1875 0    50   Input ~ 0
+MISO
+Text HLabel 5400 1975 0    50   Input ~ 0
+MOSI
+Text HLabel 5400 2075 0    50   Input ~ 0
+BLUE_LED
+Text HLabel 5400 2175 0    50   Input ~ 0
+RED_LED
+Text HLabel 5400 2375 0    50   Input ~ 0
+GREEN_LED
+Text HLabel 5400 2275 0    50   Input ~ 0
+U-Pin23
+$Comp
+L Device:C_Small C6
+U 1 1 5D42F0C6
+P 1375 4675
+F 0 "C6" H 1283 4629 50  0000 R CNN
+F 1 "100nF" H 1283 4720 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1375 4675 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2620235.pdf?_ga=2.91386842.1939358490.1564414725-1415930916.1560114588&_gac=1.191516504.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 1375 4675 50  0001 C CNN
+F 4 "https://no.farnell.com/vishay/vj0402y104kxjcw1bc/cap-0-1-f-16v-10-x7r-0402/dp/2896349?categoryId=700000005423&ddkey=https%3ASearch" H 1375 4675 50  0001 C CNN "Farnell"
+	1    1375 4675
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5D431A06
+P 1375 4775
+F 0 "#PWR0126" H 1375 4525 50  0001 C CNN
+F 1 "GND" H 1380 4602 50  0000 C CNN
+F 2 "" H 1375 4775 50  0001 C CNN
+F 3 "" H 1375 4775 50  0001 C CNN
+	1    1375 4775
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1575 4575
+Wire Wire Line
+	1575 4575 1375 4575
+$Comp
+L Device:L_Small L1
+U 1 1 5D438986
+P 1625 4275
+F 0 "L1" V 1810 4275 50  0000 C CNN
+F 1 "10uH" V 1719 4275 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 1625 4275 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2761194.pdf?_ga=2.11278196.1939358490.1564414725-1415930916.1560114588&_gac=1.224087785.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 1625 4275 50  0001 C CNN
+F 4 "https://no.farnell.com/kemet/l0603b100kpwft/inductor-10uh-0-2a-10-shielded/dp/2846740?sf=471%2C479%2C722&pf=110197189%2C113816526&krypto=wdlyXzEHzoNyTqp1ZIDmJKKAdm%2FeQwQzUV5II%2F3l7MkJePe%2BfKfknh2CgwpSUiLpJgcdHpbeKKQNs27Pjdo2jRSMMeJV4ksckB9bvQgjSQLUlPN%2F8kNke0kS%2F7e9zwpUlVUEfkQZfvA32jXqBxbhPFTsaDHlf4CUrJJagmXsEZ8VqOHUewBKNAKNFz24oGypoERTJ7jtqvZrwEWMlQvWyq%2Bkwmf5TKuw%2FM%2BKpLr8e4C3KwvQzXks9QHUZqIDOurzBMeJRKKPAU2Cop7koNP9ascTJrJphD%2BAV67YaEOEisxTmSVrp%2B67slUES2yOj2r0jG%2FjibhBGhVavKNC56O75cqVYQbb%2FzpPpCew%2FioTTozg98St7w8tL1P3vgWlxcp9fXPTAvmhLZb0EWKDlkueZvXeB%2BDmx2m%2Bgg2NUCj%2B32Vew0Ws%2Fp6lWVNU3dPlVFc63F7hbMfjDTGxBOc%2FTjp%2BEpGgO5R3SgaiwgWL%2FEzcIPG77sO%2BSCxcOvYq855M1ooR73PAfV3tiAYDIUbGLskav3MdSmjuyNqhqqbt%2BOW4eFTyio9upZ2rzvhqMgL3sNOXsdxFy1zMxFPE3g96cCOrVv90G0gTi%2F%2BC%2FdnWQWjMuJxMBWfEU2HHYGwtkhlbKhm5hV9S8DwwUUZcwx1JiZnZamPheGla%2Bghidf0HZ8WWxV%2FZExu%2FEr5aHjgV2fqrh1OcraGwEWPJLI6RdzosXCLSFOhkqDrGV9DxowzbxfooPoxlTzOSyLsnbWIT17I0hyUR%2FUyhF1bZOkUlY5KHF4WC0%2FbJ9%2BzlJwjY4u7qKhK0yzhBuCaJ77Bam5AzM08s%2FpYWr6zrlyjBCSGnVhMN0I8PxJsDcwrWO2QJOr0YaYUp3%2Bd1PSdPLPd0sABhGIfBAK%2FOfum4DMlifVQQts0%2F96wD9fet0PaV%2FTtf9s6BYt5%2FBFQSMob%2BZGKKrgc9rMAJ9wxKDeE2Y889JIh%2B0YE%2BrwzXRKQuGWIafhnxV8wkZxbM58FYqLYx8eZktu%2BsU%2BVMemuzC4EN0HGNIKpgVg363m4p8X0dNuuzk%2BIUSFGfWRr1h6fr%2FqKqcypB9dtMhW7gcYn5zLHTgE%2FS6cDRyKc74Qk7UiFSfB88IVhlUJSnF%2FuykwCYCPaUZpUg948Hp96p63d2FVKvr7vS8st4gcAR82WvRf69x9MDDjo%2BVGlNimRBQ3PVcyLBEQREozehuM5DjpfvSQwnm6bpggqkcR%2BFvgnfPG4tBc09ZsH9XCRRtcz9yyGKh5p6ROjbX%2FluOlj1sBzT%2Fk3eFbosFAMdN8nGXoaNq7xt9rXB7zNydT3EBLm0Xr7weln4LIWcz0Vim8f93f0YRlpFhJsEugj4D%2BeYuea%2FTTldEnDaq5izn%2FOZxOWEFm3669yGUnS9d50oCn2WppYZL%2FQpI8XrdpNJn6ex3fwFa1VpB9EEB%2Btfg3yu5qWJRa1g2zpfctV5F39dz9kDC4IWJm6yR63cTTIe6ZOIb%2BviRyJke4XQ8r2T6s96llOp%2F9udaxLgE4K9RK0w%2B8TtbC4J3wrN%2Bmq%2Bo6gIhGRw04D9dlb%2BGhlObY5LwH4ryr9l4GQ%3D&ddkey=https%3Ano-NO%2FElement14_Norway%2Fw%2Fc%2Fpassive-components%2Finductors%2Fpower-inductors%2Fsmd-power-inductors" V 1625 4275 50  0001 C CNN "Farnell"
+	1    1625 4275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1725 4275 2175 4275
+Wire Wire Line
+	1525 4275 1375 4275
+Wire Wire Line
+	1375 4275 1375 4575
+Connection ~ 1375 4575
+Text Notes 1300 4050 0    50   ~ 0
+AVCC Lavpass filter
 $EndSCHEMATC
