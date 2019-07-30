@@ -25,3 +25,10 @@
 - Changed board layout
 - Changed viasize from 0.2 to 0.3
 - Routing of tracks
+
+**30.07.2019:**
+- Added 3D components
+- Removed all Tracks
+- Added DC/DC converter
+- Changed footprint of connector
+- Added LP-filter to Atmega Avcc (Datasheet page 348)

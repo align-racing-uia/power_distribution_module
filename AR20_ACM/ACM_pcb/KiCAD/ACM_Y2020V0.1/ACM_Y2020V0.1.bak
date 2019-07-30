@@ -33,12 +33,6 @@ F 11 "http://uk.rs-online.com/web/p/products/8252561" H 2925 600 50  0001 L CNN 
 	1    1075 1400
 	1    0    0    -1  
 $EndComp
-Text HLabel 2775 5075 2    50   Input ~ 0
-SCK
-Text HLabel 2850 4975 2    50   Input ~ 0
-MISO
-Text HLabel 2850 4875 2    50   Input ~ 0
-MOSI
 Text HLabel 3075 1500 2    50   Input ~ 0
 MOSI
 Text HLabel 1075 1600 0    50   Input ~ 0
@@ -92,56 +86,42 @@ F 3 "" H 2175 4125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2275 4275 2175 4275
-Wire Wire Line
 	2175 4125 2175 4275
-Connection ~ 2175 4275
 $Comp
 L Device:C C1
 U 1 1 5D3B17F8
-P 1125 5125
-F 0 "C1" H 1240 5171 50  0000 L CNN
-F 1 "100n" H 1240 5080 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1163 4975 50  0001 C CNN
-F 3 "~" H 1125 5125 50  0001 C CNN
-	1    1125 5125
+P 1100 5425
+F 0 "C1" H 1215 5471 50  0000 L CNN
+F 1 "100nF" H 1215 5380 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1138 5275 50  0001 C CNN
+F 3 "~" H 1100 5425 50  0001 C CNN
+	1    1100 5425
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0105
 U 1 1 5D3B309C
-P 1125 4975
-F 0 "#PWR0105" H 1125 4825 50  0001 C CNN
-F 1 "+5V" H 1140 5148 50  0000 C CNN
-F 2 "" H 1125 4975 50  0001 C CNN
-F 3 "" H 1125 4975 50  0001 C CNN
-	1    1125 4975
+P 1100 5275
+F 0 "#PWR0105" H 1100 5125 50  0001 C CNN
+F 1 "+5V" H 1115 5448 50  0000 C CNN
+F 2 "" H 1100 5275 50  0001 C CNN
+F 3 "" H 1100 5275 50  0001 C CNN
+	1    1100 5275
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 5D3B39A1
-P 1125 5275
-F 0 "#PWR0106" H 1125 5025 50  0001 C CNN
-F 1 "GND" H 1130 5102 50  0000 C CNN
-F 2 "" H 1125 5275 50  0001 C CNN
-F 3 "" H 1125 5275 50  0001 C CNN
-	1    1125 5275
+P 1100 5575
+F 0 "#PWR0106" H 1100 5325 50  0001 C CNN
+F 1 "GND" H 1105 5402 50  0000 C CNN
+F 2 "" H 1100 5575 50  0001 C CNN
+F 3 "" H 1100 5575 50  0001 C CNN
+	1    1100 5575
 	1    0    0    -1  
 $EndComp
-Text Notes 725  5675 0    50   ~ 0
+Text Notes 700  5975 0    50   ~ 0
 Place as close as \npossible to pin 4 and 5
-$Comp
-L Device:Resonator_Small Y1
-U 1 1 5D3C125F
-P 3700 5250
-F 0 "Y1" V 3975 5225 50  0000 C CNN
-F 1 "16.0Mhz" V 3900 5225 50  0000 C CNN
-F 2 "CSTNE16M0V530000R0:CSTNE16M0V530000R0" H 3675 5250 50  0001 C CNN
-F 3 "~" H 3675 5250 50  0001 C CNN
-	1    3700 5250
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0107
 U 1 1 5D3C307D
@@ -164,7 +144,8 @@ P 3275 5850
 F 0 "R1" H 3345 5896 50  0000 L CNN
 F 1 "10K" H 3345 5805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3205 5850 50  0001 C CNN
-F 3 "~" H 3275 5850 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2310790.pdf?_ga=2.87708376.1939358490.1564414725-1415930916.1560114588&_gac=1.257050489.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 3275 5850 50  0001 C CNN
+F 4 "https://no.farnell.com/vishay/crcw0402100kfked/res-100k-1-0-063w-0402-thick-film/dp/1469671" H 3275 5850 50  0001 C CNN "Farnell"
 	1    3275 5850
 	1    0    0    -1  
 $EndComp
@@ -183,17 +164,6 @@ F 3 "" H 3275 5700 50  0001 C CNN
 $EndComp
 Text HLabel 3450 6075 2    50   Input ~ 0
 Reset
-$Comp
-L MCU_Microchip_ATmega:ATmega328PB-AU U1
-U 1 1 5D38D7A6
-P 2175 5775
-F 0 "U1" H 2375 4325 50  0000 L CNN
-F 1 "ATmega328PB-AU" H 2625 4250 50  0000 L CNN
-F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2175 5775 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 2175 5775 50  0001 C CNN
-	1    2175 5775
-	1    0    0    -1  
-$EndComp
 $Comp
 L Interface_CAN_LIN:MCP25625-x-SS U2
 U 1 1 5D3DCB03
@@ -430,12 +400,6 @@ F 3 "" H 8050 5075 50  0001 C CNN
 $EndComp
 Text HLabel 10075 5400 2    50   Input ~ 0
 CLK_MCP
-Text HLabel 2775 4575 2    50   Input ~ 0
-CLK_MCP
-Text Notes 3200 4600 0    50   ~ 0
-Close as possible to MCP-chip
-Wire Wire Line
-	3500 5150 3600 5150
 Wire Wire Line
 	3600 5350 3500 5350
 Text Notes 9275 2925 0    79   ~ 16
@@ -452,8 +416,6 @@ Wire Notes Line
 	4500 3925 4500 7525
 Wire Notes Line
 	4500 7525 675  7525
-Wire Notes Line
-	675  7525 675  3900
 Wire Notes Line
 	675  3900 4500 3900
 Wire Notes Line
@@ -714,10 +676,6 @@ Wire Wire Line
 	10175 1450 10175 1375
 Text HLabel 2775 6775 2    50   Input ~ 0
 GREEN_LED
-Text HLabel 2850 4675 2    50   Input ~ 0
-RED_LED
-Text HLabel 2875 4775 2    50   Input ~ 0
-BLUE_LED
 $Comp
 L power:GND #PWR0120
 U 1 1 5D47FCD3
@@ -778,7 +736,7 @@ F 4 "2543551" H 5875 5000 50  0001 C CNN "Farnell"
 $EndComp
 Wire Wire Line
 	5975 5200 5975 5300
-Text Notes 2225 4125 0    50   ~ 0
+Text Notes 950  4075 0    50   ~ 0
 Trenger flere Decupling Caps?
 Text Notes 5650 5275 2    50   ~ 0
 NB! Vgs max: ±10V!\n2.4V zener diode\nfor Vgs -2.4V
@@ -900,8 +858,6 @@ Wire Wire Line
 Wire Wire Line
 	2775 5175 3500 5175
 Wire Wire Line
-	3500 5175 3500 5150
-Wire Wire Line
 	3500 5350 3500 5275
 Wire Wire Line
 	3500 5275 2775 5275
@@ -915,14 +871,6 @@ Wire Wire Line
 	3275 6075 3450 6075
 Text HLabel 5400 1775 0    50   Input ~ 0
 SCK
-Wire Wire Line
-	2775 4675 2850 4675
-Wire Wire Line
-	2775 4775 2875 4775
-Wire Wire Line
-	2775 4875 2850 4875
-Wire Wire Line
-	2775 4975 2850 4975
 Text HLabel 5400 1875 0    50   Input ~ 0
 MISO
 Text HLabel 5400 1975 0    50   Input ~ 0
@@ -936,48 +884,136 @@ GREEN_LED
 Text HLabel 5400 2275 0    50   Input ~ 0
 U-Pin23
 $Comp
-L Device:C_Small C?
+L Device:C_Small C6
 U 1 1 5D42F0C6
-P 1375 4675
-F 0 "C?" H 1283 4629 50  0000 R CNN
-F 1 "100nF" H 1283 4720 50  0000 R CNN
-F 2 "" H 1375 4675 50  0001 C CNN
-F 3 "~" H 1375 4675 50  0001 C CNN
-	1    1375 4675
+P 2850 4225
+F 0 "C6" H 2758 4179 50  0000 R CNN
+F 1 "100nF" H 2758 4270 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2850 4225 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2620235.pdf?_ga=2.91386842.1939358490.1564414725-1415930916.1560114588&_gac=1.191516504.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 2850 4225 50  0001 C CNN
+F 4 "https://no.farnell.com/vishay/vj0402y104kxjcw1bc/cap-0-1-f-16v-10-x7r-0402/dp/2896349?categoryId=700000005423&ddkey=https%3ASearch" H 2850 4225 50  0001 C CNN "Farnell"
+	1    2850 4225
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0126
 U 1 1 5D431A06
-P 1375 4775
-F 0 "#PWR?" H 1375 4525 50  0001 C CNN
-F 1 "GND" H 1380 4602 50  0000 C CNN
-F 2 "" H 1375 4775 50  0001 C CNN
-F 3 "" H 1375 4775 50  0001 C CNN
-	1    1375 4775
+P 2850 4325
+F 0 "#PWR0126" H 2850 4075 50  0001 C CNN
+F 1 "GND" H 2855 4152 50  0000 C CNN
+F 2 "" H 2850 4325 50  0001 C CNN
+F 3 "" H 2850 4325 50  0001 C CNN
+	1    2850 4325
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1575 4575
-Wire Wire Line
-	1575 4575 1375 4575
 $Comp
-L Device:L_Small L?
+L Device:L_Small L1
 U 1 1 5D438986
-P 1625 4275
-F 0 "L?" V 1810 4275 50  0000 C CNN
-F 1 "10uH" V 1719 4275 50  0000 C CNN
-F 2 "" H 1625 4275 50  0001 C CNN
-F 3 "~" H 1625 4275 50  0001 C CNN
-	1    1625 4275
+P 2500 4125
+F 0 "L1" V 2685 4125 50  0000 C CNN
+F 1 "10uH" V 2594 4125 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 2500 4125 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2761194.pdf?_ga=2.11278196.1939358490.1564414725-1415930916.1560114588&_gac=1.224087785.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 2500 4125 50  0001 C CNN
+F 4 "https://no.farnell.com/kemet/l0603b100kpwft/inductor-10uh-0-2a-10-shielded/dp/2846740?sf=471%2C479%2C722&pf=110197189%2C113816526&krypto=wdlyXzEHzoNyTqp1ZIDmJKKAdm%2FeQwQzUV5II%2F3l7MkJePe%2BfKfknh2CgwpSUiLpJgcdHpbeKKQNs27Pjdo2jRSMMeJV4ksckB9bvQgjSQLUlPN%2F8kNke0kS%2F7e9zwpUlVUEfkQZfvA32jXqBxbhPFTsaDHlf4CUrJJagmXsEZ8VqOHUewBKNAKNFz24oGypoERTJ7jtqvZrwEWMlQvWyq%2Bkwmf5TKuw%2FM%2BKpLr8e4C3KwvQzXks9QHUZqIDOurzBMeJRKKPAU2Cop7koNP9ascTJrJphD%2BAV67YaEOEisxTmSVrp%2B67slUES2yOj2r0jG%2FjibhBGhVavKNC56O75cqVYQbb%2FzpPpCew%2FioTTozg98St7w8tL1P3vgWlxcp9fXPTAvmhLZb0EWKDlkueZvXeB%2BDmx2m%2Bgg2NUCj%2B32Vew0Ws%2Fp6lWVNU3dPlVFc63F7hbMfjDTGxBOc%2FTjp%2BEpGgO5R3SgaiwgWL%2FEzcIPG77sO%2BSCxcOvYq855M1ooR73PAfV3tiAYDIUbGLskav3MdSmjuyNqhqqbt%2BOW4eFTyio9upZ2rzvhqMgL3sNOXsdxFy1zMxFPE3g96cCOrVv90G0gTi%2F%2BC%2FdnWQWjMuJxMBWfEU2HHYGwtkhlbKhm5hV9S8DwwUUZcwx1JiZnZamPheGla%2Bghidf0HZ8WWxV%2FZExu%2FEr5aHjgV2fqrh1OcraGwEWPJLI6RdzosXCLSFOhkqDrGV9DxowzbxfooPoxlTzOSyLsnbWIT17I0hyUR%2FUyhF1bZOkUlY5KHF4WC0%2FbJ9%2BzlJwjY4u7qKhK0yzhBuCaJ77Bam5AzM08s%2FpYWr6zrlyjBCSGnVhMN0I8PxJsDcwrWO2QJOr0YaYUp3%2Bd1PSdPLPd0sABhGIfBAK%2FOfum4DMlifVQQts0%2F96wD9fet0PaV%2FTtf9s6BYt5%2FBFQSMob%2BZGKKrgc9rMAJ9wxKDeE2Y889JIh%2B0YE%2BrwzXRKQuGWIafhnxV8wkZxbM58FYqLYx8eZktu%2BsU%2BVMemuzC4EN0HGNIKpgVg363m4p8X0dNuuzk%2BIUSFGfWRr1h6fr%2FqKqcypB9dtMhW7gcYn5zLHTgE%2FS6cDRyKc74Qk7UiFSfB88IVhlUJSnF%2FuykwCYCPaUZpUg948Hp96p63d2FVKvr7vS8st4gcAR82WvRf69x9MDDjo%2BVGlNimRBQ3PVcyLBEQREozehuM5DjpfvSQwnm6bpggqkcR%2BFvgnfPG4tBc09ZsH9XCRRtcz9yyGKh5p6ROjbX%2FluOlj1sBzT%2Fk3eFbosFAMdN8nGXoaNq7xt9rXB7zNydT3EBLm0Xr7weln4LIWcz0Vim8f93f0YRlpFhJsEugj4D%2BeYuea%2FTTldEnDaq5izn%2FOZxOWEFm3669yGUnS9d50oCn2WppYZL%2FQpI8XrdpNJn6ex3fwFa1VpB9EEB%2Btfg3yu5qWJRa1g2zpfctV5F39dz9kDC4IWJm6yR63cTTIe6ZOIb%2BviRyJke4XQ8r2T6s96llOp%2F9udaxLgE4K9RK0w%2B8TtbC4J3wrN%2Bmq%2Bo6gIhGRw04D9dlb%2BGhlObY5LwH4ryr9l4GQ%3D&ddkey=https%3Ano-NO%2FElement14_Norway%2Fw%2Fc%2Fpassive-components%2Finductors%2Fpower-inductors%2Fsmd-power-inductors" V 2500 4125 50  0001 C CNN "Farnell"
+	1    2500 4125
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1725 4275 2175 4275
-Wire Wire Line
-	1525 4275 1375 4275
-Wire Wire Line
-	1375 4275 1375 4575
-Connection ~ 1375 4575
-Text Notes 1300 4050 0    50   ~ 0
+Text Notes 2625 4100 0    50   ~ 0
 AVCC Lavpass filter
+Wire Wire Line
+	2275 4275 2275 4250
+Wire Wire Line
+	2275 4250 2700 4250
+Wire Wire Line
+	2700 4250 2700 4125
+Wire Wire Line
+	2850 4125 2700 4125
+Connection ~ 2700 4125
+Wire Wire Line
+	2700 4125 2600 4125
+Wire Wire Line
+	2400 4125 2175 4125
+Connection ~ 2175 4125
+Wire Wire Line
+	1550 4125 2175 4125
+Text Notes 1500 4575 2    50   ~ 0
+Place as close as \npossible to pin 20
+Connection ~ 1550 4575
+$Comp
+L power:GND #PWR?
+U 1 1 5D434DF4
+P 1550 4875
+F 0 "#PWR?" H 1550 4625 50  0001 C CNN
+F 1 "GND" H 1555 4702 50  0000 C CNN
+F 2 "" H 1550 4875 50  0001 C CNN
+F 3 "" H 1550 4875 50  0001 C CNN
+	1    1550 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D434DE8
+P 1550 4725
+F 0 "C?" H 1350 4825 50  0000 L CNN
+F 1 "100nF" H 1250 4725 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1588 4575 50  0001 C CNN
+F 3 "~" H 1550 4725 50  0001 C CNN
+	1    1550 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4575 1550 4125
+Wire Wire Line
+	1575 4575 1550 4575
+Wire Wire Line
+	2775 4975 2850 4975
+Wire Wire Line
+	2775 4875 2850 4875
+Wire Wire Line
+	2775 4775 2875 4775
+Wire Wire Line
+	2775 4675 2850 4675
+Wire Wire Line
+	3500 5175 3500 5150
+Text HLabel 2875 4775 2    50   Input ~ 0
+BLUE_LED
+Text HLabel 2850 4675 2    50   Input ~ 0
+RED_LED
+Wire Notes Line
+	675  7525 675  3900
+Wire Wire Line
+	3500 5150 3600 5150
+Text Notes 3200 4675 0    50   ~ 0
+Close as possible to MCP-chip.\n    Route on single layer with ground
+Text HLabel 2775 4575 2    50   Input ~ 0
+CLK_MCP
+$Comp
+L MCU_Microchip_ATmega:ATmega328PB-AU U1
+U 1 1 5D38D7A6
+P 2175 5775
+F 0 "U1" H 2375 4325 50  0000 L CNN
+F 1 "ATmega328PB-AU" H 2625 4250 50  0000 L CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2175 5775 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 2175 5775 50  0001 C CNN
+F 4 "https://no.farnell.com/microchip/atmega328pb-au/mcu-8bit-atmega-20mhz-tqfp-32/dp/2523203?st=ATMEGA328p" H 2175 5775 50  0001 C CNN "Farnell"
+	1    2175 5775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Resonator_Small Y1
+U 1 1 5D3C125F
+P 3700 5250
+F 0 "Y1" V 3975 5225 50  0000 C CNN
+F 1 "16.0Mhz" V 3900 5225 50  0000 C CNN
+F 2 "CSTNE16M0V530000R0:CSTNE16M0V530000R0" H 3675 5250 50  0001 C CNN
+F 3 "~" H 3675 5250 50  0001 C CNN
+	1    3700 5250
+	0    -1   -1   0   
+$EndComp
+Text HLabel 2850 4875 2    50   Input ~ 0
+MOSI
+Text HLabel 2850 4975 2    50   Input ~ 0
+MISO
+Text HLabel 2775 5075 2    50   Input ~ 0
+SCK
 $EndSCHEMATC
