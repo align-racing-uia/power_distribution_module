@@ -23,13 +23,12 @@ F 1 "TC2030-MCP-NL" H 2075 1574 50  0000 C CNN
 F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 2925 1500 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/TC2030-MCP-NL_PCB_Footprint_RevD.pdf" H 2925 1400 50  0001 L CNN
 F 4 "TC2030-MCP-NL PCB Footprint (no legs)" H 2925 1300 50  0001 L CNN "Description"
-F 5 "" H 2925 1200 50  0001 L CNN "Height"
-F 6 "Microchip" H 2925 1100 50  0001 L CNN "Manufacturer_Name"
-F 7 "TC2030-MCP-NL" H 2925 1000 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "579-TC2030-MCP-NL" H 2925 900 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-TC2030-MCP-NL" H 2925 800 50  0001 L CNN "Mouser Price/Stock"
-F 10 "8252561" H 2925 700 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/8252561" H 2925 600 50  0001 L CNN "RS Price/Stock"
+F 5 "Microchip" H 2925 1100 50  0001 L CNN "Manufacturer_Name"
+F 6 "TC2030-MCP-NL" H 2925 1000 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "579-TC2030-MCP-NL" H 2925 900 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-TC2030-MCP-NL" H 2925 800 50  0001 L CNN "Mouser Price/Stock"
+F 9 "8252561" H 2925 700 50  0001 L CNN "RS Part Number"
+F 10 "http://uk.rs-online.com/web/p/products/8252561" H 2925 600 50  0001 L CNN "RS Price/Stock"
 	1    1075 1400
 	1    0    0    -1  
 $EndComp
@@ -142,7 +141,7 @@ L Device:R R1
 U 1 1 5D3CAE32
 P 3275 5850
 F 0 "R1" H 3345 5896 50  0000 L CNN
-F 1 "10K" H 3345 5805 50  0000 L CNN
+F 1 "10K Ohm" H 3345 5805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3205 5850 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2310790.pdf?_ga=2.87708376.1939358490.1564414725-1415930916.1560114588&_gac=1.257050489.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 3275 5850 50  0001 C CNN
 F 4 "https://no.farnell.com/vishay/crcw0402100kfked/res-100k-1-0-063w-0402-thick-film/dp/1469671" H 3275 5850 50  0001 C CNN "Farnell"
@@ -202,7 +201,7 @@ L Device:R R7
 U 1 1 5D3B887F
 P 10325 4050
 F 0 "R7" H 10395 4096 50  0000 L CNN
-F 1 "120Ohm" H 10395 4005 50  0000 L CNN
+F 1 "120 Ohm" H 10395 4005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 10255 4050 50  0001 C CNN
 F 3 "~" H 10325 4050 50  0001 C CNN
 	1    10325 4050
@@ -370,7 +369,7 @@ L Device:R R6
 U 1 1 5D3D4504
 P 8475 4700
 F 0 "R6" V 8268 4700 50  0000 C CNN
-F 1 "10KOhm" V 8359 4700 50  0000 C CNN
+F 1 "10K Ohm" V 8359 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 8405 4700 50  0001 C CNN
 F 3 "~" H 8475 4700 50  0001 C CNN
 	1    8475 4700
@@ -538,7 +537,7 @@ U 1 1 5D40B272
 P 5600 1875
 F 0 "P1" H 5650 2792 50  0000 C CNN
 F 1 "Conn_02x15_Odd_Even" H 5650 2701 50  0000 C CNN
-F 2 "Connector_PinSocket_0.8mm:PinSocket_2x15_P0.08mm_Vertical_SMD" H 5600 1875 50  0001 C CNN
+F 2 "SMLP36RGB2W3R:ILWX10SBVFBE" H 5600 1875 50  0001 C CNN
 F 3 "https://docs-emea.rs-online.com/webdocs/0fc1/0900766b80fc155d.pdf" H 5600 1875 50  0001 C CNN
 F 4 "https://no.rs-online.com/web/p/pcb-sockets/0437152/" H 5600 1875 50  0001 C CNN "RS"
 	1    5600 1875
@@ -553,13 +552,12 @@ F 1 "SMLP36RGB2W3R" H 9325 1624 50  0000 C CNN
 F 2 "SMLP36RGB2W3R:SMLP36RGB2W3R" H 9925 1550 50  0001 L CNN
 F 3 "http://www.rohm.com/web/global/datasheet/SMLP36RGB2W(R)" H 9925 1450 50  0001 L CNN
 F 4 "LED,RGB,35/110/35mcd,top-looking,1510 ROHM SMLP36RGB2W3R, SML-P36 Series 3 RGB LED, 475 (Blue) nm, 535 (Green) nm, 629 (Red) nm 6-Pin Milky White" H 9925 1350 50  0001 L CNN "Description"
-F 5 "" H 9925 1250 50  0001 L CNN "Height"
-F 6 "ROHM Semiconductor" H 9925 1150 50  0001 L CNN "Manufacturer_Name"
-F 7 "SMLP36RGB2W3R" H 9925 1050 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "755-SMLP36RGB2W3R" H 9925 950 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=755-SMLP36RGB2W3R" H 9925 850 50  0001 L CNN "Mouser Price/Stock"
-F 10 "1246884" H 9925 750 50  0001 L CNN "RS Part Number"
-F 11 "https://uk.rs-online.com/web/p/products/1246884" H 9925 650 50  0001 L CNN "RS Price/Stock"
+F 5 "ROHM Semiconductor" H 9925 1150 50  0001 L CNN "Manufacturer_Name"
+F 6 "SMLP36RGB2W3R" H 9925 1050 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "755-SMLP36RGB2W3R" H 9925 950 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.com/Search/Refine.aspx?Keyword=755-SMLP36RGB2W3R" H 9925 850 50  0001 L CNN "Mouser Price/Stock"
+F 9 "1246884" H 9925 750 50  0001 L CNN "RS Part Number"
+F 10 "https://uk.rs-online.com/web/p/products/1246884" H 9925 650 50  0001 L CNN "RS Price/Stock"
 	1    8575 1450
 	1    0    0    -1  
 $EndComp

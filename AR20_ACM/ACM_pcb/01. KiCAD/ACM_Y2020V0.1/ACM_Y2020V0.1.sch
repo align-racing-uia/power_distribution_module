@@ -23,13 +23,12 @@ F 1 "TC2030-MCP-NL" H 2075 1574 50  0000 C CNN
 F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 2925 1500 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/TC2030-MCP-NL_PCB_Footprint_RevD.pdf" H 2925 1400 50  0001 L CNN
 F 4 "TC2030-MCP-NL PCB Footprint (no legs)" H 2925 1300 50  0001 L CNN "Description"
-F 5 "" H 2925 1200 50  0001 L CNN "Height"
-F 6 "Microchip" H 2925 1100 50  0001 L CNN "Manufacturer_Name"
-F 7 "TC2030-MCP-NL" H 2925 1000 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "579-TC2030-MCP-NL" H 2925 900 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-TC2030-MCP-NL" H 2925 800 50  0001 L CNN "Mouser Price/Stock"
-F 10 "8252561" H 2925 700 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/8252561" H 2925 600 50  0001 L CNN "RS Price/Stock"
+F 5 "Microchip" H 2925 1100 50  0001 L CNN "Manufacturer_Name"
+F 6 "TC2030-MCP-NL" H 2925 1000 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "579-TC2030-MCP-NL" H 2925 900 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-TC2030-MCP-NL" H 2925 800 50  0001 L CNN "Mouser Price/Stock"
+F 9 "8252561" H 2925 700 50  0001 L CNN "RS Part Number"
+F 10 "http://uk.rs-online.com/web/p/products/8252561" H 2925 600 50  0001 L CNN "RS Price/Stock"
 	1    1075 1400
 	1    0    0    -1  
 $EndComp
@@ -142,7 +141,7 @@ L Device:R R1
 U 1 1 5D3CAE32
 P 3275 5850
 F 0 "R1" H 3345 5896 50  0000 L CNN
-F 1 "10K" H 3345 5805 50  0000 L CNN
+F 1 "10K Ohm" H 3345 5805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3205 5850 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2310790.pdf?_ga=2.87708376.1939358490.1564414725-1415930916.1560114588&_gac=1.257050489.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 3275 5850 50  0001 C CNN
 F 4 "https://no.farnell.com/vishay/crcw0402100kfked/res-100k-1-0-063w-0402-thick-film/dp/1469671" H 3275 5850 50  0001 C CNN "Farnell"
@@ -202,7 +201,7 @@ L Device:R R7
 U 1 1 5D3B887F
 P 10325 4050
 F 0 "R7" H 10395 4096 50  0000 L CNN
-F 1 "120Ohm" H 10395 4005 50  0000 L CNN
+F 1 "120 Ohm" H 10395 4005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 10255 4050 50  0001 C CNN
 F 3 "~" H 10325 4050 50  0001 C CNN
 	1    10325 4050
@@ -370,7 +369,7 @@ L Device:R R6
 U 1 1 5D3D4504
 P 8475 4700
 F 0 "R6" V 8268 4700 50  0000 C CNN
-F 1 "10KOhm" V 8359 4700 50  0000 C CNN
+F 1 "10K Ohm" V 8359 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 8405 4700 50  0001 C CNN
 F 3 "~" H 8475 4700 50  0001 C CNN
 	1    8475 4700
@@ -553,13 +552,12 @@ F 1 "SMLP36RGB2W3R" H 9325 1624 50  0000 C CNN
 F 2 "SMLP36RGB2W3R:SMLP36RGB2W3R" H 9925 1550 50  0001 L CNN
 F 3 "http://www.rohm.com/web/global/datasheet/SMLP36RGB2W(R)" H 9925 1450 50  0001 L CNN
 F 4 "LED,RGB,35/110/35mcd,top-looking,1510 ROHM SMLP36RGB2W3R, SML-P36 Series 3 RGB LED, 475 (Blue) nm, 535 (Green) nm, 629 (Red) nm 6-Pin Milky White" H 9925 1350 50  0001 L CNN "Description"
-F 5 "" H 9925 1250 50  0001 L CNN "Height"
-F 6 "ROHM Semiconductor" H 9925 1150 50  0001 L CNN "Manufacturer_Name"
-F 7 "SMLP36RGB2W3R" H 9925 1050 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "755-SMLP36RGB2W3R" H 9925 950 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=755-SMLP36RGB2W3R" H 9925 850 50  0001 L CNN "Mouser Price/Stock"
-F 10 "1246884" H 9925 750 50  0001 L CNN "RS Part Number"
-F 11 "https://uk.rs-online.com/web/p/products/1246884" H 9925 650 50  0001 L CNN "RS Price/Stock"
+F 5 "ROHM Semiconductor" H 9925 1150 50  0001 L CNN "Manufacturer_Name"
+F 6 "SMLP36RGB2W3R" H 9925 1050 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "755-SMLP36RGB2W3R" H 9925 950 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.com/Search/Refine.aspx?Keyword=755-SMLP36RGB2W3R" H 9925 850 50  0001 L CNN "Mouser Price/Stock"
+F 9 "1246884" H 9925 750 50  0001 L CNN "RS Part Number"
+F 10 "https://uk.rs-online.com/web/p/products/1246884" H 9925 650 50  0001 L CNN "RS Price/Stock"
 	1    8575 1450
 	1    0    0    -1  
 $EndComp
@@ -1020,8 +1018,8 @@ $Comp
 L Device:C C5
 U 1 1 5D471BBC
 P 7225 5950
-F 0 "C5" H 7340 5996 50  0000 L CNN
-F 1 "0.1uF" H 7340 5905 50  0000 L CNN
+F 0 "C5" H 7025 6025 50  0000 L CNN
+F 1 "0.1uF" H 6925 5925 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7263 5800 50  0001 C CNN
 F 3 "~" H 7225 5950 50  0001 C CNN
 	1    7225 5950
@@ -1054,10 +1052,8 @@ Wire Wire Line
 Connection ~ 5800 4950
 Text GLabel 6125 4950 2    50   Input ~ 0
 +12V_Safe
-Text GLabel 5025 5800 0    50   Input ~ 0
+Text GLabel 4625 5725 1    50   Input ~ 0
 +12V_Safe
-Wire Wire Line
-	5025 5800 5175 5800
 Wire Wire Line
 	5175 6025 5175 5800
 Connection ~ 5175 5800
@@ -1137,31 +1133,87 @@ F 3 "" H 7225 6100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7075 5800 7225 5800
-Connection ~ 7475 5800
+Connection ~ 7600 5800
 Wire Wire Line
-	7475 5800 7575 5800
+	7600 5800 7700 5800
 Wire Wire Line
 	6725 6100 6825 6100
 Wire Wire Line
 	6825 6100 6825 6075
 Wire Wire Line
-	6825 6075 7475 6075
-Wire Wire Line
-	7475 6075 7475 5800
+	7600 6075 7600 5800
 Connection ~ 7225 5800
 Wire Wire Line
-	7225 5800 7475 5800
-Wire Wire Line
-	7575 5800 7575 5700
+	7700 5800 7700 5700
 $Comp
 L power:+5V #PWR022
 U 1 1 5D4DE85A
-P 7575 5700
-F 0 "#PWR022" H 7575 5550 50  0001 C CNN
-F 1 "+5V" H 7590 5873 50  0000 C CNN
-F 2 "" H 7575 5700 50  0001 C CNN
-F 3 "" H 7575 5700 50  0001 C CNN
-	1    7575 5700
+P 7700 5700
+F 0 "#PWR022" H 7700 5550 50  0001 C CNN
+F 1 "+5V" H 7715 5873 50  0000 C CNN
+F 2 "" H 7700 5700 50  0001 C CNN
+F 3 "" H 7700 5700 50  0001 C CNN
+	1    7700 5700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C11
+U 1 1 5D4736E4
+P 7450 5950
+F 0 "C11" H 7565 5996 50  0000 L CNN
+F 1 "10uF" H 7565 5905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7488 5800 50  0001 C CNN
+F 3 "~" H 7450 5950 50  0001 C CNN
+	1    7450 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7225 5800 7450 5800
+Wire Wire Line
+	7450 5800 7600 5800
+Connection ~ 7450 5800
+$Comp
+L power:GND #PWR0101
+U 1 1 5D486DC3
+P 7450 6100
+F 0 "#PWR0101" H 7450 5850 50  0001 C CNN
+F 1 "GND" H 7455 5927 50  0000 C CNN
+F 2 "" H 7450 6100 50  0001 C CNN
+F 3 "" H 7450 6100 50  0001 C CNN
+	1    7450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5D487807
+P 4750 6200
+F 0 "C10" H 4865 6246 50  0000 L CNN
+F 1 "10uF" H 4865 6155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4788 6050 50  0001 C CNN
+F 3 "~" H 4750 6200 50  0001 C CNN
+	1    4750 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 5800 4625 5725
+Wire Wire Line
+	4625 5800 4750 5800
+Wire Wire Line
+	4750 6050 4750 5800
+Connection ~ 4750 5800
+Wire Wire Line
+	4750 5800 5175 5800
+$Comp
+L power:GND #PWR0102
+U 1 1 5D49183D
+P 4750 6350
+F 0 "#PWR0102" H 4750 6100 50  0001 C CNN
+F 1 "GND" H 4755 6177 50  0000 C CNN
+F 2 "" H 4750 6350 50  0001 C CNN
+F 3 "" H 4750 6350 50  0001 C CNN
+	1    4750 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6825 6075 7600 6075
 $EndSCHEMATC
