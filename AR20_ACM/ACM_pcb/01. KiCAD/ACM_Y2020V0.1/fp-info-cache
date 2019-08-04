@@ -1,4 +1,4 @@
-15979867303404432
+15982996998961019
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49888,6 +49888,13 @@ mounting hole 8.4mm m8
 0
 9
 1
+NCV890430MW50TXG
+SON65P300X300X100-9N
+NCV890430MW50TXG
+Integrated Circuit
+0
+9
+9
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads
@@ -65589,6 +65596,13 @@ LEM Hall Effect Voltage transducer
 0
 5
 5
+SMLP36RGB2W3R
+ILWX10SBVFBE
+IL-WX-10SB-VF-BE
+Connector
+0
+30
+30
 SMLP36RGB2W3R
 SMLP36RGB2W3R
 

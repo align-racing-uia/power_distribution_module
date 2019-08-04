@@ -32,3 +32,11 @@
 - Added DC/DC converter
 - Changed footprint of connector
 - Added LP-filter to Atmega Avcc (Datasheet page 348)
+
+**03.08.2019:**
+- Changed folder structure
+- Added mounting hole in schematics
+- Removed LDO
+- Added 5V switching regulator
+- Changed Connector footprint
+- Added track and via info from JLCPCB (2-Layers)
