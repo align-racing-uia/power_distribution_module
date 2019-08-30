@@ -1,4 +1,51 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Bosch~CJ125:Bosch_CJ125_SOIC24 U?
+U 1 1 5D697516
+P 3400 3050
+F 0 "U?" H 3375 3825 50  0000 C CNN
+F 1 "Bosch_CJ125_SOIC24" H 3375 3734 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 3400 2300 50  0001 C CNN
+F 3 "" H 3350 3150 50  0001 C CNN
+	1    3400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MIC_LDO:MIC5239-5.0BS LDO?
+U 1 1 5D6A0E74
+P 7700 2800
+F 0 "LDO?" H 7675 3325 50  0000 C CNN
+F 1 "MIC5239-5.0BS" H 7675 3234 50  0000 C CNN
+F 2 "" H 7600 3100 50  0001 C CNN
+F 3 "" H 7700 2800 50  0001 C CNN
+	1    7700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP_MOSFET:MCP14E10 MOSFET?
+U 1 1 5D6A3E29
+P 5500 2800
+F 0 "MOSFET?" H 5500 3325 50  0000 C CNN
+F 1 "MCP14E10" H 5500 3234 50  0000 C CNN
+F 2 "" H 5500 2800 50  0001 C CNN
+F 3 "" H 5500 2800 50  0001 C CNN
+	1    5500 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 7300 2500 0    50   Input ~ 0
+12V_SUPPLY
 $EndSCHEMATC
