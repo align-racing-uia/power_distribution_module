@@ -18801,6 +18801,125 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="1-776267-1">
+<description>&lt;AMP - TE CONNECTIVITY - 1-776267-1 - CONNECTOR, HEADER, THT, R/A, 4MM, 14WAY&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="17762671">
+<description>&lt;b&gt;1-776267-1-2&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.85" diameter="2.775"/>
+<pad name="2" x="4" y="0" drill="1.85" diameter="2.775"/>
+<pad name="3" x="8" y="0" drill="1.85" diameter="2.775"/>
+<pad name="4" x="12" y="0" drill="1.85" diameter="2.775"/>
+<pad name="5" x="16" y="0" drill="1.85" diameter="2.775"/>
+<pad name="6" x="2" y="-4" drill="1.85" diameter="2.775"/>
+<pad name="7" x="6" y="-4" drill="1.85" diameter="2.775"/>
+<pad name="8" x="10" y="-4" drill="1.85" diameter="2.775"/>
+<pad name="9" x="14" y="-4" drill="1.85" diameter="2.775"/>
+<pad name="10" x="0" y="-8" drill="1.85" diameter="2.775"/>
+<pad name="11" x="4" y="-8" drill="1.85" diameter="2.775"/>
+<pad name="12" x="8" y="-8" drill="1.85" diameter="2.775"/>
+<pad name="13" x="12" y="-8" drill="1.85" diameter="2.775"/>
+<pad name="14" x="16" y="-8" drill="1.85" diameter="2.775"/>
+<pad name="MH1" x="-6.5" y="-4.5" drill="2.93" diameter="4.395"/>
+<pad name="MH2" x="22.5" y="-4.5" drill="2.93" diameter="4.395"/>
+<text x="8" y="-16.525" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="8" y="-16.525" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-16.4" y1="2.05" x2="32.4" y2="2.05" width="0.2" layer="51"/>
+<wire x1="32.4" y1="2.05" x2="32.4" y2="-15.8" width="0.2" layer="51"/>
+<wire x1="32.4" y1="-15.8" x2="-16.4" y2="-15.8" width="0.2" layer="51"/>
+<wire x1="-16.4" y1="-15.8" x2="-16.4" y2="2.05" width="0.2" layer="51"/>
+<wire x1="-7.7" y1="-15.8" x2="23.7" y2="-15.8" width="0.2" layer="51"/>
+<wire x1="23.7" y1="-15.8" x2="23.7" y2="-35.1" width="0.2" layer="51"/>
+<wire x1="23.7" y1="-35.1" x2="-7.7" y2="-35.1" width="0.2" layer="51"/>
+<wire x1="-7.7" y1="-35.1" x2="-7.7" y2="-15.8" width="0.2" layer="51"/>
+<wire x1="-16.4" y1="2.05" x2="32.4" y2="2.05" width="0.1" layer="21"/>
+<wire x1="32.4" y1="2.05" x2="32.4" y2="-15.8" width="0.1" layer="21"/>
+<wire x1="32.4" y1="-15.8" x2="-16.4" y2="-15.8" width="0.1" layer="21"/>
+<wire x1="-16.4" y1="-15.8" x2="-16.4" y2="2.05" width="0.1" layer="21"/>
+<wire x1="-17.4" y1="3.05" x2="33.4" y2="3.05" width="0.1" layer="51"/>
+<wire x1="33.4" y1="3.05" x2="33.4" y2="-36.1" width="0.1" layer="51"/>
+<wire x1="33.4" y1="-36.1" x2="-17.4" y2="-36.1" width="0.1" layer="51"/>
+<wire x1="-17.4" y1="-36.1" x2="-17.4" y2="3.05" width="0.1" layer="51"/>
+<wire x1="0" y1="2.5" x2="0" y2="2.5" width="0.2" layer="21"/>
+<wire x1="0" y1="2.5" x2="0" y2="2.7" width="0.2" layer="21" curve="180"/>
+<wire x1="0" y1="2.7" x2="0" y2="2.7" width="0.2" layer="21"/>
+<wire x1="0" y1="2.7" x2="0" y2="2.5" width="0.2" layer="21" curve="180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="1-776267-1">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-20.32" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-20.32" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="3" x="0" y="-2.54" length="middle"/>
+<pin name="5" x="0" y="-5.08" length="middle"/>
+<pin name="7" x="0" y="-7.62" length="middle"/>
+<pin name="9" x="0" y="-10.16" length="middle"/>
+<pin name="11" x="0" y="-12.7" length="middle"/>
+<pin name="13" x="0" y="-15.24" length="middle"/>
+<pin name="MH1" x="0" y="-17.78" length="middle"/>
+<pin name="2" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="4" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="6" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="8" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="10" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="12" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="14" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="MH2" x="25.4" y="-17.78" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1-776267-1" prefix="J">
+<description>&lt;b&gt;AMP - TE CONNECTIVITY - 1-776267-1 - CONNECTOR, HEADER, THT, R/A, 4MM, 14WAY&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer Drawing776267B7pdfEnglishENG_CD_776267_B7.pdf1-776267-1"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="1-776267-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="17762671">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="MH1" pad="MH1"/>
+<connect gate="G$1" pin="MH2" pad="MH2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ALLIED_NUMBER" value="70284283" constant="no"/>
+<attribute name="ALLIED_PRICE-STOCK" value="https://www.alliedelec.com/teconnectivity-1-776267-1/70284283/" constant="no"/>
+<attribute name="DESCRIPTION" value="AMP - TE CONNECTIVITY - 1-776267-1 - CONNECTOR, HEADER, THT, R/A, 4MM, 14WAY" constant="no"/>
+<attribute name="HEIGHT" value="32.3mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="TE Connectivity" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1-776267-1" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="571-1-776267-1" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=571-1-776267-1" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -18851,6 +18970,7 @@ Source: www.kingbright.com</description>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10 kΩ"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10 kΩ"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="J1" library="1-776267-1" deviceset="1-776267-1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18990,6 +19110,10 @@ Source: www.kingbright.com</description>
 </instance>
 <instance part="GND12" gate="1" x="-2.54" y="80.264">
 <attribute name="VALUE" x="-5.08" y="77.724" size="1.778" layer="96"/>
+</instance>
+<instance part="J1" gate="G$1" x="-226.06" y="-48.26">
+<attribute name="NAME" x="-204.47" y="-40.64" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="-204.47" y="-43.18" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
