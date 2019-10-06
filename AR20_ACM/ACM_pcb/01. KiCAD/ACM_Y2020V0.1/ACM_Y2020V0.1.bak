@@ -84,8 +84,6 @@ F 3 "" H 2175 4125 50  0001 C CNN
 	1    2175 4125
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2175 4125 2175 4275
 $Comp
 L Device:C C1
 U 1 1 5D3B17F8
@@ -148,8 +146,6 @@ F 4 "https://no.farnell.com/vishay/crcw0402100kfked/res-100k-1-0-063w-0402-thick
 	1    3275 5850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2775 6075 3275 6075
 $Comp
 L power:+5V #PWR09
 U 1 1 5D3CE356
@@ -174,7 +170,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005282B.pdf" H 9475 5500 
 	1    9475 4900
 	1    0    0    -1  
 $EndComp
-Text HLabel 2775 6975 2    50   Input ~ 0
+Text HLabel 2850 6975 2    50   Input ~ 0
 CAN_CS
 Text HLabel 8875 4500 0    50   Input ~ 0
 CAN_CS
@@ -349,7 +345,7 @@ F 3 "" H 9675 6000 50  0001 C CNN
 	1    9675 6000
 	1    0    0    -1  
 $EndComp
-Text HLabel 2775 6475 2    50   Input ~ 0
+Text HLabel 2850 6475 2    50   Input ~ 0
 CAN_INT
 Text HLabel 8875 5600 0    50   Input ~ 0
 CAN_INT
@@ -635,7 +631,7 @@ Wire Wire Line
 Connection ~ 10175 1450
 Wire Wire Line
 	10175 1450 10175 1375
-Text HLabel 2775 6775 2    50   Input ~ 0
+Text HLabel 2850 6775 2    50   Input ~ 0
 GREEN_LED
 $Comp
 L power:GND #PWR019
@@ -762,36 +758,33 @@ Text HLabel 5900 1375 2    50   Input ~ 0
 U-Pin6
 Wire Wire Line
 	6025 1875 6425 1875
-Text HLabel 1575 6275 0    50   Input ~ 0
+Text HLabel 1400 6300 0    50   Input ~ 0
 U-Pin24
-Text HLabel 1575 6375 0    50   Input ~ 0
+Text HLabel 1400 6400 0    50   Input ~ 0
 U-Pin30
-Text HLabel 1575 6475 0    50   Input ~ 0
+Text HLabel 1400 6500 0    50   Input ~ 0
 U-Pin11
-Text HLabel 1575 6575 0    50   Input ~ 0
+Text HLabel 1400 6600 0    50   Input ~ 0
 U-Pin9
-Text HLabel 2775 6675 2    50   Input ~ 0
+Text HLabel 2850 6675 2    50   Input ~ 0
 U-Pin22
-Text HLabel 2775 6575 2    50   Input ~ 0
+Text HLabel 2850 6575 2    50   Input ~ 0
 U-Pin20
-Text HLabel 2775 6375 2    50   Input ~ 0
+Text HLabel 2850 6375 2    50   Input ~ 0
 U-Pin14
-Text HLabel 2775 6275 2    50   Input ~ 0
+Text HLabel 2850 6275 2    50   Input ~ 0
 U-Pin12
-Connection ~ 3275 6075
 Wire Wire Line
 	3275 6075 3275 6000
-Text HLabel 2775 5975 2    50   Input ~ 0
+Text HLabel 2825 5975 2    50   Input ~ 0
 U-Pin8
-Text HLabel 2775 5875 2    50   Input ~ 0
+Text HLabel 2825 5875 2    50   Input ~ 0
 U-Pin6
-Text HLabel 2775 5775 2    50   Input ~ 0
+Text HLabel 2825 5775 2    50   Input ~ 0
 U-Pin4
-Text HLabel 2775 5675 2    50   Input ~ 0
+Text HLabel 2825 5675 2    50   Input ~ 0
 U-Pin2
-Text HLabel 2775 5575 2    50   Input ~ 0
-U-Pin5
-Text HLabel 2775 5475 2    50   Input ~ 0
+Text HLabel 2825 5475 2    50   Input ~ 0
 U-Pin7
 Text HLabel 10775 3900 2    50   Input ~ 0
 U-Pin3
@@ -819,7 +812,7 @@ Wire Wire Line
 	3500 5350 3500 5275
 Wire Wire Line
 	3500 5275 2775 5275
-Text HLabel 2775 6875 2    50   Input ~ 0
+Text HLabel 2850 6875 2    50   Input ~ 0
 U-Pin23
 Text HLabel 5900 1575 2    50   Input ~ 0
 Reset
@@ -879,12 +872,6 @@ $EndComp
 Text Notes 2625 4100 0    50   ~ 0
 AVCC Lavpass filter
 Wire Wire Line
-	2275 4275 2275 4250
-Wire Wire Line
-	2275 4250 2700 4250
-Wire Wire Line
-	2700 4250 2700 4125
-Wire Wire Line
 	2850 4125 2700 4125
 Connection ~ 2700 4125
 Wire Wire Line
@@ -892,71 +879,44 @@ Wire Wire Line
 Wire Wire Line
 	2400 4125 2175 4125
 Connection ~ 2175 4125
-Wire Wire Line
-	1550 4125 2175 4125
-Text Notes 1500 4575 2    50   ~ 0
+Text Notes 1150 4600 2    50   ~ 0
 Place as close as \npossible to pin 20
-Connection ~ 1550 4575
 $Comp
 L power:GND #PWR03
 U 1 1 5D434DF4
-P 1550 4875
-F 0 "#PWR03" H 1550 4625 50  0001 C CNN
-F 1 "GND" H 1555 4702 50  0000 C CNN
-F 2 "" H 1550 4875 50  0001 C CNN
-F 3 "" H 1550 4875 50  0001 C CNN
-	1    1550 4875
+P 1300 4925
+F 0 "#PWR03" H 1300 4675 50  0001 C CNN
+F 1 "GND" H 1305 4752 50  0000 C CNN
+F 2 "" H 1300 4925 50  0001 C CNN
+F 3 "" H 1300 4925 50  0001 C CNN
+	1    1300 4925
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C2
 U 1 1 5D434DE8
-P 1550 4725
-F 0 "C2" H 1350 4825 50  0000 L CNN
-F 1 "0.1uF" H 1250 4725 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1588 4575 50  0001 C CNN
-F 3 "~" H 1550 4725 50  0001 C CNN
-	1    1550 4725
+P 1300 4775
+F 0 "C2" H 1100 4875 50  0000 L CNN
+F 1 "0.1uF" H 1000 4775 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1338 4625 50  0001 C CNN
+F 3 "~" H 1300 4775 50  0001 C CNN
+	1    1300 4775
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 4575 1550 4125
-Wire Wire Line
-	1575 4575 1550 4575
-Wire Wire Line
-	2775 4975 2850 4975
-Wire Wire Line
-	2775 4875 2850 4875
-Wire Wire Line
-	2775 4775 2875 4775
-Wire Wire Line
-	2775 4675 2850 4675
-Wire Wire Line
 	3500 5175 3500 5150
-Text HLabel 2875 4775 2    50   Input ~ 0
+Text HLabel 2775 4775 2    50   Input ~ 0
 BLUE_LED
-Text HLabel 2850 4675 2    50   Input ~ 0
+Text HLabel 2775 4675 2    50   Input ~ 0
 RED_LED
 Wire Notes Line
 	675  7525 675  3900
 Wire Wire Line
 	3500 5150 3600 5150
-Text Notes 3200 4675 0    50   ~ 0
+Text Notes 3150 4600 0    50   ~ 0
 Close as possible to MCP-chip.\n    Route on single layer with ground
 Text HLabel 2775 4575 2    50   Input ~ 0
 CLK_MCP
-$Comp
-L MCU_Microchip_ATmega:ATmega328PB-AU U1
-U 1 1 5D38D7A6
-P 2175 5775
-F 0 "U1" H 2375 4325 50  0000 L CNN
-F 1 "ATmega328PB-AU" H 2625 4250 50  0000 L CNN
-F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2175 5775 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 2175 5775 50  0001 C CNN
-F 4 "https://no.farnell.com/microchip/atmega328pb-au/mcu-8bit-atmega-20mhz-tqfp-32/dp/2523203?st=ATMEGA328p" H 2175 5775 50  0001 C CNN "Farnell"
-	1    2175 5775
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Resonator_Small Y1
 U 1 1 5D3C125F
@@ -968,9 +928,9 @@ F 3 "~" H 3675 5250 50  0001 C CNN
 	1    3700 5250
 	0    -1   -1   0   
 $EndComp
-Text HLabel 2850 4875 2    50   Input ~ 0
+Text HLabel 2775 4875 2    50   Input ~ 0
 MOSI
-Text HLabel 2850 4975 2    50   Input ~ 0
+Text HLabel 2775 4975 2    50   Input ~ 0
 MISO
 Text HLabel 2775 5075 2    50   Input ~ 0
 SCK
@@ -1216,4 +1176,37 @@ F 3 "" H 4750 6350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6825 6075 7600 6075
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U1
+U 1 1 5D9A1492
+P 2175 5775
+F 0 "U1" H 2575 4300 50  0000 C CNN
+F 1 "ATmega328P-AU" H 2575 4200 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2175 5775 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 2175 5775 50  0001 C CNN
+	1    2175 5775
+	1    0    0    -1  
+$EndComp
+Text HLabel 2825 5575 2    50   Input ~ 0
+U-Pin5
+Wire Wire Line
+	2175 4100 2175 4125
+Wire Wire Line
+	2175 4125 2175 4275
+Wire Wire Line
+	2275 4275 2700 4275
+Wire Wire Line
+	2700 4125 2700 4275
+Wire Wire Line
+	2775 6075 3275 6075
+Connection ~ 3275 6075
+Wire Wire Line
+	1575 4575 1300 4575
+Wire Wire Line
+	1300 4575 1300 4625
+Wire Wire Line
+	1300 4575 1300 4125
+Wire Wire Line
+	1300 4125 2175 4125
+Connection ~ 1300 4575
 $EndSCHEMATC

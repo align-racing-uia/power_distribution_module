@@ -170,7 +170,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005282B.pdf" H 9475 5500 
 	1    9475 4900
 	1    0    0    -1  
 $EndComp
-Text HLabel 2850 6975 2    50   Input ~ 0
+Text HLabel 2775 6975 2    50   Input ~ 0
 CAN_CS
 Text HLabel 8875 4500 0    50   Input ~ 0
 CAN_CS
@@ -345,7 +345,7 @@ F 3 "" H 9675 6000 50  0001 C CNN
 	1    9675 6000
 	1    0    0    -1  
 $EndComp
-Text HLabel 2850 6475 2    50   Input ~ 0
+Text HLabel 2775 6475 2    50   Input ~ 0
 CAN_INT
 Text HLabel 8875 5600 0    50   Input ~ 0
 CAN_INT
@@ -631,7 +631,7 @@ Wire Wire Line
 Connection ~ 10175 1450
 Wire Wire Line
 	10175 1450 10175 1375
-Text HLabel 2850 6775 2    50   Input ~ 0
+Text HLabel 2775 6775 2    50   Input ~ 0
 GREEN_LED
 $Comp
 L power:GND #PWR019
@@ -766,25 +766,25 @@ Text HLabel 1400 6500 0    50   Input ~ 0
 U-Pin11
 Text HLabel 1400 6600 0    50   Input ~ 0
 U-Pin9
-Text HLabel 2850 6675 2    50   Input ~ 0
+Text HLabel 2775 6675 2    50   Input ~ 0
 U-Pin22
-Text HLabel 2850 6575 2    50   Input ~ 0
+Text HLabel 2775 6575 2    50   Input ~ 0
 U-Pin20
-Text HLabel 2850 6375 2    50   Input ~ 0
+Text HLabel 2775 6375 2    50   Input ~ 0
 U-Pin14
-Text HLabel 2850 6275 2    50   Input ~ 0
+Text HLabel 2775 6275 2    50   Input ~ 0
 U-Pin12
 Wire Wire Line
 	3275 6075 3275 6000
-Text HLabel 2825 5975 2    50   Input ~ 0
+Text HLabel 2775 5975 2    50   Input ~ 0
 U-Pin8
-Text HLabel 2825 5875 2    50   Input ~ 0
+Text HLabel 2775 5875 2    50   Input ~ 0
 U-Pin6
-Text HLabel 2825 5775 2    50   Input ~ 0
+Text HLabel 2775 5775 2    50   Input ~ 0
 U-Pin4
-Text HLabel 2825 5675 2    50   Input ~ 0
+Text HLabel 2775 5675 2    50   Input ~ 0
 U-Pin2
-Text HLabel 2825 5475 2    50   Input ~ 0
+Text HLabel 2775 5475 2    50   Input ~ 0
 U-Pin7
 Text HLabel 10775 3900 2    50   Input ~ 0
 U-Pin3
@@ -812,7 +812,7 @@ Wire Wire Line
 	3500 5350 3500 5275
 Wire Wire Line
 	3500 5275 2775 5275
-Text HLabel 2850 6875 2    50   Input ~ 0
+Text HLabel 2775 6875 2    50   Input ~ 0
 U-Pin23
 Text HLabel 5900 1575 2    50   Input ~ 0
 Reset
@@ -905,9 +905,9 @@ F 3 "~" H 1300 4775 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3500 5175 3500 5150
-Text HLabel 2875 4775 2    50   Input ~ 0
+Text HLabel 2775 4775 2    50   Input ~ 0
 BLUE_LED
-Text HLabel 2850 4675 2    50   Input ~ 0
+Text HLabel 2775 4675 2    50   Input ~ 0
 RED_LED
 Wire Notes Line
 	675  7525 675  3900
@@ -915,7 +915,7 @@ Wire Wire Line
 	3500 5150 3600 5150
 Text Notes 3150 4600 0    50   ~ 0
 Close as possible to MCP-chip.\n    Route on single layer with ground
-Text HLabel 2850 4575 2    50   Input ~ 0
+Text HLabel 2775 4575 2    50   Input ~ 0
 CLK_MCP
 $Comp
 L Device:Resonator_Small Y1
@@ -928,11 +928,11 @@ F 3 "~" H 3675 5250 50  0001 C CNN
 	1    3700 5250
 	0    -1   -1   0   
 $EndComp
-Text HLabel 2850 4875 2    50   Input ~ 0
+Text HLabel 2775 4875 2    50   Input ~ 0
 MOSI
-Text HLabel 2850 4975 2    50   Input ~ 0
+Text HLabel 2775 4975 2    50   Input ~ 0
 MISO
-Text HLabel 2825 5075 2    50   Input ~ 0
+Text HLabel 2775 5075 2    50   Input ~ 0
 SCK
 $Comp
 L Mechanical:MountingHole H1
@@ -1177,17 +1177,17 @@ $EndComp
 Wire Wire Line
 	6825 6075 7600 6075
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-AU U?
+L MCU_Microchip_ATmega:ATmega328P-AU U1
 U 1 1 5D9A1492
 P 2175 5775
-F 0 "U?" H 2575 4300 50  0000 C CNN
+F 0 "U1" H 2575 4300 50  0000 C CNN
 F 1 "ATmega328P-AU" H 2575 4200 50  0000 C CNN
 F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2175 5775 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 2175 5775 50  0001 C CNN
 	1    2175 5775
 	1    0    0    -1  
 $EndComp
-Text HLabel 2825 5575 2    50   Input ~ 0
+Text HLabel 2775 5575 2    50   Input ~ 0
 U-Pin5
 Wire Wire Line
 	2175 4100 2175 4125
