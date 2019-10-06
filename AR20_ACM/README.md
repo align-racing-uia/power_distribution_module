@@ -48,6 +48,8 @@
 
 **06.10.2019:**
 - Moved resistors and capacitors away from microcontrollers
+- Changed from Atmega328PB to Atmega328P (NB! Need to check circuit PWM and such)
+- Disconnected all output pins on the Atmega328P
 
 ### ACM 2019 - Documentation
 
