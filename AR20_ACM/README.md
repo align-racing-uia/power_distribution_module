@@ -46,6 +46,9 @@
 - Added 2x 10uF input Capacitor for regulator
 - Moved documentation to main
 
+**06.10.2019:**
+- Moved resistors and capacitors away from microcontrollers
+
 ### ACM 2019 - Documentation
 
 List of possible imporvements for ACM 2019
