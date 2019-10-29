@@ -9,8 +9,9 @@ static THD_FUNCTION(tempThread, arg) {
     //Like void main()
     while (true) {
         digitalWrite(LED_BUILTIN, HIGH);
-        chThdSleepMilliseconds(200);
+        chThdSleepMilliseconds(100);
         digitalWrite(LED_BUILTIN, LOW);
         chThdSleepMilliseconds(200);
     }
 }
+
