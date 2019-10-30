@@ -17,13 +17,13 @@ $EndDescr
 Wire Wire Line
 	5450 1300 5050 1300
 $Sheet
-S 7050 2100 700  700 
+S 1350 2450 700  700 
 U 5DA8920B
 F0 "PhaseDirect" 50
 F1 "PhaseDirect.sch" 50
 $EndSheet
 $Sheet
-S 7050 1200 700  700 
+S 1350 3650 700  700 
 U 5DA89204
 F0 "PhaseGear" 50
 F1 "PhaseGear.sch" 50
