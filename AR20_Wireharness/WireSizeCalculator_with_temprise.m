@@ -1,7 +1,21 @@
 close all; clear all; clc;
 
-% Wire size calcuator with temperature rise
-% All rights reserved by Simon Nylund
+%{
+Wire size calcuator with temperature rise
+The temperature rise need to be calaculated with power 
+All rights reserved by Simon Nylund
+%}
+
+%{
+TO DO:
+
+Add Thermal radiation formula for wire
+
+Incoperate radiation power formula:
+https://en.wikipedia.org/wiki/Thermal_radiation#Radiative_power
+
+
+%}
 
 % Variables:
 p = 1.68E-8; % Resistivity of material in ? * m
