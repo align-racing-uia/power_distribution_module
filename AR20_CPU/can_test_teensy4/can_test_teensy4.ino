@@ -4,7 +4,7 @@ FlexCAN_T4<CAN1, RX_SIZE_256, TX_SIZE_16> FD;
 
 void setup(void) {
   Serial.begin(9600); delay(500);
-  pinMode(6, OUTPUT); digitalWrite(6, LOW);
+ // pinMode(6, OUTPUT); digitalWrite(6, LOW);
   
 
 FD.begin();
@@ -20,9 +20,9 @@ void loop() {
   FD.write(msg);
   
   if ( FD.read(msg) ) {
-    Serial.println("MB: "); Serial.print(msg.mb);
+    //Serial.println("MB: "); Serial.print(msg.mb);
     Serial.print("  ID: 0x"); Serial.print(msg.id, HEX );
-    Serial.print("  EXT: "); Serial.print(msg.flags.extended );
+    //Serial.print("  EXT: "); Serial.print(msg.flags.extended );
     Serial.print("  LEN: "); Serial.print(msg.len);
     Serial.print(" DATA: ");
     for ( uint8_t i = 0; i < 8; i++ ) {
