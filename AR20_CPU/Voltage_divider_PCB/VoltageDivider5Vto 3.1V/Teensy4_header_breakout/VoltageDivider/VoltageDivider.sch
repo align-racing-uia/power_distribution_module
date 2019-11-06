@@ -481,13 +481,13 @@ Wire Notes Line
 	9600 5250 8750 5250
 Wire Notes Line
 	8750 5250 8750 3250
-Text Notes 5450 4000 1    50   ~ 0
+Text Notes 5350 4000 1    50   ~ 0
 From sensor
-Text Notes 5400 1750 1    50   ~ 0
+Text Notes 5350 1750 1    50   ~ 0
 From sensor
-Text Notes 8900 1700 1    50   ~ 0
+Text Notes 8850 1700 1    50   ~ 0
 From sensor
-Text Notes 8900 4050 1    50   ~ 0
+Text Notes 8850 4050 1    50   ~ 0
 From sensor
 Text Notes 8300 2800 1    50   ~ 0
 To analog pin
@@ -521,4 +521,140 @@ F 3 "" H 6150 3150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6300 3150 6150 3150
+Text GLabel 5450 3900 1    50   Input ~ 0
+Sensor_Input_2
+Wire Wire Line
+	5450 4000 5450 3900
+Text GLabel 5400 1650 1    50   Input ~ 0
+Sensor_Input_1
+Wire Wire Line
+	5400 1750 5400 1650
+Text GLabel 8900 1600 1    50   Input ~ 0
+Sensor_Input_4
+Wire Wire Line
+	8900 1700 8900 1600
+Text GLabel 8900 3950 1    50   Input ~ 0
+Sensor_Input_3
+Wire Wire Line
+	8900 4050 8900 3950
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5DC33DC9
+P 3200 2000
+F 0 "TP1" H 3258 2118 50  0000 L CNN
+F 1 "TestPoint" V 3200 2200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3400 2000 50  0001 C CNN
+F 3 "~" H 3400 2000 50  0001 C CNN
+	1    3200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5DC37FBD
+P 3450 2000
+F 0 "TP2" H 3508 2118 50  0000 L CNN
+F 1 "TestPoint" V 3450 2200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3650 2000 50  0001 C CNN
+F 3 "~" H 3650 2000 50  0001 C CNN
+	1    3450 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5DC386E4
+P 3700 2000
+F 0 "TP3" H 3758 2118 50  0000 L CNN
+F 1 "TestPoint" V 3700 2200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3900 2000 50  0001 C CNN
+F 3 "~" H 3900 2000 50  0001 C CNN
+	1    3700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5DC386EA
+P 3950 2000
+F 0 "TP4" H 4008 2118 50  0000 L CNN
+F 1 "TestPoint" V 3950 2200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4150 2000 50  0001 C CNN
+F 3 "~" H 4150 2000 50  0001 C CNN
+	1    3950 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5DC3ACBE
+P 4200 2000
+F 0 "TP5" H 4258 2118 50  0000 L CNN
+F 1 "TestPoint" V 4200 2200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4400 2000 50  0001 C CNN
+F 3 "~" H 4400 2000 50  0001 C CNN
+	1    4200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5DC3ACC4
+P 4450 2000
+F 0 "TP6" H 4508 2118 50  0000 L CNN
+F 1 "TestPoint" V 4450 2200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4650 2000 50  0001 C CNN
+F 3 "~" H 4650 2000 50  0001 C CNN
+	1    4450 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5DC3ACCA
+P 4700 2000
+F 0 "TP7" H 4758 2118 50  0000 L CNN
+F 1 "TestPoint" V 4700 2200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4900 2000 50  0001 C CNN
+F 3 "~" H 4900 2000 50  0001 C CNN
+	1    4700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5DC3ACD0
+P 4950 2000
+F 0 "TP8" H 5008 2118 50  0000 L CNN
+F 1 "TestPoint" V 4950 2200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5150 2000 50  0001 C CNN
+F 3 "~" H 5150 2000 50  0001 C CNN
+	1    4950 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3200 2100 3    50   Input ~ 0
+Sensor_Input_1
+Wire Wire Line
+	3200 2000 3200 2100
+Text GLabel 3450 2100 3    50   Input ~ 0
+Sensor_Input_2
+Wire Wire Line
+	3450 2000 3450 2100
+Text GLabel 3700 2100 3    50   Input ~ 0
+Sensor_Input_3
+Wire Wire Line
+	3700 2000 3700 2100
+Text GLabel 3950 2100 3    50   Input ~ 0
+Sensor_Input_4
+Wire Wire Line
+	3950 2000 3950 2100
+Text GLabel 4200 2100 3    50   Input ~ 0
+Out1
+Wire Wire Line
+	4200 2000 4200 2100
+Text GLabel 4450 2100 3    50   Input ~ 0
+Out2
+Wire Wire Line
+	4450 2000 4450 2100
+Text GLabel 4700 2100 3    50   Input ~ 0
+Out3
+Wire Wire Line
+	4700 2000 4700 2100
+Text GLabel 4950 2100 3    50   Input ~ 0
+Out4
+Wire Wire Line
+	4950 2000 4950 2100
 $EndSCHEMATC
