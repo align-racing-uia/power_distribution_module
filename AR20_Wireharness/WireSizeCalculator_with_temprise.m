@@ -14,6 +14,9 @@ Add Thermal radiation formula for wire
 Incoperate radiation power formula:
 https://en.wikipedia.org/wiki/Thermal_radiation#Radiative_power
 
+Add this Youtube:
+https://youtu.be/QNS0LrlRHbs?list=WL
+
 Q = ?*T^4*A
 
 q = heat transfer per unit time (W)
