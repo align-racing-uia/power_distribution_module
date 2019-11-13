@@ -396,33 +396,6 @@ Wire Wire Line
 	2250 2000 2250 2400
 $Comp
 L AR20_PDM_v1-rescue:GND-power #PWR?
-U 1 1 5DC19763
-P 2500 3600
-F 0 "#PWR?" H 2500 3350 50  0001 C CNN
-F 1 "GND" H 2505 3427 50  0000 C CNN
-F 2 "" H 2500 3600 50  0001 C CNN
-F 3 "" H 2500 3600 50  0001 C CNN
-	1    2500 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 3200 2500 3550
-Connection ~ 2500 3550
-Wire Wire Line
-	2500 3550 2500 3600
-$Comp
-L AR20_PDM_v1-rescue:GenericFet-P U?
-U 1 1 5DBE035C
-P 2500 2500
-F 0 "U?" H 2606 2046 50  0000 L CNN
-F 1 "Fet-P" H 2606 1955 50  0000 L CNN
-F 2 "" H 2500 2500 50  0001 C CNN
-F 3 "" H 2500 2500 50  0001 C CNN
-	1    2500 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:GND-power #PWR?
 U 1 1 5DC2BC32
 P 1350 3600
 F 0 "#PWR?" H 1350 3350 50  0001 C CNN
@@ -462,31 +435,10 @@ Connection ~ 1350 2400
 Wire Wire Line
 	1350 2400 2250 2400
 Wire Wire Line
-	2500 2800 2500 2400
-Wire Wire Line
 	2250 2400 2500 2400
 Connection ~ 2500 2400
 Wire Wire Line
 	2500 2400 3150 2400
-$Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5DC1F6FA
-P 2150 3300
-F 0 "R?" H 2220 3346 50  0000 L CNN
-F 1 "4k7" H 2220 3255 50  0000 L CNN
-F 2 "" V 2080 3300 50  0001 C CNN
-F 3 "~" H 2150 3300 50  0001 C CNN
-	1    2150 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 3000 2200 3000
-Wire Wire Line
-	2150 3000 2150 3150
-Wire Wire Line
-	2150 3450 2150 3550
-Wire Wire Line
-	2150 3550 2500 3550
 $Comp
 L AR20_PDM_v1-rescue:GenericFet-P U?
 U 1 1 5DC2BC43
@@ -499,13 +451,6 @@ F 3 "" H 1350 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1000 3000
-Connection ~ 2150 3000
-Text HLabel 1850 3100 3    50   Input ~ 0
-P1_EN
-Wire Wire Line
-	1850 3100 1850 3000
-Wire Wire Line
-	1850 3000 2150 3000
 Text HLabel 700  3100 3    50   Input ~ 0
 P1_mcu_EN
 Wire Wire Line
@@ -530,4 +475,59 @@ Wire Wire Line
 	10000 4450 10000 4950
 Text Notes 9650 4750 0    50   ~ 10
 Configurable address, \nmust be different for each chip
+Wire Wire Line
+	1850 3000 2150 3000
+Wire Wire Line
+	1850 3100 1850 3000
+Text HLabel 1850 3100 3    50   Input ~ 0
+P1_EN
+Connection ~ 2150 3000
+Wire Wire Line
+	2150 3550 2500 3550
+Wire Wire Line
+	2150 3450 2150 3550
+Wire Wire Line
+	2150 3000 2150 3150
+Wire Wire Line
+	2150 3000 2200 3000
+$Comp
+L AR20_PDM_v1-rescue:R-Device R?
+U 1 1 5DC1F6FA
+P 2150 3300
+F 0 "R?" H 2220 3346 50  0000 L CNN
+F 1 "4k7" H 2220 3255 50  0000 L CNN
+F 2 "" V 2080 3300 50  0001 C CNN
+F 3 "~" H 2150 3300 50  0001 C CNN
+	1    2150 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2800 2500 2400
+$Comp
+L AR20_PDM_v1-rescue:GenericFet-P U?
+U 1 1 5DBE035C
+P 2500 2500
+F 0 "U?" H 2606 2046 50  0000 L CNN
+F 1 "Fet-P" H 2606 1955 50  0000 L CNN
+F 2 "" H 2500 2500 50  0001 C CNN
+F 3 "" H 2500 2500 50  0001 C CNN
+	1    2500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3550 2500 3600
+Connection ~ 2500 3550
+Wire Wire Line
+	2500 3200 2500 3550
+$Comp
+L AR20_PDM_v1-rescue:GND-power #PWR?
+U 1 1 5DC19763
+P 2500 3600
+F 0 "#PWR?" H 2500 3350 50  0001 C CNN
+F 1 "GND" H 2505 3427 50  0000 C CNN
+F 2 "" H 2500 3600 50  0001 C CNN
+F 3 "" H 2500 3600 50  0001 C CNN
+	1    2500 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
