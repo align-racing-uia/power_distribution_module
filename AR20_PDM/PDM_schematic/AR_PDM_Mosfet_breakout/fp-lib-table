@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name AR_Footprints)(type KiCad)(uri "$(AR_FOOT)")(options "")(descr ""))
-)
