@@ -33,10 +33,11 @@ void loop() {
     //Wire.requestFrom(0x40,2);
     r = LOW;
 
-   Wire.beginTransmission(0x40); // transmit to device #40 (0b1000000)
-    Wire.write(0xD5);
-   Wire.write(0x02);
-  Wire.endTransmission();
+//To invert alert pin
+  //Wire.beginTransmission(0x40); // transmit to device #40 (0b1000000)
+  //Wire.write(0xD5);
+  //Wire.write(0x02);
+  //Wire.endTransmission();
     
   }
 
