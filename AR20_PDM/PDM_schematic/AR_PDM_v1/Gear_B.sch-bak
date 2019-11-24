@@ -659,4 +659,6 @@ Wire Wire Line
 	6050 2775 6950 2775
 Text Notes 6100 3325 0    50   ~ 0
 Should we have, a running cappacitor ????\n\n
+Text Notes 1075 2750 0    50   ~ 0
+Use Logic Level Mosfets. (Gs Threshold <5V)
 $EndSCHEMATC

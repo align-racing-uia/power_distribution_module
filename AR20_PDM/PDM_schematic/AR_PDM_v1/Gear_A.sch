@@ -659,4 +659,6 @@ Wire Wire Line
 Connection ~ 6025 2775
 Wire Wire Line
 	6025 2775 6950 2775
+Text Notes 1025 2775 0    50   ~ 0
+Use Logic Level Mosfets. (Gs Threshold <5V)
 $EndSCHEMATC
