@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -14,28 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	5450 1300 5050 1300
-$Sheet
-S 1350 2450 700  700 
-U 5DA8920B
-F0 "PhaseDirect" 50
-F1 "PhaseDirect.sch" 50
-$EndSheet
-$Sheet
-S 1350 3650 700  700 
-U 5DA89204
-F0 "PhaseGear" 50
-F1 "PhaseGear.sch" 50
-$EndSheet
-Wire Wire Line
-	5450 1650 4400 1650
-Wire Wire Line
-	4400 1650 4400 3100
-Wire Wire Line
-	5450 1750 4550 1750
-Wire Wire Line
-	4550 1750 4550 3100
 Text Label 4400 2200 1    50   ~ 0
 i2c_SDA
 Text Label 4550 1950 3    50   ~ 0
@@ -67,15 +45,9 @@ F 3 "~" H 3700 1350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4400 1650 4000 1650
-Wire Wire Line
 	4000 1500 4000 1650
-Connection ~ 4400 1650
-Wire Wire Line
-	4550 1750 3700 1750
 Wire Wire Line
 	3700 1750 3700 1500
-Connection ~ 4550 1750
 Wire Wire Line
 	4000 1200 4000 1150
 Wire Wire Line
@@ -105,4 +77,105 @@ F7 "P1_Alert" O L 5450 2050 50
 F8 "P1_EN" I R 6500 1400 50 
 F9 "P1_mcu_EN" I R 6500 1500 50 
 $EndSheet
+$Sheet
+S 900  5300 1450 1850
+U 5DE4D361
+F0 "Fuses_Direct" 50
+F1 "Fuses_Direct.sch" 50
+F2 "ING_SWITCH_OUT" I R 2350 5550 50 
+F3 "ACM_FEED_OUT" I R 2350 5700 50 
+F4 "CLUTCH_ACT_OUT" I R 2350 5900 50 
+F5 "SHUTDOWN_OUT" I R 2350 6100 50 
+F6 "ETC_OUT" I R 2350 6300 50 
+F7 "P1_SLC" I R 2350 6450 50 
+F8 "P1_SDA" B R 2350 6550 50 
+F9 "P1_Alert" O R 2350 6750 50 
+F10 "vcc_5v" I L 900 5700 50 
+F11 "VS_12V" I L 900 5550 50 
+$EndSheet
+$Sheet
+S 900  3350 1800 1650
+U 5DA8920B
+F0 "Fuel_Ignition_Shutdown" 50
+F1 "Fuel_Ignition_Shutdown.sch" 50
+F2 "FUEL_PUMP_OUT" I R 2700 3500 50 
+F3 "SHUTDOWN_IN" I L 900 3500 50 
+F4 "FP_ENABLE_ACM" I L 900 3650 50 
+F5 "FP_ENABLE" I L 900 3800 50 
+F6 "COIL_INJECTOR_OUT" I R 2700 3600 50 
+F7 "VS_12V" I L 900 3950 50 
+F8 "vcc_5v" I L 900 4100 50 
+F9 "FP_Alert" O R 2700 3800 50 
+F10 "FP_SDA" B R 2700 3900 50 
+F11 "FP_SLC" I R 2700 4000 50 
+F12 "COIL_INJECTOR_SLC" I R 2700 4150 50 
+F13 "COIL_INJECTOR_SDA" B R 2700 4250 50 
+F14 "COIL_INJECTOR_Alert" O R 2700 4350 50 
+$EndSheet
+Wire Wire Line
+	4550 1750 3700 1750
+Wire Wire Line
+	5450 1750 4550 1750
+Connection ~ 4550 1750
+Wire Wire Line
+	4400 1650 4000 1650
+Wire Wire Line
+	5450 1650 4400 1650
+Connection ~ 4400 1650
+$Sheet
+S 5450 2525 1050 1050
+U 5DEB10A1
+F0 "Gear_B" 50
+F1 "Gear_B.sch" 50
+F2 "Vs_12v" I L 5450 2775 50 
+F3 "vcc_5v" I L 5450 2675 50 
+F4 "Gear_B_Alert" O L 5450 3425 50 
+F5 "Gear_B_SDA" B L 5450 3025 50 
+F6 "Gear_B_SLC" I L 5450 3125 50 
+F7 "Gear_B_OUT" I R 6500 2675 50 
+F8 "Gear_B_mcu_EN" I R 6500 2775 50 
+F9 "Gear_B_EN" I R 6500 2875 50 
+$EndSheet
+$Sheet
+S 5450 3925 1050 1050
+U 5DEB20EA
+F0 "Gear_A" 50
+F1 "Gear_A.sch" 50
+F2 "Vs_12v" I L 5450 4175 50 
+F3 "vcc_5v" I L 5450 4075 50 
+F4 "Gear_A_Alert" O L 5450 4825 50 
+F5 "Gear_A_SDA" B L 5450 4425 50 
+F6 "Gear_A_SLC" I L 5450 4525 50 
+F7 "Gear_A_OUT" I R 6500 4075 50 
+F8 "Gear_A_mcu_EN" I R 6500 4175 50 
+F9 "Gear_A_EN" I R 6500 4275 50 
+$EndSheet
+Wire Wire Line
+	5450 3025 4400 3025
+Wire Wire Line
+	4400 1650 4400 3025
+Connection ~ 4400 3025
+Wire Wire Line
+	5450 3125 4550 3125
+Wire Wire Line
+	4550 1750 4550 3125
+Wire Wire Line
+	4550 3125 4550 4525
+Wire Wire Line
+	4550 5150 4575 5150
+Connection ~ 4550 3125
+Wire Wire Line
+	4400 5375 4350 5375
+Wire Wire Line
+	5450 4425 4400 4425
+Wire Wire Line
+	4400 3025 4400 4425
+Connection ~ 4400 4425
+Wire Wire Line
+	4400 4425 4400 5375
+Wire Wire Line
+	5450 4525 4550 4525
+Connection ~ 4550 4525
+Wire Wire Line
+	4550 4525 4550 5150
 $EndSCHEMATC

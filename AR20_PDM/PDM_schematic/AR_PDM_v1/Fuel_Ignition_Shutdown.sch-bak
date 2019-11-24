@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -14,101 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:Fuse F?
-U 1 1 5DDB2D60
-P 3150 6000
-F 0 "F?" V 2953 6000 50  0000 C CNN
-F 1 "Fuse" V 3044 6000 50  0000 C CNN
-F 2 "" V 3080 6000 50  0001 C CNN
-F 3 "~" H 3150 6000 50  0001 C CNN
-	1    3150 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3000 6000 1500 6000
-Wire Wire Line
-	3300 6000 4500 6000
-Text HLabel 1500 6000 0    50   Input ~ 0
-VS_12V
-$Comp
-L Device:Fuse F?
-U 1 1 5DDB4A05
-P 3150 6300
-F 0 "F?" V 2953 6300 50  0000 C CNN
-F 1 "Fuse" V 3044 6300 50  0000 C CNN
-F 2 "" V 3080 6300 50  0001 C CNN
-F 3 "~" H 3150 6300 50  0001 C CNN
-	1    3150 6300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3000 6300 1500 6300
-Wire Wire Line
-	3300 6300 4500 6300
-Text HLabel 1500 6300 0    50   Input ~ 0
-VS_12V
-$Comp
-L Device:Fuse F?
-U 1 1 5DDB4CFC
-P 3150 6600
-F 0 "F?" V 2953 6600 50  0000 C CNN
-F 1 "Fuse" V 3044 6600 50  0000 C CNN
-F 2 "" V 3080 6600 50  0001 C CNN
-F 3 "~" H 3150 6600 50  0001 C CNN
-	1    3150 6600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3000 6600 1500 6600
-Wire Wire Line
-	3300 6600 4500 6600
-Text HLabel 1500 6600 0    50   Input ~ 0
-VS_12V
-$Comp
-L Device:Fuse F?
-U 1 1 5DDB67ED
-P 3150 6900
-F 0 "F?" V 2953 6900 50  0000 C CNN
-F 1 "Fuse" V 3044 6900 50  0000 C CNN
-F 2 "" V 3080 6900 50  0001 C CNN
-F 3 "~" H 3150 6900 50  0001 C CNN
-	1    3150 6900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3000 6900 1500 6900
-Wire Wire Line
-	3300 6900 4500 6900
-Text HLabel 1500 6900 0    50   Input ~ 0
-VS_12V
-$Comp
-L Device:Fuse F?
-U 1 1 5DDB67F6
-P 3150 7200
-F 0 "F?" V 2953 7200 50  0000 C CNN
-F 1 "Fuse" V 3044 7200 50  0000 C CNN
-F 2 "" V 3080 7200 50  0001 C CNN
-F 3 "~" H 3150 7200 50  0001 C CNN
-	1    3150 7200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3000 7200 1500 7200
-Wire Wire Line
-	3300 7200 4500 7200
-Text HLabel 1500 7200 0    50   Input ~ 0
-VS_12V
-Text HLabel 4500 6000 2    50   Input ~ 0
-ING_SWITCH_OUT
-Text HLabel 4500 6300 2    50   Input ~ 0
-ACM_FEED_OUT
-Text HLabel 4500 6600 2    50   Input ~ 0
-CLUTCH_ACT_OUT
-Text HLabel 4500 6900 2    50   Input ~ 0
-SHUTDOWN_OUT
-Text HLabel 4500 7200 2    50   Input ~ 0
-ETC_OUT
 Text HLabel 7350 4550 2    50   Input ~ 0
 FUEL_PUMP_OUT
 $Comp
@@ -287,29 +192,25 @@ F 3 "" H 7350 2350 50  0001 C CNN
 	1    7350 2350
 	1    0    0    -1  
 $EndComp
-Text HLabel 7350 1950 1    50   Input ~ 0
+Text HLabel 7350 1000 1    50   Input ~ 0
 VS_12V
 $Comp
 L Device:Fuse F?
 U 1 1 5DDF15AA
-P 7350 3050
-F 0 "F?" V 7153 3050 50  0000 C CNN
-F 1 "Fuse" V 7244 3050 50  0000 C CNN
-F 2 "" V 7280 3050 50  0001 C CNN
-F 3 "~" H 7350 3050 50  0001 C CNN
-	1    7350 3050
+P 7350 1600
+F 0 "F?" V 7153 1600 50  0000 C CNN
+F 1 "Fuse" V 7244 1600 50  0000 C CNN
+F 2 "" V 7280 1600 50  0001 C CNN
+F 3 "~" H 7350 1600 50  0001 C CNN
+	1    7350 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7350 1950 7350 2150
-Wire Wire Line
-	7350 2550 7350 2900
-Wire Wire Line
-	7350 3200 7350 3650
 $Comp
 L AR20_PDM_v1-rescue:C-Device C_bypass?
 U 1 1 5DE0EACB
 P 8700 1400
+AR Path="/5DA89415/5DE0EACB" Ref="C_bypass?"  Part="1" 
+AR Path="/5DA8920B/5DE0EACB" Ref="C_bypass?"  Part="1" 
 F 0 "C_bypass?" V 8448 1400 50  0000 C CNN
 F 1 "0.1uF" V 8539 1400 50  0000 C CNN
 F 2 "" H 8738 1250 50  0001 C CNN
@@ -321,6 +222,8 @@ $Comp
 L AR20_PDM_v1-rescue:GND-power #PWR?
 U 1 1 5DE0EAD1
 P 8500 1600
+AR Path="/5DA89415/5DE0EAD1" Ref="#PWR?"  Part="1" 
+AR Path="/5DA8920B/5DE0EAD1" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 8500 1350 50  0001 C CNN
 F 1 "GND" V 8505 1472 50  0000 R CNN
 F 2 "" H 8500 1600 50  0001 C CNN
@@ -334,6 +237,8 @@ $Comp
 L AR20_PDM_v1-rescue:GND-power #PWR?
 U 1 1 5DE0EAD8
 P 9400 3200
+AR Path="/5DA89415/5DE0EAD8" Ref="#PWR?"  Part="1" 
+AR Path="/5DA8920B/5DE0EAD8" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 9400 2950 50  0001 C CNN
 F 1 "GND" H 9405 3027 50  0000 C CNN
 F 2 "" H 9400 3200 50  0001 C CNN
@@ -362,6 +267,8 @@ $Comp
 L AR20_PDM_v1-rescue:INA233 U?
 U 1 1 5DE0EAE7
 P 9400 2100
+AR Path="/5DA89415/5DE0EAE7" Ref="U?"  Part="1" 
+AR Path="/5DA8920B/5DE0EAE7" Ref="U?"  Part="1" 
 F 0 "U?" H 9425 2515 50  0000 C CNN
 F 1 "INA233" H 9425 2424 50  0000 C CNN
 F 2 "" H 9400 2100 50  0001 C CNN
@@ -369,20 +276,16 @@ F 3 "" H 9400 2100 50  0001 C CNN
 	1    9400 2100
 	1    0    0    -1  
 $EndComp
-Text HLabel 8550 2150 0    50   Input ~ 10
-Vs_12v
 Text HLabel 8950 900  1    50   Input ~ 10
 vcc_5v
 Text HLabel 10550 2400 2    50   Output ~ 10
-P1_Alert
+FP_Alert
 Text HLabel 10550 2000 2    50   BiDi ~ 10
-P1_SDA
+FP_SDA
 Text HLabel 10550 2150 2    50   Input ~ 10
-P1_SLC
+FP_SLC
 Text Notes 8400 1100 0    50   ~ 10
 Close to PIN
-Wire Wire Line
-	8950 2150 8550 2150
 Wire Wire Line
 	9900 2150 10550 2150
 Wire Wire Line
@@ -433,24 +336,22 @@ Wire Wire Line
 	4600 2600 5250 2600
 Wire Wire Line
 	4600 2350 5250 2350
-Wire Wire Line
-	3650 2350 3250 2350
 Text Notes 3100 1300 0    50   ~ 10
 Close to PIN
 Text HLabel 5250 2350 2    50   Input ~ 10
-P1_SLC
+COIL_INJECTOR_SLC
 Text HLabel 5250 2200 2    50   BiDi ~ 10
-P1_SDA
+COIL_INJECTOR_SDA
 Text HLabel 5250 2600 2    50   Output ~ 10
-P1_Alert
+COIL_INJECTOR_Alert
 Text HLabel 3650 1100 1    50   Input ~ 10
 vcc_5v
-Text HLabel 3250 2350 0    50   Input ~ 10
-Vs_12v
 $Comp
 L AR20_PDM_v1-rescue:INA233 U?
 U 1 1 5DE077D0
 P 4100 2300
+AR Path="/5DA89415/5DE077D0" Ref="U?"  Part="1" 
+AR Path="/5DA8920B/5DE077D0" Ref="U?"  Part="1" 
 F 0 "U?" H 4125 2715 50  0000 C CNN
 F 1 "INA233" H 4125 2624 50  0000 C CNN
 F 2 "" H 4100 2300 50  0001 C CNN
@@ -479,6 +380,8 @@ $Comp
 L AR20_PDM_v1-rescue:GND-power #PWR?
 U 1 1 5DE077C1
 P 4100 3400
+AR Path="/5DA89415/5DE077C1" Ref="#PWR?"  Part="1" 
+AR Path="/5DA8920B/5DE077C1" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 4100 3150 50  0001 C CNN
 F 1 "GND" H 4105 3227 50  0000 C CNN
 F 2 "" H 4100 3400 50  0001 C CNN
@@ -492,6 +395,8 @@ $Comp
 L AR20_PDM_v1-rescue:GND-power #PWR?
 U 1 1 5DE077BA
 P 3200 1800
+AR Path="/5DA89415/5DE077BA" Ref="#PWR?"  Part="1" 
+AR Path="/5DA8920B/5DE077BA" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3200 1550 50  0001 C CNN
 F 1 "GND" V 3205 1672 50  0000 R CNN
 F 2 "" H 3200 1800 50  0001 C CNN
@@ -503,6 +408,8 @@ $Comp
 L AR20_PDM_v1-rescue:C-Device C_bypass?
 U 1 1 5DE077B4
 P 3400 1600
+AR Path="/5DA89415/5DE077B4" Ref="C_bypass?"  Part="1" 
+AR Path="/5DA8920B/5DE077B4" Ref="C_bypass?"  Part="1" 
 F 0 "C_bypass?" V 3148 1600 50  0000 C CNN
 F 1 "0.1uF" V 3239 1600 50  0000 C CNN
 F 2 "" H 3438 1450 50  0001 C CNN
@@ -510,23 +417,6 @@ F 3 "~" H 3400 1600 50  0001 C CNN
 	1    3400 1600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2000 2750 2000 3100
-Wire Wire Line
-	2000 2150 2000 2350
-$Comp
-L Device:Fuse F?
-U 1 1 5DDB7458
-P 2000 3250
-F 0 "F?" V 1803 3250 50  0000 C CNN
-F 1 "Fuse" V 1894 3250 50  0000 C CNN
-F 2 "" V 1930 3250 50  0001 C CNN
-F 3 "~" H 2000 3250 50  0001 C CNN
-	1    2000 3250
-	1    0    0    -1  
-$EndComp
-Text HLabel 2000 2150 1    50   Input ~ 0
-VS_12V
 $Comp
 L Relay:DIPxx-1Axx-11x K?
 U 1 1 5DDBA337
@@ -557,8 +447,6 @@ Wire Wire Line
 	1600 3700 1600 3650
 Text HLabel 1600 3650 1    50   Input ~ 0
 SHUTDOWN_IN
-Wire Wire Line
-	2000 3400 2000 3700
 Wire Wire Line
 	1600 3700 1200 3700
 Connection ~ 1600 3700
@@ -593,4 +481,41 @@ F 3 "" H 2000 2550 50  0001 C CNN
 	1    2000 2550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7350 1450 7350 1000
+Text HLabel 2000 1050 1    50   Input ~ 0
+VS_12V
+$Comp
+L Device:Fuse F?
+U 1 1 5DE5EBA7
+P 2000 1650
+F 0 "F?" V 1803 1650 50  0000 C CNN
+F 1 "Fuse" V 1894 1650 50  0000 C CNN
+F 2 "" V 1930 1650 50  0001 C CNN
+F 3 "~" H 2000 1650 50  0001 C CNN
+	1    2000 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1500 2000 1050
+Wire Wire Line
+	2000 2750 2000 3700
+Wire Wire Line
+	7350 2550 7350 3650
+Text Notes 2250 3200 1    50   ~ 0
+Place shunt close to INA233\n
+Text Notes 7700 2850 1    50   ~ 0
+Place shunt close to INA233\n
+Wire Wire Line
+	2000 1800 2000 2350
+Text HLabel 3300 2350 0    50   Input ~ 0
+VS_12V
+Wire Wire Line
+	3650 2350 3300 2350
+Wire Wire Line
+	7350 1750 7350 2150
+Text HLabel 8600 2150 0    50   Input ~ 0
+VS_12V
+Wire Wire Line
+	8600 2150 8950 2150
 $EndSCHEMATC

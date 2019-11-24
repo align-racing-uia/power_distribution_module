@@ -279,11 +279,11 @@ Vs_12v
 Text HLabel 8750 2850 1    50   Input ~ 10
 vcc_5v
 Text HLabel 10350 4350 2    50   Output ~ 10
-P1_Alert
+Gear_A_Alert
 Text HLabel 10350 3950 2    50   BiDi ~ 10
-P1_SDA
+Gear_A_SDA
 Text HLabel 10350 4100 2    50   Input ~ 10
-P1_SLC
+Gear_A_SLC
 Text Notes 4900 3000 0    50   ~ 10
 Close to PIN
 Text Notes 8200 3050 0    50   ~ 10
@@ -318,7 +318,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 1550 2250 1700
 Text HLabel 6950 2775 2    50   Input ~ 10
-P1_OUT
+Gear_A_OUT
 $Comp
 L AR20_PDM_v1-rescue:C-Device C_vs
 U 1 1 5DAE255C
@@ -436,7 +436,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 3600 5350 4400
 Text HLabel 1350 1900 1    50   Input ~ 10
-P1_Alert
+Gear_A_Alert
 Wire Wire Line
 	9700 4350 10350 4350
 Connection ~ 2250 2400
@@ -509,7 +509,7 @@ F 3 "" H 1350 2500 50  0001 C CNN
 $EndComp
 Connection ~ 1000 3000
 Text HLabel 700  3100 3    50   Input ~ 0
-P1_mcu_EN
+Gear_A_mcu_EN
 Wire Wire Line
 	700  3000 700  3100
 Wire Wire Line
@@ -537,7 +537,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 3100 1850 3000
 Text HLabel 1850 3100 3    50   Input ~ 0
-P1_EN
+Gear_A_EN
 Connection ~ 2150 3000
 Wire Wire Line
 	2150 3550 2500 3550
@@ -615,11 +615,48 @@ Wire Wire Line
 Wire Wire Line
 	5400 2550 5400 2775
 Wire Wire Line
-	5400 2775 6950 2775
+	5400 2775 6025 2775
 Connection ~ 4800 2550
 Wire Wire Line
 	5800 1600 6300 1600
 Connection ~ 5800 1600
 Wire Wire Line
 	6300 1900 6300 2000
+$Comp
+L AR20_PDM_v1-rescue:C-Device Running_Cap?
+U 1 1 5DEC8229
+P 6025 3100
+AR Path="/5DA89415/5DEC8229" Ref="Running_Cap?"  Part="1" 
+AR Path="/5DEB10A1/5DEC8229" Ref="Running_Cap?"  Part="1" 
+AR Path="/5DEB20EA/5DEC8229" Ref="Running_Cap?"  Part="1" 
+F 0 "Running_Cap?" H 6140 3146 50  0000 L CNN
+F 1 "??" H 6140 3055 50  0000 L CNN
+F 2 "" H 6063 2950 50  0001 C CNN
+F 3 "~" H 6025 3100 50  0001 C CNN
+	1    6025 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:GND-power #PWR?
+U 1 1 5DEC822F
+P 6025 3350
+AR Path="/5DA89415/5DEC822F" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB10A1/5DEC822F" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB20EA/5DEC822F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6025 3100 50  0001 C CNN
+F 1 "GND" H 6030 3177 50  0000 C CNN
+F 2 "" H 6025 3350 50  0001 C CNN
+F 3 "" H 6025 3350 50  0001 C CNN
+	1    6025 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6025 3350 6025 3250
+Text Notes 6075 3375 0    50   ~ 0
+Should we have, a running cappacitor ????\n\n
+Wire Wire Line
+	6025 2775 6025 2950
+Connection ~ 6025 2775
+Wire Wire Line
+	6025 2775 6950 2775
 $EndSCHEMATC
