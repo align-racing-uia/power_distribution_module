@@ -274,8 +274,6 @@ F 3 "" H 9200 4050 50  0001 C CNN
 	1    9200 4050
 	1    0    0    -1  
 $EndComp
-Text HLabel 8350 4100 0    50   Input ~ 10
-Vs_12v
 Text HLabel 8750 2850 1    50   Input ~ 10
 vcc_5v
 Text HLabel 10350 4350 2    50   Output ~ 10
@@ -297,8 +295,6 @@ Wire Wire Line
 Connection ~ 3700 3100
 Wire Wire Line
 	3700 3100 3700 3300
-Wire Wire Line
-	8750 4100 8350 4100
 Text HLabel 4650 1600 0    50   Input ~ 10
 Vs_12v
 Wire Wire Line
@@ -614,8 +610,6 @@ Wire Wire Line
 	4800 2550 5400 2550
 Wire Wire Line
 	5400 2550 5400 2775
-Wire Wire Line
-	5400 2775 6950 2775
 Connection ~ 4800 2550
 Wire Wire Line
 	5800 1600 6300 1600
@@ -624,4 +618,13 @@ Wire Wire Line
 	6300 1900 6300 2000
 Text Notes 1075 2725 0    50   ~ 0
 Use Logic Level Mosfets. (Gs Threshold <5V)
+Wire Wire Line
+	6000 4100 6000 2775
+Wire Wire Line
+	6000 4100 8750 4100
+Wire Wire Line
+	5400 2775 6000 2775
+Wire Wire Line
+	6000 2775 6950 2775
+Connection ~ 6000 2775
 $EndSCHEMATC
