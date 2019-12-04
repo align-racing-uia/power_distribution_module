@@ -6,21 +6,26 @@ void setup() {
   Wire.begin();
   Wire.setClock(100000);
   Serial.begin(9600);  
-  Serial.println("Initiialization comlete");
+  Serial.println("Initiialization");
   Sensor1.initialise();
   Sensor1.setAlarmLimits(alarmConfigSensor1);
-  //Sensor1.setAlarmMask (0b11110101);
+  //Sensor1.setAlarmMask (0b11111111);
 }
 
 
 void loop() {
-
-  float voltage;
+  Serial.println("looping");
+  float voltage_s;
+  float voltage_l;
   float current;
   
-  voltage = Sensor1.getVoltage_S();
-  Serial.print("Voltage: ");
-  Serial.println(voltage, 5);
+  voltage_s = Sensor1.getVoltage_S();
+  Serial.print("Voltage S: ");
+  Serial.println(voltage_s, 5);
+
+  voltage_l = Sensor1.getVoltage_L();
+  Serial.print("Voltage L: ");
+  Serial.println(voltage_l, 5);
 
   current = Sensor1.getCurrent();
   Serial.print("Current: ");
