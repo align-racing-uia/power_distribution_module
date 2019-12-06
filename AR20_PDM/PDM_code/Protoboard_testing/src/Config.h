@@ -7,7 +7,7 @@
 //////\\\\\\ Protection limits, whole amperes and volts. 0 = OFF \\\\\\//////  
 const float ov_Sensor1 = 0;     //Over voltage output 1
 const float uv_Sensor1 = 0;     //Under voltage output 1
-const float oc_Sensor1 = 20;     //Over Current output 1
+const float oc_Sensor1 = 21;     //Over Current output 1
 const INA233_Alarm_Config alarmConfigSensor1{oc_Sensor1, ov_Sensor1, uv_Sensor1};
 
 const uint8_t adrSensor1 = 0x40;

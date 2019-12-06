@@ -38,6 +38,7 @@ private:
 public:
   INA233_S(uint8_t address, uint16_t m_value, uint16_t cal_value);
   void initialise();
+  void setADC_Settings(uint16_t ADC_Settings);
   void setAlarmLimits(INA233_Alarm_Config alarmConfiguration);
   void setAlarmMask(uint8_t mask);
   float getVoltage_L();

@@ -12,17 +12,32 @@ void INA233_S::initialise()
     resetAlarm();
 }
 
+void INA233_S::setADC_Settings(uint16_t ADC_Settings)
+{
+    INA233_Data_Packadge data = repackWord(ADC_Settings);
+    transmitData(&data,0xD0);
+    INA233_Data_Packadge readbackData = receiveData_(0xD0, 2);
+    Serial.print("ADC setting readback: ");
+    Serial.println(unpackWord(&readbackData),BIN);
+
+}
+
 void INA233_S::setAlarmLimits(INA233_Alarm_Config alarmConfiguration)
 {
     Serial.println("alarm limits");
     if (alarmConfiguration.overCurrent > 0)
     {
-        uint16_t iout_oc_warn_limit = m_value_ * alarmConfiguration.overCurrent;
+        uint16_t iout_oc_warn_limit = round(m_value_ * alarmConfiguration.overCurrent);
         INA233_Data_Packadge data = repackWord(iout_oc_warn_limit);
         Serial.println("OC WARN LIMIT: ");
         Serial.println(iout_oc_warn_limit);
         transmitData(&data, 0x4A);
+
+        INA233_Data_Packadge readback = receiveData_(0x4A,2);
+        Serial.println("OC WARN LIMIT readback: ");
+        Serial.println(unpackWord(&readback));
     }
+    
 }
 
 void INA233_S::setAlarmMask(uint8_t mask)
