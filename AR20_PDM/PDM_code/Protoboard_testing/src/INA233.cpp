@@ -6,20 +6,19 @@ INA233_S::INA233_S(uint8_t address, uint16_t m_value, uint16_t cal_value) : addr
 
 void INA233_S::initialise()
 {
+    //testCommunication();
     resetChip();
     setCallibration(cal_value_);
-    testCommunication();
     resetAlarm();
 }
 
 void INA233_S::setADC_Settings(uint16_t ADC_Settings)
 {
     INA233_Data_Packadge data = repackWord(ADC_Settings);
-    transmitData(&data,0xD0);
+    transmitData(&data, 0xD0);
     INA233_Data_Packadge readbackData = receiveData_(0xD0, 2);
     Serial.print("ADC setting readback: ");
-    Serial.println(unpackWord(&readbackData),BIN);
-
+    Serial.println(unpackWord(&readbackData), BIN);
 }
 
 void INA233_S::setAlarmLimits(INA233_Alarm_Config alarmConfiguration)
@@ -33,11 +32,35 @@ void INA233_S::setAlarmLimits(INA233_Alarm_Config alarmConfiguration)
         Serial.println(iout_oc_warn_limit);
         transmitData(&data, 0x4A);
 
-        INA233_Data_Packadge readback = receiveData_(0x4A,2);
+        INA233_Data_Packadge readback = receiveData_(0x4A, 2);
         Serial.println("OC WARN LIMIT readback: ");
         Serial.println(unpackWord(&readback));
     }
-    
+
+    if (alarmConfiguration.overVoltage > 0)
+    {
+        uint16_t vin_ov_warn_limit = round(800 * alarmConfiguration.overVoltage);
+        INA233_Data_Packadge data = repackWord(vin_ov_warn_limit);
+        Serial.println("OV WARN LIMIT: ");
+        Serial.println(vin_ov_warn_limit);
+        transmitData(&data, 0x57);
+
+        INA233_Data_Packadge readback = receiveData_(0x57, 2);
+        Serial.println("OV WARN LIMIT readback: ");
+        Serial.println(unpackWord(&readback));
+    }
+    if (alarmConfiguration.underVoltage > 0)
+    {
+        uint16_t vin_uv_warn_limit = round(800 * alarmConfiguration.underVoltage);
+        INA233_Data_Packadge data = repackWord(vin_uv_warn_limit);
+        Serial.println("UV WARN LIMIT: ");
+        Serial.println(vin_uv_warn_limit);
+        transmitData(&data, 0x58);
+
+        INA233_Data_Packadge readback = receiveData_(0x58, 2);
+        Serial.println("UV WARN LIMIT readback: ");
+        Serial.println(unpackWord(&readback));
+    }
 }
 
 void INA233_S::setAlarmMask(uint8_t mask)
@@ -46,6 +69,11 @@ void INA233_S::setAlarmMask(uint8_t mask)
     data.msg[0] = mask;
     data.length = 1;
     transmitData(&data, 0xD2);
+
+    INA233_Data_Packadge data2 = receiveData_(0xD2, 1);
+    Serial.print("mfr alert Readback: ");
+    Serial.println(data2.msg[0], BIN);
+
 }
 
 float INA233_S::getVoltage_L()
@@ -57,7 +85,6 @@ float INA233_S::getVoltage_L()
 
 float INA233_S::getVoltage_S()
 {
-    Serial.println("Voltage S");
     INA233_Data_Packadge data = receiveData_(0XD1, 2);
     uint16_t dataWord = unpackWord(&data);
     return (25 * static_cast<float>(dataWord) / 10000000); //Returns shunt voltage reading.
@@ -72,14 +99,6 @@ float INA233_S::getCurrent()
 
 void INA233_S::getAlarm()
 {
-    INA233_Data_Packadge data = receiveData_(0x7B, 1);
-    Serial.print("oc warnings: ");
-    Serial.println(data.msg[0], BIN);
-
-    INA233_Data_Packadge data2 = receiveData_(0xD2, 1);
-    Serial.print("mfr alert: ");
-    Serial.println(data2.msg[0], BIN);
-
     INA233_Data_Packadge data3 = receiveData_(0x7C, 1);
     Serial.print("status input: ");
     Serial.println(data3.msg[0], BIN);
@@ -100,11 +119,9 @@ void INA233_S::setCallibration(uint16_t cal)
 
 void INA233_S::transmitCommand(uint8_t command)
 {
-    //Serial.println("transmit command begin");
     Wire.beginTransmission(address_);
     Wire.write(command);
     Wire.endTransmission();
-    //Serial.println("transmit command end");
 }
 void INA233_S::transmitData(INA233_Data_Packadge *data, uint8_t command)
 {
@@ -131,7 +148,7 @@ void INA233_S::transmitData(INA233_Data_Packadge *data, uint8_t command)
     }
 }
 
-INA233_Data_Packadge INA233_S::receiveData_(uint8_t command,uint8_t numOfBytes)
+INA233_Data_Packadge INA233_S::receiveData_(uint8_t command, uint8_t numOfBytes)
 {
     INA233_Data_Packadge data;
     transmitCommand(command);
@@ -161,13 +178,25 @@ void INA233_S::resetChip()
 {
     Serial.println("reset chip");
     transmitCommand(0x12);
-
 }
 void INA233_S::testCommunication()
 {
     Serial.println("test communications");
     // TO DO ! Read MFR_MODEL, compare if correct.
     // Is there a way in wire.h to check for communications?
+    INA233_Data_Packadge data = receiveData_(0x12, 7);
+    uint8_t compare[7]{
+        0x06, 0x49, 0x4E, 0x41, 0x32, 0x33, 0x33};
+
+    for (int ii = 0; ii <= 6; ii++)
+    {
+        Serial.print("Readback MFR_MODEL: ");
+        Serial.print(data.msg[ii]);
+        if (compare[ii] != data.msg[ii])
+        {
+            Serial.println("Communication error");
+        }
+    }
 }
 
 uint16_t INA233_S::unpackWord(INA233_Data_Packadge *data)

@@ -9,7 +9,7 @@ void setup() {
   Serial.println("Initiialization");
   Sensor1.initialise();
   Sensor1.setAlarmLimits(alarmConfigSensor1);
-  // Sensor1.setADC_Settings(0b0100111100100111);
+  Sensor1.setADC_Settings(0b0100011100100111);
   //Sensor1.setAlarmMask (0b11111111);
 }
 
