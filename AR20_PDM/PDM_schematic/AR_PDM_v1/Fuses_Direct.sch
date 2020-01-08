@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 3 11
 Title ""
 Date ""
 Rev ""
@@ -89,15 +89,9 @@ Wire Wire Line
 	7450 3850 5950 3850
 Wire Wire Line
 	7750 3850 8950 3850
-Text HLabel 8950 2650 2    50   Input ~ 0
-ING_SWITCH_OUT
-Text HLabel 8950 2950 2    50   Input ~ 0
-ACM_FEED_OUT
-Text HLabel 8950 3250 2    50   Input ~ 0
+Text HLabel 8950 3250 2    50   Output ~ 0
 CLUTCH_ACT_OUT
-Text HLabel 8950 3550 2    50   Input ~ 0
-SHUTDOWN_OUT
-Text HLabel 8950 3850 2    50   Input ~ 0
+Text HLabel 8950 3850 2    50   Output ~ 0
 ETC_OUT
 Text Notes 5550 5800 0    50   ~ 10
 Configurable address, \nmust be different for each chip
@@ -203,7 +197,7 @@ F 3 "~" H 4400 4400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text HLabel 2300 3000 0    50   Input ~ 0
-VS_12V
+V+12V
 $Comp
 L AR20_PDM_v1-rescue:R_Shunt-Device R?
 U 1 1 5DE77FF4
@@ -252,4 +246,10 @@ Wire Wire Line
 Connection ~ 3200 3000
 Wire Wire Line
 	3200 3000 3250 3000
+Text HLabel 8950 3550 2    50   Output ~ 0
+SHUTDOWN_OUT
+Text HLabel 8950 2650 2    50   Output ~ 0
+ING_SWITCH_OUT
+Text HLabel 8950 2950 2    50   Output ~ 0
+MCU_UNITS_FEED_OUT
 $EndSCHEMATC

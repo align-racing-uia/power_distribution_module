@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 11
+Sheet 10 11
 Title ""
 Date ""
 Rev ""
@@ -443,11 +443,11 @@ $EndComp
 Text HLabel 8750 2850 1    50   Input ~ 10
 vcc_5v
 Text HLabel 10350 4350 2    50   Output ~ 10
-P1_Alert
+P7_Alert
 Text HLabel 10350 3950 2    50   BiDi ~ 10
-P1_SDA
+P7_SDA
 Text HLabel 10350 4100 2    50   Input ~ 10
-P1_SLC
+P7_SLC
 Text Notes 4900 3000 0    50   ~ 10
 Close to PIN
 Text Notes 8200 3050 0    50   ~ 10
@@ -670,7 +670,7 @@ Wire Wire Line
 Connection ~ 4800 1600
 Connection ~ 5200 1600
 Text HLabel 1350 1900 1    50   Input ~ 10
-P1_Alert
+P7_Alert
 Wire Wire Line
 	9700 4350 10350 4350
 Connection ~ 2250 2400
@@ -750,7 +750,7 @@ Wire Wire Line
 	2250 2400 2500 2400
 Connection ~ 2500 2400
 Wire Wire Line
-	2500 2400 2800 2400
+	2500 2400 2725 2400
 $Comp
 L AR20_PDM_v1-rescue:GenericFet-P U?
 U 1 1 5DC2BC43
@@ -779,7 +779,7 @@ F 3 "" H 1350 2500 50  0001 C CNN
 $EndComp
 Connection ~ 1000 3000
 Text HLabel 700  3100 3    50   Input ~ 0
-P1_EN_ACM
+P7_EN_ACM
 Wire Wire Line
 	700  3000 700  3100
 Wire Wire Line
@@ -803,7 +803,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 3100 1850 3000
 Text HLabel 1850 3100 3    50   Input ~ 0
-P1_EN_AUX
+P7_EN_AUX
 Connection ~ 2150 3000
 Wire Wire Line
 	2150 3550 2500 3550
@@ -968,64 +968,6 @@ Wire Wire Line
 	6375 4400 8750 4400
 Wire Wire Line
 	6575 4300 8750 4300
-$Comp
-L AR20_PDM_v1-rescue:C-Device C_sense?
-U 1 1 5E10B301
-P 1750 6500
-AR Path="/5DA89415/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5DEB10A1/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5DEB20EA/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5E0E4725/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5E0E4A93/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5E0E4EB5/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5E0E5304/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5E0E594B/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5E0E607C/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5E0FB5C8/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5E0FBBBD/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5E0FC3A2/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5E0FCFDC/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5E0FDCCC/5E10B301" Ref="C_sense?"  Part="1" 
-AR Path="/5E10174B/5E10B301" Ref="C_sense?"  Part="1" 
-F 0 "C_sense?" H 1865 6546 50  0000 L CNN
-F 1 "0.1uf" H 1865 6455 50  0000 L CNN
-F 2 "" H 1788 6350 50  0001 C CNN
-F 3 "~" H 1750 6500 50  0001 C CNN
-	1    1750 6500
-	-1   0    0    1   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:GND-power #PWR?
-U 1 1 5E1293CC
-P 1750 6650
-AR Path="/5DA89415/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB10A1/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB20EA/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4725/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4A93/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4EB5/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E5304/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E594B/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E607C/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FB5C8/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FC3A2/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FCFDC/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FDCCC/5E1293CC" Ref="#PWR?"  Part="1" 
-AR Path="/5E10174B/5E1293CC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1750 6400 50  0001 C CNN
-F 1 "GND" H 1755 6477 50  0000 C CNN
-F 2 "" H 1750 6650 50  0001 C CNN
-F 3 "" H 1750 6650 50  0001 C CNN
-	1    1750 6650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 6350 1750 6250
-Wire Wire Line
-	1750 6250 1675 6250
-Text Notes 1325 6975 0    50   ~ 0
-Ceramic, Place close to respective phase, mosfet/relay
 Wire Wire Line
 	3700 3225 4525 3225
 Wire Wire Line
@@ -1034,7 +976,7 @@ Connection ~ 3700 3225
 Wire Wire Line
 	3700 3225 3700 3300
 Text HLabel 4525 3900 2    50   Output ~ 0
-P1_MOS_SENSE
+P7_MOS_SENSE
 Wire Wire Line
 	6575 3100 6575 4300
 Wire Wire Line
@@ -1049,7 +991,7 @@ Wire Wire Line
 Wire Wire Line
 	5575 2950 6000 2950
 Text HLabel 6950 2950 2    50   Output ~ 10
-P1_OUT
+P7_OUT
 $Comp
 L AR20_PDM_v1-rescue:R_Shunt-Device R_Shunt
 U 1 1 5DAAC252
@@ -1078,88 +1020,146 @@ F 3 "~" H 6475 2950 50  0001 C CNN
 $EndComp
 Text HLabel 4650 1600 0    50   Input ~ 10
 V+12V
-Text HLabel 1675 6250 0    50   Input ~ 10
-V+12V
-Wire Notes Line
-	1250 6175 3575 6175
-Wire Notes Line
-	3575 6175 3575 7025
-Wire Notes Line
-	3575 7025 1250 7025
-Wire Notes Line
-	1250 7025 1250 6175
 $Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5E55454E
-P 2800 2125
-AR Path="/5DA89415/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5DEB10A1/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5DEB20EA/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5E0E4725/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5E0E4A93/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5E0E4EB5/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5E0E5304/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5E0E594B/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5E0E607C/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5E0FB5C8/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5E0FBBBD/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5E0FC3A2/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5E0FCFDC/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5E0FDCCC/5E55454E" Ref="R?"  Part="1" 
-AR Path="/5E10174B/5E55454E" Ref="R?"  Part="1" 
-F 0 "R?" H 2870 2171 50  0000 L CNN
-F 1 "RLED" H 2870 2080 50  0000 L CNN
-F 2 "" V 2730 2125 50  0001 C CNN
-F 3 "~" H 2800 2125 50  0001 C CNN
-	1    2800 2125
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 2400 2800 2275
-Connection ~ 2800 2400
-Wire Wire Line
-	2800 2400 3150 2400
-Wire Wire Line
-	2800 1975 2800 1875
-Wire Wire Line
-	2800 1400 2800 1575
-$Comp
-L AR20_PDM_v1-rescue:GND-power #PWR?
-U 1 1 5E55DBE9
-P 2800 1400
-AR Path="/5DA89415/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB10A1/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB20EA/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4725/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4A93/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4EB5/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E5304/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E594B/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E607C/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FB5C8/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FC3A2/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FCFDC/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FDCCC/5E55DBE9" Ref="#PWR?"  Part="1" 
-AR Path="/5E10174B/5E55DBE9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2800 1150 50  0001 C CNN
-F 1 "GND" H 2805 1227 50  0000 C CNN
-F 2 "" H 2800 1400 50  0001 C CNN
-F 3 "" H 2800 1400 50  0001 C CNN
-	1    2800 1400
+L AR20_PDM_v1-rescue:C-Device C_sense?
+U 1 1 5E1C8E67
+P 1725 6475
+AR Path="/5DA89415/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5DEB10A1/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5DEB20EA/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5E0E4725/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5E0E4A93/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5E0E4EB5/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5E0E5304/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5E0E594B/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5E0E607C/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5E0FB5C8/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5E0FBBBD/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5E0FC3A2/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5E0FCFDC/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5E0FDCCC/5E1C8E67" Ref="C_sense?"  Part="1" 
+AR Path="/5E10174B/5E1C8E67" Ref="C_sense?"  Part="1" 
+F 0 "C_sense?" H 1840 6521 50  0000 L CNN
+F 1 "0.1uf" H 1840 6430 50  0000 L CNN
+F 2 "" H 1763 6325 50  0001 C CNN
+F 3 "~" H 1725 6475 50  0001 C CNN
+	1    1725 6475
 	-1   0    0    1   
 $EndComp
 $Comp
+L AR20_PDM_v1-rescue:GND-power #PWR?
+U 1 1 5E1C8E6D
+P 1725 6625
+AR Path="/5DA89415/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB10A1/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB20EA/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4725/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4A93/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4EB5/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E5304/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E594B/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E607C/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FB5C8/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FBBBD/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FC3A2/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FCFDC/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FDCCC/5E1C8E6D" Ref="#PWR?"  Part="1" 
+AR Path="/5E10174B/5E1C8E6D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1725 6375 50  0001 C CNN
+F 1 "GND" H 1730 6452 50  0000 C CNN
+F 2 "" H 1725 6625 50  0001 C CNN
+F 3 "" H 1725 6625 50  0001 C CNN
+	1    1725 6625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1725 6325 1725 6225
+Wire Wire Line
+	1725 6225 1650 6225
+Text Notes 1300 6950 0    50   ~ 0
+Ceramic, Place close to respective phase, mosfet/relay
+Text HLabel 1650 6225 0    50   Input ~ 10
+V+12V
+Wire Notes Line
+	1225 6150 3550 6150
+Wire Notes Line
+	3550 6150 3550 7000
+Wire Notes Line
+	3550 7000 1225 7000
+Wire Notes Line
+	1225 7000 1225 6150
+$Comp
 L Device:LED D?
-U 1 1 5E552981
-P 2800 1725
-AR Path="/5E5484EE/5E552981" Ref="D?"  Part="1" 
-AR Path="/5DA89415/5E552981" Ref="D?"  Part="1" 
-F 0 "D?" H 2793 1941 50  0000 C CNN
-F 1 "P1_Active" H 2793 1850 50  0000 C CNN
-F 2 "" H 2800 1725 50  0001 C CNN
-F 3 "~" H 2800 1725 50  0001 C CNN
-	1    2800 1725
+U 1 1 5E58413C
+P 2725 1725
+AR Path="/5E5484EE/5E58413C" Ref="D?"  Part="1" 
+AR Path="/5E10174B/5E58413C" Ref="D?"  Part="1" 
+F 0 "D?" V 2672 1804 50  0000 L CNN
+F 1 "P7_Active" V 2763 1804 50  0000 L CNN
+F 2 "" H 2725 1725 50  0001 C CNN
+F 3 "~" H 2725 1725 50  0001 C CNN
+	1    2725 1725
 	0    1    1    0   
 $EndComp
+$Comp
+L AR20_PDM_v1-rescue:R-Device R?
+U 1 1 5E584142
+P 2725 2125
+AR Path="/5DA89415/5E584142" Ref="R?"  Part="1" 
+AR Path="/5DEB10A1/5E584142" Ref="R?"  Part="1" 
+AR Path="/5DEB20EA/5E584142" Ref="R?"  Part="1" 
+AR Path="/5E0E4725/5E584142" Ref="R?"  Part="1" 
+AR Path="/5E0E4A93/5E584142" Ref="R?"  Part="1" 
+AR Path="/5E0E4EB5/5E584142" Ref="R?"  Part="1" 
+AR Path="/5E0E5304/5E584142" Ref="R?"  Part="1" 
+AR Path="/5E0E594B/5E584142" Ref="R?"  Part="1" 
+AR Path="/5E0E607C/5E584142" Ref="R?"  Part="1" 
+AR Path="/5E0FB5C8/5E584142" Ref="R?"  Part="1" 
+AR Path="/5E0FBBBD/5E584142" Ref="R?"  Part="1" 
+AR Path="/5E0FC3A2/5E584142" Ref="R?"  Part="1" 
+AR Path="/5E0FCFDC/5E584142" Ref="R?"  Part="1" 
+AR Path="/5E0FDCCC/5E584142" Ref="R?"  Part="1" 
+AR Path="/5E10174B/5E584142" Ref="R?"  Part="1" 
+F 0 "R?" H 2795 2171 50  0000 L CNN
+F 1 "RLED" H 2795 2080 50  0000 L CNN
+F 2 "" V 2655 2125 50  0001 C CNN
+F 3 "~" H 2725 2125 50  0001 C CNN
+	1    2725 2125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2725 1975 2725 1875
+Wire Wire Line
+	2725 1400 2725 1575
+$Comp
+L AR20_PDM_v1-rescue:GND-power #PWR?
+U 1 1 5E58414B
+P 2725 1400
+AR Path="/5DA89415/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB10A1/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB20EA/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4725/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4A93/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4EB5/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E5304/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E594B/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E607C/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FB5C8/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FBBBD/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FC3A2/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FCFDC/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FDCCC/5E58414B" Ref="#PWR?"  Part="1" 
+AR Path="/5E10174B/5E58414B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2725 1150 50  0001 C CNN
+F 1 "GND" H 2730 1227 50  0000 C CNN
+F 2 "" H 2725 1400 50  0001 C CNN
+F 3 "" H 2725 1400 50  0001 C CNN
+	1    2725 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2725 2275 2725 2400
+Connection ~ 2725 2400
+Wire Wire Line
+	2725 2400 3150 2400
 $EndSCHEMATC

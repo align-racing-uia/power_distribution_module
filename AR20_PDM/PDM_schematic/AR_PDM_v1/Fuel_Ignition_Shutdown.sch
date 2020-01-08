@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 2 11
 Title ""
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7350 4550 2    50   Input ~ 0
+Text HLabel 7350 4400 2    50   Output ~ 0
 FUEL_PUMP_OUT
 $Comp
 L Relay:DIPxx-1Axx-11x K?
@@ -28,13 +28,13 @@ F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 4250 7350 4550
+	7350 4250 7350 4400
 $Comp
 L Device:Q_NJFET_DGS Q?
 U 1 1 5DDCBB71
 P 6900 5200
 F 0 "Q?" H 7091 5154 50  0000 L CNN
-F 1 "Q_NJFET_DGS" H 7091 5245 50  0000 L CNN
+F 1 "N_FET" H 7091 5245 50  0000 L CNN
 F 2 "" H 7100 5300 50  0001 C CNN
 F 3 "~" H 6900 5200 50  0001 C CNN
 	1    6900 5200
@@ -84,7 +84,7 @@ L Device:Q_NJFET_DGS Q?
 U 1 1 5DDB5A55
 P 8775 5200
 F 0 "Q?" H 8966 5154 50  0000 L CNN
-F 1 "Q_NJFET_DGS" H 8966 5245 50  0000 L CNN
+F 1 "N_FET" H 8966 5245 50  0000 L CNN
 F 2 "" H 8975 5300 50  0001 C CNN
 F 3 "~" H 8775 5200 50  0001 C CNN
 	1    8775 5200
@@ -170,7 +170,7 @@ Wire Wire Line
 	6600 5000 6800 5000
 Wire Wire Line
 	6600 4300 6600 5000
-Text HLabel 2000 5000 2    50   Input ~ 0
+Text HLabel 2000 4950 2    50   Output ~ 0
 COIL_INJECTOR_OUT
 $Comp
 L AR20_PDM_v1-rescue:R_Shunt-Device R?
@@ -183,13 +183,11 @@ F 3 "" H 7350 2350 50  0001 C CNN
 	1    7350 2350
 	1    0    0    -1  
 $EndComp
-Text HLabel 7350 1000 1    50   Input ~ 0
-VS_12V
 $Comp
-L Device:Fuse F?
+L Device:Fuse F_FP
 U 1 1 5DDF15AA
 P 7350 1600
-F 0 "F?" V 7153 1600 50  0000 C CNN
+F 0 "F_FP" V 7153 1600 50  0000 C CNN
 F 1 "Fuse" V 7244 1600 50  0000 C CNN
 F 2 "" V 7280 1600 50  0001 C CNN
 F 3 "~" H 7350 1600 50  0001 C CNN
@@ -272,9 +270,9 @@ vcc_5v
 Text HLabel 10550 2400 2    50   Output ~ 10
 FP_Alert
 Text HLabel 10550 2000 2    50   BiDi ~ 10
-FP_SDA
+SDA
 Text HLabel 10550 2150 2    50   Input ~ 10
-FP_SLC
+SLC
 Text Notes 8400 1100 0    50   ~ 10
 Close to PIN
 Wire Wire Line
@@ -330,9 +328,9 @@ Wire Wire Line
 Text Notes 3100 1300 0    50   ~ 10
 Close to PIN
 Text HLabel 5250 2350 2    50   Input ~ 10
-COIL_INJECTOR_SLC
+SLC
 Text HLabel 5250 2200 2    50   BiDi ~ 10
-COIL_INJECTOR_SDA
+SDA
 Text HLabel 5250 2600 2    50   Output ~ 10
 COIL_INJECTOR_Alert
 Text HLabel 3650 1100 1    50   Input ~ 10
@@ -411,54 +409,54 @@ $EndComp
 $Comp
 L Relay:DIPxx-1Axx-11x K?
 U 1 1 5DDBA337
-P 1800 4000
-F 0 "K?" H 2130 4046 50  0000 L CNN
-F 1 "DIPxx-1Axx-11x" H 2130 3955 50  0000 L CNN
-F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 2150 3950 50  0001 L CNN
-F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 1800 4000 50  0001 C CNN
-	1    1800 4000
+P 1800 3950
+F 0 "K?" H 2130 3996 50  0000 L CNN
+F 1 "DIPxx-1Axx-11x" H 2130 3905 50  0000 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 2150 3900 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 1800 3950 50  0001 C CNN
+	1    1800 3950
 	1    0    0    -1  
 $EndComp
 $Comp
 L AR20_PDM_v1-rescue:GND-power #PWR?
 U 1 1 5DDBDA4F
-P 1600 4550
-F 0 "#PWR?" H 1600 4300 50  0001 C CNN
-F 1 "GND-power" H 1605 4377 50  0000 C CNN
-F 2 "" H 1600 4550 50  0001 C CNN
-F 3 "" H 1600 4550 50  0001 C CNN
-	1    1600 4550
+P 1600 4500
+F 0 "#PWR?" H 1600 4250 50  0001 C CNN
+F 1 "GND-power" H 1605 4327 50  0000 C CNN
+F 2 "" H 1600 4500 50  0001 C CNN
+F 3 "" H 1600 4500 50  0001 C CNN
+	1    1600 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 4550 1600 4300
+	1600 4500 1600 4250
 Wire Wire Line
-	2000 4300 2000 5000
+	2000 4250 2000 4950
 Wire Wire Line
-	1600 3700 1600 3650
-Text HLabel 1600 3650 1    50   Input ~ 0
+	1600 3650 1600 3600
+Text HLabel 1600 3600 1    50   Input ~ 0
 SHUTDOWN_IN
 Wire Wire Line
-	1600 3700 1200 3700
-Connection ~ 1600 3700
+	1600 3650 1200 3650
+Connection ~ 1600 3650
 Wire Wire Line
-	1200 4300 1600 4300
-Connection ~ 1600 4300
+	1200 4250 1600 4250
+Connection ~ 1600 4250
 Wire Wire Line
-	1200 4150 1200 4300
+	1200 4100 1200 4250
 Wire Wire Line
-	1200 3700 1200 3850
+	1200 3650 1200 3800
 $Comp
 L AR20_PDM_v1-rescue:DIODE-Simulation_SPICE D?
 U 1 1 5DDCE100
-P 1200 4000
-F 0 "D?" V 1154 4080 50  0000 L CNN
-F 1 "DIODE" V 1245 4080 50  0000 L CNN
-F 2 "" H 1200 4000 50  0001 C CNN
-F 3 "" H 1200 4000 50  0001 C CNN
-F 4 "Y" H 1200 4000 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 1200 4000 50  0001 L CNN "Spice_Primitive"
-	1    1200 4000
+P 1200 3950
+F 0 "D?" V 1154 4030 50  0000 L CNN
+F 1 "DIODE" V 1245 4030 50  0000 L CNN
+F 2 "" H 1200 3950 50  0001 C CNN
+F 3 "" H 1200 3950 50  0001 C CNN
+F 4 "Y" H 1200 3950 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 1200 3950 50  0001 L CNN "Spice_Primitive"
+	1    1200 3950
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -474,13 +472,11 @@ F 3 "" H 2000 2550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7350 1450 7350 1000
-Text HLabel 2000 1050 1    50   Input ~ 0
-VS_12V
 $Comp
-L Device:Fuse F?
+L Device:Fuse F_COIL
 U 1 1 5DE5EBA7
 P 2000 1650
-F 0 "F?" V 1803 1650 50  0000 C CNN
+F 0 "F_COIL" V 1803 1650 50  0000 C CNN
 F 1 "Fuse" V 1894 1650 50  0000 C CNN
 F 2 "" V 1930 1650 50  0001 C CNN
 F 3 "~" H 2000 1650 50  0001 C CNN
@@ -490,27 +486,17 @@ $EndComp
 Wire Wire Line
 	2000 1500 2000 1050
 Wire Wire Line
-	2000 2750 2000 3700
+	2000 2750 2000 3650
 Wire Wire Line
 	7350 2550 7350 3650
-Text Notes 2250 3200 1    50   ~ 0
-Place shunt close to INA233\n
-Text Notes 7700 2850 1    50   ~ 0
-Place shunt close to INA233\n
+Text Notes 8675 2600 2    50   ~ 0
+Place shunt and INA233 close \n
 Wire Wire Line
 	2000 1800 2000 2350
-Text HLabel 3300 2350 0    50   Input ~ 0
-VS_12V
-Wire Wire Line
-	3650 2350 3300 2350
 Wire Wire Line
 	7350 1750 7350 2150
-Text HLabel 8600 2150 0    50   Input ~ 0
-VS_12V
-Wire Wire Line
-	8600 2150 8950 2150
 Text HLabel 9325 5200 2    50   Input ~ 0
-FP_ENABLE
+FP_ENABLE_AUX
 Wire Wire Line
 	8975 5200 9175 5200
 Wire Wire Line
@@ -519,10 +505,22 @@ Wire Wire Line
 	9325 5200 9175 5200
 Connection ~ 9175 5200
 Connection ~ 8675 5000
-Text HLabel 10150 5000 2    50   Input ~ 0
-FP_RELAY_SINK_ENABLE
+Text HLabel 9325 5000 2    50   Output ~ 0
+FP_ENABLE_RELAY_SINK
 Wire Wire Line
-	8675 5000 10150 5000
+	8675 5000 9325 5000
 Text Notes 7075 4925 0    50   ~ 0
-Use Logic Level Mosfets. (Gs Threshold <5V)
+Use Logic Level Mosfets. (Gs Threshold <3.3V)
+Wire Wire Line
+	7350 2150 8950 2150
+Connection ~ 7350 2150
+Wire Wire Line
+	2000 2350 3650 2350
+Connection ~ 2000 2350
+Text Notes 3400 2775 2    50   ~ 0
+Place shunt and INA233 close \n
+Text HLabel 2000 1050 1    50   Input ~ 10
+V+12V
+Text HLabel 7350 1000 1    50   Input ~ 10
+V+12V
 $EndSCHEMATC
