@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 11
+Sheet 2 13
 Title ""
 Date ""
 Rev ""
@@ -201,7 +201,7 @@ P 8700 1400
 AR Path="/5DA89415/5DE0EACB" Ref="C_bypass?"  Part="1" 
 AR Path="/5DA8920B/5DE0EACB" Ref="C_bypass?"  Part="1" 
 F 0 "C_bypass?" V 8448 1400 50  0000 C CNN
-F 1 "0.1uF" V 8539 1400 50  0000 C CNN
+F 1 "100nf" V 8539 1400 50  0000 C CNN
 F 2 "" H 8738 1250 50  0001 C CNN
 F 3 "~" H 8700 1400 50  0001 C CNN
 	1    8700 1400
@@ -394,19 +394,6 @@ F 3 "" H 3200 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AR20_PDM_v1-rescue:C-Device C_bypass?
-U 1 1 5DE077B4
-P 3400 1600
-AR Path="/5DA89415/5DE077B4" Ref="C_bypass?"  Part="1" 
-AR Path="/5DA8920B/5DE077B4" Ref="C_bypass?"  Part="1" 
-F 0 "C_bypass?" V 3148 1600 50  0000 C CNN
-F 1 "0.1uF" V 3239 1600 50  0000 C CNN
-F 2 "" H 3438 1450 50  0001 C CNN
-F 3 "~" H 3400 1600 50  0001 C CNN
-	1    3400 1600
-	0    1    1    0   
-$EndComp
-$Comp
 L Relay:DIPxx-1Axx-11x K?
 U 1 1 5DDBA337
 P 1800 3950
@@ -523,4 +510,17 @@ Text HLabel 2000 1050 1    50   Input ~ 10
 V+12V
 Text HLabel 7350 1000 1    50   Input ~ 10
 V+12V
+$Comp
+L AR20_PDM_v1-rescue:C-Device C_bypass?
+U 1 1 5DE077B4
+P 3400 1600
+AR Path="/5DA89415/5DE077B4" Ref="C_bypass?"  Part="1" 
+AR Path="/5DA8920B/5DE077B4" Ref="C_bypass?"  Part="1" 
+F 0 "C_bypass?" V 3148 1600 50  0000 C CNN
+F 1 "100nf" V 3239 1600 50  0000 C CNN
+F 2 "" H 3438 1450 50  0001 C CNN
+F 3 "~" H 3400 1600 50  0001 C CNN
+	1    3400 1600
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

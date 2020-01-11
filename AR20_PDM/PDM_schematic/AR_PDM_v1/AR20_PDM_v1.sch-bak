@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 13
 Title ""
 Date ""
 Rev ""
@@ -173,8 +173,6 @@ F11 "MCU_UNITS_FEED_OUT" O R 9975 2100 50
 $EndSheet
 Wire Wire Line
 	2225 875  2125 875 
-Wire Wire Line
-	2125 675  2225 675 
 $Sheet
 S 1100 625  1025 525 
 U 5DA89415
@@ -184,11 +182,9 @@ F2 "vcc_5v" I L 1100 675 50
 F3 "P1_SDA" B L 1100 900 50 
 F4 "P1_SLC" I L 1100 1000 50 
 F5 "V+12V" I L 1100 775 50 
-F6 "P1_EN_ACM" I R 2125 675 50 
-F7 "P1_EN_AUX" I R 2125 775 50 
-F8 "P1_OUT" O R 2125 975 50 
-F9 "P1_MOS_SENSE" O R 2125 875 50 
-F10 "P1_MOS_IN" O L 1100 1100 50 
+F6 "P1_OUT" O R 2125 975 50 
+F7 "P1_MOS_SENSE" O R 2125 875 50 
+F8 "P1_MOS_IN" O L 1100 1100 50 
 $EndSheet
 Text GLabel 2225 875  2    50   Input ~ 0
 P1_MOS_SENSE
@@ -206,12 +202,8 @@ Text GLabel 1000 675  0    50   Input ~ 0
 vcc_5v
 Wire Wire Line
 	2225 1650 2125 1650
-Wire Wire Line
-	2125 1450 2225 1450
 Text GLabel 2225 1650 2    50   Input ~ 0
 P2_MOS_SENSE
-Text GLabel 2225 1450 2    50   Input ~ 0
-P2_EN_ACM
 Wire Wire Line
 	1000 1875 1100 1875
 Text GLabel 1000 1875 0    50   Input ~ 0
@@ -226,8 +218,6 @@ Text GLabel 1000 1450 0    50   Input ~ 0
 vcc_5v
 Wire Wire Line
 	2225 2400 2125 2400
-Wire Wire Line
-	2125 2200 2225 2200
 $Sheet
 S 1100 2150 1025 525 
 U 5E0FBBBD
@@ -237,16 +227,12 @@ F2 "vcc_5v" I L 1100 2200 50
 F3 "V+12V" I L 1100 2300 50 
 F4 "P3_SDA" B L 1100 2425 50 
 F5 "P3_SLC" I L 1100 2525 50 
-F6 "P3_EN_ACM" I R 2125 2200 50 
-F7 "P3_EN_AUX" I R 2125 2300 50 
-F8 "P3_MOS_SENSE" O R 2125 2400 50 
-F9 "P3_OUT" O R 2125 2500 50 
-F10 "P3_MOS_IN" O L 1100 2625 50 
+F6 "P3_MOS_SENSE" O R 2125 2400 50 
+F7 "P3_OUT" O R 2125 2500 50 
+F8 "P3_MOS_IN" O L 1100 2625 50 
 $EndSheet
 Text GLabel 2225 2400 2    50   Input ~ 0
 P3_MOS_SENSE
-Text GLabel 2225 2200 2    50   Input ~ 0
-P3_EN_ACM
 Wire Wire Line
 	1000 2625 1100 2625
 Text GLabel 1000 2625 0    50   Input ~ 0
@@ -261,12 +247,8 @@ Text GLabel 1000 2200 0    50   Input ~ 0
 vcc_5v
 Wire Wire Line
 	2225 3150 2125 3150
-Wire Wire Line
-	2125 2950 2225 2950
 Text GLabel 2225 3150 2    50   Input ~ 0
 P4_MOS_SENSE
-Text GLabel 2225 2950 2    50   Input ~ 0
-P4_EN_ACM
 Wire Wire Line
 	1000 3375 1100 3375
 Text GLabel 1000 3375 0    50   Input ~ 0
@@ -281,8 +263,6 @@ Text GLabel 1000 2950 0    50   Input ~ 0
 vcc_5v
 Wire Wire Line
 	2225 3900 2125 3900
-Wire Wire Line
-	2125 3700 2225 3700
 $Sheet
 S 1100 3650 1025 525 
 U 5E0FCFDC
@@ -292,16 +272,12 @@ F2 "vcc_5v" I L 1100 3700 50
 F3 "V+12V" I L 1100 3800 50 
 F4 "P5_SDA" B L 1100 3925 50 
 F5 "P5_SLC" I L 1100 4025 50 
-F6 "P5_EN_ACM" I R 2125 3700 50 
-F7 "P5_EN_AUX" I R 2125 3800 50 
-F8 "P5_MOS_SENSE" O R 2125 3900 50 
-F9 "P5_OUT" O R 2125 4000 50 
-F10 "P5_MOS_IN" O L 1100 4125 50 
+F6 "P5_MOS_SENSE" O R 2125 3900 50 
+F7 "P5_OUT" O R 2125 4000 50 
+F8 "P5_MOS_IN" O L 1100 4125 50 
 $EndSheet
 Text GLabel 2225 3900 2    50   Input ~ 0
 P5_MOS_SENSE
-Text GLabel 2225 3700 2    50   Input ~ 0
-P5_EN_ACM
 Wire Wire Line
 	1000 4125 1100 4125
 Text GLabel 1000 4125 0    50   Input ~ 0
@@ -316,8 +292,6 @@ Text GLabel 1000 3700 0    50   Input ~ 0
 vcc_5v
 Wire Wire Line
 	2225 4650 2125 4650
-Wire Wire Line
-	2125 4450 2225 4450
 $Sheet
 S 1100 4400 1025 525 
 U 5E0FDCCC
@@ -327,16 +301,12 @@ F2 "vcc_5v" I L 1100 4450 50
 F3 "V+12V" I L 1100 4550 50 
 F4 "P6_SDA" B L 1100 4675 50 
 F5 "P6_SLC" I L 1100 4775 50 
-F6 "P6_EN_ACM" I R 2125 4450 50 
-F7 "P6_EN_AUX" I R 2125 4550 50 
-F8 "P6_MOS_SENSE" O R 2125 4650 50 
-F9 "P6_OUT" O R 2125 4750 50 
-F10 "P6_MOS_IN" O L 1100 4875 50 
+F6 "P6_MOS_SENSE" O R 2125 4650 50 
+F7 "P6_OUT" O R 2125 4750 50 
+F8 "P6_MOS_IN" O L 1100 4875 50 
 $EndSheet
 Text GLabel 2225 4650 2    50   Input ~ 0
 P6_MOS_SENSE
-Text GLabel 2225 4450 2    50   Input ~ 0
-P6_EN_ACM
 Wire Wire Line
 	1000 4875 1100 4875
 Text GLabel 1000 4875 0    50   Input ~ 0
@@ -352,20 +322,20 @@ vcc_5v
 Wire Wire Line
 	1400 6700 1400 6450
 Wire Wire Line
-	4000 6175 4000 6150
+	3825 6150 3825 6125
 $Comp
 L AR20_PDM_v1-rescue:GND-power #PWR?
 U 1 1 5E117EF0
-P 4000 5975
+P 3825 5950
 AR Path="/5DA89415/5E117EF0" Ref="#PWR?"  Part="1" 
 AR Path="/5DA8920B/5E117EF0" Ref="#PWR?"  Part="1" 
 AR Path="/5DE4D361/5E117EF0" Ref="#PWR?"  Part="1" 
 AR Path="/5E117EF0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4000 5725 50  0001 C CNN
-F 1 "GND" H 4005 5802 50  0000 C CNN
-F 2 "" H 4000 5975 50  0001 C CNN
-F 3 "" H 4000 5975 50  0001 C CNN
-	1    4000 5975
+F 0 "#PWR?" H 3825 5700 50  0001 C CNN
+F 1 "GND" H 3830 5777 50  0000 C CNN
+F 2 "" H 3825 5950 50  0001 C CNN
+F 3 "" H 3825 5950 50  0001 C CNN
+	1    3825 5950
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -381,12 +351,8 @@ F 3 "~" H 2050 6700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2225 5400 2125 5400
-Wire Wire Line
-	2125 5200 2225 5200
 Text GLabel 2225 5400 2    50   Input ~ 0
 P7_MOS_SENSE
-Text GLabel 2225 5200 2    50   Input ~ 0
-P7_EN_ACM
 Wire Wire Line
 	1000 5625 1100 5625
 Text GLabel 1000 5625 0    50   Input ~ 0
@@ -695,8 +661,6 @@ Wire Notes Line
 	5350 6875 1750 6875
 Wire Notes Line
 	1750 6875 1750 7775
-Text GLabel 2225 675  2    50   Input ~ 0
-P1_EN_ACM
 $Sheet
 S 1100 1400 1025 525 
 U 5E0FB5C8
@@ -706,11 +670,9 @@ F2 "vcc_5v" I L 1100 1450 50
 F3 "V+12V" I L 1100 1550 50 
 F4 "P2_SDA" B L 1100 1675 50 
 F5 "P2_SLC" I L 1100 1775 50 
-F6 "P2_EN_ACM" I R 2125 1450 50 
-F7 "P2_EN_AUX" I R 2125 1550 50 
-F8 "P2_MOS_SENSE" O R 2125 1650 50 
-F9 "P2_OUT" O R 2125 1750 50 
-F10 "P2_MOS_IN" O L 1100 1875 50 
+F6 "P2_MOS_SENSE" O R 2125 1650 50 
+F7 "P2_OUT" O R 2125 1750 50 
+F8 "P2_MOS_IN" O L 1100 1875 50 
 $EndSheet
 $Sheet
 S 1100 2900 1025 525 
@@ -721,11 +683,9 @@ F2 "vcc_5v" I L 1100 2950 50
 F3 "V+12V" I L 1100 3050 50 
 F4 "P4_SDA" B L 1100 3175 50 
 F5 "P4_SLC" I L 1100 3275 50 
-F6 "P4_EN_ACM" I R 2125 2950 50 
-F7 "P4_EN_AUX" I R 2125 3050 50 
-F8 "P4_MOS_SENSE" O R 2125 3150 50 
-F9 "P4_OUT" O R 2125 3250 50 
-F10 "P4_MOS_IN" O L 1100 3375 50 
+F6 "P4_MOS_SENSE" O R 2125 3150 50 
+F7 "P4_OUT" O R 2125 3250 50 
+F8 "P4_MOS_IN" O L 1100 3375 50 
 $EndSheet
 $Sheet
 S 1100 5150 1025 525 
@@ -736,11 +696,9 @@ F2 "vcc_5v" I L 1100 5200 50
 F3 "V+12V" I L 1100 5300 50 
 F4 "P7_SDA" B L 1100 5425 50 
 F5 "P7_SLC" I L 1100 5525 50 
-F6 "P7_EN_ACM" I R 2125 5200 50 
-F7 "P7_EN_AUX" I R 2125 5300 50 
-F8 "P7_MOS_SENSE" O R 2125 5400 50 
-F9 "P7_OUT" O R 2125 5500 50 
-F10 "P7_MOS_IN" O L 1100 5625 50 
+F6 "P7_MOS_SENSE" O R 2125 5400 50 
+F7 "P7_OUT" O R 2125 5500 50 
+F8 "P7_MOS_IN" O L 1100 5625 50 
 $EndSheet
 Wire Wire Line
 	1000 1675 1100 1675
@@ -822,34 +780,6 @@ Text GLabel 2225 975  2    50   Input ~ 0
 P1_OUT
 Wire Wire Line
 	2225 975  2125 975 
-Wire Wire Line
-	2225 775  2125 775 
-Text GLabel 2225 775  2    50   Input ~ 0
-P1_EN_AUX
-Wire Wire Line
-	2225 1550 2125 1550
-Text GLabel 2225 1550 2    50   Input ~ 0
-P2_EN_AUX
-Wire Wire Line
-	2225 2300 2125 2300
-Text GLabel 2225 2300 2    50   Input ~ 0
-P3_EN_AUX
-Wire Wire Line
-	2225 3050 2125 3050
-Text GLabel 2225 3050 2    50   Input ~ 0
-P4_EN_AUX
-Wire Wire Line
-	2225 3800 2125 3800
-Text GLabel 2225 3800 2    50   Input ~ 0
-P5_EN_AUX
-Wire Wire Line
-	2225 4550 2125 4550
-Text GLabel 2225 4550 2    50   Input ~ 0
-P6_EN_AUX
-Wire Wire Line
-	2225 5300 2125 5300
-Text GLabel 2225 5300 2    50   Input ~ 0
-P7_EN_AUX
 Text GLabel 1000 1775 0    50   Input ~ 0
 SLC
 Text GLabel 1000 1675 0    50   Input ~ 0
@@ -910,125 +840,352 @@ Text GLabel 10075 2100 2    50   Input ~ 0
 MCU_UNITS_FEED_OUT
 Wire Wire Line
 	10075 2100 9975 2100
-Text GLabel 6800 3850 2    50   Input ~ 0
+Text GLabel 6600 5525 0    50   Input ~ 0
 P1_MOS_SENSE
-Text GLabel 6800 3550 2    50   Input ~ 0
-P2_MOS_SENSE
-Text GLabel 9275 3475 0    50   Input ~ 0
-P2_EN_ACM
-Text GLabel 6800 3650 2    50   Input ~ 0
-P3_MOS_SENSE
-Text GLabel 9275 3775 0    50   Input ~ 0
-P3_EN_ACM
-Text GLabel 6800 3750 2    50   Input ~ 0
-P4_MOS_SENSE
-Text GLabel 9275 3675 0    50   Input ~ 0
-P4_EN_ACM
-Text GLabel 6800 3450 2    50   Input ~ 0
-P5_MOS_SENSE
-Text GLabel 9275 3275 0    50   Input ~ 0
-P5_EN_ACM
-Text GLabel 6800 3350 2    50   Input ~ 0
-P6_MOS_SENSE
-Text GLabel 6800 3250 2    50   Input ~ 0
-P7_MOS_SENSE
-Text GLabel 9275 3875 0    50   Input ~ 0
-P7_EN_ACM
-Text GLabel 9275 3575 0    50   Input ~ 0
-P1_EN_ACM
-Text GLabel 4300 6200 1    50   Input ~ 0
+Text GLabel 4125 6175 1    50   Input ~ 0
 P7_OUT
-Text GLabel 4700 6200 1    50   Input ~ 0
+Text GLabel 4525 6175 1    50   Input ~ 0
 P6_OUT
-Text GLabel 4800 6200 1    50   Input ~ 0
+Text GLabel 4625 6175 1    50   Input ~ 0
 P5_OUT
-Text GLabel 4200 6200 1    50   Input ~ 0
+Text GLabel 4025 6175 1    50   Input ~ 0
 P4_OUT
-Text GLabel 4500 6200 1    50   Input ~ 0
+Text GLabel 4325 6175 1    50   Input ~ 0
 P3_OUT
-Text GLabel 4600 6200 1    50   Input ~ 0
+Text GLabel 4425 6175 1    50   Input ~ 0
 P2_OUT
-Text GLabel 4400 6200 1    50   Input ~ 0
+Text GLabel 4225 6175 1    50   Input ~ 0
 P1_OUT
-Text GLabel 9275 3375 0    50   Input ~ 0
-P3_EN_AUX
-Text GLabel 9275 3975 0    50   Input ~ 0
+Text GLabel 9975 3675 0    50   Input ~ 0
 FP_ENABLE_ACM
-Text GLabel 4900 6200 1    50   Input ~ 0
+Text GLabel 4725 6175 1    50   Input ~ 0
 COIL_INJECTOR_OUT
-Text GLabel 5000 6200 1    50   Input ~ 0
+Text GLabel 4825 6175 1    50   Input ~ 0
 FUEL_PUMP_OUT
-Text GLabel 5100 6200 1    50   Input ~ 0
+Text GLabel 4925 6175 1    50   Input ~ 0
 CLUTCH_ACT_OUT
-Text GLabel 5200 6200 1    50   Input ~ 0
+Text GLabel 5025 6175 1    50   Input ~ 0
 ETC_OUT
-Text GLabel 5625 4950 1    50   Input ~ 0
+Text GLabel 5225 5250 1    50   Input ~ 0
 SHUTDOWN_OUT
-Text GLabel 5300 6200 1    50   Input ~ 0
+Text GLabel 5125 6175 1    50   Input ~ 0
 IGN_SWITCH_OUT
-Text GLabel 5400 6200 1    50   Input ~ 0
+Text GLabel 5225 6175 1    50   Input ~ 0
 MCU_UNITS_FEED_OUT
 Wire Wire Line
-	3750 6150 4000 6150
-Connection ~ 4000 6150
+	3575 6125 3825 6125
+Connection ~ 3825 6125
 Wire Wire Line
-	4000 6150 4000 5975
-Text GLabel 4100 6200 1    50   Input ~ 0
+	3825 6125 3825 5950
+Text GLabel 3925 6175 1    50   Input ~ 0
 GEAR_ACT_COIL_GND
-Text GLabel 8475 3850 0    50   Input ~ 0
-DIRECT_Alert
-Text GLabel 8475 3950 0    50   Input ~ 0
-FP_Alert
-Text GLabel 8475 4050 0    50   Input ~ 0
-COIL_INJECTOR_Alert
-Text GLabel 4225 4925 1    50   Input ~ 0
+Text GLabel 3825 5225 1    50   Input ~ 0
 FP_ENABLE_RELAY_SINK
-Text GLabel 4325 4925 1    50   Input ~ 0
+Text GLabel 3925 5225 1    50   Input ~ 0
 FP_ENABLE_AUX
-Text GLabel 4425 4925 1    50   Input ~ 0
+Text GLabel 4025 5225 1    50   Input ~ 0
 P7_EN_AUX
-Text GLabel 4525 4925 1    50   Input ~ 0
+Text GLabel 4125 5225 1    50   Input ~ 0
 P2_EN_AUX
-Text GLabel 4625 4925 1    50   Input ~ 0
+Text GLabel 4225 5225 1    50   Input ~ 0
 P4_EN_AUX
-Text GLabel 4725 4925 1    50   Input ~ 0
+Text GLabel 4325 5225 1    50   Input ~ 0
 P1_EN_AUX
-Text GLabel 4825 4925 1    50   Input ~ 0
-P6_EN_ACM
-Text GLabel 4925 4925 1    50   Input ~ 0
+Text GLabel 4425 5225 1    50   Input ~ 0
+P3_EN_ACM
+Text GLabel 4525 5225 1    50   Input ~ 0
 P6_EN_AUX
-Text GLabel 5025 4925 1    50   Input ~ 0
+Text GLabel 4625 5225 1    50   Input ~ 0
 P5_EN_AUX
-Text GLabel 5125 4925 1    50   Input ~ 0
+Text GLabel 4725 5225 1    50   Input ~ 0
 CAN_HIGH
-Text GLabel 5225 4925 1    50   Input ~ 0
+Text GLabel 4825 5225 1    50   Input ~ 0
 CAN_LOW
-Text GLabel 5325 4925 1    50   Input ~ 0
+Text GLabel 4925 5225 1    50   Input ~ 0
 CAN_HIGH
-Text GLabel 5425 4925 1    50   Input ~ 0
+Text GLabel 5025 5225 1    50   Input ~ 0
 CAN_LOW
-$Sheet
-S 4450 775  1200 800 
-U 5E5484EE
-F0 "Misc" 50
-F1 "Misc.sch" 50
-$EndSheet
-Text GLabel 4450 850  0    50   Input ~ 0
+Text GLabel 4375 700  0    50   Input ~ 0
 P1_MOS_IN
-Text GLabel 4450 950  0    50   Input ~ 0
+Text GLabel 4375 800  0    50   Input ~ 0
 P2_MOS_IN
-Text GLabel 4450 1050 0    50   Input ~ 0
+Text GLabel 4375 900  0    50   Input ~ 0
 P3_MOS_IN
-Text GLabel 4450 1150 0    50   Input ~ 0
+Text GLabel 4375 1000 0    50   Input ~ 0
 P4_MOS_IN
-Text GLabel 4450 1250 0    50   Input ~ 0
+Text GLabel 4375 1100 0    50   Input ~ 0
 P5_MOS_IN
-Text GLabel 4450 1350 0    50   Input ~ 0
+Text GLabel 4375 1200 0    50   Input ~ 0
 P6_MOS_IN
-Text GLabel 4450 1450 0    50   Input ~ 0
+Text GLabel 4375 1300 0    50   Input ~ 0
 P7_MOS_IN
 Text GLabel 8450 750  0    50   Input ~ 0
 SHUTDOWN_IN
-Text GLabel 5525 4950 1    50   Input ~ 0
+Text GLabel 5125 5250 1    50   Input ~ 0
 SHUTDOWN_IN
+Text GLabel 4375 2050 0    50   Input ~ 0
+P7_OUT
+Text GLabel 4375 1950 0    50   Input ~ 0
+P6_OUT
+Text GLabel 4375 1850 0    50   Input ~ 0
+P5_OUT
+Text GLabel 4375 1750 0    50   Input ~ 0
+P4_OUT
+Text GLabel 4375 1650 0    50   Input ~ 0
+P3_OUT
+Text GLabel 4375 1550 0    50   Input ~ 0
+P2_OUT
+Text GLabel 4375 1450 0    50   Input ~ 0
+P1_OUT
+$Sheet
+S 4375 625  1450 2675
+U 5E5484EE
+F0 "Misc" 50
+F1 "Misc.sch" 50
+F2 "P1_EN_AUX" I R 5825 775 50 
+F3 "P2_EN_AUX" I R 5825 875 50 
+F4 "P3_EN_AUX" I R 5825 975 50 
+F5 "P4_EN_AUX" I R 5825 1075 50 
+F6 "P5_EN_ACM" I R 5825 1950 50 
+F7 "P5_EN_AUX" I R 5825 1175 50 
+F8 "P6_EN_ACM" I R 5825 2050 50 
+F9 "P6_EN_AUX" I R 5825 1275 50 
+F10 "P7_EN_ACM" I R 5825 2150 50 
+F11 "P7_EN_AUX" I R 5825 1375 50 
+F12 "P1_MOS_IN" I L 4375 700 50 
+F13 "P2_MOS_IN" I L 4375 800 50 
+F14 "P3_MOS_IN" I L 4375 900 50 
+F15 "P4_MOS_IN" I L 4375 1000 50 
+F16 "P5_MOS_IN" I L 4375 1100 50 
+F17 "P6_MOS_IN" I L 4375 1200 50 
+F18 "P7_MOS_IN" I L 4375 1300 50 
+F19 "P4_EN_ACM" I R 5825 1850 50 
+F20 "P3_EN_ACM" I R 5825 1750 50 
+F21 "P2_EN_ACM" I R 5825 1650 50 
+F22 "P1_EN_ACM" I R 5825 1550 50 
+F23 "P1_OUT" I L 4375 1450 50 
+F24 "SHUTDOWN_IN" I L 4375 2175 50 
+F25 "COIL_INJECTOR_OUT" I L 4375 2800 50 
+F26 "FUEL_PUMP_OUT" I L 4375 2900 50 
+F27 "P1_Fault" I R 5825 2325 50 
+F28 "P2_Fault" I R 5825 2425 50 
+F29 "P3_Fault" I R 5825 2525 50 
+F30 "P4_Fault" I R 5825 2625 50 
+F31 "P5_Fault" I R 5825 2725 50 
+F32 "P6_Fault" I R 5825 2825 50 
+F33 "P7_Fault" I R 5825 2925 50 
+F34 "CLUTCH_ACT_OUT" I L 4375 2600 50 
+F35 "ETC_OUT" I L 4375 2700 50 
+F36 "SHUTDOWN_OUT" I L 4375 2275 50 
+F37 "IGN_SWITCH_OUT" I L 4375 2500 50 
+F38 "MCU_UNITS_FEED_OUT" I L 4375 2400 50 
+F39 "Switch" I R 5825 3050 50 
+F40 "vcc_5v" I R 5825 3150 50 
+F41 "V+12V" I R 5825 3250 50 
+F42 "P2_OUT" I L 4375 1550 50 
+F43 "P3_OUT" I L 4375 1650 50 
+F44 "P4_OUT" I L 4375 1750 50 
+F45 "P5_OUT" I L 4375 1850 50 
+F46 "P6_OUT" I L 4375 1950 50 
+F47 "P7_OUT" I L 4375 2050 50 
+F48 "COIL_INJ_Fault" I L 4375 3150 50 
+F49 "FP_Fault" I L 4375 3250 50 
+$EndSheet
+Text GLabel 4375 2800 0    50   Input ~ 0
+COIL_INJECTOR_OUT
+Text GLabel 4375 2900 0    50   Input ~ 0
+FUEL_PUMP_OUT
+Text GLabel 4375 2600 0    50   Input ~ 0
+CLUTCH_ACT_OUT
+Text GLabel 4375 2700 0    50   Input ~ 0
+ETC_OUT
+Text GLabel 4375 2500 0    50   Input ~ 0
+IGN_SWITCH_OUT
+Text GLabel 4375 2400 0    50   Input ~ 0
+MCU_UNITS_FEED_OUT
+Text GLabel 5825 1375 2    50   Input ~ 0
+P7_EN_AUX
+Text GLabel 5825 875  2    50   Input ~ 0
+P2_EN_AUX
+Text GLabel 5825 1075 2    50   Input ~ 0
+P4_EN_AUX
+Text GLabel 5825 775  2    50   Input ~ 0
+P1_EN_AUX
+Text GLabel 5825 1750 2    50   Input ~ 0
+P3_EN_ACM
+Text GLabel 5825 1275 2    50   Input ~ 0
+P6_EN_AUX
+Text GLabel 5825 1175 2    50   Input ~ 0
+P5_EN_AUX
+Text GLabel 5825 1650 2    50   Input ~ 0
+P2_EN_ACM
+Text GLabel 5825 2050 2    50   Input ~ 0
+P6_EN_ACM
+Text GLabel 5825 1850 2    50   Input ~ 0
+P4_EN_ACM
+Text GLabel 5825 1950 2    50   Input ~ 0
+P5_EN_ACM
+Text GLabel 5825 2150 2    50   Input ~ 0
+P7_EN_ACM
+Text GLabel 5825 1550 2    50   Input ~ 0
+P1_EN_ACM
+Text GLabel 5825 975  2    50   Input ~ 0
+P3_EN_AUX
+Text GLabel 9975 3875 0    50   Input ~ 0
+P2_EN_ACM
+Text GLabel 9975 4275 0    50   Input ~ 0
+P6_EN_ACM
+Text GLabel 9975 4075 0    50   Input ~ 0
+P4_EN_ACM
+Text GLabel 9975 4175 0    50   Input ~ 0
+P5_EN_ACM
+Text GLabel 9975 4375 0    50   Input ~ 0
+P7_EN_ACM
+Text GLabel 9975 3775 0    50   Input ~ 0
+P1_EN_ACM
+Text GLabel 9975 3975 0    50   Input ~ 0
+P3_EN_AUX
+Text GLabel 5825 2325 2    50   Input ~ 0
+P1_Fault
+Text GLabel 5825 2425 2    50   Input ~ 0
+P2_Fault
+Text GLabel 5825 2525 2    50   Input ~ 0
+P3_Fault
+Text GLabel 5825 2625 2    50   Input ~ 0
+P4_Fault
+Text GLabel 5825 2725 2    50   Input ~ 0
+P5_Fault
+Text GLabel 5825 2825 2    50   Input ~ 0
+P6_Fault
+Text GLabel 5825 2925 2    50   Input ~ 0
+P7_Fault
+Text GLabel 5825 3050 2    50   Input ~ 0
+Switch
+Text GLabel 5825 3150 2    50   Input ~ 0
+vcc_5v
+Text GLabel 5825 3250 2    50   Input ~ 0
+V+12V
+Text GLabel 6450 4775 0    50   Input ~ 0
+P1_Fault
+Text GLabel 6450 4675 0    50   Input ~ 0
+P2_Fault
+Text GLabel 6450 4575 0    50   Input ~ 0
+P3_Fault
+Text GLabel 6450 4475 0    50   Input ~ 0
+P4_Fault
+Text GLabel 6450 4375 0    50   Input ~ 0
+P5_Fault
+Text GLabel 6450 4275 0    50   Input ~ 0
+P6_Fault
+Text GLabel 6450 4175 0    50   Input ~ 0
+P7_Fault
+Text GLabel 4375 3150 0    50   Input ~ 0
+COIL_INJECTOR_Fault
+Text GLabel 4375 3250 0    50   Input ~ 0
+FUEL_PUMP_Fault
+Text GLabel 6450 4075 0    50   Input ~ 0
+FUEL_PUMP_Fault
+Text GLabel 6600 6125 0    50   Input ~ 0
+P7_MOS_SENSE
+Text GLabel 6600 6025 0    50   Input ~ 0
+P6_MOS_SENSE
+Text GLabel 6600 5925 0    50   Input ~ 0
+P5_MOS_SENSE
+Text GLabel 6600 5625 0    50   Input ~ 0
+P4_MOS_SENSE
+Text GLabel 6600 5725 0    50   Input ~ 0
+P3_MOS_SENSE
+Text GLabel 6600 5825 0    50   Input ~ 0
+P2_MOS_SENSE
+$Sheet
+S 6600 5400 1650 900 
+U 5E2546F2
+F0 "MOS_SENSE_MUX" 50
+F1 "MOS_SENSE_MUX.sch" 50
+F2 "P1_MOS_SENSE" I L 6600 5525 50 
+F3 "P2_MOS_SENSE" I L 6600 5625 50 
+F4 "P3_MOS_SENSE" I L 6600 5725 50 
+F5 "P4_MOS_SENSE" I L 6600 5825 50 
+F6 "P5_MOS_SENSE" I L 6600 5925 50 
+F7 "P6_MOS_SENSE" I L 6600 6025 50 
+F8 "P7_MOS_SENSE" I L 6600 6125 50 
+F9 "P1_MOS_SENSE_Select" I R 8250 5525 50 
+F10 "P2_MOS_SENSE_Select" I R 8250 5625 50 
+F11 "P3_MOS_SENSE_Select" I R 8250 5725 50 
+F12 "P4_MOS_SENSE_Select" I R 8250 5825 50 
+F13 "P5_MOS_SENSE_Select" I R 8250 5925 50 
+F14 "P6_MOS_SENSE_Select" I R 8250 6025 50 
+F15 "P7_MOS_SENSE_Select" I R 8250 6125 50 
+F16 "MOS_SENSE_ALL" I R 8250 6225 50 
+$EndSheet
+Text GLabel 8250 6225 2    50   Input ~ 0
+MOS_SENSE_ALL
+Text GLabel 8250 6125 2    50   Input ~ 0
+P7_MOS_SENSE_Select
+Text GLabel 8250 6025 2    50   Input ~ 0
+P6_MOS_SENSE_Select
+Text GLabel 8250 5925 2    50   Input ~ 0
+P5_MOS_SENSE_Select
+Text GLabel 8250 5825 2    50   Input ~ 0
+P4_MOS_SENSE_Select
+Text GLabel 8250 5725 2    50   Input ~ 0
+P3_MOS_SENSE_Select
+Text GLabel 8250 5525 2    50   Input ~ 0
+P1_MOS_SENSE_Select
+Text GLabel 8250 5625 2    50   Input ~ 0
+P2_MOS_SENSE_Select
+Text GLabel 10025 4475 0    50   Input ~ 0
+MOS_SENSE_ALL
+Text GLabel 8275 4550 2    50   Input ~ 0
+P7_MOS_SENSE_Select
+Text GLabel 8275 4450 2    50   Input ~ 0
+P6_MOS_SENSE_Select
+Text GLabel 8275 4350 2    50   Input ~ 0
+P5_MOS_SENSE_Select
+Text GLabel 8275 4250 2    50   Input ~ 0
+P4_MOS_SENSE_Select
+Text GLabel 8275 4150 2    50   Input ~ 0
+P3_MOS_SENSE_Select
+Text GLabel 8275 3950 2    50   Input ~ 0
+P1_MOS_SENSE_Select
+Text GLabel 8275 4050 2    50   Input ~ 0
+P2_MOS_SENSE_Select
+$Sheet
+S 6450 3875 1825 1275
+U 5E1AEC18
+F0 "Port_Expander" 50
+F1 "Port_Expander.sch" 50
+F2 "COIL_INJECTOR_Fault" O L 6450 3975 50 
+F3 "FUEL_PUMP_Fault" O L 6450 4075 50 
+F4 "P7_Fault" O L 6450 4175 50 
+F5 "P6_Fault" O L 6450 4275 50 
+F6 "P5_Fault" O L 6450 4375 50 
+F7 "P4_Fault" O L 6450 4475 50 
+F8 "P3_Fault" O L 6450 4575 50 
+F9 "P1_Fault" O L 6450 4775 50 
+F10 "P2_Fault" O L 6450 4675 50 
+F11 "P1_MOS_SENSE_Select" O R 8275 3950 50 
+F12 "P2_MOS_SENSE_Select" O R 8275 4050 50 
+F13 "P3_MOS_SENSE_Select" O R 8275 4150 50 
+F14 "P4_MOS_SENSE_Select" O R 8275 4250 50 
+F15 "P5_MOS_SENSE_Select" O R 8275 4350 50 
+F16 "P6_MOS_SENSE_Select" O R 8275 4450 50 
+F17 "P7_MOS_SENSE_Select" O R 8275 4550 50 
+F18 "SLC" I R 8275 4850 50 
+F19 "SDA" I R 8275 4950 50 
+F20 "VCC_5v" I R 8275 5075 50 
+F21 "EXPANDER_INT" I R 8275 4650 50 
+$EndSheet
+Text GLabel 8275 5075 2    50   Input ~ 0
+vcc_5v
+Text GLabel 8275 4950 2    50   Input ~ 0
+SDA
+Text GLabel 8275 4850 2    50   Input ~ 0
+SLC
+Text GLabel 6450 3975 0    50   Input ~ 0
+COIL_INJECTOR_Fault
+Text GLabel 8275 4650 2    50   Input ~ 0
+EXPANDER_INT
+Text GLabel 9975 4600 0    50   Input ~ 0
+EXPANDER_INT
 $EndSCHEMATC

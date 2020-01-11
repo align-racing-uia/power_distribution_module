@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 11
+Sheet 6 13
 Title ""
 Date ""
 Rev ""
@@ -60,7 +60,7 @@ AR Path="/5E0FCFDC/5DAAC1D1" Ref="C_out?"  Part="1"
 AR Path="/5E0FDCCC/5DAAC1D1" Ref="C_out?"  Part="1" 
 AR Path="/5E10174B/5DAAC1D1" Ref="C_out?"  Part="1" 
 F 0 "C_out?" H 4915 2896 50  0000 L CNN
-F 1 "220nf" H 4915 2805 50  0000 L CNN
+F 1 "10nf" H 4915 2805 50  0000 L CNN
 F 2 "" H 4838 2700 50  0001 C CNN
 F 3 "~" H 4800 2850 50  0001 C CNN
 	1    4800 2850
@@ -86,7 +86,7 @@ AR Path="/5E0FCFDC/5DAAC1D7" Ref="C_in?"  Part="1"
 AR Path="/5E0FDCCC/5DAAC1D7" Ref="C_in?"  Part="1" 
 AR Path="/5E10174B/5DAAC1D7" Ref="C_in?"  Part="1" 
 F 0 "C_in?" H 3615 1996 50  0000 L CNN
-F 1 "220nf" H 3615 1905 50  0000 L CNN
+F 1 "150nf" H 3615 1905 50  0000 L CNN
 F 2 "" H 3538 1800 50  0001 C CNN
 F 3 "~" H 3500 1950 50  0001 C CNN
 	1    3500 1950
@@ -164,7 +164,7 @@ AR Path="/5E0FCFDC/5DAAC201" Ref="C_bypass?"  Part="1"
 AR Path="/5E0FDCCC/5DAAC201" Ref="C_bypass?"  Part="1" 
 AR Path="/5E10174B/5DAAC201" Ref="C_bypass?"  Part="1" 
 F 0 "C_bypass?" V 8248 3350 50  0000 C CNN
-F 1 "0.1uF" V 8339 3350 50  0000 C CNN
+F 1 "100nf" V 8339 3350 50  0000 C CNN
 F 2 "" H 8538 3200 50  0001 C CNN
 F 3 "~" H 8500 3350 50  0001 C CNN
 	1    8500 3350
@@ -814,74 +814,6 @@ F 3 "~" H 6475 2950 50  0001 C CNN
 $EndComp
 Text HLabel 4650 1600 0    50   Input ~ 10
 V+12V
-$Comp
-L AR20_PDM_v1-rescue:C-Device C_sense?
-U 1 1 5E1B5F87
-P 7175 1925
-AR Path="/5DA89415/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5DEB10A1/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5DEB20EA/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5E0E4725/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5E0E4A93/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5E0E4EB5/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5E0E5304/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5E0E594B/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5E0E607C/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5E0FB5C8/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5E0FBBBD/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5E0FC3A2/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5E0FCFDC/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5E0FDCCC/5E1B5F87" Ref="C_sense?"  Part="1" 
-AR Path="/5E10174B/5E1B5F87" Ref="C_sense?"  Part="1" 
-F 0 "C_sense?" H 7290 1971 50  0000 L CNN
-F 1 "0.1uf" H 7290 1880 50  0000 L CNN
-F 2 "" H 7213 1775 50  0001 C CNN
-F 3 "~" H 7175 1925 50  0001 C CNN
-	1    7175 1925
-	-1   0    0    1   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:GND-power #PWR?
-U 1 1 5E1B5F8D
-P 7175 2075
-AR Path="/5DA89415/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB10A1/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB20EA/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4725/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4A93/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4EB5/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E5304/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E594B/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E607C/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FB5C8/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FC3A2/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FCFDC/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FDCCC/5E1B5F8D" Ref="#PWR?"  Part="1" 
-AR Path="/5E10174B/5E1B5F8D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7175 1825 50  0001 C CNN
-F 1 "GND" H 7180 1902 50  0000 C CNN
-F 2 "" H 7175 2075 50  0001 C CNN
-F 3 "" H 7175 2075 50  0001 C CNN
-	1    7175 2075
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7175 1775 7175 1675
-Wire Wire Line
-	7175 1675 7100 1675
-Text Notes 6750 2400 0    50   ~ 0
-Ceramic, Place close to respective phase, mosfet/relay
-Text HLabel 7100 1675 0    50   Input ~ 10
-V+12V
-Wire Notes Line
-	6675 1600 9000 1600
-Wire Notes Line
-	9000 1600 9000 2450
-Wire Notes Line
-	9000 2450 6675 2450
-Wire Notes Line
-	6675 2450 6675 1600
 Wire Wire Line
 	2250 2400 3150 2400
 $EndSCHEMATC
