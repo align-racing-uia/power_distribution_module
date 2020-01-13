@@ -1,0 +1,3122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\Serious Business\Documents\Github\AR20\AR20_PDM\PDM_schematic\AR_PDM_v1\AR20_PDM_v1.sch</source>
+    <date>12.01.2020 20:50:08</date>
+    <tool>Eeschema (5.1.4)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>AR20_PDM_v1.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Fuel_Ignition_Shutdown.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Fuses_Direct/" tstamps="/5DE4D361/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Fuses_Direct.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Phase1/" tstamps="/5DA89415/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Phase1.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Phase3/" tstamps="/5E0FBBBD/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Phase3.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/Phase5/" tstamps="/5E0FCFDC/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Phase5.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/Phase6_GearA/" tstamps="/5E0FDCCC/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Phase6_GearA.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/Phase2/" tstamps="/5E0FB5C8/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Phase2.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="9" name="/Phase4/" tstamps="/5E0FC3A2/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Phase4.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="10" name="/Phase7_GearB/" tstamps="/5E10174B/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Phase7_GearB.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="11" name="/MOS_SENSE_MUX/" tstamps="/5E2546F2/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>MOS_SENSE_MUX.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="12" name="/Port_Expander/" tstamps="/5E1AEC18/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Port_Expander.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="13" name="/Misc/" tstamps="/5E5484EE/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Misc.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="R10K1">
+      <value>5K</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DAD3BC1</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>ACM_Connector</value>
+      <datasheet>JAE-IL-WX-30PB-VF-BE</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_02x15_Odd_Even" description="Generic connector, double row, 02x15, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E10248A</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>High_Curret_terminal</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="High_Curret_terminal" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E114D97</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100uf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E179318</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100uf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E17931E</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100uf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E179324</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>100uf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E17932A</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>100uf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E179330</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>3.3-5V 5W</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="D_Zener-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E1C0835</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>16V 5W</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="D_Zener-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E1C083B</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>3.3-5V 5W</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="D_Zener-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E1E2E3E</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>16V 5W</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="D_Zener-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E1E2E44</tstamp>
+    </comp>
+    <comp ref="R10K2">
+      <value>5K</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E228553</tstamp>
+    </comp>
+    <comp ref="K2">
+      <value>DIPxx-1Axx-11x</value>
+      <footprint>Relay_THT:Relay_StandexMeder_DIP_LowProfile</footprint>
+      <datasheet>https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf</datasheet>
+      <libsource lib="Relay" part="DIPxx-1Axx-11x" description="Standex Meder DIP reed relay, SPST, Closing Contact"/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DDB9C36</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>N_FET</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NJFET_DGS" description="N-JFET transistor, drain/gate/source"/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DDCBB71</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>DIODE</value>
+      <fields>
+        <field name="Spice_Netlist_Enabled">Y</field>
+        <field name="Spice_Primitive">V</field>
+      </fields>
+      <libsource lib="AR20_PDM_v1-rescue" part="DIODE-Simulation_SPICE" description=""/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DDDEC0F</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>N_FET</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NJFET_DGS" description="N-JFET transistor, drain/gate/source"/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DDB5A55</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>4K7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DDB5A5B</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>4K7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DDC298C</tstamp>
+    </comp>
+    <comp ref="F_FP1">
+      <value>Fuse</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DDF15AA</tstamp>
+    </comp>
+    <comp ref="C_bypass2">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DE0EACB</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>INA233</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="INA233" description=""/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DE0EAE7</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>INA233</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="INA233" description=""/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DE077D0</tstamp>
+    </comp>
+    <comp ref="K1">
+      <value>DIPxx-1Axx-11x</value>
+      <footprint>Relay_THT:Relay_StandexMeder_DIP_LowProfile</footprint>
+      <datasheet>https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf</datasheet>
+      <libsource lib="Relay" part="DIPxx-1Axx-11x" description="Standex Meder DIP reed relay, SPST, Closing Contact"/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DDBA337</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>DIODE</value>
+      <fields>
+        <field name="Spice_Netlist_Enabled">Y</field>
+        <field name="Spice_Primitive">V</field>
+      </fields>
+      <libsource lib="AR20_PDM_v1-rescue" part="DIODE-Simulation_SPICE" description=""/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DDCE100</tstamp>
+    </comp>
+    <comp ref="F_COIL1">
+      <value>Fuse</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DE5EBA7</tstamp>
+    </comp>
+    <comp ref="C_bypass1">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5DE077B4</tstamp>
+    </comp>
+    <comp ref="R_Shunt1">
+      <value>2m_1%_4W</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5E1ED477</tstamp>
+    </comp>
+    <comp ref="R_Shunt2">
+      <value>2m_1%_4W</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Fuel_Ignition_ShutdownCircuit/" tstamps="/5DA8920B/"/>
+      <tstamp>5E20008B</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>Fuse</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/Fuses_Direct/" tstamps="/5DE4D361/"/>
+      <tstamp>5DE4DAA4</tstamp>
+    </comp>
+    <comp ref="F2">
+      <value>Fuse</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/Fuses_Direct/" tstamps="/5DE4D361/"/>
+      <tstamp>5DE4DAAD</tstamp>
+    </comp>
+    <comp ref="F3">
+      <value>Fuse</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/Fuses_Direct/" tstamps="/5DE4D361/"/>
+      <tstamp>5DE4DAB6</tstamp>
+    </comp>
+    <comp ref="F4">
+      <value>1A</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/Fuses_Direct/" tstamps="/5DE4D361/"/>
+      <tstamp>5DE4DABF</tstamp>
+    </comp>
+    <comp ref="F5">
+      <value>Fuse</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/Fuses_Direct/" tstamps="/5DE4D361/"/>
+      <tstamp>5DE4DAC8</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>INA233</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="INA233" description=""/>
+      <sheetpath names="/Fuses_Direct/" tstamps="/5DE4D361/"/>
+      <tstamp>5DE6C6C9</tstamp>
+    </comp>
+    <comp ref="C_bypass3">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Fuses_Direct/" tstamps="/5DE4D361/"/>
+      <tstamp>5DE6C6E5</tstamp>
+    </comp>
+    <comp ref="R_Shunt3">
+      <value>2m_1%_4W</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Fuses_Direct/" tstamps="/5DE4D361/"/>
+      <tstamp>5E1E306F</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase1/" tstamps="/5DA89415/"/>
+      <tstamp>5E21B807</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase1/" tstamps="/5DA89415/"/>
+      <tstamp>5E21B80F</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>150nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase1/" tstamps="/5DA89415/"/>
+      <tstamp>5DAAC1D7</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase1/" tstamps="/5DA89415/"/>
+      <tstamp>5E21B81B</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase1/" tstamps="/5DA89415/"/>
+      <tstamp>5E21B828</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase1/" tstamps="/5DA89415/"/>
+      <tstamp>5E21B851</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>BTS50025-1TAD</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="BTS50025-1TAD" description=""/>
+      <sheetpath names="/Phase1/" tstamps="/5DA89415/"/>
+      <tstamp>5E21B7FE</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>INA233</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="INA233" description=""/>
+      <sheetpath names="/Phase1/" tstamps="/5DA89415/"/>
+      <tstamp>5E21B805</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase1/" tstamps="/5DA89415/"/>
+      <tstamp>5E21B859</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>4.7uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase1/" tstamps="/5DA89415/"/>
+      <tstamp>5E21B864</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>3.9R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase1/" tstamps="/5DA89415/"/>
+      <tstamp>5E21B870</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>1k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase1/" tstamps="/5DA89415/"/>
+      <tstamp>5E21B875</tstamp>
+    </comp>
+    <comp ref="R_Shunt4">
+      <value>2m_1%_4W</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase1/" tstamps="/5DA89415/"/>
+      <tstamp>5E1C5925</tstamp>
+    </comp>
+    <comp ref="R_in1">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase3/" tstamps="/5E0FBBBD/"/>
+      <tstamp>5E21B809</tstamp>
+    </comp>
+    <comp ref="C_out1">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase3/" tstamps="/5E0FBBBD/"/>
+      <tstamp>5E21B80C</tstamp>
+    </comp>
+    <comp ref="C_in1">
+      <value>150nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase3/" tstamps="/5E0FBBBD/"/>
+      <tstamp>5E21B814</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase3/" tstamps="/5E0FBBBD/"/>
+      <tstamp>5E21B818</tstamp>
+    </comp>
+    <comp ref="C_bypass4">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase3/" tstamps="/5E0FBBBD/"/>
+      <tstamp>5E21B829</tstamp>
+    </comp>
+    <comp ref="C_sense1">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase3/" tstamps="/5E0FBBBD/"/>
+      <tstamp>5E21B84E</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>BTS50025-1TAD</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="BTS50025-1TAD" description=""/>
+      <sheetpath names="/Phase3/" tstamps="/5E0FBBBD/"/>
+      <tstamp>5E21B7FC</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>INA233</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="INA233" description=""/>
+      <sheetpath names="/Phase3/" tstamps="/5E0FBBBD/"/>
+      <tstamp>5DA8DC6C</tstamp>
+    </comp>
+    <comp ref="C_vs1">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase3/" tstamps="/5E0FBBBD/"/>
+      <tstamp>5E21B857</tstamp>
+    </comp>
+    <comp ref="Cs1">
+      <value>4.7uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase3/" tstamps="/5E0FBBBD/"/>
+      <tstamp>5E21B863</tstamp>
+    </comp>
+    <comp ref="R_s1">
+      <value>3.9R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase3/" tstamps="/5E0FBBBD/"/>
+      <tstamp>5E21B86E</tstamp>
+    </comp>
+    <comp ref="R_sense1">
+      <value>1k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase3/" tstamps="/5E0FBBBD/"/>
+      <tstamp>5E21B876</tstamp>
+    </comp>
+    <comp ref="R_Shunt5">
+      <value>2m_1%_4W</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase3/" tstamps="/5E0FBBBD/"/>
+      <tstamp>5E1CBF07</tstamp>
+    </comp>
+    <comp ref="R_in2">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase5/" tstamps="/5E0FCFDC/"/>
+      <tstamp>5E21B80A</tstamp>
+    </comp>
+    <comp ref="C_out2">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase5/" tstamps="/5E0FCFDC/"/>
+      <tstamp>5E21B810</tstamp>
+    </comp>
+    <comp ref="C_in2">
+      <value>150nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase5/" tstamps="/5E0FCFDC/"/>
+      <tstamp>5E21B816</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase5/" tstamps="/5E0FCFDC/"/>
+      <tstamp>5E21B81D</tstamp>
+    </comp>
+    <comp ref="C_bypass5">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase5/" tstamps="/5E0FCFDC/"/>
+      <tstamp>5E21B825</tstamp>
+    </comp>
+    <comp ref="C_sense2">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase5/" tstamps="/5E0FCFDC/"/>
+      <tstamp>5E21B850</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>BTS50025-1TAD</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="BTS50025-1TAD" description=""/>
+      <sheetpath names="/Phase5/" tstamps="/5E0FCFDC/"/>
+      <tstamp>5E21B7FF</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>INA233</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="INA233" description=""/>
+      <sheetpath names="/Phase5/" tstamps="/5E0FCFDC/"/>
+      <tstamp>5E21B804</tstamp>
+    </comp>
+    <comp ref="C_vs2">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase5/" tstamps="/5E0FCFDC/"/>
+      <tstamp>5DAE255C</tstamp>
+    </comp>
+    <comp ref="Cs2">
+      <value>4.7uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase5/" tstamps="/5E0FCFDC/"/>
+      <tstamp>5E21B860</tstamp>
+    </comp>
+    <comp ref="R_s2">
+      <value>3.9R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase5/" tstamps="/5E0FCFDC/"/>
+      <tstamp>5E21B871</tstamp>
+    </comp>
+    <comp ref="R_sense2">
+      <value>1k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase5/" tstamps="/5E0FCFDC/"/>
+      <tstamp>5E21B874</tstamp>
+    </comp>
+    <comp ref="R_Shunt6">
+      <value>2m_1%_4W</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase5/" tstamps="/5E0FCFDC/"/>
+      <tstamp>5E1D54E4</tstamp>
+    </comp>
+    <comp ref="R_in3">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase6_GearA/" tstamps="/5E0FDCCC/"/>
+      <tstamp>5E21B806</tstamp>
+    </comp>
+    <comp ref="C_out3">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase6_GearA/" tstamps="/5E0FDCCC/"/>
+      <tstamp>5DAAC1D1</tstamp>
+    </comp>
+    <comp ref="C_in3">
+      <value>150nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase6_GearA/" tstamps="/5E0FDCCC/"/>
+      <tstamp>5E21B813</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase6_GearA/" tstamps="/5E0FDCCC/"/>
+      <tstamp>5DAAC1E9</tstamp>
+    </comp>
+    <comp ref="C_bypass6">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase6_GearA/" tstamps="/5E0FDCCC/"/>
+      <tstamp>5E21B824</tstamp>
+    </comp>
+    <comp ref="C_sense3">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase6_GearA/" tstamps="/5E0FDCCC/"/>
+      <tstamp>5E21B852</tstamp>
+    </comp>
+    <comp ref="Q6">
+      <value>BTS50025-1TAD</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="BTS50025-1TAD" description=""/>
+      <sheetpath names="/Phase6_GearA/" tstamps="/5E0FDCCC/"/>
+      <tstamp>5DA8B874</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>INA233</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="INA233" description=""/>
+      <sheetpath names="/Phase6_GearA/" tstamps="/5E0FDCCC/"/>
+      <tstamp>5E21B803</tstamp>
+    </comp>
+    <comp ref="C_vs3">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase6_GearA/" tstamps="/5E0FDCCC/"/>
+      <tstamp>5E21B856</tstamp>
+    </comp>
+    <comp ref="Cs3">
+      <value>4.7uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase6_GearA/" tstamps="/5E0FDCCC/"/>
+      <tstamp>5E21B865</tstamp>
+    </comp>
+    <comp ref="R_s3">
+      <value>3.9R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase6_GearA/" tstamps="/5E0FDCCC/"/>
+      <tstamp>5E21B86D</tstamp>
+    </comp>
+    <comp ref="R_sense3">
+      <value>1k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase6_GearA/" tstamps="/5E0FDCCC/"/>
+      <tstamp>5E21B873</tstamp>
+    </comp>
+    <comp ref="R_Shunt7">
+      <value>2m_1%_4W</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase6_GearA/" tstamps="/5E0FDCCC/"/>
+      <tstamp>5E1DA63E</tstamp>
+    </comp>
+    <comp ref="R_in4">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase2/" tstamps="/5E0FB5C8/"/>
+      <tstamp>5E21B808</tstamp>
+    </comp>
+    <comp ref="C_out4">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase2/" tstamps="/5E0FB5C8/"/>
+      <tstamp>5E21B80E</tstamp>
+    </comp>
+    <comp ref="C_in4">
+      <value>150nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase2/" tstamps="/5E0FB5C8/"/>
+      <tstamp>5E21B815</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase2/" tstamps="/5E0FB5C8/"/>
+      <tstamp>5E21B819</tstamp>
+    </comp>
+    <comp ref="C_bypass7">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase2/" tstamps="/5E0FB5C8/"/>
+      <tstamp>5DAAC201</tstamp>
+    </comp>
+    <comp ref="C_sense4">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase2/" tstamps="/5E0FB5C8/"/>
+      <tstamp>5E21B853</tstamp>
+    </comp>
+    <comp ref="Q7">
+      <value>BTS50025-1TAD</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="BTS50025-1TAD" description=""/>
+      <sheetpath names="/Phase2/" tstamps="/5E0FB5C8/"/>
+      <tstamp>5E21B7FD</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>INA233</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="INA233" description=""/>
+      <sheetpath names="/Phase2/" tstamps="/5E0FB5C8/"/>
+      <tstamp>5E21B802</tstamp>
+    </comp>
+    <comp ref="C_vs4">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase2/" tstamps="/5E0FB5C8/"/>
+      <tstamp>5E21B855</tstamp>
+    </comp>
+    <comp ref="Cs4">
+      <value>4.7uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase2/" tstamps="/5E0FB5C8/"/>
+      <tstamp>5E21B862</tstamp>
+    </comp>
+    <comp ref="R_s4">
+      <value>3.9R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase2/" tstamps="/5E0FB5C8/"/>
+      <tstamp>5E21B86C</tstamp>
+    </comp>
+    <comp ref="R_sense4">
+      <value>1k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase2/" tstamps="/5E0FB5C8/"/>
+      <tstamp>5E21B872</tstamp>
+    </comp>
+    <comp ref="R_Shunt8">
+      <value>2m_1%_4W</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase2/" tstamps="/5E0FB5C8/"/>
+      <tstamp>5E1B69BA</tstamp>
+    </comp>
+    <comp ref="R_in5">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase4/" tstamps="/5E0FC3A2/"/>
+      <tstamp>5E21B80B</tstamp>
+    </comp>
+    <comp ref="C_out5">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase4/" tstamps="/5E0FC3A2/"/>
+      <tstamp>5E21B811</tstamp>
+    </comp>
+    <comp ref="C_in5">
+      <value>150nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase4/" tstamps="/5E0FC3A2/"/>
+      <tstamp>5E21B812</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase4/" tstamps="/5E0FC3A2/"/>
+      <tstamp>5E21B81C</tstamp>
+    </comp>
+    <comp ref="C_sense5">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase4/" tstamps="/5E0FC3A2/"/>
+      <tstamp>5DAAC283</tstamp>
+    </comp>
+    <comp ref="Q8">
+      <value>BTS50025-1TAD</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="BTS50025-1TAD" description=""/>
+      <sheetpath names="/Phase4/" tstamps="/5E0FC3A2/"/>
+      <tstamp>5E21B7FA</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>INA233</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="INA233" description=""/>
+      <sheetpath names="/Phase4/" tstamps="/5E0FC3A2/"/>
+      <tstamp>5E21B801</tstamp>
+    </comp>
+    <comp ref="C_vs5">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase4/" tstamps="/5E0FC3A2/"/>
+      <tstamp>5E21B858</tstamp>
+    </comp>
+    <comp ref="Cs5">
+      <value>4.7uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase4/" tstamps="/5E0FC3A2/"/>
+      <tstamp>5DB84D24</tstamp>
+    </comp>
+    <comp ref="R_s5">
+      <value>3.9R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase4/" tstamps="/5E0FC3A2/"/>
+      <tstamp>5E21B86F</tstamp>
+    </comp>
+    <comp ref="R_sense5">
+      <value>1k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase4/" tstamps="/5E0FC3A2/"/>
+      <tstamp>5E21B877</tstamp>
+    </comp>
+    <comp ref="C_bypass8">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase4/" tstamps="/5E0FC3A2/"/>
+      <tstamp>5E21B827</tstamp>
+    </comp>
+    <comp ref="R_Shunt9">
+      <value>2m_1%_4W</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase4/" tstamps="/5E0FC3A2/"/>
+      <tstamp>5E1D0387</tstamp>
+    </comp>
+    <comp ref="R_in6">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase7_GearB/" tstamps="/5E10174B/"/>
+      <tstamp>5DAAC1B1</tstamp>
+    </comp>
+    <comp ref="C_out6">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase7_GearB/" tstamps="/5E10174B/"/>
+      <tstamp>5E21B80D</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>150nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase7_GearB/" tstamps="/5E10174B/"/>
+      <tstamp>5E21B817</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase7_GearB/" tstamps="/5E10174B/"/>
+      <tstamp>5E21B81A</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase7_GearB/" tstamps="/5E10174B/"/>
+      <tstamp>5E21B826</tstamp>
+    </comp>
+    <comp ref="C_sense6">
+      <value>10nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase7_GearB/" tstamps="/5E10174B/"/>
+      <tstamp>5E21B84F</tstamp>
+    </comp>
+    <comp ref="Q9">
+      <value>BTS50025-1TAD</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="BTS50025-1TAD" description=""/>
+      <sheetpath names="/Phase7_GearB/" tstamps="/5E10174B/"/>
+      <tstamp>5E21B7FB</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>INA233</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="INA233" description=""/>
+      <sheetpath names="/Phase7_GearB/" tstamps="/5E10174B/"/>
+      <tstamp>5E21B800</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase7_GearB/" tstamps="/5E10174B/"/>
+      <tstamp>5E21B854</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>4.7uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Phase7_GearB/" tstamps="/5E10174B/"/>
+      <tstamp>5E21B861</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>3.9R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase7_GearB/" tstamps="/5E10174B/"/>
+      <tstamp>5DB84D30</tstamp>
+    </comp>
+    <comp ref="R_sense6">
+      <value>1k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase7_GearB/" tstamps="/5E10174B/"/>
+      <tstamp>5E0E437E</tstamp>
+    </comp>
+    <comp ref="R_Shunt_1">
+      <value>2m_1%_4W</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Phase7_GearB/" tstamps="/5E10174B/"/>
+      <tstamp>5E1DEBF3</tstamp>
+    </comp>
+    <comp ref="Q10">
+      <value>N_FET</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NJFET_DGS" description="N-JFET transistor, drain/gate/source"/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E25DB26</tstamp>
+    </comp>
+    <comp ref="R_s6">
+      <value>4K7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E25DB2C</tstamp>
+    </comp>
+    <comp ref="Q11">
+      <value>N_FET</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NJFET_DGS" description="N-JFET transistor, drain/gate/source"/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E263276</tstamp>
+    </comp>
+    <comp ref="R_s7">
+      <value>4K7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E26327C</tstamp>
+    </comp>
+    <comp ref="Q12">
+      <value>N_FET</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NJFET_DGS" description="N-JFET transistor, drain/gate/source"/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E263C27</tstamp>
+    </comp>
+    <comp ref="R_s8">
+      <value>4K7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E263C2D</tstamp>
+    </comp>
+    <comp ref="Q13">
+      <value>N_FET</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NJFET_DGS" description="N-JFET transistor, drain/gate/source"/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E264DAD</tstamp>
+    </comp>
+    <comp ref="R_s9">
+      <value>4K7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E264DB3</tstamp>
+    </comp>
+    <comp ref="Q14">
+      <value>N_FET</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NJFET_DGS" description="N-JFET transistor, drain/gate/source"/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E266900</tstamp>
+    </comp>
+    <comp ref="R_s10">
+      <value>4K7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E266906</tstamp>
+    </comp>
+    <comp ref="Q15">
+      <value>N_FET</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NJFET_DGS" description="N-JFET transistor, drain/gate/source"/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E26A04E</tstamp>
+    </comp>
+    <comp ref="R_s11">
+      <value>4K7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E26A054</tstamp>
+    </comp>
+    <comp ref="Q16">
+      <value>N_FET</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NJFET_DGS" description="N-JFET transistor, drain/gate/source"/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E26B53D</tstamp>
+    </comp>
+    <comp ref="R_s12">
+      <value>4K7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS_SENSE_MUX/" tstamps="/5E2546F2/"/>
+      <tstamp>5E26B543</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>TCA6416A-PortExpander</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="TCA6416A-PortExpander" description=""/>
+      <sheetpath names="/Port_Expander/" tstamps="/5E1AEC18/"/>
+      <tstamp>5E21A7B6</tstamp>
+    </comp>
+    <comp ref="Pullup2">
+      <value>4K7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Port_Expander/" tstamps="/5E1AEC18/"/>
+      <tstamp>5E2206AE</tstamp>
+    </comp>
+    <comp ref="Pullup1">
+      <value>4K7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Port_Expander/" tstamps="/5E1AEC18/"/>
+      <tstamp>5E228956</tstamp>
+    </comp>
+    <comp ref="C_bypass9">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Port_Expander/" tstamps="/5E1AEC18/"/>
+      <tstamp>5E21FC4A</tstamp>
+    </comp>
+    <comp ref="C_bypass10">
+      <value>100nf</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="C-Device" description=""/>
+      <sheetpath names="/Port_Expander/" tstamps="/5E1AEC18/"/>
+      <tstamp>5E222000</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_DIP_x07</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_DIP_x07" description="7x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E168908</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E18A93B</tstamp>
+    </comp>
+    <comp ref="U12">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E18A933</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2A80B3</tstamp>
+    </comp>
+    <comp ref="U14">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2A80BA</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2A96D6</tstamp>
+    </comp>
+    <comp ref="U16">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2A96DD</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2AC2E0</tstamp>
+    </comp>
+    <comp ref="U18">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2AC2E7</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2AE1FD</tstamp>
+    </comp>
+    <comp ref="U20">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2AE204</tstamp>
+    </comp>
+    <comp ref="R41">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2B1314</tstamp>
+    </comp>
+    <comp ref="U22">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2B131B</tstamp>
+    </comp>
+    <comp ref="R43">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2CCE8D</tstamp>
+    </comp>
+    <comp ref="U24">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2CCE94</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E301435</tstamp>
+    </comp>
+    <comp ref="U13">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E30143C</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E301452</tstamp>
+    </comp>
+    <comp ref="U15">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E301459</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E30146B</tstamp>
+    </comp>
+    <comp ref="U17">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E301472</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E301484</tstamp>
+    </comp>
+    <comp ref="U19">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E30148B</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E30149D</tstamp>
+    </comp>
+    <comp ref="U21">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E3014A4</tstamp>
+    </comp>
+    <comp ref="R42">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E3014B6</tstamp>
+    </comp>
+    <comp ref="U23">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E3014BD</tstamp>
+    </comp>
+    <comp ref="R44">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E3014CE</tstamp>
+    </comp>
+    <comp ref="U25">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E3014D6</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>620R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E497311</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>P1_Active</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E49731D</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>620R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E497323</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>P2_Active</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E49732F</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>620R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E497335</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>P3_Active</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E497341</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>620R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E497347</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>P4_Active</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E497353</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>620R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E497359</tstamp>
+    </comp>
+    <comp ref="D16">
+      <value>P5_Active</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E497365</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>620R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E49736B</tstamp>
+    </comp>
+    <comp ref="D18">
+      <value>P6_Active</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E497377</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>620R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E49737D</tstamp>
+    </comp>
+    <comp ref="D20">
+      <value>P7_Active</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E497389</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>620R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E49738F</tstamp>
+    </comp>
+    <comp ref="D21">
+      <value>FP_Active</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E49739B</tstamp>
+    </comp>
+    <comp ref="R39">
+      <value>620R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E4973A1</tstamp>
+    </comp>
+    <comp ref="D22">
+      <value>COIL_INJ_Active</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E4973AD</tstamp>
+    </comp>
+    <comp ref="D23">
+      <value>Shutdown_IN_Active</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E4973F5</tstamp>
+    </comp>
+    <comp ref="R40">
+      <value>620R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E4973E9</tstamp>
+    </comp>
+    <comp ref="D19">
+      <value>P7_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E437CF8</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>153R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E437CEC</tstamp>
+    </comp>
+    <comp ref="D17">
+      <value>P6_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E432DB1</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>153R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E432DA5</tstamp>
+    </comp>
+    <comp ref="D15">
+      <value>P5_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E432D9F</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>153R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E432D93</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>P4_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E42FC1E</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>153R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E42FC12</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>P3_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E42FC0C</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>153R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E42FC00</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>P2_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E4226BC</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>153R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E4226B0</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>P1_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E41FD7E</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>153R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E41FD72</tstamp>
+    </comp>
+    <comp ref="D25">
+      <value>FP_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E4677D0</tstamp>
+    </comp>
+    <comp ref="D24">
+      <value>COIL_INJ_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E4677E2</tstamp>
+    </comp>
+    <comp ref="D28">
+      <value>ETC_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E4973D1</tstamp>
+    </comp>
+    <comp ref="D30">
+      <value>IGN_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E497407</tstamp>
+    </comp>
+    <comp ref="R57">
+      <value>628R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E4973FB</tstamp>
+    </comp>
+    <comp ref="D29">
+      <value>Shutdown_OUT_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E4973E3</tstamp>
+    </comp>
+    <comp ref="D27">
+      <value>MCU_FEED_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E4973BF</tstamp>
+    </comp>
+    <comp ref="D26">
+      <value>CLUTCH_ACT_Fault</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E5F3235</tstamp>
+    </comp>
+    <comp ref="R53">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E19483C</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_Push</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E190B58</tstamp>
+    </comp>
+    <comp ref="R56">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E1DE8D8</tstamp>
+    </comp>
+    <comp ref="U30">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E1DE8E0</tstamp>
+    </comp>
+    <comp ref="R55">
+      <value>628R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2156DC</tstamp>
+    </comp>
+    <comp ref="R54">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2156EE</tstamp>
+    </comp>
+    <comp ref="U29">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2156F6</tstamp>
+    </comp>
+    <comp ref="R52">
+      <value>628R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2195B6</tstamp>
+    </comp>
+    <comp ref="R51">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2195C8</tstamp>
+    </comp>
+    <comp ref="U28">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2195D0</tstamp>
+    </comp>
+    <comp ref="R50">
+      <value>628R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2218C8</tstamp>
+    </comp>
+    <comp ref="R49">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2218DA</tstamp>
+    </comp>
+    <comp ref="U27">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E2218E2</tstamp>
+    </comp>
+    <comp ref="R48">
+      <value>628R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E257F95</tstamp>
+    </comp>
+    <comp ref="R47">
+      <value>4k7</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E257FA7</tstamp>
+    </comp>
+    <comp ref="U26">
+      <value>Fet-P</value>
+      <libsource lib="AR20_PDM_v1-rescue" part="GenericFet-P" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E257FAF</tstamp>
+    </comp>
+    <comp ref="R46">
+      <value>153R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E20C7A0</tstamp>
+    </comp>
+    <comp ref="R45">
+      <value>153R</value>
+      <datasheet>~</datasheet>
+      <libsource lib="AR20_PDM_v1-rescue" part="R-Device" description=""/>
+      <sheetpath names="/Misc/" tstamps="/5E5484EE/"/>
+      <tstamp>5E20C7B2</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="AR20_PDM_v1-rescue" part="BTS50025-1TAD">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BTS50025-1TAD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="IN" type="input"/>
+        <pin num="3" name="IS" type="output"/>
+        <pin num="4" name="Vs" type="input"/>
+        <pin num="5,6,7" name="OUT" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="AR20_PDM_v1-rescue" part="C-Device">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="AR20_PDM_v1-rescue" part="DIODE-Simulation_SPICE">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">DIODE-Simulation_SPICE</field>
+        <field name="Spice_Netlist_Enabled">Y</field>
+        <field name="Spice_Primitive">V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="AR20_PDM_v1-rescue" part="D_Zener-Device">
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="AR20_PDM_v1-rescue" part="GenericFet-P">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">GenericFet-P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="AR20_PDM_v1-rescue" part="High_Curret_terminal">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">High_Curret_terminal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="AR20_PDM_v1-rescue" part="INA233">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">INA233</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="output"/>
+        <pin num="2" name="A0" type="output"/>
+        <pin num="3" name="Alert" type="output"/>
+        <pin num="4" name="SDA" type="output"/>
+        <pin num="5" name="SCL" type="input"/>
+        <pin num="6" name="Vs" type="input"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="VBUS" type="input"/>
+        <pin num="9" name="In-" type="input"/>
+        <pin num="10" name="IN+" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="AR20_PDM_v1-rescue" part="R-Device">
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="AR20_PDM_v1-rescue" part="TCA6416A-PortExpander">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TCA6416A-PortExpander</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~INT" type="output"/>
+        <pin num="2" name="VCCI" type="input"/>
+        <pin num="3" name="~RESET" type="input"/>
+        <pin num="4" name="P00" type="output"/>
+        <pin num="5" name="P01" type="output"/>
+        <pin num="6" name="P02" type="output"/>
+        <pin num="7" name="P03" type="output"/>
+        <pin num="8" name="P04" type="output"/>
+        <pin num="9" name="P05" type="output"/>
+        <pin num="10" name="P06" type="output"/>
+        <pin num="11" name="P07" type="output"/>
+        <pin num="12" name="GND" type="input"/>
+        <pin num="13" name="P10" type="input"/>
+        <pin num="14" name="P11" type="input"/>
+        <pin num="15" name="P12" type="input"/>
+        <pin num="16" name="P13" type="input"/>
+        <pin num="17" name="P14" type="input"/>
+        <pin num="18" name="P15" type="input"/>
+        <pin num="19" name="P16" type="input"/>
+        <pin num="20" name="P17" type="input"/>
+        <pin num="21" name="ADDR" type="input"/>
+        <pin num="22" name="SCL" type="input"/>
+        <pin num="23" name="SDA" type="input"/>
+        <pin num="24" name="VCCP" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x15_Odd_Even">
+      <description>Generic connector, double row, 02x15, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x15_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+        <pin num="25" name="Pin_25" type="passive"/>
+        <pin num="26" name="Pin_26" type="passive"/>
+        <pin num="27" name="Pin_27" type="passive"/>
+        <pin num="28" name="Pin_28" type="passive"/>
+        <pin num="29" name="Pin_29" type="passive"/>
+        <pin num="30" name="Pin_30" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Fuse">
+      <description>Fuse</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NJFET_DGS">
+      <description>N-JFET transistor, drain/gate/source</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NJFET_DGS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Relay" part="DIPxx-1Axx-11x">
+      <description>Standex Meder DIP reed relay, SPST, Closing Contact</description>
+      <docs>https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf</docs>
+      <footprints>
+        <fp>Relay*StandexMeder*DIP*LowProfile*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">K</field>
+        <field name="Value">DIPxx-1Axx-11x</field>
+        <field name="Footprint">Relay_THT:Relay_StandexMeder_DIP_LowProfile</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+        <pin num="14" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_DIP_x07">
+      <description>7x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SW?DIP?x7*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DIP_x07</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+        <pin num="9" name="~" type="passive"/>
+        <pin num="10" name="~" type="passive"/>
+        <pin num="11" name="~" type="passive"/>
+        <pin num="12" name="~" type="passive"/>
+        <pin num="13" name="~" type="passive"/>
+        <pin num="14" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="AR20_PDM_v1-rescue">
+      <uri>C:/Users/Serious Business/Documents/Github/AR20/AR20_PDM/PDM_schematic/AR_PDM_v1/Liberary/AR20_PDM_v1-rescue.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Relay">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Relay.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="P3_EN_AUX">
+      <node ref="U17" pin="2"/>
+      <node ref="R29" pin="1"/>
+    </net>
+    <net code="2" name="P1_EN_ACM">
+      <node ref="U12" pin="2"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="3" name="P7_EN_ACM">
+      <node ref="U24" pin="2"/>
+      <node ref="R43" pin="1"/>
+    </net>
+    <net code="4" name="P5_EN_ACM">
+      <node ref="U20" pin="2"/>
+      <node ref="R37" pin="1"/>
+    </net>
+    <net code="5" name="P4_EN_ACM">
+      <node ref="U18" pin="2"/>
+      <node ref="R34" pin="1"/>
+    </net>
+    <net code="6" name="P6_EN_ACM">
+      <node ref="R41" pin="1"/>
+      <node ref="U22" pin="2"/>
+    </net>
+    <net code="7" name="P2_EN_ACM">
+      <node ref="R20" pin="1"/>
+      <node ref="U14" pin="2"/>
+    </net>
+    <net code="8" name="P4_MOS_SENSE_Select">
+      <node ref="Q13" pin="2"/>
+      <node ref="U11" pin="17"/>
+      <node ref="R_s9" pin="2"/>
+    </net>
+    <net code="9" name="MOS_SENSE_ALL">
+      <node ref="R_s7" pin="1"/>
+      <node ref="Q10" pin="1"/>
+      <node ref="R_s6" pin="1"/>
+      <node ref="R_s8" pin="1"/>
+      <node ref="Q12" pin="1"/>
+      <node ref="R_s9" pin="1"/>
+      <node ref="Q11" pin="1"/>
+      <node ref="R_s10" pin="1"/>
+      <node ref="Q13" pin="1"/>
+      <node ref="Q14" pin="1"/>
+      <node ref="Q15" pin="1"/>
+      <node ref="R_s11" pin="1"/>
+      <node ref="R_s12" pin="1"/>
+      <node ref="Q16" pin="1"/>
+    </net>
+    <net code="10" name="P5_MOS_SENSE_Select">
+      <node ref="U11" pin="18"/>
+      <node ref="R_s10" pin="2"/>
+      <node ref="Q14" pin="2"/>
+    </net>
+    <net code="11" name="P3_MOS_SENSE_Select">
+      <node ref="Q12" pin="2"/>
+      <node ref="R_s8" pin="2"/>
+      <node ref="U11" pin="16"/>
+    </net>
+    <net code="12" name="P2_MOS_SENSE_Select">
+      <node ref="R_s7" pin="2"/>
+      <node ref="U11" pin="15"/>
+      <node ref="Q11" pin="2"/>
+    </net>
+    <net code="13" name="P1_MOS_SENSE_Select">
+      <node ref="R_s6" pin="2"/>
+      <node ref="U11" pin="14"/>
+      <node ref="Q10" pin="2"/>
+    </net>
+    <net code="14" name="P7_MOS_SENSE">
+      <node ref="R_sense6" pin="1"/>
+      <node ref="Q16" pin="3"/>
+      <node ref="Q9" pin="3"/>
+      <node ref="C_sense6" pin="2"/>
+    </net>
+    <net code="15" name="P6_MOS_SENSE">
+      <node ref="Q15" pin="3"/>
+      <node ref="C_sense3" pin="2"/>
+      <node ref="Q6" pin="3"/>
+      <node ref="R_sense3" pin="1"/>
+    </net>
+    <net code="16" name="P5_MOS_SENSE">
+      <node ref="R_sense2" pin="1"/>
+      <node ref="C_sense2" pin="2"/>
+      <node ref="Q5" pin="3"/>
+      <node ref="Q14" pin="3"/>
+    </net>
+    <net code="17" name="P2_MOS_SENSE">
+      <node ref="C_sense4" pin="2"/>
+      <node ref="Q7" pin="3"/>
+      <node ref="R_sense4" pin="1"/>
+      <node ref="Q13" pin="3"/>
+    </net>
+    <net code="18" name="P3_MOS_SENSE">
+      <node ref="C_sense1" pin="2"/>
+      <node ref="Q4" pin="3"/>
+      <node ref="R_sense1" pin="1"/>
+      <node ref="Q12" pin="3"/>
+    </net>
+    <net code="19" name="P4_MOS_SENSE">
+      <node ref="Q8" pin="3"/>
+      <node ref="R_sense5" pin="1"/>
+      <node ref="C_sense5" pin="2"/>
+      <node ref="Q11" pin="3"/>
+    </net>
+    <net code="20" name="P1_MOS_SENSE">
+      <node ref="Q10" pin="3"/>
+      <node ref="C6" pin="2"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="21" name="CLUTCH_ACT_OUT">
+      <node ref="R47" pin="1"/>
+      <node ref="U26" pin="2"/>
+      <node ref="F3" pin="1"/>
+    </net>
+    <net code="22" name="COIL_INJECTOR_OUT">
+      <node ref="K1" pin="14"/>
+      <node ref="K1" pin="1"/>
+      <node ref="D22" pin="2"/>
+    </net>
+    <net code="23" name="FUEL_PUMP_OUT">
+      <node ref="D21" pin="2"/>
+      <node ref="K2" pin="14"/>
+      <node ref="K2" pin="1"/>
+    </net>
+    <net code="24" name="FP_ENABLE_AUX">
+      <node ref="R2" pin="1"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+    <net code="25" name="FP_ENABLE_RELAY_SINK">
+      <node ref="D6" pin="1"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="K2" pin="2"/>
+    </net>
+    <net code="26" name="ETC_OUT">
+      <node ref="U28" pin="2"/>
+      <node ref="F5" pin="1"/>
+      <node ref="R51" pin="1"/>
+    </net>
+    <net code="27" name="SHUTDOWN_OUT">
+      <node ref="U29" pin="2"/>
+      <node ref="R54" pin="1"/>
+      <node ref="F4" pin="1"/>
+    </net>
+    <net code="28" name="IGN_SWITCH_OUT">
+      <node ref="U30" pin="2"/>
+      <node ref="F1" pin="1"/>
+      <node ref="R56" pin="1"/>
+    </net>
+    <net code="29" name="MCU_UNITS_FEED_OUT">
+      <node ref="F2" pin="1"/>
+      <node ref="R49" pin="1"/>
+      <node ref="U27" pin="2"/>
+    </net>
+    <net code="30" name="DIRECT_Alert">
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="31" name="SDA">
+      <node ref="U7" pin="4"/>
+      <node ref="U5" pin="4"/>
+      <node ref="U2" pin="4"/>
+      <node ref="U4" pin="4"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U10" pin="4"/>
+      <node ref="U11" pin="23"/>
+      <node ref="U9" pin="4"/>
+      <node ref="R10K1" pin="1"/>
+      <node ref="U3" pin="4"/>
+      <node ref="U8" pin="4"/>
+      <node ref="U6" pin="4"/>
+    </net>
+    <net code="32" name="SLC">
+      <node ref="U1" pin="5"/>
+      <node ref="U8" pin="5"/>
+      <node ref="U4" pin="5"/>
+      <node ref="U3" pin="5"/>
+      <node ref="U10" pin="5"/>
+      <node ref="U11" pin="22"/>
+      <node ref="U2" pin="5"/>
+      <node ref="U6" pin="5"/>
+      <node ref="U9" pin="5"/>
+      <node ref="R10K2" pin="1"/>
+      <node ref="U5" pin="5"/>
+      <node ref="U7" pin="5"/>
+    </net>
+    <net code="33" name="P1_OUT">
+      <node ref="U4" pin="10"/>
+      <node ref="D8" pin="2"/>
+      <node ref="R_Shunt4" pin="1"/>
+    </net>
+    <net code="34" name="FP_ENABLE_ACM">
+      <node ref="R1" pin="1"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="35" name="P2_MOS_IN">
+      <node ref="SW1" pin="13"/>
+      <node ref="R_in4" pin="2"/>
+      <node ref="R10" pin="2"/>
+      <node ref="U8" pin="3"/>
+      <node ref="U14" pin="1"/>
+    </net>
+    <net code="36" name="P4_EN_AUX">
+      <node ref="R35" pin="1"/>
+      <node ref="U19" pin="2"/>
+    </net>
+    <net code="37" name="P5_EN_AUX">
+      <node ref="U21" pin="2"/>
+      <node ref="R38" pin="1"/>
+    </net>
+    <net code="38" name="P6_EN_AUX">
+      <node ref="R42" pin="1"/>
+      <node ref="U23" pin="2"/>
+    </net>
+    <net code="39" name="P7_EN_AUX">
+      <node ref="U25" pin="2"/>
+      <node ref="R44" pin="1"/>
+    </net>
+    <net code="40" name="P1_MOS_IN">
+      <node ref="R4" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="SW1" pin="14"/>
+      <node ref="U12" pin="1"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="41" name="P3_MOS_IN">
+      <node ref="R7" pin="2"/>
+      <node ref="U16" pin="1"/>
+      <node ref="SW1" pin="12"/>
+      <node ref="R_in1" pin="2"/>
+      <node ref="U5" pin="3"/>
+    </net>
+    <net code="42" name="P4_MOS_IN">
+      <node ref="U9" pin="3"/>
+      <node ref="R_in5" pin="2"/>
+      <node ref="U18" pin="1"/>
+      <node ref="SW1" pin="11"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="43" name="P5_MOS_IN">
+      <node ref="R_in2" pin="2"/>
+      <node ref="SW1" pin="10"/>
+      <node ref="R8" pin="2"/>
+      <node ref="U6" pin="3"/>
+      <node ref="U20" pin="1"/>
+    </net>
+    <net code="44" name="P6_MOS_IN">
+      <node ref="U22" pin="1"/>
+      <node ref="R9" pin="2"/>
+      <node ref="U7" pin="3"/>
+      <node ref="R_in3" pin="2"/>
+      <node ref="SW1" pin="9"/>
+    </net>
+    <net code="45" name="P7_MOS_IN">
+      <node ref="SW1" pin="8"/>
+      <node ref="U24" pin="1"/>
+      <node ref="R_in6" pin="2"/>
+      <node ref="R12" pin="2"/>
+      <node ref="U10" pin="3"/>
+    </net>
+    <net code="46" name="P3_EN_ACM">
+      <node ref="R28" pin="1"/>
+      <node ref="U16" pin="2"/>
+    </net>
+    <net code="47" name="P2_EN_AUX">
+      <node ref="U15" pin="2"/>
+      <node ref="R21" pin="1"/>
+    </net>
+    <net code="48" name="P1_EN_AUX">
+      <node ref="R15" pin="1"/>
+      <node ref="U13" pin="2"/>
+    </net>
+    <net code="49" name="GND">
+      <node ref="R_sense3" pin="2"/>
+      <node ref="U9" pin="7"/>
+      <node ref="C_in5" pin="2"/>
+      <node ref="C_out5" pin="2"/>
+      <node ref="U9" pin="2"/>
+      <node ref="C_sense5" pin="1"/>
+      <node ref="Q8" pin="1"/>
+      <node ref="U9" pin="1"/>
+      <node ref="R_sense5" pin="2"/>
+      <node ref="Cs5" pin="1"/>
+      <node ref="C_vs5" pin="1"/>
+      <node ref="C_bypass8" pin="2"/>
+      <node ref="Cs2" pin="1"/>
+      <node ref="C_in2" pin="2"/>
+      <node ref="C_out2" pin="2"/>
+      <node ref="U6" pin="7"/>
+      <node ref="U6" pin="2"/>
+      <node ref="U6" pin="1"/>
+      <node ref="C_bypass5" pin="2"/>
+      <node ref="C_sense2" pin="1"/>
+      <node ref="Q5" pin="1"/>
+      <node ref="Cs3" pin="1"/>
+      <node ref="C_vs2" pin="1"/>
+      <node ref="R_sense2" pin="2"/>
+      <node ref="C_vs3" pin="1"/>
+      <node ref="R37" pin="2"/>
+      <node ref="U20" pin="3"/>
+      <node ref="R41" pin="2"/>
+      <node ref="U22" pin="3"/>
+      <node ref="U14" pin="3"/>
+      <node ref="R20" pin="2"/>
+      <node ref="U12" pin="3"/>
+      <node ref="U30" pin="3"/>
+      <node ref="R53" pin="2"/>
+      <node ref="U29" pin="3"/>
+      <node ref="R54" pin="2"/>
+      <node ref="R14" pin="2"/>
+      <node ref="R56" pin="2"/>
+      <node ref="U18" pin="3"/>
+      <node ref="R34" pin="2"/>
+      <node ref="U16" pin="3"/>
+      <node ref="R28" pin="2"/>
+      <node ref="U15" pin="3"/>
+      <node ref="R43" pin="2"/>
+      <node ref="U24" pin="3"/>
+      <node ref="U17" pin="3"/>
+      <node ref="R15" pin="2"/>
+      <node ref="R29" pin="2"/>
+      <node ref="R21" pin="2"/>
+      <node ref="U13" pin="3"/>
+      <node ref="U21" pin="3"/>
+      <node ref="R38" pin="2"/>
+      <node ref="U19" pin="3"/>
+      <node ref="R35" pin="2"/>
+      <node ref="U25" pin="3"/>
+      <node ref="R44" pin="2"/>
+      <node ref="U23" pin="3"/>
+      <node ref="R42" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C_out6" pin="2"/>
+      <node ref="U10" pin="7"/>
+      <node ref="U10" pin="1"/>
+      <node ref="U10" pin="2"/>
+      <node ref="C_sense6" pin="1"/>
+      <node ref="Q9" pin="1"/>
+      <node ref="U11" pin="12"/>
+      <node ref="U11" pin="21"/>
+      <node ref="C_sense3" pin="1"/>
+      <node ref="C_bypass6" pin="2"/>
+      <node ref="C_in3" pin="2"/>
+      <node ref="C_out3" pin="2"/>
+      <node ref="U7" pin="7"/>
+      <node ref="U7" pin="2"/>
+      <node ref="U7" pin="1"/>
+      <node ref="Q6" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="C14" pin="1"/>
+      <node ref="R_sense6" pin="2"/>
+      <node ref="R31" pin="2"/>
+      <node ref="R27" pin="2"/>
+      <node ref="U27" pin="3"/>
+      <node ref="R49" pin="2"/>
+      <node ref="U28" pin="3"/>
+      <node ref="R51" pin="2"/>
+      <node ref="U26" pin="3"/>
+      <node ref="R47" pin="2"/>
+      <node ref="C_bypass9" pin="2"/>
+      <node ref="C_bypass10" pin="2"/>
+      <node ref="R40" pin="2"/>
+      <node ref="R25" pin="2"/>
+      <node ref="R23" pin="2"/>
+      <node ref="R19" pin="2"/>
+      <node ref="R17" pin="2"/>
+      <node ref="R33" pin="2"/>
+      <node ref="R39" pin="2"/>
+      <node ref="R36" pin="2"/>
+      <node ref="C_sense4" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="U4" pin="1"/>
+      <node ref="U8" pin="2"/>
+      <node ref="C_in4" pin="2"/>
+      <node ref="C10" pin="1"/>
+      <node ref="C_out4" pin="2"/>
+      <node ref="U8" pin="1"/>
+      <node ref="U4" pin="2"/>
+      <node ref="U8" pin="7"/>
+      <node ref="R5" pin="2"/>
+      <node ref="Q3" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="Q7" pin="1"/>
+      <node ref="Cs1" pin="1"/>
+      <node ref="C_bypass2" pin="2"/>
+      <node ref="U2" pin="7"/>
+      <node ref="U4" pin="7"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U3" pin="7"/>
+      <node ref="U3" pin="2"/>
+      <node ref="U3" pin="1"/>
+      <node ref="Cs4" pin="1"/>
+      <node ref="C_vs4" pin="1"/>
+      <node ref="R_sense4" pin="2"/>
+      <node ref="C_bypass3" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C_bypass7" pin="2"/>
+      <node ref="C_vs1" pin="1"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C_bypass4" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C_sense1" pin="1"/>
+      <node ref="Q4" pin="1"/>
+      <node ref="U5" pin="2"/>
+      <node ref="U5" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="D4" pin="1"/>
+      <node ref="U5" pin="7"/>
+      <node ref="C_out1" pin="2"/>
+      <node ref="C_in1" pin="2"/>
+      <node ref="R_sense1" pin="2"/>
+      <node ref="U1" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="7"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="C_bypass1" pin="2"/>
+      <node ref="D5" pin="1"/>
+      <node ref="K1" pin="2"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="50" name="P4_OUT">
+      <node ref="R_Shunt9" pin="1"/>
+      <node ref="U9" pin="10"/>
+      <node ref="D14" pin="2"/>
+    </net>
+    <net code="51" name="FUEL_PUMP_Fault">
+      <node ref="U11" pin="13"/>
+      <node ref="R46" pin="2"/>
+    </net>
+    <net code="52" name="COIL_INJECTOR_Fault">
+      <node ref="R45" pin="2"/>
+      <node ref="U11" pin="4"/>
+    </net>
+    <net code="53" name="P7_Fault">
+      <node ref="U11" pin="11"/>
+      <node ref="R32" pin="2"/>
+    </net>
+    <net code="54" name="P6_Fault">
+      <node ref="U11" pin="10"/>
+      <node ref="R30" pin="2"/>
+    </net>
+    <net code="55" name="P5_Fault">
+      <node ref="R26" pin="2"/>
+      <node ref="U11" pin="9"/>
+    </net>
+    <net code="56" name="P4_Fault">
+      <node ref="R24" pin="2"/>
+      <node ref="U11" pin="8"/>
+    </net>
+    <net code="57" name="P7_OUT">
+      <node ref="R_Shunt_1" pin="1"/>
+      <node ref="D20" pin="2"/>
+      <node ref="U10" pin="10"/>
+    </net>
+    <net code="58" name="P6_OUT">
+      <node ref="R_Shunt7" pin="1"/>
+      <node ref="D18" pin="2"/>
+      <node ref="U7" pin="10"/>
+    </net>
+    <net code="59" name="P5_OUT">
+      <node ref="U6" pin="10"/>
+      <node ref="R_Shunt6" pin="1"/>
+      <node ref="D16" pin="2"/>
+    </net>
+    <net code="60" name="P3_OUT">
+      <node ref="R_Shunt5" pin="1"/>
+      <node ref="D12" pin="2"/>
+      <node ref="U5" pin="10"/>
+    </net>
+    <net code="61" name="P2_OUT">
+      <node ref="U8" pin="10"/>
+      <node ref="R_Shunt8" pin="1"/>
+      <node ref="D10" pin="2"/>
+    </net>
+    <net code="62" name="V+12V">
+      <node ref="C9" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="R52" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="R57" pin="1"/>
+      <node ref="R55" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="Q5" pin="4"/>
+      <node ref="R_s2" pin="1"/>
+      <node ref="Q3" pin="4"/>
+      <node ref="C_vs1" pin="2"/>
+      <node ref="C_vs2" pin="2"/>
+      <node ref="F_FP1" pin="1"/>
+      <node ref="R_s1" pin="1"/>
+      <node ref="Q9" pin="4"/>
+      <node ref="R6" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="R50" pin="1"/>
+      <node ref="R48" pin="1"/>
+      <node ref="F_COIL1" pin="1"/>
+      <node ref="Q7" pin="4"/>
+      <node ref="Q8" pin="4"/>
+      <node ref="D3" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="Q6" pin="4"/>
+      <node ref="R_Shunt3" pin="2"/>
+      <node ref="R13" pin="1"/>
+      <node ref="R_s5" pin="1"/>
+      <node ref="C_vs4" pin="2"/>
+      <node ref="C_vs3" pin="2"/>
+      <node ref="C_vs5" pin="2"/>
+      <node ref="R_s4" pin="1"/>
+      <node ref="Q4" pin="4"/>
+      <node ref="C13" pin="2"/>
+      <node ref="U3" pin="8"/>
+      <node ref="R_s3" pin="1"/>
+      <node ref="U3" pin="10"/>
+    </net>
+    <net code="63" name="vcc_5v">
+      <node ref="SW2" pin="1"/>
+      <node ref="U2" pin="6"/>
+      <node ref="U5" pin="6"/>
+      <node ref="D15" pin="2"/>
+      <node ref="D13" pin="2"/>
+      <node ref="C_bypass2" pin="1"/>
+      <node ref="D25" pin="2"/>
+      <node ref="C_bypass8" pin="1"/>
+      <node ref="R10K2" pin="2"/>
+      <node ref="D9" pin="2"/>
+      <node ref="R11" pin="1"/>
+      <node ref="C_bypass4" pin="1"/>
+      <node ref="U1" pin="6"/>
+      <node ref="U9" pin="6"/>
+      <node ref="R7" pin="1"/>
+      <node ref="D17" pin="2"/>
+      <node ref="D19" pin="2"/>
+      <node ref="C_bypass1" pin="1"/>
+      <node ref="D24" pin="2"/>
+      <node ref="D11" pin="2"/>
+      <node ref="D7" pin="2"/>
+      <node ref="R10K1" pin="2"/>
+      <node ref="R8" pin="1"/>
+      <node ref="Pullup2" pin="1"/>
+      <node ref="R9" pin="1"/>
+      <node ref="C_bypass3" pin="1"/>
+      <node ref="U10" pin="6"/>
+      <node ref="R10" pin="1"/>
+      <node ref="U11" pin="24"/>
+      <node ref="C_bypass7" pin="1"/>
+      <node ref="Pullup1" pin="1"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U8" pin="6"/>
+      <node ref="U11" pin="2"/>
+      <node ref="C_bypass9" pin="1"/>
+      <node ref="C_bypass5" pin="1"/>
+      <node ref="C_bypass10" pin="1"/>
+      <node ref="U6" pin="6"/>
+      <node ref="C15" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="U4" pin="6"/>
+    </net>
+    <net code="64" name="Switch">
+      <node ref="R53" pin="1"/>
+      <node ref="SW2" pin="2"/>
+    </net>
+    <net code="65" name="P3_Fault">
+      <node ref="R22" pin="2"/>
+      <node ref="U11" pin="7"/>
+    </net>
+    <net code="66" name="P2_Fault">
+      <node ref="R18" pin="2"/>
+      <node ref="U11" pin="6"/>
+    </net>
+    <net code="67" name="P1_Fault">
+      <node ref="R16" pin="2"/>
+      <node ref="U11" pin="5"/>
+    </net>
+    <net code="68" name="EXPANDER_INT">
+      <node ref="U11" pin="1"/>
+      <node ref="Pullup2" pin="2"/>
+    </net>
+    <net code="69" name="P7_MOS_SENSE_Select">
+      <node ref="U11" pin="20"/>
+      <node ref="Q16" pin="2"/>
+      <node ref="R_s12" pin="2"/>
+    </net>
+    <net code="70" name="P6_MOS_SENSE_Select">
+      <node ref="U11" pin="19"/>
+      <node ref="R_s11" pin="2"/>
+      <node ref="Q15" pin="2"/>
+    </net>
+    <net code="74" name="Net-(D3-Pad2)">
+      <node ref="D4" pin="2"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="75" name="Net-(D1-Pad2)">
+      <node ref="D2" pin="2"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="76" name="COIL_INJECTOR_Alert">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="77" name="Net-(J2-Pad23)">
+      <node ref="J2" pin="23"/>
+    </net>
+    <net code="78" name="Net-(J2-Pad16)">
+      <node ref="J2" pin="16"/>
+    </net>
+    <net code="79" name="Net-(J2-Pad17)">
+      <node ref="J2" pin="17"/>
+    </net>
+    <net code="80" name="Net-(J2-Pad18)">
+      <node ref="J2" pin="18"/>
+    </net>
+    <net code="81" name="Net-(J2-Pad19)">
+      <node ref="J2" pin="19"/>
+    </net>
+    <net code="82" name="Net-(J2-Pad2)">
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="83" name="Net-(J2-Pad20)">
+      <node ref="J2" pin="20"/>
+    </net>
+    <net code="84" name="Net-(J2-Pad21)">
+      <node ref="J2" pin="21"/>
+    </net>
+    <net code="85" name="Net-(J2-Pad22)">
+      <node ref="J2" pin="22"/>
+    </net>
+    <net code="86" name="Net-(J2-Pad15)">
+      <node ref="J2" pin="15"/>
+    </net>
+    <net code="87" name="Net-(J2-Pad24)">
+      <node ref="J2" pin="24"/>
+    </net>
+    <net code="88" name="Net-(J2-Pad25)">
+      <node ref="J2" pin="25"/>
+    </net>
+    <net code="89" name="Net-(J2-Pad26)">
+      <node ref="J2" pin="26"/>
+    </net>
+    <net code="90" name="Net-(J2-Pad27)">
+      <node ref="J2" pin="27"/>
+    </net>
+    <net code="91" name="Net-(J2-Pad28)">
+      <node ref="J2" pin="28"/>
+    </net>
+    <net code="92" name="Net-(J2-Pad29)">
+      <node ref="J2" pin="29"/>
+    </net>
+    <net code="93" name="Net-(J2-Pad3)">
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="94" name="Net-(J2-Pad30)">
+      <node ref="J2" pin="30"/>
+    </net>
+    <net code="95" name="Net-(J2-Pad14)">
+      <node ref="J2" pin="14"/>
+    </net>
+    <net code="96" name="Net-(J2-Pad13)">
+      <node ref="J2" pin="13"/>
+    </net>
+    <net code="97" name="Net-(J2-Pad12)">
+      <node ref="J2" pin="12"/>
+    </net>
+    <net code="98" name="Net-(J2-Pad11)">
+      <node ref="J2" pin="11"/>
+    </net>
+    <net code="99" name="Net-(J2-Pad10)">
+      <node ref="J2" pin="10"/>
+    </net>
+    <net code="100" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="101" name="FP_Alert">
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="102" name="SHUTDOWN_IN">
+      <node ref="K2" pin="6"/>
+      <node ref="D6" pin="2"/>
+      <node ref="D5" pin="2"/>
+      <node ref="D23" pin="2"/>
+      <node ref="K1" pin="6"/>
+    </net>
+    <net code="103" name="Net-(J2-Pad9)">
+      <node ref="J2" pin="9"/>
+    </net>
+    <net code="104" name="Net-(J2-Pad8)">
+      <node ref="J2" pin="8"/>
+    </net>
+    <net code="105" name="Net-(J2-Pad7)">
+      <node ref="J2" pin="7"/>
+    </net>
+    <net code="106" name="Net-(J2-Pad6)">
+      <node ref="J2" pin="6"/>
+    </net>
+    <net code="107" name="Net-(J2-Pad5)">
+      <node ref="J2" pin="5"/>
+    </net>
+    <net code="108" name="Net-(J2-Pad4)">
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="109" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="110" name="Net-(K1-Pad7)">
+      <node ref="U1" pin="9"/>
+      <node ref="R_Shunt1" pin="2"/>
+      <node ref="K1" pin="7"/>
+      <node ref="K1" pin="8"/>
+    </net>
+    <net code="111" name="Net-(F_COIL1-Pad2)">
+      <node ref="F_COIL1" pin="2"/>
+      <node ref="U1" pin="10"/>
+      <node ref="R_Shunt1" pin="1"/>
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="112" name="Net-(K2-Pad7)">
+      <node ref="U2" pin="9"/>
+      <node ref="R_Shunt2" pin="2"/>
+      <node ref="K2" pin="8"/>
+      <node ref="K2" pin="7"/>
+    </net>
+    <net code="113" name="Net-(F_FP1-Pad2)">
+      <node ref="U2" pin="10"/>
+      <node ref="R_Shunt2" pin="1"/>
+      <node ref="U2" pin="8"/>
+      <node ref="F_FP1" pin="2"/>
+    </net>
+    <net code="114" name="Net-(C7-Pad1)">
+      <node ref="Q3" pin="2"/>
+      <node ref="R4" pin="1"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="115" name="Net-(C10-Pad2)">
+      <node ref="C10" pin="2"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="116" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1"/>
+      <node ref="Q3" pin="5,6,7"/>
+      <node ref="R_Shunt4" pin="2"/>
+      <node ref="U4" pin="8"/>
+      <node ref="U4" pin="9"/>
+    </net>
+    <net code="117" name="Net-(F1-Pad2)">
+      <node ref="F1" pin="2"/>
+      <node ref="F2" pin="2"/>
+      <node ref="F3" pin="2"/>
+      <node ref="R_Shunt3" pin="1"/>
+      <node ref="F5" pin="2"/>
+      <node ref="U3" pin="9"/>
+      <node ref="F4" pin="2"/>
+    </net>
+    <net code="118" name="Net-(Cs4-Pad2)">
+      <node ref="R_s4" pin="2"/>
+      <node ref="Cs4" pin="2"/>
+    </net>
+    <net code="119" name="Net-(C_out4-Pad1)">
+      <node ref="R_Shunt8" pin="2"/>
+      <node ref="Q7" pin="5,6,7"/>
+      <node ref="U8" pin="8"/>
+      <node ref="C_out4" pin="1"/>
+      <node ref="U8" pin="9"/>
+    </net>
+    <net code="120" name="Net-(C_in4-Pad1)">
+      <node ref="C_in4" pin="1"/>
+      <node ref="R_in4" pin="1"/>
+      <node ref="Q7" pin="2"/>
+    </net>
+    <net code="121" name="Net-(Cs1-Pad2)">
+      <node ref="R_s1" pin="2"/>
+      <node ref="Cs1" pin="2"/>
+    </net>
+    <net code="122" name="Net-(C_out1-Pad1)">
+      <node ref="C_out1" pin="1"/>
+      <node ref="U5" pin="9"/>
+      <node ref="Q4" pin="5,6,7"/>
+      <node ref="U5" pin="8"/>
+      <node ref="R_Shunt5" pin="2"/>
+    </net>
+    <net code="123" name="Net-(C_in1-Pad1)">
+      <node ref="C_in1" pin="1"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="R_in1" pin="1"/>
+    </net>
+    <net code="124" name="Net-(Cs5-Pad2)">
+      <node ref="Cs5" pin="2"/>
+      <node ref="R_s5" pin="2"/>
+    </net>
+    <net code="125" name="Net-(C_out5-Pad1)">
+      <node ref="C_out5" pin="1"/>
+      <node ref="R_Shunt9" pin="2"/>
+      <node ref="Q8" pin="5,6,7"/>
+      <node ref="U9" pin="8"/>
+      <node ref="U9" pin="9"/>
+    </net>
+    <net code="126" name="Net-(C_in5-Pad1)">
+      <node ref="Q8" pin="2"/>
+      <node ref="C_in5" pin="1"/>
+      <node ref="R_in5" pin="1"/>
+    </net>
+    <net code="127" name="Net-(Cs2-Pad2)">
+      <node ref="R_s2" pin="2"/>
+      <node ref="Cs2" pin="2"/>
+    </net>
+    <net code="128" name="Net-(C_out2-Pad1)">
+      <node ref="Q5" pin="5,6,7"/>
+      <node ref="C_out2" pin="1"/>
+      <node ref="U6" pin="9"/>
+      <node ref="R_Shunt6" pin="2"/>
+      <node ref="U6" pin="8"/>
+    </net>
+    <net code="129" name="Net-(C_in2-Pad1)">
+      <node ref="R_in2" pin="1"/>
+      <node ref="Q5" pin="2"/>
+      <node ref="C_in2" pin="1"/>
+    </net>
+    <net code="130" name="Net-(Cs3-Pad2)">
+      <node ref="Cs3" pin="2"/>
+      <node ref="R_s3" pin="2"/>
+    </net>
+    <net code="132" name="Net-(C_in3-Pad1)">
+      <node ref="C_in3" pin="1"/>
+      <node ref="R_in3" pin="1"/>
+      <node ref="Q6" pin="2"/>
+    </net>
+    <net code="133" name="Net-(C_out3-Pad1)">
+      <node ref="Q6" pin="5,6,7"/>
+      <node ref="U7" pin="9"/>
+      <node ref="C_out3" pin="1"/>
+      <node ref="U7" pin="8"/>
+      <node ref="R_Shunt7" pin="2"/>
+    </net>
+    <net code="134" name="Net-(C_bypass6-Pad1)">
+      <node ref="C_bypass6" pin="1"/>
+      <node ref="U7" pin="6"/>
+    </net>
+    <net code="135" name="Net-(C14-Pad2)">
+      <node ref="C14" pin="2"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="136" name="Net-(C_out6-Pad1)">
+      <node ref="U10" pin="8"/>
+      <node ref="R_Shunt_1" pin="2"/>
+      <node ref="Q9" pin="5,6,7"/>
+      <node ref="C_out6" pin="1"/>
+    </net>
+    <net code="137" name="Net-(C12-Pad1)">
+      <node ref="R_in6" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="Q9" pin="2"/>
+    </net>
+    <net code="138" name="Net-(U10-Pad9)">
+      <node ref="U10" pin="9"/>
+    </net>
+    <net code="139" name="Net-(Pullup1-Pad2)">
+      <node ref="Pullup1" pin="2"/>
+      <node ref="U11" pin="3"/>
+    </net>
+    <net code="140" name="Net-(D15-Pad1)">
+      <node ref="R26" pin="1"/>
+      <node ref="D15" pin="1"/>
+    </net>
+    <net code="141" name="Net-(D13-Pad1)">
+      <node ref="D13" pin="1"/>
+      <node ref="R24" pin="1"/>
+    </net>
+    <net code="142" name="Net-(D11-Pad1)">
+      <node ref="D11" pin="1"/>
+      <node ref="R22" pin="1"/>
+    </net>
+    <net code="143" name="Net-(D9-Pad1)">
+      <node ref="D9" pin="1"/>
+      <node ref="R18" pin="1"/>
+    </net>
+    <net code="144" name="Net-(D17-Pad1)">
+      <node ref="D17" pin="1"/>
+      <node ref="R30" pin="1"/>
+    </net>
+    <net code="145" name="Net-(D19-Pad1)">
+      <node ref="R32" pin="1"/>
+      <node ref="D19" pin="1"/>
+    </net>
+    <net code="146" name="Net-(D23-Pad1)">
+      <node ref="D23" pin="1"/>
+      <node ref="R40" pin="1"/>
+    </net>
+    <net code="147" name="Net-(D30-Pad2)">
+      <node ref="D30" pin="2"/>
+      <node ref="R57" pin="2"/>
+    </net>
+    <net code="148" name="Net-(SW1-Pad4)">
+      <node ref="SW1" pin="4"/>
+      <node ref="U19" pin="1"/>
+    </net>
+    <net code="149" name="Net-(D30-Pad1)">
+      <node ref="D30" pin="1"/>
+      <node ref="U30" pin="1"/>
+    </net>
+    <net code="150" name="Net-(D28-Pad2)">
+      <node ref="R52" pin="2"/>
+      <node ref="D28" pin="2"/>
+    </net>
+    <net code="151" name="Net-(D28-Pad1)">
+      <node ref="U28" pin="1"/>
+      <node ref="D28" pin="1"/>
+    </net>
+    <net code="152" name="Net-(D24-Pad1)">
+      <node ref="D24" pin="1"/>
+      <node ref="R45" pin="1"/>
+    </net>
+    <net code="153" name="Net-(D25-Pad1)">
+      <node ref="D25" pin="1"/>
+      <node ref="R46" pin="1"/>
+    </net>
+    <net code="154" name="Net-(D7-Pad1)">
+      <node ref="D7" pin="1"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="155" name="Net-(D10-Pad1)">
+      <node ref="D10" pin="1"/>
+      <node ref="R19" pin="1"/>
+    </net>
+    <net code="156" name="Net-(D14-Pad1)">
+      <node ref="R25" pin="1"/>
+      <node ref="D14" pin="1"/>
+    </net>
+    <net code="157" name="Net-(D12-Pad1)">
+      <node ref="D12" pin="1"/>
+      <node ref="R23" pin="1"/>
+    </net>
+    <net code="158" name="Net-(D8-Pad1)">
+      <node ref="D8" pin="1"/>
+      <node ref="R17" pin="1"/>
+    </net>
+    <net code="159" name="Net-(SW1-Pad7)">
+      <node ref="U25" pin="1"/>
+      <node ref="SW1" pin="7"/>
+    </net>
+    <net code="160" name="Net-(SW1-Pad6)">
+      <node ref="SW1" pin="6"/>
+      <node ref="U23" pin="1"/>
+    </net>
+    <net code="161" name="Net-(SW1-Pad5)">
+      <node ref="SW1" pin="5"/>
+      <node ref="U21" pin="1"/>
+    </net>
+    <net code="162" name="Net-(D22-Pad1)">
+      <node ref="R39" pin="1"/>
+      <node ref="D22" pin="1"/>
+    </net>
+    <net code="163" name="Net-(D21-Pad1)">
+      <node ref="D21" pin="1"/>
+      <node ref="R36" pin="1"/>
+    </net>
+    <net code="164" name="Net-(D20-Pad1)">
+      <node ref="R33" pin="1"/>
+      <node ref="D20" pin="1"/>
+    </net>
+    <net code="165" name="Net-(D18-Pad1)">
+      <node ref="D18" pin="1"/>
+      <node ref="R31" pin="1"/>
+    </net>
+    <net code="166" name="Net-(D16-Pad1)">
+      <node ref="R27" pin="1"/>
+      <node ref="D16" pin="1"/>
+    </net>
+    <net code="167" name="Net-(D26-Pad2)">
+      <node ref="R48" pin="2"/>
+      <node ref="D26" pin="2"/>
+    </net>
+    <net code="168" name="Net-(D27-Pad1)">
+      <node ref="U27" pin="1"/>
+      <node ref="D27" pin="1"/>
+    </net>
+    <net code="169" name="Net-(D27-Pad2)">
+      <node ref="R50" pin="2"/>
+      <node ref="D27" pin="2"/>
+    </net>
+    <net code="170" name="Net-(D26-Pad1)">
+      <node ref="U26" pin="1"/>
+      <node ref="D26" pin="1"/>
+    </net>
+    <net code="171" name="Net-(D29-Pad2)">
+      <node ref="R55" pin="2"/>
+      <node ref="D29" pin="2"/>
+    </net>
+    <net code="172" name="Net-(D29-Pad1)">
+      <node ref="U29" pin="1"/>
+      <node ref="D29" pin="1"/>
+    </net>
+    <net code="173" name="Net-(SW1-Pad2)">
+      <node ref="U15" pin="1"/>
+      <node ref="SW1" pin="2"/>
+    </net>
+    <net code="174" name="Net-(SW1-Pad1)">
+      <node ref="U13" pin="1"/>
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="175" name="Net-(SW1-Pad3)">
+      <node ref="SW1" pin="3"/>
+      <node ref="U17" pin="1"/>
+    </net>
+  </nets>
+</export>
