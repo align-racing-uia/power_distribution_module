@@ -63,6 +63,7 @@ F10 "FP_ENABLE_ACM" I R 10000 975 50
 F11 "COIL_INJECTOR_OUT" O R 10000 750 50 
 F12 "FP_ENABLE_AUX" I R 10000 1075 50 
 F13 "FP_ENABLE_RELAY_SINK" O R 10000 1175 50 
+F14 "ACM_Shutdown_Circuit" I R 10000 1275 50 
 $EndSheet
 $Sheet
 S 8475 1650 1500 525 
@@ -1449,4 +1450,16 @@ Text GLabel 2225 4850 2    50   Input ~ 0
 P6_GearA_open_drain_output
 Wire Wire Line
 	2125 4850 2225 4850
+Text Notes 12075 3525 0    50   ~ 0
+Remember shutdown circuit via ACM !!!!!!!!!!!!!!!!!!
+Text GLabel 10100 1275 2    50   Input ~ 0
+ACM_Shutdown_Circuit
+Wire Wire Line
+	10100 1275 10000 1275
+Text GLabel 12375 3300 0    50   Input ~ 0
+ACM_Shutdown_Circuit
+NoConn ~ 12750 2325
+NoConn ~ 12750 2175
+NoConn ~ 12750 2625
+NoConn ~ 12750 2925
 $EndSCHEMATC
