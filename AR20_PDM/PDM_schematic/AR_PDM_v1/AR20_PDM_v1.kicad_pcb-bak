@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 8)
-    (tracks 203)
+    (tracks 198)
     (zones 0)
     (modules 240)
     (nets 188)
@@ -1295,7 +1295,7 @@
     )
   )
 
-  (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5E25F85E)
+  (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5E20D1C3)
     (at 102.362 121.92 90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags capacitor)
@@ -1727,7 +1727,7 @@
     )
   )
 
-  (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5E25F8BF)
+  (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5E20D41B)
     (at 104.14 121.92 90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags capacitor)
@@ -9751,11 +9751,6 @@
   (segment (start 112.244 121.498) (end 112.244 120.118) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 112.244 120.118) (end 112.244 116.616) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 115.824 121.1325) (end 114.046 121.1325) (width 0.25) (layer F.Cu) (net 2))
-  (segment (start 112.014 106.931) (end 112.014 105.283) (width 0.25) (layer B.Cu) (net 6))
-  (segment (start 88.646 106.931) (end 88.646 105.283) (width 0.25) (layer B.Cu) (net 27))
-  (segment (start 65.278 106.931) (end 65.278 105.283) (width 0.25) (layer B.Cu) (net 28))
-  (segment (start 100.33 106.931) (end 100.33 105.283) (width 0.25) (layer B.Cu) (net 30))
-  (segment (start 76.962 106.931) (end 76.962 105.283) (width 0.25) (layer B.Cu) (net 31))
   (segment (start 50.546 55.626) (end 53.086 55.626) (width 3) (layer B.Cu) (net 32) (tstamp 5E20CE4E))
   (segment (start 49.022 54.102) (end 50.546 55.626) (width 3) (layer B.Cu) (net 32) (tstamp 5E20CDE5))
   (segment (start 49.022 49.022) (end 49.022 54.102) (width 3) (layer B.Cu) (net 32) (tstamp 5E20CDE2))

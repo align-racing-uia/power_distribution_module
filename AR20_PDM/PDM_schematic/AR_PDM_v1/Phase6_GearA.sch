@@ -35,7 +35,7 @@ AR Path="/5E0FDCCC/5E21B806" Ref="R_in3"  Part="1"
 AR Path="/5E10174B/5E21B806" Ref="R_in?"  Part="1" 
 F 0 "R_in3" V 3093 2400 50  0000 C CNN
 F 1 "4k7" V 3184 2400 50  0000 C CNN
-F 2 "" V 3230 2400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3230 2400 50  0001 C CNN
 F 3 "~" H 3300 2400 50  0001 C CNN
 	1    3300 2400
 	0    1    1    0   
@@ -113,7 +113,7 @@ AR Path="/5E0FDCCC/5DAAC1E9" Ref="R9"  Part="1"
 AR Path="/5E10174B/5DAAC1E9" Ref="R?"  Part="1" 
 F 0 "R9" H 2320 1896 50  0000 L CNN
 F 1 "4k7" H 2320 1805 50  0000 L CNN
-F 2 "" V 2180 1850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 1850 50  0001 C CNN
 F 3 "~" H 2250 1850 50  0001 C CNN
 	1    2250 1850
 	1    0    0    -1  
@@ -407,9 +407,9 @@ AR Path="/5E0FC3A2/5DA8B874" Ref="Q?"  Part="1"
 AR Path="/5E0FCFDC/5DA8B874" Ref="Q?"  Part="1" 
 AR Path="/5E0FDCCC/5DA8B874" Ref="Q6"  Part="1" 
 AR Path="/5E10174B/5DA8B874" Ref="Q?"  Part="1" 
-F 0 "Q6" H 4255 3215 50  0000 C CNN
-F 1 "BTS50025-1TAD" H 4255 3124 50  0000 C CNN
-F 2 "" H 4250 2650 50  0001 C CNN
+F 0 "Q6" H 4000 3300 50  0000 C CNN
+F 1 "BTS50025-1TAD" H 4250 3200 50  0000 C CNN
+F 2 "AR_PDM_v1:BTS500xx" H 4250 2650 50  0001 C CNN
 F 3 "" H 4250 2650 50  0001 C CNN
 	1    4250 2650
 	1    0    0    -1  
@@ -435,7 +435,7 @@ AR Path="/5E0FDCCC/5E21B803" Ref="U8"  Part="1"
 AR Path="/5E10174B/5E21B803" Ref="U?"  Part="1" 
 F 0 "U8" H 9225 4465 50  0000 C CNN
 F 1 "INA233" H 9225 4374 50  0000 C CNN
-F 2 "" H 9200 4050 50  0001 C CNN
+F 2 "AR_PDM_v1:INA233" H 9200 4050 50  0001 C CNN
 F 3 "" H 9200 4050 50  0001 C CNN
 	1    9200 4050
 	1    0    0    -1  
@@ -459,12 +459,6 @@ Wire Wire Line
 Connection ~ 3700 3100
 Wire Wire Line
 	3700 3100 3700 3225
-Wire Wire Line
-	4700 2400 4800 2400
-Wire Wire Line
-	4800 2400 4800 1600
-Wire Wire Line
-	4800 1600 4650 1600
 Text HLabel 2250 1550 1    50   Input ~ 10
 vcc_5v
 Wire Wire Line
@@ -600,7 +594,7 @@ AR Path="/5E0FDCCC/5E21B86D" Ref="R_s3"  Part="1"
 AR Path="/5E10174B/5E21B86D" Ref="R_s?"  Part="1" 
 F 0 "R_s3" V 5593 1750 50  0000 C CNN
 F 1 "3.9R" V 5684 1750 50  0000 C CNN
-F 2 "" V 5730 1750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5730 1750 50  0001 C CNN
 F 3 "~" H 5800 1750 50  0001 C CNN
 	1    5800 1750
 	1    0    0    -1  
@@ -611,9 +605,6 @@ Wire Wire Line
 	5800 2250 5800 2300
 Wire Wire Line
 	5200 1600 5800 1600
-Wire Wire Line
-	4800 1600 5200 1600
-Connection ~ 4800 1600
 Connection ~ 5200 1600
 Text HLabel 1350 1900 1    50   Input ~ 10
 P6_MOS_IN
@@ -624,10 +615,6 @@ Wire Wire Line
 	2250 2000 2250 2400
 Wire Wire Line
 	1350 1900 1350 2400
-Wire Wire Line
-	1350 2400 2250 2400
-Wire Wire Line
-	700  3000 700  3100
 Wire Wire Line
 	10000 4450 10000 4950
 Text Notes 10075 4650 0    50   ~ 10
@@ -660,7 +647,7 @@ AR Path="/5E0FDCCC/5E21B873" Ref="R_sense3"  Part="1"
 AR Path="/5E10174B/5E21B873" Ref="R_sense?"  Part="1" 
 F 0 "R_sense3" H 3770 3496 50  0000 L CNN
 F 1 "1k" H 3770 3405 50  0000 L CNN
-F 2 "" V 3630 3450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 3450 50  0001 C CNN
 F 3 "~" H 3700 3450 50  0001 C CNN
 	1    3700 3450
 	1    0    0    -1  
@@ -715,7 +702,7 @@ AR Path="/5E0FDCCC/5E1DA63E" Ref="R_Shunt7"  Part="1"
 AR Path="/5E10174B/5E1DA63E" Ref="R_Shunt?"  Part="1" 
 F 0 "R_Shunt7" V 6268 2950 50  0000 C CNN
 F 1 "2m_1%_4W" V 6359 2950 50  0000 C CNN
-F 2 "" V 6405 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" V 6405 2950 50  0001 C CNN
 F 3 "~" H 6475 2950 50  0001 C CNN
 	1    6475 2950
 	0    1    1    0   
@@ -734,4 +721,94 @@ Text HLabel 9850 4950 3    50   Input ~ 10
 vcc_5v
 Text HLabel 10000 4950 3    50   Input ~ 10
 vcc_5v
+Wire Wire Line
+	4650 1600 4700 1600
+Wire Wire Line
+	4700 2650 4700 2550
+Connection ~ 4700 2550
+Wire Wire Line
+	4700 2450 4700 2550
+Wire Wire Line
+	4700 2300 4700 2200
+Wire Wire Line
+	4700 2200 4700 1600
+Connection ~ 4700 2200
+Connection ~ 4700 1600
+Wire Wire Line
+	4700 1600 5200 1600
+Text HLabel 2275 2675 3    50   Input ~ 0
+P6_O_D_out
+Wire Wire Line
+	1700 3175 1700 3350
+Connection ~ 1700 3175
+Wire Wire Line
+	1700 3075 1700 3175
+Wire Wire Line
+	1400 3175 1700 3175
+Connection ~ 1400 2875
+Wire Wire Line
+	1400 2875 1350 2875
+$Comp
+L AR20_PDM_v1-rescue:R-Device R_s?
+U 1 1 5E25DA34
+P 1400 3025
+AR Path="/5DA89415/5E25DA34" Ref="R_s?"  Part="1" 
+AR Path="/5DA8920B/5E25DA34" Ref="R_s?"  Part="1" 
+AR Path="/5E2546F2/5E25DA34" Ref="R_s?"  Part="1" 
+AR Path="/5E0FDCCC/5E25DA34" Ref="R58"  Part="1" 
+F 0 "R58" V 1193 3025 50  0000 C CNN
+F 1 "4K7" V 1284 3025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1330 3025 50  0001 C CNN
+F 3 "~" H 1400 3025 50  0001 C CNN
+	1    1400 3025
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Q_NJFET_DGS Q?
+U 1 1 5E25DA2E
+P 1600 2875
+AR Path="/5DA8920B/5E25DA2E" Ref="Q?"  Part="1" 
+AR Path="/5E2546F2/5E25DA2E" Ref="Q?"  Part="1" 
+AR Path="/5E0FDCCC/5E25DA2E" Ref="Q17"  Part="1" 
+F 0 "Q17" H 1791 2829 50  0000 L CNN
+F 1 "N_FET" H 1791 2920 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1800 2975 50  0001 C CNN
+F 3 "~" H 1600 2875 50  0001 C CNN
+	1    1600 2875
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1700 2675 2275 2675
+$Comp
+L AR20_PDM_v1-rescue:GND-power #PWR?
+U 1 1 5E27870A
+P 1700 3350
+AR Path="/5DA89415/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB10A1/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB20EA/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4725/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4A93/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4EB5/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E5304/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E594B/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E607C/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FB5C8/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FBBBD/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FC3A2/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FCFDC/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FDCCC/5E27870A" Ref="#PWR0124"  Part="1" 
+AR Path="/5E10174B/5E27870A" Ref="#PWR?"  Part="1" 
+AR Path="/5E1AEC18/5E27870A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0124" H 1700 3100 50  0001 C CNN
+F 1 "GND" V 1705 3222 50  0000 R CNN
+F 2 "" H 1700 3350 50  0001 C CNN
+F 3 "" H 1700 3350 50  0001 C CNN
+	1    1700 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2400 2250 2400
+Wire Wire Line
+	1350 2400 1350 2875
+Connection ~ 1350 2400
 $EndSCHEMATC

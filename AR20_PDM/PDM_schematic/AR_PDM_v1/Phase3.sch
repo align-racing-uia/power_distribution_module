@@ -35,7 +35,7 @@ AR Path="/5E0FDCCC/5E21B809" Ref="R_in?"  Part="1"
 AR Path="/5E10174B/5E21B809" Ref="R_in?"  Part="1" 
 F 0 "R_in1" V 3093 2400 50  0000 C CNN
 F 1 "4k7" V 3184 2400 50  0000 C CNN
-F 2 "" V 3230 2400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3230 2400 50  0001 C CNN
 F 3 "~" H 3300 2400 50  0001 C CNN
 	1    3300 2400
 	0    1    1    0   
@@ -113,7 +113,7 @@ AR Path="/5E0FDCCC/5E21B818" Ref="R?"  Part="1"
 AR Path="/5E10174B/5E21B818" Ref="R?"  Part="1" 
 F 0 "R7" H 2320 1896 50  0000 L CNN
 F 1 "4k7" H 2320 1805 50  0000 L CNN
-F 2 "" V 2180 1850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 1850 50  0001 C CNN
 F 3 "~" H 2250 1850 50  0001 C CNN
 	1    2250 1850
 	1    0    0    -1  
@@ -402,14 +402,14 @@ AR Path="/5E0E5304/5E21B7FC" Ref="Q?"  Part="1"
 AR Path="/5E0E594B/5E21B7FC" Ref="Q?"  Part="1" 
 AR Path="/5E0E607C/5E21B7FC" Ref="Q?"  Part="1" 
 AR Path="/5E0FB5C8/5E21B7FC" Ref="Q?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B7FC" Ref="Q4"  Part="1" 
+AR Path="/5E0FBBBD/5E21B7FC" Ref="Q3"  Part="1" 
 AR Path="/5E0FC3A2/5E21B7FC" Ref="Q?"  Part="1" 
 AR Path="/5E0FCFDC/5E21B7FC" Ref="Q?"  Part="1" 
 AR Path="/5E0FDCCC/5E21B7FC" Ref="Q?"  Part="1" 
 AR Path="/5E10174B/5E21B7FC" Ref="Q?"  Part="1" 
-F 0 "Q4" H 4255 3215 50  0000 C CNN
-F 1 "BTS50025-1TAD" H 4255 3124 50  0000 C CNN
-F 2 "" H 4250 2650 50  0001 C CNN
+F 0 "Q3" H 3975 3275 50  0000 C CNN
+F 1 "BTS50025-1TAD" H 4225 3200 50  0000 C CNN
+F 2 "AR_PDM_v1:BTS500xx" H 4250 2650 50  0001 C CNN
 F 3 "" H 4250 2650 50  0001 C CNN
 	1    4250 2650
 	1    0    0    -1  
@@ -435,7 +435,7 @@ AR Path="/5E0FDCCC/5DA8DC6C" Ref="U?"  Part="1"
 AR Path="/5E10174B/5DA8DC6C" Ref="U?"  Part="1" 
 F 0 "U6" H 9225 4465 50  0000 C CNN
 F 1 "INA233" H 9225 4374 50  0000 C CNN
-F 2 "" H 9200 4050 50  0001 C CNN
+F 2 "AR_PDM_v1:INA233" H 9200 4050 50  0001 C CNN
 F 3 "" H 9200 4050 50  0001 C CNN
 	1    9200 4050
 	1    0    0    -1  
@@ -461,12 +461,6 @@ Wire Wire Line
 Connection ~ 3700 3100
 Wire Wire Line
 	3700 3100 3700 3225
-Wire Wire Line
-	4700 2400 4800 2400
-Wire Wire Line
-	4800 2400 4800 1600
-Wire Wire Line
-	4800 1600 4650 1600
 Text HLabel 2250 1550 1    50   Input ~ 10
 vcc_5v
 Wire Wire Line
@@ -602,7 +596,7 @@ AR Path="/5E0FDCCC/5E21B86E" Ref="R_s?"  Part="1"
 AR Path="/5E10174B/5E21B86E" Ref="R_s?"  Part="1" 
 F 0 "R_s1" V 5593 1750 50  0000 C CNN
 F 1 "3.9R" V 5684 1750 50  0000 C CNN
-F 2 "" V 5730 1750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5730 1750 50  0001 C CNN
 F 3 "~" H 5800 1750 50  0001 C CNN
 	1    5800 1750
 	1    0    0    -1  
@@ -613,9 +607,6 @@ Wire Wire Line
 	5800 2250 5800 2300
 Wire Wire Line
 	5200 1600 5800 1600
-Wire Wire Line
-	4800 1600 5200 1600
-Connection ~ 4800 1600
 Connection ~ 5200 1600
 Text HLabel 1350 1900 1    50   Input ~ 10
 P3_MOS_IN
@@ -667,7 +658,7 @@ AR Path="/5E0FDCCC/5E21B876" Ref="R_sense?"  Part="1"
 AR Path="/5E10174B/5E21B876" Ref="R_sense?"  Part="1" 
 F 0 "R_sense1" H 3770 3496 50  0000 L CNN
 F 1 "1k" H 3770 3405 50  0000 L CNN
-F 2 "" V 3630 3450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 3450 50  0001 C CNN
 F 3 "~" H 3700 3450 50  0001 C CNN
 	1    3700 3450
 	1    0    0    -1  
@@ -722,7 +713,7 @@ AR Path="/5E0FDCCC/5E1CBF07" Ref="R_Shunt?"  Part="1"
 AR Path="/5E10174B/5E1CBF07" Ref="R_Shunt?"  Part="1" 
 F 0 "R_Shunt5" V 6268 2950 50  0000 C CNN
 F 1 "2m_1%_4W" V 6359 2950 50  0000 C CNN
-F 2 "" V 6405 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" V 6405 2950 50  0001 C CNN
 F 3 "~" H 6475 2950 50  0001 C CNN
 	1    6475 2950
 	0    1    1    0   
@@ -735,4 +726,19 @@ Text Notes 10075 4750 0    50   ~ 0
 addr: 1000010
 Text HLabel 10000 4950 3    50   BiDi ~ 10
 P3_SDA
+Wire Wire Line
+	4650 1600 4700 1600
+Wire Wire Line
+	4700 2300 4700 2200
+Wire Wire Line
+	4700 2200 4700 1600
+Connection ~ 4700 2200
+Connection ~ 4700 1600
+Wire Wire Line
+	4700 1600 5200 1600
+Wire Wire Line
+	4700 2550 4700 2650
+Connection ~ 4700 2550
+Wire Wire Line
+	4700 2550 4700 2450
 $EndSCHEMATC

@@ -14,32 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 13575 3775 0    50   ~ 0
-I2C Pullup
-Wire Wire Line
-	13450 3875 13300 3875
-Connection ~ 13450 3875
-Wire Wire Line
-	13450 3875 13450 3775
-Wire Wire Line
-	13300 3875 13300 3925
-Wire Wire Line
-	13600 3875 13450 3875
-Wire Wire Line
-	13600 3925 13600 3875
-$Comp
-L AR20_PDM_v1-rescue:R-Device R10K?
-U 1 1 5DAD3BC1
-P 13300 4075
-AR Path="/5DA89415/5DAD3BC1" Ref="R10K?"  Part="1" 
-AR Path="/5DAD3BC1" Ref="R10K1"  Part="1" 
-F 0 "R10K1" H 13370 4121 50  0000 L CNN
-F 1 "5K" H 13370 4030 50  0000 L CNN
-F 2 "" V 13230 4075 50  0001 C CNN
-F 3 "~" H 13300 4075 50  0001 C CNN
-	1    13300 4075
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	8350 950  8450 950 
 Text GLabel 8375 1800 0    50   Input ~ 0
@@ -68,26 +42,8 @@ Text GLabel 10100 975  2    50   Input ~ 0
 FP_ENABLE_ACM
 Wire Wire Line
 	10100 975  10000 975 
-Text GLabel 13450 3775 1    50   Input ~ 0
-vcc_5v
 Text GLabel 12750 1575 0    50   Input ~ 0
 SDA
-Text GLabel 13300 4275 3    50   Input ~ 0
-SDA
-Text GLabel 13600 4275 3    50   Input ~ 0
-SLC
-Wire Wire Line
-	13300 4275 13300 4225
-Wire Wire Line
-	13600 4275 13600 4225
-Wire Notes Line
-	12900 3400 12900 4625
-Wire Notes Line
-	12900 4625 14050 4625
-Wire Notes Line
-	14050 4625 14050 3400
-Wire Notes Line
-	12900 3400 14050 3400
 Text GLabel 8350 950  0    50   Input ~ 0
 vcc_5v
 $Sheet
@@ -257,6 +213,7 @@ F5 "P6_SLC" I L 1100 4775 50
 F6 "P6_MOS_SENSE" O R 2125 4650 50 
 F7 "P6_OUT" O R 2125 4750 50 
 F8 "P6_MOS_IN" O L 1100 4875 50 
+F9 "P6_O_D_out" I R 2125 4850 50 
 $EndSheet
 Text GLabel 2225 4650 2    50   Input ~ 0
 P6_MOS_SENSE
@@ -280,7 +237,7 @@ U 1 1 5E114D97
 P 1150 7000
 F 0 "J1" V 1750 7000 50  0000 L CNN
 F 1 "High_Curret_terminal" V 1825 6700 50  0000 L CNN
-F 2 "" H 2050 6700 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132291_Vertical" H 2050 6700 50  0001 C CNN
 F 3 "~" H 2050 6700 50  0001 C CNN
 	1    1150 7000
 	0    1    1    0   
@@ -302,7 +259,7 @@ Wire Wire Line
 Text GLabel 1000 5200 0    50   Input ~ 0
 vcc_5v
 $Comp
-L AR20_PDM_v1-rescue:C-Device C?
+L AR20_PDM_v1-rescue:CP1 C?
 U 1 1 5E179318
 P 3025 7225
 AR Path="/5DA89415/5E179318" Ref="C?"  Part="1" 
@@ -323,13 +280,13 @@ AR Path="/5E10174B/5E179318" Ref="C?"  Part="1"
 AR Path="/5E179318" Ref="C1"  Part="1" 
 F 0 "C1" H 3140 7271 50  0000 L CNN
 F 1 "470uf" H 3140 7180 50  0000 L CNN
-F 2 "" H 3063 7075 50  0001 C CNN
+F 2 "AR_PDM_v1:CAPAE1350X1400N_EEV-FK1V471Q" H 3063 7075 50  0001 C CNN
 F 3 "~" H 3025 7225 50  0001 C CNN
 	1    3025 7225
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
-L AR20_PDM_v1-rescue:C-Device C?
+L AR20_PDM_v1-rescue:CP1 C?
 U 1 1 5E17931E
 P 3625 7225
 AR Path="/5DA89415/5E17931E" Ref="C?"  Part="1" 
@@ -350,13 +307,13 @@ AR Path="/5E10174B/5E17931E" Ref="C?"  Part="1"
 AR Path="/5E17931E" Ref="C2"  Part="1" 
 F 0 "C2" H 3740 7271 50  0000 L CNN
 F 1 "470uf" H 3740 7180 50  0000 L CNN
-F 2 "" H 3663 7075 50  0001 C CNN
+F 2 "AR_PDM_v1:CAPAE1350X1400N_EEV-FK1V471Q" H 3663 7075 50  0001 C CNN
 F 3 "~" H 3625 7225 50  0001 C CNN
 	1    3625 7225
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
-L AR20_PDM_v1-rescue:C-Device C?
+L AR20_PDM_v1-rescue:CP1 C?
 U 1 1 5E179324
 P 4250 7225
 AR Path="/5DA89415/5E179324" Ref="C?"  Part="1" 
@@ -377,13 +334,13 @@ AR Path="/5E10174B/5E179324" Ref="C?"  Part="1"
 AR Path="/5E179324" Ref="C3"  Part="1" 
 F 0 "C3" H 4365 7271 50  0000 L CNN
 F 1 "470uf" H 4365 7180 50  0000 L CNN
-F 2 "" H 4288 7075 50  0001 C CNN
+F 2 "AR_PDM_v1:CAPAE1350X1400N_EEV-FK1V471Q" H 4288 7075 50  0001 C CNN
 F 3 "~" H 4250 7225 50  0001 C CNN
 	1    4250 7225
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
-L AR20_PDM_v1-rescue:C-Device C?
+L AR20_PDM_v1-rescue:CP1 C?
 U 1 1 5E17932A
 P 4900 7225
 AR Path="/5DA89415/5E17932A" Ref="C?"  Part="1" 
@@ -404,40 +361,13 @@ AR Path="/5E10174B/5E17932A" Ref="C?"  Part="1"
 AR Path="/5E17932A" Ref="C4"  Part="1" 
 F 0 "C4" H 5015 7271 50  0000 L CNN
 F 1 "470uf" H 5015 7180 50  0000 L CNN
-F 2 "" H 4938 7075 50  0001 C CNN
+F 2 "AR_PDM_v1:CAPAE1350X1400N_EEV-FK1V471Q" H 4938 7075 50  0001 C CNN
 F 3 "~" H 4900 7225 50  0001 C CNN
 	1    4900 7225
-	-1   0    0    1   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:C-Device C?
-U 1 1 5E179330
-P 5525 7225
-AR Path="/5DA89415/5E179330" Ref="C?"  Part="1" 
-AR Path="/5DEB10A1/5E179330" Ref="C?"  Part="1" 
-AR Path="/5DEB20EA/5E179330" Ref="C?"  Part="1" 
-AR Path="/5E0E4725/5E179330" Ref="C?"  Part="1" 
-AR Path="/5E0E4A93/5E179330" Ref="C?"  Part="1" 
-AR Path="/5E0E4EB5/5E179330" Ref="C?"  Part="1" 
-AR Path="/5E0E5304/5E179330" Ref="C?"  Part="1" 
-AR Path="/5E0E594B/5E179330" Ref="C?"  Part="1" 
-AR Path="/5E0E607C/5E179330" Ref="C?"  Part="1" 
-AR Path="/5E0FB5C8/5E179330" Ref="C?"  Part="1" 
-AR Path="/5E0FBBBD/5E179330" Ref="C?"  Part="1" 
-AR Path="/5E0FC3A2/5E179330" Ref="C?"  Part="1" 
-AR Path="/5E0FCFDC/5E179330" Ref="C?"  Part="1" 
-AR Path="/5E0FDCCC/5E179330" Ref="C?"  Part="1" 
-AR Path="/5E10174B/5E179330" Ref="C?"  Part="1" 
-AR Path="/5E179330" Ref="C5"  Part="1" 
-F 0 "C5" H 5640 7271 50  0000 L CNN
-F 1 "470uf" H 5640 7180 50  0000 L CNN
-F 2 "" H 5563 7075 50  0001 C CNN
-F 3 "~" H 5525 7225 50  0001 C CNN
-	1    5525 7225
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	2525 7650 5675 7650
+	2525 7650 5925 7650
 $Comp
 L AR20_PDM_v1-rescue:GND-power #PWR?
 U 1 1 5E179337
@@ -573,28 +503,12 @@ F 3 "" H 5525 7375 50  0001 C CNN
 	1    5525 7375
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2925 7075 3025 7075
-Wire Wire Line
-	3025 7075 3625 7075
-Connection ~ 3025 7075
-Wire Wire Line
-	3625 7075 4250 7075
-Connection ~ 3625 7075
-Wire Wire Line
-	4250 7075 4900 7075
-Connection ~ 4250 7075
-Wire Wire Line
-	5525 7075 4900 7075
-Connection ~ 4900 7075
 Text Notes 3350 6950 0    50   ~ 0
 Bulk decoupling cappacitors, place somwhere
 Text HLabel 2925 7075 0    50   Input ~ 10
 V+12V
 Wire Notes Line
-	5675 7650 5675 6750
-Wire Notes Line
-	5650 6750 2500 6750
+	5900 6750 2500 6750
 Wire Notes Line
 	2500 6750 2500 7650
 $Sheet
@@ -858,7 +772,7 @@ Text GLabel 12750 1125 0    50   Input ~ 0
 P5_EN_ACM
 Text GLabel 12750 1275 0    50   Input ~ 0
 P7_EN_ACM
-Text GLabel 13450 7325 1    50   Input ~ 0
+Text GLabel 13450 6825 1    50   Input ~ 0
 P3_EN_AUX
 Text GLabel 5825 2325 2    50   Input ~ 0
 P1_Fault
@@ -1171,33 +1085,27 @@ Text Notes 6475 7800 0    50   ~ 0
 Loss of power, flyback protection. \nPlace relativly near all of the mosfets.
 Wire Wire Line
 	12950 8175 12950 8375
-Text GLabel 14350 7325 1    50   Input ~ 0
-SHUTDOWN_IN
-Text GLabel 14250 7325 1    50   Input ~ 0
+Text GLabel 14050 6825 1    50   Input ~ 0
 CAN_LOW
-Text GLabel 14150 7325 1    50   Input ~ 0
+Text GLabel 13950 6825 1    50   Input ~ 0
 CAN_HIGH
-Text GLabel 14050 7325 1    50   Input ~ 0
-CAN_LOW
-Text GLabel 13950 7325 1    50   Input ~ 0
-CAN_HIGH
-Text GLabel 13650 7325 1    50   Input ~ 0
+Text GLabel 13650 6825 1    50   Input ~ 0
 P5_EN_AUX
-Text GLabel 13750 7325 1    50   Input ~ 0
+Text GLabel 13750 6825 1    50   Input ~ 0
 P6_EN_AUX
 Text GLabel 14300 1875 2    50   Input ~ 0
 P3_EN_ACM
-Text GLabel 13250 7325 1    50   Input ~ 0
+Text GLabel 13250 6825 1    50   Input ~ 0
 P1_EN_AUX
-Text GLabel 13550 7325 1    50   Input ~ 0
+Text GLabel 13550 6825 1    50   Input ~ 0
 P4_EN_AUX
-Text GLabel 13350 7325 1    50   Input ~ 0
+Text GLabel 13350 6825 1    50   Input ~ 0
 P2_EN_AUX
-Text GLabel 13850 7325 1    50   Input ~ 0
+Text GLabel 13850 6825 1    50   Input ~ 0
 P7_EN_AUX
-Text GLabel 13150 7325 1    50   Input ~ 0
+Text GLabel 13150 6825 1    50   Input ~ 0
 FP_ENABLE_AUX
-Text GLabel 13050 7325 1    50   Input ~ 0
+Text GLabel 13050 6825 1    50   Input ~ 0
 FP_ENABLE_RELAY_SINK
 Text GLabel 13050 8400 1    50   Input ~ 0
 GEAR_ACT_COIL_GND
@@ -1205,8 +1113,6 @@ Text GLabel 14350 8400 1    50   Input ~ 0
 MCU_UNITS_FEED_OUT
 Text GLabel 14250 8400 1    50   Input ~ 0
 IGN_SWITCH_OUT
-Text GLabel 14450 7325 1    50   Input ~ 0
-SHUTDOWN_OUT
 Text GLabel 14150 8400 1    50   Input ~ 0
 ETC_OUT
 Text GLabel 14050 8400 1    50   Input ~ 0
@@ -1242,19 +1148,6 @@ F 1 "GND" H 12955 8002 50  0000 C CNN
 F 2 "" H 12950 8175 50  0001 C CNN
 F 3 "" H 12950 8175 50  0001 C CNN
 	1    12950 8175
-	-1   0    0    1   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:R-Device R10K?
-U 1 1 5E228553
-P 13600 4075
-AR Path="/5DA89415/5E228553" Ref="R10K?"  Part="1" 
-AR Path="/5E228553" Ref="R10K2"  Part="1" 
-F 0 "R10K2" H 13300 4100 50  0000 L CNN
-F 1 "5K" H 13325 4025 50  0000 L CNN
-F 2 "" V 13530 4075 50  0001 C CNN
-F 3 "~" H 13600 4075 50  0001 C CNN
-	1    13600 4075
 	-1   0    0    1   
 $EndComp
 $Sheet
@@ -1315,25 +1208,17 @@ Text GLabel 4375 2175 0    50   Input ~ 0
 SHUTDOWN_IN
 Text GLabel 4375 2275 0    50   Input ~ 0
 SHUTDOWN_OUT
-Text GLabel 14550 7325 1    50   Input ~ 0
-RX
-Text GLabel 14650 7325 1    50   Input ~ 0
-TX
 Text GLabel 12750 2475 0    50   Input ~ 0
 RX
 Text GLabel 12750 2775 0    50   Input ~ 0
 TX
-Text GLabel 14750 7325 1    50   Input ~ 0
-DIGI_IO_1
-Text GLabel 14850 7325 1    50   Input ~ 0
-DIGI_IO_1
 $Comp
 L ACM_2020_Symbol:ACM_2020 U1
 U 1 1 5E21274B
 P 13500 3125
 F 0 "U1" H 13525 5690 50  0000 C CNN
 F 1 "ACM_2020" H 13525 5599 50  0000 C CNN
-F 2 "" H 13500 3125 50  0001 C CNN
+F 2 "AR_PDM_v1:ACM_2020_Footprint" H 13500 3125 50  0001 C CNN
 F 3 "" H 13500 3125 50  0001 C CNN
 	1    13500 3125
 	1    0    0    -1  
@@ -1431,4 +1316,137 @@ Text GLabel 14300 2175 2    50   Input ~ 0
 P2_EN_ACM
 Text GLabel 14300 1425 2    50   Input ~ 0
 P1_EN_ACM
+Wire Wire Line
+	2925 7075 3025 7075
+Connection ~ 3025 7075
+Wire Wire Line
+	3025 7075 3625 7075
+Connection ~ 3625 7075
+Wire Wire Line
+	3625 7075 4250 7075
+Connection ~ 4250 7075
+Wire Wire Line
+	4250 7075 4900 7075
+Connection ~ 4900 7075
+Wire Wire Line
+	4900 7075 5525 7075
+$Comp
+L AR20_PDM_v1-rescue:CP1 C?
+U 1 1 5E179330
+P 5525 7225
+AR Path="/5DA89415/5E179330" Ref="C?"  Part="1" 
+AR Path="/5DEB10A1/5E179330" Ref="C?"  Part="1" 
+AR Path="/5DEB20EA/5E179330" Ref="C?"  Part="1" 
+AR Path="/5E0E4725/5E179330" Ref="C?"  Part="1" 
+AR Path="/5E0E4A93/5E179330" Ref="C?"  Part="1" 
+AR Path="/5E0E4EB5/5E179330" Ref="C?"  Part="1" 
+AR Path="/5E0E5304/5E179330" Ref="C?"  Part="1" 
+AR Path="/5E0E594B/5E179330" Ref="C?"  Part="1" 
+AR Path="/5E0E607C/5E179330" Ref="C?"  Part="1" 
+AR Path="/5E0FB5C8/5E179330" Ref="C?"  Part="1" 
+AR Path="/5E0FBBBD/5E179330" Ref="C?"  Part="1" 
+AR Path="/5E0FC3A2/5E179330" Ref="C?"  Part="1" 
+AR Path="/5E0FCFDC/5E179330" Ref="C?"  Part="1" 
+AR Path="/5E0FDCCC/5E179330" Ref="C?"  Part="1" 
+AR Path="/5E10174B/5E179330" Ref="C?"  Part="1" 
+AR Path="/5E179330" Ref="C5"  Part="1" 
+F 0 "C5" H 5640 7271 50  0000 L CNN
+F 1 "470uf" H 5640 7180 50  0000 L CNN
+F 2 "AR_PDM_v1:CAPAE1350X1400N_EEV-FK1V471Q" H 5563 7075 50  0001 C CNN
+F 3 "~" H 5525 7225 50  0001 C CNN
+	1    5525 7225
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	5925 7650 5925 6750
+Text GLabel 14450 8400 1    50   Input ~ 0
+SHUTDOWN_OUT
+Text Notes 13850 7050 0    50   Italic 10
+15 pinns
+Text Notes 13750 4325 0    50   ~ 0
+I2C Pullup
+Wire Wire Line
+	13625 4425 13475 4425
+Connection ~ 13625 4425
+Wire Wire Line
+	13625 4425 13625 4325
+Wire Wire Line
+	13475 4425 13475 4475
+Wire Wire Line
+	13775 4425 13625 4425
+Wire Wire Line
+	13775 4475 13775 4425
+$Comp
+L AR20_PDM_v1-rescue:R-Device R10K?
+U 1 1 5DAD3BC1
+P 13475 4625
+AR Path="/5DA89415/5DAD3BC1" Ref="R10K?"  Part="1" 
+AR Path="/5DAD3BC1" Ref="R10K1"  Part="1" 
+F 0 "R10K1" H 13545 4671 50  0000 L CNN
+F 1 "5K" H 13545 4580 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13405 4625 50  0001 C CNN
+F 3 "~" H 13475 4625 50  0001 C CNN
+	1    13475 4625
+	-1   0    0    1   
+$EndComp
+Text GLabel 13625 4325 1    50   Input ~ 0
+vcc_5v
+Text GLabel 13475 4825 3    50   Input ~ 0
+SDA
+Text GLabel 13775 4825 3    50   Input ~ 0
+SLC
+Wire Wire Line
+	13475 4825 13475 4775
+Wire Wire Line
+	13775 4825 13775 4775
+Wire Notes Line
+	13075 3950 13075 5175
+Wire Notes Line
+	13075 5175 14225 5175
+Wire Notes Line
+	14225 5175 14225 3950
+Wire Notes Line
+	13075 3950 14225 3950
+$Comp
+L AR20_PDM_v1-rescue:R-Device R10K?
+U 1 1 5E228553
+P 13775 4625
+AR Path="/5DA89415/5E228553" Ref="R10K?"  Part="1" 
+AR Path="/5E228553" Ref="R10K2"  Part="1" 
+F 0 "R10K2" H 13475 4650 50  0000 L CNN
+F 1 "5K" H 13500 4575 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13705 4625 50  0001 C CNN
+F 3 "~" H 13775 4625 50  0001 C CNN
+	1    13775 4625
+	-1   0    0    1   
+$EndComp
+Text GLabel 14150 6825 1    50   Input ~ 0
+GND_Low_Power
+Text GLabel 14450 6825 1    50   Input ~ 0
+RX
+Text GLabel 14550 6825 1    50   Input ~ 0
+TX
+Text GLabel 14650 6825 1    50   Input ~ 0
+P6_GearA_open_drain_output
+Text GLabel 14350 6825 1    50   Input ~ 0
+SHUTDOWN_IN
+Text GLabel 14250 6825 1    50   Input ~ 0
+GND_Low_Power
+$Comp
+L AR20_PDM_v1-rescue:1-776163-1 J2
+U 1 1 5E24FA51
+P 10675 8275
+F 0 "J2" V 10950 8275 50  0000 C CNN
+F 1 "1-776163-1" V 11041 8275 50  0000 C CNN
+F 2 "AR_PDM_v1:TE_1-776163-1" H 10675 8275 50  0001 L BNN
+F 3 "1-776163-1" H 10675 8275 50  0001 L BNN
+F 4 "Compliant" H 10675 8275 50  0001 L BNN "Field4"
+F 5 "https://www.te.com/usa-en/product-1-776163-1.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" H 10675 8275 50  0001 L BNN "Field5"
+	1    10675 8275
+	0    1    1    0   
+$EndComp
+Text GLabel 2225 4850 2    50   Input ~ 0
+P6_GearA_open_drain_output
+Wire Wire Line
+	2125 4850 2225 4850
 $EndSCHEMATC

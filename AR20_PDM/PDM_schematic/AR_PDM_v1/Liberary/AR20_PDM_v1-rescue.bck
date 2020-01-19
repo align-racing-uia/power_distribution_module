@@ -1,9 +1,27 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP CP1
+D Polarized capacitor, US symbol
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP DIPxx-1Cxx-51x
+D Standex Meder DIP reed relay, SPDT
+K Single Pole Reed Relay SPDT
+F https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf
+$ENDCMP
+#
 $CMP High_Curret_terminal
 D Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
 K screw terminal
 F ~
+$ENDCMP
+#
+$CMP Relay
+D Standex Meder DIP reed relay, SPDT
+K Single Pole Reed Relay SPDT
+F https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf
 $ENDCMP
 #
 #End Doc Library
