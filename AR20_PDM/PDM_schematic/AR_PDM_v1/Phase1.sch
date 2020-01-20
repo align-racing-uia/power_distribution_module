@@ -119,32 +119,6 @@ F 3 "~" H 2250 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AR20_PDM_v1-rescue:GND-power #PWR028
-U 1 1 5E21B823
-P 3700 3850
-AR Path="/5DA89415/5E21B823" Ref="#PWR028"  Part="1" 
-AR Path="/5DEB10A1/5E21B823" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB20EA/5E21B823" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4725/5E21B823" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4A93/5E21B823" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B823" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E5304/5E21B823" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E594B/5E21B823" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E607C/5E21B823" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B823" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B823" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FC3A2/5E21B823" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FCFDC/5E21B823" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B823" Ref="#PWR?"  Part="1" 
-AR Path="/5E10174B/5E21B823" Ref="#PWR?"  Part="1" 
-F 0 "#PWR028" H 3700 3600 50  0001 C CNN
-F 1 "GND" H 3705 3677 50  0000 C CNN
-F 2 "" H 3700 3850 50  0001 C CNN
-F 3 "" H 3700 3850 50  0001 C CNN
-	1    3700 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L AR20_PDM_v1-rescue:C-Device C11
 U 1 1 5E21B828
 P 8500 3350
@@ -307,11 +281,7 @@ F 3 "" H 3500 1800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3700 2550 3700 3100
-Wire Wire Line
 	3700 2550 3800 2550
-Wire Wire Line
-	3700 3850 3700 3600
 Wire Wire Line
 	8750 2850 8750 3350
 Wire Wire Line
@@ -329,58 +299,6 @@ Wire Wire Line
 	9850 4550 9850 4950
 Wire Wire Line
 	9700 4450 10000 4450
-$Comp
-L AR20_PDM_v1-rescue:GND-power #PWR026
-U 1 1 5E21B848
-P 3150 3850
-AR Path="/5DA89415/5E21B848" Ref="#PWR026"  Part="1" 
-AR Path="/5DEB10A1/5E21B848" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB20EA/5E21B848" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4725/5E21B848" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4A93/5E21B848" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B848" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E5304/5E21B848" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E594B/5E21B848" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E607C/5E21B848" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B848" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B848" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FC3A2/5E21B848" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FCFDC/5E21B848" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B848" Ref="#PWR?"  Part="1" 
-AR Path="/5E10174B/5E21B848" Ref="#PWR?"  Part="1" 
-F 0 "#PWR026" H 3150 3600 50  0001 C CNN
-F 1 "GND" H 3155 3677 50  0000 C CNN
-F 2 "" H 3150 3850 50  0001 C CNN
-F 3 "" H 3150 3850 50  0001 C CNN
-	1    3150 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:C-Device C6
-U 1 1 5E21B851
-P 3150 3500
-AR Path="/5DA89415/5E21B851" Ref="C6"  Part="1" 
-AR Path="/5DEB10A1/5E21B851" Ref="C?"  Part="1" 
-AR Path="/5DEB20EA/5E21B851" Ref="C?"  Part="1" 
-AR Path="/5E0E4725/5E21B851" Ref="C?"  Part="1" 
-AR Path="/5E0E4A93/5E21B851" Ref="C?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B851" Ref="C?"  Part="1" 
-AR Path="/5E0E5304/5E21B851" Ref="C?"  Part="1" 
-AR Path="/5E0E594B/5E21B851" Ref="C?"  Part="1" 
-AR Path="/5E0E607C/5E21B851" Ref="C?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B851" Ref="C?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B851" Ref="C?"  Part="1" 
-AR Path="/5E0FC3A2/5E21B851" Ref="C?"  Part="1" 
-AR Path="/5E0FCFDC/5E21B851" Ref="C?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B851" Ref="C?"  Part="1" 
-AR Path="/5E10174B/5E21B851" Ref="C?"  Part="1" 
-F 0 "C6" H 3265 3546 50  0000 L CNN
-F 1 "10nf" H 3265 3455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3188 3350 50  0001 C CNN
-F 3 "~" H 3150 3500 50  0001 C CNN
-	1    3150 3500
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3450 2400 3500 2400
 Wire Wire Line
@@ -449,15 +367,6 @@ Text Notes 4900 3000 0    50   ~ 10
 Close to PIN
 Text Notes 8200 3050 0    50   ~ 10
 Close to PIN
-Wire Wire Line
-	3150 3100 3150 3350
-Wire Wire Line
-	3150 3650 3150 3850
-Wire Wire Line
-	3150 3100 3700 3100
-Connection ~ 3700 3100
-Wire Wire Line
-	3700 3100 3700 3225
 Text HLabel 2250 1550 1    50   Input ~ 10
 vcc_5v
 Wire Wire Line
@@ -657,7 +566,7 @@ AR Path="/5E0FCFDC/5E21B875" Ref="R?"  Part="1"
 AR Path="/5E0FDCCC/5E21B875" Ref="R?"  Part="1" 
 AR Path="/5E10174B/5E21B875" Ref="R?"  Part="1" 
 F 0 "R5" H 3770 3496 50  0000 L CNN
-F 1 "1k" H 3770 3405 50  0000 L CNN
+F 1 "4k7" H 3770 3405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 3450 50  0001 C CNN
 F 3 "~" H 3700 3450 50  0001 C CNN
 	1    3700 3450
@@ -667,14 +576,7 @@ Wire Wire Line
 	6325 4400 8750 4400
 Wire Wire Line
 	6625 4300 8750 4300
-Wire Wire Line
-	3700 3225 4525 3225
-Wire Wire Line
-	4525 3225 4525 3900
-Connection ~ 3700 3225
-Wire Wire Line
-	3700 3225 3700 3300
-Text HLabel 4525 3900 2    50   Output ~ 0
+Text HLabel 3700 3600 3    50   Output ~ 0
 P1_MOS_SENSE
 Wire Wire Line
 	6000 4100 6000 2950
@@ -747,4 +649,6 @@ P1_Shunt
 Connection ~ 6000 2950
 Wire Wire Line
 	6000 2950 6325 2950
+Wire Wire Line
+	3700 2550 3700 3300
 $EndSCHEMATC
