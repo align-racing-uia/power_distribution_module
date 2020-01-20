@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 13
+Sheet 3 13
 Title ""
 Date ""
 Rev ""
@@ -690,8 +690,6 @@ Wire Wire Line
 	6625 2950 6625 4300
 Wire Wire Line
 	6325 2950 6325 4400
-Wire Wire Line
-	6000 2950 6325 2950
 $Comp
 L AR20_PDM_v1-rescue:R-Device R_Shunt4
 U 1 1 5E1C5925
@@ -742,4 +740,11 @@ Wire Wire Line
 Connection ~ 3500 2400
 Wire Wire Line
 	3500 2400 3800 2400
+Wire Wire Line
+	6000 2950 6000 2825
+Text HLabel 6000 2825 1    50   Input ~ 0
+P1_Shunt
+Connection ~ 6000 2950
+Wire Wire Line
+	6000 2950 6325 2950
 $EndSCHEMATC

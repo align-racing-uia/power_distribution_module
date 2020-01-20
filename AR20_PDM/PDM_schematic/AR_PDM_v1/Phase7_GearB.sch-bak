@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 13
+Sheet 9 13
 Title ""
 Date ""
 Rev ""
@@ -738,4 +738,9 @@ Connection ~ 4700 2200
 Connection ~ 4700 1600
 Wire Wire Line
 	4700 1600 5200 1600
+Wire Wire Line
+	6000 2950 6000 2825
+Text HLabel 6000 2825 1    50   Input ~ 0
+P7_Shunt
+Connection ~ 6000 2950
 $EndSCHEMATC

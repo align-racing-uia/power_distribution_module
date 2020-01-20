@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 13
+Sheet 4 13
 Title ""
 Date ""
 Rev ""
@@ -677,8 +677,6 @@ Wire Wire Line
 Text HLabel 4525 3900 2    50   Output ~ 0
 P3_MOS_SENSE
 Wire Wire Line
-	6000 4100 6000 2950
-Wire Wire Line
 	5575 2950 6000 2950
 Text HLabel 6950 2950 2    50   Output ~ 10
 P3_OUT
@@ -741,4 +739,11 @@ Wire Wire Line
 Connection ~ 4700 2550
 Wire Wire Line
 	4700 2550 4700 2450
+Wire Wire Line
+	6000 4100 6000 2950
+Wire Wire Line
+	6000 2950 6000 2825
+Text HLabel 6000 2825 1    50   Input ~ 0
+P3_Shunt
+Connection ~ 6000 2950
 $EndSCHEMATC

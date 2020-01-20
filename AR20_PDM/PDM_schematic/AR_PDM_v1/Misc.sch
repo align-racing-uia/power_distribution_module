@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 13
+Sheet 12 13
 Title ""
 Date ""
 Rev ""
@@ -1659,7 +1659,7 @@ P 4800 6700
 AR Path="/5E5484EE/5E4973F5" Ref="D23"  Part="1" 
 AR Path="/5DA89415/5E4973F5" Ref="D?"  Part="1" 
 F 0 "D23" H 4793 6916 50  0000 C CNN
-F 1 "Shutdown_IN_Active" H 4950 6825 50  0000 C CNN
+F 1 "Shutdown_Circuit_Active" H 4950 6825 50  0000 C CNN
 F 2 "LED_SMD:LED_1206_3216Metric" H 4800 6700 50  0001 C CNN
 F 3 "~" H 4800 6700 50  0001 C CNN
 	1    4800 6700
@@ -1999,22 +1999,20 @@ F 3 "~" H 925 5475 50  0001 C CNN
 	1    925  5475
 	1    0    0    -1  
 $EndComp
-Text HLabel 925  6450 1    50   Input ~ 0
-P1_OUT
 Text HLabel 1250 6450 1    50   Input ~ 0
-P2_OUT
+P2_Shunt
 Text HLabel 1575 6450 1    50   Input ~ 0
-P3_OUT
+P3_Shunt
 Text HLabel 1900 6450 1    50   Input ~ 0
-P4_OUT
+P4_Shunt
 Text HLabel 2225 6450 1    50   Input ~ 0
-P5_OUT
+P5_Shunt
 Text HLabel 2550 6450 1    50   Input ~ 0
-P6_OUT
+P6_Shunt
 Text HLabel 2875 6450 1    50   Input ~ 0
-P7_OUT
+P7_Shunt
 Text HLabel 4800 6550 1    50   Input ~ 0
-SHUTDOWN_IN
+Shutdown_Led
 Text HLabel 4250 6550 1    50   Input ~ 0
 COIL_INJECTOR_OUT
 Text HLabel 3875 6550 1    50   Input ~ 0
@@ -3305,4 +3303,75 @@ F 3 "" H 10750 5850 50  0001 C CNN
 	1    10750 5850
 	1    0    0    1   
 $EndComp
+$Comp
+L Device:LED D31
+U 1 1 5E39DADA
+P 5150 6700
+AR Path="/5E5484EE/5E39DADA" Ref="D31"  Part="1" 
+AR Path="/5DA89415/5E39DADA" Ref="D?"  Part="1" 
+F 0 "D31" H 5143 6916 50  0000 C CNN
+F 1 "Shutdown_IN_Active" H 5300 6825 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 5150 6700 50  0001 C CNN
+F 3 "~" H 5150 6700 50  0001 C CNN
+	1    5150 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:GND-power #PWR?
+U 1 1 5E39DAE0
+P 5150 7150
+AR Path="/5DA89415/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB10A1/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB20EA/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4725/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4A93/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4EB5/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E5304/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E594B/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E607C/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FB5C8/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FBBBD/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FC3A2/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FCFDC/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FDCCC/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E10174B/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E5484EE/5E39DAE0" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 5150 6900 50  0001 C CNN
+F 1 "GND" H 5155 6977 50  0000 C CNN
+F 2 "" H 5150 7150 50  0001 C CNN
+F 3 "" H 5150 7150 50  0001 C CNN
+	1    5150 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:R-Device R?
+U 1 1 5E39DAE6
+P 5150 7000
+AR Path="/5DA89415/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5DEB10A1/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5DEB20EA/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0E4725/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0E4A93/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0E4EB5/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0E5304/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0E594B/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0E607C/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0FB5C8/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0FBBBD/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0FC3A2/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0FCFDC/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0FDCCC/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E10174B/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E5484EE/5E39DAE6" Ref="R59"  Part="1" 
+F 0 "R59" H 5220 7046 50  0000 L CNN
+F 1 "620R" H 5220 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 7000 50  0001 C CNN
+F 3 "~" H 5150 7000 50  0001 C CNN
+	1    5150 7000
+	1    0    0    -1  
+$EndComp
+Text HLabel 5150 6550 1    50   Input ~ 0
+SHUTDOWN_IN
+Text HLabel 925  6450 1    50   Input ~ 0
+P1_Shunt
 $EndSCHEMATC
