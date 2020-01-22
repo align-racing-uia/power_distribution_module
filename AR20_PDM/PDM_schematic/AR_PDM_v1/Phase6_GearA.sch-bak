@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 13
+Sheet 5 13
 Title ""
 Date ""
 Rev ""
@@ -626,20 +626,10 @@ vcc_5v
 Text HLabel 10000 4950 3    50   Input ~ 10
 vcc_5v
 Wire Wire Line
-	4650 1600 4700 1600
-Wire Wire Line
 	4700 2650 4700 2550
 Connection ~ 4700 2550
 Wire Wire Line
 	4700 2450 4700 2550
-Wire Wire Line
-	4700 2300 4700 2200
-Wire Wire Line
-	4700 2200 4700 1600
-Connection ~ 4700 2200
-Connection ~ 4700 1600
-Wire Wire Line
-	4700 1600 5200 1600
 Text HLabel 2275 2675 3    50   Input ~ 0
 P6_O_D_out
 Wire Wire Line
@@ -722,4 +712,14 @@ P6_Shunt
 Connection ~ 6000 2950
 Wire Wire Line
 	3700 2550 3700 3300
+Wire Wire Line
+	4650 1600 4775 1600
+Wire Wire Line
+	4775 2300 4700 2300
+Wire Wire Line
+	4775 1600 4775 2300
+NoConn ~ 4700 2200
+Connection ~ 4775 1600
+Wire Wire Line
+	4775 1600 5200 1600
 $EndSCHEMATC

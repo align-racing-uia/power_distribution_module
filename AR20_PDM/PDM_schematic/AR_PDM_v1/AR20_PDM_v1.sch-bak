@@ -46,22 +46,6 @@ Text GLabel 13625 1575 0    50   Input ~ 0
 SDA
 Text GLabel 8350 950  0    50   Input ~ 0
 vcc_5v
-$Sheet
-S 8475 1650 1500 525 
-U 5DE4D361
-F0 "Fuses_Direct" 50
-F1 "Fuses_Direct.sch" 50
-F2 "vcc_5v" I L 8475 1800 50 
-F3 "DIRECT_SLC" I L 8475 2025 50 
-F4 "DIRECT_SDA" B L 8475 1925 50 
-F5 "DIRECT_Alert" O L 8475 2125 50 
-F6 "V+12V" I L 8475 1700 50 
-F7 "CLUTCH_ACT_OUT" O R 9975 1700 50 
-F8 "ETC_OUT" O R 9975 1800 50 
-F9 "SHUTDOWN_OUT" O R 9975 1900 50 
-F10 "ING_SWITCH_OUT" O R 9975 2000 50 
-F11 "MCU_UNITS_FEED_OUT" O R 9975 2100 50 
-$EndSheet
 Wire Wire Line
 	2225 875  2125 875 
 $Sheet
@@ -491,8 +475,6 @@ F 3 "" H 5525 7375 50  0001 C CNN
 $EndComp
 Text Notes 3350 6950 0    50   ~ 0
 Bulk decoupling cappacitors, place somwhere
-Text HLabel 2925 7075 0    50   Input ~ 10
-V+12V
 Wire Notes Line
 	5900 6750 2500 6750
 Wire Notes Line
@@ -639,10 +621,6 @@ Text GLabel 8375 2025 0    50   Input ~ 0
 SLC
 Text GLabel 8375 1925 0    50   Input ~ 0
 SDA
-Text GLabel 8375 2125 0    50   Input ~ 0
-DIRECT_Alert
-Wire Wire Line
-	8375 2125 8475 2125
 Text GLabel 10100 750  2    50   Input ~ 0
 COIL_INJECTOR_OUT
 Wire Wire Line
@@ -681,7 +659,7 @@ Wire Wire Line
 	10075 2100 9975 2100
 Text GLabel 8350 5300 0    50   Input ~ 0
 P1_MOS_SENSE
-Text GLabel 15175 1725 2    50   Input ~ 0
+Text GLabel 10050 3850 2    50   Input ~ 0
 FP_ENABLE_ACM
 Text GLabel 4375 700  0    50   Input ~ 0
 P1_MOS_IN
@@ -807,11 +785,11 @@ Text GLabel 8350 5800 0    50   Input ~ 0
 P6_MOS_SENSE
 Text GLabel 8350 5700 0    50   Input ~ 0
 P5_MOS_SENSE
-Text GLabel 8350 5400 0    50   Input ~ 0
+Text GLabel 8350 5600 0    50   Input ~ 0
 P4_MOS_SENSE
 Text GLabel 8350 5500 0    50   Input ~ 0
 P3_MOS_SENSE
-Text GLabel 8350 5600 0    50   Input ~ 0
+Text GLabel 8350 5400 0    50   Input ~ 0
 P2_MOS_SENSE
 $Sheet
 S 8350 5175 1650 900 
@@ -879,16 +857,18 @@ F8 "P7_MOS_SENSE_Select" O R 10050 3650 50
 F9 "SLC" I R 10050 3950 50 
 F10 "SDA" I R 10050 4050 50 
 F11 "VCC_5v" I R 10050 4175 50 
-F12 "EXPANDER_INT" I R 10050 3750 50 
-F13 "COIL_INJECTOR_Fault" I L 8225 3075 50 
-F14 "FUEL_PUMP_Fault" I L 8225 3175 50 
-F15 "P7_Fault" I L 8225 3275 50 
-F16 "P6_Fault" I L 8225 3375 50 
-F17 "P5_Fault" I L 8225 3475 50 
-F18 "P4_Fault" I L 8225 3575 50 
-F19 "P3_Fault" I L 8225 3675 50 
-F20 "P2_Fault" I L 8225 3775 50 
-F21 "P1_Fault" I L 8225 3875 50 
+F12 "COIL_INJECTOR_Fault" I L 8225 3075 50 
+F13 "FUEL_PUMP_Fault" I L 8225 3175 50 
+F14 "P7_Fault" I L 8225 3275 50 
+F15 "P6_Fault" I L 8225 3375 50 
+F16 "P5_Fault" I L 8225 3475 50 
+F17 "P4_Fault" I L 8225 3575 50 
+F18 "P3_Fault" I L 8225 3675 50 
+F19 "P2_Fault" I L 8225 3775 50 
+F20 "P1_Fault" I L 8225 3875 50 
+F21 "FP_Alert" I L 8225 4025 50 
+F22 "COIL_INJECTOR_Alert" I L 8225 4125 50 
+F23 "FP_ENABLE_ACM" O R 10050 3850 50 
 $EndSheet
 Text GLabel 10050 4175 2    50   Input ~ 0
 vcc_5v
@@ -898,8 +878,6 @@ Text GLabel 10050 3950 2    50   Input ~ 0
 SLC
 Text GLabel 8225 3075 0    50   Input ~ 0
 COIL_INJECTOR_Fault
-Text GLabel 10050 3750 2    50   Input ~ 0
-EXPANDER_INT
 $Comp
 L AR20_PDM_v1-rescue:GND-power #PWR?
 U 1 1 5E1C082F
@@ -981,8 +959,6 @@ F 3 "" H 6825 6975 50  0001 C CNN
 	1    6825 6975
 	0    1    1    0   
 $EndComp
-Text HLabel 6825 6825 1    50   Input ~ 10
-V+12V
 $Comp
 L AR20_PDM_v1-rescue:GND-power #PWR?
 U 1 1 5E1E2E38
@@ -1064,15 +1040,13 @@ F 3 "" H 7275 6975 50  0001 C CNN
 	1    7275 6975
 	0    1    1    0   
 $EndComp
-Text HLabel 7275 6825 1    50   Input ~ 10
-V+12V
 Text Notes 6475 7800 0    50   ~ 0
 Loss of power, flyback protection. \nPlace relativly near all of the mosfets.
 Wire Wire Line
 	11775 7675 11775 7875
-Text GLabel 14050 6825 1    50   Input ~ 0
+Text GLabel 8875 7875 1    50   Input ~ 0
 CAN_LOW
-Text GLabel 13950 6825 1    50   Input ~ 0
+Text GLabel 8975 7875 1    50   Input ~ 0
 CAN_HIGH
 Text GLabel 9375 7875 1    50   Input ~ 0
 P5_EN_AUX
@@ -1088,7 +1062,7 @@ Text GLabel 10875 7875 1    50   Input ~ 0
 P2_EN_AUX
 Text GLabel 10575 7875 1    50   Input ~ 0
 P7_EN_AUX
-Text GLabel 12125 6775 1    50   Input ~ 0
+Text GLabel 12375 7875 1    50   Input ~ 0
 FP_ENABLE_AUX
 Text GLabel 11675 7875 1    50   Input ~ 0
 MCU_UNITS_FEED_OUT
@@ -1102,19 +1076,19 @@ Text GLabel 9875 7875 1    50   Input ~ 0
 FUEL_PUMP_OUT
 Text GLabel 11175 7875 1    50   Input ~ 0
 COIL_INJECTOR_OUT
-Text GLabel 13300 7750 1    50   Input ~ 0
+Text GLabel 12575 7875 1    50   Input ~ 0
 P1_OUT
-Text GLabel 13400 7750 1    50   Input ~ 0
+Text GLabel 12475 7875 1    50   Input ~ 0
 P2_OUT
-Text GLabel 13500 7750 1    50   Input ~ 0
+Text GLabel 12275 7875 1    50   Input ~ 0
 P3_OUT
-Text GLabel 13600 7750 1    50   Input ~ 0
+Text GLabel 12175 7875 1    50   Input ~ 0
 P4_OUT
-Text GLabel 13700 7750 1    50   Input ~ 0
+Text GLabel 12075 7875 1    50   Input ~ 0
 P5_OUT
-Text GLabel 13800 7750 1    50   Input ~ 0
+Text GLabel 11975 7875 1    50   Input ~ 0
 P6_OUT
-Text GLabel 13900 7750 1    50   Input ~ 0
+Text GLabel 11875 7875 1    50   Input ~ 0
 P7_OUT
 $Comp
 L AR20_PDM_v1-rescue:GND-power #PWR?
@@ -1205,21 +1179,6 @@ F 3 "" H 14375 3125 50  0001 C CNN
 $EndComp
 $Comp
 L AR20_PDM_v1-rescue:GND-power #PWR?
-U 1 1 5E235210
-P 15175 1275
-AR Path="/5DA89415/5E235210" Ref="#PWR?"  Part="1" 
-AR Path="/5DA8920B/5E235210" Ref="#PWR?"  Part="1" 
-AR Path="/5DE4D361/5E235210" Ref="#PWR?"  Part="1" 
-AR Path="/5E235210" Ref="#PWR012"  Part="1" 
-F 0 "#PWR012" H 15175 1025 50  0001 C CNN
-F 1 "GND" V 15175 1075 50  0000 C CNN
-F 2 "" H 15175 1275 50  0001 C CNN
-F 3 "" H 15175 1275 50  0001 C CNN
-	1    15175 1275
-	0    -1   -1   0   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:GND-power #PWR?
 U 1 1 5E2382FC
 P 15175 1125
 AR Path="/5DA89415/5E2382FC" Ref="#PWR?"  Part="1" 
@@ -1248,36 +1207,6 @@ F 3 "" H 15175 825 50  0001 C CNN
 	1    15175 825 
 	0    -1   -1   0   
 $EndComp
-$Comp
-L AR20_PDM_v1-rescue:GND-power #PWR?
-U 1 1 5E2447FB
-P 15175 1575
-AR Path="/5DA89415/5E2447FB" Ref="#PWR?"  Part="1" 
-AR Path="/5DA8920B/5E2447FB" Ref="#PWR?"  Part="1" 
-AR Path="/5DE4D361/5E2447FB" Ref="#PWR?"  Part="1" 
-AR Path="/5E2447FB" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 15175 1325 50  0001 C CNN
-F 1 "GND" V 15175 1375 50  0000 C CNN
-F 2 "" H 15175 1575 50  0001 C CNN
-F 3 "" H 15175 1575 50  0001 C CNN
-	1    15175 1575
-	0    -1   -1   0   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:GND-power #PWR?
-U 1 1 5E247E0A
-P 13625 2025
-AR Path="/5DA89415/5E247E0A" Ref="#PWR?"  Part="1" 
-AR Path="/5DA8920B/5E247E0A" Ref="#PWR?"  Part="1" 
-AR Path="/5DE4D361/5E247E0A" Ref="#PWR?"  Part="1" 
-AR Path="/5E247E0A" Ref="#PWR08"  Part="1" 
-F 0 "#PWR08" H 13625 1775 50  0001 C CNN
-F 1 "GND" V 13625 1825 50  0000 C CNN
-F 2 "" H 13625 2025 50  0001 C CNN
-F 3 "" H 13625 2025 50  0001 C CNN
-	1    13625 2025
-	0    1    1    0   
-$EndComp
 Text GLabel 15175 2025 2    50   Input ~ 0
 vcc_5v
 Text GLabel 15175 2325 2    50   Input ~ 0
@@ -1294,8 +1223,6 @@ Text GLabel 15175 2475 2    50   Input ~ 0
 CAN_HIGH
 Text GLabel 15175 2175 2    50   Input ~ 0
 P2_EN_ACM
-Text GLabel 15175 1425 2    50   Input ~ 0
-P1_EN_ACM
 Wire Wire Line
 	2925 7075 3025 7075
 Connection ~ 3025 7075
@@ -1400,13 +1327,13 @@ F 3 "~" H 13775 4625 50  0001 C CNN
 	1    13775 4625
 	-1   0    0    1   
 $EndComp
-Text GLabel 14450 6825 1    50   Input ~ 0
+Text GLabel 9675 7875 1    50   Input ~ 0
 RX
-Text GLabel 14550 6825 1    50   Input ~ 0
+Text GLabel 10975 7875 1    50   Input ~ 0
 TX
-Text GLabel 14650 6825 1    50   Input ~ 0
-P6_GearA_open_drain_output
 Text GLabel 11075 7875 1    50   Input ~ 0
+P6_GearA_open_drain_output
+Text GLabel 9775 7875 1    50   Input ~ 0
 SHUTDOWN_IN
 $Comp
 L AR20_PDM_v1-rescue:1-776163-1 J2
@@ -1431,7 +1358,7 @@ Text GLabel 10100 1275 2    50   Input ~ 0
 ACM_Shutdown_Circuit
 Wire Wire Line
 	10100 1275 10000 1275
-Text GLabel 12375 3300 0    50   Input ~ 0
+Text GLabel 13625 825  0    50   Input ~ 0
 ACM_Shutdown_Circuit
 NoConn ~ 13625 2325
 NoConn ~ 13625 2175
@@ -1457,7 +1384,7 @@ F13 "FP_ENABLE_RELAY_SINK" O R 10000 1175 50
 F14 "ACM_Shutdown_Circuit" I R 10000 1275 50 
 F15 "SHUTDOWN_Led" O R 10000 1375 50 
 $EndSheet
-Text GLabel 11875 6850 1    50   Input ~ 0
+Text GLabel 9275 7875 1    50   Input ~ 0
 FP_ENABLE_RELAY_SINK
 Wire Wire Line
 	10000 1375 10100 1375
@@ -1567,7 +1494,8 @@ AR Path="/5E0FC3A2/5E344AEE" Ref="R_sense?"  Part="1"
 AR Path="/5E0FCFDC/5E344AEE" Ref="R_sense?"  Part="1" 
 AR Path="/5E0FDCCC/5E344AEE" Ref="R_sense?"  Part="1" 
 AR Path="/5E10174B/5E344AEE" Ref="R_sense?"  Part="1" 
-F 0 "R_sense?" H 12395 1746 50  0000 L CNN
+AR Path="/5E344AEE" Ref="R_sense1"  Part="1" 
+F 0 "R_sense1" H 12395 1746 50  0000 L CNN
 F 1 "1k" H 12395 1655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 12255 1700 50  0001 C CNN
 F 3 "~" H 12325 1700 50  0001 C CNN
@@ -1593,7 +1521,8 @@ AR Path="/5E0FC3A2/5E344AF4" Ref="#PWR?"  Part="1"
 AR Path="/5E0FCFDC/5E344AF4" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FDCCC/5E344AF4" Ref="#PWR?"  Part="1" 
 AR Path="/5E10174B/5E344AF4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 12325 1850 50  0001 C CNN
+AR Path="/5E344AF4" Ref="#PWR0137"  Part="1" 
+F 0 "#PWR0137" H 12325 1850 50  0001 C CNN
 F 1 "GND" H 12330 1927 50  0000 C CNN
 F 2 "" H 12325 2100 50  0001 C CNN
 F 3 "" H 12325 2100 50  0001 C CNN
@@ -1628,7 +1557,8 @@ AR Path="/5E0FC3A2/5E344B03" Ref="C_sense?"  Part="1"
 AR Path="/5E0FCFDC/5E344B03" Ref="C_sense?"  Part="1" 
 AR Path="/5E0FDCCC/5E344B03" Ref="C_sense?"  Part="1" 
 AR Path="/5E10174B/5E344B03" Ref="C_sense?"  Part="1" 
-F 0 "C_sense?" H 11890 1796 50  0000 L CNN
+AR Path="/5E344B03" Ref="C_sense1"  Part="1" 
+F 0 "C_sense1" H 11890 1796 50  0000 L CNN
 F 1 "10nf" H 11890 1705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 11813 1600 50  0001 C CNN
 F 3 "~" H 11775 1750 50  0001 C CNN
@@ -1654,7 +1584,8 @@ AR Path="/5E0FC3A2/5E344B09" Ref="#PWR?"  Part="1"
 AR Path="/5E0FCFDC/5E344B09" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FDCCC/5E344B09" Ref="#PWR?"  Part="1" 
 AR Path="/5E10174B/5E344B09" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 11775 1850 50  0001 C CNN
+AR Path="/5E344B09" Ref="#PWR0138"  Part="1" 
+F 0 "#PWR0138" H 11775 1850 50  0001 C CNN
 F 1 "GND" H 11780 1927 50  0000 C CNN
 F 2 "" H 11775 2100 50  0001 C CNN
 F 3 "" H 11775 2100 50  0001 C CNN
@@ -1667,15 +1598,6 @@ Text GLabel 12325 1375 1    50   Input ~ 0
 MOS_SENSE_ALL
 Text GLabel 13625 975  0    50   Input ~ 0
 P6_EN_ACM
-Wire Wire Line
-	13650 825  13625 825 
-Wire Wire Line
-	12725 825  12725 1500
-Connection ~ 13625 825 
-Wire Wire Line
-	13625 825  12725 825 
-Wire Wire Line
-	12325 1500 12725 1500
 Text Notes 11575 1975 0    50   ~ 0
 Place relativly close to mcu
 Text Notes 11425 1450 0    50   ~ 0
@@ -1688,4 +1610,50 @@ Wire Notes Line
 	11250 2325 11250 675 
 Wire Notes Line
 	11250 675  12925 675 
+Wire Wire Line
+	13375 1500 13375 1425
+Wire Wire Line
+	13375 1425 13625 1425
+Wire Wire Line
+	12325 1500 13375 1500
+Text GLabel 8225 4025 0    50   Input ~ 0
+FP_Alert
+Text GLabel 8225 4125 0    50   Input ~ 0
+COIL_INJECTOR_Alert
+NoConn ~ 13625 1725
+Text GLabel 15175 1425 2    50   Input ~ 0
+Switch
+Text GLabel 15175 1725 2    50   Input ~ 0
+P1_EN_ACM
+Text GLabel 2925 7075 0    50   Input ~ 0
+V+12V
+Text GLabel 6825 6825 1    50   Input ~ 0
+V+12V
+Text GLabel 7275 6825 1    50   Input ~ 0
+V+12V
+$Sheet
+S 8475 1650 1500 525 
+U 5DE4D361
+F0 "Fuses_Direct" 50
+F1 "Fuses_Direct.sch" 50
+F2 "vcc_5v" I L 8475 1800 50 
+F3 "DIRECT_SLC" I L 8475 2025 50 
+F4 "DIRECT_SDA" B L 8475 1925 50 
+F5 "DIRECT_Alert" O L 8475 2125 50 
+F6 "V+12V" I L 8475 1700 50 
+F7 "CLUTCH_ACT_OUT" O R 9975 1700 50 
+F8 "ETC_OUT" O R 9975 1800 50 
+F9 "SHUTDOWN_OUT" O R 9975 1900 50 
+F10 "ING_SWITCH_OUT" O R 9975 2000 50 
+F11 "MCU_UNITS_FEED_OUT" O R 9975 2100 50 
+$EndSheet
+Wire Wire Line
+	8375 2125 8475 2125
+NoConn ~ 8375 2125
+NoConn ~ 13625 2025
+NoConn ~ 9175 7875
+NoConn ~ 9075 7875
+NoConn ~ 15175 1275
+NoConn ~ 15175 1575
+NoConn ~ 1000 6700
 $EndSCHEMATC

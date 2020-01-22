@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 13
+Sheet 8 13
 Title ""
 Date ""
 Rev ""
@@ -605,16 +605,6 @@ Connection ~ 4700 2550
 Wire Wire Line
 	4700 2550 4700 2450
 Wire Wire Line
-	4650 1600 4700 1600
-Wire Wire Line
-	4700 2300 4700 2200
-Wire Wire Line
-	4700 2200 4700 1600
-Connection ~ 4700 2200
-Connection ~ 4700 1600
-Wire Wire Line
-	4700 1600 5200 1600
-Wire Wire Line
 	6000 2950 6000 2825
 Text HLabel 6000 2825 1    50   Input ~ 0
 P7_Shunt
@@ -649,4 +639,14 @@ F 3 "~" H 3700 3450 50  0001 C CNN
 $EndComp
 Text HLabel 3700 3850 3    50   Output ~ 0
 P7_MOS_SENSE
+Wire Wire Line
+	4650 1600 4775 1600
+Wire Wire Line
+	4775 2300 4700 2300
+Wire Wire Line
+	4775 1600 4775 2300
+NoConn ~ 4700 2200
+Connection ~ 4775 1600
+Wire Wire Line
+	4775 1600 5200 1600
 $EndSCHEMATC
