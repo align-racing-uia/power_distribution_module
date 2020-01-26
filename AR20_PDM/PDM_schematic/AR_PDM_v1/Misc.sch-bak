@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 13
+Sheet 11 13
 Title ""
 Date ""
 Rev ""
@@ -60,26 +60,8 @@ F 3 "" H 1050 1850 50  0001 C CNN
 $EndComp
 Text HLabel 600  3150 3    50   Input ~ 0
 P1_EN_AUX
-Text HLabel 1425 3150 3    50   Input ~ 0
-P2_EN_AUX
-Text HLabel 2250 3150 3    50   Input ~ 0
-P3_EN_AUX
 Text Notes 6400 1700 0    50   ~ 0
 Use Logic Level Mosfets. \n(Gs Threshold <3.3V)\nP-mos array might be used
-Text HLabel 3075 3150 3    50   Input ~ 0
-P4_EN_AUX
-Text HLabel 3900 1350 3    50   Input ~ 0
-P5_EN_ACM
-Text HLabel 3900 3150 3    50   Input ~ 0
-P5_EN_AUX
-Text HLabel 4725 1350 3    50   Input ~ 0
-P6_EN_ACM
-Text HLabel 4725 3150 3    50   Input ~ 0
-P6_EN_AUX
-Text HLabel 5550 1350 3    50   Input ~ 0
-P7_EN_ACM
-Text HLabel 5550 3150 3    50   Input ~ 0
-P7_EN_AUX
 Text HLabel 7200 2300 2    50   Input ~ 0
 P1_MOS_IN
 Text HLabel 7200 2400 2    50   Input ~ 0
@@ -127,43 +109,8 @@ F 3 "~" H 750 1600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	750  1450 750  1350
-$Comp
-L AR20_PDM_v1-rescue:GenericFet-P U?
-U 1 1 5E18A933
-P 1050 1850
-AR Path="/5DA89415/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5DEB10A1/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5DEB20EA/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5E0E4725/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5E0E4A93/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5E0E4EB5/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5E0E5304/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5E0E594B/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5E0E607C/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5E0FB5C8/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5E0FBBBD/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5E0FC3A2/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5E0FCFDC/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5E0FDCCC/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5E10174B/5E18A933" Ref="U?"  Part="1" 
-AR Path="/5E5484EE/5E18A933" Ref="U13"  Part="1" 
-F 0 "U13" H 1156 1396 50  0000 L CNN
-F 1 "Fet-P" H 1156 1305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1050 1850 50  0001 C CNN
-F 3 "" H 1050 1850 50  0001 C CNN
-	1    1050 1850
-	1    0    0    1   
-$EndComp
-Text HLabel 3075 1350 3    50   Input ~ 0
-P4_EN_ACM
-Text HLabel 2250 1350 3    50   Input ~ 0
-P3_EN_ACM
-Text HLabel 1425 1350 3    50   Input ~ 0
-P2_EN_ACM
 Text HLabel 600  1350 3    50   Input ~ 0
 P1_EN_ACM
-Wire Wire Line
-	1425 1350 1575 1350
 Wire Wire Line
 	1875 1750 1875 1850
 Connection ~ 1875 1750
@@ -226,10 +173,6 @@ F 3 "~" H 1575 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1575 1450 1575 1350
-Wire Wire Line
-	2250 1350 2400 1350
-Wire Wire Line
 	2700 1750 2700 1850
 Connection ~ 2700 1750
 $Comp
@@ -290,10 +233,6 @@ F 3 "~" H 2400 1600 50  0001 C CNN
 	1    2400 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 1450 2400 1350
-Wire Wire Line
-	3075 1350 3225 1350
 Wire Wire Line
 	3525 1750 3525 1850
 Connection ~ 3525 1750
@@ -356,10 +295,6 @@ F 3 "~" H 3225 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3225 1450 3225 1350
-Wire Wire Line
-	3900 1350 4050 1350
-Wire Wire Line
 	4350 1750 4350 1850
 Connection ~ 4350 1750
 $Comp
@@ -420,10 +355,6 @@ F 3 "~" H 4050 1600 50  0001 C CNN
 	1    4050 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4050 1450 4050 1350
-Wire Wire Line
-	4725 1350 4875 1350
 Wire Wire Line
 	5175 1750 5175 1850
 Connection ~ 5175 1750
@@ -486,10 +417,6 @@ F 3 "~" H 4875 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4875 1450 4875 1350
-Wire Wire Line
-	5550 1350 5700 1350
-Wire Wire Line
 	6000 1750 6000 1850
 Connection ~ 6000 1750
 $Comp
@@ -550,8 +477,6 @@ F 3 "~" H 5700 1600 50  0001 C CNN
 	1    5700 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 1450 5700 1350
 Text HLabel 1050 1150 1    50   Input ~ 0
 P1_MOS_IN
 Text HLabel 1875 1150 1    50   Input ~ 0
@@ -632,8 +557,6 @@ $EndComp
 Wire Wire Line
 	750  3250 750  3150
 Wire Wire Line
-	1425 3150 1575 3150
-Wire Wire Line
 	1875 3550 1875 3650
 Connection ~ 1875 3550
 $Comp
@@ -694,10 +617,6 @@ F 3 "~" H 1575 3400 50  0001 C CNN
 	1    1575 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1575 3250 1575 3150
-Wire Wire Line
-	2250 3150 2400 3150
 Wire Wire Line
 	2700 3550 2700 3650
 Connection ~ 2700 3550
@@ -760,10 +679,6 @@ F 3 "~" H 2400 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 3250 2400 3150
-Wire Wire Line
-	3075 3150 3225 3150
-Wire Wire Line
 	3525 3550 3525 3650
 Connection ~ 3525 3550
 $Comp
@@ -824,10 +739,6 @@ F 3 "~" H 3225 3400 50  0001 C CNN
 	1    3225 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3225 3250 3225 3150
-Wire Wire Line
-	3900 3150 4050 3150
 Wire Wire Line
 	4350 3550 4350 3650
 Connection ~ 4350 3550
@@ -890,10 +801,6 @@ F 3 "~" H 4050 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 3250 4050 3150
-Wire Wire Line
-	4725 3150 4875 3150
-Wire Wire Line
 	5175 3550 5175 3650
 Connection ~ 5175 3550
 $Comp
@@ -955,10 +862,6 @@ F 3 "~" H 4875 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4875 3250 4875 3150
-Wire Wire Line
-	5550 3150 5700 3150
-Wire Wire Line
 	6000 3550 6000 3650
 Connection ~ 6000 3550
 $Comp
@@ -1019,8 +922,6 @@ F 3 "~" H 5700 3400 50  0001 C CNN
 	1    5700 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 3250 5700 3150
 Wire Wire Line
 	6600 2300 1050 2300
 Wire Wire Line
@@ -2455,8 +2356,6 @@ F 3 "" H 9200 5850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 5750 9200 5750
-Wire Wire Line
-	9200 5550 9200 5750
 $Comp
 L AR20_PDM_v1-rescue:R-Device R?
 U 1 1 5E2195C8
@@ -2484,8 +2383,6 @@ F 3 "~" H 8900 5600 50  0001 C CNN
 	1    8900 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8900 5450 8900 5350
 $Comp
 L AR20_PDM_v1-rescue:R-Device R?
 U 1 1 5E2218C8
@@ -2817,6 +2714,316 @@ F 3 "~" H 6150 6625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L Device:LED D31
+U 1 1 5E39DADA
+P 5150 6700
+AR Path="/5E5484EE/5E39DADA" Ref="D31"  Part="1" 
+AR Path="/5DA89415/5E39DADA" Ref="D?"  Part="1" 
+F 0 "D31" H 5143 6916 50  0000 C CNN
+F 1 "Shutdown_IN_Active" H 5300 6825 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 5150 6700 50  0001 C CNN
+F 3 "~" H 5150 6700 50  0001 C CNN
+	1    5150 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:GND-power #PWR?
+U 1 1 5E39DAE0
+P 5150 7150
+AR Path="/5DA89415/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB10A1/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB20EA/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4725/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4A93/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4EB5/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E5304/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E594B/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E607C/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FB5C8/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FBBBD/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FC3A2/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FCFDC/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FDCCC/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E10174B/5E39DAE0" Ref="#PWR?"  Part="1" 
+AR Path="/5E5484EE/5E39DAE0" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 5150 6900 50  0001 C CNN
+F 1 "GND" H 5155 6977 50  0000 C CNN
+F 2 "" H 5150 7150 50  0001 C CNN
+F 3 "" H 5150 7150 50  0001 C CNN
+	1    5150 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:R-Device R?
+U 1 1 5E39DAE6
+P 5150 7000
+AR Path="/5DA89415/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5DEB10A1/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5DEB20EA/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0E4725/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0E4A93/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0E4EB5/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0E5304/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0E594B/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0E607C/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0FB5C8/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0FBBBD/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0FC3A2/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0FCFDC/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E0FDCCC/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E10174B/5E39DAE6" Ref="R?"  Part="1" 
+AR Path="/5E5484EE/5E39DAE6" Ref="R59"  Part="1" 
+F 0 "R59" H 5220 7046 50  0000 L CNN
+F 1 "620R" H 5220 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 7000 50  0001 C CNN
+F 3 "~" H 5150 7000 50  0001 C CNN
+	1    5150 7000
+	1    0    0    -1  
+$EndComp
+Text HLabel 5150 6550 1    50   Input ~ 0
+SHUTDOWN_IN
+Text HLabel 925  6450 1    50   Input ~ 0
+P1_Shunt
+Connection ~ 1575 3150
+Wire Wire Line
+	5700 3250 5700 3150
+Wire Wire Line
+	5550 3150 5700 3150
+Wire Wire Line
+	4875 3250 4875 3150
+Wire Wire Line
+	4725 3150 4875 3150
+Wire Wire Line
+	4050 3250 4050 3150
+Wire Wire Line
+	3900 3150 4050 3150
+Wire Wire Line
+	3225 3250 3225 3150
+Wire Wire Line
+	3075 3150 3225 3150
+Wire Wire Line
+	2400 3250 2400 3150
+Wire Wire Line
+	2250 3150 2400 3150
+Wire Wire Line
+	1575 3250 1575 3150
+Wire Wire Line
+	1425 3150 1575 3150
+Text HLabel 5550 3150 3    50   Input ~ 0
+P7_EN_AUX
+Text HLabel 4725 3150 3    50   Input ~ 0
+P6_EN_AUX
+Text HLabel 3900 3150 3    50   Input ~ 0
+P5_EN_AUX
+Text HLabel 3075 3150 3    50   Input ~ 0
+P4_EN_AUX
+Text HLabel 2250 3150 3    50   Input ~ 0
+P3_EN_AUX
+Text HLabel 1425 3150 3    50   Input ~ 0
+P2_EN_AUX
+Wire Wire Line
+	5700 1450 5700 1350
+Wire Wire Line
+	5550 1350 5700 1350
+Wire Wire Line
+	4875 1450 4875 1350
+Wire Wire Line
+	4725 1350 4875 1350
+Wire Wire Line
+	4050 1450 4050 1350
+Wire Wire Line
+	3900 1350 4050 1350
+Wire Wire Line
+	3225 1450 3225 1350
+Wire Wire Line
+	3075 1350 3225 1350
+Wire Wire Line
+	2400 1450 2400 1350
+Wire Wire Line
+	2250 1350 2400 1350
+Wire Wire Line
+	1575 1450 1575 1350
+Wire Wire Line
+	1425 1350 1575 1350
+Text HLabel 1425 1350 3    50   Input ~ 0
+P2_EN_ACM
+Text HLabel 2250 1350 3    50   Input ~ 0
+P3_EN_ACM
+Text HLabel 3075 1350 3    50   Input ~ 0
+P4_EN_ACM
+Text HLabel 5550 1350 3    50   Input ~ 0
+P7_EN_ACM
+Text HLabel 4725 1350 3    50   Input ~ 0
+P6_EN_ACM
+Text HLabel 3900 1350 3    50   Input ~ 0
+P5_EN_ACM
+$Comp
+L AR20_PDM_v1-rescue:GenericFet-P U?
+U 1 1 5E1FB6EC
+P 7650 5850
+AR Path="/5DA89415/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5DEB10A1/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5DEB20EA/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5E0E4725/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5E0E4A93/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5E0E4EB5/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5E0E5304/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5E0E594B/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5E0E607C/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5E0FB5C8/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5E0FBBBD/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5E0FC3A2/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5E0FCFDC/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5E0FDCCC/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5E10174B/5E1FB6EC" Ref="U?"  Part="1" 
+AR Path="/5E5484EE/5E1FB6EC" Ref="U27"  Part="1" 
+F 0 "U27" H 7756 5396 50  0000 L CNN
+F 1 "Fet-P" H 7756 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7650 5850 50  0001 C CNN
+F 3 "" H 7650 5850 50  0001 C CNN
+	1    7650 5850
+	1    0    0    1   
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:GenericFet-P U?
+U 1 1 5E1FEEDA
+P 8425 5850
+AR Path="/5DA89415/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5DEB10A1/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5DEB20EA/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5E0E4725/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5E0E4A93/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5E0E4EB5/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5E0E5304/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5E0E594B/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5E0E607C/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5E0FB5C8/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5E0FBBBD/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5E0FC3A2/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5E0FCFDC/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5E0FDCCC/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5E10174B/5E1FEEDA" Ref="U?"  Part="1" 
+AR Path="/5E5484EE/5E1FEEDA" Ref="U28"  Part="1" 
+F 0 "U28" H 8531 5396 50  0000 L CNN
+F 1 "Fet-P" H 8531 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8425 5850 50  0001 C CNN
+F 3 "" H 8425 5850 50  0001 C CNN
+	1    8425 5850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9200 5550 9200 5750
+Wire Wire Line
+	8900 5450 8900 5350
+$Comp
+L AR20_PDM_v1-rescue:GenericFet-P U?
+U 1 1 5E20258D
+P 9200 5850
+AR Path="/5DA89415/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5DEB10A1/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5DEB20EA/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5E0E4725/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5E0E4A93/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5E0E4EB5/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5E0E5304/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5E0E594B/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5E0E607C/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5E0FB5C8/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5E0FBBBD/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5E0FC3A2/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5E0FCFDC/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5E0FDCCC/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5E10174B/5E20258D" Ref="U?"  Part="1" 
+AR Path="/5E5484EE/5E20258D" Ref="U29"  Part="1" 
+F 0 "U29" H 9306 5396 50  0000 L CNN
+F 1 "Fet-P" H 9306 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9200 5850 50  0001 C CNN
+F 3 "" H 9200 5850 50  0001 C CNN
+	1    9200 5850
+	1    0    0    1   
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:GenericFet-P U?
+U 1 1 5E20592A
+P 9975 5850
+AR Path="/5DA89415/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5DEB10A1/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5DEB20EA/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5E0E4725/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5E0E4A93/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5E0E4EB5/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5E0E5304/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5E0E594B/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5E0E607C/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5E0FB5C8/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5E0FBBBD/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5E0FC3A2/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5E0FCFDC/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5E0FDCCC/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5E10174B/5E20592A" Ref="U?"  Part="1" 
+AR Path="/5E5484EE/5E20592A" Ref="U30"  Part="1" 
+F 0 "U30" H 10081 5396 50  0000 L CNN
+F 1 "Fet-P" H 10081 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9975 5850 50  0001 C CNN
+F 3 "" H 9975 5850 50  0001 C CNN
+	1    9975 5850
+	1    0    0    1   
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:GenericFet-P U?
+U 1 1 5E208C4A
+P 10750 5850
+AR Path="/5DA89415/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5DEB10A1/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5DEB20EA/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5E0E4725/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5E0E4A93/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5E0E4EB5/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5E0E5304/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5E0E594B/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5E0E607C/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5E0FB5C8/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5E0FBBBD/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5E0FC3A2/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5E0FCFDC/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5E0FDCCC/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5E10174B/5E208C4A" Ref="U?"  Part="1" 
+AR Path="/5E5484EE/5E208C4A" Ref="U31"  Part="1" 
+F 0 "U31" H 10856 5396 50  0000 L CNN
+F 1 "Fet-P" H 10856 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10750 5850 50  0001 C CNN
+F 3 "" H 10750 5850 50  0001 C CNN
+	1    10750 5850
+	1    0    0    1   
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:GenericFet-P U?
+U 1 1 5E18A933
+P 1050 1850
+AR Path="/5DA89415/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5DEB10A1/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5DEB20EA/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5E0E4725/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5E0E4A93/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5E0E4EB5/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5E0E5304/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5E0E594B/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5E0E607C/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5E0FB5C8/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5E0FBBBD/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5E0FC3A2/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5E0FCFDC/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5E0FDCCC/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5E10174B/5E18A933" Ref="U?"  Part="1" 
+AR Path="/5E5484EE/5E18A933" Ref="U13"  Part="1" 
+F 0 "U13" H 1156 1396 50  0000 L CNN
+F 1 "Fet-P" H 1156 1305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1050 1850 50  0001 C CNN
+F 3 "" H 1050 1850 50  0001 C CNN
+	1    1050 1850
+	1    0    0    1   
+$EndComp
+$Comp
 L AR20_PDM_v1-rescue:GenericFet-P U?
 U 1 1 5E1C962D
 P 1875 1850
@@ -2980,6 +3187,33 @@ F 3 "" H 6000 1850 50  0001 C CNN
 $EndComp
 $Comp
 L AR20_PDM_v1-rescue:GenericFet-P U?
+U 1 1 5E1E77CC
+P 2700 3650
+AR Path="/5DA89415/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5DEB10A1/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5DEB20EA/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5E0E4725/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5E0E4A93/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5E0E4EB5/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5E0E5304/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5E0E594B/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5E0E607C/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5E0FB5C8/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5E0FBBBD/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5E0FC3A2/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5E0FCFDC/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5E0FDCCC/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5E10174B/5E1E77CC" Ref="U?"  Part="1" 
+AR Path="/5E5484EE/5E1E77CC" Ref="U18"  Part="1" 
+F 0 "U18" H 2806 3196 50  0000 L CNN
+F 1 "Fet-P" H 2806 3105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2700 3650 50  0001 C CNN
+F 3 "" H 2700 3650 50  0001 C CNN
+	1    2700 3650
+	1    0    0    1   
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:GenericFet-P U?
 U 1 1 5E1DDE8C
 P 1050 3650
 AR Path="/5DA89415/5E1DDE8C" Ref="U?"  Part="1" 
@@ -3030,34 +3264,6 @@ F 1 "Fet-P" H 1981 3105 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 1875 3650 50  0001 C CNN
 F 3 "" H 1875 3650 50  0001 C CNN
 	1    1875 3650
-	1    0    0    1   
-$EndComp
-Connection ~ 1575 3150
-$Comp
-L AR20_PDM_v1-rescue:GenericFet-P U?
-U 1 1 5E1E77CC
-P 2700 3650
-AR Path="/5DA89415/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5DEB10A1/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5DEB20EA/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5E0E4725/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5E0E4A93/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5E0E4EB5/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5E0E5304/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5E0E594B/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5E0E607C/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5E0FB5C8/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5E0FBBBD/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5E0FC3A2/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5E0FCFDC/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5E0FDCCC/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5E10174B/5E1E77CC" Ref="U?"  Part="1" 
-AR Path="/5E5484EE/5E1E77CC" Ref="U18"  Part="1" 
-F 0 "U18" H 2806 3196 50  0000 L CNN
-F 1 "Fet-P" H 2806 3105 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2700 3650 50  0001 C CNN
-F 3 "" H 2700 3650 50  0001 C CNN
-	1    2700 3650
 	1    0    0    1   
 $EndComp
 $Comp
@@ -3168,210 +3374,4 @@ F 3 "" H 6000 3650 50  0001 C CNN
 	1    6000 3650
 	1    0    0    1   
 $EndComp
-$Comp
-L AR20_PDM_v1-rescue:GenericFet-P U?
-U 1 1 5E1FB6EC
-P 7650 5850
-AR Path="/5DA89415/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5DEB10A1/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5DEB20EA/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5E0E4725/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5E0E4A93/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5E0E4EB5/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5E0E5304/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5E0E594B/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5E0E607C/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5E0FB5C8/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5E0FBBBD/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5E0FC3A2/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5E0FCFDC/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5E0FDCCC/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5E10174B/5E1FB6EC" Ref="U?"  Part="1" 
-AR Path="/5E5484EE/5E1FB6EC" Ref="U27"  Part="1" 
-F 0 "U27" H 7756 5396 50  0000 L CNN
-F 1 "Fet-P" H 7756 5305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7650 5850 50  0001 C CNN
-F 3 "" H 7650 5850 50  0001 C CNN
-	1    7650 5850
-	1    0    0    1   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:GenericFet-P U?
-U 1 1 5E1FEEDA
-P 8425 5850
-AR Path="/5DA89415/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5DEB10A1/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5DEB20EA/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5E0E4725/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5E0E4A93/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5E0E4EB5/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5E0E5304/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5E0E594B/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5E0E607C/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5E0FB5C8/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5E0FBBBD/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5E0FC3A2/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5E0FCFDC/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5E0FDCCC/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5E10174B/5E1FEEDA" Ref="U?"  Part="1" 
-AR Path="/5E5484EE/5E1FEEDA" Ref="U28"  Part="1" 
-F 0 "U28" H 8531 5396 50  0000 L CNN
-F 1 "Fet-P" H 8531 5305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8425 5850 50  0001 C CNN
-F 3 "" H 8425 5850 50  0001 C CNN
-	1    8425 5850
-	1    0    0    1   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:GenericFet-P U?
-U 1 1 5E20258D
-P 9200 5850
-AR Path="/5DA89415/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5DEB10A1/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5DEB20EA/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5E0E4725/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5E0E4A93/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5E0E4EB5/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5E0E5304/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5E0E594B/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5E0E607C/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5E0FB5C8/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5E0FBBBD/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5E0FC3A2/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5E0FCFDC/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5E0FDCCC/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5E10174B/5E20258D" Ref="U?"  Part="1" 
-AR Path="/5E5484EE/5E20258D" Ref="U29"  Part="1" 
-F 0 "U29" H 9306 5396 50  0000 L CNN
-F 1 "Fet-P" H 9306 5305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9200 5850 50  0001 C CNN
-F 3 "" H 9200 5850 50  0001 C CNN
-	1    9200 5850
-	1    0    0    1   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:GenericFet-P U?
-U 1 1 5E20592A
-P 9975 5850
-AR Path="/5DA89415/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5DEB10A1/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5DEB20EA/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5E0E4725/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5E0E4A93/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5E0E4EB5/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5E0E5304/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5E0E594B/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5E0E607C/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5E0FB5C8/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5E0FBBBD/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5E0FC3A2/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5E0FCFDC/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5E0FDCCC/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5E10174B/5E20592A" Ref="U?"  Part="1" 
-AR Path="/5E5484EE/5E20592A" Ref="U30"  Part="1" 
-F 0 "U30" H 10081 5396 50  0000 L CNN
-F 1 "Fet-P" H 10081 5305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9975 5850 50  0001 C CNN
-F 3 "" H 9975 5850 50  0001 C CNN
-	1    9975 5850
-	1    0    0    1   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:GenericFet-P U?
-U 1 1 5E208C4A
-P 10750 5850
-AR Path="/5DA89415/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5DEB10A1/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5DEB20EA/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5E0E4725/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5E0E4A93/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5E0E4EB5/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5E0E5304/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5E0E594B/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5E0E607C/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5E0FB5C8/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5E0FBBBD/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5E0FC3A2/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5E0FCFDC/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5E0FDCCC/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5E10174B/5E208C4A" Ref="U?"  Part="1" 
-AR Path="/5E5484EE/5E208C4A" Ref="U31"  Part="1" 
-F 0 "U31" H 10856 5396 50  0000 L CNN
-F 1 "Fet-P" H 10856 5305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10750 5850 50  0001 C CNN
-F 3 "" H 10750 5850 50  0001 C CNN
-	1    10750 5850
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:LED D31
-U 1 1 5E39DADA
-P 5150 6700
-AR Path="/5E5484EE/5E39DADA" Ref="D31"  Part="1" 
-AR Path="/5DA89415/5E39DADA" Ref="D?"  Part="1" 
-F 0 "D31" H 5143 6916 50  0000 C CNN
-F 1 "Shutdown_IN_Active" H 5300 6825 50  0000 C CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 5150 6700 50  0001 C CNN
-F 3 "~" H 5150 6700 50  0001 C CNN
-	1    5150 6700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:GND-power #PWR?
-U 1 1 5E39DAE0
-P 5150 7150
-AR Path="/5DA89415/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB10A1/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB20EA/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4725/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4A93/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4EB5/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E5304/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E594B/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E607C/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FB5C8/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FC3A2/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FCFDC/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FDCCC/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5E10174B/5E39DAE0" Ref="#PWR?"  Part="1" 
-AR Path="/5E5484EE/5E39DAE0" Ref="#PWR0133"  Part="1" 
-F 0 "#PWR0133" H 5150 6900 50  0001 C CNN
-F 1 "GND" H 5155 6977 50  0000 C CNN
-F 2 "" H 5150 7150 50  0001 C CNN
-F 3 "" H 5150 7150 50  0001 C CNN
-	1    5150 7150
-	1    0    0    -1  
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5E39DAE6
-P 5150 7000
-AR Path="/5DA89415/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5DEB10A1/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5DEB20EA/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5E0E4725/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5E0E4A93/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5E0E4EB5/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5E0E5304/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5E0E594B/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5E0E607C/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5E0FB5C8/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5E0FBBBD/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5E0FC3A2/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5E0FCFDC/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5E0FDCCC/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5E10174B/5E39DAE6" Ref="R?"  Part="1" 
-AR Path="/5E5484EE/5E39DAE6" Ref="R59"  Part="1" 
-F 0 "R59" H 5220 7046 50  0000 L CNN
-F 1 "620R" H 5220 6955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 7000 50  0001 C CNN
-F 3 "~" H 5150 7000 50  0001 C CNN
-	1    5150 7000
-	1    0    0    -1  
-$EndComp
-Text HLabel 5150 6550 1    50   Input ~ 0
-SHUTDOWN_IN
-Text HLabel 925  6450 1    50   Input ~ 0
-P1_Shunt
 $EndSCHEMATC

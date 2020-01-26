@@ -20,7 +20,7 @@ Text GLabel 8375 1800 0    50   Input ~ 0
 vcc_5v
 Wire Wire Line
 	8375 1800 8475 1800
-Text GLabel 1400 6450 1    50   Input ~ 0
+Text GLabel 1175 6500 1    50   Input ~ 0
 V+12V
 Text GLabel 8375 1700 0    50   Input ~ 0
 V+12V
@@ -200,18 +200,7 @@ Wire Wire Line
 Text GLabel 1000 4450 0    50   Input ~ 0
 vcc_5v
 Wire Wire Line
-	1400 6700 1400 6450
-$Comp
-L AR20_PDM_v1-rescue:High_Curret_terminal J1
-U 1 1 5E114D97
-P 1150 7000
-F 0 "J1" V 1750 7000 50  0000 L CNN
-F 1 "High_Curret_terminal" V 1825 6700 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132291_Vertical" H 2050 6700 50  0001 C CNN
-F 3 "~" H 2050 6700 50  0001 C CNN
-	1    1150 7000
-	0    1    1    0   
-$EndComp
+	1175 6750 1175 6500
 Wire Wire Line
 	2225 5400 2125 5400
 Text GLabel 2225 5400 2    50   Input ~ 0
@@ -1044,9 +1033,9 @@ Text Notes 6475 7800 0    50   ~ 0
 Loss of power, flyback protection. \nPlace relativly near all of the mosfets.
 Wire Wire Line
 	11775 7675 11775 7875
-Text GLabel 8875 7875 1    50   Input ~ 0
-CAN_LOW
 Text GLabel 8975 7875 1    50   Input ~ 0
+CAN_LOW
+Text GLabel 8875 7875 1    50   Input ~ 0
 CAN_HIGH
 Text GLabel 9375 7875 1    50   Input ~ 0
 P5_EN_AUX
@@ -1062,7 +1051,7 @@ Text GLabel 10875 7875 1    50   Input ~ 0
 P2_EN_AUX
 Text GLabel 10575 7875 1    50   Input ~ 0
 P7_EN_AUX
-Text GLabel 12375 7875 1    50   Input ~ 0
+Text GLabel 11075 7875 1    50   Input ~ 0
 FP_ENABLE_AUX
 Text GLabel 11675 7875 1    50   Input ~ 0
 MCU_UNITS_FEED_OUT
@@ -1331,7 +1320,7 @@ Text GLabel 9675 7875 1    50   Input ~ 0
 RX
 Text GLabel 10975 7875 1    50   Input ~ 0
 TX
-Text GLabel 11075 7875 1    50   Input ~ 0
+Text GLabel 12375 7875 1    50   Input ~ 0
 P6_GearA_open_drain_output
 Text GLabel 9775 7875 1    50   Input ~ 0
 SHUTDOWN_IN
@@ -1655,5 +1644,59 @@ NoConn ~ 9175 7875
 NoConn ~ 9075 7875
 NoConn ~ 15175 1275
 NoConn ~ 15175 1575
-NoConn ~ 1000 6700
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E52DDA9
+P 13500 5725
+F 0 "H1" H 13600 5771 50  0000 L CNN
+F 1 "MountingHole" H 13600 5680 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 13500 5725 50  0001 C CNN
+F 3 "~" H 13500 5725 50  0001 C CNN
+	1    13500 5725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E52E961
+P 13500 5900
+F 0 "H2" H 13600 5946 50  0000 L CNN
+F 1 "MountingHole" H 13600 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 13500 5900 50  0001 C CNN
+F 3 "~" H 13500 5900 50  0001 C CNN
+	1    13500 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E532B40
+P 13500 6075
+F 0 "H3" H 13600 6121 50  0000 L CNN
+F 1 "MountingHole" H 13600 6030 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 13500 6075 50  0001 C CNN
+F 3 "~" H 13500 6075 50  0001 C CNN
+	1    13500 6075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J1
+U 1 1 5E2F07B8
+P 1175 6950
+F 0 "J1" V 1047 7030 50  0000 L CNN
+F 1 "S_T_?" V 1138 7030 50  0000 L CNN
+F 2 "AR_PDM_v1:Wurth 74655095R Screw Post" H 1175 6950 50  0001 C CNN
+F 3 "~" H 1175 6950 50  0001 C CNN
+	1    1175 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5E536C44
+P 13500 6250
+F 0 "H4" H 13600 6296 50  0000 L CNN
+F 1 "MountingHole" H 13600 6205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 13500 6250 50  0001 C CNN
+F 3 "~" H 13500 6250 50  0001 C CNN
+	1    13500 6250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

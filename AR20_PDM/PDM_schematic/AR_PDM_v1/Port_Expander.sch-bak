@@ -71,7 +71,7 @@ F 3 "~" H 6400 4975 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 6850 5625 0    50   ~ 0
-ADDR to gnd, i2c Address: 0100000
+ADDR to gnd, i2c Address: 0100010
 $Comp
 L AR20_PDM_v1-rescue:C-Device C_bypass?
 U 1 1 5E222000

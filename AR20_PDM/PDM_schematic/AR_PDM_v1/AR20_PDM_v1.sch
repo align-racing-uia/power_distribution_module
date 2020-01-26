@@ -20,7 +20,7 @@ Text GLabel 8375 1800 0    50   Input ~ 0
 vcc_5v
 Wire Wire Line
 	8375 1800 8475 1800
-Text GLabel 1400 6450 1    50   Input ~ 0
+Text GLabel 1175 6500 1    50   Input ~ 0
 V+12V
 Text GLabel 8375 1700 0    50   Input ~ 0
 V+12V
@@ -200,18 +200,7 @@ Wire Wire Line
 Text GLabel 1000 4450 0    50   Input ~ 0
 vcc_5v
 Wire Wire Line
-	1400 6700 1400 6450
-$Comp
-L AR20_PDM_v1-rescue:High_Curret_terminal J1
-U 1 1 5E114D97
-P 1150 7000
-F 0 "J1" V 1750 7000 50  0000 L CNN
-F 1 "High_Curret_terminal" V 1825 6700 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132291_Vertical" H 2050 6700 50  0001 C CNN
-F 3 "~" H 2050 6700 50  0001 C CNN
-	1    1150 7000
-	0    1    1    0   
-$EndComp
+	1175 6750 1175 6500
 Wire Wire Line
 	2225 5400 2125 5400
 Text GLabel 2225 5400 2    50   Input ~ 0
@@ -1062,7 +1051,7 @@ Text GLabel 10875 7875 1    50   Input ~ 0
 P2_EN_AUX
 Text GLabel 10575 7875 1    50   Input ~ 0
 P7_EN_AUX
-Text GLabel 12375 7875 1    50   Input ~ 0
+Text GLabel 11075 7875 1    50   Input ~ 0
 FP_ENABLE_AUX
 Text GLabel 11675 7875 1    50   Input ~ 0
 MCU_UNITS_FEED_OUT
@@ -1331,7 +1320,7 @@ Text GLabel 9675 7875 1    50   Input ~ 0
 RX
 Text GLabel 10975 7875 1    50   Input ~ 0
 TX
-Text GLabel 11075 7875 1    50   Input ~ 0
+Text GLabel 12375 7875 1    50   Input ~ 0
 P6_GearA_open_drain_output
 Text GLabel 9775 7875 1    50   Input ~ 0
 SHUTDOWN_IN
@@ -1655,5 +1644,167 @@ NoConn ~ 9175 7875
 NoConn ~ 9075 7875
 NoConn ~ 15175 1275
 NoConn ~ 15175 1575
-NoConn ~ 1000 6700
+$Comp
+L Connector:TestPoint H1
+U 1 1 5E52DDA9
+P 13375 5600
+F 0 "H1" H 13475 5646 50  0000 L CNN
+F 1 "MountingHole" H 13475 5555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 13375 5600 50  0001 C CNN
+F 3 "~" H 13375 5600 50  0001 C CNN
+	1    13375 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint H2
+U 1 1 5E52E961
+P 13375 5750
+F 0 "H2" H 13475 5796 50  0000 L CNN
+F 1 "MountingHole" H 13475 5705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 13375 5750 50  0001 C CNN
+F 3 "~" H 13375 5750 50  0001 C CNN
+	1    13375 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint H3
+U 1 1 5E532B40
+P 13375 5950
+F 0 "H3" H 13475 5996 50  0000 L CNN
+F 1 "MountingHole" H 13475 5905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 13375 5950 50  0001 C CNN
+F 3 "~" H 13375 5950 50  0001 C CNN
+	1    13375 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J1
+U 1 1 5E2F07B8
+P 1175 6950
+F 0 "J1" V 1047 7030 50  0000 L CNN
+F 1 "S_T_?" V 1138 7030 50  0000 L CNN
+F 2 "AR_PDM_v1:Wurth 74655095R Screw Post" H 1175 6950 50  0001 C CNN
+F 3 "~" H 1175 6950 50  0001 C CNN
+	1    1175 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint H4
+U 1 1 5E536C44
+P 13375 6175
+F 0 "H4" H 13475 6221 50  0000 L CNN
+F 1 "MountingHole" H 13475 6130 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 13375 6175 50  0001 C CNN
+F 3 "~" H 13375 6175 50  0001 C CNN
+	1    13375 6175
+	0    1    1    0   
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:GND-power #PWR?
+U 1 1 5E39DD75
+P 13375 5600
+AR Path="/5DA89415/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB10A1/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB20EA/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4725/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4A93/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4EB5/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E5304/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E594B/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E607C/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FB5C8/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FBBBD/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FC3A2/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FCFDC/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FDCCC/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5E10174B/5E39DD75" Ref="#PWR?"  Part="1" 
+AR Path="/5E39DD75" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 13375 5350 50  0001 C CNN
+F 1 "GND" H 13380 5427 50  0000 C CNN
+F 2 "" H 13375 5600 50  0001 C CNN
+F 3 "" H 13375 5600 50  0001 C CNN
+	1    13375 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:GND-power #PWR?
+U 1 1 5E3A1F07
+P 13375 5750
+AR Path="/5DA89415/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB10A1/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB20EA/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4725/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4A93/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4EB5/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E5304/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E594B/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E607C/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FB5C8/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FBBBD/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FC3A2/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FCFDC/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FDCCC/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5E10174B/5E3A1F07" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A1F07" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 13375 5500 50  0001 C CNN
+F 1 "GND" H 13380 5577 50  0000 C CNN
+F 2 "" H 13375 5750 50  0001 C CNN
+F 3 "" H 13375 5750 50  0001 C CNN
+	1    13375 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:GND-power #PWR?
+U 1 1 5E3A60E4
+P 13375 5950
+AR Path="/5DA89415/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB10A1/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB20EA/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4725/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4A93/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4EB5/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E5304/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E594B/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E607C/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FB5C8/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FBBBD/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FC3A2/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FCFDC/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FDCCC/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E10174B/5E3A60E4" Ref="#PWR?"  Part="1" 
+AR Path="/5E3A60E4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 13375 5700 50  0001 C CNN
+F 1 "GND" H 13380 5777 50  0000 C CNN
+F 2 "" H 13375 5950 50  0001 C CNN
+F 3 "" H 13375 5950 50  0001 C CNN
+	1    13375 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:GND-power #PWR?
+U 1 1 5E3AA1FC
+P 13375 6175
+AR Path="/5DA89415/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB10A1/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB20EA/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4725/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4A93/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4EB5/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E5304/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E594B/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E607C/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FB5C8/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FBBBD/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FC3A2/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FCFDC/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FDCCC/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E10174B/5E3AA1FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E3AA1FC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 13375 5925 50  0001 C CNN
+F 1 "GND" H 13380 6002 50  0000 C CNN
+F 2 "" H 13375 6175 50  0001 C CNN
+F 3 "" H 13375 6175 50  0001 C CNN
+	1    13375 6175
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
