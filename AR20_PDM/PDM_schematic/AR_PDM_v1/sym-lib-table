@@ -2,4 +2,5 @@
   (lib (name AR20_PDM_v1-rescue)(type Legacy)(uri "C:/Users/Serious Business/Documents/Github/AR20/AR20_PDM/PDM_schematic/AR_PDM_v1/Liberary/AR20_PDM_v1-rescue.lib")(options "")(descr ""))
   (lib (name ACM_2020_Symbol)(type Legacy)(uri ${KIPRJMOD}/Liberary/ACM_2020_Symbol.lib)(options "")(descr ""))
   (lib (name TCA6424ARGJR)(type Legacy)(uri ${KIPRJMOD}/Liberary/TCA6424ARGJR.lib)(options "")(descr ""))
+  (lib (name B4B-PH-SM4-TB)(type Legacy)(uri ${KIPRJMOD}/Liberary/B4B-PH-SM4-TB.lib)(options "")(descr ""))
 )

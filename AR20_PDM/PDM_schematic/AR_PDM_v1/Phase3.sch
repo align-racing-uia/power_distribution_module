@@ -15,25 +15,25 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L AR20_PDM_v1-rescue:R-Device R_in?
+L AR20_PDM_v1-rescue:R-Device R?
 U 1 1 5E21B809
 P 3300 2400
-AR Path="/5DA89415/5E21B809" Ref="R_in?"  Part="1" 
-AR Path="/5DEB10A1/5E21B809" Ref="R_in?"  Part="1" 
-AR Path="/5DEB20EA/5E21B809" Ref="R_in?"  Part="1" 
-AR Path="/5E0E4725/5E21B809" Ref="R_in?"  Part="1" 
-AR Path="/5E0E4A93/5E21B809" Ref="R_in?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B809" Ref="R_in?"  Part="1" 
-AR Path="/5E0E5304/5E21B809" Ref="R_in?"  Part="1" 
-AR Path="/5E0E594B/5E21B809" Ref="R_in?"  Part="1" 
-AR Path="/5E0E607C/5E21B809" Ref="R_in?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B809" Ref="R_in?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B809" Ref="R_in1"  Part="1" 
-AR Path="/5E0FC3A2/5E21B809" Ref="R_in?"  Part="1" 
-AR Path="/5E0FCFDC/5E21B809" Ref="R_in?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B809" Ref="R_in?"  Part="1" 
-AR Path="/5E10174B/5E21B809" Ref="R_in?"  Part="1" 
-F 0 "R_in1" V 3093 2400 50  0000 C CNN
+AR Path="/5DA89415/5E21B809" Ref="R?"  Part="1" 
+AR Path="/5DEB10A1/5E21B809" Ref="R?"  Part="1" 
+AR Path="/5DEB20EA/5E21B809" Ref="R?"  Part="1" 
+AR Path="/5E0E4725/5E21B809" Ref="R?"  Part="1" 
+AR Path="/5E0E4A93/5E21B809" Ref="R?"  Part="1" 
+AR Path="/5E0E4EB5/5E21B809" Ref="R?"  Part="1" 
+AR Path="/5E0E5304/5E21B809" Ref="R?"  Part="1" 
+AR Path="/5E0E594B/5E21B809" Ref="R?"  Part="1" 
+AR Path="/5E0E607C/5E21B809" Ref="R?"  Part="1" 
+AR Path="/5E0FB5C8/5E21B809" Ref="R?"  Part="1" 
+AR Path="/5E0FBBBD/5E21B809" Ref="R10"  Part="1" 
+AR Path="/5E0FC3A2/5E21B809" Ref="R?"  Part="1" 
+AR Path="/5E0FCFDC/5E21B809" Ref="R?"  Part="1" 
+AR Path="/5E0FDCCC/5E21B809" Ref="R?"  Part="1" 
+AR Path="/5E10174B/5E21B809" Ref="R?"  Part="1" 
+F 0 "R10" V 3093 2400 50  0000 C CNN
 F 1 "4k7" V 3184 2400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3230 2400 50  0001 C CNN
 F 3 "~" H 3300 2400 50  0001 C CNN
@@ -41,25 +41,25 @@ F 3 "~" H 3300 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L AR20_PDM_v1-rescue:C-Device C_out?
+L AR20_PDM_v1-rescue:C-Device C?
 U 1 1 5E21B80C
 P 4800 2850
-AR Path="/5DA89415/5E21B80C" Ref="C_out?"  Part="1" 
-AR Path="/5DEB10A1/5E21B80C" Ref="C_out?"  Part="1" 
-AR Path="/5DEB20EA/5E21B80C" Ref="C_out?"  Part="1" 
-AR Path="/5E0E4725/5E21B80C" Ref="C_out?"  Part="1" 
-AR Path="/5E0E4A93/5E21B80C" Ref="C_out?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B80C" Ref="C_out?"  Part="1" 
-AR Path="/5E0E5304/5E21B80C" Ref="C_out?"  Part="1" 
-AR Path="/5E0E594B/5E21B80C" Ref="C_out?"  Part="1" 
-AR Path="/5E0E607C/5E21B80C" Ref="C_out?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B80C" Ref="C_out?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B80C" Ref="C_out1"  Part="1" 
-AR Path="/5E0FC3A2/5E21B80C" Ref="C_out?"  Part="1" 
-AR Path="/5E0FCFDC/5E21B80C" Ref="C_out?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B80C" Ref="C_out?"  Part="1" 
-AR Path="/5E10174B/5E21B80C" Ref="C_out?"  Part="1" 
-F 0 "C_out1" H 4915 2896 50  0000 L CNN
+AR Path="/5DA89415/5E21B80C" Ref="C?"  Part="1" 
+AR Path="/5DEB10A1/5E21B80C" Ref="C?"  Part="1" 
+AR Path="/5DEB20EA/5E21B80C" Ref="C?"  Part="1" 
+AR Path="/5E0E4725/5E21B80C" Ref="C?"  Part="1" 
+AR Path="/5E0E4A93/5E21B80C" Ref="C?"  Part="1" 
+AR Path="/5E0E4EB5/5E21B80C" Ref="C?"  Part="1" 
+AR Path="/5E0E5304/5E21B80C" Ref="C?"  Part="1" 
+AR Path="/5E0E594B/5E21B80C" Ref="C?"  Part="1" 
+AR Path="/5E0E607C/5E21B80C" Ref="C?"  Part="1" 
+AR Path="/5E0FB5C8/5E21B80C" Ref="C?"  Part="1" 
+AR Path="/5E0FBBBD/5E21B80C" Ref="C13"  Part="1" 
+AR Path="/5E0FC3A2/5E21B80C" Ref="C?"  Part="1" 
+AR Path="/5E0FCFDC/5E21B80C" Ref="C?"  Part="1" 
+AR Path="/5E0FDCCC/5E21B80C" Ref="C?"  Part="1" 
+AR Path="/5E10174B/5E21B80C" Ref="C?"  Part="1" 
+F 0 "C13" H 4915 2896 50  0000 L CNN
 F 1 "10nf" H 4915 2805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4838 2700 50  0001 C CNN
 F 3 "~" H 4800 2850 50  0001 C CNN
@@ -67,25 +67,25 @@ F 3 "~" H 4800 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AR20_PDM_v1-rescue:C-Device C_in?
+L AR20_PDM_v1-rescue:C-Device C?
 U 1 1 5E21B814
 P 3500 1950
-AR Path="/5DA89415/5E21B814" Ref="C_in?"  Part="1" 
-AR Path="/5DEB10A1/5E21B814" Ref="C_in?"  Part="1" 
-AR Path="/5DEB20EA/5E21B814" Ref="C_in?"  Part="1" 
-AR Path="/5E0E4725/5E21B814" Ref="C_in?"  Part="1" 
-AR Path="/5E0E4A93/5E21B814" Ref="C_in?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B814" Ref="C_in?"  Part="1" 
-AR Path="/5E0E5304/5E21B814" Ref="C_in?"  Part="1" 
-AR Path="/5E0E594B/5E21B814" Ref="C_in?"  Part="1" 
-AR Path="/5E0E607C/5E21B814" Ref="C_in?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B814" Ref="C_in?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B814" Ref="C_in1"  Part="1" 
-AR Path="/5E0FC3A2/5E21B814" Ref="C_in?"  Part="1" 
-AR Path="/5E0FCFDC/5E21B814" Ref="C_in?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B814" Ref="C_in?"  Part="1" 
-AR Path="/5E10174B/5E21B814" Ref="C_in?"  Part="1" 
-F 0 "C_in1" H 3615 1996 50  0000 L CNN
+AR Path="/5DA89415/5E21B814" Ref="C?"  Part="1" 
+AR Path="/5DEB10A1/5E21B814" Ref="C?"  Part="1" 
+AR Path="/5DEB20EA/5E21B814" Ref="C?"  Part="1" 
+AR Path="/5E0E4725/5E21B814" Ref="C?"  Part="1" 
+AR Path="/5E0E4A93/5E21B814" Ref="C?"  Part="1" 
+AR Path="/5E0E4EB5/5E21B814" Ref="C?"  Part="1" 
+AR Path="/5E0E5304/5E21B814" Ref="C?"  Part="1" 
+AR Path="/5E0E594B/5E21B814" Ref="C?"  Part="1" 
+AR Path="/5E0E607C/5E21B814" Ref="C?"  Part="1" 
+AR Path="/5E0FB5C8/5E21B814" Ref="C?"  Part="1" 
+AR Path="/5E0FBBBD/5E21B814" Ref="C12"  Part="1" 
+AR Path="/5E0FC3A2/5E21B814" Ref="C?"  Part="1" 
+AR Path="/5E0FCFDC/5E21B814" Ref="C?"  Part="1" 
+AR Path="/5E0FDCCC/5E21B814" Ref="C?"  Part="1" 
+AR Path="/5E10174B/5E21B814" Ref="C?"  Part="1" 
+F 0 "C12" H 3615 1996 50  0000 L CNN
 F 1 "150nf" H 3615 1905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3538 1800 50  0001 C CNN
 F 3 "~" H 3500 1950 50  0001 C CNN
@@ -106,12 +106,12 @@ AR Path="/5E0E5304/5E21B818" Ref="R?"  Part="1"
 AR Path="/5E0E594B/5E21B818" Ref="R?"  Part="1" 
 AR Path="/5E0E607C/5E21B818" Ref="R?"  Part="1" 
 AR Path="/5E0FB5C8/5E21B818" Ref="R?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B818" Ref="R7"  Part="1" 
+AR Path="/5E0FBBBD/5E21B818" Ref="R9"  Part="1" 
 AR Path="/5E0FC3A2/5E21B818" Ref="R?"  Part="1" 
 AR Path="/5E0FCFDC/5E21B818" Ref="R?"  Part="1" 
 AR Path="/5E0FDCCC/5E21B818" Ref="R?"  Part="1" 
 AR Path="/5E10174B/5E21B818" Ref="R?"  Part="1" 
-F 0 "R7" H 2320 1896 50  0000 L CNN
+F 0 "R9" H 2320 1896 50  0000 L CNN
 F 1 "4k7" H 2320 1805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 1850 50  0001 C CNN
 F 3 "~" H 2250 1850 50  0001 C CNN
@@ -119,25 +119,25 @@ F 3 "~" H 2250 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AR20_PDM_v1-rescue:C-Device C_bypass?
+L AR20_PDM_v1-rescue:C-Device C?
 U 1 1 5E21B829
 P 8500 3350
-AR Path="/5DA89415/5E21B829" Ref="C_bypass?"  Part="1" 
-AR Path="/5DEB10A1/5E21B829" Ref="C_bypass?"  Part="1" 
-AR Path="/5DEB20EA/5E21B829" Ref="C_bypass?"  Part="1" 
-AR Path="/5E0E4725/5E21B829" Ref="C_bypass?"  Part="1" 
-AR Path="/5E0E4A93/5E21B829" Ref="C_bypass?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B829" Ref="C_bypass?"  Part="1" 
-AR Path="/5E0E5304/5E21B829" Ref="C_bypass?"  Part="1" 
-AR Path="/5E0E594B/5E21B829" Ref="C_bypass?"  Part="1" 
-AR Path="/5E0E607C/5E21B829" Ref="C_bypass?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B829" Ref="C_bypass?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B829" Ref="C_bypass4"  Part="1" 
-AR Path="/5E0FC3A2/5E21B829" Ref="C_bypass?"  Part="1" 
-AR Path="/5E0FCFDC/5E21B829" Ref="C_bypass?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B829" Ref="C_bypass?"  Part="1" 
-AR Path="/5E10174B/5E21B829" Ref="C_bypass?"  Part="1" 
-F 0 "C_bypass4" V 8248 3350 50  0000 C CNN
+AR Path="/5DA89415/5E21B829" Ref="C?"  Part="1" 
+AR Path="/5DEB10A1/5E21B829" Ref="C?"  Part="1" 
+AR Path="/5DEB20EA/5E21B829" Ref="C?"  Part="1" 
+AR Path="/5E0E4725/5E21B829" Ref="C?"  Part="1" 
+AR Path="/5E0E4A93/5E21B829" Ref="C?"  Part="1" 
+AR Path="/5E0E4EB5/5E21B829" Ref="C?"  Part="1" 
+AR Path="/5E0E5304/5E21B829" Ref="C?"  Part="1" 
+AR Path="/5E0E594B/5E21B829" Ref="C?"  Part="1" 
+AR Path="/5E0E607C/5E21B829" Ref="C?"  Part="1" 
+AR Path="/5E0FB5C8/5E21B829" Ref="C?"  Part="1" 
+AR Path="/5E0FBBBD/5E21B829" Ref="C16"  Part="1" 
+AR Path="/5E0FC3A2/5E21B829" Ref="C?"  Part="1" 
+AR Path="/5E0FCFDC/5E21B829" Ref="C?"  Part="1" 
+AR Path="/5E0FDCCC/5E21B829" Ref="C?"  Part="1" 
+AR Path="/5E10174B/5E21B829" Ref="C?"  Part="1" 
+F 0 "C16" V 8248 3350 50  0000 C CNN
 F 1 "100nf" V 8339 3350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8538 3200 50  0001 C CNN
 F 3 "~" H 8500 3350 50  0001 C CNN
@@ -162,12 +162,12 @@ AR Path="/5E0E5304/5E21B82E" Ref="#PWR?"  Part="1"
 AR Path="/5E0E594B/5E21B82E" Ref="#PWR?"  Part="1" 
 AR Path="/5E0E607C/5E21B82E" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FB5C8/5E21B82E" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B82E" Ref="#PWR042"  Part="1" 
+AR Path="/5E0FBBBD/5E21B82E" Ref="#PWR032"  Part="1" 
 AR Path="/5E0FC3A2/5E21B82E" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FCFDC/5E21B82E" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FDCCC/5E21B82E" Ref="#PWR?"  Part="1" 
 AR Path="/5E10174B/5E21B82E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR042" H 8300 3300 50  0001 C CNN
+F 0 "#PWR032" H 8300 3300 50  0001 C CNN
 F 1 "GND" V 8305 3422 50  0000 R CNN
 F 2 "" H 8300 3550 50  0001 C CNN
 F 3 "" H 8300 3550 50  0001 C CNN
@@ -190,12 +190,12 @@ AR Path="/5E0E5304/5DAAC239" Ref="#PWR?"  Part="1"
 AR Path="/5E0E594B/5DAAC239" Ref="#PWR?"  Part="1" 
 AR Path="/5E0E607C/5DAAC239" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FB5C8/5DAAC239" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5DAAC239" Ref="#PWR043"  Part="1" 
+AR Path="/5E0FBBBD/5DAAC239" Ref="#PWR033"  Part="1" 
 AR Path="/5E0FC3A2/5DAAC239" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FCFDC/5DAAC239" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FDCCC/5DAAC239" Ref="#PWR?"  Part="1" 
 AR Path="/5E10174B/5DAAC239" Ref="#PWR?"  Part="1" 
-F 0 "#PWR043" H 9200 4900 50  0001 C CNN
+F 0 "#PWR033" H 9200 4900 50  0001 C CNN
 F 1 "GND" H 9205 4977 50  0000 C CNN
 F 2 "" H 9200 5150 50  0001 C CNN
 F 3 "" H 9200 5150 50  0001 C CNN
@@ -216,12 +216,12 @@ AR Path="/5E0E5304/5E21B83B" Ref="#PWR?"  Part="1"
 AR Path="/5E0E594B/5E21B83B" Ref="#PWR?"  Part="1" 
 AR Path="/5E0E607C/5E21B83B" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FB5C8/5E21B83B" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B83B" Ref="#PWR039"  Part="1" 
+AR Path="/5E0FBBBD/5E21B83B" Ref="#PWR029"  Part="1" 
 AR Path="/5E0FC3A2/5E21B83B" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FCFDC/5E21B83B" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FDCCC/5E21B83B" Ref="#PWR?"  Part="1" 
 AR Path="/5E10174B/5E21B83B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR039" H 4800 2750 50  0001 C CNN
+F 0 "#PWR029" H 4800 2750 50  0001 C CNN
 F 1 "GND" H 4805 2827 50  0000 C CNN
 F 2 "" H 4800 3000 50  0001 C CNN
 F 3 "" H 4800 3000 50  0001 C CNN
@@ -242,12 +242,12 @@ AR Path="/5E0E5304/5E21B83F" Ref="#PWR?"  Part="1"
 AR Path="/5E0E594B/5E21B83F" Ref="#PWR?"  Part="1" 
 AR Path="/5E0E607C/5E21B83F" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FB5C8/5E21B83F" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B83F" Ref="#PWR038"  Part="1" 
+AR Path="/5E0FBBBD/5E21B83F" Ref="#PWR028"  Part="1" 
 AR Path="/5E0FC3A2/5E21B83F" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FCFDC/5E21B83F" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FDCCC/5E21B83F" Ref="#PWR?"  Part="1" 
 AR Path="/5E10174B/5E21B83F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR038" H 4250 2550 50  0001 C CNN
+F 0 "#PWR028" H 4250 2550 50  0001 C CNN
 F 1 "GND" H 4255 2627 50  0000 C CNN
 F 2 "" H 4250 2800 50  0001 C CNN
 F 3 "" H 4250 2800 50  0001 C CNN
@@ -268,12 +268,12 @@ AR Path="/5E0E5304/5E21B843" Ref="#PWR?"  Part="1"
 AR Path="/5E0E594B/5E21B843" Ref="#PWR?"  Part="1" 
 AR Path="/5E0E607C/5E21B843" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FB5C8/5E21B843" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B843" Ref="#PWR036"  Part="1" 
+AR Path="/5E0FBBBD/5E21B843" Ref="#PWR027"  Part="1" 
 AR Path="/5E0FC3A2/5E21B843" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FCFDC/5E21B843" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FDCCC/5E21B843" Ref="#PWR?"  Part="1" 
 AR Path="/5E10174B/5E21B843" Ref="#PWR?"  Part="1" 
-F 0 "#PWR036" H 3500 1550 50  0001 C CNN
+F 0 "#PWR027" H 3500 1550 50  0001 C CNN
 F 1 "GND" H 3505 1627 50  0000 C CNN
 F 2 "" H 3500 1800 50  0001 C CNN
 F 3 "" H 3500 1800 50  0001 C CNN
@@ -322,12 +322,12 @@ AR Path="/5E0E5304/5E21B7FC" Ref="Q?"  Part="1"
 AR Path="/5E0E594B/5E21B7FC" Ref="Q?"  Part="1" 
 AR Path="/5E0E607C/5E21B7FC" Ref="Q?"  Part="1" 
 AR Path="/5E0FB5C8/5E21B7FC" Ref="Q?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B7FC" Ref="Q3"  Part="1" 
+AR Path="/5E0FBBBD/5E21B7FC" Ref="Q2"  Part="1" 
 AR Path="/5E0FC3A2/5E21B7FC" Ref="Q?"  Part="1" 
 AR Path="/5E0FCFDC/5E21B7FC" Ref="Q?"  Part="1" 
 AR Path="/5E0FDCCC/5E21B7FC" Ref="Q?"  Part="1" 
 AR Path="/5E10174B/5E21B7FC" Ref="Q?"  Part="1" 
-F 0 "Q3" H 3975 3275 50  0000 C CNN
+F 0 "Q2" H 3975 3275 50  0000 C CNN
 F 1 "BTS50025-1TAD" H 4225 3200 50  0000 C CNN
 F 2 "AR_PDM_v1:BTS500xx" H 4250 2650 50  0001 C CNN
 F 3 "" H 4250 2650 50  0001 C CNN
@@ -348,12 +348,12 @@ AR Path="/5E0E5304/5DA8DC6C" Ref="U?"  Part="1"
 AR Path="/5E0E594B/5DA8DC6C" Ref="U?"  Part="1" 
 AR Path="/5E0E607C/5DA8DC6C" Ref="U?"  Part="1" 
 AR Path="/5E0FB5C8/5DA8DC6C" Ref="U?"  Part="1" 
-AR Path="/5E0FBBBD/5DA8DC6C" Ref="U6"  Part="1" 
+AR Path="/5E0FBBBD/5DA8DC6C" Ref="U3"  Part="1" 
 AR Path="/5E0FC3A2/5DA8DC6C" Ref="U?"  Part="1" 
 AR Path="/5E0FCFDC/5DA8DC6C" Ref="U?"  Part="1" 
 AR Path="/5E0FDCCC/5DA8DC6C" Ref="U?"  Part="1" 
 AR Path="/5E10174B/5DA8DC6C" Ref="U?"  Part="1" 
-F 0 "U6" H 9225 4465 50  0000 C CNN
+F 0 "U3" H 9225 4465 50  0000 C CNN
 F 1 "INA233" H 9225 4374 50  0000 C CNN
 F 2 "AR_PDM_v1:INA233" H 9200 4050 50  0001 C CNN
 F 3 "" H 9200 4050 50  0001 C CNN
@@ -379,25 +379,25 @@ Wire Wire Line
 Wire Wire Line
 	2250 1550 2250 1700
 $Comp
-L AR20_PDM_v1-rescue:C-Device C_vs?
+L AR20_PDM_v1-rescue:C-Device C?
 U 1 1 5E21B857
 P 5200 2000
-AR Path="/5DA89415/5E21B857" Ref="C_vs?"  Part="1" 
-AR Path="/5DEB10A1/5E21B857" Ref="C_vs?"  Part="1" 
-AR Path="/5DEB20EA/5E21B857" Ref="C_vs?"  Part="1" 
-AR Path="/5E0E4725/5E21B857" Ref="C_vs?"  Part="1" 
-AR Path="/5E0E4A93/5E21B857" Ref="C_vs?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B857" Ref="C_vs?"  Part="1" 
-AR Path="/5E0E5304/5E21B857" Ref="C_vs?"  Part="1" 
-AR Path="/5E0E594B/5E21B857" Ref="C_vs?"  Part="1" 
-AR Path="/5E0E607C/5E21B857" Ref="C_vs?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B857" Ref="C_vs?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B857" Ref="C_vs1"  Part="1" 
-AR Path="/5E0FC3A2/5E21B857" Ref="C_vs?"  Part="1" 
-AR Path="/5E0FCFDC/5E21B857" Ref="C_vs?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B857" Ref="C_vs?"  Part="1" 
-AR Path="/5E10174B/5E21B857" Ref="C_vs?"  Part="1" 
-F 0 "C_vs1" H 5315 2046 50  0000 L CNN
+AR Path="/5DA89415/5E21B857" Ref="C?"  Part="1" 
+AR Path="/5DEB10A1/5E21B857" Ref="C?"  Part="1" 
+AR Path="/5DEB20EA/5E21B857" Ref="C?"  Part="1" 
+AR Path="/5E0E4725/5E21B857" Ref="C?"  Part="1" 
+AR Path="/5E0E4A93/5E21B857" Ref="C?"  Part="1" 
+AR Path="/5E0E4EB5/5E21B857" Ref="C?"  Part="1" 
+AR Path="/5E0E5304/5E21B857" Ref="C?"  Part="1" 
+AR Path="/5E0E594B/5E21B857" Ref="C?"  Part="1" 
+AR Path="/5E0E607C/5E21B857" Ref="C?"  Part="1" 
+AR Path="/5E0FB5C8/5E21B857" Ref="C?"  Part="1" 
+AR Path="/5E0FBBBD/5E21B857" Ref="C14"  Part="1" 
+AR Path="/5E0FC3A2/5E21B857" Ref="C?"  Part="1" 
+AR Path="/5E0FCFDC/5E21B857" Ref="C?"  Part="1" 
+AR Path="/5E0FDCCC/5E21B857" Ref="C?"  Part="1" 
+AR Path="/5E10174B/5E21B857" Ref="C?"  Part="1" 
+F 0 "C14" H 5315 2046 50  0000 L CNN
 F 1 "100nf" H 5315 1955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5238 1850 50  0001 C CNN
 F 3 "~" H 5200 2000 50  0001 C CNN
@@ -422,12 +422,12 @@ AR Path="/5E0E5304/5DAEE1A2" Ref="#PWR?"  Part="1"
 AR Path="/5E0E594B/5DAEE1A2" Ref="#PWR?"  Part="1" 
 AR Path="/5E0E607C/5DAEE1A2" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FB5C8/5DAEE1A2" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5DAEE1A2" Ref="#PWR040"  Part="1" 
+AR Path="/5E0FBBBD/5DAEE1A2" Ref="#PWR030"  Part="1" 
 AR Path="/5E0FC3A2/5DAEE1A2" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FCFDC/5DAEE1A2" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FDCCC/5DAEE1A2" Ref="#PWR?"  Part="1" 
 AR Path="/5E10174B/5DAEE1A2" Ref="#PWR?"  Part="1" 
-F 0 "#PWR040" H 5200 1900 50  0001 C CNN
+F 0 "#PWR030" H 5200 1900 50  0001 C CNN
 F 1 "GND" H 5205 1977 50  0000 C CNN
 F 2 "" H 5200 2150 50  0001 C CNN
 F 3 "" H 5200 2150 50  0001 C CNN
@@ -435,25 +435,25 @@ F 3 "" H 5200 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AR20_PDM_v1-rescue:C-Device Cs?
+L AR20_PDM_v1-rescue:C-Device C?
 U 1 1 5E21B863
 P 5800 2100
-AR Path="/5DA89415/5E21B863" Ref="Cs?"  Part="1" 
-AR Path="/5DEB10A1/5E21B863" Ref="Cs?"  Part="1" 
-AR Path="/5DEB20EA/5E21B863" Ref="Cs?"  Part="1" 
-AR Path="/5E0E4725/5E21B863" Ref="Cs?"  Part="1" 
-AR Path="/5E0E4A93/5E21B863" Ref="Cs?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B863" Ref="Cs?"  Part="1" 
-AR Path="/5E0E5304/5E21B863" Ref="Cs?"  Part="1" 
-AR Path="/5E0E594B/5E21B863" Ref="Cs?"  Part="1" 
-AR Path="/5E0E607C/5E21B863" Ref="Cs?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B863" Ref="Cs?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B863" Ref="Cs1"  Part="1" 
-AR Path="/5E0FC3A2/5E21B863" Ref="Cs?"  Part="1" 
-AR Path="/5E0FCFDC/5E21B863" Ref="Cs?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B863" Ref="Cs?"  Part="1" 
-AR Path="/5E10174B/5E21B863" Ref="Cs?"  Part="1" 
-F 0 "Cs1" H 5915 2146 50  0000 L CNN
+AR Path="/5DA89415/5E21B863" Ref="C?"  Part="1" 
+AR Path="/5DEB10A1/5E21B863" Ref="C?"  Part="1" 
+AR Path="/5DEB20EA/5E21B863" Ref="C?"  Part="1" 
+AR Path="/5E0E4725/5E21B863" Ref="C?"  Part="1" 
+AR Path="/5E0E4A93/5E21B863" Ref="C?"  Part="1" 
+AR Path="/5E0E4EB5/5E21B863" Ref="C?"  Part="1" 
+AR Path="/5E0E5304/5E21B863" Ref="C?"  Part="1" 
+AR Path="/5E0E594B/5E21B863" Ref="C?"  Part="1" 
+AR Path="/5E0E607C/5E21B863" Ref="C?"  Part="1" 
+AR Path="/5E0FB5C8/5E21B863" Ref="C?"  Part="1" 
+AR Path="/5E0FBBBD/5E21B863" Ref="C15"  Part="1" 
+AR Path="/5E0FC3A2/5E21B863" Ref="C?"  Part="1" 
+AR Path="/5E0FCFDC/5E21B863" Ref="C?"  Part="1" 
+AR Path="/5E0FDCCC/5E21B863" Ref="C?"  Part="1" 
+AR Path="/5E10174B/5E21B863" Ref="C?"  Part="1" 
+F 0 "C15" H 5915 2146 50  0000 L CNN
 F 1 "4.7uF" H 5915 2055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 5838 1950 50  0001 C CNN
 F 3 "~" H 5800 2100 50  0001 C CNN
@@ -474,12 +474,12 @@ AR Path="/5E0E5304/5DB84D2A" Ref="#PWR?"  Part="1"
 AR Path="/5E0E594B/5DB84D2A" Ref="#PWR?"  Part="1" 
 AR Path="/5E0E607C/5DB84D2A" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FB5C8/5DB84D2A" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5DB84D2A" Ref="#PWR041"  Part="1" 
+AR Path="/5E0FBBBD/5DB84D2A" Ref="#PWR031"  Part="1" 
 AR Path="/5E0FC3A2/5DB84D2A" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FCFDC/5DB84D2A" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FDCCC/5DB84D2A" Ref="#PWR?"  Part="1" 
 AR Path="/5E10174B/5DB84D2A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR041" H 5800 2050 50  0001 C CNN
+F 0 "#PWR031" H 5800 2050 50  0001 C CNN
 F 1 "GND" H 5805 2127 50  0000 C CNN
 F 2 "" H 5800 2300 50  0001 C CNN
 F 3 "" H 5800 2300 50  0001 C CNN
@@ -487,25 +487,25 @@ F 3 "" H 5800 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AR20_PDM_v1-rescue:R-Device R_s?
+L AR20_PDM_v1-rescue:R-Device R?
 U 1 1 5E21B86E
 P 5800 1750
-AR Path="/5DA89415/5E21B86E" Ref="R_s?"  Part="1" 
-AR Path="/5DEB10A1/5E21B86E" Ref="R_s?"  Part="1" 
-AR Path="/5DEB20EA/5E21B86E" Ref="R_s?"  Part="1" 
-AR Path="/5E0E4725/5E21B86E" Ref="R_s?"  Part="1" 
-AR Path="/5E0E4A93/5E21B86E" Ref="R_s?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B86E" Ref="R_s?"  Part="1" 
-AR Path="/5E0E5304/5E21B86E" Ref="R_s?"  Part="1" 
-AR Path="/5E0E594B/5E21B86E" Ref="R_s?"  Part="1" 
-AR Path="/5E0E607C/5E21B86E" Ref="R_s?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B86E" Ref="R_s?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B86E" Ref="R_s1"  Part="1" 
-AR Path="/5E0FC3A2/5E21B86E" Ref="R_s?"  Part="1" 
-AR Path="/5E0FCFDC/5E21B86E" Ref="R_s?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B86E" Ref="R_s?"  Part="1" 
-AR Path="/5E10174B/5E21B86E" Ref="R_s?"  Part="1" 
-F 0 "R_s1" V 5593 1750 50  0000 C CNN
+AR Path="/5DA89415/5E21B86E" Ref="R?"  Part="1" 
+AR Path="/5DEB10A1/5E21B86E" Ref="R?"  Part="1" 
+AR Path="/5DEB20EA/5E21B86E" Ref="R?"  Part="1" 
+AR Path="/5E0E4725/5E21B86E" Ref="R?"  Part="1" 
+AR Path="/5E0E4A93/5E21B86E" Ref="R?"  Part="1" 
+AR Path="/5E0E4EB5/5E21B86E" Ref="R?"  Part="1" 
+AR Path="/5E0E5304/5E21B86E" Ref="R?"  Part="1" 
+AR Path="/5E0E594B/5E21B86E" Ref="R?"  Part="1" 
+AR Path="/5E0E607C/5E21B86E" Ref="R?"  Part="1" 
+AR Path="/5E0FB5C8/5E21B86E" Ref="R?"  Part="1" 
+AR Path="/5E0FBBBD/5E21B86E" Ref="R12"  Part="1" 
+AR Path="/5E0FC3A2/5E21B86E" Ref="R?"  Part="1" 
+AR Path="/5E0FCFDC/5E21B86E" Ref="R?"  Part="1" 
+AR Path="/5E0FDCCC/5E21B86E" Ref="R?"  Part="1" 
+AR Path="/5E10174B/5E21B86E" Ref="R?"  Part="1" 
+F 0 "R12" V 5593 1750 50  0000 C CNN
 F 1 "3.9R" V 5684 1750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5730 1750 50  0001 C CNN
 F 3 "~" H 5800 1750 50  0001 C CNN
@@ -549,25 +549,25 @@ Connection ~ 4800 2550
 Wire Wire Line
 	6000 4100 8750 4100
 $Comp
-L AR20_PDM_v1-rescue:R-Device R_sense?
+L AR20_PDM_v1-rescue:R-Device R?
 U 1 1 5E21B876
 P 3700 3450
-AR Path="/5DA89415/5E21B876" Ref="R_sense?"  Part="1" 
-AR Path="/5DEB10A1/5E21B876" Ref="R_sense?"  Part="1" 
-AR Path="/5DEB20EA/5E21B876" Ref="R_sense?"  Part="1" 
-AR Path="/5E0E4725/5E21B876" Ref="R_sense?"  Part="1" 
-AR Path="/5E0E4A93/5E21B876" Ref="R_sense?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B876" Ref="R_sense?"  Part="1" 
-AR Path="/5E0E5304/5E21B876" Ref="R_sense?"  Part="1" 
-AR Path="/5E0E594B/5E21B876" Ref="R_sense?"  Part="1" 
-AR Path="/5E0E607C/5E21B876" Ref="R_sense?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B876" Ref="R_sense?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B876" Ref="4k7"  Part="1" 
-AR Path="/5E0FC3A2/5E21B876" Ref="R_sense?"  Part="1" 
-AR Path="/5E0FCFDC/5E21B876" Ref="R_sense?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B876" Ref="R_sense?"  Part="1" 
-AR Path="/5E10174B/5E21B876" Ref="R_sense?"  Part="1" 
-F 0 "4k7" H 3770 3496 50  0000 L CNN
+AR Path="/5DA89415/5E21B876" Ref="R?"  Part="1" 
+AR Path="/5DEB10A1/5E21B876" Ref="R?"  Part="1" 
+AR Path="/5DEB20EA/5E21B876" Ref="R?"  Part="1" 
+AR Path="/5E0E4725/5E21B876" Ref="R?"  Part="1" 
+AR Path="/5E0E4A93/5E21B876" Ref="R?"  Part="1" 
+AR Path="/5E0E4EB5/5E21B876" Ref="R?"  Part="1" 
+AR Path="/5E0E5304/5E21B876" Ref="R?"  Part="1" 
+AR Path="/5E0E594B/5E21B876" Ref="R?"  Part="1" 
+AR Path="/5E0E607C/5E21B876" Ref="R?"  Part="1" 
+AR Path="/5E0FB5C8/5E21B876" Ref="R?"  Part="1" 
+AR Path="/5E0FBBBD/5E21B876" Ref="R11"  Part="1" 
+AR Path="/5E0FC3A2/5E21B876" Ref="R?"  Part="1" 
+AR Path="/5E0FCFDC/5E21B876" Ref="R?"  Part="1" 
+AR Path="/5E0FDCCC/5E21B876" Ref="R?"  Part="1" 
+AR Path="/5E10174B/5E21B876" Ref="R?"  Part="1" 
+F 0 "R11" H 3770 3496 50  0000 L CNN
 F 1 "1k" H 3770 3405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 3450 50  0001 C CNN
 F 3 "~" H 3700 3450 50  0001 C CNN
@@ -595,25 +595,25 @@ Wire Wire Line
 Wire Wire Line
 	6000 2950 6325 2950
 $Comp
-L AR20_PDM_v1-rescue:R-Device R_Shunt?
+L AR20_PDM_v1-rescue:R-Device R?
 U 1 1 5E1CBF07
 P 6475 2950
-AR Path="/5DA89415/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-AR Path="/5DEB10A1/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-AR Path="/5DEB20EA/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E4725/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E4A93/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E4EB5/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E5304/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E594B/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E607C/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FB5C8/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FBBBD/5E1CBF07" Ref="R_Shunt5"  Part="1" 
-AR Path="/5E0FC3A2/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FCFDC/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FDCCC/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E10174B/5E1CBF07" Ref="R_Shunt?"  Part="1" 
-F 0 "R_Shunt5" V 6268 2950 50  0000 C CNN
+AR Path="/5DA89415/5E1CBF07" Ref="R?"  Part="1" 
+AR Path="/5DEB10A1/5E1CBF07" Ref="R?"  Part="1" 
+AR Path="/5DEB20EA/5E1CBF07" Ref="R?"  Part="1" 
+AR Path="/5E0E4725/5E1CBF07" Ref="R?"  Part="1" 
+AR Path="/5E0E4A93/5E1CBF07" Ref="R?"  Part="1" 
+AR Path="/5E0E4EB5/5E1CBF07" Ref="R?"  Part="1" 
+AR Path="/5E0E5304/5E1CBF07" Ref="R?"  Part="1" 
+AR Path="/5E0E594B/5E1CBF07" Ref="R?"  Part="1" 
+AR Path="/5E0E607C/5E1CBF07" Ref="R?"  Part="1" 
+AR Path="/5E0FB5C8/5E1CBF07" Ref="R?"  Part="1" 
+AR Path="/5E0FBBBD/5E1CBF07" Ref="R13"  Part="1" 
+AR Path="/5E0FC3A2/5E1CBF07" Ref="R?"  Part="1" 
+AR Path="/5E0FCFDC/5E1CBF07" Ref="R?"  Part="1" 
+AR Path="/5E0FDCCC/5E1CBF07" Ref="R?"  Part="1" 
+AR Path="/5E10174B/5E1CBF07" Ref="R?"  Part="1" 
+F 0 "R13" V 6268 2950 50  0000 C CNN
 F 1 "2m_1%_4W" V 6359 2950 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric" V 6405 2950 50  0001 C CNN
 F 3 "~" H 6475 2950 50  0001 C CNN

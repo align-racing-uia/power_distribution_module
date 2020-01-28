@@ -117,8 +117,8 @@ U 1 1 5DE6C6C9
 P 5100 5100
 AR Path="/5DA89415/5DE6C6C9" Ref="U?"  Part="1" 
 AR Path="/5DA8920B/5DE6C6C9" Ref="U?"  Part="1" 
-AR Path="/5DE4D361/5DE6C6C9" Ref="U4"  Part="1" 
-F 0 "U4" H 5125 5515 50  0000 C CNN
+AR Path="/5DE4D361/5DE6C6C9" Ref="U31"  Part="1" 
+F 0 "U31" H 5125 5515 50  0000 C CNN
 F 1 "INA233" H 5125 5424 50  0000 C CNN
 F 2 "AR_PDM_v1:INA233" H 5100 5100 50  0001 C CNN
 F 3 "" H 5100 5100 50  0001 C CNN
@@ -148,8 +148,8 @@ U 1 1 5DE6C6D8
 P 5100 6200
 AR Path="/5DA89415/5DE6C6D8" Ref="#PWR?"  Part="1" 
 AR Path="/5DA8920B/5DE6C6D8" Ref="#PWR?"  Part="1" 
-AR Path="/5DE4D361/5DE6C6D8" Ref="#PWR025"  Part="1" 
-F 0 "#PWR025" H 5100 5950 50  0001 C CNN
+AR Path="/5DE4D361/5DE6C6D8" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H 5100 5950 50  0001 C CNN
 F 1 "GND" H 5105 6027 50  0000 C CNN
 F 2 "" H 5100 6200 50  0001 C CNN
 F 3 "" H 5100 6200 50  0001 C CNN
@@ -164,8 +164,8 @@ U 1 1 5DE6C6DF
 P 4200 4600
 AR Path="/5DA89415/5DE6C6DF" Ref="#PWR?"  Part="1" 
 AR Path="/5DA8920B/5DE6C6DF" Ref="#PWR?"  Part="1" 
-AR Path="/5DE4D361/5DE6C6DF" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 4200 4350 50  0001 C CNN
+AR Path="/5DE4D361/5DE6C6DF" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 4200 4350 50  0001 C CNN
 F 1 "GND" V 4205 4472 50  0000 R CNN
 F 2 "" H 4200 4600 50  0001 C CNN
 F 3 "" H 4200 4600 50  0001 C CNN
@@ -173,13 +173,13 @@ F 3 "" H 4200 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AR20_PDM_v1-rescue:C-Device C_bypass?
+L AR20_PDM_v1-rescue:C-Device C?
 U 1 1 5DE6C6E5
 P 4400 4400
-AR Path="/5DA89415/5DE6C6E5" Ref="C_bypass?"  Part="1" 
-AR Path="/5DA8920B/5DE6C6E5" Ref="C_bypass?"  Part="1" 
-AR Path="/5DE4D361/5DE6C6E5" Ref="C_bypass3"  Part="1" 
-F 0 "C_bypass3" V 4148 4400 50  0000 C CNN
+AR Path="/5DA89415/5DE6C6E5" Ref="C?"  Part="1" 
+AR Path="/5DA8920B/5DE6C6E5" Ref="C?"  Part="1" 
+AR Path="/5DE4D361/5DE6C6E5" Ref="C46"  Part="1" 
+F 0 "C46" V 4148 4400 50  0000 C CNN
 F 1 "100nf" V 4239 4400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 4250 50  0001 C CNN
 F 3 "~" H 4400 4400 50  0001 C CNN
@@ -222,26 +222,26 @@ ING_SWITCH_OUT
 Text HLabel 8950 2950 2    50   Output ~ 0
 MCU_UNITS_FEED_OUT
 $Comp
-L AR20_PDM_v1-rescue:R-Device R_Shunt?
+L AR20_PDM_v1-rescue:R-Device R?
 U 1 1 5E1E306F
 P 3450 3000
-AR Path="/5DA89415/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5DEB10A1/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5DEB20EA/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E4725/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E4A93/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E4EB5/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E5304/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E594B/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E607C/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FB5C8/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FBBBD/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FC3A2/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FCFDC/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FDCCC/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E10174B/5E1E306F" Ref="R_Shunt?"  Part="1" 
-AR Path="/5DE4D361/5E1E306F" Ref="R_Shunt3"  Part="1" 
-F 0 "R_Shunt3" V 3243 3000 50  0000 C CNN
+AR Path="/5DA89415/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5DEB10A1/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5DEB20EA/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5E0E4725/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5E0E4A93/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5E0E4EB5/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5E0E5304/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5E0E594B/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5E0E607C/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5E0FB5C8/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5E0FBBBD/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5E0FC3A2/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5E0FCFDC/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5E0FDCCC/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5E10174B/5E1E306F" Ref="R?"  Part="1" 
+AR Path="/5DE4D361/5E1E306F" Ref="R100"  Part="1" 
+F 0 "R100" V 3243 3000 50  0000 C CNN
 F 1 "2m_1%_4W" V 3334 3000 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric" V 3380 3000 50  0001 C CNN
 F 3 "~" H 3450 3000 50  0001 C CNN
@@ -267,26 +267,26 @@ DIRECT_SDA
 Text HLabel 5900 6000 3    50   Input ~ 10
 vcc_5v
 $Comp
-L AR20_PDM_v1-rescue:R-Device R_Shunt?
+L AR20_PDM_v1-rescue:R-Device R?
 U 1 1 5E24C0CF
 P 3450 2700
-AR Path="/5DA89415/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5DEB10A1/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5DEB20EA/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E4725/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E4A93/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E4EB5/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E5304/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E594B/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0E607C/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FB5C8/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FBBBD/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FC3A2/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FCFDC/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E0FDCCC/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5E10174B/5E24C0CF" Ref="R_Shunt?"  Part="1" 
-AR Path="/5DE4D361/5E24C0CF" Ref="R_Shunt11"  Part="1" 
-F 0 "R_Shunt11" V 3243 2700 50  0000 C CNN
+AR Path="/5DA89415/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5DEB10A1/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5DEB20EA/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5E0E4725/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5E0E4A93/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5E0E4EB5/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5E0E5304/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5E0E594B/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5E0E607C/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5E0FB5C8/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5E0FBBBD/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5E0FC3A2/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5E0FCFDC/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5E0FDCCC/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5E10174B/5E24C0CF" Ref="R?"  Part="1" 
+AR Path="/5DE4D361/5E24C0CF" Ref="R99"  Part="1" 
+F 0 "R99" V 3243 2700 50  0000 C CNN
 F 1 "2m_1%_4W" V 3334 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric" V 3380 2700 50  0001 C CNN
 F 3 "~" H 3450 2700 50  0001 C CNN
