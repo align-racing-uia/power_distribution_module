@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L AR20_PDM_v1-rescue:R-Device R5
+L AR20_PDM_v1-rescue:R-Device R6
 U 1 1 5E21B807
 P 3300 2400
-AR Path="/5DA89415/5E21B807" Ref="R5"  Part="1" 
+AR Path="/5DA89415/5E21B807" Ref="R6"  Part="1" 
 AR Path="/5DEB10A1/5E21B807" Ref="R?"  Part="1" 
 AR Path="/5DEB20EA/5E21B807" Ref="R?"  Part="1" 
 AR Path="/5E0E4725/5E21B807" Ref="R?"  Part="1" 
@@ -33,7 +33,7 @@ AR Path="/5E0FC3A2/5E21B807" Ref="R?"  Part="1"
 AR Path="/5E0FCFDC/5E21B807" Ref="R?"  Part="1" 
 AR Path="/5E0FDCCC/5E21B807" Ref="R?"  Part="1" 
 AR Path="/5E10174B/5E21B807" Ref="R?"  Part="1" 
-F 0 "R5" V 3093 2400 50  0000 C CNN
+F 0 "R6" V 3093 2400 50  0000 C CNN
 F 1 "4k7" V 3184 2400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3230 2400 50  0001 C CNN
 F 3 "~" H 3300 2400 50  0001 C CNN
@@ -93,10 +93,10 @@ F 3 "~" H 3500 1950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AR20_PDM_v1-rescue:R-Device R4
+L AR20_PDM_v1-rescue:R-Device R5
 U 1 1 5E21B81B
 P 2250 1850
-AR Path="/5DA89415/5E21B81B" Ref="R4"  Part="1" 
+AR Path="/5DA89415/5E21B81B" Ref="R5"  Part="1" 
 AR Path="/5DEB10A1/5E21B81B" Ref="R?"  Part="1" 
 AR Path="/5DEB20EA/5E21B81B" Ref="R?"  Part="1" 
 AR Path="/5E0E4725/5E21B81B" Ref="R?"  Part="1" 
@@ -111,7 +111,7 @@ AR Path="/5E0FC3A2/5E21B81B" Ref="R?"  Part="1"
 AR Path="/5E0FCFDC/5E21B81B" Ref="R?"  Part="1" 
 AR Path="/5E0FDCCC/5E21B81B" Ref="R?"  Part="1" 
 AR Path="/5E10174B/5E21B81B" Ref="R?"  Part="1" 
-F 0 "R4" H 2320 1896 50  0000 L CNN
+F 0 "R5" H 2320 1896 50  0000 L CNN
 F 1 "4k7" H 2320 1805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 1850 50  0001 C CNN
 F 3 "~" H 2250 1850 50  0001 C CNN
@@ -546,32 +546,6 @@ Wire Wire Line
 Connection ~ 4800 2550
 Wire Wire Line
 	6000 4100 8750 4100
-$Comp
-L AR20_PDM_v1-rescue:R-Device R6
-U 1 1 5E21B875
-P 3700 3450
-AR Path="/5DA89415/5E21B875" Ref="R6"  Part="1" 
-AR Path="/5DEB10A1/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5DEB20EA/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0E4725/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0E4A93/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0E5304/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0E594B/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0E607C/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0FC3A2/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0FCFDC/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E10174B/5E21B875" Ref="R?"  Part="1" 
-F 0 "R6" H 3770 3496 50  0000 L CNN
-F 1 "4k7" H 3770 3405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 3450 50  0001 C CNN
-F 3 "~" H 3700 3450 50  0001 C CNN
-	1    3700 3450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6325 4400 8750 4400
 Wire Wire Line
@@ -639,8 +613,6 @@ P1_Shunt
 Connection ~ 6000 2950
 Wire Wire Line
 	6000 2950 6325 2950
-Wire Wire Line
-	3700 2550 3700 3300
 Connection ~ 4775 1600
 Wire Wire Line
 	4775 1600 5200 1600
@@ -651,4 +623,6 @@ Wire Wire Line
 Wire Wire Line
 	4775 1600 4775 2300
 NoConn ~ 4700 2200
+Wire Wire Line
+	3700 2550 3700 3600
 $EndSCHEMATC

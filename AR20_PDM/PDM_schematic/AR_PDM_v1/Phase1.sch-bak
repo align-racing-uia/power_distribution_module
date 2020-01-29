@@ -546,32 +546,6 @@ Wire Wire Line
 Connection ~ 4800 2550
 Wire Wire Line
 	6000 4100 8750 4100
-$Comp
-L AR20_PDM_v1-rescue:R-Device R6
-U 1 1 5E21B875
-P 3700 3450
-AR Path="/5DA89415/5E21B875" Ref="R6"  Part="1" 
-AR Path="/5DEB10A1/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5DEB20EA/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0E4725/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0E4A93/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0E5304/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0E594B/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0E607C/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0FC3A2/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0FCFDC/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B875" Ref="R?"  Part="1" 
-AR Path="/5E10174B/5E21B875" Ref="R?"  Part="1" 
-F 0 "R6" H 3770 3496 50  0000 L CNN
-F 1 "4k7" H 3770 3405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 3450 50  0001 C CNN
-F 3 "~" H 3700 3450 50  0001 C CNN
-	1    3700 3450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6325 4400 8750 4400
 Wire Wire Line
@@ -639,8 +613,6 @@ P1_Shunt
 Connection ~ 6000 2950
 Wire Wire Line
 	6000 2950 6325 2950
-Wire Wire Line
-	3700 2550 3700 3300
 Connection ~ 4775 1600
 Wire Wire Line
 	4775 1600 5200 1600
@@ -651,4 +623,6 @@ Wire Wire Line
 Wire Wire Line
 	4775 1600 4775 2300
 NoConn ~ 4700 2200
+Wire Wire Line
+	3700 2550 3700 3600
 $EndSCHEMATC
