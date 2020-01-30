@@ -1546,9 +1546,9 @@ FP_Alert
 Text GLabel 8225 4125 0    50   Input ~ 0
 COIL_INJECTOR_Alert
 NoConn ~ 13625 1725
-Text GLabel 15175 1425 2    50   Input ~ 0
-Switch
 Text GLabel 15175 1725 2    50   Input ~ 0
+Switch
+Text GLabel 15175 1425 2    50   Input ~ 0
 P1_EN_ACM
 Text GLabel 2925 7075 0    50   Input ~ 0
 V+12V
@@ -1608,7 +1608,7 @@ U 1 1 5E2F07B8
 P 1800 7525
 F 0 "J1" V 1672 7605 50  0000 L CNN
 F 1 "S_T_?" V 1763 7605 50  0000 L CNN
-F 2 "AR_PDM_v1:Wurth 74655095R Screw Post" H 1800 7525 50  0001 C CNN
+F 2 "AR_PDM_v1:Wurth_74655095R_Screw_Post" H 1800 7525 50  0001 C CNN
 F 3 "~" H 1800 7525 50  0001 C CNN
 	1    1800 7525
 	0    1    1    0   

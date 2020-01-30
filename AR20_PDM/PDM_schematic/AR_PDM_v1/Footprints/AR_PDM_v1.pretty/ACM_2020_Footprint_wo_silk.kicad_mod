@@ -1,4 +1,4 @@
-(module ACM_2020_Footprint_wo_silk (layer F.Cu) (tedit 5E306A80)
+(module ACM_2020_Footprint_wo_silk (layer F.Cu) (tedit 5E323B5E)
   (descr IL-WX-10SB-VF-BE)
   (tags Connector)
   (fp_text reference U1 (at -0.127 0 180) (layer Eco1.User)
@@ -56,9 +56,14 @@
   (pad "" np_thru_hole circle (at -6.5 1.3) (size 0.7 0.7) (drill 0.7) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 6.5 -1.3) (size 0.7 0.7) (drill 0.7) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at -8.422 19.912) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
-  (model "${KIPRJMOD}/3D-Components/JAE IL-WX Series 30-pin.STEP"
-    (offset (xyz -0.17 0 0))
+  (model ${KIPRJMOD}/3d_objects/ACM-connector-pcb.step
+    (offset (xyz -5.75 -0.75 1.25))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))
+  )
+  (model ${KIPRJMOD}/3d_objects/ACM-pcb.wrl
+    (offset (xyz -75.7 70.2 5.35))
+    (scale (xyz 0.4 0.4 0.4))
+    (rotate (xyz 0 0 0))
   )
 )

@@ -1,4 +1,4 @@
-(module TE_1-776163-1 (layer F.Cu) (tedit 5E244B5A)
+(module TE_1-776163-1 (layer F.Cu) (tedit 5E31FA5B)
   (fp_text reference REF** (at 0 17.78) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -59,4 +59,9 @@
   (pad 35 thru_hole circle (at 42 4) (size 2.9 2.9) (drill 1.8) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at -8.5 0.5) (size 2.85 2.85) (drill 2.85) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 48.5 0.5) (size 2.85 2.85) (drill 2.85) (layers *.Cu *.Mask))
+  (model ${KIPRJMOD}/3d_objects/c-1-776163-1-s-3d.STEP
+    (offset (xyz 20 -31.75 11.5))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )

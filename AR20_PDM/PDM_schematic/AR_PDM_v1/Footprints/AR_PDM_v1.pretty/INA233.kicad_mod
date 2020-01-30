@@ -1,4 +1,4 @@
-(module INA233 (layer F.Cu) (tedit 5DC14CFD)
+(module INA233 (layer F.Cu) (tedit 5E31F676)
   (fp_text reference REF** (at 0.254 -1.524) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -20,4 +20,9 @@
   (pad 8 smd roundrect (at 2.2 1 270) (size 0.3 1.45) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.167))
   (pad 7 smd roundrect (at 2.2 1.5 270) (size 0.3 1.45) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.167))
   (pad 6 smd roundrect (at 2.2 2 270) (size 0.3 1.45) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.167))
+  (model ${KISYS3DMOD}/Package_SO.3dshapes/VSSOP-10_3x3mm_P0.5mm.wrl
+    (offset (xyz 0 -1 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
