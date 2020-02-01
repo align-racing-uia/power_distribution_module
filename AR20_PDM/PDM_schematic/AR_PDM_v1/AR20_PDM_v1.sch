@@ -1257,8 +1257,6 @@ Wire Notes Line
 	5925 7650 5925 6750
 Text GLabel 8775 7875 1    50   Input ~ 0
 SHUTDOWN_OUT
-Text Notes 13850 7050 0    50   Italic 10
-15 pinns
 Text Notes 13750 4325 0    50   ~ 0
 I2C Pullup
 Wire Wire Line
@@ -1341,8 +1339,6 @@ Text GLabel 2225 4475 2    50   Input ~ 0
 P6_GearA_open_drain_output
 Wire Wire Line
 	2125 4475 2225 4475
-Text Notes 12075 3525 0    50   ~ 0
-Remember shutdown circuit via ACM !!!!!!!!!!!!!!!!!!
 Text GLabel 10100 1275 2    50   Input ~ 0
 ACM_Shutdown_Circuit
 Wire Wire Line

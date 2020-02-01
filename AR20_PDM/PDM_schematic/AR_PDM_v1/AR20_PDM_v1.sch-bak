@@ -1161,7 +1161,7 @@ U 1 1 5E21274B
 P 14375 3125
 F 0 "U1" H 14400 5690 50  0000 C CNN
 F 1 "ACM_2020" H 14400 5599 50  0000 C CNN
-F 2 "AR_PDM_v1:ACM_2020_Footprint" H 14375 3125 50  0001 C CNN
+F 2 "AR_PDM_v1:ACM_2020_Footprint_wo_silk" H 14375 3125 50  0001 C CNN
 F 3 "" H 14375 3125 50  0001 C CNN
 	1    14375 3125
 	1    0    0    -1  
@@ -1341,8 +1341,6 @@ Text GLabel 2225 4475 2    50   Input ~ 0
 P6_GearA_open_drain_output
 Wire Wire Line
 	2125 4475 2225 4475
-Text Notes 12075 3525 0    50   ~ 0
-Remember shutdown circuit via ACM !!!!!!!!!!!!!!!!!!
 Text GLabel 10100 1275 2    50   Input ~ 0
 ACM_Shutdown_Circuit
 Wire Wire Line
