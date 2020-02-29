@@ -1,3 +1,5 @@
+Miscellaneous thoughts, up for consideration:
+
 - Remove all Ground loop
 - Relly neccesary with two shutdown active leds, one for inn and one after ACM-Shutdown mosfet?
 Have one "digital" shutdown led insted, controlled by acm.
@@ -8,13 +10,14 @@ Have one "digital" shutdown led insted, controlled by acm.
 - Enn innput som forteller pdm at bilen starter, dermed kan pdm skru av det meste av strømmen til pumper og etc. Kan dette gjøre via canbuss?
 
 
+Observed behaviour, up for consideration:
 
-Improvements:
 - Led for blown fuse gets power from fuse directly. Will not detect blown trace. Move pickup point to connector.
 - Silkskreen for differating leds, and fuses.
 
 
-Major Errors: 
+Major Errors, Needs fixing: 
 
 - Relay footprint, NC and NO pads Switched.
 - 3.9R resistor, to big comparet to footprint
+- Pads on, the dip Switch footprint slightly to short
