@@ -36,6 +36,7 @@ private:
   INA233_Data_Packadge repackWord(uint16_t word);
 
 public:
+  INA233_S() = delete;
   INA233_S(uint8_t address, uint16_t m_value, uint16_t cal_value);
   void initialise();
   void setADC_Settings(uint16_t ADC_Settings);
