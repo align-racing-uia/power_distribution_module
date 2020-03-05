@@ -1,3 +1,6 @@
+ERRORS FOUND IN VERSION ALPHA :
+
+
 Miscellaneous thoughts, up for consideration:
 
 - Remove all Ground loop
@@ -21,3 +24,9 @@ Major Errors, Needs fixing:
 - Relay footprint, NC and NO pads Switched.
 - 3.9R resistor, to big comparet to footprint
 - Pads on, the dip Switch footprint slightly to short
+- N-mosfets Flipped Gate and Source
+- Enhancment P-Fet is used instead of Depletion. 
+- Reversed + and -  of the INA 233 sense pins. Negative ofset
+- Vbus of the INA 233 on the positive, should be on the negative
+
+- INA233 fried somehow, when shorting the circuit, might be because of the reversed + and - of the INA 233

@@ -23,7 +23,7 @@ bool TI_TCA6424A_S::setPin (uint8_t pin, bool state)
     Wire.beginTransmission(address_);
     Wire.write(0x84);
     //Wire.write(0b00000000);
-    Wire.write(0b11111111);
+    Wire.write(0b11011111);
     Wire.endTransmission();
     
 }

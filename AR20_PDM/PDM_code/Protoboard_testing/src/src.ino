@@ -6,6 +6,7 @@ INA233_S Sensor1(adrSensor6, m_valueSensor1, cal_valueSensor1);
 TI_TCA6424A_S expander (adrExpander);
 
 void setup() {
+  
   Wire.begin();
   Wire.setClock(100000);
   Serial.begin(9600);  
@@ -21,8 +22,11 @@ void setup() {
 
 
 void loop() {
-  Serial.println("looping");
-  float voltage_s;
+  //Serial.println("looping");
+
+
+
+   float voltage_s;
   float voltage_l;
   float current;
   voltage_s = Sensor1.getVoltage_S();
@@ -37,6 +41,9 @@ void loop() {
   Serial.print("Current: ");
   Serial.println(current, 5);
 
-  Sensor1.getAlarm();
+  Sensor1.getAlarm(); 
+
+
+
   delay(700);
 }

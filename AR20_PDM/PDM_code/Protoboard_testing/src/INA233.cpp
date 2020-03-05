@@ -94,7 +94,7 @@ float INA233_S::getCurrent()
 {
     INA233_Data_Packadge data = receiveData_(0x89, 2);
     uint16_t dataWord = unpackWord(&data);
-    return (static_cast<float>(dataWord) * 1 / m_value_);
+    return (static_cast<float>(dataWord) * (1.0 / m_value_));
 }
 
 void INA233_S::getAlarm()
