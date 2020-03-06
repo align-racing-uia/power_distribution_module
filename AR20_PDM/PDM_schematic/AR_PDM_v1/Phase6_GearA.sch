@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 13
+Sheet 5 14
 Title ""
 Date ""
 Rev ""
@@ -60,7 +60,7 @@ AR Path="/5E0FCFDC/5DAAC1D1" Ref="C?"  Part="1"
 AR Path="/5E0FDCCC/5DAAC1D1" Ref="C23"  Part="1" 
 AR Path="/5E10174B/5DAAC1D1" Ref="C?"  Part="1" 
 F 0 "C23" H 4915 2896 50  0000 L CNN
-F 1 "10nf" H 4915 2805 50  0000 L CNN
+F 1 "10nf 50Volt" H 4915 2805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4838 2700 50  0001 C CNN
 F 3 "~" H 4800 2850 50  0001 C CNN
 	1    4800 2850
@@ -91,32 +91,6 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 3538 1800 50  0001 C CNN
 F 3 "~" H 3500 1950 50  0001 C CNN
 	1    3500 1950
 	-1   0    0    1   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5DAAC1E9
-P 2250 1850
-AR Path="/5DA89415/5DAAC1E9" Ref="R?"  Part="1" 
-AR Path="/5DEB10A1/5DAAC1E9" Ref="R?"  Part="1" 
-AR Path="/5DEB20EA/5DAAC1E9" Ref="R?"  Part="1" 
-AR Path="/5E0E4725/5DAAC1E9" Ref="R?"  Part="1" 
-AR Path="/5E0E4A93/5DAAC1E9" Ref="R?"  Part="1" 
-AR Path="/5E0E4EB5/5DAAC1E9" Ref="R?"  Part="1" 
-AR Path="/5E0E5304/5DAAC1E9" Ref="R?"  Part="1" 
-AR Path="/5E0E594B/5DAAC1E9" Ref="R?"  Part="1" 
-AR Path="/5E0E607C/5DAAC1E9" Ref="R?"  Part="1" 
-AR Path="/5E0FB5C8/5DAAC1E9" Ref="R?"  Part="1" 
-AR Path="/5E0FBBBD/5DAAC1E9" Ref="R?"  Part="1" 
-AR Path="/5E0FC3A2/5DAAC1E9" Ref="R?"  Part="1" 
-AR Path="/5E0FCFDC/5DAAC1E9" Ref="R?"  Part="1" 
-AR Path="/5E0FDCCC/5DAAC1E9" Ref="R18"  Part="1" 
-AR Path="/5E10174B/5DAAC1E9" Ref="R?"  Part="1" 
-F 0 "R18" H 2320 1896 50  0000 L CNN
-F 1 "4k7" H 2320 1805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 1850 50  0001 C CNN
-F 3 "~" H 2250 1850 50  0001 C CNN
-	1    2250 1850
-	1    0    0    -1  
 $EndComp
 $Comp
 L AR20_PDM_v1-rescue:C-Device C?
@@ -368,12 +342,8 @@ Text Notes 4900 3000 0    50   ~ 10
 Close to PIN
 Text Notes 8200 3050 0    50   ~ 10
 Close to PIN
-Text HLabel 2250 1550 1    50   Input ~ 10
-vcc_5v
 Wire Wire Line
 	9700 4100 10350 4100
-Wire Wire Line
-	2250 1550 2250 1700
 $Comp
 L AR20_PDM_v1-rescue:C-Device C?
 U 1 1 5E21B856
@@ -503,7 +473,7 @@ AR Path="/5E0FDCCC/5E21B86D" Ref="R20"  Part="1"
 AR Path="/5E10174B/5E21B86D" Ref="R?"  Part="1" 
 F 0 "R20" V 5593 1750 50  0000 C CNN
 F 1 "3.9R" V 5684 1750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5730 1750 50  0001 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" V 5730 1750 50  0001 C CNN
 F 3 "~" H 5800 1750 50  0001 C CNN
 	1    5800 1750
 	1    0    0    -1  
@@ -519,9 +489,6 @@ Text HLabel 1350 1900 1    50   Input ~ 10
 P6_MOS_IN
 Wire Wire Line
 	9700 4350 10350 4350
-Connection ~ 2250 2400
-Wire Wire Line
-	2250 2000 2250 2400
 Wire Wire Line
 	1350 1900 1350 2400
 Wire Wire Line
@@ -533,16 +500,8 @@ Wire Wire Line
 Wire Wire Line
 	5575 2550 5575 2950
 Connection ~ 4800 2550
-Wire Wire Line
-	6000 4100 8750 4100
-Wire Wire Line
-	6325 4400 8750 4400
-Wire Wire Line
-	6625 4300 8750 4300
 Text HLabel 3700 3850 3    50   Output ~ 0
 P6_MOS_SENSE
-Wire Wire Line
-	6000 4100 6000 2950
 Wire Wire Line
 	5575 2950 6000 2950
 Text HLabel 6950 2950 2    50   Output ~ 10
@@ -550,13 +509,7 @@ P6_OUT
 Text HLabel 4650 1600 0    50   Input ~ 10
 V+12V
 Wire Wire Line
-	2250 2400 3150 2400
-Wire Wire Line
-	6625 2950 6625 4300
-Wire Wire Line
-	6325 2950 6325 4400
-Wire Wire Line
-	6000 2950 6325 2950
+	6000 2950 6150 2950
 $Comp
 L AR20_PDM_v1-rescue:R-Device R?
 U 1 1 5E1DA63E
@@ -584,9 +537,7 @@ F 3 "~" H 6475 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6625 2950 6950 2950
-Connection ~ 6325 2950
-Connection ~ 6625 2950
+	6625 2950 6725 2950
 Text Notes 10125 4775 0    50   ~ 0
 addr: 1000101
 Wire Wire Line
@@ -611,7 +562,6 @@ Wire Wire Line
 	1700 3075 1700 3175
 Wire Wire Line
 	1400 3175 1700 3175
-Connection ~ 1400 2875
 Wire Wire Line
 	1400 2875 1350 2875
 $Comp
@@ -627,20 +577,6 @@ F 1 "4K7" V 1284 3025 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1330 3025 50  0001 C CNN
 F 3 "~" H 1400 3025 50  0001 C CNN
 	1    1400 3025
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:Q_NJFET_DGS Q?
-U 1 1 5E25DA2E
-P 1600 2875
-AR Path="/5DA8920B/5E25DA2E" Ref="Q?"  Part="1" 
-AR Path="/5E2546F2/5E25DA2E" Ref="Q?"  Part="1" 
-AR Path="/5E0FDCCC/5E25DA2E" Ref="Q4"  Part="1" 
-F 0 "Q4" H 1791 2829 50  0000 L CNN
-F 1 "N_FET" H 1791 2920 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1800 2975 50  0001 C CNN
-F 3 "~" H 1600 2875 50  0001 C CNN
-	1    1600 2875
 	1    0    0    1   
 $EndComp
 Wire Wire Line
@@ -673,8 +609,6 @@ F 3 "" H 1700 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 2400 2250 2400
-Wire Wire Line
 	1350 2400 1350 2875
 Connection ~ 1350 2400
 Wire Wire Line
@@ -694,4 +628,39 @@ Wire Wire Line
 	4775 1600 5200 1600
 Wire Wire Line
 	3700 2550 3700 3850
+Wire Wire Line
+	1350 2400 3150 2400
+Wire Wire Line
+	8750 4300 6150 4300
+Wire Wire Line
+	6150 4300 6150 2950
+Wire Wire Line
+	8750 4400 8425 4400
+Wire Wire Line
+	6725 4400 6725 2950
+Wire Wire Line
+	8750 4100 8425 4100
+Wire Wire Line
+	8425 4100 8425 4400
+Connection ~ 8425 4400
+Wire Wire Line
+	8425 4400 6725 4400
+Connection ~ 6150 2950
+Wire Wire Line
+	6150 2950 6325 2950
+Connection ~ 6725 2950
+Wire Wire Line
+	6725 2950 6950 2950
+$Comp
+L AR20_PDM_v1-rescue:N-MOS-DMN6140L-13 U10
+U 1 1 5E66F806
+P 1600 2675
+F 0 "U10" H 1806 2521 50  0000 L CNN
+F 1 "N-MOS" H 1806 2430 50  0000 L CNN
+F 2 "AR_PDM_v1:N-MOS-DMN6140L-13" H 1700 3125 50  0001 C CNN
+F 3 "" H 1700 3125 50  0001 C CNN
+	1    1600 2675
+	1    0    0    -1  
+$EndComp
+Connection ~ 1400 2875
 $EndSCHEMATC

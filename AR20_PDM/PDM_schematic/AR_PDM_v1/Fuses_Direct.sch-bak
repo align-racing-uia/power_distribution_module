@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 13
+Sheet 12 14
 Title ""
 Date ""
 Rev ""
@@ -191,8 +191,6 @@ V+12V
 Text Notes 2950 3300 0    50   ~ 0
 Place shunt close to INA233\n
 Wire Wire Line
-	2300 3000 3200 3000
-Wire Wire Line
 	5950 2650 5950 2950
 Wire Wire Line
 	5950 3250 5950 3000
@@ -208,13 +206,6 @@ Wire Wire Line
 	5950 3000 5950 2950
 Wire Wire Line
 	4650 5350 3300 5350
-Wire Wire Line
-	3600 5450 4650 5450
-Wire Wire Line
-	3200 5150 3200 3000
-Wire Wire Line
-	3200 5150 4650 5150
-Connection ~ 3200 3000
 Text HLabel 8950 3550 2    50   Output ~ 0
 SHUTDOWN_OUT
 Text HLabel 8950 2650 2    50   Output ~ 0
@@ -253,8 +244,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 3000 5950 3000
 Connection ~ 3600 3000
-Wire Wire Line
-	3200 3000 3300 3000
 Wire Wire Line
 	3300 3000 3300 5350
 Connection ~ 3300 3000
@@ -297,4 +286,15 @@ Wire Wire Line
 	3300 3000 3300 2700
 Wire Wire Line
 	3600 3000 3600 2700
+Wire Wire Line
+	2300 3000 3300 3000
+Wire Wire Line
+	4650 5150 4400 5150
+Wire Wire Line
+	4400 5150 4400 5450
+Wire Wire Line
+	3600 5450 4400 5450
+Connection ~ 4400 5450
+Wire Wire Line
+	4400 5450 4650 5450
 $EndSCHEMATC

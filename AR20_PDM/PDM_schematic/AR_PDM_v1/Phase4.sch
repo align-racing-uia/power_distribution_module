@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 13
+Sheet 7 14
 Title ""
 Date ""
 Rev ""
@@ -60,7 +60,7 @@ AR Path="/5E0FCFDC/5E21B811" Ref="C?"  Part="1"
 AR Path="/5E0FDCCC/5E21B811" Ref="C?"  Part="1" 
 AR Path="/5E10174B/5E21B811" Ref="C?"  Part="1" 
 F 0 "C33" H 4915 2896 50  0000 L CNN
-F 1 "10nf" H 4915 2805 50  0000 L CNN
+F 1 "10nf 50Volt" H 4915 2805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4838 2700 50  0001 C CNN
 F 3 "~" H 4800 2850 50  0001 C CNN
 	1    4800 2850
@@ -91,32 +91,6 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 3538 1800 50  0001 C CNN
 F 3 "~" H 3500 1950 50  0001 C CNN
 	1    3500 1950
 	-1   0    0    1   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5E21B81C
-P 2250 1850
-AR Path="/5DA89415/5E21B81C" Ref="R?"  Part="1" 
-AR Path="/5DEB10A1/5E21B81C" Ref="R?"  Part="1" 
-AR Path="/5DEB20EA/5E21B81C" Ref="R?"  Part="1" 
-AR Path="/5E0E4725/5E21B81C" Ref="R?"  Part="1" 
-AR Path="/5E0E4A93/5E21B81C" Ref="R?"  Part="1" 
-AR Path="/5E0E4EB5/5E21B81C" Ref="R?"  Part="1" 
-AR Path="/5E0E5304/5E21B81C" Ref="R?"  Part="1" 
-AR Path="/5E0E594B/5E21B81C" Ref="R?"  Part="1" 
-AR Path="/5E0E607C/5E21B81C" Ref="R?"  Part="1" 
-AR Path="/5E0FB5C8/5E21B81C" Ref="R?"  Part="1" 
-AR Path="/5E0FBBBD/5E21B81C" Ref="R?"  Part="1" 
-AR Path="/5E0FC3A2/5E21B81C" Ref="R26"  Part="1" 
-AR Path="/5E0FCFDC/5E21B81C" Ref="R?"  Part="1" 
-AR Path="/5E0FDCCC/5E21B81C" Ref="R?"  Part="1" 
-AR Path="/5E10174B/5E21B81C" Ref="R?"  Part="1" 
-F 0 "R26" H 2320 1896 50  0000 L CNN
-F 1 "4k7" H 2320 1805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2180 1850 50  0001 C CNN
-F 3 "~" H 2250 1850 50  0001 C CNN
-	1    2250 1850
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4700 2550 4800 2550
@@ -344,12 +318,8 @@ Text Notes 4900 3000 0    50   ~ 10
 Close to PIN
 Text Notes 8200 3050 0    50   ~ 10
 Close to PIN
-Text HLabel 2250 1550 1    50   Input ~ 10
-vcc_5v
 Wire Wire Line
 	9700 4100 10350 4100
-Wire Wire Line
-	2250 1550 2250 1700
 $Comp
 L AR20_PDM_v1-rescue:C-Device C?
 U 1 1 5E21B858
@@ -479,7 +449,7 @@ AR Path="/5E0FDCCC/5E21B86F" Ref="R?"  Part="1"
 AR Path="/5E10174B/5E21B86F" Ref="R?"  Part="1" 
 F 0 "R28" V 5593 1750 50  0000 C CNN
 F 1 "3.9R" V 5684 1750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5730 1750 50  0001 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" V 5730 1750 50  0001 C CNN
 F 3 "~" H 5800 1750 50  0001 C CNN
 	1    5800 1750
 	1    0    0    -1  
@@ -495,13 +465,8 @@ Text HLabel 1350 1900 1    50   Input ~ 10
 P4_MOS_IN
 Wire Wire Line
 	9700 4350 10350 4350
-Connection ~ 2250 2400
-Wire Wire Line
-	2250 2000 2250 2400
 Wire Wire Line
 	1350 1900 1350 2400
-Wire Wire Line
-	1350 2400 2250 2400
 Wire Wire Line
 	9200 4950 9200 5150
 Wire Wire Line
@@ -518,24 +483,14 @@ Wire Wire Line
 Wire Wire Line
 	5575 2550 5575 2950
 Connection ~ 4800 2550
-Wire Wire Line
-	6000 4100 8750 4100
-Wire Wire Line
-	6325 4400 8750 4400
-Wire Wire Line
-	6625 4300 8750 4300
 Text HLabel 3700 3850 3    50   Output ~ 0
 P4_MOS_SENSE
-Wire Wire Line
-	6000 4100 6000 2950
 Wire Wire Line
 	5575 2950 6000 2950
 Text HLabel 6950 2950 2    50   Output ~ 10
 P4_OUT
 Text HLabel 4650 1600 0    50   Input ~ 10
 V+12V
-Wire Wire Line
-	2250 2400 3150 2400
 $Comp
 L AR20_PDM_v1-rescue:C-Device C?
 U 1 1 5E21B827
@@ -563,11 +518,7 @@ F 3 "~" H 8500 3350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6625 2950 6625 4300
-Wire Wire Line
-	6325 2950 6325 4400
-Wire Wire Line
-	6000 2950 6325 2950
+	6000 2950 6150 2950
 $Comp
 L AR20_PDM_v1-rescue:R-Device R?
 U 1 1 5E1D0387
@@ -595,9 +546,7 @@ F 3 "~" H 6475 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6625 2950 6950 2950
-Connection ~ 6325 2950
-Connection ~ 6625 2950
+	6625 2950 6725 2950
 Text Notes 10050 4800 0    50   ~ 0
 addr: 1000011
 Text HLabel 10000 4950 3    50   Input ~ 10
@@ -624,4 +573,27 @@ Wire Wire Line
 	4775 1600 5200 1600
 Wire Wire Line
 	3700 2550 3700 3850
+Wire Wire Line
+	1350 2400 3150 2400
+Wire Wire Line
+	8750 4300 6150 4300
+Wire Wire Line
+	6150 4300 6150 2950
+Wire Wire Line
+	8750 4400 8425 4400
+Wire Wire Line
+	6725 4400 6725 2950
+Wire Wire Line
+	8750 4100 8425 4100
+Wire Wire Line
+	8425 4100 8425 4400
+Connection ~ 8425 4400
+Wire Wire Line
+	8425 4400 6725 4400
+Connection ~ 6725 2950
+Wire Wire Line
+	6725 2950 6950 2950
+Connection ~ 6150 2950
+Wire Wire Line
+	6150 2950 6325 2950
 $EndSCHEMATC

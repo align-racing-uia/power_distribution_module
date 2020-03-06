@@ -18,4 +18,9 @@ K Single Pole Reed Relay SPDT
 F https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf
 $ENDCMP
 #
+$CMP TMUX1208PWR
+D 1-Ch, 8:1 general-purpose analog multiplexer with 1.8-V logic control
+F http://www.ti.com/lit/gpn/tmux1208
+$ENDCMP
+#
 #End Doc Library

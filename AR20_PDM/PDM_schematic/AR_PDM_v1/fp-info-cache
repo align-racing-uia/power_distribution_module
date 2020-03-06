@@ -1,4 +1,4 @@
-16332695338394867
+16339031783223631
 AR_PDM_v1
 ACM_2020_Footprint_wo_silk
 IL-WX-10SB-VF-BE
@@ -28,8 +28,15 @@ capacitor electrolytic
 2
 2
 AR_PDM_v1
-DIPSwitch
-
+Diode-BZX585-C15,115
+http://www.diodes.com/datasheets/ap02001.pdf p.144
+Diode SOD523
+0
+2
+2
+AR_PDM_v1
+Dip-Switch-14
+EDS07SGNNTR04Q 
 
 0
 14
@@ -62,6 +69,20 @@ mounting hole 3.2mm no annular m3
 0
 0
 0
+AR_PDM_v1
+N-MOS-DMN6140L-13
+SOT-23, Standard
+SOT-23
+0
+3
+3
+AR_PDM_v1
+P-MOS-BSS83PH6327XTSA1
+SOT-23, Standard
+SOT-23
+0
+3
+3
 AR_PDM_v1
 QFN50P500X500X60-33N
 
@@ -111,6 +132,13 @@ TE_1-776163-1
 0
 35
 35
+AR_PDM_v1
+TMUX1208PWR
+TMUX1208PWR-1
+Integrated Circuit
+0
+16
+16
 AR_PDM_v1
 Testconnector
 

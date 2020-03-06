@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 13
+Sheet 10 14
 Title ""
 Date ""
 Rev ""
@@ -14,22 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5075 3450 0    50   Input ~ 0
-FUEL_PUMP_Fault
-Text HLabel 5075 3550 0    50   Output ~ 0
-P1_MOS_SENSE_Select
-Text HLabel 5075 3650 0    50   Output ~ 0
-P2_MOS_SENSE_Select
-Text HLabel 5075 3750 0    50   Output ~ 0
-P3_MOS_SENSE_Select
-Text HLabel 5075 3850 0    50   Output ~ 0
-P4_MOS_SENSE_Select
-Text HLabel 5075 3950 0    50   Output ~ 0
-P5_MOS_SENSE_Select
-Text HLabel 5075 4050 0    50   Output ~ 0
-P6_MOS_SENSE_Select
-Text HLabel 5075 4150 0    50   Output ~ 0
-P7_MOS_SENSE_Select
 Text HLabel 6475 3650 2    50   Input ~ 0
 SLC
 Text HLabel 6475 3750 2    50   Input ~ 0
@@ -144,8 +128,6 @@ F 3 "" H 5075 4950 50  0001 C CNN
 	1    5075 4950
 	0    1    1    0   
 $EndComp
-Text HLabel 5075 3350 0    50   Input ~ 0
-COIL_INJECTOR_Fault
 Text HLabel 5075 3250 0    50   Input ~ 0
 P7_Fault
 Text HLabel 5075 3150 0    50   Input ~ 0
@@ -160,10 +142,6 @@ Text HLabel 5075 2650 0    50   Input ~ 0
 P1_Fault
 Text HLabel 5075 2750 0    50   Input ~ 0
 P2_Fault
-Text HLabel 6475 2650 2    50   Input ~ 0
-FP_Alert
-Text HLabel 6475 2750 2    50   Input ~ 0
-COIL_INJECTOR_Alert
 NoConn ~ 5075 4850
 Wire Wire Line
 	4250 4350 4475 4350
@@ -253,9 +231,11 @@ F 3 "" H 5075 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TCA6424ARGJR:TCA6424ARGJR U9
+L AR20_PDM_v1-rescue:TCA6424ARGJR U9
 U 1 1 5E280A9C
 P 5775 3650
+AR Path="/5E280A9C" Ref="U9"  Part="1" 
+AR Path="/5E1AEC18/5E280A9C" Ref="U9"  Part="1" 
 F 0 "U9" H 5775 5020 50  0000 C CNN
 F 1 "TCA6424ARGJR" H 5775 4929 50  0000 C CNN
 F 2 "AR_PDM_v1:QFN50P500X500X60-33N" H 5775 3650 50  0001 L BNN
@@ -274,4 +254,21 @@ NoConn ~ 6475 3050
 NoConn ~ 6475 3250
 NoConn ~ 6475 3150
 NoConn ~ 6475 3350
+Text HLabel 5075 3750 0    50   Input ~ 0
+Mux_select_A0
+Text HLabel 5075 3650 0    50   Input ~ 0
+Mux_select_A1
+Text HLabel 5075 3550 0    50   Input ~ 0
+Mux_select_A2
+Text HLabel 5075 3850 0    50   Input ~ 0
+Mux_enable
+NoConn ~ 5075 3950
+NoConn ~ 5075 4050
+NoConn ~ 5075 4150
+Text HLabel 5075 3350 0    50   Input ~ 0
+COIL_INJECTOR_Fault
+Text HLabel 5075 3450 0    50   Input ~ 0
+FUEL_PUMP_Fault
+NoConn ~ 6475 2750
+NoConn ~ 6475 2650
 $EndSCHEMATC

@@ -2,31 +2,39 @@ ERRORS FOUND IN VERSION ALPHA :
 
 
 Miscellaneous thoughts, up for consideration:
-
-- Remove all Ground loop
+				
+- Remove all Ground loop										: YEASSS!
 - Relly neccesary with two shutdown active leds, one for inn and one after ACM-Shutdown mosfet?
-Have one "digital" shutdown led insted, controlled by acm.
-- Termination resistor ? 
-- A ACM, shutdown bypass jumper/solder jumper/dip switch.
-- Try to separate, i2c and canbuss more from the rest ?
-- Flere knapper ? Til å gjøre forskjellige ting, som for eks, max kjøling.
-- Enn innput som forteller pdm at bilen starter, dermed kan pdm skru av det meste av strømmen til pumper og etc. Kan dette gjøre via canbuss?
+Have one "digital" shutdown led insted, controlled by acm.						: Maybee ??
+					
+- Termination resistor ? 										: Maybee ??
+- A ACM, shutdown bypass jumper/solder jumper/dip switch.						: No need, can jump over the mosfet if really neccesary.
+- Try to separate, i2c and canbuss more from the rest ?							: Work well, no need.
+- Flere knapper ? Til å gjøre forskjellige ting, som for eks, max kjøling.				: Enough complications at this point. Improvement AR 2021.
+
+- Enn innput som forteller pdm at bilen starter,						
+  dermed kan pdm skru av det meste av strømmen til pumper og etc. Kan dette gjøre via canbuss?		: Fixed via cannbuss
 
 
 Observed behaviour, up for consideration:
 
-- Led for blown fuse gets power from fuse directly. Will not detect blown trace. Move pickup point to connector.
-- Silkskreen for differating leds, and fuses.
+- Led for blown fuse gets power from fuse directly. Will not detect blown trace. Move pickup point to connector.	: TBA			
+- Silkskreen for differating leds, and fuses.										: 
 
 
 Major Errors, Needs fixing: 
 
-- Relay footprint, NC and NO pads Switched.
-- 3.9R resistor, to big comparet to footprint
-- Pads on, the dip Switch footprint slightly to short
-- N-mosfets Flipped Gate and Source
-- Enhancment P-Fet is used instead of Depletion. 
-- Reversed + and -  of the INA 233 sense pins. Negative ofset
-- Vbus of the INA 233 on the positive, should be on the negative
+- Relay footprint, NC and NO pads Switched.     								: Fixed in footprint
+- N-mosfets Flipped Gate and Source										: Created own spesific symbol and footprint per mosfet modell. Both P & N channel.
+- 3.9R resistor, to big comparet to footprint									: Changed to correct footprint. Might change the resistor alltogether.
+- Pads on, the dip Switch footprint slightly to short								: Created new footprint
 
-- INA233 fried somehow, when shorting the circuit, might be because of the reversed + and - of the INA 233
+- Correction, not a matter of enhancment or depletion mode. 							: Redesigned whole Power mosfet activation circuit. 
+  Used P mos as low side switch, and N as high side. NOT GOOD.							 Altso Fixed all mosfet affected, both P & N channel
+
+- Reversed + and -  of the INA 233 sense pins. Negative ofset							: Fixed in chematics, reverted to correct configuration					
+- Vbus of the INA 233 on the positive, should be on the negative
+- INA233 fried somehow, when shorting the circuit, might be because of the reversed + and - of the INA 233	: 
+- Used N-mosfet as highside swithc for shutdown circuit, would never work					: Redesigned
+- Used N-mosfets as MUX. Would not work, because of high "Source" resistance					: Switched to a multiplexer IC
+

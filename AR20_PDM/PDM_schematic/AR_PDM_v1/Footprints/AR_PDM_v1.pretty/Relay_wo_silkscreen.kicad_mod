@@ -1,4 +1,4 @@
-(module Relay_wo_silkscreen (layer F.Cu) (tedit 5E3205BB)
+(module Relay_wo_silkscreen (layer F.Cu) (tedit 5E613D5C)
   (fp_text reference REF** (at -0.14 10.64) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -16,8 +16,8 @@
   (pad 6 thru_hole circle (at -5.04 -4.75) (size 2.7 2.7) (drill 1.45) (layers *.Cu *.Mask))
   (pad 7 thru_hole circle (at -7.54 0.250434) (size 2.7 2.7) (drill 1.45) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at -5.04 5.250434) (size 2.7 2.7) (drill 1.45) (layers *.Cu *.Mask))
-  (pad 1 thru_hole circle (at 5.16 5.250434) (size 2.7 2.7) (drill 1.45) (layers *.Cu *.Mask))
-  (pad 14 thru_hole circle (at 5.16 -4.749566) (size 2.7 2.7) (drill 1.45) (layers *.Cu *.Mask))
+  (pad 14 thru_hole circle (at 5.16 5.250434) (size 2.7 2.7) (drill 1.45) (layers *.Cu *.Mask))
+  (pad 1 thru_hole circle (at 5.16 -4.749566) (size 2.7 2.7) (drill 1.45) (layers *.Cu *.Mask))
   (model ${KIPRJMOD}/3d_objects/Relay.STEP
     (offset (xyz -8.699999999999999 -6.15 0.7))
     (scale (xyz 1 1 1))
