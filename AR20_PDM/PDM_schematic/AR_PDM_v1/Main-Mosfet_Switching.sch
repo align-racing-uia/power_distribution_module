@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 14
+Sheet 12 14
 Title ""
 Date ""
 Rev ""
@@ -18,8 +18,6 @@ Text HLabel 5700 1100 2    50   Input ~ 0
 P1_MOS_IN
 Text HLabel 5700 1200 2    50   Input ~ 0
 P2_MOS_IN
-Text HLabel 5700 1300 2    50   Input ~ 0
-P3_MOS_IN
 Text HLabel 5700 1400 2    50   Input ~ 0
 P4_MOS_IN
 Text HLabel 5700 1500 2    50   Input ~ 0
@@ -1680,8 +1678,6 @@ F 3 "~" H 5400 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3625 675  3625 1100
-Wire Wire Line
-	5100 1100 3625 1100
 Text Notes 5325 3000 0    50   ~ 0
 Protected AUX Input stages,\nwith Nmos resistive inverter \nand Nmos to controll the "in" signal of the BIG mosfet\n\nDip switch is to disable AUX inputs. \n
 Wire Wire Line
@@ -2119,4 +2115,8 @@ Text HLabel 9475 4525 2    50   Input ~ 0
 P6_EN_ACM
 Text HLabel 9475 5200 2    50   Input ~ 0
 P7_EN_ACM
+Text HLabel 1300 1025 2    50   Input ~ 0
+P3_MOS_IN
+Wire Wire Line
+	5100 1100 3625 1100
 $EndSCHEMATC

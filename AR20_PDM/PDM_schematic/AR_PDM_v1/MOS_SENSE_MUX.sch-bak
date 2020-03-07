@@ -14,21 +14,13 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2450 2600 0    50   Input ~ 0
-P1_MOS_SENSE
-Text HLabel 2450 2700 0    50   Input ~ 0
-P2_MOS_SENSE
 Text HLabel 2450 2800 0    50   Input ~ 0
-P3_MOS_SENSE
-Text HLabel 2450 2900 0    50   Input ~ 0
-P4_MOS_SENSE
-Text HLabel 3550 2700 2    50   Input ~ 0
 P5_MOS_SENSE
-Text HLabel 3550 2800 2    50   Input ~ 0
+Text HLabel 2450 2700 0    50   Input ~ 0
 P6_MOS_SENSE
 Text HLabel 2450 3000 0    50   Input ~ 0
 MOS_SENSE_ALL
-Text HLabel 3550 2900 2    50   Input ~ 0
+Text HLabel 2450 2600 0    50   Input ~ 0
 P7_MOS_SENSE
 Text HLabel 3550 2400 2    50   Input ~ 0
 Mux_select_A2
@@ -150,4 +142,12 @@ Mux_select_A0
 NoConn ~ 3550 3000
 Text HLabel 2450 2400 0    50   Input ~ 0
 Mux_enable
+Text HLabel 2450 2900 0    50   Input ~ 0
+P4_MOS_SENSE
+Text HLabel 3550 2900 2    50   Input ~ 0
+P1_MOS_SENSE
+Text HLabel 3550 2800 2    50   Input ~ 0
+P2_MOS_SENSE
+Text HLabel 3550 2700 2    50   Input ~ 0
+P3_MOS_SENSE
 $EndSCHEMATC

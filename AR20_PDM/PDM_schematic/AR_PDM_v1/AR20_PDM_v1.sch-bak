@@ -30,10 +30,6 @@ Text GLabel 7900 850  0    50   Input ~ 0
 V+12V
 Wire Wire Line
 	7900 850  8000 850 
-Wire Wire Line
-	7900 1275 8000 1275
-Wire Wire Line
-	7900 1375 8000 1375
 Text GLabel 9925 975  2    50   Input ~ 0
 FP_ENABLE_ACM
 Wire Wire Line
@@ -795,29 +791,6 @@ F14 "Mux_enable" I R 9975 5125 50
 $EndSheet
 Text GLabel 9975 5275 2    50   Input ~ 0
 MOS_SENSE_ALL
-$Sheet
-S 8225 2975 1825 1275
-U 5E1AEC18
-F0 "Port_Expander" 50
-F1 "Port_Expander.sch" 50
-F2 "SLC" I R 10050 3950 50 
-F3 "SDA" I R 10050 4050 50 
-F4 "VCC_5v" I R 10050 4175 50 
-F5 "COIL_INJECTOR_Fault" I L 8225 3075 50 
-F6 "FUEL_PUMP_Fault" I L 8225 3175 50 
-F7 "P7_Fault" I L 8225 3275 50 
-F8 "P6_Fault" I L 8225 3375 50 
-F9 "P5_Fault" I L 8225 3475 50 
-F10 "P4_Fault" I L 8225 3575 50 
-F11 "P3_Fault" I L 8225 3675 50 
-F12 "P2_Fault" I L 8225 3775 50 
-F13 "P1_Fault" I L 8225 3875 50 
-F14 "FP_ENABLE_ACM" O R 10050 3850 50 
-F15 "Mux_select_A0" I R 10050 3200 50 
-F16 "Mux_select_A1" I R 10050 3300 50 
-F17 "Mux_select_A2" I R 10050 3400 50 
-F18 "Mux_enable" I R 10050 3500 50 
-$EndSheet
 Text GLabel 10050 4175 2    50   Input ~ 0
 vcc_5v
 Text GLabel 10050 4050 2    50   Input ~ 0
@@ -1797,13 +1770,13 @@ Mux_select_A0
 Text GLabel 10050 3300 2    50   Input ~ 0
 Mux_select_A1
 Text GLabel 10050 3400 2    50   Input ~ 0
-Mux_select_A1
+Mux_select_A2
 Text GLabel 9975 4825 2    50   Input ~ 0
 Mux_select_A0
 Text GLabel 9975 4925 2    50   Input ~ 0
 Mux_select_A1
 Text GLabel 9975 5025 2    50   Input ~ 0
-Mux_select_A1
+Mux_select_A2
 Text GLabel 10050 3500 2    50   Input ~ 0
 Mux_enable
 Text GLabel 9975 5425 2    50   Input ~ 0
@@ -1816,4 +1789,35 @@ Wire Wire Line
 	12225 1500 12900 1500
 Text GLabel 5675 2575 2    50   Input ~ 0
 vcc_5v
+Wire Wire Line
+	7900 1375 8000 1375
+Wire Wire Line
+	7900 1275 8000 1275
+$Sheet
+S 8225 2975 1825 1275
+U 5E1AEC18
+F0 "Port_Expander" 50
+F1 "Port_Expander.sch" 50
+F2 "SLC" I R 10050 3950 50 
+F3 "SDA" I R 10050 4050 50 
+F4 "VCC_5v" I R 10050 4175 50 
+F5 "COIL_INJECTOR_Fault" I L 8225 3075 50 
+F6 "FUEL_PUMP_Fault" I L 8225 3175 50 
+F7 "P7_Fault" I L 8225 3275 50 
+F8 "P6_Fault" I L 8225 3375 50 
+F9 "P5_Fault" I L 8225 3475 50 
+F10 "P4_Fault" I L 8225 3575 50 
+F11 "P3_Fault" I L 8225 3675 50 
+F12 "P2_Fault" I L 8225 3775 50 
+F13 "P1_Fault" I L 8225 3875 50 
+F14 "FP_Alert" I L 8225 4025 50 
+F15 "COIL_INJECTOR_Alert" I L 8225 4125 50 
+F16 "FP_ENABLE_ACM" O R 10050 3850 50 
+F17 "Mux_select_A0" I R 10050 3200 50 
+F18 "Mux_select_A1" I R 10050 3300 50 
+F19 "Mux_select_A2" I R 10050 3400 50 
+F20 "Mux_enable" I R 10050 3500 50 
+$EndSheet
+NoConn ~ 7900 1275
+NoConn ~ 7900 1375
 $EndSCHEMATC

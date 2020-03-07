@@ -1770,13 +1770,13 @@ Mux_select_A0
 Text GLabel 10050 3300 2    50   Input ~ 0
 Mux_select_A1
 Text GLabel 10050 3400 2    50   Input ~ 0
-Mux_select_A1
+Mux_select_A2
 Text GLabel 9975 4825 2    50   Input ~ 0
 Mux_select_A0
 Text GLabel 9975 4925 2    50   Input ~ 0
 Mux_select_A1
 Text GLabel 9975 5025 2    50   Input ~ 0
-Mux_select_A1
+Mux_select_A2
 Text GLabel 10050 3500 2    50   Input ~ 0
 Mux_enable
 Text GLabel 9975 5425 2    50   Input ~ 0
