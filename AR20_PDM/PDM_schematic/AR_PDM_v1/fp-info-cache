@@ -1,4 +1,4 @@
-16339031783223631
+16339032199981485
 AR_PDM_v1
 ACM_2020_Footprint_wo_silk
 IL-WX-10SB-VF-BE
@@ -31,6 +31,13 @@ AR_PDM_v1
 Diode-BZX585-C15,115
 http://www.diodes.com/datasheets/ap02001.pdf p.144
 Diode SOD523
+0
+2
+2
+AR_PDM_v1
+Diode-SODFL2512X73N
+
+
 0
 2
 2
@@ -104,13 +111,6 @@ Relay_wo_silkscreen
 0
 5
 5
-AR_PDM_v1
-SODFL2512X73N
-
-
-0
-2
-2
 AR_PDM_v1
 SOP65P640X120-24N
 
