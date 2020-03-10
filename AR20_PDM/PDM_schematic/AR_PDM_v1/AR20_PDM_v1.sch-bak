@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:AR20_PDM_v1-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -1220,7 +1219,6 @@ Wire Wire Line
 	9925 1275 9825 1275
 Text GLabel 13625 825  0    50   Input ~ 0
 ACM_Shutdown_Circuit
-NoConn ~ 13625 2325
 NoConn ~ 13625 2175
 NoConn ~ 13625 2625
 NoConn ~ 13625 2925
@@ -1410,7 +1408,6 @@ Wire Notes Line
 	11150 700  12575 700 
 Wire Wire Line
 	13375 1425 13625 1425
-NoConn ~ 13625 1725
 Text GLabel 15175 1725 2    50   Input ~ 0
 Switch
 Text GLabel 15175 1425 2    50   Input ~ 0
@@ -1810,14 +1807,109 @@ F10 "P4_Fault" I L 8225 3575 50
 F11 "P3_Fault" I L 8225 3675 50 
 F12 "P2_Fault" I L 8225 3775 50 
 F13 "P1_Fault" I L 8225 3875 50 
-F14 "FP_Alert" I L 8225 4025 50 
-F15 "COIL_INJECTOR_Alert" I L 8225 4125 50 
-F16 "FP_ENABLE_ACM" O R 10050 3850 50 
-F17 "Mux_select_A0" I R 10050 3200 50 
-F18 "Mux_select_A1" I R 10050 3300 50 
-F19 "Mux_select_A2" I R 10050 3400 50 
-F20 "Mux_enable" I R 10050 3500 50 
+F14 "FP_ENABLE_ACM" O R 10050 3850 50 
+F15 "Mux_select_A0" I R 10050 3200 50 
+F16 "Mux_select_A1" I R 10050 3300 50 
+F17 "Mux_select_A2" I R 10050 3400 50 
+F18 "Mux_enable" I R 10050 3500 50 
 $EndSheet
 NoConn ~ 7900 1275
 NoConn ~ 7900 1375
+NoConn ~ 13625 2325
+Wire Wire Line
+	13625 1725 12950 1725
+Wire Wire Line
+	12950 1725 12950 3050
+Wire Wire Line
+	12950 3050 12625 3050
+$Comp
+L AR20_PDM_v1-rescue:R-Device R?
+U 1 1 5E8D3B0F
+P 12625 3200
+AR Path="/5DA89415/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5DEB10A1/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5DEB20EA/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5E0E4725/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5E0E4A93/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5E0E4EB5/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5E0E5304/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5E0E594B/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5E0E607C/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5E0FB5C8/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5E0FBBBD/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5E0FC3A2/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5E0FCFDC/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5E0FDCCC/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5E10174B/5E8D3B0F" Ref="R?"  Part="1" 
+AR Path="/5E8D3B0F" Ref="R107"  Part="1" 
+F 0 "R107" H 12695 3246 50  0000 L CNN
+F 1 "1k" H 12695 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12555 3200 50  0001 C CNN
+F 3 "~" H 12625 3200 50  0001 C CNN
+	1    12625 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:GND-power #PWR?
+U 1 1 5E8D890C
+P 12625 3350
+AR Path="/5DA89415/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB10A1/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5DEB20EA/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4725/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4A93/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E4EB5/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E5304/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E594B/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5E0E607C/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FB5C8/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FBBBD/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FC3A2/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FCFDC/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5E0FDCCC/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5E10174B/5E8D890C" Ref="#PWR?"  Part="1" 
+AR Path="/5E8D890C" Ref="#PWR0166"  Part="1" 
+F 0 "#PWR0166" H 12625 3100 50  0001 C CNN
+F 1 "GND" H 12630 3177 50  0000 C CNN
+F 2 "" H 12625 3350 50  0001 C CNN
+F 3 "" H 12625 3350 50  0001 C CNN
+	1    12625 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 12625 3050
+$Comp
+L AR20_PDM_v1-rescue:R-Device R?
+U 1 1 5E8AD5D3
+P 12175 3050
+AR Path="/5DA89415/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5DEB10A1/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5DEB20EA/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5E0E4725/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5E0E4A93/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5E0E4EB5/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5E0E5304/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5E0E594B/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5E0E607C/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5E0FB5C8/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5E0FBBBD/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5E0FC3A2/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5E0FCFDC/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5E0FDCCC/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5E10174B/5E8AD5D3" Ref="R?"  Part="1" 
+AR Path="/5E8AD5D3" Ref="R106"  Part="1" 
+F 0 "R106" H 12245 3096 50  0000 L CNN
+F 1 "NTC" H 12245 3005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12105 3050 50  0001 C CNN
+F 3 "~" H 12175 3050 50  0001 C CNN
+	1    12175 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12325 3050 12625 3050
+Wire Wire Line
+	12025 3050 11850 3050
+Wire Wire Line
+	11850 2850 11850 3050
+Text GLabel 11850 2850 1    50   Input ~ 0
+vcc_5v
 $EndSCHEMATC

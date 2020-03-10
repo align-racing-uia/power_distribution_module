@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:AR20_PDM_v1-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -18,8 +17,6 @@ Text HLabel 5700 1100 2    50   Input ~ 0
 P1_MOS_IN
 Text HLabel 5700 1200 2    50   Input ~ 0
 P2_MOS_IN
-Text HLabel 5700 1400 2    50   Input ~ 0
-P4_MOS_IN
 Text HLabel 5700 1500 2    50   Input ~ 0
 P5_MOS_IN
 Text HLabel 5700 1600 2    50   Input ~ 0
@@ -2119,4 +2116,8 @@ Text HLabel 1300 1025 2    50   Input ~ 0
 P3_MOS_IN
 Wire Wire Line
 	5100 1100 3625 1100
+Text HLabel 5700 1400 2    50   Input ~ 0
+P4_MOS_IN
+Text HLabel 5700 1300 2    50   Input ~ 0
+P3_MOS_IN
 $EndSCHEMATC
