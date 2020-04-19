@@ -23,8 +23,8 @@ Text HLabel 5700 1600 2    50   Input ~ 0
 P6_MOS_IN
 Text HLabel 5700 1700 2    50   Input ~ 0
 P7_MOS_IN
-Text Notes 5400 3525 0    50   ~ 0
-Use Logic Level Mosfets. \n(Gs Threshold <3.3V)\nmos array might be used
+Text Notes 4650 4200 0    50   ~ 0
+Use Logic Level Mosfets. \nIn order for a low voltage signal to be able to controll AUX inputs.\nfor exsample an AXU microcprosessor, or other controll logic.\n(Gs Threshold <3.3V or <5V might be used)\nmos array altso might be used
 $Comp
 L AR20_PDM_v1-rescue:N-MOS-DMN6140L-13 U?
 U 1 1 5E68C6B1
@@ -1675,8 +1675,8 @@ F 3 "~" H 5400 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3625 675  3625 1100
-Text Notes 5325 3000 0    50   ~ 0
-Protected AUX Input stages,\nwith Nmos resistive inverter \nand Nmos to controll the "in" signal of the BIG mosfet\n\nDip switch is to disable AUX inputs. \n
+Text Notes 4700 3700 0    50   ~ 0
+Protected AUX Input stages,\n\nFirs Nmos is resistive inverter, for the input.\nand second Nmos to controll the "in" signal of the power mosfet (big thingy)\n\nDip switch is to disable AUX inputs. \nAUX will override the Microprosessor in off state. \nThat mean AUX inputs has to be disable by the dip switch, \nin order for Microprosessor to controll the phase.\n\nMicroprosessor still, have to enable each phase, in order to AUX to work.\nIts a safety feature. \n\n
 Wire Wire Line
 	9125 975  9275 975 
 Wire Wire Line
@@ -2112,12 +2112,12 @@ Text HLabel 9475 4525 2    50   Input ~ 0
 P6_EN_ACM
 Text HLabel 9475 5200 2    50   Input ~ 0
 P7_EN_ACM
-Text HLabel 1300 1025 2    50   Input ~ 0
-P3_MOS_IN
 Wire Wire Line
 	5100 1100 3625 1100
 Text HLabel 5700 1400 2    50   Input ~ 0
 P4_MOS_IN
 Text HLabel 5700 1300 2    50   Input ~ 0
 P3_MOS_IN
+Text Notes 4675 4600 0    50   ~ 0
+Side note: Its possible to remove the dip switch, at the cost of extra microprosessor, \noutputs. Possibly altso more overall traces. However due to its simplicity and \nrubustness, the dip switch stays, for now. \n
 $EndSCHEMATC
