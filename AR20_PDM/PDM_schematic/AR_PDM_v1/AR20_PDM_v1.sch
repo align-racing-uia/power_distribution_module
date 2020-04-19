@@ -1761,6 +1761,9 @@ F26 "P5_Shunt" I L 4375 4450 50
 F27 "P6_Shunt" I L 4375 4550 50 
 F28 "P7_Shunt" I L 4375 4650 50 
 F29 "P1_Shunt" I L 4375 4050 50 
+F30 "Status_2" I R 5825 5375 50 
+F31 "Status_1" I R 5825 5275 50 
+F32 "Status_3" I R 5825 5475 50 
 $EndSheet
 Text GLabel 10050 3200 2    50   Input ~ 0
 Mux_select_A0
@@ -1812,6 +1815,9 @@ F15 "Mux_select_A0" I R 10050 3200 50
 F16 "Mux_select_A1" I R 10050 3300 50 
 F17 "Mux_select_A2" I R 10050 3400 50 
 F18 "Mux_enable" I R 10050 3500 50 
+F19 "Status_2" I L 8225 4100 50 
+F20 "Status_1" I L 8225 4000 50 
+F21 "Status_3" I L 8225 4200 50 
 $EndSheet
 NoConn ~ 7900 1275
 NoConn ~ 7900 1375
@@ -1912,4 +1918,16 @@ Wire Wire Line
 	11850 2850 11850 3050
 Text GLabel 11850 2850 1    50   Input ~ 0
 vcc_5v
+Text GLabel 5825 5275 2    50   Input ~ 0
+Status_1
+Text GLabel 5825 5375 2    50   Input ~ 0
+Status_2
+Text GLabel 5825 5475 2    50   Input ~ 0
+Status_3
+Text GLabel 8225 4000 0    50   Input ~ 0
+Status_1
+Text GLabel 8225 4100 0    50   Input ~ 0
+Status_2
+Text GLabel 8225 4200 0    50   Input ~ 0
+Status_3
 $EndSCHEMATC

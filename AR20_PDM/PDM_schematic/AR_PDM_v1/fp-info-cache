@@ -1,4 +1,4 @@
-16961727947051519
+16963313092628824
 AR_PDM_v1
 ACM_2020_Footprint_wo_silk
 IL-WX-10SB-VF-BE
@@ -146,6 +146,13 @@ Testconnector
 0
 48
 48
+AR_PDM_v1
+WireJumper_12mm
+
+
+0
+2
+2
 AR_PDM_v1
 Wurth_74655095R_Screw_Post
 

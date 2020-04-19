@@ -229,6 +229,33 @@ F 3 "" H 5075 4550 50  0001 C CNN
 	1    5075 4550
 	0    1    1    0   
 $EndComp
+Text HLabel 6475 2950 2    50   Output ~ 0
+FP_ENABLE_ACM
+NoConn ~ 6475 2850
+NoConn ~ 6475 3050
+NoConn ~ 6475 3250
+NoConn ~ 6475 3150
+NoConn ~ 6475 3350
+Text HLabel 5075 3750 0    50   Input ~ 0
+Mux_select_A0
+Text HLabel 5075 3650 0    50   Input ~ 0
+Mux_select_A1
+Text HLabel 5075 3550 0    50   Input ~ 0
+Mux_select_A2
+Text HLabel 5075 3850 0    50   Input ~ 0
+Mux_enable
+Text HLabel 5075 3350 0    50   Input ~ 0
+COIL_INJECTOR_Fault
+Text HLabel 5075 3450 0    50   Input ~ 0
+FUEL_PUMP_Fault
+NoConn ~ 6475 2750
+NoConn ~ 6475 2650
+Text HLabel 5075 4050 0    50   Input ~ 0
+Status_2
+Text HLabel 5075 3950 0    50   Input ~ 0
+Status_1
+Text HLabel 5075 4150 0    50   Input ~ 0
+Status_3
 $Comp
 L AR20_PDM_v1-rescue:TCA6424ARGJR U9
 U 1 1 5E280A9C
@@ -246,28 +273,4 @@ F 7 "UQFN-32" H 5775 3650 50  0001 L BNN "Field7"
 	1    5775 3650
 	1    0    0    -1  
 $EndComp
-Text HLabel 6475 2950 2    50   Output ~ 0
-FP_ENABLE_ACM
-NoConn ~ 6475 2850
-NoConn ~ 6475 3050
-NoConn ~ 6475 3250
-NoConn ~ 6475 3150
-NoConn ~ 6475 3350
-Text HLabel 5075 3750 0    50   Input ~ 0
-Mux_select_A0
-Text HLabel 5075 3650 0    50   Input ~ 0
-Mux_select_A1
-Text HLabel 5075 3550 0    50   Input ~ 0
-Mux_select_A2
-Text HLabel 5075 3850 0    50   Input ~ 0
-Mux_enable
-NoConn ~ 5075 3950
-NoConn ~ 5075 4050
-NoConn ~ 5075 4150
-Text HLabel 5075 3350 0    50   Input ~ 0
-COIL_INJECTOR_Fault
-Text HLabel 5075 3450 0    50   Input ~ 0
-FUEL_PUMP_Fault
-NoConn ~ 6475 2750
-NoConn ~ 6475 2650
 $EndSCHEMATC

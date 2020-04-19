@@ -34,8 +34,6 @@ Wire Wire Line
 	6600 3800 6600 3650
 Wire Wire Line
 	6600 3650 6950 3650
-Wire Wire Line
-	7100 5575 7250 5575
 $Comp
 L AR20_PDM_v1-rescue:GND-power #PWR0118
 U 1 1 5DDB4255
@@ -86,39 +84,12 @@ F 3 "" H 8675 6025 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8675 5775 8675 6025
-$Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5DDC298C
-P 7250 5925
-AR Path="/5DA89415/5DDC298C" Ref="R?"  Part="1" 
-AR Path="/5DA8920B/5DDC298C" Ref="R90"  Part="1" 
-F 0 "R90" V 7043 5925 50  0000 C CNN
-F 1 "4K7" V 7134 5925 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7180 5925 50  0001 C CNN
-F 3 "~" H 7250 5925 50  0001 C CNN
-	1    7250 5925
-	1    0    0    -1  
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:GND-power #PWR0119
-U 1 1 5DDC2992
-P 7250 6075
-F 0 "#PWR0119" H 7250 5825 50  0001 C CNN
-F 1 "GND-power" H 7255 5902 50  0000 C CNN
-F 2 "" H 7250 6075 50  0001 C CNN
-F 3 "" H 7250 6075 50  0001 C CNN
-	1    7250 6075
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 5775 7250 5575
 Wire Wire Line
 	6600 4100 6600 4300
 Wire Wire Line
 	6950 4250 6950 4300
 Wire Wire Line
 	6950 4300 6600 4300
-Connection ~ 6600 4300
 Text HLabel 1950 7100 2    50   Output ~ 0
 COIL_INJECTOR_OUT
 $Comp
@@ -659,8 +630,6 @@ F 3 "" H 2600 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 1325 3350 950 
-Wire Wire Line
 	3350 950  3000 950 
 Wire Wire Line
 	3000 950  3000 825 
@@ -676,8 +645,6 @@ Wire Wire Line
 Connection ~ 2100 1500
 Text HLabel 9325 5375 2    50   Output ~ 0
 FP_ENABLE_RELAY_SINK
-Wire Wire Line
-	6600 4300 6600 5375
 Wire Wire Line
 	7350 1750 7350 2125
 Wire Wire Line
@@ -732,72 +699,8 @@ Wire Wire Line
 Connection ~ 8700 2450
 Wire Wire Line
 	8700 2450 7500 2450
-Wire Wire Line
-	7250 5575 7575 5575
-$Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5E6F759E
-P 7800 5575
-AR Path="/5E5484EE/5E6F759E" Ref="R?"  Part="1" 
-AR Path="/5E683DA7/5E6F759E" Ref="R?"  Part="1" 
-AR Path="/5DA8920B/5E6F759E" Ref="R104"  Part="1" 
-F 0 "R104" V 7593 5575 50  0000 C CNN
-F 1 "4k7" V 7684 5575 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7730 5575 50  0001 C CNN
-F 3 "" H 7800 5575 50  0001 C CNN
-	1    7800 5575
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	7575 5575 7650 5575
-Connection ~ 7575 5575
-$Comp
-L AR20_PDM_v1-rescue:D_Input_protect_zener D?
-U 1 1 5E6F7596
-P 7575 5725
-AR Path="/5E683DA7/5E6F7596" Ref="D?"  Part="1" 
-AR Path="/5DA8920B/5E6F7596" Ref="D39"  Part="1" 
-F 0 "D39" V 7527 5836 50  0000 L CNN
-F 1 "15V" V 7625 5825 50  0000 L CNN
-F 2 "AR_PDM_v1:Diode-BZX585-C15,115" H 7575 5725 50  0001 C CNN
-F 3 "" H 7575 5725 50  0001 C CNN
-	1    7575 5725
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	7575 5925 7575 5875
-$Comp
-L AR20_PDM_v1-rescue:GND-power #PWR?
-U 1 1 5E6F758F
-P 7575 5925
-AR Path="/5DA89415/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB10A1/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB20EA/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4725/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4A93/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4EB5/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E5304/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E594B/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E607C/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FB5C8/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FC3A2/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FCFDC/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FDCCC/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E10174B/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E5484EE/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5E683DA7/5E6F758F" Ref="#PWR?"  Part="1" 
-AR Path="/5DA8920B/5E6F758F" Ref="#PWR071"  Part="1" 
-F 0 "#PWR071" H 7575 5675 50  0001 C CNN
-F 1 "GND" H 7580 5752 50  0000 C CNN
-F 2 "" H 7575 5925 50  0001 C CNN
-F 3 "" H 7575 5925 50  0001 C CNN
-	1    7575 5925
-	-1   0    0    -1  
-$EndComp
-Text HLabel 7950 5575 3    50   Input ~ 0
+Text HLabel 7225 5575 3    50   Input ~ 0
 FP_ENABLE_ACM
-Connection ~ 7250 5575
 $Comp
 L AR20_PDM_v1-rescue:R-Device R?
 U 1 1 5E71847A
@@ -861,4 +764,24 @@ F 3 "" H 9650 5925 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9175 5575 9650 5575
+$Comp
+L Device:Jumper JP1
+U 1 1 5E8039E3
+P 6600 4800
+F 0 "JP1" V 6554 4926 50  0000 L CNN
+F 1 "WireJumper" V 6645 4926 50  0000 L CNN
+F 2 "AR_PDM_v1:WireJumper_12mm" H 6600 4800 50  0001 C CNN
+F 3 "~" H 6600 4800 50  0001 C CNN
+	1    6600 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 4500 6600 4300
+Connection ~ 6600 4300
+Wire Wire Line
+	6600 5100 6600 5375
+Wire Wire Line
+	7100 5575 7225 5575
+Wire Wire Line
+	3350 950  3350 1325
 $EndSCHEMATC
