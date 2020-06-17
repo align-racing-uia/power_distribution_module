@@ -42,6 +42,7 @@ public:
   void setADC_Settings(uint16_t ADC_Settings);
   void setAlarmLimits(INA233_Alarm_Config alarmConfiguration);
   void setAlarmMask(uint8_t mask);
+  void setMFRConfig (uint8_t mask);
   float getVoltage_L();
   float getVoltage_S();
   float getCurrent();

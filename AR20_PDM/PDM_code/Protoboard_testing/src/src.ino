@@ -2,7 +2,7 @@
 #include "Port_expander.h"
 #include "Config.h"
 
-INA233_S Sensor1(adrSensor6, m_valueSensor1, cal_valueSensor1);
+INA233_S Sensor1(adrSensor1, m_valueSensor1, cal_valueSensor1);
 TI_TCA6424A_S expander (adrExpander);
 
 void setup() {
@@ -13,18 +13,19 @@ void setup() {
   Serial.println("Initiialization");
   Sensor1.initialise();
   Sensor1.setAlarmLimits(alarmConfigSensor1);
-  Sensor1.setADC_Settings(0b0100011100100111);
-  //Sensor1.setAlarmMask (0b11111111);
+  //Sensor1.setADC_Settings(0b0100011100100111);
 
-  expander.setPin (1,true);
+  pinMode(p6_ACM_E_Pin,OUTPUT);
+  digitalWrite(p6_ACM_E_Pin, HIGH);
+  //Sensor1.setAlarmMask (0b11011111);
+  //Sensor1.setMFRConfig (0b00000001);
+  //expander.setPin (1,true);
   
 }
 
 
 void loop() {
   //Serial.println("looping");
-
-
 
    float voltage_s;
   float voltage_l;

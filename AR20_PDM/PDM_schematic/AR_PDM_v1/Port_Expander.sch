@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 14 14
+Sheet 13 13
 Title ""
 Date ""
 Rev ""
@@ -236,14 +236,6 @@ NoConn ~ 6475 3050
 NoConn ~ 6475 3250
 NoConn ~ 6475 3150
 NoConn ~ 6475 3350
-Text HLabel 5075 3750 0    50   Input ~ 0
-Mux_select_A0
-Text HLabel 5075 3650 0    50   Input ~ 0
-Mux_select_A1
-Text HLabel 5075 3550 0    50   Input ~ 0
-Mux_select_A2
-Text HLabel 5075 3850 0    50   Input ~ 0
-Mux_enable
 Text HLabel 5075 3350 0    50   Input ~ 0
 COIL_INJECTOR_Fault
 Text HLabel 5075 3450 0    50   Input ~ 0
@@ -273,4 +265,8 @@ F 7 "UQFN-32" H 5775 3650 50  0001 L BNN "Field7"
 	1    5775 3650
 	1    0    0    -1  
 $EndComp
+NoConn ~ 5075 3550
+NoConn ~ 5075 3650
+NoConn ~ 5075 3750
+NoConn ~ 5075 3850
 $EndSCHEMATC

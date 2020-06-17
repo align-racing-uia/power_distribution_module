@@ -6,6 +6,7 @@ INA233_S::INA233_S(uint8_t address, uint16_t m_value, uint16_t cal_value) : addr
 
 void INA233_S::initialise()
 {
+
     //testCommunication();
     resetChip();
     setCallibration(cal_value_);
@@ -68,10 +69,23 @@ void INA233_S::setAlarmMask(uint8_t mask)
     INA233_Data_Packadge data;
     data.msg[0] = mask;
     data.length = 1;
-    transmitData(&data, 0xD2);
+    transmitData(&data, 0xD5);
 
-    INA233_Data_Packadge data2 = receiveData_(0xD2, 1);
+    INA233_Data_Packadge data2 = receiveData_(0xD5, 1);
     Serial.print("mfr alert Readback: ");
+    Serial.println(data2.msg[0], BIN);
+
+}
+
+void INA233_S::setMFRConfig (uint8_t mask)
+{
+    INA233_Data_Packadge data;
+    data.msg[0] = mask;
+    data.length = 1;
+    transmitData(&data, 0xD5);
+
+    INA233_Data_Packadge data2 = receiveData_(0xD5, 1);
+    Serial.print("mfr config Readback: ");
     Serial.println(data2.msg[0], BIN);
 
 }
@@ -79,21 +93,23 @@ void INA233_S::setAlarmMask(uint8_t mask)
 float INA233_S::getVoltage_L()
 {
     INA233_Data_Packadge data = receiveData_(0x88, 2);
-    uint16_t dataWord = unpackWord(&data);
+    int16_t dataWord = unpackWord(&data);
     return (static_cast<float>(dataWord) * 1 / 800);
 }
 
 float INA233_S::getVoltage_S()
 {
     INA233_Data_Packadge data = receiveData_(0XD1, 2);
-    uint16_t dataWord = unpackWord(&data);
+    int16_t dataWord = unpackWord(&data);
     return (25 * static_cast<float>(dataWord) / 10000000); //Returns shunt voltage reading.
 }
 
 float INA233_S::getCurrent()
 {
     INA233_Data_Packadge data = receiveData_(0x89, 2);
-    uint16_t dataWord = unpackWord(&data);
+    int16_t dataWord = unpackWord(&data);
+    Serial.print("Current bitsnbuts");
+    Serial.println(dataWord,BIN);
     return (static_cast<float>(dataWord) * (1.0 / m_value_));
 }
 
