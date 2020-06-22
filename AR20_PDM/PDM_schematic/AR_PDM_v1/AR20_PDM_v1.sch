@@ -37,8 +37,6 @@ Text GLabel 13625 1575 0    50   Input ~ 0
 SDA
 Text GLabel 7900 950  0    50   Input ~ 0
 vcc_5v
-Wire Wire Line
-	2225 875  2125 875 
 $Sheet
 S 1100 625  1025 525 
 U 5DA89415
@@ -51,10 +49,7 @@ F5 "V+12V" I L 1100 775 50
 F6 "P1_OUT" O R 2125 975 50 
 F7 "P1_MOS_SENSE" O R 2125 875 50 
 F8 "P1_MOS_IN" O L 1100 1100 50 
-F9 "P1_Shunt" I R 2125 1075 50 
 $EndSheet
-Text GLabel 2225 875  2    50   Input ~ 0
-P1_MOS_SENSE
 Wire Wire Line
 	1000 1100 1100 1100
 Text GLabel 1000 1100 0    50   Input ~ 0
@@ -68,10 +63,6 @@ Wire Wire Line
 Text GLabel 1000 675  0    50   Input ~ 0
 vcc_5v
 Wire Wire Line
-	2225 1650 2125 1650
-Text GLabel 2225 1650 2    50   Input ~ 0
-P2_MOS_SENSE
-Wire Wire Line
 	1000 1875 1100 1875
 Text GLabel 1000 1875 0    50   Input ~ 0
 P2_MOS_IN
@@ -83,8 +74,6 @@ Wire Wire Line
 	1000 1450 1100 1450
 Text GLabel 1000 1450 0    50   Input ~ 0
 vcc_5v
-Wire Wire Line
-	2225 2400 2125 2400
 $Sheet
 S 1100 2150 1025 525 
 U 5E0FBBBD
@@ -97,10 +86,7 @@ F5 "P3_SLC" I L 1100 2525 50
 F6 "P3_MOS_SENSE" O R 2125 2400 50 
 F7 "P3_OUT" O R 2125 2500 50 
 F8 "P3_MOS_IN" O L 1100 2625 50 
-F9 "P3_Shunt" I R 2125 2600 50 
 $EndSheet
-Text GLabel 2225 2400 2    50   Input ~ 0
-P3_MOS_SENSE
 Wire Wire Line
 	1000 2625 1100 2625
 Text GLabel 1000 2625 0    50   Input ~ 0
@@ -114,10 +100,6 @@ Wire Wire Line
 Text GLabel 1000 2200 0    50   Input ~ 0
 vcc_5v
 Wire Wire Line
-	2225 3150 2125 3150
-Text GLabel 2225 3150 2    50   Input ~ 0
-P4_MOS_SENSE
-Wire Wire Line
 	1000 3375 1100 3375
 Text GLabel 1000 3375 0    50   Input ~ 0
 P4_MOS_IN
@@ -129,8 +111,6 @@ Wire Wire Line
 	1000 2950 1100 2950
 Text GLabel 1000 2950 0    50   Input ~ 0
 vcc_5v
-Wire Wire Line
-	2225 3900 2125 3900
 $Sheet
 S 1100 3650 1025 525 
 U 5E0FCFDC
@@ -143,10 +123,7 @@ F5 "P5_SLC" I L 1100 4025 50
 F6 "P5_MOS_SENSE" O R 2125 3900 50 
 F7 "P5_OUT" O R 2125 4000 50 
 F8 "P5_MOS_IN" O L 1100 4125 50 
-F9 "P5_Shunt" I R 2125 4100 50 
 $EndSheet
-Text GLabel 2225 3900 2    50   Input ~ 0
-P5_MOS_SENSE
 Wire Wire Line
 	1000 4125 1100 4125
 Text GLabel 1000 4125 0    50   Input ~ 0
@@ -159,8 +136,6 @@ Wire Wire Line
 	1000 3700 1100 3700
 Text GLabel 1000 3700 0    50   Input ~ 0
 vcc_5v
-Wire Wire Line
-	2225 4650 2125 4650
 $Sheet
 S 1100 4400 1025 525 
 U 5E0FDCCC
@@ -174,10 +149,7 @@ F6 "P6_MOS_SENSE" O R 2125 4650 50
 F7 "P6_OUT" O R 2125 4750 50 
 F8 "P6_MOS_IN" O L 1100 4875 50 
 F9 "P6_O_D_out" I R 2125 4475 50 
-F10 "P6_Shunt" I R 2125 4850 50 
 $EndSheet
-Text GLabel 2225 4650 2    50   Input ~ 0
-P6_MOS_SENSE
 Wire Wire Line
 	1000 4875 1100 4875
 Text GLabel 1000 4875 0    50   Input ~ 0
@@ -192,10 +164,6 @@ Text GLabel 1000 4450 0    50   Input ~ 0
 vcc_5v
 Wire Wire Line
 	1125 9100 1125 8850
-Wire Wire Line
-	2225 5400 2125 5400
-Text GLabel 2225 5400 2    50   Input ~ 0
-P7_MOS_SENSE
 Wire Wire Line
 	1000 5625 1100 5625
 Text GLabel 1000 5625 0    50   Input ~ 0
@@ -390,7 +358,6 @@ F5 "P2_SLC" I L 1100 1775 50
 F6 "P2_MOS_SENSE" O R 2125 1650 50 
 F7 "P2_OUT" O R 2125 1750 50 
 F8 "P2_MOS_IN" O L 1100 1875 50 
-F9 "P2_Shunt" I R 2125 1850 50 
 $EndSheet
 $Sheet
 S 1100 2900 1025 525 
@@ -404,7 +371,6 @@ F5 "P4_SLC" I L 1100 3275 50
 F6 "P4_MOS_SENSE" O R 2125 3150 50 
 F7 "P4_OUT" O R 2125 3250 50 
 F8 "P4_MOS_IN" O L 1100 3375 50 
-F9 "P4_Shunt" I R 2125 3350 50 
 $EndSheet
 $Sheet
 S 1100 5150 1025 525 
@@ -418,7 +384,6 @@ F5 "P7_SLC" I L 1100 5525 50
 F6 "P7_MOS_SENSE" O R 2125 5400 50 
 F7 "P7_OUT" O R 2125 5500 50 
 F8 "P7_MOS_IN" O L 1100 5625 50 
-F9 "P7_Shunt" I R 2125 5600 50 
 $EndSheet
 Wire Wire Line
 	1000 1675 1100 1675
@@ -480,10 +445,6 @@ Text GLabel 2225 4750 2    50   Input ~ 0
 P6_OUT
 Wire Wire Line
 	2225 4750 2125 4750
-Text GLabel 2225 4000 2    50   Input ~ 0
-P5_OUT
-Wire Wire Line
-	2225 4000 2125 4000
 Text GLabel 2225 3250 2    50   Input ~ 0
 P4_OUT
 Wire Wire Line
@@ -574,20 +535,6 @@ Text GLabel 4425 1750 0    50   Input ~ 0
 P7_MOS_IN
 Text GLabel 8000 750  0    50   Input ~ 0
 SHUTDOWN_IN
-Text GLabel 4375 4650 0    50   Input ~ 0
-P7_Shunt
-Text GLabel 4375 4550 0    50   Input ~ 0
-P6_Shunt
-Text GLabel 4375 4450 0    50   Input ~ 0
-P5_Shunt
-Text GLabel 4375 4350 0    50   Input ~ 0
-P4_Shunt
-Text GLabel 4375 4250 0    50   Input ~ 0
-P3_Shunt
-Text GLabel 4375 4150 0    50   Input ~ 0
-P2_Shunt
-Text GLabel 4375 4050 0    50   Input ~ 0
-P1_Shunt
 Text GLabel 4375 5425 0    50   Input ~ 0
 COIL_INJECTOR_OUT
 Text GLabel 4375 5525 0    50   Input ~ 0
@@ -1098,34 +1045,6 @@ F 3 "" H 11425 8475 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11425 8475 11425 8675
-Text GLabel 2225 5600 2    50   Input ~ 0
-P7_Shunt
-Text GLabel 2225 4850 2    50   Input ~ 0
-P6_Shunt
-Text GLabel 2225 4100 2    50   Input ~ 0
-P5_Shunt
-Text GLabel 2225 3350 2    50   Input ~ 0
-P4_Shunt
-Text GLabel 2225 2600 2    50   Input ~ 0
-P3_Shunt
-Text GLabel 2225 1850 2    50   Input ~ 0
-P2_Shunt
-Text GLabel 2225 1075 2    50   Input ~ 0
-P1_Shunt
-Wire Wire Line
-	2225 5600 2125 5600
-Wire Wire Line
-	2225 4850 2125 4850
-Wire Wire Line
-	2225 4100 2125 4100
-Wire Wire Line
-	2225 3350 2125 3350
-Wire Wire Line
-	2225 2600 2125 2600
-Wire Wire Line
-	2225 1850 2125 1850
-Wire Wire Line
-	2225 1075 2125 1075
 Text GLabel 13625 975  0    50   Input ~ 0
 P6_EN_ACM
 Text GLabel 15175 1725 2    50   Input ~ 0
@@ -1381,16 +1300,16 @@ F19 "COIL_INJ_Fault" O L 4375 5800 50
 F20 "FP_Fault" O L 4375 5925 50 
 F21 "Shutdown_Led" I L 4375 4825 50 
 F22 "SHUTDOWN_IN" I L 4375 5675 50 
-F23 "P2_Shunt" I L 4375 4150 50 
-F24 "P3_Shunt" I L 4375 4250 50 
-F25 "P4_Shunt" I L 4375 4350 50 
-F26 "P5_Shunt" I L 4375 4450 50 
-F27 "P6_Shunt" I L 4375 4550 50 
-F28 "P7_Shunt" I L 4375 4650 50 
-F29 "P1_Shunt" I L 4375 4050 50 
-F30 "Status_2" I R 5825 5375 50 
-F31 "Status_1" I R 5825 5275 50 
-F32 "Status_3" I R 5825 5475 50 
+F23 "Status_2" I R 5825 5375 50 
+F24 "Status_1" I R 5825 5275 50 
+F25 "Status_3" I R 5825 5475 50 
+F26 "P2_OUT" I L 4375 4175 50 
+F27 "P3_OUT" I L 4375 4275 50 
+F28 "P4_OUT" I L 4375 4375 50 
+F29 "P5_OUT" I L 4375 4475 50 
+F30 "P6_OUT" I L 4375 4575 50 
+F31 "P7_OUT" I L 4375 4675 50 
+F32 "P1_OUT" I L 4375 4075 50 
 $EndSheet
 Text GLabel 15175 2475 2    50   Input ~ 0
 CAN_HIGH
@@ -1458,8 +1377,8 @@ AR Path="/5E0FC3A2/5EE38514" Ref="C?"  Part="1"
 AR Path="/5E0FCFDC/5EE38514" Ref="C?"  Part="1" 
 AR Path="/5E0FDCCC/5EE38514" Ref="C?"  Part="1" 
 AR Path="/5E10174B/5EE38514" Ref="C?"  Part="1" 
-AR Path="/5EE38514" Ref="C?"  Part="1" 
-F 0 "C?" H 6165 9246 50  0000 L CNN
+AR Path="/5EE38514" Ref="C4"  Part="1" 
+F 0 "C4" H 6165 9246 50  0000 L CNN
 F 1 "4.7uF" H 6165 9155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 6088 9050 50  0001 C CNN
 F 3 "~" H 6050 9200 50  0001 C CNN
@@ -1485,8 +1404,8 @@ AR Path="/5E0FC3A2/5EE3851A" Ref="#PWR?"  Part="1"
 AR Path="/5E0FCFDC/5EE3851A" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FDCCC/5EE3851A" Ref="#PWR?"  Part="1" 
 AR Path="/5E10174B/5EE3851A" Ref="#PWR?"  Part="1" 
-AR Path="/5EE3851A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6050 9150 50  0001 C CNN
+AR Path="/5EE3851A" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 6050 9150 50  0001 C CNN
 F 1 "GND" H 6055 9227 50  0000 C CNN
 F 2 "" H 6050 9400 50  0001 C CNN
 F 3 "" H 6050 9400 50  0001 C CNN
@@ -1516,8 +1435,8 @@ AR Path="/5E0FC3A2/5EE38522" Ref="R?"  Part="1"
 AR Path="/5E0FCFDC/5EE38522" Ref="R?"  Part="1" 
 AR Path="/5E0FDCCC/5EE38522" Ref="R?"  Part="1" 
 AR Path="/5E10174B/5EE38522" Ref="R?"  Part="1" 
-AR Path="/5EE38522" Ref="R?"  Part="1" 
-F 0 "R?" V 5843 8850 50  0000 C CNN
+AR Path="/5EE38522" Ref="R1"  Part="1" 
+F 0 "R1" V 5843 8850 50  0000 C CNN
 F 1 "3.9R" V 5934 8850 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric" V 5980 8850 50  0001 C CNN
 F 3 "~" H 6050 8850 50  0001 C CNN
@@ -1647,8 +1566,8 @@ AR Path="/5E0FC3A2/5EF487B4" Ref="R?"  Part="1"
 AR Path="/5E0FCFDC/5EF487B4" Ref="R?"  Part="1" 
 AR Path="/5E0FDCCC/5EF487B4" Ref="R?"  Part="1" 
 AR Path="/5E10174B/5EF487B4" Ref="R?"  Part="1" 
-AR Path="/5EF487B4" Ref="R?"  Part="1" 
-F 0 "R?" H 12045 1471 50  0000 L CNN
+AR Path="/5EF487B4" Ref="R2"  Part="1" 
+F 0 "R2" H 12045 1471 50  0000 L CNN
 F 1 "NTC" H 12045 1380 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 11905 1425 50  0001 C CNN
 F 3 "~" H 11975 1425 50  0001 C CNN
@@ -1675,8 +1594,8 @@ AR Path="/5E0FC3A2/5EF487BB" Ref="#PWR?"  Part="1"
 AR Path="/5E0FCFDC/5EF487BB" Ref="#PWR?"  Part="1" 
 AR Path="/5E0FDCCC/5EF487BB" Ref="#PWR?"  Part="1" 
 AR Path="/5E10174B/5EF487BB" Ref="#PWR?"  Part="1" 
-AR Path="/5EF487BB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 12425 1475 50  0001 C CNN
+AR Path="/5EF487BB" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 12425 1475 50  0001 C CNN
 F 1 "GND" H 12430 1552 50  0000 C CNN
 F 2 "" H 12425 1725 50  0001 C CNN
 F 3 "" H 12425 1725 50  0001 C CNN
@@ -1702,8 +1621,8 @@ AR Path="/5E0FC3A2/5EF487C1" Ref="R?"  Part="1"
 AR Path="/5E0FCFDC/5EF487C1" Ref="R?"  Part="1" 
 AR Path="/5E0FDCCC/5EF487C1" Ref="R?"  Part="1" 
 AR Path="/5E10174B/5EF487C1" Ref="R?"  Part="1" 
-AR Path="/5EF487C1" Ref="R?"  Part="1" 
-F 0 "R?" H 12495 1621 50  0000 L CNN
+AR Path="/5EF487C1" Ref="R7"  Part="1" 
+F 0 "R7" H 12495 1621 50  0000 L CNN
 F 1 "1k" H 12495 1530 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 12355 1575 50  0001 C CNN
 F 3 "~" H 12425 1575 50  0001 C CNN
@@ -1725,8 +1644,8 @@ P 15175 1275
 AR Path="/5DA89415/5EF84E64" Ref="#PWR?"  Part="1" 
 AR Path="/5DA8920B/5EF84E64" Ref="#PWR?"  Part="1" 
 AR Path="/5DE4D361/5EF84E64" Ref="#PWR?"  Part="1" 
-AR Path="/5EF84E64" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 15175 1025 50  0001 C CNN
+AR Path="/5EF84E64" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 15175 1025 50  0001 C CNN
 F 1 "GND" V 15175 1075 50  0000 C CNN
 F 2 "" H 15175 1275 50  0001 C CNN
 F 3 "" H 15175 1275 50  0001 C CNN
@@ -1740,12 +1659,37 @@ P 13625 2025
 AR Path="/5DA89415/5EF85090" Ref="#PWR?"  Part="1" 
 AR Path="/5DA8920B/5EF85090" Ref="#PWR?"  Part="1" 
 AR Path="/5DE4D361/5EF85090" Ref="#PWR?"  Part="1" 
-AR Path="/5EF85090" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 13625 1775 50  0001 C CNN
+AR Path="/5EF85090" Ref="#PWR0167"  Part="1" 
+F 0 "#PWR0167" H 13625 1775 50  0001 C CNN
 F 1 "GND" V 13625 1825 50  0000 C CNN
 F 2 "" H 13625 2025 50  0001 C CNN
 F 3 "" H 13625 2025 50  0001 C CNN
 	1    13625 2025
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	2225 4000 2125 4000
+Text GLabel 2225 4000 2    50   Input ~ 0
+P5_OUT
+NoConn ~ 2125 875 
+NoConn ~ 2125 1650
+NoConn ~ 2125 2400
+NoConn ~ 2125 3150
+NoConn ~ 2125 3900
+NoConn ~ 2125 4650
+NoConn ~ 2125 5400
+Text GLabel 4375 4375 0    50   Input ~ 0
+P4_OUT
+Text GLabel 4375 4275 0    50   Input ~ 0
+P3_OUT
+Text GLabel 4375 4175 0    50   Input ~ 0
+P2_OUT
+Text GLabel 4375 4075 0    50   Input ~ 0
+P1_OUT
+Text GLabel 4375 4475 0    50   Input ~ 0
+P5_OUT
+Text GLabel 4375 4675 0    50   Input ~ 0
+P7_OUT
+Text GLabel 4375 4575 0    50   Input ~ 0
+P6_OUT
 $EndSCHEMATC

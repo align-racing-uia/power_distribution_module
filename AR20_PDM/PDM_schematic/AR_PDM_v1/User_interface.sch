@@ -1008,17 +1008,17 @@ F 3 "~" H 1850 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 2175 3025 1    50   Input ~ 0
-P2_Shunt
+P2_OUT
 Text HLabel 2500 3025 1    50   Input ~ 0
-P3_Shunt
+P3_OUT
 Text HLabel 2825 3025 1    50   Input ~ 0
-P4_Shunt
+P4_OUT
 Text HLabel 3150 3025 1    50   Input ~ 0
-P5_Shunt
+P5_OUT
 Text HLabel 3475 3025 1    50   Input ~ 0
-P6_Shunt
+P6_OUT
 Text HLabel 3800 3025 1    50   Input ~ 0
-P7_Shunt
+P7_OUT
 Text HLabel 2950 5625 1    50   Input ~ 0
 Shutdown_Led
 Text HLabel 2400 5625 1    50   Input ~ 0
@@ -1348,7 +1348,7 @@ $EndComp
 Text HLabel 3300 5625 1    50   Input ~ 0
 SHUTDOWN_IN
 Text HLabel 1850 3025 1    50   Input ~ 0
-P1_Shunt
+P1_OUT
 $Comp
 L AR20_PDM_v1-rescue:B4B-PH-SM4-TB P?
 U 1 1 5E33ABDC

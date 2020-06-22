@@ -6,6 +6,12 @@ K cap capacitor
 F ~
 $ENDCMP
 #
+$CMP D_Schottky_BAT60A
+D Dual Schottky diode, common anode on pin 2
+K diode
+F ~
+$ENDCMP
+#
 $CMP D_Schottky_x2
 D Dual Schottky diode, common anode on pin 2
 K diode
