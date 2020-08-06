@@ -127,19 +127,19 @@ F 3 "" H 5075 4950 50  0001 C CNN
 	1    5075 4950
 	0    1    1    0   
 $EndComp
-Text HLabel 5075 3250 0    50   Input ~ 0
+Text HLabel 5075 2650 0    50   Input ~ 0
 P7_Fault
-Text HLabel 5075 3150 0    50   Input ~ 0
+Text HLabel 5075 2750 0    50   Input ~ 0
 P6_Fault
-Text HLabel 5075 3050 0    50   Input ~ 0
+Text HLabel 5075 2850 0    50   Input ~ 0
 P5_Fault
 Text HLabel 5075 2950 0    50   Input ~ 0
 P4_Fault
-Text HLabel 5075 2850 0    50   Input ~ 0
+Text HLabel 5075 3050 0    50   Input ~ 0
 P3_Fault
-Text HLabel 5075 2650 0    50   Input ~ 0
+Text HLabel 5075 3250 0    50   Input ~ 0
 P1_Fault
-Text HLabel 5075 2750 0    50   Input ~ 0
+Text HLabel 5075 3150 0    50   Input ~ 0
 P2_Fault
 NoConn ~ 5075 4850
 Wire Wire Line
@@ -236,18 +236,21 @@ NoConn ~ 6475 3050
 NoConn ~ 6475 3250
 NoConn ~ 6475 3150
 NoConn ~ 6475 3350
-Text HLabel 5075 3350 0    50   Input ~ 0
-COIL_INJECTOR_Fault
-Text HLabel 5075 3450 0    50   Input ~ 0
-FUEL_PUMP_Fault
 NoConn ~ 6475 2750
 NoConn ~ 6475 2650
-Text HLabel 5075 4050 0    50   Input ~ 0
+Text HLabel 5075 3450 0    50   Input ~ 0
 Status_2
-Text HLabel 5075 3950 0    50   Input ~ 0
+Text HLabel 5075 3550 0    50   Input ~ 0
 Status_1
-Text HLabel 5075 4150 0    50   Input ~ 0
+Text HLabel 5075 3350 0    50   Input ~ 0
 Status_3
+NoConn ~ 5075 3950
+NoConn ~ 5075 3850
+NoConn ~ 5075 4150
+Text HLabel 5075 3750 0    50   Input ~ 0
+FUEL_PUMP_Fault
+Text HLabel 5075 3650 0    50   Input ~ 0
+COIL_INJECTOR_Fault
 $Comp
 L AR20_PDM_v1-rescue:TCA6424ARGJR U9
 U 1 1 5E280A9C
@@ -265,8 +268,5 @@ F 7 "UQFN-32" H 5775 3650 50  0001 L BNN "Field7"
 	1    5775 3650
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5075 3550
-NoConn ~ 5075 3650
-NoConn ~ 5075 3750
-NoConn ~ 5075 3850
+NoConn ~ 5075 4050
 $EndSCHEMATC

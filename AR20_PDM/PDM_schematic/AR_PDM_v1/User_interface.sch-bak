@@ -1081,10 +1081,6 @@ F 3 "~" H 6950 5200 50  0001 C CNN
 	1    6950 5200
 	0    -1   -1   0   
 $EndComp
-Text HLabel 6525 4300 1    50   Input ~ 0
-CLUTCH_ACT_OUT
-Text HLabel 7425 4300 1    50   Input ~ 0
-MCU_UNITS_FEED_OUT
 Text HLabel 9100 1275 2    50   Input ~ 0
 Switch
 Wire Wire Line
@@ -2090,15 +2086,15 @@ F 3 "" H 10550 5350 50  0001 C CNN
 	1    10550 5350
 	1    0    0    -1  
 $EndComp
-Text HLabel 10125 4300 1    50   Input ~ 0
+Text HLabel 10125 3700 1    50   Input ~ 0
 IGN_SWITCH_OUT
 Text HLabel 9225 4300 1    50   Input ~ 0
 SHUTDOWN_OUT
-Text HLabel 8325 4300 1    50   Input ~ 0
+Text HLabel 8325 3700 1    50   Input ~ 0
 ETC_OUT
 Text Notes 3825 4825 0    50   ~ 0
 Leds sink to MCU/port expander.
-Text Notes 7850 3350 0    50   ~ 0
+Text Notes 7925 5750 0    50   ~ 0
 Red led lights up, upon burnt fuse.\n
 $Comp
 L AR20_PDM_v1-rescue:P-MOS-BSS83PH6327XTSA1 U32
@@ -2285,5 +2281,61 @@ F 2 "AR_PDM_v1:P-MOS-BSS83PH6327XTSA1" H 8750 3850 50  0001 C CNN
 F 3 "" H 8750 3850 50  0001 C CNN
 	1    8750 3850
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 5F2E0BF8
+P 6525 4000
+AR Path="/5DA8920B/5F2E0BF8" Ref="JP?"  Part="1" 
+AR Path="/5E5484EE/5F2E0BF8" Ref="JP1"  Part="1" 
+F 0 "JP1" V 6479 4126 50  0000 L CNN
+F 1 "WireJumper" V 6570 4126 50  0000 L CNN
+F 2 "AR_PDM_v1:WireJumper_15mm" H 6525 4000 50  0001 C CNN
+F 3 "~" H 6525 4000 50  0001 C CNN
+	1    6525 4000
+	0    1    1    0   
+$EndComp
+Text HLabel 6525 3700 1    50   Input ~ 0
+CLUTCH_ACT_OUT
+Text HLabel 7425 3700 1    50   Input ~ 0
+MCU_UNITS_FEED_OUT
+$Comp
+L Device:Jumper JP?
+U 1 1 5F2E7F62
+P 7425 4000
+AR Path="/5DA8920B/5F2E7F62" Ref="JP?"  Part="1" 
+AR Path="/5E5484EE/5F2E7F62" Ref="JP2"  Part="1" 
+F 0 "JP2" V 7379 4126 50  0000 L CNN
+F 1 "WireJumper" V 7470 4126 50  0000 L CNN
+F 2 "AR_PDM_v1:WireJumper_25mm" H 7425 4000 50  0001 C CNN
+F 3 "~" H 7425 4000 50  0001 C CNN
+	1    7425 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 5F2E8AB1
+P 8325 4000
+AR Path="/5DA8920B/5F2E8AB1" Ref="JP?"  Part="1" 
+AR Path="/5E5484EE/5F2E8AB1" Ref="JP3"  Part="1" 
+F 0 "JP3" V 8279 4126 50  0000 L CNN
+F 1 "WireJumper" V 8370 4126 50  0000 L CNN
+F 2 "AR_PDM_v1:WireJumper_20mm" H 8325 4000 50  0001 C CNN
+F 3 "~" H 8325 4000 50  0001 C CNN
+	1    8325 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 5F2E9501
+P 10125 4000
+AR Path="/5DA8920B/5F2E9501" Ref="JP?"  Part="1" 
+AR Path="/5E5484EE/5F2E9501" Ref="JP4"  Part="1" 
+F 0 "JP4" V 10079 4126 50  0000 L CNN
+F 1 "WireJumper" V 10170 4126 50  0000 L CNN
+F 2 "AR_PDM_v1:WireJumper_10.5mm" H 10125 4000 50  0001 C CNN
+F 3 "~" H 10125 4000 50  0001 C CNN
+	1    10125 4000
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

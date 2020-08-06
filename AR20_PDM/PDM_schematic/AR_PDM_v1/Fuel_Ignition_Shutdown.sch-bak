@@ -594,17 +594,6 @@ Wire Wire Line
 	8950 2150 8700 2150
 Wire Wire Line
 	8700 2150 8700 2450
-$Comp
-L Device:Jumper JP1
-U 1 1 5E8039E3
-P 825 4425
-F 0 "JP1" V 779 4551 50  0000 L CNN
-F 1 "WireJumper" V 870 4551 50  0000 L CNN
-F 2 "AR_PDM_v1:WireJumper_12mm" H 825 4425 50  0001 C CNN
-F 3 "~" H 825 4425 50  0001 C CNN
-	1    825  4425
-	0    1    1    0   
-$EndComp
 Connection ~ 6600 4300
 Wire Wire Line
 	3350 950  3350 1325
@@ -1014,8 +1003,6 @@ Wire Wire Line
 	9325 5125 9400 5125
 Wire Wire Line
 	6600 4300 6600 5375
-NoConn ~ 825  4125
-NoConn ~ 825  4725
 $Comp
 L AR20_PDM_v1-rescue:D_Schottky_BAT60A D?
 U 1 1 5EFBEFF6

@@ -144,21 +144,6 @@ Wire Wire Line
 	8825 1150 8675 1150
 Wire Wire Line
 	1475 1350 1475 1300
-Text HLabel 1725 750  0    50   Input ~ 10
-vcc_5v
-$Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5E68E0CE
-P 1875 750
-AR Path="/5E5484EE/5E68E0CE" Ref="R?"  Part="1" 
-AR Path="/5E683DA7/5E68E0CE" Ref="R48"  Part="1" 
-F 0 "R48" V 1775 750 50  0000 C CNN
-F 1 "4k7" V 1975 750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 750 50  0001 C CNN
-F 3 "" H 1875 750 50  0001 C CNN
-	1    1875 750 
-	0    1    1    0   
-$EndComp
 $Comp
 L AR20_PDM_v1-rescue:N-MOS-DMN6140L-13 U?
 U 1 1 5E68F1FE
@@ -363,21 +348,6 @@ F 3 "" H 1475 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1475 2350 1475 2300
-Text HLabel 1725 1750 0    50   Input ~ 10
-vcc_5v
-$Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5E6D8BCB
-P 1875 1750
-AR Path="/5E5484EE/5E6D8BCB" Ref="R?"  Part="1" 
-AR Path="/5E683DA7/5E6D8BCB" Ref="R49"  Part="1" 
-F 0 "R49" V 1800 1750 50  0000 C CNN
-F 1 "4k7" V 1975 1750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 1750 50  0001 C CNN
-F 3 "" H 1875 1750 50  0001 C CNN
-	1    1875 1750
-	0    1    1    0   
-$EndComp
 $Comp
 L AR20_PDM_v1-rescue:N-MOS-DMN6140L-13 U?
 U 1 1 5E6D8BD1
@@ -582,21 +552,6 @@ F 3 "" H 1475 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1475 3350 1475 3300
-Text HLabel 1725 2750 0    50   Input ~ 10
-vcc_5v
-$Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5E6EA1FD
-P 1875 2750
-AR Path="/5E5484EE/5E6EA1FD" Ref="R?"  Part="1" 
-AR Path="/5E683DA7/5E6EA1FD" Ref="R56"  Part="1" 
-F 0 "R56" V 1800 2750 50  0000 C CNN
-F 1 "4k7" V 1975 2750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 2750 50  0001 C CNN
-F 3 "" H 1875 2750 50  0001 C CNN
-	1    1875 2750
-	0    1    1    0   
-$EndComp
 $Comp
 L AR20_PDM_v1-rescue:N-MOS-DMN6140L-13 U?
 U 1 1 5E6EA203
@@ -799,21 +754,6 @@ F 3 "" H 1475 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1475 4350 1475 4300
-Text HLabel 1725 3750 0    50   Input ~ 10
-vcc_5v
-$Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5E6ED8A7
-P 1875 3750
-AR Path="/5E5484EE/5E6ED8A7" Ref="R?"  Part="1" 
-AR Path="/5E683DA7/5E6ED8A7" Ref="R57"  Part="1" 
-F 0 "R57" V 1800 3750 50  0000 C CNN
-F 1 "4k7" V 1975 3750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 3750 50  0001 C CNN
-F 3 "" H 1875 3750 50  0001 C CNN
-	1    1875 3750
-	0    1    1    0   
-$EndComp
 $Comp
 L AR20_PDM_v1-rescue:N-MOS-DMN6140L-13 U?
 U 1 1 5E6ED8AD
@@ -1016,21 +956,6 @@ F 3 "" H 1475 5350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1475 5350 1475 5300
-Text HLabel 1725 4750 0    50   Input ~ 10
-vcc_5v
-$Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5E6F1B12
-P 1875 4750
-AR Path="/5E5484EE/5E6F1B12" Ref="R?"  Part="1" 
-AR Path="/5E683DA7/5E6F1B12" Ref="R62"  Part="1" 
-F 0 "R62" V 1800 4750 50  0000 C CNN
-F 1 "4k7" V 1975 4750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 4750 50  0001 C CNN
-F 3 "" H 1875 4750 50  0001 C CNN
-	1    1875 4750
-	0    1    1    0   
-$EndComp
 $Comp
 L AR20_PDM_v1-rescue:N-MOS-DMN6140L-13 U?
 U 1 1 5E6F1B18
@@ -1233,21 +1158,6 @@ F 3 "" H 1475 6350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1475 6350 1475 6300
-Text HLabel 1725 5750 0    50   Input ~ 10
-vcc_5v
-$Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5E6F6DA5
-P 1875 5750
-AR Path="/5E5484EE/5E6F6DA5" Ref="R?"  Part="1" 
-AR Path="/5E683DA7/5E6F6DA5" Ref="R63"  Part="1" 
-F 0 "R63" V 1800 5750 50  0000 C CNN
-F 1 "4k7" V 1975 5750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 5750 50  0001 C CNN
-F 3 "" H 1875 5750 50  0001 C CNN
-	1    1875 5750
-	0    1    1    0   
-$EndComp
 $Comp
 L AR20_PDM_v1-rescue:N-MOS-DMN6140L-13 U?
 U 1 1 5E6F6DAB
@@ -1450,21 +1360,6 @@ F 3 "" H 1475 7350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1475 7350 1475 7300
-Text HLabel 1725 6750 0    50   Input ~ 10
-vcc_5v
-$Comp
-L AR20_PDM_v1-rescue:R-Device R?
-U 1 1 5E6FAF71
-P 1875 6750
-AR Path="/5E5484EE/5E6FAF71" Ref="R?"  Part="1" 
-AR Path="/5E683DA7/5E6FAF71" Ref="R65"  Part="1" 
-F 0 "R65" V 1800 6750 50  0000 C CNN
-F 1 "4k7" V 1975 6750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 6750 50  0001 C CNN
-F 3 "" H 1875 6750 50  0001 C CNN
-	1    1875 6750
-	0    1    1    0   
-$EndComp
 $Comp
 L AR20_PDM_v1-rescue:N-MOS-DMN6140L-13 U?
 U 1 1 5E6FAF77
@@ -2120,4 +2015,109 @@ Text HLabel 5700 1300 2    50   Input ~ 0
 P3_MOS_IN
 Text Notes 4675 4600 0    50   ~ 0
 Side note: Its possible to remove the dip switch, at the cost of extra microprosessor, \noutputs. Possibly altso more overall traces. However due to its simplicity and \nrubustness, the dip switch stays, for now. \n
+Text HLabel 1725 6750 0    50   Input ~ 10
+vcc_5v
+$Comp
+L AR20_PDM_v1-rescue:R-Device R?
+U 1 1 5E6FAF71
+P 1875 6750
+AR Path="/5E5484EE/5E6FAF71" Ref="R?"  Part="1" 
+AR Path="/5E683DA7/5E6FAF71" Ref="R65"  Part="1" 
+F 0 "R65" V 1800 6750 50  0000 C CNN
+F 1 "4k7" V 1975 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 6750 50  0001 C CNN
+F 3 "" H 1875 6750 50  0001 C CNN
+	1    1875 6750
+	0    1    1    0   
+$EndComp
+Text HLabel 1725 5750 0    50   Input ~ 10
+vcc_5v
+$Comp
+L AR20_PDM_v1-rescue:R-Device R?
+U 1 1 5E6F6DA5
+P 1875 5750
+AR Path="/5E5484EE/5E6F6DA5" Ref="R?"  Part="1" 
+AR Path="/5E683DA7/5E6F6DA5" Ref="R63"  Part="1" 
+F 0 "R63" V 1800 5750 50  0000 C CNN
+F 1 "4k7" V 1975 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 5750 50  0001 C CNN
+F 3 "" H 1875 5750 50  0001 C CNN
+	1    1875 5750
+	0    1    1    0   
+$EndComp
+Text HLabel 1725 4750 0    50   Input ~ 10
+vcc_5v
+$Comp
+L AR20_PDM_v1-rescue:R-Device R?
+U 1 1 5E6F1B12
+P 1875 4750
+AR Path="/5E5484EE/5E6F1B12" Ref="R?"  Part="1" 
+AR Path="/5E683DA7/5E6F1B12" Ref="R62"  Part="1" 
+F 0 "R62" V 1800 4750 50  0000 C CNN
+F 1 "4k7" V 1975 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 4750 50  0001 C CNN
+F 3 "" H 1875 4750 50  0001 C CNN
+	1    1875 4750
+	0    1    1    0   
+$EndComp
+Text HLabel 1725 3750 0    50   Input ~ 10
+vcc_5v
+$Comp
+L AR20_PDM_v1-rescue:R-Device R?
+U 1 1 5E6ED8A7
+P 1875 3750
+AR Path="/5E5484EE/5E6ED8A7" Ref="R?"  Part="1" 
+AR Path="/5E683DA7/5E6ED8A7" Ref="R57"  Part="1" 
+F 0 "R57" V 1800 3750 50  0000 C CNN
+F 1 "4k7" V 1975 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 3750 50  0001 C CNN
+F 3 "" H 1875 3750 50  0001 C CNN
+	1    1875 3750
+	0    1    1    0   
+$EndComp
+Text HLabel 1725 2750 0    50   Input ~ 10
+vcc_5v
+$Comp
+L AR20_PDM_v1-rescue:R-Device R?
+U 1 1 5E6EA1FD
+P 1875 2750
+AR Path="/5E5484EE/5E6EA1FD" Ref="R?"  Part="1" 
+AR Path="/5E683DA7/5E6EA1FD" Ref="R56"  Part="1" 
+F 0 "R56" V 1800 2750 50  0000 C CNN
+F 1 "4k7" V 1975 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 2750 50  0001 C CNN
+F 3 "" H 1875 2750 50  0001 C CNN
+	1    1875 2750
+	0    1    1    0   
+$EndComp
+Text HLabel 1725 1750 0    50   Input ~ 10
+vcc_5v
+$Comp
+L AR20_PDM_v1-rescue:R-Device R?
+U 1 1 5E6D8BCB
+P 1875 1750
+AR Path="/5E5484EE/5E6D8BCB" Ref="R?"  Part="1" 
+AR Path="/5E683DA7/5E6D8BCB" Ref="R49"  Part="1" 
+F 0 "R49" V 1800 1750 50  0000 C CNN
+F 1 "4k7" V 1975 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 1750 50  0001 C CNN
+F 3 "" H 1875 1750 50  0001 C CNN
+	1    1875 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L AR20_PDM_v1-rescue:R-Device R?
+U 1 1 5E68E0CE
+P 1875 750
+AR Path="/5E5484EE/5E68E0CE" Ref="R?"  Part="1" 
+AR Path="/5E683DA7/5E68E0CE" Ref="R48"  Part="1" 
+F 0 "R48" V 1775 750 50  0000 C CNN
+F 1 "4k7" V 1975 750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1805 750 50  0001 C CNN
+F 3 "" H 1875 750 50  0001 C CNN
+	1    1875 750 
+	0    1    1    0   
+$EndComp
+Text HLabel 1725 750  0    50   Input ~ 10
+vcc_5v
 $EndSCHEMATC
