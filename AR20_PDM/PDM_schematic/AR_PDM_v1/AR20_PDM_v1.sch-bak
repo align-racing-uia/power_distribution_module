@@ -672,7 +672,7 @@ AR Path="/5E10174B/5E1C083B" Ref="D?"  Part="1"
 AR Path="/5E1C083B" Ref="D1"  Part="1" 
 F 0 "D1" H 7450 9141 50  0000 C CNN
 F 1 "16V 5W" H 7450 9050 50  0000 C CNN
-F 2 "Diode_THT:D_5W_P10.16mm_Horizontal" H 7450 8925 50  0001 C CNN
+F 2 "Diode_SMD:D_SMC" H 7450 8925 50  0001 C CNN
 F 3 "" H 7450 8925 50  0001 C CNN
 	1    7450 8925
 	0    1    1    0   
@@ -726,7 +726,7 @@ AR Path="/5E10174B/5E1E2E44" Ref="D?"  Part="1"
 AR Path="/5E1E2E44" Ref="D3"  Part="1" 
 F 0 "D3" H 7900 9141 50  0000 C CNN
 F 1 "16V 5W" H 7900 9050 50  0000 C CNN
-F 2 "Diode_THT:D_5W_P10.16mm_Horizontal" H 7900 8925 50  0001 C CNN
+F 2 "Diode_SMD:D_SMC" H 7900 8925 50  0001 C CNN
 F 3 "" H 7900 8925 50  0001 C CNN
 	1    7900 8925
 	0    1    1    0   
@@ -1109,33 +1109,6 @@ F 1 "MountingHole" H 14775 5655 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 14675 5700 50  0001 C CNN
 F 3 "~" H 14675 5700 50  0001 C CNN
 	1    14675 5700
-	0    1    1    0   
-$EndComp
-$Comp
-L AR20_PDM_v1-rescue:GND-power #PWR?
-U 1 1 5E39DD75
-P 14225 5700
-AR Path="/5DA89415/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB10A1/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5DEB20EA/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4725/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4A93/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E4EB5/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E5304/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E594B/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5E0E607C/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FB5C8/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FBBBD/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FC3A2/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FCFDC/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5E0FDCCC/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5E10174B/5E39DD75" Ref="#PWR?"  Part="1" 
-AR Path="/5E39DD75" Ref="#PWR016"  Part="1" 
-F 0 "#PWR016" H 14225 5450 50  0001 C CNN
-F 1 "GND" H 14230 5527 50  0000 C CNN
-F 2 "" H 14225 5700 50  0001 C CNN
-F 3 "" H 14225 5700 50  0001 C CNN
-	1    14225 5700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1885,4 +1858,5 @@ Wire Wire Line
 Wire Wire Line
 	13225 1725 13625 1725
 Connection ~ 12600 2075
+NoConn ~ 14225 5700
 $EndSCHEMATC

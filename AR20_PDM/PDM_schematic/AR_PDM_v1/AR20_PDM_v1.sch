@@ -672,7 +672,7 @@ AR Path="/5E10174B/5E1C083B" Ref="D?"  Part="1"
 AR Path="/5E1C083B" Ref="D1"  Part="1" 
 F 0 "D1" H 7450 9141 50  0000 C CNN
 F 1 "16V 5W" H 7450 9050 50  0000 C CNN
-F 2 "Diode_THT:D_5W_P10.16mm_Horizontal" H 7450 8925 50  0001 C CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 7450 8925 50  0001 C CNN
 F 3 "" H 7450 8925 50  0001 C CNN
 	1    7450 8925
 	0    1    1    0   
@@ -726,7 +726,7 @@ AR Path="/5E10174B/5E1E2E44" Ref="D?"  Part="1"
 AR Path="/5E1E2E44" Ref="D3"  Part="1" 
 F 0 "D3" H 7900 9141 50  0000 C CNN
 F 1 "16V 5W" H 7900 9050 50  0000 C CNN
-F 2 "Diode_THT:D_5W_P10.16mm_Horizontal" H 7900 8925 50  0001 C CNN
+F 2 "Diode_SMD:D_SMB_Handsoldering" H 7900 8925 50  0001 C CNN
 F 3 "" H 7900 8925 50  0001 C CNN
 	1    7900 8925
 	0    1    1    0   

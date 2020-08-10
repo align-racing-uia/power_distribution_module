@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "C:\\Users\\Serious Business\\Documents\\Github\\AR20\\AR20_PDM\\PDM_schematic\\AR_PDM_v1\\AR20_PDM_v1.sch")
-    (date "06.08.2020 10:49:20")
+    (date "10.08.2020 18:15:09")
     (tool "Eeschema (5.1.5)-3")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -170,13 +170,13 @@
       (tstamp 5E179324))
     (comp (ref D1)
       (value "16V 5W")
-      (footprint Diode_THT:D_5W_P10.16mm_Horizontal)
+      (footprint Diode_SMD:D_SMB_Handsoldering)
       (libsource (lib AR20_PDM_v1-rescue) (part D_Flyback-Zener) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E1C083B))
     (comp (ref D3)
       (value "16V 5W")
-      (footprint Diode_THT:D_5W_P10.16mm_Horizontal)
+      (footprint Diode_SMD:D_SMB_Handsoldering)
       (libsource (lib AR20_PDM_v1-rescue) (part D_Flyback-Zener) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E1E2E44))
@@ -1003,7 +1003,7 @@
       (tstamp 5EF32937))
     (comp (ref D50)
       (value DIODE)
-      (footprint Diode_THT:D_5W_P10.16mm_Horizontal)
+      (footprint Diode_SMD:D_SMB_Handsoldering)
       (fields
         (field (name Spice_Netlist_Enabled) Y)
         (field (name Spice_Primitive) V))
@@ -1012,7 +1012,7 @@
       (tstamp 5EEA94E5))
     (comp (ref D48)
       (value DIODE)
-      (footprint Diode_THT:D_5W_P10.16mm_Horizontal)
+      (footprint Diode_SMD:D_SMB_Handsoldering)
       (fields
         (field (name Spice_Netlist_Enabled) Y)
         (field (name Spice_Primitive) V))
