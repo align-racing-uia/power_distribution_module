@@ -1838,7 +1838,7 @@ Connection ~ 4750 7200
 Wire Wire Line
 	4750 7200 4750 7025
 Wire Notes Line
-	1375 9800 4775 9800
+	1350 9800 4750 9800
 Text GLabel 4850 7025 2    50   Input ~ 0
 V+12V
 Text GLabel 10625 8675 1    50   Input ~ 0
