@@ -1301,6 +1301,8 @@ F14 "FP_ENABLE_ACM" O R 9975 3675 50
 F15 "Status_2" I L 8150 3925 50 
 F16 "Status_1" I L 8150 3825 50 
 F17 "Status_3" I L 8150 4025 50 
+F18 "SHUTDOWN_IN" O R 9975 3250 50 
+F19 "Shutdown_Relay_Side" O R 9975 3150 50 
 $EndSheet
 NoConn ~ 7900 1275
 NoConn ~ 7900 1375
@@ -1859,4 +1861,8 @@ Wire Wire Line
 	13225 1725 13625 1725
 Connection ~ 12600 2075
 NoConn ~ 14225 5700
+Text GLabel 9975 3150 2    50   Input ~ 0
+Shutdown_Relay_Side
+Text GLabel 9975 3250 2    50   Input ~ 0
+SHUTDOWN_IN
 $EndSCHEMATC
