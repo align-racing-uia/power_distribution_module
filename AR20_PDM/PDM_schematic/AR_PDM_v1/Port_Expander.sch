@@ -512,13 +512,6 @@ F 3 "" H 2950 4675 50  0001 C CNN
 	1    2950 4675
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 4375 2500 4375
-Wire Wire Line
-	2500 4375 2500 4400
-Wire Wire Line
-	2500 4375 2600 4375
-Connection ~ 2500 4375
 Text HLabel 3525 3200 2    50   Output ~ 0
 SHUTDOWN_IN
 Text HLabel 3175 4375 2    50   Input ~ 0
@@ -582,4 +575,6 @@ Wire Wire Line
 Wire Wire Line
 	2950 4375 3175 4375
 Connection ~ 2950 4375
+Wire Wire Line
+	2400 4375 2600 4375
 $EndSCHEMATC
