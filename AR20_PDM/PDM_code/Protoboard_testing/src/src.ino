@@ -3,6 +3,12 @@
 #include "Config.h"
 
 INA233_S Sensor1(adrSensor1, m_valueSensor1, cal_valueSensor1);
+INA233_S Sensor2(adrSensor2, m_valueSensor2, cal_valueSensor2);
+INA233_S Sensor3(adrSensor3, m_valueSensor3, cal_valueSensor3);
+INA233_S Sensor4(adrSensor4, m_valueSensor4, cal_valueSensor4);
+INA233_S Sensor5(adrSensor5, m_valueSensor5, cal_valueSensor5);
+INA233_S Sensor6(adrSensor6, m_valueSensor6, cal_valueSensor6);
+INA233_S Sensor7(adrSensor7, m_valueSensor7, cal_valueSensor7);
 TI_TCA6424A_S expander (adrExpander);
 
 void setup() {
@@ -11,23 +17,69 @@ void setup() {
   Wire.setClock(100000);
   Serial.begin(9600);  
   Serial.println("Initiialization");
+
   Sensor1.initialise();
   Sensor1.setAlarmLimits(alarmConfigSensor1);
-  //Sensor1.setADC_Settings(0b0100011100100111);
+  Sensor1.setADC_Settings(0b0100011100100111);
+
+  pinMode(p1_ACM_E_Pin,OUTPUT);
+  digitalWrite(p1_ACM_E_Pin, HIGH);
+/*
+  Sensor2.initialise();
+  Sensor2.setAlarmLimits(alarmConfigSensor2);
+  Sensor2.setADC_Settings(0b0100011100100111);
+
+  pinMode(p2_ACM_E_Pin,OUTPUT);
+  digitalWrite(p2_ACM_E_Pin, HIGH);
+  
+  Sensor3.initialise();
+  Sensor3.setAlarmLimits(alarmConfigSensor3);
+  Sensor3.setADC_Settings(0b0100011100100111);
+
+  pinMode(p3_ACM_E_Pin,OUTPUT);
+  digitalWrite(p3_ACM_E_Pin, HIGH);
+
+  Sensor4.initialise();
+  Sensor4.setAlarmLimits(alarmConfigSensor4);
+  Sensor4.setADC_Settings(0b0100011100100111);
+
+  pinMode(p4_ACM_E_Pin,OUTPUT);
+  digitalWrite(p4_ACM_E_Pin, HIGH);
+
+  Sensor5.initialise();
+  Sensor5.setAlarmLimits(alarmConfigSensor5);
+  Sensor5.setADC_Settings(0b0100011100100111);
+
+  pinMode(p5_ACM_E_Pin,OUTPUT);
+  digitalWrite(p5_ACM_E_Pin, HIGH);
+
+  Sensor6.initialise();
+  Sensor6.setAlarmLimits(alarmConfigSensor6);
+  Sensor6.setADC_Settings(0b0100011100100111);
 
   pinMode(p6_ACM_E_Pin,OUTPUT);
   digitalWrite(p6_ACM_E_Pin, HIGH);
+
+  Sensor7.initialise();
+  Sensor7.setAlarmLimits(alarmConfigSensor7);
+  Sensor7.setADC_Settings(0b0100011100100111);
+
+  pinMode(p7_ACM_E_Pin,OUTPUT);
+  digitalWrite(p7_ACM_E_Pin, HIGH);
+
+
+
   //Sensor1.setAlarmMask (0b11011111);
   //Sensor1.setMFRConfig (0b00000001);
   //expander.setPin (1,true);
-  
+  */
 }
 
 
 void loop() {
   //Serial.println("looping");
 
-   float voltage_s;
+  float voltage_s;
   float voltage_l;
   float current;
   voltage_s = Sensor1.getVoltage_S();

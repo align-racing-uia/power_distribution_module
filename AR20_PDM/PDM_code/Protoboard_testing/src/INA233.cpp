@@ -109,7 +109,7 @@ float INA233_S::getCurrent()
     INA233_Data_Packadge data = receiveData_(0x89, 2);
     int16_t dataWord = unpackWord(&data);
     Serial.print("Current bitsnbuts");
-    Serial.println(dataWord,BIN);
+    Serial.println(dataWord);
     return (static_cast<float>(dataWord) * (1.0 / m_value_));
 }
 
@@ -215,9 +215,9 @@ void INA233_S::testCommunication()
     }
 }
 
-uint16_t INA233_S::unpackWord(INA233_Data_Packadge *data)
+int16_t INA233_S::unpackWord(INA233_Data_Packadge *data)
 {
-    uint16_t word;
+    int16_t word;
     word = static_cast<int>(data->msg[0]);
     word |= (static_cast<int>(data->msg[1]) << 8);
     return word;

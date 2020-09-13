@@ -32,7 +32,7 @@ private:
   void transmitCommand(uint8_t command);
   void transmitData(INA233_Data_Packadge *data, uint8_t command);
   INA233_Data_Packadge receiveData_(uint8_t command, uint8_t numOfBytes);
-  uint16_t unpackWord(INA233_Data_Packadge *data);
+  int16_t unpackWord(INA233_Data_Packadge *data);
   INA233_Data_Packadge repackWord(uint16_t word);
 
 public:
