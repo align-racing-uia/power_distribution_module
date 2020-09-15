@@ -29,12 +29,12 @@ void INA233_S::setAlarmLimits(INA233_Alarm_Config alarmConfiguration)
     {
         uint16_t iout_oc_warn_limit = round(m_value_ * alarmConfiguration.overCurrent);
         INA233_Data_Packadge data = repackWord(iout_oc_warn_limit);
-        Serial.println("OC WARN LIMIT: ");
+        Serial.println(F("OC WARN LIMIT: "));
         Serial.println(iout_oc_warn_limit);
         transmitData(&data, 0x4A);
 
         INA233_Data_Packadge readback = receiveData_(0x4A, 2);
-        Serial.println("OC WARN LIMIT readback: ");
+        Serial.println(F("OC WARN LIMIT readback: "));
         Serial.println(unpackWord(&readback));
     }
 
@@ -42,24 +42,24 @@ void INA233_S::setAlarmLimits(INA233_Alarm_Config alarmConfiguration)
     {
         uint16_t vin_ov_warn_limit = round(800 * alarmConfiguration.overVoltage);
         INA233_Data_Packadge data = repackWord(vin_ov_warn_limit);
-        Serial.println("OV WARN LIMIT: ");
+        Serial.println(F("OV WARN LIMIT: "));
         Serial.println(vin_ov_warn_limit);
         transmitData(&data, 0x57);
 
         INA233_Data_Packadge readback = receiveData_(0x57, 2);
-        Serial.println("OV WARN LIMIT readback: ");
+        Serial.println(F("OV WARN LIMIT readback: "));
         Serial.println(unpackWord(&readback));
     }
     if (alarmConfiguration.underVoltage > 0)
     {
         uint16_t vin_uv_warn_limit = round(800 * alarmConfiguration.underVoltage);
         INA233_Data_Packadge data = repackWord(vin_uv_warn_limit);
-        Serial.println("UV WARN LIMIT: ");
+        Serial.println(F("UV WARN LIMIT: "));
         Serial.println(vin_uv_warn_limit);
         transmitData(&data, 0x58);
 
         INA233_Data_Packadge readback = receiveData_(0x58, 2);
-        Serial.println("UV WARN LIMIT readback: ");
+        Serial.println(F("UV WARN LIMIT readback: "));
         Serial.println(unpackWord(&readback));
     }
 }
@@ -72,7 +72,7 @@ void INA233_S::setAlarmMask(uint8_t mask)
     transmitData(&data, 0xD5);
 
     INA233_Data_Packadge data2 = receiveData_(0xD5, 1);
-    Serial.print("mfr alert Readback: ");
+    Serial.print(F("mfr alert Readback: "));
     Serial.println(data2.msg[0], BIN);
 
 }
@@ -85,7 +85,7 @@ void INA233_S::setMFRConfig (uint8_t mask)
     transmitData(&data, 0xD5);
 
     INA233_Data_Packadge data2 = receiveData_(0xD5, 1);
-    Serial.print("mfr config Readback: ");
+    Serial.print(F("mfr config Readback: "));
     Serial.println(data2.msg[0], BIN);
 
 }
@@ -94,14 +94,14 @@ float INA233_S::getVoltage_L()
 {
     INA233_Data_Packadge data = receiveData_(0x88, 2);
     int16_t dataWord = unpackWord(&data);
-    return (static_cast<float>(dataWord) * 1 / 800);
+    return (static_cast<float>(dataWord) * 1.0 / 800.0);
 }
 
 float INA233_S::getVoltage_S()
 {
     INA233_Data_Packadge data = receiveData_(0XD1, 2);
     int16_t dataWord = unpackWord(&data);
-    return (25 * static_cast<float>(dataWord) / 10000000); //Returns shunt voltage reading.
+    return (25.0 * static_cast<float>(dataWord) / 10000000.0); //Returns shunt voltage reading.
 }
 
 float INA233_S::getCurrent()
@@ -122,13 +122,13 @@ void INA233_S::getAlarm()
 
 void INA233_S::resetAlarm()
 {
-    Serial.println("reset alarm");
+    Serial.println(F("reset alarm"));
     transmitCommand(0x03);
 }
 
 void INA233_S::setCallibration(uint16_t cal)
 {
-    Serial.println("set callibration");
+    Serial.println(F("set callibration"));
     INA233_Data_Packadge data = repackWord(cal);
     transmitData(&data, 0xD4);
 }
