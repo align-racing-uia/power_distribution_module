@@ -65,8 +65,8 @@ void setup() {
   Sensor7.setAlarmLimits(alarmConfigSensor7);
   Sensor7.setADC_Settings(0b0100011100100111);
 
-  pinMode(p7_ACM_E_Pin,OUTPUT);
-  digitalWrite(p7_ACM_E_Pin, HIGH);
+  //pinMode(p7_ACM_E_Pin,OUTPUT);
+  //digitalWrite(p7_ACM_E_Pin, HIGH);
 
   Serial.print(F("freeMemory()="));
   Serial.println(freeMemory());
