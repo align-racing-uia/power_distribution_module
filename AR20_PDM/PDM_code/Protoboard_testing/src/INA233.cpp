@@ -22,7 +22,7 @@ void INA233_S::setADC_Settings(uint16_t ADC_Settings)
     Serial.println(unpackWord(&readbackData), BIN);
 }
 
-void INA233_S::setAlarmLimits(INA233_Alarm_Config alarmConfiguration)
+int INA233_S::setAlarmLimits(INA233_Alarm_Config alarmConfiguration)
 {
     Serial.println("alarm limits");
     if (alarmConfiguration.overCurrent > 0)
@@ -36,6 +36,13 @@ void INA233_S::setAlarmLimits(INA233_Alarm_Config alarmConfiguration)
         INA233_Data_Packadge readback = receiveData_(0x4A, 2);
         Serial.println(F("OC WARN LIMIT readback: "));
         Serial.println(unpackWord(&readback));
+
+        for(int ii = 0; ii < data.length; ii++){
+			if(data.msg[ii] != readback.msg[ii]){
+				return 1;
+			}
+		}
+		return 0;
     }
 
     if (alarmConfiguration.overVoltage > 0)
@@ -179,12 +186,10 @@ INA233_Data_Packadge INA233_S::receiveData_(uint8_t command, uint8_t numOfBytes)
             break;
         }
     }
-    if (data.length < numOfBytes)
-    {
+    if (data.length < numOfBytes){
         data.overflow = HIGH;
     }
-    else if (data.length > numOfBytes)
-    {
+    else if (data.length > numOfBytes){
         data.underflow = HIGH;
     }
     return data;
