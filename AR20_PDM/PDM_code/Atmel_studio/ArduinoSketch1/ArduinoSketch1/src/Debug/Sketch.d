@@ -33,12 +33,10 @@ Sketch.d Sketch.o: .././Sketch.cpp \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  ..\\..\ArduinoCore\include\core/Arduino.h \
- ..\\..\ArduinoCore\include\variants\eightanaloginputs/pins_arduino.h \
- ..\\..\ArduinoCore\include\variants\eightanaloginputs/../standard/pins_arduino.h \
+ ..\\..\ArduinoCore\include\variants\standard/pins_arduino.h \
  .././INA233.h ..\\..\ArduinoCore\include\libraries\Wire/Wire.h \
  ..\\..\ArduinoCore\include\core/Stream.h .././Port_expander.h \
  .././Config.h ..\\..\ArduinoCore\include\core/arduino.h \
- ..\\..\ArduinoCore\include\libraries\memoryfree-master/MemoryFree.h \
  .././errorHandler.h
 
 ..\\..\ArduinoCore\include\core/Arduino.h:
@@ -109,9 +107,7 @@ d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\ut
 
 ..\\..\ArduinoCore\include\core/Arduino.h:
 
-..\\..\ArduinoCore\include\variants\eightanaloginputs/pins_arduino.h:
-
-..\\..\ArduinoCore\include\variants\eightanaloginputs/../standard/pins_arduino.h:
+..\\..\ArduinoCore\include\variants\standard/pins_arduino.h:
 
 .././INA233.h:
 
@@ -124,7 +120,5 @@ d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\ut
 .././Config.h:
 
 ..\\..\ArduinoCore\include\core/arduino.h:
-
-..\\..\ArduinoCore\include\libraries\memoryfree-master/MemoryFree.h:
 
 .././errorHandler.h:

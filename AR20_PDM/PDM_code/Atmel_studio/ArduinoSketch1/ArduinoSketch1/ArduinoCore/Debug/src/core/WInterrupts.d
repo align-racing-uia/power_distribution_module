@@ -20,9 +20,7 @@ src/core/WInterrupts.d src/core/WInterrupts.o: ../src/core/WInterrupts.c \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
- ..\include\core/binary.h \
- ..\include\variants\eightanaloginputs/pins_arduino.h \
- ..\include\variants\eightanaloginputs/../standard/pins_arduino.h
+ ..\include\core/binary.h ..\include\variants\standard/pins_arduino.h
 
 d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h:
 
@@ -70,6 +68,4 @@ d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\ma
 
 ..\include\core/binary.h:
 
-..\include\variants\eightanaloginputs/pins_arduino.h:
-
-..\include\variants\eightanaloginputs/../standard/pins_arduino.h:
+..\include\variants\standard/pins_arduino.h:

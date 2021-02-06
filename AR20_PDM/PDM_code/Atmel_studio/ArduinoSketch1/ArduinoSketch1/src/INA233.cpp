@@ -2,12 +2,11 @@
 
 INA233_S::INA233_S(uint8_t address, uint16_t m_value, uint16_t cal_value, uint8_t MOSpin, INA233_Alarm_Config alarmConfigSensor) : address_(address), m_value_(m_value), cal_value_(cal_value), MOSpin_(MOSpin), alarmConfigSensor_(alarmConfigSensor)
 {
-	initialize();
+	//initialize();
 }
 
 int INA233_S::initialize()
 {
-    testCommunication();
     resetChip();
     if(setCallibration(cal_value_) == 1){
 		return 1;	
@@ -15,7 +14,6 @@ int INA233_S::initialize()
     resetAlarm();
 	
 	pinMode(MOSpin_, OUTPUT);
-	close_MOSFET();
 	setAlarmLimits(alarmConfigSensor_);
 	return 0;
 }
@@ -230,6 +228,7 @@ void INA233_S::resetChip()
     Serial.println("reset chip");
     transmitCommand(0x12);
 }
+
 int INA233_S::testCommunication()
 {
     Serial.println("test communications");
@@ -267,13 +266,6 @@ INA233_Data_Package INA233_S::repackWord(uint16_t word)
     data.msg[1] |= (word >> 8) & 0b11111111;
     data.length = 2;
     return data;
-}
-
-void INA233_S::close_MOSFET(){
-	digitalWrite(MOSpin_, LOW);
-}
-void INA233_S::open_MOSFET(){
-	digitalWrite(MOSpin_, HIGH);
 }
 
 

@@ -79,22 +79,13 @@ const uint16_t cal_valueSensor7 = 2099;
 
 
 // Gamle verdier som ikke stemmer meg schematics (gamle verier?)
-/*const uint8_t p1_ACM_E_Pin = 3;
+const uint8_t p1_ACM_E_Pin = 3;
 const uint8_t p2_ACM_E_Pin = 5;
 const uint8_t p3_ACM_E_Pin = 6;
 const uint8_t p4_ACM_E_Pin = 10;
 const uint8_t p5_ACM_E_Pin = 15;
 const uint8_t p6_ACM_E_Pin = 16;
 const uint8_t p7_ACM_E_Pin = 17;
-const uint8_t shutdown_ACM_Pin = 6;*/
-
-const uint8_t p1_ACM_E_Pin = 20;
-const uint8_t p2_ACM_E_Pin = 25;
-const uint8_t p3_ACM_E_Pin = 23;
-const uint8_t p4_ACM_E_Pin = 17;
-const uint8_t p5_ACM_E_Pin = 3;
-const uint8_t p6_ACM_E_Pin = 2;
-const uint8_t p7_ACM_E_Pin = 4;
-const uint8_t shutdown_ACM_Pin = 1;
+const uint8_t shutdown_ACM_Pin = 14;
 
 #endif

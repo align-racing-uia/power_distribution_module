@@ -21,9 +21,7 @@ src/core/wiring_analog.d src/core/wiring_analog.o: \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\pgmspace.h \
- ..\include\core/binary.h \
- ..\include\variants\eightanaloginputs/pins_arduino.h \
- ..\include\variants\eightanaloginputs/../standard/pins_arduino.h
+ ..\include\core/binary.h ..\include\variants\standard/pins_arduino.h
 
 ..\include\core/wiring_private.h:
 
@@ -71,6 +69,4 @@ d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\av
 
 ..\include\core/binary.h:
 
-..\include\variants\eightanaloginputs/pins_arduino.h:
-
-..\include\variants\eightanaloginputs/../standard/pins_arduino.h:
+..\include\variants\standard/pins_arduino.h:

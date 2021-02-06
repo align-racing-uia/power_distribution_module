@@ -52,8 +52,6 @@ src\core\WMath.cpp
 
 src\core\WString.cpp
 
-src\libraries\memoryfree-master\MemoryFree.cpp
-
 src\libraries\Wire\utility\twi.c
 
 src\libraries\Wire\Wire.cpp

@@ -23,9 +23,7 @@ src/libraries/Wire/utility/twi.d src/libraries/Wire/utility/twi.o: \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\pgmspace.h \
- ..\include\core/binary.h \
- ..\include\variants\eightanaloginputs/pins_arduino.h \
- ..\include\variants\eightanaloginputs/../standard/pins_arduino.h \
+ ..\include\core/binary.h ..\include\variants\standard/pins_arduino.h \
  ..\include\libraries\Wire\utility/twi.h
 
 d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
@@ -76,8 +74,6 @@ d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\av
 
 ..\include\core/binary.h:
 
-..\include\variants\eightanaloginputs/pins_arduino.h:
-
-..\include\variants\eightanaloginputs/../standard/pins_arduino.h:
+..\include\variants\standard/pins_arduino.h:
 
 ..\include\libraries\Wire\utility/twi.h:

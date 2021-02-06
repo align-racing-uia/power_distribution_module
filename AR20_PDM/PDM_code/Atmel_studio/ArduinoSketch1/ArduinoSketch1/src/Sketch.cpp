@@ -6,67 +6,108 @@
 #include "INA233.h"
 #include "Port_expander.h"
 #include "Config.h"
-#include "MemoryFree.h"
+//#include "MemoryFree.h"
 #include "errorHandler.h"
 //Beginning of Auto generated function prototypes by Atmel Studio
 //End of Auto generated function prototypes by Atmel Studio
 
+class  mosfet{
+public:
+	mosfet() = delete;
+	mosfet(uint8_t MOSpin) : MOSpin_(MOSpin)
+	{
+		
+	}
+	void close_MOSFET(){
+		digitalWrite(MOSpin_, LOW);
+	}
+
+	void open_MOSFET(){
+		digitalWrite(MOSpin_, HIGH);
+	}
+private:
+	
+	uint8_t MOSpin_;
+};
+
+void testMOSFET();
 ErrorHandler errorHandler();
 uint16_t default_address = 0b0100011100100111;
 unsigned long timeStamps[10] = {0};
-	for(uint8_t ii = 0; ii < 10; ii++){ timeStamps[ii] = millis(); }
+
+INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, p1_ACM_E_Pin, alarmConfigSensor1), 
+		Sensor_2(adrSensor2, m_valueSensor2, cal_valueSensor2, p2_ACM_E_Pin, alarmConfigSensor2);
 
 
-INA233_S SensorList[7];
 
-INA233_S SensorList[0](adrSensor1, m_valueSensor1, cal_valueSensor1, p1_ACM_E_Pin, alarmConfigSensor1);
-INA233_S SensorList[1](adrSensor2, m_valueSensor2, cal_valueSensor2, p2_ACM_E_Pin, alarmConfigSensor2);
-INA233_S SensorList[2](adrSensor3, m_valueSensor3, cal_valueSensor3, p3_ACM_E_Pin, alarmConfigSensor3);
-INA233_S SensorList[3](adrSensor4, m_valueSensor4, cal_valueSensor4, p4_ACM_E_Pin, alarmConfigSensor4);
-INA233_S SensorList[4](adrSensor5, m_valueSensor5, cal_valueSensor5, p5_ACM_E_Pin, alarmConfigSensor5);
-INA233_S SensorList[5](adrSensor6, m_valueSensor6, cal_valueSensor6, p6_ACM_E_Pin, alarmConfigSensor6);
-INA233_S SensorList[6](adrSensor7, m_valueSensor7, cal_valueSensor7, p7_ACM_E_Pin, alarmConfigSensor7);
+INA233_S* SensorList[] = { &Sensor_1, &Sensor_2 };
+
+
 //TI_TCA6424A_S expander (adrExpander);
 
+
+
+mosfet p1(p1_ACM_E_Pin);
+
+
 void setup() {
-	
-	
-  
 	Wire.begin();
 	Wire.setClock(10000);
+	
+	
+	Sensor_1.initialize();
+	
+	
+	pinMode(9, OUTPUT);
+	digitalWrite(9, HIGH);
+	  
+	for(uint8_t ii = 0; ii < 10; ii++){
+		timeStamps[ii] = millis();
+	}
+	
+  
+	
 	Serial.begin(9600);
 	Serial.println("Initialization");
 	
 	for  (uint8_t ii = 0; ii < 7; ii++){
-		SensorList[ii].setADC_Settings(default_address);
+		SensorList[ii]->setADC_Settings(default_address);
 	}
 
 
 
-	Serial.print(F("freeMemory()="));
-	Serial.println(freeMemory());
+	//Serial.print(F("freeMemory()="));
+	//Serial.println(freeMemory());
 
   //Sensor1.setAlarmMask (0b11011111);
   //Sensor1.setMFRConfig (0b00000001);
   //expander.setPin (1,true);
+  
   
 }
 
 
 void loop() {
 	
-	testMOSFET();
-	readDataOverCAN();
+	//testMOSFET();
+	/*readDataOverCAN();
 	gear();
 	fanControl();
-	sendDataOverCan();
+	sendDataOverCan();*/
 	
+	p1.open_MOSFET();
+	
+	float current_1 = Sensor_1.getCurrent();
+	int test = 1 ;
+	
+	Serial.println(current_1);
 }
 
+/*
 void gammeltStuff(){
-	Serial.println(F("looping"));
-	Serial.print(F("freeMemory()="));
-	Serial.println(freeMemory());
+	//Serial.println(F("looping"));
+	//Serial.print(F("freeMemory()="));
+	//Serial.println(freeMemory());
 
 	float voltage_s;
 	float voltage_l;
@@ -74,19 +115,19 @@ void gammeltStuff(){
 
 	Serial.println("Looping 2");
 
-	voltage_s = SensorList[1].getVoltage_S();
+	voltage_s = SensorList[1]->getVoltage_S();
 	Serial.print("Voltage S: ");
 	Serial.println(voltage_s, 5);
 
-	voltage_l = SensorList[1].getVoltage_L();
+	voltage_l = SensorList[1]->getVoltage_L();
 	Serial.print("Voltage L: ");
 	Serial.println(voltage_l, 5);
 
-	current = SensorList[1].getCurrent();
+	current = SensorList[1]->getCurrent();
 	Serial.print("Current: ");
 	Serial.println(current, 5);
 
-	SensorList[1].getAlarm();
+	SensorList[1]->getAlarm();
 
 
 	}
@@ -94,20 +135,21 @@ void gammeltStuff(){
 
 void testMOSFET(){
 	
-		if((millis() - timeStamps[0]) > interval_INA233_checking){
-			uint8_t sum = 0;
-			
-			for (uint8_t ii = 0; ii < 7; ii++){
-				if(!SensorList[ii].testCommunication()){
-					SensorList[ii].close_MOSFET();
-				}
+	if((millis() - timeStamps[0]) > interval_INA233_checking){
+		uint8_t sum = 0;
+		
+		for (uint8_t ii = 0; ii < 7; ii++){
+			if(!SensorList[ii]->testCommunication()){
+				p1.close_MOSFET();
 			}
-			
-			
-			timeStamps[0] = millis();
 		}
+		
+		
+		timeStamps[0] = millis();
+	}
 }
 
+/*
 void fanControl(){
 	
 	if(millis() - timeStamps[1] > interval_fanControl){
@@ -151,3 +193,4 @@ void readDataOverCAN(){
 	}	
 	
 }
+*/

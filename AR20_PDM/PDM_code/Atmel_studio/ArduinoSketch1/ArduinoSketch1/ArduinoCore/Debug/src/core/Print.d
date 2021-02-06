@@ -28,9 +28,7 @@ src/core/Print.d src/core/Print.o: ../src/core/Print.cpp \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\eeprom.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
- ..\include\core/Arduino.h \
- ..\include\variants\eightanaloginputs/pins_arduino.h \
- ..\include\variants\eightanaloginputs/../standard/pins_arduino.h \
+ ..\include\core/Arduino.h ..\include\variants\standard/pins_arduino.h \
  ..\include\core/Print.h
 
 d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h:
@@ -101,8 +99,6 @@ d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\ut
 
 ..\include\core/Arduino.h:
 
-..\include\variants\eightanaloginputs/pins_arduino.h:
-
-..\include\variants\eightanaloginputs/../standard/pins_arduino.h:
+..\include\variants\standard/pins_arduino.h:
 
 ..\include\core/Print.h:

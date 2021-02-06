@@ -1,7 +1,7 @@
 #ifndef INA233
 #define INA233
 
-#include "Arduino.h"
+#include <Arduino.h>
 #include <Wire.h>
 
 struct INA233_Data_Package
@@ -32,7 +32,6 @@ private:
 	INA233_Data_Package  readback_;
 		
 	int readbackCheck(INA233_Data_Package *data, uint8_t addrs);
-	int testCommunication();
 	void transmitCommand(uint8_t command);
 	void transmitData(INA233_Data_Package *data, uint8_t command);
 	INA233_Data_Package receiveData_(uint8_t command, uint8_t numOfBytes);
@@ -51,13 +50,11 @@ public:
 	float getVoltage_S();
 	float getCurrent();
 	void getAlarm();
+	int testCommunication();
 
 	void resetAlarm();
 	void resetChip();
 	int setCallibration(uint16_t cal);
-	
-	void close_MOSFET();
-	void open_MOSFET();
 };
 
 #endif
