@@ -1,19 +1,22 @@
 #include "INA233.h"
 
-INA233_S::INA233_S(uint8_t address, uint16_t m_value, uint16_t cal_value) : address_(address), m_value_(m_value), cal_value_(cal_value)
+INA233_S::INA233_S(uint8_t address, uint16_t m_value, uint16_t cal_value, uint8_t MOSpin, INA233_Alarm_Config alarmConfigSensor) : address_(address), m_value_(m_value), cal_value_(cal_value), MOSpin_(MOSpin), alarmConfigSensor_(alarmConfigSensor)
 {
 	initialize();
 }
 
 int INA233_S::initialize()
 {
-    //testCommunication();
+    testCommunication();
     resetChip();
-    //if(
-	setCallibration(cal_value_);/*){
+    if(setCallibration(cal_value_) == 1){
 		return 1;	
-	}*/
+	}
     resetAlarm();
+	
+	pinMode(MOSpin_, OUTPUT);
+	close_MOSFET();
+	setAlarmLimits(alarmConfigSensor_);
 	return 0;
 }
 
@@ -156,11 +159,13 @@ void INA233_S::resetAlarm()
     transmitCommand(0x03);
 }
 
-void INA233_S::setCallibration(uint16_t cal)
+int INA233_S::setCallibration(uint16_t cal)
 {
     Serial.println(F("set calibration"));
     INA233_Data_Package data = repackWord(cal);
     transmitData(&data, 0xD4);
+	
+	return readbackCheck(&data, 0xD4);
 }
 
 void INA233_S::transmitCommand(uint8_t command)
@@ -225,7 +230,7 @@ void INA233_S::resetChip()
     Serial.println("reset chip");
     transmitCommand(0x12);
 }
-void INA233_S::testCommunication()
+int INA233_S::testCommunication()
 {
     Serial.println("test communications");
     // TO DO ! Read MFR_MODEL, compare if correct.
@@ -241,8 +246,11 @@ void INA233_S::testCommunication()
         if (compare[ii] != data.msg[ii])
         {
             Serial.println("Communication error");
+			return 1;
         }
     }
+	
+	return 0;
 }
 
 int16_t INA233_S::unpackWord(INA233_Data_Package *data)
@@ -260,6 +268,14 @@ INA233_Data_Package INA233_S::repackWord(uint16_t word)
     data.length = 2;
     return data;
 }
+
+void INA233_S::close_MOSFET(){
+	digitalWrite(MOSpin_, LOW);
+}
+void INA233_S::open_MOSFET(){
+	digitalWrite(MOSpin_, HIGH);
+}
+
 
 /*
 

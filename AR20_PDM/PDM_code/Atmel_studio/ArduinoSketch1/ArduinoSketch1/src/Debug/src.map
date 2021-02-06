@@ -47,7 +47,7 @@ D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\Ard
 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
                               Sketch.o (delay)
 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                              Sketch.o (pinMode)
+                              INA233.o (pinMode)
 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
                               Sketch.o (freeMemory)
 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
@@ -96,13 +96,12 @@ Discarded input sections
                 0x00000000        0x8 INA233.o
  .text._ZN8INA233_S10repackWordEj
                 0x00000000       0x1c INA233.o
+ .text._ZN8INA233_S11open_MOSFETEv
+                0x00000000        0xa INA233.o
  .text._ZN8INA233_S12setAlarmMaskEh
                 0x00000000       0x7e INA233.o
  .text._ZN8INA233_S12setMFRConfigEh
                 0x00000000       0x7e INA233.o
- .rodata        0x00000000        0x7 INA233.o
- .text._ZN8INA233_S17testCommunicationEv
-                0x00000000       0xc2 INA233.o
  .progmem.data._ZZN8INA233_S12setMFRConfigEhE3__c
                 0x00000000       0x16 INA233.o
  .progmem.data._ZZN8INA233_S12setAlarmMaskEhE3__c
@@ -557,7 +556,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x297a
+.text           0x00000000     0x29ec
  *(.vectors)
  .vectors       0x00000000       0x68 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -683,354 +682,360 @@ END GROUP
                 0x000001ca                __vector_20
                 0x000001ce                . = ALIGN (0x2)
  *(.text.*)
+ .text._ZN8INA233_S12close_MOSFETEv
+                0x000001ce        0xa INA233.o
+                0x000001ce                _ZN8INA233_S12close_MOSFETEv
  .text._ZN8INA233_S15transmitCommandEh
-                0x000001ce       0x24 INA233.o
-                0x000001ce                _ZN8INA233_S15transmitCommandEh
+                0x000001d8       0x24 INA233.o
+                0x000001d8                _ZN8INA233_S15transmitCommandEh
  .text._ZN8INA233_S10resetAlarmEv
-                0x000001f2       0x1e INA233.o
-                0x000001f2                _ZN8INA233_S10resetAlarmEv
+                0x000001fc       0x1e INA233.o
+                0x000001fc                _ZN8INA233_S10resetAlarmEv
  .text._ZN8INA233_S9resetChipEv
-                0x00000210       0x1e INA233.o
-                0x00000210                _ZN8INA233_S9resetChipEv
+                0x0000021a       0x1e INA233.o
+                0x0000021a                _ZN8INA233_S9resetChipEv
  .text._ZN8INA233_S12transmitDataEP19INA233_Data_Packageh
-                0x0000022e       0x76 INA233.o
-                0x0000022e                _ZN8INA233_S12transmitDataEP19INA233_Data_Packageh
- .text._ZN8INA233_S15setCallibrationEj
-                0x000002a4       0x6a INA233.o
-                0x000002a4                _ZN8INA233_S15setCallibrationEj
- .text._ZN8INA233_S10initializeEv
-                0x0000030e       0x24 INA233.o
-                0x0000030e                _ZN8INA233_S10initializeEv
- .text._ZN8INA233_SC2Ehjj
-                0x00000332       0x34 INA233.o
-                0x00000332                _ZN8INA233_SC1Ehjj
-                0x00000332                _ZN8INA233_SC2Ehjj
+                0x00000238       0x76 INA233.o
+                0x00000238                _ZN8INA233_S12transmitDataEP19INA233_Data_Packageh
  .text._ZN8INA233_S12receiveData_Ehh
-                0x00000366       0x84 INA233.o
-                0x00000366                _ZN8INA233_S12receiveData_Ehh
+                0x000002ae       0x84 INA233.o
+                0x000002ae                _ZN8INA233_S12receiveData_Ehh
  .text._ZN8INA233_S13readbackCheckEP19INA233_Data_Packageh
-                0x000003ea       0x88 INA233.o
-                0x000003ea                _ZN8INA233_S13readbackCheckEP19INA233_Data_Packageh
+                0x00000332       0x88 INA233.o
+                0x00000332                _ZN8INA233_S13readbackCheckEP19INA233_Data_Packageh
  .text._ZN8INA233_S15setADC_SettingsEj
-                0x00000472       0x68 INA233.o
-                0x00000472                _ZN8INA233_S15setADC_SettingsEj
+                0x000003ba       0x68 INA233.o
+                0x000003ba                _ZN8INA233_S15setADC_SettingsEj
+ .text._ZN8INA233_S15setCallibrationEj
+                0x00000422       0x7e INA233.o
+                0x00000422                _ZN8INA233_S15setCallibrationEj
  .text._ZN8INA233_S14setAlarmLimitsE19INA233_Alarm_Config
-                0x000004da      0x2ce INA233.o
-                0x000004da                _ZN8INA233_S14setAlarmLimitsE19INA233_Alarm_Config
+                0x000004a0      0x2ce INA233.o
+                0x000004a0                _ZN8INA233_S14setAlarmLimitsE19INA233_Alarm_Config
  .text._ZN8INA233_S12getVoltage_LEv
-                0x000007a8       0x50 INA233.o
-                0x000007a8                _ZN8INA233_S12getVoltage_LEv
+                0x0000076e       0x50 INA233.o
+                0x0000076e                _ZN8INA233_S12getVoltage_LEv
  .text._ZN8INA233_S12getVoltage_SEv
-                0x000007f8       0x5c INA233.o
-                0x000007f8                _ZN8INA233_S12getVoltage_SEv
+                0x000007be       0x5c INA233.o
+                0x000007be                _ZN8INA233_S12getVoltage_SEv
  .text._ZN8INA233_S10getCurrentEv
-                0x00000854       0xa6 INA233.o
-                0x00000854                _ZN8INA233_S10getCurrentEv
+                0x0000081a       0xa6 INA233.o
+                0x0000081a                _ZN8INA233_S10getCurrentEv
  .text._ZN8INA233_S8getAlarmEv
-                0x000008fa       0x4c INA233.o
-                0x000008fa                _ZN8INA233_S8getAlarmEv
- .text.setup    0x00000946      0x2fc Sketch.o
-                0x00000946                setup
- .text.loop     0x00000c42       0xd2 Sketch.o
-                0x00000c42                loop
+                0x000008c0       0x4c INA233.o
+                0x000008c0                _ZN8INA233_S8getAlarmEv
+ .text._ZN8INA233_S17testCommunicationEv
+                0x0000090c       0xcc INA233.o
+                0x0000090c                _ZN8INA233_S17testCommunicationEv
+ .text._ZN8INA233_S10initializeEv
+                0x000009d8       0x74 INA233.o
+                0x000009d8                _ZN8INA233_S10initializeEv
+ .text._ZN8INA233_SC2Ehjjh19INA233_Alarm_Config
+                0x00000a4c       0x6c INA233.o
+                0x00000a4c                _ZN8INA233_SC2Ehjjh19INA233_Alarm_Config
+                0x00000a4c                _ZN8INA233_SC1Ehjjh19INA233_Alarm_Config
+ .text.setup    0x00000ab8       0xc4 Sketch.o
+                0x00000ab8                setup
+ .text.loop     0x00000b7c       0xd2 Sketch.o
+                0x00000b7c                loop
  .text.startup._GLOBAL__sub_I_default_address
-                0x00000d14      0x152 Sketch.o
+                0x00000c4e      0x28a Sketch.o
  .text.avr-libc.fplib
-                0x00000e66        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
-                0x00000e66                __subsf3
-                0x00000e68                __addsf3
+                0x00000ed8        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+                0x00000ed8                __subsf3
+                0x00000eda                __addsf3
  .text.avr-libc.fplib
-                0x00000e74       0xcc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
-                0x00000e96                __addsf3x
+                0x00000ee6       0xcc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+                0x00000f08                __addsf3x
  .text.avr-libc.fplib
-                0x00000f40        0x8 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
-                0x00000f40                __divsf3
+                0x00000fb2        0x8 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                0x00000fb2                __divsf3
  .text.avr-libc.fplib
-                0x00000f48       0xdc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
-                0x00000f68                __divsf3x
-                0x00000f6e                __divsf3_pse
+                0x00000fba       0xdc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                0x00000fda                __divsf3x
+                0x00000fe0                __divsf3_pse
  .text.avr-libc.fplib
-                0x00001024        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
-                0x00001024                __fixsfsi
+                0x00001096        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+                0x00001096                __fixsfsi
  .text.avr-libc.fplib
-                0x00001032       0x5e d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
-                0x00001032                __fixunssfsi
+                0x000010a4       0x5e d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                0x000010a4                __fixunssfsi
  .text.avr-libc.fplib
-                0x00001090       0x7a d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
-                0x00001090                __floatunsisf
-                0x00001094                __floatsisf
+                0x00001102       0x7a d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                0x00001102                __floatunsisf
+                0x00001106                __floatsisf
  .text.avr-libc.fplib
-                0x0000110a        0xc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
-                0x0000110a                __fp_inf
+                0x0000117c        0xc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                0x0000117c                __fp_inf
  .text.avr-libc.fplib
-                0x00001116        0x6 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
-                0x00001116                __fp_nan
+                0x00001188        0x6 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                0x00001188                __fp_nan
  .text.avr-libc.fplib
-                0x0000111c        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
-                0x0000111c                __fp_pscA
+                0x0000118e        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                0x0000118e                __fp_pscA
  .text.avr-libc.fplib
-                0x0000112a        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
-                0x0000112a                __fp_pscB
+                0x0000119c        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                0x0000119c                __fp_pscB
  .text.avr-libc.fplib
-                0x00001138       0x22 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
-                0x00001138                __fp_round
+                0x000011aa       0x22 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                0x000011aa                __fp_round
  .text.avr-libc.fplib
-                0x0000115a       0x44 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
-                0x0000115a                __fp_split3
-                0x0000116a                __fp_splitA
+                0x000011cc       0x44 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                0x000011cc                __fp_split3
+                0x000011dc                __fp_splitA
  .text.avr-libc.fplib
-                0x0000119e        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
-                0x0000119e                __fp_zero
-                0x000011a0                __fp_szero
+                0x00001210        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                0x00001210                __fp_zero
+                0x00001212                __fp_szero
  .text.avr-libc.fplib
-                0x000011ac        0xa d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
-                0x000011ac                __gesf2
-                0x000011ac                __gtsf2
+                0x0000121e        0xa d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                0x0000121e                __gesf2
+                0x0000121e                __gtsf2
  .text.avr-libc.fplib
-                0x000011b6        0x8 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
-                0x000011b6                __mulsf3
+                0x00001228        0x8 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                0x00001228                __mulsf3
  .text.avr-libc.fplib
-                0x000011be       0xd2 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
-                0x000011dc                __mulsf3x
-                0x000011e2                __mulsf3_pse
+                0x00001230       0xd2 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                0x0000124e                __mulsf3x
+                0x00001254                __mulsf3_pse
  .text.avr-libc.fplib
-                0x00001290       0x48 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
-                0x00001290                __fp_cmp
+                0x00001302       0x48 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                0x00001302                __fp_cmp
  .text._ZN14HardwareSerial9availableEv
-                0x000012d8       0x18 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000012d8                _ZN14HardwareSerial9availableEv
+                0x0000134a       0x18 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000134a                _ZN14HardwareSerial9availableEv
  .text._ZN14HardwareSerial4peekEv
-                0x000012f0       0x1c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000012f0                _ZN14HardwareSerial4peekEv
+                0x00001362       0x1c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00001362                _ZN14HardwareSerial4peekEv
  .text._ZN14HardwareSerial4readEv
-                0x0000130c       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0000130c                _ZN14HardwareSerial4readEv
+                0x0000137e       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000137e                _ZN14HardwareSerial4readEv
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x00001334       0x1e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00001334                _ZN14HardwareSerial17availableForWriteEv
+                0x000013a6       0x1e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000013a6                _ZN14HardwareSerial17availableForWriteEv
  .text._Z14serialEventRunv
-                0x00001352       0x1c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00001352                _Z14serialEventRunv
+                0x000013c4       0x1c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000013c4                _Z14serialEventRunv
  .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
-                0x0000136e       0x44 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0000136e                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x000013e0       0x44 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000013e0                _ZN14HardwareSerial17_tx_udr_empty_irqEv
  .text._ZN14HardwareSerial5writeEh
-                0x000013b2       0x9a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000013b2                _ZN14HardwareSerial5writeEh
+                0x00001424       0x9a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00001424                _ZN14HardwareSerial5writeEh
  .text._ZN14HardwareSerial5flushEv
-                0x0000144c       0x44 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0000144c                _ZN14HardwareSerial5flushEv
+                0x000014be       0x44 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000014be                _ZN14HardwareSerial5flushEv
  .text._ZN14HardwareSerial5beginEmh
-                0x00001490       0xca D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00001490                _ZN14HardwareSerial5beginEmh
+                0x00001502       0xca D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00001502                _ZN14HardwareSerial5beginEmh
  .text._ZN5Print17availableForWriteEv
-                0x0000155a        0x6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x0000155a                _ZN5Print17availableForWriteEv
+                0x000015cc        0x6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000015cc                _ZN5Print17availableForWriteEv
  .text.__vector_18
-                0x00001560       0x64 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00001560                __vector_18
+                0x000015d2       0x64 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000015d2                __vector_18
  .text.__vector_19
-                0x000015c4       0x4c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x000015c4                __vector_19
+                0x00001636       0x4c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00001636                __vector_19
  .text._Z17Serial0_availablev
-                0x00001610       0x14 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00001610                _Z17Serial0_availablev
+                0x00001682       0x14 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00001682                _Z17Serial0_availablev
  .text.startup._GLOBAL__sub_I___vector_18
-                0x00001624       0x5a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00001696       0x5a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .text.initVariant
-                0x0000167e        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
-                0x0000167e                initVariant
+                0x000016f0        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x000016f0                initVariant
  .text.startup.main
-                0x00001680       0x1e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
-                0x00001680                main
+                0x000016f2       0x1e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x000016f2                main
  .text._ZN5Print5writeEPKhj
-                0x0000169e       0x54 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x0000169e                _ZN5Print5writeEPKhj
+                0x00001710       0x54 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00001710                _ZN5Print5writeEPKhj
  .text._ZN5Print5writeEPKc
-                0x000016f2       0x2a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000016f2                _ZN5Print5writeEPKc
+                0x00001764       0x2a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00001764                _ZN5Print5writeEPKc
  .text._ZN5Print5printEPK19__FlashStringHelper
-                0x0000171c       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x0000171c                _ZN5Print5printEPK19__FlashStringHelper
+                0x0000178e       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0000178e                _ZN5Print5printEPK19__FlashStringHelper
  .text._ZN5Print5printEPKc
-                0x00001764        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001764                _ZN5Print5printEPKc
+                0x000017d6        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000017d6                _ZN5Print5printEPKc
  .text._ZN5Print5printEc
-                0x00001768        0xe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001768                _ZN5Print5printEc
+                0x000017da        0xe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000017da                _ZN5Print5printEc
  .text._ZN5Print7printlnEv
-                0x00001776        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001776                _ZN5Print7printlnEv
+                0x000017e8        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000017e8                _ZN5Print7printlnEv
  .text._ZN5Print7printlnEPK19__FlashStringHelper
-                0x0000177e       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x0000177e                _ZN5Print7printlnEPK19__FlashStringHelper
+                0x000017f0       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000017f0                _ZN5Print7printlnEPK19__FlashStringHelper
  .text._ZN5Print7printlnEPKc
-                0x000017a2       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000017a2                _ZN5Print7printlnEPKc
+                0x00001814       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00001814                _ZN5Print7printlnEPKc
  .text._ZN5Print11printNumberEmh
-                0x000017c6       0x92 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000017c6                _ZN5Print11printNumberEmh
+                0x00001838       0x92 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00001838                _ZN5Print11printNumberEmh
  .text._ZN5Print5printEmi
-                0x00001858       0x1a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001858                _ZN5Print5printEmi
+                0x000018ca       0x1a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000018ca                _ZN5Print5printEmi
  .text._ZN5Print5printEhi
-                0x00001872        0xe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001872                _ZN5Print5printEhi
+                0x000018e4        0xe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000018e4                _ZN5Print5printEhi
  .text._ZN5Print7printlnEhi
-                0x00001880       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001880                _ZN5Print7printlnEhi
+                0x000018f2       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000018f2                _ZN5Print7printlnEhi
  .text._ZN5Print5printEji
-                0x000018a4        0xc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000018a4                _ZN5Print5printEji
+                0x00001916        0xc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00001916                _ZN5Print5printEji
  .text._ZN5Print7printlnEji
-                0x000018b0       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000018b0                _ZN5Print7printlnEji
+                0x00001922       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00001922                _ZN5Print7printlnEji
  .text._ZN5Print5printEli
-                0x000018d4       0x90 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000018d4                _ZN5Print5printEli
+                0x00001946       0x90 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00001946                _ZN5Print5printEli
  .text._ZN5Print5printEii
-                0x00001964        0xe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001964                _ZN5Print5printEii
+                0x000019d6        0xe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000019d6                _ZN5Print5printEii
  .text._ZN5Print7printlnEii
-                0x00001972       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001972                _ZN5Print7printlnEii
+                0x000019e4       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000019e4                _ZN5Print7printlnEii
  .text._ZN5Print10printFloatEdh
-                0x00001996      0x1b6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001996                _ZN5Print10printFloatEdh
+                0x00001a08      0x1b6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00001a08                _ZN5Print10printFloatEdh
  .text._ZN5Print7printlnEdi
-                0x00001b4c       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001b4c                _ZN5Print7printlnEdi
+                0x00001bbe       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00001bbe                _ZN5Print7printlnEdi
  .text.__vector_16
-                0x00001b70       0x94 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00001b70                __vector_16
- .text.micros   0x00001c04       0x4a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00001c04                micros
- .text.delay    0x00001c4e       0x78 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00001c4e                delay
- .text.init     0x00001cc6       0x76 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00001cc6                init
+                0x00001be2       0x94 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00001be2                __vector_16
+ .text.micros   0x00001c76       0x4a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00001c76                micros
+ .text.delay    0x00001cc0       0x78 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00001cc0                delay
+ .text.init     0x00001d38       0x76 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00001d38                init
  .text.turnOffPWM
-                0x00001d3c       0x52 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .text.pinMode  0x00001d8e       0x78 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00001d8e                pinMode
+                0x00001dae       0x52 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x00001e00       0x78 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00001e00                pinMode
  .text.digitalWrite
-                0x00001e06       0x5e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00001e06                digitalWrite
+                0x00001e78       0x5e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00001e78                digitalWrite
  .text.freeMemory
-                0x00001e64       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
-                0x00001e64                freeMemory
+                0x00001ed6       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
+                0x00001ed6                freeMemory
  .text._ZN7TwoWire9availableEv
-                0x00001e9c       0x10 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00001e9c                _ZN7TwoWire9availableEv
+                0x00001f0e       0x10 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001f0e                _ZN7TwoWire9availableEv
  .text._ZN7TwoWire4readEv
-                0x00001eac       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00001eac                _ZN7TwoWire4readEv
+                0x00001f1e       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001f1e                _ZN7TwoWire4readEv
  .text._ZN7TwoWire4peekEv
-                0x00001ed4       0x1e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00001ed4                _ZN7TwoWire4peekEv
+                0x00001f46       0x1e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001f46                _ZN7TwoWire4peekEv
  .text._ZN7TwoWire5flushEv
-                0x00001ef2        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00001ef2                _ZN7TwoWire5flushEv
+                0x00001f64        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001f64                _ZN7TwoWire5flushEv
  .text._ZN7TwoWire16onReceiveServiceEPhi
-                0x00001ef4       0x54 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00001ef4                _ZN7TwoWire16onReceiveServiceEPhi
+                0x00001f66       0x54 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001f66                _ZN7TwoWire16onReceiveServiceEPhi
  .text._ZN7TwoWire16onRequestServiceEv
-                0x00001f48       0x18 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00001f48                _ZN7TwoWire16onRequestServiceEv
+                0x00001fba       0x18 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001fba                _ZN7TwoWire16onRequestServiceEv
  .text._ZN7TwoWire5writeEPKhj
-                0x00001f60       0x5a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00001f60                _ZN7TwoWire5writeEPKhj
+                0x00001fd2       0x5a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001fd2                _ZN7TwoWire5writeEPKhj
  .text._ZN7TwoWire5writeEh
-                0x00001fba       0x5e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00001fba                _ZN7TwoWire5writeEh
+                0x0000202c       0x5e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0000202c                _ZN7TwoWire5writeEh
  .text._ZN7TwoWireC2Ev
-                0x00002018       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00002018                _ZN7TwoWireC1Ev
-                0x00002018                _ZN7TwoWireC2Ev
+                0x0000208a       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0000208a                _ZN7TwoWireC1Ev
+                0x0000208a                _ZN7TwoWireC2Ev
  .text._ZN7TwoWire5beginEv
-                0x00002038       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00002038                _ZN7TwoWire5beginEv
+                0x000020aa       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000020aa                _ZN7TwoWire5beginEv
  .text._ZN7TwoWire8setClockEm
-                0x0000205c        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x0000205c                _ZN7TwoWire8setClockEm
+                0x000020ce        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000020ce                _ZN7TwoWire8setClockEm
  .text._ZN7TwoWire17beginTransmissionEh
-                0x00002064       0x14 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00002064                _ZN7TwoWire17beginTransmissionEh
+                0x000020d6       0x14 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000020d6                _ZN7TwoWire17beginTransmissionEh
  .text._ZN7TwoWire15endTransmissionEh
-                0x00002078       0x26 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00002078                _ZN7TwoWire15endTransmissionEh
+                0x000020ea       0x26 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000020ea                _ZN7TwoWire15endTransmissionEh
  .text._ZN7TwoWire11requestFromEhhmhh
-                0x0000209e       0xa8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x0000209e                _ZN7TwoWire11requestFromEhhmhh
+                0x00002110       0xa8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00002110                _ZN7TwoWire11requestFromEhhmhh
  .text._ZN7TwoWire11requestFromEhhh
-                0x00002146       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00002146                _ZN7TwoWire11requestFromEhhh
+                0x000021b8       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000021b8                _ZN7TwoWire11requestFromEhhh
  .text._ZN7TwoWire11requestFromEhh
-                0x00002166        0x6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00002166                _ZN7TwoWire11requestFromEhh
+                0x000021d8        0x6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000021d8                _ZN7TwoWire11requestFromEhh
  .text._ZN7TwoWire15endTransmissionEv
-                0x0000216c        0x6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x0000216c                _ZN7TwoWire15endTransmissionEv
+                0x000021de        0x6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000021de                _ZN7TwoWire15endTransmissionEv
  .text.startup._GLOBAL__sub_I__ZN7TwoWire8rxBufferE
-                0x00002172        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .text.__empty  0x0000217a        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
-                0x0000217a                yield
+                0x000021e4        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .text.__empty  0x000021ec        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+                0x000021ec                yield
  .text.twi_init
-                0x0000217c       0x3c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x0000217c                twi_init
+                0x000021ee       0x3c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x000021ee                twi_init
  .text.twi_disable
-                0x000021b8       0x1a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x000021b8                twi_disable
+                0x0000222a       0x1a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x0000222a                twi_disable
  .text.twi_setFrequency
-                0x000021d2       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x000021d2                twi_setFrequency
+                0x00002244       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00002244                twi_setFrequency
  .text.twi_transmit
-                0x000021fa       0x50 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x000021fa                twi_transmit
+                0x0000226c       0x50 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x0000226c                twi_transmit
  .text.twi_attachSlaveRxEvent
-                0x0000224a        0xa D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x0000224a                twi_attachSlaveRxEvent
+                0x000022bc        0xa D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x000022bc                twi_attachSlaveRxEvent
  .text.twi_attachSlaveTxEvent
-                0x00002254        0xa D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00002254                twi_attachSlaveTxEvent
+                0x000022c6        0xa D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x000022c6                twi_attachSlaveTxEvent
  .text.twi_releaseBus
-                0x0000225e        0xc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x0000225e                twi_releaseBus
+                0x000022d0        0xc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x000022d0                twi_releaseBus
  .text.twi_handleTimeout
-                0x0000226a       0x2c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x0000226a                twi_handleTimeout
+                0x000022dc       0x2c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x000022dc                twi_handleTimeout
  .text.twi_readFrom
-                0x00002296      0x1d2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00002296                twi_readFrom
+                0x00002308      0x1d2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00002308                twi_readFrom
  .text.twi_writeTo
-                0x00002468      0x1e0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00002468                twi_writeTo
+                0x000024da      0x1e0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x000024da                twi_writeTo
  .text.twi_stop
-                0x00002648       0x70 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00002648                twi_stop
+                0x000026ba       0x70 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x000026ba                twi_stop
  .text.__vector_24
-                0x000026b8      0x25a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x000026b8                __vector_24
+                0x0000272a      0x25a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x0000272a                __vector_24
  .text.avr-libc.fplib
-                0x00002912        0xa d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
-                0x00002912                __nesf2
-                0x00002912                __eqsf2
-                0x00002912                __cmpsf2
-                0x00002912                __ltsf2
-                0x00002912                __lesf2
+                0x00002984        0xa d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                0x00002984                __nesf2
+                0x00002984                __eqsf2
+                0x00002984                __cmpsf2
+                0x00002984                __ltsf2
+                0x00002984                __lesf2
  .text.avr-libc.fplib
-                0x0000291c        0xa d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
-                0x0000291c                __unordsf2
+                0x0000298e        0xa d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+                0x0000298e                __unordsf2
  .text.libgcc.div
-                0x00002926       0x44 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x00002926                __udivmodsi4
- .text.libgcc   0x0000296a        0xc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
-                0x0000296a                __tablejump2__
-                0x00002976                . = ALIGN (0x2)
+                0x00002998       0x44 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00002998                __udivmodsi4
+ .text.libgcc   0x000029dc        0xc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x000029dc                __tablejump2__
+                0x000029e8                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00002976        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00002976                _exit
-                0x00002976                exit
+ .fini9         0x000029e8        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x000029e8                _exit
+                0x000029e8                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -1049,11 +1054,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00002976        0x4 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x000029e8        0x4 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000297a                _etext = .
+                0x000029ec                _etext = .
 
-.data           0x00800100      0x168 load address 0x0000297a
+.data           0x00800100      0x170 load address 0x000029ec
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -1062,148 +1067,150 @@ END GROUP
                 0x00800100                default_address
  *(.gnu.linkonce.d*)
  *(.rodata)
+ .rodata        0x00800102        0x7 INA233.o
  *(.rodata*)
  .rodata.str1.1
-                0x00800102       0xf8 INA233.o
+                0x00800109       0xf8 INA233.o
  .rodata.str1.1
-                0x008001fa       0x3b Sketch.o
+                0x00800201       0x3b Sketch.o
  .rodata._ZTV14HardwareSerial
-                0x00800235       0x12 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00800235                _ZTV14HardwareSerial
+                0x0080023c       0x12 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0080023c                _ZTV14HardwareSerial
  .rodata.str1.1
-                0x00800247        0xf D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0080024e        0xf D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .rodata._ZTV7TwoWire
-                0x00800256       0x12 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800256                _ZTV7TwoWire
+                0x0080025d       0x12 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080025d                _ZTV7TwoWire
  *(.gnu.linkonce.r*)
-                0x00800268                . = ALIGN (0x2)
-                0x00800268                _edata = .
-                0x00800268                PROVIDE (__data_end, .)
+                0x00800270                . = ALIGN (0x2)
+ *fill*         0x0080026f        0x1 
+                0x00800270                _edata = .
+                0x00800270                PROVIDE (__data_end, .)
 
-.bss            0x00800268      0x254
-                0x00800268                PROVIDE (__bss_start, .)
+.bss            0x00800270      0x2af
+                0x00800270                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.Sensor7   0x00800268       0x14 Sketch.o
-                0x00800268                Sensor7
- .bss.Sensor6   0x0080027c       0x14 Sketch.o
-                0x0080027c                Sensor6
- .bss.Sensor5   0x00800290       0x14 Sketch.o
-                0x00800290                Sensor5
- .bss.Sensor4   0x008002a4       0x14 Sketch.o
-                0x008002a4                Sensor4
- .bss.Sensor3   0x008002b8       0x14 Sketch.o
-                0x008002b8                Sensor3
- .bss.Sensor2   0x008002cc       0x14 Sketch.o
-                0x008002cc                Sensor2
- .bss.Sensor1   0x008002e0       0x14 Sketch.o
-                0x008002e0                Sensor1
+ .bss.Sensor7   0x00800270       0x21 Sketch.o
+                0x00800270                Sensor7
+ .bss.Sensor6   0x00800291       0x21 Sketch.o
+                0x00800291                Sensor6
+ .bss.Sensor5   0x008002b2       0x21 Sketch.o
+                0x008002b2                Sensor5
+ .bss.Sensor4   0x008002d3       0x21 Sketch.o
+                0x008002d3                Sensor4
+ .bss.Sensor3   0x008002f4       0x21 Sketch.o
+                0x008002f4                Sensor3
+ .bss.Sensor2   0x00800315       0x21 Sketch.o
+                0x00800315                Sensor2
+ .bss.Sensor1   0x00800336       0x21 Sketch.o
+                0x00800336                Sensor1
  .bss._ZL18alarmConfigSensor7
-                0x008002f4        0xc Sketch.o
+                0x00800357        0xc Sketch.o
  .bss._ZL18alarmConfigSensor6
-                0x00800300        0xc Sketch.o
+                0x00800363        0xc Sketch.o
  .bss._ZL18alarmConfigSensor5
-                0x0080030c        0xc Sketch.o
+                0x0080036f        0xc Sketch.o
  .bss._ZL18alarmConfigSensor4
-                0x00800318        0xc Sketch.o
+                0x0080037b        0xc Sketch.o
  .bss._ZL18alarmConfigSensor3
-                0x00800324        0xc Sketch.o
+                0x00800387        0xc Sketch.o
  .bss._ZL18alarmConfigSensor2
-                0x00800330        0xc Sketch.o
+                0x00800393        0xc Sketch.o
  .bss._ZL18alarmConfigSensor1
-                0x0080033c        0xc Sketch.o
- .bss.Serial    0x00800348       0x9d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00800348                Serial
+                0x0080039f        0xc Sketch.o
+ .bss.Serial    0x008003ab       0x9d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x008003ab                Serial
  .bss.timer0_fract
-                0x008003e5        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00800448        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .bss.timer0_millis
-                0x008003e6        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x008003e6                timer0_millis
+                0x00800449        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00800449                timer0_millis
  .bss.timer0_overflow_count
-                0x008003ea        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x008003ea                timer0_overflow_count
- .bss.Wire      0x008003ee        0xc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x008003ee                Wire
+                0x0080044d        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x0080044d                timer0_overflow_count
+ .bss.Wire      0x00800451        0xc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800451                Wire
  .bss._ZN7TwoWire14user_onReceiveE
-                0x008003fa        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x008003fa                _ZN7TwoWire14user_onReceiveE
+                0x0080045d        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080045d                _ZN7TwoWire14user_onReceiveE
  .bss._ZN7TwoWire14user_onRequestE
-                0x008003fc        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x008003fc                _ZN7TwoWire14user_onRequestE
+                0x0080045f        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080045f                _ZN7TwoWire14user_onRequestE
  .bss._ZN7TwoWire12transmittingE
-                0x008003fe        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x008003fe                _ZN7TwoWire12transmittingE
+                0x00800461        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800461                _ZN7TwoWire12transmittingE
  .bss._ZN7TwoWire14txBufferLengthE
-                0x008003ff        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x008003ff                _ZN7TwoWire14txBufferLengthE
+                0x00800462        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800462                _ZN7TwoWire14txBufferLengthE
  .bss._ZN7TwoWire13txBufferIndexE
-                0x00800400        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800400                _ZN7TwoWire13txBufferIndexE
+                0x00800463        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800463                _ZN7TwoWire13txBufferIndexE
  .bss._ZN7TwoWire8txBufferE
-                0x00800401       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800401                _ZN7TwoWire8txBufferE
+                0x00800464       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800464                _ZN7TwoWire8txBufferE
  .bss._ZN7TwoWire9txAddressE
-                0x00800421        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800421                _ZN7TwoWire9txAddressE
+                0x00800484        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800484                _ZN7TwoWire9txAddressE
  .bss._ZN7TwoWire14rxBufferLengthE
-                0x00800422        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800422                _ZN7TwoWire14rxBufferLengthE
+                0x00800485        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800485                _ZN7TwoWire14rxBufferLengthE
  .bss._ZN7TwoWire13rxBufferIndexE
-                0x00800423        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800423                _ZN7TwoWire13rxBufferIndexE
+                0x00800486        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800486                _ZN7TwoWire13rxBufferIndexE
  .bss._ZN7TwoWire8rxBufferE
-                0x00800424       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800424                _ZN7TwoWire8rxBufferE
+                0x00800487       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800487                _ZN7TwoWire8rxBufferE
  .bss.twi_error
-                0x00800444        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004a7        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_rxBufferIndex
-                0x00800445        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004a8        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_rxBuffer
-                0x00800446       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004a9       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_txBufferLength
-                0x00800466        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004c9        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_txBufferIndex
-                0x00800467        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004ca        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_txBuffer
-                0x00800468       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004cb       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_masterBufferLength
-                0x00800488        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004eb        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_masterBufferIndex
-                0x00800489        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004ec        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_masterBuffer
-                0x0080048a       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004ed       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_onSlaveReceive
-                0x008004aa        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x0080050d        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_onSlaveTransmit
-                0x008004ac        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x0080050f        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_do_reset_on_timeout
-                0x008004ae        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800511        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_timed_out_flag
-                0x008004af        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800512        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_timeout_us
-                0x008004b0        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800513        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_inRepStart
-                0x008004b4        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800517        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_sendStop
-                0x008004b5        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800518        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_slarw
-                0x008004b6        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800519        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_state
-                0x008004b7        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x0080051a        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  *(COMMON)
- COMMON         0x008004b8        0x4 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x008004b8                __brkval
-                0x008004ba                __flp
-                0x008004bc                PROVIDE (__bss_end, .)
-                0x0000297a                __data_load_start = LOADADDR (.data)
-                0x00002ae2                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x0080051b        0x4 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x0080051b                __brkval
+                0x0080051d                __flp
+                0x0080051f                PROVIDE (__bss_end, .)
+                0x000029ec                __data_load_start = LOADADDR (.data)
+                0x00002b5c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008004bc        0x0
+.noinit         0x0080051f        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x008004bc                _end = .
-                0x008004bc                PROVIDE (__heap_start, .)
+                0x0080051f                _end = .
+                0x0080051f                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -1279,139 +1286,139 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x530
+.debug_aranges  0x00000000      0x540
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0xb8 INA233.o
+                0x00000000       0xc8 INA233.o
  .debug_aranges
-                0x000000b8       0x30 Sketch.o
+                0x000000c8       0x30 Sketch.o
  .debug_aranges
-                0x000000e8       0x68 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000000f8       0x68 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
  .debug_aranges
-                0x00000150       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00000160       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .debug_aranges
-                0x00000198       0x30 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x000001a8       0x30 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
  .debug_aranges
-                0x000001c8      0x100 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000001d8      0x100 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .debug_aranges
-                0x000002c8       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x000002d8       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .debug_aranges
-                0x00000310       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000320       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
  .debug_aranges
-                0x00000348       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
+                0x00000358       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
  .debug_aranges
-                0x00000368      0x110 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00000378      0x110 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
  .debug_aranges
-                0x00000478       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+                0x00000488       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
  .debug_aranges
-                0x00000498       0x98 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x000004a8       0x98 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xd31e
+.debug_info     0x00000000     0xd327
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_info    0x000005f4     0x170b INA233.o
- .debug_info    0x00001cff     0x14fc Sketch.o
- .debug_info    0x000031fb     0x1f64 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_info    0x0000515f     0x1b16 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_info    0x00006c75      0x237 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_info    0x00006eac     0x28ff D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_info    0x000097ab      0x2cb D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_info    0x00009a76      0x5fe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_info    0x0000a074       0x80 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
- .debug_info    0x0000a0f4     0x2910 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_info    0x0000ca04       0x3e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
- .debug_info    0x0000ca42      0x8dc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_info    0x000005f4     0x193f INA233.o
+ .debug_info    0x00001f33     0x12d1 Sketch.o
+ .debug_info    0x00003204     0x1f64 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_info    0x00005168     0x1b16 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_info    0x00006c7e      0x237 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_info    0x00006eb5     0x28ff D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_info    0x000097b4      0x2cb D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_info    0x00009a7f      0x5fe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_info    0x0000a07d       0x80 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
+ .debug_info    0x0000a0fd     0x2910 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_info    0x0000ca0d       0x3e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_info    0x0000ca4b      0x8dc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
-.debug_abbrev   0x00000000     0x2615
+.debug_abbrev   0x00000000     0x267b
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_abbrev  0x000005a2      0x37f INA233.o
- .debug_abbrev  0x00000921      0x33b Sketch.o
- .debug_abbrev  0x00000c5c      0x4b7 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_abbrev  0x00001113      0x3ce D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_abbrev  0x000014e1      0x12d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_abbrev  0x0000160e      0x47a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_abbrev  0x00001a88      0x146 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_abbrev  0x00001bce      0x15b D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_abbrev  0x00001d29       0x6d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
- .debug_abbrev  0x00001d96      0x563 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_abbrev  0x000022f9       0x2a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
- .debug_abbrev  0x00002323      0x2f2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_abbrev  0x000005a2      0x3e2 INA233.o
+ .debug_abbrev  0x00000984      0x33e Sketch.o
+ .debug_abbrev  0x00000cc2      0x4b7 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_abbrev  0x00001179      0x3ce D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_abbrev  0x00001547      0x12d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_abbrev  0x00001674      0x47a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_abbrev  0x00001aee      0x146 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_abbrev  0x00001c34      0x15b D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_abbrev  0x00001d8f       0x6d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
+ .debug_abbrev  0x00001dfc      0x563 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_abbrev  0x0000235f       0x2a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_abbrev  0x00002389      0x2f2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
-.debug_line     0x00000000     0x2eb9
+.debug_line     0x00000000     0x2e70
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x133 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_line    0x00000133      0x7af INA233.o
- .debug_line    0x000008e2      0x3f5 Sketch.o
- .debug_line    0x00000cd7      0x4be D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_line    0x00001195      0x28f D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_line    0x00001424      0x171 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_line    0x00001595      0x688 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_line    0x00001c1d      0x2a5 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_line    0x00001ec2      0x25e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_line    0x00002120       0x75 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
- .debug_line    0x00002195      0x625 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_line    0x000027ba       0x41 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
- .debug_line    0x000027fb      0x6be D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_line    0x00000133      0x808 INA233.o
+ .debug_line    0x0000093b      0x353 Sketch.o
+ .debug_line    0x00000c8e      0x4be D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_line    0x0000114c      0x28f D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_line    0x000013db      0x171 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_line    0x0000154c      0x688 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_line    0x00001bd4      0x2a5 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_line    0x00001e79      0x25e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_line    0x000020d7       0x75 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
+ .debug_line    0x0000214c      0x625 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_line    0x00002771       0x41 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_line    0x000027b2      0x6be D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
-.debug_frame    0x00000000      0xff8
+.debug_frame    0x00000000     0x104c
  *(.debug_frame)
- .debug_frame   0x00000000      0x340 INA233.o
- .debug_frame   0x00000340       0x78 Sketch.o
- .debug_frame   0x000003b8      0x110 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_frame   0x000004c8       0xe0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_frame   0x000005a8       0x54 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_frame   0x000005fc      0x3ac D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_frame   0x000009a8       0xc4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_frame   0x00000a6c       0x7c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_frame   0x00000ae8       0x34 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
- .debug_frame   0x00000b1c      0x2b0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_frame   0x00000dcc       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
- .debug_frame   0x00000df0      0x208 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_frame   0x00000000      0x390 INA233.o
+ .debug_frame   0x00000390       0x7c Sketch.o
+ .debug_frame   0x0000040c      0x110 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_frame   0x0000051c       0xe0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_frame   0x000005fc       0x54 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_frame   0x00000650      0x3ac D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_frame   0x000009fc       0xc4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_frame   0x00000ac0       0x7c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_frame   0x00000b3c       0x34 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
+ .debug_frame   0x00000b70      0x2b0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_frame   0x00000e20       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_frame   0x00000e44      0x208 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
-.debug_str      0x00000000     0x30a8
+.debug_str      0x00000000     0x315a
  *(.debug_str)
  .debug_str     0x00000000      0x208 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_str     0x00000208      0x922 INA233.o
-                                0x9e4 (size before relaxing)
- .debug_str     0x00000b2a      0x459 Sketch.o
-                                0xc9f (size before relaxing)
- .debug_str     0x00000f83     0x1328 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_str     0x00000208      0x9e9 INA233.o
+                                0xaab (size before relaxing)
+ .debug_str     0x00000bf1      0x444 Sketch.o
+                                0xd0d (size before relaxing)
+ .debug_str     0x00001035     0x1328 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
                                0x162e (size before relaxing)
- .debug_str     0x000022ab       0x86 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_str     0x0000235d       0x86 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
                                0x1421 (size before relaxing)
- .debug_str     0x00002331       0x37 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_str     0x000023e3       0x37 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
                                 0x2cd (size before relaxing)
- .debug_str     0x00002368      0x2fb D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_str     0x0000241a      0x2fb D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
                                0x125b (size before relaxing)
- .debug_str     0x00002663      0x15c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_str     0x00002715      0x15c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
                                 0x263 (size before relaxing)
- .debug_str     0x000027bf       0xc7 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_str     0x00002871       0xc7 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
                                 0x2c8 (size before relaxing)
- .debug_str     0x00002886       0x51 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
+ .debug_str     0x00002938       0x51 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
                                 0x1da (size before relaxing)
- .debug_str     0x000028d7      0x590 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_str     0x00002989      0x590 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
                                0x19be (size before relaxing)
- .debug_str     0x00002e67       0x1c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_str     0x00002f19       0x1c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
                                 0x158 (size before relaxing)
- .debug_str     0x00002e83      0x225 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_str     0x00002f35      0x225 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
                                 0x512 (size before relaxing)
 
-.debug_loc      0x00000000     0x55eb
+.debug_loc      0x00000000     0x578c
  *(.debug_loc)
- .debug_loc     0x00000000     0x11b9 INA233.o
- .debug_loc     0x000011b9      0x314 Sketch.o
- .debug_loc     0x000014cd      0x4dc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_loc     0x000019a9      0x1b0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_loc     0x00001b59     0x1c87 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_loc     0x000037e0      0x28d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_loc     0x00003a6d      0x5fc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_loc     0x00004069       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
- .debug_loc     0x000040b1      0xcbb D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_loc     0x00004d6c      0x87f D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_loc     0x00000000     0x12f0 INA233.o
+ .debug_loc     0x000012f0      0x37e Sketch.o
+ .debug_loc     0x0000166e      0x4dc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_loc     0x00001b4a      0x1b0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_loc     0x00001cfa     0x1c87 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_loc     0x00003981      0x28d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_loc     0x00003c0e      0x5fc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_loc     0x0000420a       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
+ .debug_loc     0x00004252      0xcbb D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_loc     0x00004f0d      0x87f D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1431,20 +1438,20 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x4a0
+.debug_ranges   0x00000000      0x4c8
  *(.debug_ranges)
- .debug_ranges  0x00000000       0xa8 INA233.o
- .debug_ranges  0x000000a8       0x20 Sketch.o
- .debug_ranges  0x000000c8       0x58 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_ranges  0x00000120       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_ranges  0x00000158       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_ranges  0x00000178      0x120 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_ranges  0x00000298       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_ranges  0x000002d0       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_ranges  0x000002f8       0x10 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
- .debug_ranges  0x00000308      0x100 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_ranges  0x00000408       0x10 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
- .debug_ranges  0x00000418       0x88 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_ranges  0x00000000       0xd0 INA233.o
+ .debug_ranges  0x000000d0       0x20 Sketch.o
+ .debug_ranges  0x000000f0       0x58 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_ranges  0x00000148       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_ranges  0x00000180       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_ranges  0x000001a0      0x120 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_ranges  0x000002c0       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_ranges  0x000002f8       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_ranges  0x00000320       0x10 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(MemoryFree.o)
+ .debug_ranges  0x00000330      0x100 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_ranges  0x00000430       0x10 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_ranges  0x00000440       0x88 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\ArduinoSketch1\ArduinoSketch1\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
 .debug_macro
  *(.debug_macro)
