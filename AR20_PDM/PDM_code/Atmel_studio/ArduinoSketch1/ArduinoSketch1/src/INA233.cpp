@@ -1,8 +1,7 @@
 #include "INA233.h"
 
-INA233_S::INA233_S(uint8_t address, uint16_t m_value, uint16_t cal_value, uint8_t MOSpin, INA233_Alarm_Config alarmConfigSensor) : address_(address), m_value_(m_value), cal_value_(cal_value), MOSpin_(MOSpin), alarmConfigSensor_(alarmConfigSensor)
+INA233_S::INA233_S(uint8_t address, uint16_t m_value, uint16_t cal_value, INA233_Alarm_Config alarmConfigSensor) : address_(address), m_value_(m_value), cal_value_(cal_value), alarmConfigSensor_(alarmConfigSensor)
 {
-	//initialize();
 }
 
 int INA233_S::initialize()
@@ -12,13 +11,11 @@ int INA233_S::initialize()
 		return 1;	
 	}
     resetAlarm();
-	
-	pinMode(MOSpin_, OUTPUT);
 	setAlarmLimits(alarmConfigSensor_);
 	return 0;
 }
 
-int INA233_S::readbackCheck(INA233_Data_Package *data, uint8_t addrs){
+uint8_t INA233_S::readbackCheck(INA233_Data_Package *data, uint8_t addrs){
 	INA233_Data_Package readback = INA233_S::receiveData_(addrs, data->length);
 	for(uint16_t ii = 0; ii < data->length; ii++){
 		if(data->msg[ii] != readback.msg[ii]){
@@ -38,9 +35,6 @@ int INA233_S::setADC_Settings(uint16_t ADC_Settings)
 {
     INA233_Data_Package data = repackWord(ADC_Settings); 
     transmitData(&data, 0xD0);
-    /*INA233_Data_Package readback = receiveData_(0xD0, 2);
-    Serial.print("ADC setting readback: ");
-    Serial.println(unpackWord(&readback), BIN);*/
 	
 	return readbackCheck(&data, 0xD0); // data, address, length-> return 1 or 0
 }

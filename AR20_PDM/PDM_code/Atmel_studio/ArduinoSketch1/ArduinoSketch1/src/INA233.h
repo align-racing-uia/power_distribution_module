@@ -27,11 +27,10 @@ private:
 	uint8_t address_;
 	uint16_t m_value_;
 	uint16_t cal_value_;
-	uint8_t MOSpin_;
 	INA233_Alarm_Config alarmConfigSensor_;
 	INA233_Data_Package  readback_;
-		
-	int readbackCheck(INA233_Data_Package *data, uint8_t addrs);
+	
+	uint8_t readbackCheck(INA233_Data_Package *data, uint8_t addrs);
 	void transmitCommand(uint8_t command);
 	void transmitData(INA233_Data_Package *data, uint8_t command);
 	INA233_Data_Package receiveData_(uint8_t command, uint8_t numOfBytes);
@@ -40,7 +39,7 @@ private:
 
 public:
 	INA233_S() = delete;
-	INA233_S(uint8_t address, uint16_t m_value, uint16_t cal_value, uint8_t MOSpin, INA233_Alarm_Config alarmConfigSensor);
+	INA233_S(uint8_t address, uint16_t m_value, uint16_t cal_value, INA233_Alarm_Config alarmConfigSensor);
 	int initialize();
 	int setADC_Settings(uint16_t ADC_Settings);
 	int setAlarmLimits(INA233_Alarm_Config alarmConfiguration);

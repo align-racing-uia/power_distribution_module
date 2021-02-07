@@ -24,9 +24,9 @@ public:
 		}
 	}
 	
-	void newError(uint8_t ID, uint8_t code){
-		errorList[nrErrors].code = code;
-		errorList[nrErrors].ID = ID;
+	void newError(uint8_t _ID, uint8_t _code){
+		errorList[nrErrors].code = _code;
+		errorList[nrErrors].ID = _ID;
 		nrErrors++;
 	}
 	
