@@ -38,6 +38,8 @@ SUBDIRS :=  \
 ../include/libraries/ \
 ../include/libraries/Wire/ \
 ../include/libraries/Wire/utility/ \
+../include/acan2517FD-master \
+../include/SPI \
 ../include/variants/ \
 ../include/variants/standard/ \
 ../src/ \
@@ -50,6 +52,7 @@ SUBDIRS :=  \
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../include/acan2517FD-master/ACAN2517FD.cpp \
 ../src/core/abi.cpp \
 ../src/core/CDC.cpp \
 ../src/core/HardwareSerial.cpp \
@@ -86,6 +89,7 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+include/acan2517FD-master/ACAN2517FD.o \
 src/core/abi.o \
 src/core/CDC.o \
 src/core/HardwareSerial.o \
@@ -115,6 +119,7 @@ src/libraries/Wire/utility/twi.o \
 src/libraries/Wire/Wire.o
 
 OBJS_AS_ARGS +=  \
+include/acan2517FD-master/ACAN2517FD.o \
 src/core/abi.o \
 src/core/CDC.o \
 src/core/HardwareSerial.o \
@@ -144,6 +149,7 @@ src/libraries/Wire/utility/twi.o \
 src/libraries/Wire/Wire.o
 
 C_DEPS +=  \
+include/acan2517FD-master/ACAN2517FD.d \
 src/core/abi.d \
 src/core/CDC.d \
 src/core/HardwareSerial.d \
@@ -173,6 +179,7 @@ src/libraries/Wire/utility/twi.d \
 src/libraries/Wire/Wire.d
 
 C_DEPS_AS_ARGS +=  \
+include/acan2517FD-master/ACAN2517FD.d \
 src/core/abi.d \
 src/core/CDC.d \
 src/core/HardwareSerial.d \
@@ -215,6 +222,13 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+include/acan2517FD-master/ACAN2517FD.o: ../include/acan2517FD-master/ACAN2517FD.cpp
+	@echo Building file: $<
+	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
+	$(QUOTE)D:\Programmer\Atmel Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=108013 -DARDUINO_AVR_UNO -DARDUINO_ARCH_AVR -DUSB_VID=0x2341 -DUSB_PID=0x0043 -DUSB_MANUFACTURER="\"Arduino LLC\""  -I"D:\Programmer\Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\include" -I"..\include\libraries\Wire" -I"..\include\libraries\Wire\utility" -I"..\include\core" -I"..\include\variants\standard"  -Os -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -w -mmcu=atmega328p -B "D:\Programmer\Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\gcc\dev\atmega328p" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
 src/core/abi.o: ../src/core/abi.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0

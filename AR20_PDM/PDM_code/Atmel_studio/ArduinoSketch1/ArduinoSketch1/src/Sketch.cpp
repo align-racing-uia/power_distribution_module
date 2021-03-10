@@ -1,4 +1,7 @@
 ﻿#include <Arduino.h>
+#include <avr/wdt.h>
+#include "ACAN2517FD.h"
+#include "SPI.h"
 
 #include "INA233.h"
 #include "Port_expander.h"
@@ -6,6 +9,12 @@
 //#include "MemoryFree.h"
 #include "errorHandler.h"
 
+// CANBUS settings
+static const byte MCP2517_CS  = 7 ; // CS input of MCP2517
+static const byte MCP2517_INT =  2 ; // INT output of MCP2517
+
+ACAN2517FD can (MCP2517_CS, SPI, MCP2517_INT);
+	CANFDMessage frame_FD, frame;
 
 class  mosfet{
 public:
@@ -60,6 +69,7 @@ mosfet	p1(p1_ACM_E_Pin),
 mosfet* MosfetList[] = { &p1, &p2, &p3, &p4, &p5, &p6, &p7 };
 
 void setup() {
+	wdt_enable(WDTO_500MS);
 	Wire.begin();
 	Wire.setClock(10000);
 	Serial.begin(9600);
@@ -76,9 +86,9 @@ void setup() {
 	//Serial.print(F("freeMemory()="));
 	//Serial.println(freeMemory());
 
-  //Sensor1.setAlarmMask (0b11011111);
-  //Sensor1.setMFRConfig (0b00000001);
-  //expander.setPin (1,true);  
+	//Sensor1.setAlarmMask (0b11011111);
+	//Sensor1.setMFRConfig (0b00000001);
+	//expander.setPin (1,true);  
 }
 
 
@@ -91,6 +101,7 @@ void loop() {
 	int test = 1 ;
 	
 	Serial.println(current_1);
+	wdt_reset();
 }
 
 /*

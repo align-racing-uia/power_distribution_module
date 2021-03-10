@@ -7,6 +7,8 @@ Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "src", "ArduinoSketch1\src\s
 EndProject
 Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "ArduinoCore", "ArduinoSketch1\ArduinoCore\ArduinoCore.cppproj", "{A1A5E72F-8133-4BC9-88B3-577B771AF0FB}"
 EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "pdm_sketch", "..\pdm_atmel_wCAN\pdm_sketch\pdm_sketch.cppproj", "{5FE3BBDE-026A-4B60-A6D9-FB481772C996}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -21,6 +23,10 @@ Global
 		{A1A5E72F-8133-4BC9-88B3-577B771AF0FB}.Debug|AVR.Build.0 = Debug|AVR
 		{A1A5E72F-8133-4BC9-88B3-577B771AF0FB}.Release|AVR.ActiveCfg = Release|AVR
 		{A1A5E72F-8133-4BC9-88B3-577B771AF0FB}.Release|AVR.Build.0 = Release|AVR
+		{5FE3BBDE-026A-4B60-A6D9-FB481772C996}.Debug|AVR.ActiveCfg = Debug|AVR
+		{5FE3BBDE-026A-4B60-A6D9-FB481772C996}.Debug|AVR.Build.0 = Debug|AVR
+		{5FE3BBDE-026A-4B60-A6D9-FB481772C996}.Release|AVR.ActiveCfg = Release|AVR
+		{5FE3BBDE-026A-4B60-A6D9-FB481772C996}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

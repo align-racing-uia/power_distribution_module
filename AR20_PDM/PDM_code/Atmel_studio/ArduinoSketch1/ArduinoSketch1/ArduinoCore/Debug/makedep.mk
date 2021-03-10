@@ -2,6 +2,8 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+include\acan2517FD-master\ACAN2517FD.cpp
+
 src\core\abi.cpp
 
 src\core\CDC.cpp

@@ -34,7 +34,11 @@ Sketch.d Sketch.o: .././Sketch.cpp \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  ..\\..\ArduinoCore\include\core/Arduino.h \
  ..\\..\ArduinoCore\include\variants\standard/pins_arduino.h \
- .././INA233.h ..\\..\ArduinoCore\include\libraries\Wire/Wire.h \
+ d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\wdt.h \
+ .././ACAN2517FD.h .././ACAN2517FDSettings.h \
+ .././ACANFD_DataBitRateFactor.h .././ACANFDBuffer.h .././CANFDMessage.h \
+ .././CANMessage.h .././ACAN2517FDFilters.h .././SPI.h .././INA233.h \
+ ..\\..\ArduinoCore\include\libraries\Wire/Wire.h \
  ..\\..\ArduinoCore\include\core/Stream.h .././Port_expander.h \
  .././Config.h ..\\..\ArduinoCore\include\core/arduino.h \
  .././errorHandler.h
@@ -108,6 +112,24 @@ d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\ut
 ..\\..\ArduinoCore\include\core/Arduino.h:
 
 ..\\..\ArduinoCore\include\variants\standard/pins_arduino.h:
+
+d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\wdt.h:
+
+.././ACAN2517FD.h:
+
+.././ACAN2517FDSettings.h:
+
+.././ACANFD_DataBitRateFactor.h:
+
+.././ACANFDBuffer.h:
+
+.././CANFDMessage.h:
+
+.././CANMessage.h:
+
+.././ACAN2517FDFilters.h:
+
+.././SPI.h:
 
 .././INA233.h:
 
