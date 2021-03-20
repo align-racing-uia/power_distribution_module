@@ -69,28 +69,31 @@ INA233_S* SensorList[] = { &Sensor_1, &Sensor_2, &Sensor_3, &Sensor_4, &Sensor_5
 
 
 // Create instances of each mosfet object
-mosfet	p1(p1_ACM_E_Pin), 
-		p2(p2_ACM_E_Pin), 
+mosfet	p1(p1_ACM_E_Pin); 
+		/*p2(p2_ACM_E_Pin), 
 		p3(p3_ACM_E_Pin), 
 		p4(p4_ACM_E_Pin),
 		p5(p5_ACM_E_Pin),
 		p6(p6_ACM_E_Pin),
-		p7(p7_ACM_E_Pin);
+		p7(p7_ACM_E_Pin);*/
 
 // Adding each mosfet object to a pointer array for easier loops
-mosfet* MosfetList[] = { &p1, &p2, &p3, &p4, &p5, &p6, &p7 };
+mosfet* MosfetList[] = { &p1};//, &p2, &p3, &p4, &p5, &p6, &p7 };
 	
 //TI_TCA6424A_S expander (adrExpander);
 
 
 
+void blink_light();
+uint8_t STATE = HIGH;
+unsigned long blink_time = 0, blink_interval = 500;
 
-
-void setup() {
+void setup() {	
 	wdt_enable(WDTO_500MS);
+	
 	Wire.begin();
 	Wire.setClock(10000);
-	Serial.begin(9600);
+	//Serial.begin(9600);
 	
 	// Setup for each INA233 sensor
 	for (uint8_t ii = 0; ii < 7; ii++){
@@ -141,20 +144,14 @@ void setup() {
 	
 	frame.id = 0x500;
 	frame_FD.id = 0x501;
-
-	//Serial.print(F("freeMemory()="));
-	//Serial.println(freeMemory());
-
-	//Sensor1.setAlarmMask (0b11011111);
-	//Sensor1.setMFRConfig (0b00000001);
-	//expander.setPin (1,true);
 }
 
 
 void loop() {
 	
 	// Let power through MOSFET nr 1
-	p1.close_MOSFET();
+	p1.open_MOSFET();
+	
 	
 	// Make sure communication with INA233 still works, if not then open mosfet
 	check_INA233_miscommunication();
@@ -169,47 +166,19 @@ void loop() {
 		Serial.print ("Received: ");
 		
 		if (frame.data[0] == 0x01){
-			digitalWrite(10, HIGH);
+			digitalWrite(9, HIGH);
 		}
 
 		if (frame.data[0] == 0x02){
-			digitalWrite(10, LOW);
+			digitalWrite(9, LOW); 
 		}
 		
 	}
+	blink_light();
+	//p2.close_MOSFET();
 	
 	wdt_reset();	
 }
-
-/*
-void gammeltStuff(){
-	//Serial.println(F("looping"));
-	//Serial.print(F("freeMemory()="));
-	//Serial.println(freeMemory());
-
-	float voltage_s;
-	float voltage_l;
-	float current;
-
-	Serial.println("Looping 2");
-
-	voltage_s = SensorList[1]->getVoltage_S();
-	Serial.print("Voltage S: ");
-	Serial.println(voltage_s, 5);
-
-	voltage_l = SensorList[1]->getVoltage_L();
-	Serial.print("Voltage L: ");
-	Serial.println(voltage_l, 5);
-
-	current = SensorList[1]->getCurrent();
-	Serial.print("Current: ");
-	Serial.println(current, 5);
-
-	SensorList[1]->getAlarm();
-
-
-	}
-*/
 
 void check_INA233_miscommunication(){
 	
@@ -223,6 +192,16 @@ void check_INA233_miscommunication(){
 		}		
 		
 		timeStamps[0] = millis();
+	}
+}
+
+void blink_light(){
+	if (millis() - blink_time > blink_interval){
+		STATE = !STATE;
+		digitalWrite(10, STATE);
+		//p1.close_MOSFET();
+		
+		blink_time = millis();
 	}
 }
 
