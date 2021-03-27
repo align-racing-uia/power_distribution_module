@@ -3,31 +3,31 @@ pdm_sketch.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .data         000001d8  00800100  00004ca8  00004d3c  2**0
+  0 .data         000001e4  00800100  00004ca8  00004d3c  2**0
                   CONTENTS, ALLOC, LOAD, DATA
   1 .text         00004ca8  00000000  00000000  00000094  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .bss          00000370  008002d8  008002d8  00004f14  2**0
+  2 .bss          00000370  008002e4  008002e4  00004f20  2**0
                   ALLOC
-  3 .comment      00000030  00000000  00000000  00004f14  2**0
+  3 .comment      00000030  00000000  00000000  00004f20  2**0
                   CONTENTS, READONLY
-  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00004f44  2**2
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00004f50  2**2
                   CONTENTS, READONLY
-  5 .debug_aranges 000007b8  00000000  00000000  00004f84  2**0
+  5 .debug_aranges 000007b8  00000000  00000000  00004f90  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_info   0001538c  00000000  00000000  0000573c  2**0
+  6 .debug_info   0001538c  00000000  00000000  00005748  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_abbrev 0000393a  00000000  00000000  0001aac8  2**0
+  7 .debug_abbrev 0000393a  00000000  00000000  0001aad4  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_line   00004e74  00000000  00000000  0001e402  2**0
+  8 .debug_line   00004e74  00000000  00000000  0001e40e  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_frame  00001b48  00000000  00000000  00023278  2**2
+  9 .debug_frame  00001b48  00000000  00000000  00023284  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    00005ffe  00000000  00000000  00024dc0  2**0
+ 10 .debug_str    00005ffe  00000000  00000000  00024dcc  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    00009f99  00000000  00000000  0002adbe  2**0
+ 11 .debug_loc    00009f99  00000000  00000000  0002adca  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 00000790  00000000  00000000  00034d57  2**0
+ 12 .debug_ranges 00000790  00000000  00000000  00034d63  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -137,13 +137,13 @@ Disassembly of section .text:
      16e:	02 c0       	rjmp	.+4      	; 0x174 <__do_copy_data+0x10>
      170:	05 90       	lpm	r0, Z+
      172:	0d 92       	st	X+, r0
-     174:	a8 3d       	cpi	r26, 0xD8	; 216
+     174:	a4 3e       	cpi	r26, 0xE4	; 228
      176:	b1 07       	cpc	r27, r17
      178:	d9 f7       	brne	.-10     	; 0x170 <__do_copy_data+0xc>
 
 0000017a <__do_clear_bss>:
      17a:	26 e0       	ldi	r18, 0x06	; 6
-     17c:	a8 ed       	ldi	r26, 0xD8	; 216
+     17c:	a4 ee       	ldi	r26, 0xE4	; 228
      17e:	b2 e0       	ldi	r27, 0x02	; 2
      180:	01 c0       	rjmp	.+2      	; 0x184 <.do_clear_bss_start>
 
@@ -151,7 +151,7 @@ Disassembly of section .text:
      182:	1d 92       	st	X+, r1
 
 00000184 <.do_clear_bss_start>:
-     184:	a8 34       	cpi	r26, 0x48	; 72
+     184:	a4 35       	cpi	r26, 0x54	; 84
      186:	b2 07       	cpc	r27, r18
      188:	e1 f7       	brne	.-8      	; 0x182 <.do_clear_bss_loop>
 
@@ -233,14 +233,14 @@ void INA233_S::getAlarm()
      20e:	c6 2f       	mov	r28, r22
      210:	fc 01       	movw	r30, r24
      212:	60 81       	ld	r22, Z
-     214:	8a e7       	ldi	r24, 0x7A	; 122
+     214:	86 e8       	ldi	r24, 0x86	; 134
      216:	95 e0       	ldi	r25, 0x05	; 5
      218:	0e 94 95 1e 	call	0x3d2a	; 0x3d2a <_ZN7TwoWire17beginTransmissionEh>
      21c:	6c 2f       	mov	r22, r28
-     21e:	8a e7       	ldi	r24, 0x7A	; 122
+     21e:	86 e8       	ldi	r24, 0x86	; 134
      220:	95 e0       	ldi	r25, 0x05	; 5
      222:	0e 94 40 1e 	call	0x3c80	; 0x3c80 <_ZN7TwoWire5writeEh>
-     226:	8a e7       	ldi	r24, 0x7A	; 122
+     226:	86 e8       	ldi	r24, 0x86	; 134
      228:	95 e0       	ldi	r25, 0x05	; 5
      22a:	cf 91       	pop	r28
      22c:	0c 94 19 1f 	jmp	0x3e32	; 0x3e32 <_ZN7TwoWire15endTransmissionEv>
@@ -251,7 +251,7 @@ void INA233_S::getAlarm()
      234:	ec 01       	movw	r28, r24
      236:	68 e7       	ldi	r22, 0x78	; 120
      238:	70 e0       	ldi	r23, 0x00	; 0
-     23a:	8f ec       	ldi	r24, 0xCF	; 207
+     23a:	8b ed       	ldi	r24, 0xDB	; 219
      23c:	94 e0       	ldi	r25, 0x04	; 4
      23e:	0e 94 f1 0a 	call	0x15e2	; 0x15e2 <_ZN5Print7printlnEPK19__FlashStringHelper>
      242:	63 e0       	ldi	r22, 0x03	; 3
@@ -264,9 +264,9 @@ void INA233_S::getAlarm()
      24e:	cf 93       	push	r28
      250:	df 93       	push	r29
      252:	ec 01       	movw	r28, r24
-     254:	68 e2       	ldi	r22, 0x28	; 40
+     254:	64 e3       	ldi	r22, 0x34	; 52
      256:	71 e0       	ldi	r23, 0x01	; 1
-     258:	8f ec       	ldi	r24, 0xCF	; 207
+     258:	8b ed       	ldi	r24, 0xDB	; 219
      25a:	94 e0       	ldi	r25, 0x04	; 4
      25c:	0e 94 03 0b 	call	0x1606	; 0x1606 <_ZN5Print7printlnEPKc>
      260:	62 e1       	ldi	r22, 0x12	; 18
@@ -285,44 +285,44 @@ void INA233_S::getAlarm()
      278:	9a 85       	ldd	r25, Y+10	; 0x0a
      27a:	93 30       	cpi	r25, 0x03	; 3
      27c:	18 f0       	brcs	.+6      	; 0x284 <_ZN8INA233_S12transmitDataEP19INA233_Data_Packageh+0x18>
-     27e:	63 e3       	ldi	r22, 0x33	; 51
+     27e:	6f e3       	ldi	r22, 0x3F	; 63
      280:	71 e0       	ldi	r23, 0x01	; 1
      282:	04 c0       	rjmp	.+8      	; 0x28c <_ZN8INA233_S12transmitDataEP19INA233_Data_Packageh+0x20>
      284:	91 11       	cpse	r25, r1
      286:	0f c0       	rjmp	.+30     	; 0x2a6 <_ZN8INA233_S12transmitDataEP19INA233_Data_Packageh+0x3a>
-     288:	69 e9       	ldi	r22, 0x99	; 153
+     288:	65 ea       	ldi	r22, 0xA5	; 165
      28a:	71 e0       	ldi	r23, 0x01	; 1
-     28c:	8f ec       	ldi	r24, 0xCF	; 207
+     28c:	8b ed       	ldi	r24, 0xDB	; 219
      28e:	94 e0       	ldi	r25, 0x04	; 4
      290:	0e 94 03 0b 	call	0x1606	; 0x1606 <_ZN5Print7printlnEPKc>
-     294:	68 e7       	ldi	r22, 0x78	; 120
+     294:	64 e8       	ldi	r22, 0x84	; 132
      296:	71 e0       	ldi	r23, 0x01	; 1
-     298:	8f ec       	ldi	r24, 0xCF	; 207
+     298:	8b ed       	ldi	r24, 0xDB	; 219
      29a:	94 e0       	ldi	r25, 0x04	; 4
      29c:	df 91       	pop	r29
      29e:	cf 91       	pop	r28
      2a0:	1f 91       	pop	r17
      2a2:	0c 94 03 0b 	jmp	0x1606	; 0x1606 <_ZN5Print7printlnEPKc>
      2a6:	60 81       	ld	r22, Z
-     2a8:	8a e7       	ldi	r24, 0x7A	; 122
+     2a8:	86 e8       	ldi	r24, 0x86	; 134
      2aa:	95 e0       	ldi	r25, 0x05	; 5
      2ac:	0e 94 95 1e 	call	0x3d2a	; 0x3d2a <_ZN7TwoWire17beginTransmissionEh>
      2b0:	61 2f       	mov	r22, r17
-     2b2:	8a e7       	ldi	r24, 0x7A	; 122
+     2b2:	86 e8       	ldi	r24, 0x86	; 134
      2b4:	95 e0       	ldi	r25, 0x05	; 5
      2b6:	0e 94 40 1e 	call	0x3c80	; 0x3c80 <_ZN7TwoWire5writeEh>
      2ba:	68 81       	ld	r22, Y
-     2bc:	8a e7       	ldi	r24, 0x7A	; 122
+     2bc:	86 e8       	ldi	r24, 0x86	; 134
      2be:	95 e0       	ldi	r25, 0x05	; 5
      2c0:	0e 94 40 1e 	call	0x3c80	; 0x3c80 <_ZN7TwoWire5writeEh>
      2c4:	8a 85       	ldd	r24, Y+10	; 0x0a
      2c6:	82 30       	cpi	r24, 0x02	; 2
      2c8:	29 f4       	brne	.+10     	; 0x2d4 <_ZN8INA233_S12transmitDataEP19INA233_Data_Packageh+0x68>
      2ca:	69 81       	ldd	r22, Y+1	; 0x01
-     2cc:	8a e7       	ldi	r24, 0x7A	; 122
+     2cc:	86 e8       	ldi	r24, 0x86	; 134
      2ce:	95 e0       	ldi	r25, 0x05	; 5
      2d0:	0e 94 40 1e 	call	0x3c80	; 0x3c80 <_ZN7TwoWire5writeEh>
-     2d4:	8a e7       	ldi	r24, 0x7A	; 122
+     2d4:	86 e8       	ldi	r24, 0x86	; 134
      2d6:	95 e0       	ldi	r25, 0x05	; 5
      2d8:	df 91       	pop	r29
      2da:	cf 91       	pop	r28
@@ -352,16 +352,16 @@ void INA233_S::getAlarm()
      30a:	40 2f       	mov	r20, r16
      30c:	f7 01       	movw	r30, r14
      30e:	60 81       	ld	r22, Z
-     310:	8a e7       	ldi	r24, 0x7A	; 122
+     310:	86 e8       	ldi	r24, 0x86	; 134
      312:	95 e0       	ldi	r25, 0x05	; 5
      314:	0e 94 16 1f 	call	0x3e2c	; 0x3e2c <_ZN7TwoWire11requestFromEhh>
-     318:	8a e7       	ldi	r24, 0x7A	; 122
+     318:	86 e8       	ldi	r24, 0x86	; 134
      31a:	95 e0       	ldi	r25, 0x05	; 5
      31c:	0e 94 b1 1d 	call	0x3b62	; 0x3b62 <_ZN7TwoWire9availableEv>
      320:	89 2b       	or	r24, r25
      322:	79 f0       	breq	.+30     	; 0x342 <_ZN8INA233_S12receiveData_Ehh+0x60>
      324:	1a 85       	ldd	r17, Y+10	; 0x0a
-     326:	8a e7       	ldi	r24, 0x7A	; 122
+     326:	86 e8       	ldi	r24, 0x86	; 134
      328:	95 e0       	ldi	r25, 0x05	; 5
      32a:	0e 94 b9 1d 	call	0x3b72	; 0x3b72 <_ZN7TwoWire4readEv>
      32e:	fe 01       	movw	r30, r28
@@ -534,7 +534,7 @@ void INA233_S::getAlarm()
      476:	6b 01       	movw	r12, r22
      478:	68 e6       	ldi	r22, 0x68	; 104
      47a:	70 e0       	ldi	r23, 0x00	; 0
-     47c:	8f ec       	ldi	r24, 0xCF	; 207
+     47c:	8b ed       	ldi	r24, 0xDB	; 219
      47e:	94 e0       	ldi	r25, 0x04	; 4
      480:	0e 94 f1 0a 	call	0x15e2	; 0x15e2 <_ZN5Print7printlnEPK19__FlashStringHelper>
      484:	8e 01       	movw	r16, r28
@@ -628,9 +628,9 @@ void INA233_S::getAlarm()
      534:	58 a4       	ldd	r5, Y+40	; 0x28
      536:	69 a4       	ldd	r6, Y+41	; 0x29
      538:	7a a4       	ldd	r7, Y+42	; 0x2a
-     53a:	65 eb       	ldi	r22, 0xB5	; 181
+     53a:	61 ec       	ldi	r22, 0xC1	; 193
      53c:	71 e0       	ldi	r23, 0x01	; 1
-     53e:	8f ec       	ldi	r24, 0xCF	; 207
+     53e:	8b ed       	ldi	r24, 0xDB	; 219
      540:	94 e0       	ldi	r25, 0x04	; 4
      542:	0e 94 03 0b 	call	0x1606	; 0x1606 <_ZN5Print7printlnEPKc>
      546:	20 e0       	ldi	r18, 0x00	; 0
@@ -691,13 +691,13 @@ void INA233_S::getAlarm()
      5c2:	8a 8f       	std	Y+26, r24	; 0x1a
      5c4:	6f ee       	ldi	r22, 0xEF	; 239
      5c6:	70 e0       	ldi	r23, 0x00	; 0
-     5c8:	8f ec       	ldi	r24, 0xCF	; 207
+     5c8:	8b ed       	ldi	r24, 0xDB	; 219
      5ca:	94 e0       	ldi	r25, 0x04	; 4
      5cc:	0e 94 f1 0a 	call	0x15e2	; 0x15e2 <_ZN5Print7printlnEPK19__FlashStringHelper>
      5d0:	4a e0       	ldi	r20, 0x0A	; 10
      5d2:	50 e0       	ldi	r21, 0x00	; 0
      5d4:	b8 01       	movw	r22, r16
-     5d6:	8f ec       	ldi	r24, 0xCF	; 207
+     5d6:	8b ed       	ldi	r24, 0xDB	; 219
      5d8:	94 e0       	ldi	r25, 0x04	; 4
      5da:	0e 94 78 0b 	call	0x16f0	; 0x16f0 <_ZN5Print7printlnEji>
      5de:	4a e4       	ldi	r20, 0x4A	; 74
@@ -771,13 +771,13 @@ void INA233_S::getAlarm()
      676:	8a 8f       	std	Y+26, r24	; 0x1a
      678:	66 ec       	ldi	r22, 0xC6	; 198
      67a:	70 e0       	ldi	r23, 0x00	; 0
-     67c:	8f ec       	ldi	r24, 0xCF	; 207
+     67c:	8b ed       	ldi	r24, 0xDB	; 219
      67e:	94 e0       	ldi	r25, 0x04	; 4
      680:	0e 94 f1 0a 	call	0x15e2	; 0x15e2 <_ZN5Print7printlnEPK19__FlashStringHelper>
      684:	4a e0       	ldi	r20, 0x0A	; 10
      686:	50 e0       	ldi	r21, 0x00	; 0
      688:	b8 01       	movw	r22, r16
-     68a:	8f ec       	ldi	r24, 0xCF	; 207
+     68a:	8b ed       	ldi	r24, 0xDB	; 219
      68c:	94 e0       	ldi	r25, 0x04	; 4
      68e:	0e 94 78 0b 	call	0x16f0	; 0x16f0 <_ZN5Print7printlnEji>
      692:	47 e5       	ldi	r20, 0x57	; 87
@@ -847,13 +847,13 @@ void INA233_S::getAlarm()
      722:	8a 8f       	std	Y+26, r24	; 0x1a
      724:	6d e9       	ldi	r22, 0x9D	; 157
      726:	70 e0       	ldi	r23, 0x00	; 0
-     728:	8f ec       	ldi	r24, 0xCF	; 207
+     728:	8b ed       	ldi	r24, 0xDB	; 219
      72a:	94 e0       	ldi	r25, 0x04	; 4
      72c:	0e 94 f1 0a 	call	0x15e2	; 0x15e2 <_ZN5Print7printlnEPK19__FlashStringHelper>
      730:	4a e0       	ldi	r20, 0x0A	; 10
      732:	50 e0       	ldi	r21, 0x00	; 0
      734:	b8 01       	movw	r22, r16
-     736:	8f ec       	ldi	r24, 0xCF	; 207
+     736:	8b ed       	ldi	r24, 0xDB	; 219
      738:	94 e0       	ldi	r25, 0x04	; 4
      73a:	0e 94 78 0b 	call	0x16f0	; 0x16f0 <_ZN5Print7printlnEji>
      73e:	48 e5       	ldi	r20, 0x58	; 88
@@ -868,14 +868,14 @@ void INA233_S::getAlarm()
      752:	0e 94 71 01 	call	0x2e2	; 0x2e2 <_ZN8INA233_S12receiveData_Ehh>
      756:	64 e8       	ldi	r22, 0x84	; 132
      758:	70 e0       	ldi	r23, 0x00	; 0
-     75a:	8f ec       	ldi	r24, 0xCF	; 207
+     75a:	8b ed       	ldi	r24, 0xDB	; 219
      75c:	94 e0       	ldi	r25, 0x04	; 4
      75e:	0e 94 f1 0a 	call	0x15e2	; 0x15e2 <_ZN5Print7printlnEPK19__FlashStringHelper>
      762:	69 81       	ldd	r22, Y+1	; 0x01
      764:	7a 81       	ldd	r23, Y+2	; 0x02
      766:	4a e0       	ldi	r20, 0x0A	; 10
      768:	50 e0       	ldi	r21, 0x00	; 0
-     76a:	8f ec       	ldi	r24, 0xCF	; 207
+     76a:	8b ed       	ldi	r24, 0xDB	; 219
      76c:	94 e0       	ldi	r25, 0x04	; 4
      76e:	0e 94 eb 0b 	call	0x17d6	; 0x17d6 <_ZN5Print7printlnEii>
      772:	8a e0       	ldi	r24, 0x0A	; 10
@@ -975,15 +975,15 @@ void INA233_S::getAlarm()
      82e:	0e 94 71 01 	call	0x2e2	; 0x2e2 <_ZN8INA233_S12receiveData_Ehh>
      832:	09 81       	ldd	r16, Y+1	; 0x01
      834:	1a 81       	ldd	r17, Y+2	; 0x02
-     836:	62 ec       	ldi	r22, 0xC2	; 194
+     836:	6e ec       	ldi	r22, 0xCE	; 206
      838:	71 e0       	ldi	r23, 0x01	; 1
-     83a:	8f ec       	ldi	r24, 0xCF	; 207
+     83a:	8b ed       	ldi	r24, 0xDB	; 219
      83c:	94 e0       	ldi	r25, 0x04	; 4
      83e:	0e 94 e4 0a 	call	0x15c8	; 0x15c8 <_ZN5Print5printEPKc>
      842:	4a e0       	ldi	r20, 0x0A	; 10
      844:	50 e0       	ldi	r21, 0x00	; 0
      846:	b8 01       	movw	r22, r16
-     848:	8f ec       	ldi	r24, 0xCF	; 207
+     848:	8b ed       	ldi	r24, 0xDB	; 219
      84a:	94 e0       	ldi	r25, 0x04	; 4
      84c:	0e 94 eb 0b 	call	0x17d6	; 0x17d6 <_ZN5Print7printlnEii>
      850:	f7 01       	movw	r30, r14
@@ -1053,9 +1053,9 @@ int INA233_S::testCommunication()
      8c8:	cd bf       	out	0x3d, r28	; 61
      8ca:	8c 01       	movw	r16, r24
     Serial.println("test communications");
-     8cc:	63 ee       	ldi	r22, 0xE3	; 227
+     8cc:	6f ee       	ldi	r22, 0xEF	; 239
      8ce:	71 e0       	ldi	r23, 0x01	; 1
-     8d0:	8f ec       	ldi	r24, 0xCF	; 207
+     8d0:	8b ed       	ldi	r24, 0xDB	; 219
      8d2:	94 e0       	ldi	r25, 0x04	; 4
      8d4:	0e 94 03 0b 	call	0x1606	; 0x1606 <_ZN5Print7printlnEPKc>
     // TO DO ! Read MFR_MODEL, compare if correct.
@@ -1070,7 +1070,7 @@ int INA233_S::testCommunication()
     uint8_t compare[7]{
         0x06, 0x49, 0x4E, 0x41, 0x32, 0x33, 0x33};
      8e6:	87 e0       	ldi	r24, 0x07	; 7
-     8e8:	e1 e2       	ldi	r30, 0x21	; 33
+     8e8:	ed e2       	ldi	r30, 0x2D	; 45
      8ea:	f1 e0       	ldi	r31, 0x01	; 1
      8ec:	de 01       	movw	r26, r28
      8ee:	50 96       	adiw	r26, 0x10	; 16
@@ -1093,9 +1093,9 @@ int INA233_S::testCommunication()
     for (int ii = 0; ii <= 6; ii++)
     {
         Serial.print("Readback MFR_MODEL: ");
-     90e:	67 ef       	ldi	r22, 0xF7	; 247
-     910:	71 e0       	ldi	r23, 0x01	; 1
-     912:	8f ec       	ldi	r24, 0xCF	; 207
+     90e:	63 e0       	ldi	r22, 0x03	; 3
+     910:	72 e0       	ldi	r23, 0x02	; 2
+     912:	8b ed       	ldi	r24, 0xDB	; 219
      914:	94 e0       	ldi	r25, 0x04	; 4
      916:	0e 94 e4 0a 	call	0x15c8	; 0x15c8 <_ZN5Print5printEPKc>
         Serial.print(data.msg[ii]);
@@ -1105,7 +1105,7 @@ int INA233_S::testCommunication()
      920:	4a e0       	ldi	r20, 0x0A	; 10
      922:	50 e0       	ldi	r21, 0x00	; 0
      924:	6d 2d       	mov	r22, r13
-     926:	8f ec       	ldi	r24, 0xCF	; 207
+     926:	8b ed       	ldi	r24, 0xDB	; 219
      928:	94 e0       	ldi	r25, 0x04	; 4
      92a:	0e 94 6b 0b 	call	0x16d6	; 0x16d6 <_ZN5Print5printEhi>
         if (compare[ii] != data.msg[ii])
@@ -1116,9 +1116,9 @@ int INA233_S::testCommunication()
      936:	49 f0       	breq	.+18     	; 0x94a <__stack+0x4b>
         {
             Serial.println("Communication error");
-     938:	6c e0       	ldi	r22, 0x0C	; 12
+     938:	68 e1       	ldi	r22, 0x18	; 24
      93a:	72 e0       	ldi	r23, 0x02	; 2
-     93c:	8f ec       	ldi	r24, 0xCF	; 207
+     93c:	8b ed       	ldi	r24, 0xDB	; 219
      93e:	94 e0       	ldi	r25, 0x04	; 4
      940:	0e 94 03 0b 	call	0x1606	; 0x1606 <_ZN5Print7printlnEPKc>
 			return 1;
@@ -1167,7 +1167,7 @@ int INA233_S::testCommunication()
 	
 	// ___________________________ CAN BEGIN ______________________________//
 	const uint32_t errorCode = can.begin (settings, [] { can.isr(); });
-     974:	8b e7       	ldi	r24, 0x7B	; 123
+     974:	87 e8       	ldi	r24, 0x87	; 135
      976:	94 e0       	ldi	r25, 0x04	; 4
      978:	0c 94 c2 13 	jmp	0x2784	; 0x2784 <_ZN10ACAN2517FD3isrEv>
 
@@ -1259,7 +1259,7 @@ void setup() {
 	wdt_enable(WDTO_500MS);
 	
 	Wire.begin();
-     9e2:	8a e7       	ldi	r24, 0x7A	; 122
+     9e2:	86 e8       	ldi	r24, 0x86	; 134
      9e4:	95 e0       	ldi	r25, 0x05	; 5
      9e6:	0e 94 7f 1e 	call	0x3cfe	; 0x3cfe <_ZN7TwoWire5beginEv>
 	Wire.setClock(10000);
@@ -1267,7 +1267,7 @@ void setup() {
      9ec:	57 e2       	ldi	r21, 0x27	; 39
      9ee:	60 e0       	ldi	r22, 0x00	; 0
      9f0:	70 e0       	ldi	r23, 0x00	; 0
-     9f2:	8a e7       	ldi	r24, 0x7A	; 122
+     9f2:	86 e8       	ldi	r24, 0x86	; 134
      9f4:	95 e0       	ldi	r25, 0x05	; 5
      9f6:	0e 94 91 1e 	call	0x3d22	; 0x3d22 <_ZN7TwoWire8setClockEm>
 	//Serial.begin(9600);
@@ -1276,9 +1276,9 @@ void setup() {
      9fa:	61 e0       	ldi	r22, 0x01	; 1
      9fc:	89 e0       	ldi	r24, 0x09	; 9
      9fe:	0e 94 c9 0d 	call	0x1b92	; 0x1b92 <pinMode>
-     a02:	0d e0       	ldi	r16, 0x0D	; 13
+     a02:	09 e1       	ldi	r16, 0x19	; 25
      a04:	11 e0       	ldi	r17, 0x01	; 1
-     a06:	9b e1       	ldi	r25, 0x1B	; 27
+     a06:	97 e2       	ldi	r25, 0x27	; 39
      a08:	c9 2e       	mov	r12, r25
      a0a:	91 e0       	ldi	r25, 0x01	; 1
      a0c:	d9 2e       	mov	r13, r25
@@ -1306,8 +1306,8 @@ void setup() {
 
 	for (uint8_t ii = 0; ii < 7; ii++){
 		SensorList[ii]->setADC_Settings(default_address);
-     a22:	60 91 1b 01 	lds	r22, 0x011B	; 0x80011b <default_address>
-     a26:	70 91 1c 01 	lds	r23, 0x011C	; 0x80011c <default_address+0x1>
+     a22:	60 91 27 01 	lds	r22, 0x0127	; 0x800127 <default_address>
+     a26:	70 91 28 01 	lds	r23, 0x0128	; 0x800128 <default_address+0x1>
      a2a:	f8 01       	movw	r30, r16
      a2c:	81 91       	ld	r24, Z+
      a2e:	91 91       	ld	r25, Z+
@@ -1364,9 +1364,9 @@ void setup() {
 	
 	// ___________________________ RAM USAGE ______________________________//
 	Serial.print ("MCP2517FD RAM Usage: ");
-     a6e:	60 e2       	ldi	r22, 0x20	; 32
+     a6e:	6c e2       	ldi	r22, 0x2C	; 44
      a70:	72 e0       	ldi	r23, 0x02	; 2
-     a72:	8f ec       	ldi	r24, 0xCF	; 207
+     a72:	8b ed       	ldi	r24, 0xDB	; 219
      a74:	94 e0       	ldi	r25, 0x04	; 4
      a76:	0e 94 e4 0a 	call	0x15c8	; 0x15c8 <_ZN5Print5printEPKc>
 	Serial.print (settings.ramUsage());
@@ -1377,13 +1377,13 @@ void setup() {
      a84:	bc 01       	movw	r22, r24
      a86:	2a e0       	ldi	r18, 0x0A	; 10
      a88:	30 e0       	ldi	r19, 0x00	; 0
-     a8a:	8f ec       	ldi	r24, 0xCF	; 207
+     a8a:	8b ed       	ldi	r24, 0xDB	; 219
      a8c:	94 e0       	ldi	r25, 0x04	; 4
      a8e:	0e 94 5e 0b 	call	0x16bc	; 0x16bc <_ZN5Print5printEmi>
 	Serial.println (" bytes");
-     a92:	66 e3       	ldi	r22, 0x36	; 54
+     a92:	62 e4       	ldi	r22, 0x42	; 66
      a94:	72 e0       	ldi	r23, 0x02	; 2
-     a96:	8f ec       	ldi	r24, 0xCF	; 207
+     a96:	8b ed       	ldi	r24, 0xDB	; 219
      a98:	94 e0       	ldi	r25, 0x04	; 4
      a9a:	0e 94 03 0b 	call	0x1606	; 0x1606 <_ZN5Print7printlnEPKc>
 	
@@ -1395,7 +1395,7 @@ void setup() {
      aa2:	be 01       	movw	r22, r28
      aa4:	6f 5f       	subi	r22, 0xFF	; 255
      aa6:	7f 4f       	sbci	r23, 0xFF	; 255
-     aa8:	8b e7       	ldi	r24, 0x7B	; 123
+     aa8:	87 e8       	ldi	r24, 0x87	; 135
      aaa:	94 e0       	ldi	r25, 0x04	; 4
      aac:	0e 94 4e 18 	call	0x309c	; 0x309c <_ZN10ACAN2517FD5beginERK18ACAN2517FDSettingsPFvvE>
      ab0:	6b 01       	movw	r12, r22
@@ -1406,9 +1406,9 @@ void setup() {
      ab8:	69 2b       	or	r22, r25
      aba:	71 f0       	breq	.+28     	; 0xad8 <setup+0x12a>
 		Serial.print ("Configuration error 0x");
-     abc:	6d e3       	ldi	r22, 0x3D	; 61
+     abc:	69 e4       	ldi	r22, 0x49	; 73
      abe:	72 e0       	ldi	r23, 0x02	; 2
-     ac0:	8f ec       	ldi	r24, 0xCF	; 207
+     ac0:	8b ed       	ldi	r24, 0xDB	; 219
      ac2:	94 e0       	ldi	r25, 0x04	; 4
      ac4:	0e 94 e4 0a 	call	0x15c8	; 0x15c8 <_ZN5Print5printEPKc>
 		Serial.println (errorCode, HEX);
@@ -1416,10 +1416,10 @@ void setup() {
      aca:	30 e0       	ldi	r19, 0x00	; 0
      acc:	b7 01       	movw	r22, r14
      ace:	a6 01       	movw	r20, r12
-     ad0:	8f ec       	ldi	r24, 0xCF	; 207
+     ad0:	8b ed       	ldi	r24, 0xDB	; 219
      ad2:	94 e0       	ldi	r25, 0x04	; 4
      ad4:	0e 94 8a 0b 	call	0x1714	; 0x1714 <_ZN5Print7printlnEmi>
-     ad8:	eb e3       	ldi	r30, 0x3B	; 59
+     ad8:	e7 e4       	ldi	r30, 0x47	; 71
      ada:	f4 e0       	ldi	r31, 0x04	; 4
 	
 	Wire.begin();
@@ -1444,7 +1444,7 @@ void setup() {
 	for (int ii = 0; ii < 64; ii++){
      ae2:	80 34       	cpi	r24, 0x40	; 64
      ae4:	e1 f7       	brne	.-8      	; 0xade <setup+0x130>
-     ae6:	e3 ef       	ldi	r30, 0xF3	; 243
+     ae6:	ef ef       	ldi	r30, 0xFF	; 255
      ae8:	f3 e0       	ldi	r31, 0x03	; 3
      aea:	80 e0       	ldi	r24, 0x00	; 0
 		frame_FD.data[ii] = ii;
@@ -1464,35 +1464,35 @@ void setup() {
 		frame.data[ii] = ii;
 	}
 	frame.len = 8;
-     af4:	80 93 f2 03 	sts	0x03F2, r24	; 0x8003f2 <frame+0x7>
+     af4:	80 93 fe 03 	sts	0x03FE, r24	; 0x8003fe <frame+0x7>
 	frame_FD.len = 64; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
      af8:	80 e4       	ldi	r24, 0x40	; 64
-     afa:	80 93 3a 04 	sts	0x043A, r24	; 0x80043a <frame_FD+0x7>
+     afa:	80 93 46 04 	sts	0x0446, r24	; 0x800446 <frame_FD+0x7>
 	frame.type = CANFDMessage::CAN_DATA;
      afe:	81 e0       	ldi	r24, 0x01	; 1
-     b00:	80 93 f0 03 	sts	0x03F0, r24	; 0x8003f0 <frame+0x5>
+     b00:	80 93 fc 03 	sts	0x03FC, r24	; 0x8003fc <frame+0x5>
 	frame_FD.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
      b04:	83 e0       	ldi	r24, 0x03	; 3
-     b06:	80 93 38 04 	sts	0x0438, r24	; 0x800438 <frame_FD+0x5>
+     b06:	80 93 44 04 	sts	0x0444, r24	; 0x800444 <frame_FD+0x5>
 	
 	frame.id = 0x500;
      b0a:	80 e0       	ldi	r24, 0x00	; 0
      b0c:	95 e0       	ldi	r25, 0x05	; 5
      b0e:	a0 e0       	ldi	r26, 0x00	; 0
      b10:	b0 e0       	ldi	r27, 0x00	; 0
-     b12:	80 93 eb 03 	sts	0x03EB, r24	; 0x8003eb <frame>
-     b16:	90 93 ec 03 	sts	0x03EC, r25	; 0x8003ec <frame+0x1>
-     b1a:	a0 93 ed 03 	sts	0x03ED, r26	; 0x8003ed <frame+0x2>
-     b1e:	b0 93 ee 03 	sts	0x03EE, r27	; 0x8003ee <frame+0x3>
+     b12:	80 93 f7 03 	sts	0x03F7, r24	; 0x8003f7 <frame>
+     b16:	90 93 f8 03 	sts	0x03F8, r25	; 0x8003f8 <frame+0x1>
+     b1a:	a0 93 f9 03 	sts	0x03F9, r26	; 0x8003f9 <frame+0x2>
+     b1e:	b0 93 fa 03 	sts	0x03FA, r27	; 0x8003fa <frame+0x3>
 	frame_FD.id = 0x501;
      b22:	81 e0       	ldi	r24, 0x01	; 1
      b24:	95 e0       	ldi	r25, 0x05	; 5
      b26:	a0 e0       	ldi	r26, 0x00	; 0
      b28:	b0 e0       	ldi	r27, 0x00	; 0
-     b2a:	80 93 33 04 	sts	0x0433, r24	; 0x800433 <frame_FD>
-     b2e:	90 93 34 04 	sts	0x0434, r25	; 0x800434 <frame_FD+0x1>
-     b32:	a0 93 35 04 	sts	0x0435, r26	; 0x800435 <frame_FD+0x2>
-     b36:	b0 93 36 04 	sts	0x0436, r27	; 0x800436 <frame_FD+0x3>
+     b2a:	80 93 3f 04 	sts	0x043F, r24	; 0x80043f <frame_FD>
+     b2e:	90 93 40 04 	sts	0x0440, r25	; 0x800440 <frame_FD+0x1>
+     b32:	a0 93 41 04 	sts	0x0441, r26	; 0x800441 <frame_FD+0x2>
+     b36:	b0 93 42 04 	sts	0x0442, r27	; 0x800442 <frame_FD+0x3>
 }
      b3a:	a8 96       	adiw	r28, 0x28	; 40
      b3c:	0f b6       	in	r0, 0x3f	; 63
@@ -1511,7 +1511,7 @@ void setup() {
      b56:	08 95       	ret
 
 00000b58 <_Z29check_INA233_miscommunicationv>:
-	//p2.close_MOSFET();
+	blink_light();
 	
 	wdt_reset();	
 }
@@ -1524,10 +1524,10 @@ void check_INA233_miscommunication(){
 	
 	if((millis() - timeStamps[0]) > interval_INA233_checking){
      b60:	0e 94 34 0d 	call	0x1a68	; 0x1a68 <millis>
-     b64:	00 91 c3 03 	lds	r16, 0x03C3	; 0x8003c3 <timeStamps>
-     b68:	10 91 c4 03 	lds	r17, 0x03C4	; 0x8003c4 <timeStamps+0x1>
-     b6c:	20 91 c5 03 	lds	r18, 0x03C5	; 0x8003c5 <timeStamps+0x2>
-     b70:	30 91 c6 03 	lds	r19, 0x03C6	; 0x8003c6 <timeStamps+0x3>
+     b64:	00 91 cf 03 	lds	r16, 0x03CF	; 0x8003cf <timeStamps>
+     b68:	10 91 d0 03 	lds	r17, 0x03D0	; 0x8003d0 <timeStamps+0x1>
+     b6c:	20 91 d1 03 	lds	r18, 0x03D1	; 0x8003d1 <timeStamps+0x2>
+     b70:	30 91 d2 03 	lds	r19, 0x03D2	; 0x8003d2 <timeStamps+0x3>
      b74:	dc 01       	movw	r26, r24
      b76:	cb 01       	movw	r24, r22
      b78:	80 1b       	sub	r24, r16
@@ -1539,7 +1539,7 @@ void check_INA233_miscommunication(){
      b84:	a1 05       	cpc	r26, r1
      b86:	b1 05       	cpc	r27, r1
      b88:	08 f1       	brcs	.+66     	; 0xbcc <_Z29check_INA233_miscommunicationv+0x74>
-     b8a:	cd e0       	ldi	r28, 0x0D	; 13
+     b8a:	c9 e1       	ldi	r28, 0x19	; 25
      b8c:	d1 e0       	ldi	r29, 0x01	; 1
      b8e:	0b e0       	ldi	r16, 0x0B	; 11
      b90:	11 e0       	ldi	r17, 0x01	; 1
@@ -1573,7 +1573,7 @@ void check_INA233_miscommunication(){
 		
 		for (uint8_t ii = 0; ii < 7; ii++){
      bb0:	b1 e0       	ldi	r27, 0x01	; 1
-     bb2:	cb 31       	cpi	r28, 0x1B	; 27
+     bb2:	c7 32       	cpi	r28, 0x27	; 39
      bb4:	db 07       	cpc	r29, r27
      bb6:	69 f7       	brne	.-38     	; 0xb92 <_Z29check_INA233_miscommunicationv+0x3a>
 			if(SensorList[ii]->testCommunication() == 1){
@@ -1583,10 +1583,10 @@ void check_INA233_miscommunication(){
 		
 		timeStamps[0] = millis();
      bb8:	0e 94 34 0d 	call	0x1a68	; 0x1a68 <millis>
-     bbc:	60 93 c3 03 	sts	0x03C3, r22	; 0x8003c3 <timeStamps>
-     bc0:	70 93 c4 03 	sts	0x03C4, r23	; 0x8003c4 <timeStamps+0x1>
-     bc4:	80 93 c5 03 	sts	0x03C5, r24	; 0x8003c5 <timeStamps+0x2>
-     bc8:	90 93 c6 03 	sts	0x03C6, r25	; 0x8003c6 <timeStamps+0x3>
+     bbc:	60 93 cf 03 	sts	0x03CF, r22	; 0x8003cf <timeStamps>
+     bc0:	70 93 d0 03 	sts	0x03D0, r23	; 0x8003d0 <timeStamps+0x1>
+     bc4:	80 93 d1 03 	sts	0x03D1, r24	; 0x8003d1 <timeStamps+0x2>
+     bc8:	90 93 d2 03 	sts	0x03D2, r25	; 0x8003d2 <timeStamps+0x3>
 	}
 }
      bcc:	df 91       	pop	r29
@@ -1602,10 +1602,10 @@ void blink_light(){
      bd8:	1f 93       	push	r17
 	if (millis() - blink_time > blink_interval){
      bda:	0e 94 34 0d 	call	0x1a68	; 0x1a68 <millis>
-     bde:	00 91 d8 02 	lds	r16, 0x02D8	; 0x8002d8 <__data_end>
-     be2:	10 91 d9 02 	lds	r17, 0x02D9	; 0x8002d9 <__data_end+0x1>
-     be6:	20 91 da 02 	lds	r18, 0x02DA	; 0x8002da <__data_end+0x2>
-     bea:	30 91 db 02 	lds	r19, 0x02DB	; 0x8002db <__data_end+0x3>
+     bde:	00 91 e4 02 	lds	r16, 0x02E4	; 0x8002e4 <__data_end>
+     be2:	10 91 e5 02 	lds	r17, 0x02E5	; 0x8002e5 <__data_end+0x1>
+     be6:	20 91 e6 02 	lds	r18, 0x02E6	; 0x8002e6 <__data_end+0x2>
+     bea:	30 91 e7 02 	lds	r19, 0x02E7	; 0x8002e7 <__data_end+0x3>
      bee:	dc 01       	movw	r26, r24
      bf0:	cb 01       	movw	r24, r22
      bf2:	80 1b       	sub	r24, r16
@@ -1630,14 +1630,13 @@ void blink_light(){
 		digitalWrite(9, STATE);
      c22:	89 e0       	ldi	r24, 0x09	; 9
      c24:	0e 94 05 0e 	call	0x1c0a	; 0x1c0a <digitalWrite>
-		//p1.close_MOSFET();
 		
 		blink_time = millis();
      c28:	0e 94 34 0d 	call	0x1a68	; 0x1a68 <millis>
-     c2c:	60 93 d8 02 	sts	0x02D8, r22	; 0x8002d8 <__data_end>
-     c30:	70 93 d9 02 	sts	0x02D9, r23	; 0x8002d9 <__data_end+0x1>
-     c34:	80 93 da 02 	sts	0x02DA, r24	; 0x8002da <__data_end+0x2>
-     c38:	90 93 db 02 	sts	0x02DB, r25	; 0x8002db <__data_end+0x3>
+     c2c:	60 93 e4 02 	sts	0x02E4, r22	; 0x8002e4 <__data_end>
+     c30:	70 93 e5 02 	sts	0x02E5, r23	; 0x8002e5 <__data_end+0x1>
+     c34:	80 93 e6 02 	sts	0x02E6, r24	; 0x8002e6 <__data_end+0x2>
+     c38:	90 93 e7 02 	sts	0x02E7, r25	; 0x8002e7 <__data_end+0x3>
 	}
 }
      c3c:	1f 91       	pop	r17
@@ -1688,7 +1687,7 @@ void loop() {
      c5e:	0e 94 ac 05 	call	0xb58	; 0xb58 <_Z29check_INA233_miscommunicationv>
 	
 	float current_1 = Sensor_1.getCurrent();
-     c62:	83 ea       	ldi	r24, 0xA3	; 163
+     c62:	8f ea       	ldi	r24, 0xAF	; 175
      c64:	93 e0       	ldi	r25, 0x03	; 3
      c66:	0e 94 01 04 	call	0x802	; 0x802 <_ZN8INA233_S10getCurrentEv>
      c6a:	ab 01       	movw	r20, r22
@@ -1698,31 +1697,31 @@ void loop() {
 	Serial.println(current_1);
      c6e:	22 e0       	ldi	r18, 0x02	; 2
      c70:	30 e0       	ldi	r19, 0x00	; 0
-     c72:	8f ec       	ldi	r24, 0xCF	; 207
+     c72:	8b ed       	ldi	r24, 0xDB	; 219
      c74:	94 e0       	ldi	r25, 0x04	; 4
      c76:	0e 94 d8 0c 	call	0x19b0	; 0x19b0 <_ZN5Print7printlnEdi>
 	
 	if (can.available ()) {
-     c7a:	8b e7       	ldi	r24, 0x7B	; 123
+     c7a:	87 e8       	ldi	r24, 0x87	; 135
      c7c:	94 e0       	ldi	r25, 0x04	; 4
      c7e:	0e 94 fa 0f 	call	0x1ff4	; 0x1ff4 <_ZN10ACAN2517FD9availableEv>
      c82:	88 23       	and	r24, r24
      c84:	e1 f0       	breq	.+56     	; 0xcbe <loop+0x7c>
 		can.receive (frame);
-     c86:	6b ee       	ldi	r22, 0xEB	; 235
+     c86:	67 ef       	ldi	r22, 0xF7	; 247
      c88:	73 e0       	ldi	r23, 0x03	; 3
-     c8a:	8b e7       	ldi	r24, 0x7B	; 123
+     c8a:	87 e8       	ldi	r24, 0x87	; 135
      c8c:	94 e0       	ldi	r25, 0x04	; 4
      c8e:	0e 94 17 10 	call	0x202e	; 0x202e <_ZN10ACAN2517FD7receiveER12CANFDMessage>
 		Serial.print ("Received: ");
-     c92:	64 e5       	ldi	r22, 0x54	; 84
+     c92:	60 e6       	ldi	r22, 0x60	; 96
      c94:	72 e0       	ldi	r23, 0x02	; 2
-     c96:	8f ec       	ldi	r24, 0xCF	; 207
+     c96:	8b ed       	ldi	r24, 0xDB	; 219
      c98:	94 e0       	ldi	r25, 0x04	; 4
      c9a:	0e 94 e4 0a 	call	0x15c8	; 0x15c8 <_ZN5Print5printEPKc>
 		
 		if (frame.data[0] == 0x01){
-     c9e:	80 91 f3 03 	lds	r24, 0x03F3	; 0x8003f3 <frame+0x8>
+     c9e:	80 91 ff 03 	lds	r24, 0x03FF	; 0x8003ff <frame+0x8>
      ca2:	81 30       	cpi	r24, 0x01	; 1
      ca4:	21 f4       	brne	.+8      	; 0xcae <loop+0x6c>
 			digitalWrite(9, HIGH);
@@ -1732,7 +1731,7 @@ void loop() {
 		}
 
 		if (frame.data[0] == 0x02){
-     cae:	80 91 f3 03 	lds	r24, 0x03F3	; 0x8003f3 <frame+0x8>
+     cae:	80 91 ff 03 	lds	r24, 0x03FF	; 0x8003ff <frame+0x8>
      cb2:	82 30       	cpi	r24, 0x02	; 2
      cb4:	21 f4       	brne	.+8      	; 0xcbe <loop+0x7c>
 			digitalWrite(9, LOW); 
@@ -1744,7 +1743,6 @@ void loop() {
 	}
 	blink_light();
      cbe:	0e 94 eb 05 	call	0xbd6	; 0xbd6 <_Z11blink_lightv>
-	//p2.close_MOSFET();
 	
 	wdt_reset();	
      cc2:	a8 95       	wdr
@@ -1760,7 +1758,7 @@ struct INA233_Alarm_Config
 {
   float overCurrent = 0, overVoltage = 0, underVoltage = 0;
   INA233_Alarm_Config(float oc, float ov, float uv) : overCurrent(oc), overVoltage(ov), underVoltage(uv) {}  
-     cca:	e3 ec       	ldi	r30, 0xC3	; 195
+     cca:	ef ec       	ldi	r30, 0xCF	; 207
      ccc:	f4 e0       	ldi	r31, 0x04	; 4
      cce:	40 e0       	ldi	r20, 0x00	; 0
      cd0:	50 e0       	ldi	r21, 0x00	; 0
@@ -1782,7 +1780,7 @@ struct INA233_Alarm_Config
      cf0:	11 86       	std	Z+9, r1	; 0x09
      cf2:	12 86       	std	Z+10, r1	; 0x0a
      cf4:	13 86       	std	Z+11, r1	; 0x0b
-     cf6:	e7 eb       	ldi	r30, 0xB7	; 183
+     cf6:	e3 ec       	ldi	r30, 0xC3	; 195
      cf8:	f4 e0       	ldi	r31, 0x04	; 4
      cfa:	40 83       	st	Z, r20
      cfc:	51 83       	std	Z+1, r21	; 0x01
@@ -1803,17 +1801,17 @@ static const byte MCP2517_INT =  2 ; // INT output of MCP2517
 
 ACAN2517FD can (MCP2517_CS, SPI, MCP2517_INT);
      d12:	22 e0       	ldi	r18, 0x02	; 2
-     d14:	49 e7       	ldi	r20, 0x79	; 121
+     d14:	45 e8       	ldi	r20, 0x85	; 133
      d16:	55 e0       	ldi	r21, 0x05	; 5
      d18:	67 e0       	ldi	r22, 0x07	; 7
-     d1a:	8b e7       	ldi	r24, 0x7B	; 123
+     d1a:	87 e8       	ldi	r24, 0x87	; 135
      d1c:	94 e0       	ldi	r25, 0x04	; 4
      d1e:	0e 94 bb 0f 	call	0x1f76	; 0x1f76 <_ZN10ACAN2517FDC1EhR8SPIClassh>
 	CANFDMessage frame_FD, frame;
-     d22:	83 e3       	ldi	r24, 0x33	; 51
+     d22:	8f e3       	ldi	r24, 0x3F	; 63
      d24:	94 e0       	ldi	r25, 0x04	; 4
      d26:	0e 94 be 04 	call	0x97c	; 0x97c <_ZN12CANFDMessageC1Ev>
-     d2a:	8b ee       	ldi	r24, 0xEB	; 235
+     d2a:	87 ef       	ldi	r24, 0xF7	; 247
      d2c:	93 e0       	ldi	r25, 0x03	; 3
      d2e:	0e 94 be 04 	call	0x97c	; 0x97c <_ZN12CANFDMessageC1Ev>
 uint16_t default_address = 0b0100011100100111;
@@ -1834,7 +1832,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      d44:	be b7       	in	r27, 0x3e	; 62
      d46:	11 96       	adiw	r26, 0x01	; 1
      d48:	8c e0       	ldi	r24, 0x0C	; 12
-     d4a:	e3 ec       	ldi	r30, 0xC3	; 195
+     d4a:	ef ec       	ldi	r30, 0xCF	; 207
      d4c:	f4 e0       	ldi	r31, 0x04	; 4
      d4e:	01 90       	ld	r0, Z+
      d50:	0d 92       	st	X+, r0
@@ -1845,7 +1843,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      d5a:	44 e3       	ldi	r20, 0x34	; 52
      d5c:	53 e0       	ldi	r21, 0x03	; 3
      d5e:	60 e4       	ldi	r22, 0x40	; 64
-     d60:	83 ea       	ldi	r24, 0xA3	; 163
+     d60:	8f ea       	ldi	r24, 0xAF	; 175
      d62:	93 e0       	ldi	r25, 0x03	; 3
      d64:	0e 94 d6 00 	call	0x1ac	; 0x1ac <_ZN8INA233_SC1Ehjj19INA233_Alarm_Config>
 		Sensor_2(adrSensor2, m_valueSensor2, cal_valueSensor2, alarmConfigSensor2),
@@ -1861,7 +1859,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      d7a:	be b7       	in	r27, 0x3e	; 62
      d7c:	11 96       	adiw	r26, 0x01	; 1
      d7e:	8c e0       	ldi	r24, 0x0C	; 12
-     d80:	e7 eb       	ldi	r30, 0xB7	; 183
+     d80:	e3 ec       	ldi	r30, 0xC3	; 195
      d82:	f4 e0       	ldi	r31, 0x04	; 4
      d84:	01 90       	ld	r0, Z+
      d86:	0d 92       	st	X+, r0
@@ -1872,7 +1870,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      d90:	44 e3       	ldi	r20, 0x34	; 52
      d92:	53 e0       	ldi	r21, 0x03	; 3
      d94:	61 e4       	ldi	r22, 0x41	; 65
-     d96:	83 e8       	ldi	r24, 0x83	; 131
+     d96:	8f e8       	ldi	r24, 0x8F	; 143
      d98:	93 e0       	ldi	r25, 0x03	; 3
      d9a:	0e 94 d6 00 	call	0x1ac	; 0x1ac <_ZN8INA233_SC1Ehjj19INA233_Alarm_Config>
 		Sensor_3(adrSensor2, m_valueSensor2, cal_valueSensor2, alarmConfigSensor2),
@@ -1888,7 +1886,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      db0:	be b7       	in	r27, 0x3e	; 62
      db2:	11 96       	adiw	r26, 0x01	; 1
      db4:	8c e0       	ldi	r24, 0x0C	; 12
-     db6:	e7 eb       	ldi	r30, 0xB7	; 183
+     db6:	e3 ec       	ldi	r30, 0xC3	; 195
      db8:	f4 e0       	ldi	r31, 0x04	; 4
      dba:	01 90       	ld	r0, Z+
      dbc:	0d 92       	st	X+, r0
@@ -1899,7 +1897,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      dc6:	44 e3       	ldi	r20, 0x34	; 52
      dc8:	53 e0       	ldi	r21, 0x03	; 3
      dca:	61 e4       	ldi	r22, 0x41	; 65
-     dcc:	83 e6       	ldi	r24, 0x63	; 99
+     dcc:	8f e6       	ldi	r24, 0x6F	; 111
      dce:	93 e0       	ldi	r25, 0x03	; 3
      dd0:	0e 94 d6 00 	call	0x1ac	; 0x1ac <_ZN8INA233_SC1Ehjj19INA233_Alarm_Config>
 		Sensor_4(adrSensor2, m_valueSensor2, cal_valueSensor2, alarmConfigSensor2),
@@ -1921,7 +1919,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      df2:	be b7       	in	r27, 0x3e	; 62
      df4:	11 96       	adiw	r26, 0x01	; 1
      df6:	8c e0       	ldi	r24, 0x0C	; 12
-     df8:	e7 eb       	ldi	r30, 0xB7	; 183
+     df8:	e3 ec       	ldi	r30, 0xC3	; 195
      dfa:	f4 e0       	ldi	r31, 0x04	; 4
      dfc:	01 90       	ld	r0, Z+
      dfe:	0d 92       	st	X+, r0
@@ -1932,7 +1930,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      e08:	44 e3       	ldi	r20, 0x34	; 52
      e0a:	53 e0       	ldi	r21, 0x03	; 3
      e0c:	61 e4       	ldi	r22, 0x41	; 65
-     e0e:	83 e4       	ldi	r24, 0x43	; 67
+     e0e:	8f e4       	ldi	r24, 0x4F	; 79
      e10:	93 e0       	ldi	r25, 0x03	; 3
      e12:	0e 94 d6 00 	call	0x1ac	; 0x1ac <_ZN8INA233_SC1Ehjj19INA233_Alarm_Config>
 		Sensor_5(adrSensor2, m_valueSensor2, cal_valueSensor2, alarmConfigSensor2),
@@ -1948,7 +1946,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      e28:	be b7       	in	r27, 0x3e	; 62
      e2a:	11 96       	adiw	r26, 0x01	; 1
      e2c:	8c e0       	ldi	r24, 0x0C	; 12
-     e2e:	e7 eb       	ldi	r30, 0xB7	; 183
+     e2e:	e3 ec       	ldi	r30, 0xC3	; 195
      e30:	f4 e0       	ldi	r31, 0x04	; 4
      e32:	01 90       	ld	r0, Z+
      e34:	0d 92       	st	X+, r0
@@ -1959,7 +1957,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      e3e:	44 e3       	ldi	r20, 0x34	; 52
      e40:	53 e0       	ldi	r21, 0x03	; 3
      e42:	61 e4       	ldi	r22, 0x41	; 65
-     e44:	83 e2       	ldi	r24, 0x23	; 35
+     e44:	8f e2       	ldi	r24, 0x2F	; 47
      e46:	93 e0       	ldi	r25, 0x03	; 3
      e48:	0e 94 d6 00 	call	0x1ac	; 0x1ac <_ZN8INA233_SC1Ehjj19INA233_Alarm_Config>
 		Sensor_6(adrSensor2, m_valueSensor2, cal_valueSensor2, alarmConfigSensor2),
@@ -1975,7 +1973,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      e5e:	be b7       	in	r27, 0x3e	; 62
      e60:	11 96       	adiw	r26, 0x01	; 1
      e62:	8c e0       	ldi	r24, 0x0C	; 12
-     e64:	e7 eb       	ldi	r30, 0xB7	; 183
+     e64:	e3 ec       	ldi	r30, 0xC3	; 195
      e66:	f4 e0       	ldi	r31, 0x04	; 4
      e68:	01 90       	ld	r0, Z+
      e6a:	0d 92       	st	X+, r0
@@ -1986,7 +1984,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      e74:	44 e3       	ldi	r20, 0x34	; 52
      e76:	53 e0       	ldi	r21, 0x03	; 3
      e78:	61 e4       	ldi	r22, 0x41	; 65
-     e7a:	83 e0       	ldi	r24, 0x03	; 3
+     e7a:	8f e0       	ldi	r24, 0x0F	; 15
      e7c:	93 e0       	ldi	r25, 0x03	; 3
      e7e:	0e 94 d6 00 	call	0x1ac	; 0x1ac <_ZN8INA233_SC1Ehjj19INA233_Alarm_Config>
 		Sensor_7(adrSensor2, m_valueSensor2, cal_valueSensor2, alarmConfigSensor2);
@@ -2008,7 +2006,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      ea0:	be b7       	in	r27, 0x3e	; 62
      ea2:	11 96       	adiw	r26, 0x01	; 1
      ea4:	8c e0       	ldi	r24, 0x0C	; 12
-     ea6:	e7 eb       	ldi	r30, 0xB7	; 183
+     ea6:	e3 ec       	ldi	r30, 0xC3	; 195
      ea8:	f4 e0       	ldi	r31, 0x04	; 4
      eaa:	01 90       	ld	r0, Z+
      eac:	0d 92       	st	X+, r0
@@ -2019,7 +2017,7 @@ INA233_S Sensor_1(adrSensor1, m_valueSensor1, cal_valueSensor1, alarmConfigSenso
      eb6:	44 e3       	ldi	r20, 0x34	; 52
      eb8:	53 e0       	ldi	r21, 0x03	; 3
      eba:	61 e4       	ldi	r22, 0x41	; 65
-     ebc:	83 ee       	ldi	r24, 0xE3	; 227
+     ebc:	8f ee       	ldi	r24, 0xEF	; 239
      ebe:	92 e0       	ldi	r25, 0x02	; 2
      ec0:	0e 94 d6 00 	call	0x1ac	; 0x1ac <_ZN8INA233_SC1Ehjj19INA233_Alarm_Config>
 // INA233 [0 to 6] are the mosfets, [7 to 9] others
@@ -2029,32 +2027,32 @@ INA233_S* SensorList[] = { &Sensor_1, &Sensor_2, &Sensor_3, &Sensor_4, &Sensor_5
 // Create instances of each mosfet object
 mosfet	p1(p1_ACM_E_Pin), 
      ec4:	63 e0       	ldi	r22, 0x03	; 3
-     ec6:	82 ee       	ldi	r24, 0xE2	; 226
+     ec6:	8e ee       	ldi	r24, 0xEE	; 238
      ec8:	92 e0       	ldi	r25, 0x02	; 2
      eca:	0e 94 d1 04 	call	0x9a2	; 0x9a2 <_ZN6mosfetC1Eh>
 		p2(p2_ACM_E_Pin), 
      ece:	65 e0       	ldi	r22, 0x05	; 5
-     ed0:	81 ee       	ldi	r24, 0xE1	; 225
+     ed0:	8d ee       	ldi	r24, 0xED	; 237
      ed2:	92 e0       	ldi	r25, 0x02	; 2
      ed4:	0e 94 d1 04 	call	0x9a2	; 0x9a2 <_ZN6mosfetC1Eh>
 		p3(p3_ACM_E_Pin), 
      ed8:	66 e0       	ldi	r22, 0x06	; 6
-     eda:	80 ee       	ldi	r24, 0xE0	; 224
+     eda:	8c ee       	ldi	r24, 0xEC	; 236
      edc:	92 e0       	ldi	r25, 0x02	; 2
      ede:	0e 94 d1 04 	call	0x9a2	; 0x9a2 <_ZN6mosfetC1Eh>
 		p4(p4_ACM_E_Pin),
      ee2:	6a e0       	ldi	r22, 0x0A	; 10
-     ee4:	8f ed       	ldi	r24, 0xDF	; 223
+     ee4:	8b ee       	ldi	r24, 0xEB	; 235
      ee6:	92 e0       	ldi	r25, 0x02	; 2
      ee8:	0e 94 d1 04 	call	0x9a2	; 0x9a2 <_ZN6mosfetC1Eh>
 		p5(p5_ACM_E_Pin),
      eec:	6f e0       	ldi	r22, 0x0F	; 15
-     eee:	8e ed       	ldi	r24, 0xDE	; 222
+     eee:	8a ee       	ldi	r24, 0xEA	; 234
      ef0:	92 e0       	ldi	r25, 0x02	; 2
      ef2:	0e 94 d1 04 	call	0x9a2	; 0x9a2 <_ZN6mosfetC1Eh>
 		p6(p6_ACM_E_Pin),
      ef6:	60 e1       	ldi	r22, 0x10	; 16
-     ef8:	8d ed       	ldi	r24, 0xDD	; 221
+     ef8:	89 ee       	ldi	r24, 0xE9	; 233
      efa:	92 e0       	ldi	r25, 0x02	; 2
      efc:	0e 94 d1 04 	call	0x9a2	; 0x9a2 <_ZN6mosfetC1Eh>
 		p7(p7_ACM_E_Pin);
@@ -2067,7 +2065,7 @@ mosfet	p1(p1_ACM_E_Pin),
      f0c:	0f be       	out	0x3f, r0	; 63
      f0e:	8d bf       	out	0x3d, r24	; 61
      f10:	61 e1       	ldi	r22, 0x11	; 17
-     f12:	8c ed       	ldi	r24, 0xDC	; 220
+     f12:	88 ee       	ldi	r24, 0xE8	; 232
      f14:	92 e0       	ldi	r25, 0x02	; 2
      f16:	0c 94 d1 04 	jmp	0x9a2	; 0x9a2 <_ZN6mosfetC1Eh>
 
@@ -2078,13 +2076,13 @@ mosfet	p1(p1_ACM_E_Pin),
 
   public: ~ ACANFDBuffer (void) {
     delete [] mBuffer ;
-     f1a:	80 91 a1 04 	lds	r24, 0x04A1	; 0x8004a1 <can+0x26>
-     f1e:	90 91 a2 04 	lds	r25, 0x04A2	; 0x8004a2 <can+0x27>
+     f1a:	80 91 ad 04 	lds	r24, 0x04AD	; 0x8004ad <can+0x26>
+     f1e:	90 91 ae 04 	lds	r25, 0x04AE	; 0x8004ae <can+0x27>
      f22:	00 97       	sbiw	r24, 0x00	; 0
      f24:	11 f0       	breq	.+4      	; 0xf2a <_GLOBAL__sub_D_can+0x10>
      f26:	0e 94 7f 0a 	call	0x14fe	; 0x14fe <_ZdaPv>
-     f2a:	80 91 8b 04 	lds	r24, 0x048B	; 0x80048b <can+0x10>
-     f2e:	90 91 8c 04 	lds	r25, 0x048C	; 0x80048c <can+0x11>
+     f2a:	80 91 97 04 	lds	r24, 0x0497	; 0x800497 <can+0x10>
+     f2e:	90 91 98 04 	lds	r25, 0x0498	; 0x800498 <can+0x11>
      f32:	00 97       	sbiw	r24, 0x00	; 0
      f34:	11 f0       	breq	.+4      	; 0xf3a <_GLOBAL__sub_D_can+0x20>
      f36:	0c 94 7f 0a 	jmp	0x14fe	; 0x14fe <_ZdaPv>
@@ -2707,11 +2705,11 @@ mosfet	p1(p1_ACM_E_Pin),
 void HardwareSerial::_rx_complete_irq(void)
 {
   if (bit_is_clear(*_ucsra, UPE0)) {
-    13c8:	e0 91 df 04 	lds	r30, 0x04DF	; 0x8004df <Serial+0x10>
-    13cc:	f0 91 e0 04 	lds	r31, 0x04E0	; 0x8004e0 <Serial+0x11>
+    13c8:	e0 91 eb 04 	lds	r30, 0x04EB	; 0x8004eb <Serial+0x10>
+    13cc:	f0 91 ec 04 	lds	r31, 0x04EC	; 0x8004ec <Serial+0x11>
     13d0:	80 81       	ld	r24, Z
-    13d2:	e0 91 e5 04 	lds	r30, 0x04E5	; 0x8004e5 <Serial+0x16>
-    13d6:	f0 91 e6 04 	lds	r31, 0x04E6	; 0x8004e6 <Serial+0x17>
+    13d2:	e0 91 f1 04 	lds	r30, 0x04F1	; 0x8004f1 <Serial+0x16>
+    13d6:	f0 91 f2 04 	lds	r31, 0x04F2	; 0x8004f2 <Serial+0x17>
     13da:	82 fd       	sbrc	r24, 2
     13dc:	12 c0       	rjmp	.+36     	; 0x1402 <__vector_18+0x4e>
     // No Parity error, read byte and store it in the buffer if there is
@@ -2719,7 +2717,7 @@ void HardwareSerial::_rx_complete_irq(void)
     unsigned char c = *_udr;
     13de:	90 81       	ld	r25, Z
     rx_buffer_index_t i = (unsigned int)(_rx_buffer_head + 1) % SERIAL_RX_BUFFER_SIZE;
-    13e0:	80 91 e8 04 	lds	r24, 0x04E8	; 0x8004e8 <Serial+0x19>
+    13e0:	80 91 f4 04 	lds	r24, 0x04F4	; 0x8004f4 <Serial+0x19>
     13e4:	8f 5f       	subi	r24, 0xFF	; 255
     13e6:	8f 73       	andi	r24, 0x3F	; 63
 
@@ -2728,17 +2726,17 @@ void HardwareSerial::_rx_complete_irq(void)
     // current location of the tail), we're about to overflow the buffer
     // and so we don't write the character or advance the head.
     if (i != _rx_buffer_tail) {
-    13e8:	20 91 e9 04 	lds	r18, 0x04E9	; 0x8004e9 <Serial+0x1a>
+    13e8:	20 91 f5 04 	lds	r18, 0x04F5	; 0x8004f5 <Serial+0x1a>
     13ec:	82 17       	cp	r24, r18
     13ee:	51 f0       	breq	.+20     	; 0x1404 <__vector_18+0x50>
       _rx_buffer[_rx_buffer_head] = c;
-    13f0:	e0 91 e8 04 	lds	r30, 0x04E8	; 0x8004e8 <Serial+0x19>
+    13f0:	e0 91 f4 04 	lds	r30, 0x04F4	; 0x8004f4 <Serial+0x19>
     13f4:	f0 e0       	ldi	r31, 0x00	; 0
-    13f6:	e1 53       	subi	r30, 0x31	; 49
+    13f6:	e5 52       	subi	r30, 0x25	; 37
     13f8:	fb 4f       	sbci	r31, 0xFB	; 251
     13fa:	95 8f       	std	Z+29, r25	; 0x1d
       _rx_buffer_head = i;
-    13fc:	80 93 e8 04 	sts	0x04E8, r24	; 0x8004e8 <Serial+0x19>
+    13fc:	80 93 f4 04 	sts	0x04F4, r24	; 0x8004f4 <Serial+0x19>
     1400:	01 c0       	rjmp	.+2      	; 0x1404 <__vector_18+0x50>
     }
   } else {
@@ -2783,7 +2781,7 @@ ISR(USART_UDRE_vect)
     1436:	ef 93       	push	r30
     1438:	ff 93       	push	r31
   Serial._tx_udr_empty_irq();
-    143a:	8f ec       	ldi	r24, 0xCF	; 207
+    143a:	8b ed       	ldi	r24, 0xDB	; 219
     143c:	94 e0       	ldi	r25, 0x04	; 4
     143e:	0e 94 6b 1f 	call	0x3ed6	; 0x3ed6 <_ZN14HardwareSerial17_tx_udr_empty_irqEv>
 }
@@ -2812,7 +2810,7 @@ ISR(USART_UDRE_vect)
 // pulling in this file if it's not otherwise used.
 bool Serial0_available() {
   return Serial.available();
-    1464:	8f ec       	ldi	r24, 0xCF	; 207
+    1464:	8b ed       	ldi	r24, 0xDB	; 219
     1466:	94 e0       	ldi	r25, 0x04	; 4
     1468:	0e 94 20 1f 	call	0x3e40	; 0x3e40 <_ZN14HardwareSerial9availableEv>
     146c:	21 e0       	ldi	r18, 0x01	; 1
@@ -2830,7 +2828,7 @@ bool Serial0_available() {
     void setWriteError(int err = 1) { write_error = err; }
   public:
     Print() : write_error(0) {}
-    1478:	ef ec       	ldi	r30, 0xCF	; 207
+    1478:	eb ed       	ldi	r30, 0xDB	; 219
     147a:	f4 e0       	ldi	r31, 0x04	; 4
     147c:	13 82       	std	Z+3, r1	; 0x03
     147e:	12 82       	std	Z+2, r1	; 0x02
@@ -2854,7 +2852,7 @@ bool Serial0_available() {
     _udr(udr),
     _rx_buffer_head(0), _rx_buffer_tail(0),
     _tx_buffer_head(0), _tx_buffer_tail(0)
-    1490:	8a ec       	ldi	r24, 0xCA	; 202
+    1490:	86 ed       	ldi	r24, 0xD6	; 214
     1492:	92 e0       	ldi	r25, 0x02	; 2
     1494:	91 83       	std	Z+1, r25	; 0x01
     1496:	80 83       	st	Z, r24
@@ -3076,7 +3074,7 @@ size_t Print::print(double n, int digits)
     15d8:	09 94       	ijmp
 
 000015da <_ZN5Print7printlnEv>:
-    15da:	6f e5       	ldi	r22, 0x5F	; 95
+    15da:	6b e6       	ldi	r22, 0x6B	; 107
     15dc:	72 e0       	ldi	r23, 0x02	; 2
     15de:	0c 94 ab 0a 	jmp	0x1556	; 0x1556 <_ZN5Print5writeEPKc>
 
@@ -3376,7 +3374,7 @@ size_t Print::print(double n, int digits)
     1824:	0e 94 3b 24 	call	0x4876	; 0x4876 <__unordsf2>
     1828:	88 23       	and	r24, r24
     182a:	19 f0       	breq	.+6      	; 0x1832 <_ZN5Print10printFloatEdh+0x38>
-    182c:	62 e6       	ldi	r22, 0x62	; 98
+    182c:	6e e6       	ldi	r22, 0x6E	; 110
     182e:	72 e0       	ldi	r23, 0x02	; 2
     1830:	27 c0       	rjmp	.+78     	; 0x1880 <_ZN5Print10printFloatEdh+0x86>
     1832:	46 01       	movw	r8, r12
@@ -3401,7 +3399,7 @@ size_t Print::print(double n, int digits)
     185a:	0e 94 36 24 	call	0x486c	; 0x486c <__cmpsf2>
     185e:	18 16       	cp	r1, r24
     1860:	1c f4       	brge	.+6      	; 0x1868 <_ZN5Print10printFloatEdh+0x6e>
-    1862:	66 e6       	ldi	r22, 0x66	; 102
+    1862:	62 e7       	ldi	r22, 0x72	; 114
     1864:	72 e0       	ldi	r23, 0x02	; 2
     1866:	0c c0       	rjmp	.+24     	; 0x1880 <_ZN5Print10printFloatEdh+0x86>
     1868:	2f ef       	ldi	r18, 0xFF	; 255
@@ -3413,7 +3411,7 @@ size_t Print::print(double n, int digits)
     1874:	0e 94 41 09 	call	0x1282	; 0x1282 <__gesf2>
     1878:	18 16       	cp	r1, r24
     187a:	94 f4       	brge	.+36     	; 0x18a0 <_ZN5Print10printFloatEdh+0xa6>
-    187c:	6a e6       	ldi	r22, 0x6A	; 106
+    187c:	66 e7       	ldi	r22, 0x76	; 118
     187e:	72 e0       	ldi	r23, 0x02	; 2
     1880:	c8 01       	movw	r24, r16
     1882:	df 91       	pop	r29
@@ -3608,11 +3606,11 @@ size_t Print::println(double num, int digits)
     19e4:	9f 93       	push	r25
     19e6:	af 93       	push	r26
     19e8:	bf 93       	push	r27
-    19ea:	80 91 6d 05 	lds	r24, 0x056D	; 0x80056d <timer0_millis>
-    19ee:	90 91 6e 05 	lds	r25, 0x056E	; 0x80056e <timer0_millis+0x1>
-    19f2:	a0 91 6f 05 	lds	r26, 0x056F	; 0x80056f <timer0_millis+0x2>
-    19f6:	b0 91 70 05 	lds	r27, 0x0570	; 0x800570 <timer0_millis+0x3>
-    19fa:	30 91 6c 05 	lds	r19, 0x056C	; 0x80056c <timer0_fract>
+    19ea:	80 91 79 05 	lds	r24, 0x0579	; 0x800579 <timer0_millis>
+    19ee:	90 91 7a 05 	lds	r25, 0x057A	; 0x80057a <timer0_millis+0x1>
+    19f2:	a0 91 7b 05 	lds	r26, 0x057B	; 0x80057b <timer0_millis+0x2>
+    19f6:	b0 91 7c 05 	lds	r27, 0x057C	; 0x80057c <timer0_millis+0x3>
+    19fa:	30 91 78 05 	lds	r19, 0x0578	; 0x800578 <timer0_fract>
     19fe:	23 e0       	ldi	r18, 0x03	; 3
     1a00:	23 0f       	add	r18, r19
     1a02:	2d 37       	cpi	r18, 0x7D	; 125
@@ -3626,22 +3624,22 @@ size_t Print::println(double num, int digits)
     1a12:	02 96       	adiw	r24, 0x02	; 2
     1a14:	a1 1d       	adc	r26, r1
     1a16:	b1 1d       	adc	r27, r1
-    1a18:	20 93 6c 05 	sts	0x056C, r18	; 0x80056c <timer0_fract>
-    1a1c:	80 93 6d 05 	sts	0x056D, r24	; 0x80056d <timer0_millis>
-    1a20:	90 93 6e 05 	sts	0x056E, r25	; 0x80056e <timer0_millis+0x1>
-    1a24:	a0 93 6f 05 	sts	0x056F, r26	; 0x80056f <timer0_millis+0x2>
-    1a28:	b0 93 70 05 	sts	0x0570, r27	; 0x800570 <timer0_millis+0x3>
-    1a2c:	80 91 71 05 	lds	r24, 0x0571	; 0x800571 <timer0_overflow_count>
-    1a30:	90 91 72 05 	lds	r25, 0x0572	; 0x800572 <timer0_overflow_count+0x1>
-    1a34:	a0 91 73 05 	lds	r26, 0x0573	; 0x800573 <timer0_overflow_count+0x2>
-    1a38:	b0 91 74 05 	lds	r27, 0x0574	; 0x800574 <timer0_overflow_count+0x3>
+    1a18:	20 93 78 05 	sts	0x0578, r18	; 0x800578 <timer0_fract>
+    1a1c:	80 93 79 05 	sts	0x0579, r24	; 0x800579 <timer0_millis>
+    1a20:	90 93 7a 05 	sts	0x057A, r25	; 0x80057a <timer0_millis+0x1>
+    1a24:	a0 93 7b 05 	sts	0x057B, r26	; 0x80057b <timer0_millis+0x2>
+    1a28:	b0 93 7c 05 	sts	0x057C, r27	; 0x80057c <timer0_millis+0x3>
+    1a2c:	80 91 7d 05 	lds	r24, 0x057D	; 0x80057d <timer0_overflow_count>
+    1a30:	90 91 7e 05 	lds	r25, 0x057E	; 0x80057e <timer0_overflow_count+0x1>
+    1a34:	a0 91 7f 05 	lds	r26, 0x057F	; 0x80057f <timer0_overflow_count+0x2>
+    1a38:	b0 91 80 05 	lds	r27, 0x0580	; 0x800580 <timer0_overflow_count+0x3>
     1a3c:	01 96       	adiw	r24, 0x01	; 1
     1a3e:	a1 1d       	adc	r26, r1
     1a40:	b1 1d       	adc	r27, r1
-    1a42:	80 93 71 05 	sts	0x0571, r24	; 0x800571 <timer0_overflow_count>
-    1a46:	90 93 72 05 	sts	0x0572, r25	; 0x800572 <timer0_overflow_count+0x1>
-    1a4a:	a0 93 73 05 	sts	0x0573, r26	; 0x800573 <timer0_overflow_count+0x2>
-    1a4e:	b0 93 74 05 	sts	0x0574, r27	; 0x800574 <timer0_overflow_count+0x3>
+    1a42:	80 93 7d 05 	sts	0x057D, r24	; 0x80057d <timer0_overflow_count>
+    1a46:	90 93 7e 05 	sts	0x057E, r25	; 0x80057e <timer0_overflow_count+0x1>
+    1a4a:	a0 93 7f 05 	sts	0x057F, r26	; 0x80057f <timer0_overflow_count+0x2>
+    1a4e:	b0 93 80 05 	sts	0x0580, r27	; 0x800580 <timer0_overflow_count+0x3>
     1a52:	bf 91       	pop	r27
     1a54:	af 91       	pop	r26
     1a56:	9f 91       	pop	r25
@@ -3657,20 +3655,20 @@ size_t Print::println(double num, int digits)
 00001a68 <millis>:
     1a68:	2f b7       	in	r18, 0x3f	; 63
     1a6a:	f8 94       	cli
-    1a6c:	60 91 6d 05 	lds	r22, 0x056D	; 0x80056d <timer0_millis>
-    1a70:	70 91 6e 05 	lds	r23, 0x056E	; 0x80056e <timer0_millis+0x1>
-    1a74:	80 91 6f 05 	lds	r24, 0x056F	; 0x80056f <timer0_millis+0x2>
-    1a78:	90 91 70 05 	lds	r25, 0x0570	; 0x800570 <timer0_millis+0x3>
+    1a6c:	60 91 79 05 	lds	r22, 0x0579	; 0x800579 <timer0_millis>
+    1a70:	70 91 7a 05 	lds	r23, 0x057A	; 0x80057a <timer0_millis+0x1>
+    1a74:	80 91 7b 05 	lds	r24, 0x057B	; 0x80057b <timer0_millis+0x2>
+    1a78:	90 91 7c 05 	lds	r25, 0x057C	; 0x80057c <timer0_millis+0x3>
     1a7c:	2f bf       	out	0x3f, r18	; 63
     1a7e:	08 95       	ret
 
 00001a80 <micros>:
     1a80:	3f b7       	in	r19, 0x3f	; 63
     1a82:	f8 94       	cli
-    1a84:	80 91 71 05 	lds	r24, 0x0571	; 0x800571 <timer0_overflow_count>
-    1a88:	90 91 72 05 	lds	r25, 0x0572	; 0x800572 <timer0_overflow_count+0x1>
-    1a8c:	a0 91 73 05 	lds	r26, 0x0573	; 0x800573 <timer0_overflow_count+0x2>
-    1a90:	b0 91 74 05 	lds	r27, 0x0574	; 0x800574 <timer0_overflow_count+0x3>
+    1a84:	80 91 7d 05 	lds	r24, 0x057D	; 0x80057d <timer0_overflow_count>
+    1a88:	90 91 7e 05 	lds	r25, 0x057E	; 0x80057e <timer0_overflow_count+0x1>
+    1a8c:	a0 91 7f 05 	lds	r26, 0x057F	; 0x80057f <timer0_overflow_count+0x2>
+    1a90:	b0 91 80 05 	lds	r27, 0x0580	; 0x800580 <timer0_overflow_count+0x3>
     1a94:	26 b5       	in	r18, 0x26	; 38
     1a96:	a8 9b       	sbis	0x15, 0	; 21
     1a98:	05 c0       	rjmp	.+10     	; 0x1aa4 <micros+0x24>
@@ -4421,24 +4419,24 @@ void digitalWrite(uint8_t pin, uint8_t val)
     1ee4:	08 95       	ret
 
 00001ee6 <_ZN8SPIClass16beginTransactionE11SPISettings>:
-    1ee6:	20 91 77 05 	lds	r18, 0x0577	; 0x800577 <_ZN8SPIClass13interruptModeE>
+    1ee6:	20 91 83 05 	lds	r18, 0x0583	; 0x800583 <_ZN8SPIClass13interruptModeE>
     1eea:	22 23       	and	r18, r18
     1eec:	99 f0       	breq	.+38     	; 0x1f14 <_ZN8SPIClass16beginTransactionE11SPISettings+0x2e>
     1eee:	4f b7       	in	r20, 0x3f	; 63
     1ef0:	f8 94       	cli
-    1ef2:	20 91 77 05 	lds	r18, 0x0577	; 0x800577 <_ZN8SPIClass13interruptModeE>
+    1ef2:	20 91 83 05 	lds	r18, 0x0583	; 0x800583 <_ZN8SPIClass13interruptModeE>
     1ef6:	21 30       	cpi	r18, 0x01	; 1
     1ef8:	59 f4       	brne	.+22     	; 0x1f10 <_ZN8SPIClass16beginTransactionE11SPISettings+0x2a>
     1efa:	2d b3       	in	r18, 0x1d	; 29
-    1efc:	20 93 75 05 	sts	0x0575, r18	; 0x800575 <_ZN8SPIClass13interruptSaveE>
+    1efc:	20 93 81 05 	sts	0x0581, r18	; 0x800581 <_ZN8SPIClass13interruptSaveE>
     1f00:	3d b3       	in	r19, 0x1d	; 29
-    1f02:	20 91 76 05 	lds	r18, 0x0576	; 0x800576 <_ZN8SPIClass13interruptMaskE>
+    1f02:	20 91 82 05 	lds	r18, 0x0582	; 0x800582 <_ZN8SPIClass13interruptMaskE>
     1f06:	20 95       	com	r18
     1f08:	23 23       	and	r18, r19
     1f0a:	2d bb       	out	0x1d, r18	; 29
     1f0c:	4f bf       	out	0x3f, r20	; 63
     1f0e:	02 c0       	rjmp	.+4      	; 0x1f14 <_ZN8SPIClass16beginTransactionE11SPISettings+0x2e>
-    1f10:	40 93 75 05 	sts	0x0575, r20	; 0x800575 <_ZN8SPIClass13interruptSaveE>
+    1f10:	40 93 81 05 	sts	0x0581, r20	; 0x800581 <_ZN8SPIClass13interruptSaveE>
     1f14:	8c bd       	out	0x2c, r24	; 44
     1f16:	9d bd       	out	0x2d, r25	; 45
     1f18:	08 95       	ret
@@ -4475,13 +4473,13 @@ void digitalWrite(uint8_t pin, uint8_t val)
     1f52:	08 95       	ret
 
 00001f54 <_ZN8SPIClass14endTransactionEv>:
-    1f54:	80 91 77 05 	lds	r24, 0x0577	; 0x800577 <_ZN8SPIClass13interruptModeE>
+    1f54:	80 91 83 05 	lds	r24, 0x0583	; 0x800583 <_ZN8SPIClass13interruptModeE>
     1f58:	88 23       	and	r24, r24
     1f5a:	61 f0       	breq	.+24     	; 0x1f74 <_ZN8SPIClass14endTransactionEv+0x20>
     1f5c:	9f b7       	in	r25, 0x3f	; 63
     1f5e:	f8 94       	cli
-    1f60:	20 91 77 05 	lds	r18, 0x0577	; 0x800577 <_ZN8SPIClass13interruptModeE>
-    1f64:	80 91 75 05 	lds	r24, 0x0575	; 0x800575 <_ZN8SPIClass13interruptSaveE>
+    1f60:	20 91 83 05 	lds	r18, 0x0583	; 0x800583 <_ZN8SPIClass13interruptModeE>
+    1f64:	80 91 81 05 	lds	r24, 0x0581	; 0x800581 <_ZN8SPIClass13interruptSaveE>
     1f68:	21 30       	cpi	r18, 0x01	; 1
     1f6a:	19 f4       	brne	.+6      	; 0x1f72 <_ZN8SPIClass14endTransactionEv+0x1e>
     1f6c:	8d bb       	out	0x1d, r24	; 29
@@ -5144,7 +5142,7 @@ void digitalWrite(uint8_t pin, uint8_t val)
     24ac:	aa 27       	eor	r26, r26
     24ae:	bb 27       	eor	r27, r27
     24b0:	fc 01       	movw	r30, r24
-    24b2:	e4 58       	subi	r30, 0x84	; 132
+    24b2:	e8 57       	subi	r30, 0x78	; 120
     24b4:	fd 4f       	sbci	r31, 0xFD	; 253
     24b6:	c0 80       	ld	r12, Z
     24b8:	63 96       	adiw	r28, 0x13	; 19
@@ -6075,11 +6073,11 @@ uint32_t ACAN2517FD::begin (const ACAN2517FDSettings & inSettings,
     2b10:	50 f4       	brcc	.+20     	; 0x2b26 <_ZN10ACAN2517FD5beginERK18ACAN2517FDSettingsPFvvERK17ACAN2517FDFilters+0x22e>
     2b12:	90 e0       	ldi	r25, 0x00	; 0
     2b14:	fc 01       	movw	r30, r24
-    2b16:	eb 58       	subi	r30, 0x8B	; 139
+    2b16:	ef 57       	subi	r30, 0x7F	; 127
     2b18:	fd 4f       	sbci	r31, 0xFD	; 253
     2b1a:	f0 80       	ld	r15, Z
     2b1c:	fc 01       	movw	r30, r24
-    2b1e:	e2 59       	subi	r30, 0x92	; 146
+    2b1e:	e6 58       	subi	r30, 0x86	; 134
     2b20:	fd 4f       	sbci	r31, 0xFD	; 253
     2b22:	40 81       	ld	r20, Z
     2b24:	02 c0       	rjmp	.+4      	; 0x2b2a <_ZN10ACAN2517FD5beginERK18ACAN2517FDSettingsPFvvERK17ACAN2517FDFilters+0x232>
@@ -7237,7 +7235,7 @@ uint32_t ACAN2517FDSettings::dataSamplePointFromBitStart (void) const {
     31b2:	6b 9f       	mul	r22, r27
     31b4:	f0 01       	movw	r30, r0
     31b6:	11 24       	eor	r1, r1
-    31b8:	e4 57       	subi	r30, 0x74	; 116
+    31b8:	e8 56       	subi	r30, 0x68	; 104
     31ba:	fd 4f       	sbci	r31, 0xFD	; 253
     31bc:	20 81       	ld	r18, Z
     31be:	31 81       	ldd	r19, Z+1	; 0x01
@@ -8416,7 +8414,7 @@ uint32_t ACAN2517FDSettings::objectSizeForPayload (const PayloadSize inPayload) 
   return kPayload [inPayload] ;
     3a4a:	a1 a1       	ldd	r26, Z+33	; 0x21
     3a4c:	b0 e0       	ldi	r27, 0x00	; 0
-    3a4e:	a4 55       	subi	r26, 0x54	; 84
+    3a4e:	a8 54       	subi	r26, 0x48	; 72
     3a50:	bd 4f       	sbci	r27, 0xFD	; 253
     3a52:	ac 91       	ld	r26, X
 //----------------------------------------------------------------------------------------------------------------------
@@ -8434,7 +8432,7 @@ uint32_t ACAN2517FDSettings::objectSizeForPayload (const PayloadSize inPayload) 
   return kPayload [inPayload] ;
     3a56:	c6 a1       	ldd	r28, Z+38	; 0x26
     3a58:	d0 e0       	ldi	r29, 0x00	; 0
-    3a5a:	c4 55       	subi	r28, 0x54	; 84
+    3a5a:	c8 54       	subi	r28, 0x48	; 72
     3a5c:	dd 4f       	sbci	r29, 0xFD	; 253
     3a5e:	48 81       	ld	r20, Y
 uint32_t ACAN2517FDSettings::ramUsage (void) const {
@@ -8466,7 +8464,7 @@ uint32_t ACAN2517FDSettings::objectSizeForPayload (const PayloadSize inPayload) 
   return kPayload [inPayload] ;
     3a82:	a5 8d       	ldd	r26, Z+29	; 0x1d
     3a84:	b0 e0       	ldi	r27, 0x00	; 0
-    3a86:	a4 55       	subi	r26, 0x54	; 84
+    3a86:	a8 54       	subi	r26, 0x48	; 72
     3a88:	bd 4f       	sbci	r27, 0xFD	; 253
     3a8a:	2c 91       	ld	r18, X
 //--- TXQ
@@ -8503,7 +8501,7 @@ uint32_t ACAN2517FDSettings::objectSizeForPayload (const PayloadSize inPayload) 
   return kPayload [inPayload] ;
     3aac:	e8 2f       	mov	r30, r24
     3aae:	f0 e0       	ldi	r31, 0x00	; 0
-    3ab0:	e4 55       	subi	r30, 0x54	; 84
+    3ab0:	e8 54       	subi	r30, 0x48	; 72
     3ab2:	fd 4f       	sbci	r31, 0xFD	; 253
     3ab4:	60 81       	ld	r22, Z
     3ab6:	70 e0       	ldi	r23, 0x00	; 0
@@ -8522,7 +8520,7 @@ uint32_t ACAN2517FDSettings::objectSizeForPayload (const PayloadSize inPayload) 
     3abe:	cf 93       	push	r28
     3ac0:	cf b7       	in	r28, 0x3f	; 63
     3ac2:	f8 94       	cli
-    3ac4:	80 91 78 05 	lds	r24, 0x0578	; 0x800578 <_ZN8SPIClass11initializedE>
+    3ac4:	80 91 84 05 	lds	r24, 0x0584	; 0x800584 <_ZN8SPIClass11initializedE>
     3ac8:	81 11       	cpse	r24, r1
     3aca:	27 c0       	rjmp	.+78     	; 0x3b1a <_ZN8SPIClass5beginEv+0x5c>
     3acc:	e1 e3       	ldi	r30, 0x31	; 49
@@ -8560,9 +8558,9 @@ uint32_t ACAN2517FDSettings::objectSizeForPayload (const PayloadSize inPayload) 
     3b12:	61 e0       	ldi	r22, 0x01	; 1
     3b14:	8b e0       	ldi	r24, 0x0B	; 11
     3b16:	0e 94 c9 0d 	call	0x1b92	; 0x1b92 <pinMode>
-    3b1a:	80 91 78 05 	lds	r24, 0x0578	; 0x800578 <_ZN8SPIClass11initializedE>
+    3b1a:	80 91 84 05 	lds	r24, 0x0584	; 0x800584 <_ZN8SPIClass11initializedE>
     3b1e:	8f 5f       	subi	r24, 0xFF	; 255
-    3b20:	80 93 78 05 	sts	0x0578, r24	; 0x800578 <_ZN8SPIClass11initializedE>
+    3b20:	80 93 84 05 	sts	0x0584, r24	; 0x800584 <_ZN8SPIClass11initializedE>
     3b24:	cf bf       	out	0x3f, r28	; 63
     3b26:	cf 91       	pop	r28
     3b28:	08 95       	ret
@@ -8596,7 +8594,7 @@ void SPIClass::usingInterrupt(uint8_t interruptNumber)
   default:
     interruptMode = 2;
     3b3a:	82 e0       	ldi	r24, 0x02	; 2
-    3b3c:	80 93 77 05 	sts	0x0577, r24	; 0x800577 <_ZN8SPIClass13interruptModeE>
+    3b3c:	80 93 83 05 	sts	0x0583, r24	; 0x800583 <_ZN8SPIClass13interruptModeE>
   #endif
 #endif
 
@@ -8624,16 +8622,16 @@ void SPIClass::usingInterrupt(uint8_t interruptNumber)
     break;
   }
   interruptMask |= mask;
-    3b46:	20 91 76 05 	lds	r18, 0x0576	; 0x800576 <_ZN8SPIClass13interruptMaskE>
+    3b46:	20 91 82 05 	lds	r18, 0x0582	; 0x800582 <_ZN8SPIClass13interruptMaskE>
     3b4a:	82 2b       	or	r24, r18
-    3b4c:	80 93 76 05 	sts	0x0576, r24	; 0x800576 <_ZN8SPIClass13interruptMaskE>
+    3b4c:	80 93 82 05 	sts	0x0582, r24	; 0x800582 <_ZN8SPIClass13interruptMaskE>
   if (!interruptMode)
-    3b50:	80 91 77 05 	lds	r24, 0x0577	; 0x800577 <_ZN8SPIClass13interruptModeE>
+    3b50:	80 91 83 05 	lds	r24, 0x0583	; 0x800583 <_ZN8SPIClass13interruptModeE>
     3b54:	81 11       	cpse	r24, r1
     3b56:	03 c0       	rjmp	.+6      	; 0x3b5e <_ZN8SPIClass14usingInterruptEh+0x34>
     interruptMode = 1;
     3b58:	81 e0       	ldi	r24, 0x01	; 1
-    3b5a:	80 93 77 05 	sts	0x0577, r24	; 0x800577 <_ZN8SPIClass13interruptModeE>
+    3b5a:	80 93 83 05 	sts	0x0583, r24	; 0x800583 <_ZN8SPIClass13interruptModeE>
   SREG = sreg;
     3b5e:	9f bf       	out	0x3f, r25	; 63
     3b60:	08 95       	ret
@@ -8645,26 +8643,26 @@ void SPIClass::usingInterrupt(uint8_t interruptNumber)
 void TwoWire::onRequest( void (*function)(void) )
 {
   user_onRequest = function;
-    3b62:	80 91 ae 05 	lds	r24, 0x05AE	; 0x8005ae <_ZN7TwoWire14rxBufferLengthE>
+    3b62:	80 91 ba 05 	lds	r24, 0x05BA	; 0x8005ba <_ZN7TwoWire14rxBufferLengthE>
     3b66:	90 e0       	ldi	r25, 0x00	; 0
-    3b68:	20 91 af 05 	lds	r18, 0x05AF	; 0x8005af <_ZN7TwoWire13rxBufferIndexE>
+    3b68:	20 91 bb 05 	lds	r18, 0x05BB	; 0x8005bb <_ZN7TwoWire13rxBufferIndexE>
     3b6c:	82 1b       	sub	r24, r18
     3b6e:	91 09       	sbc	r25, r1
     3b70:	08 95       	ret
 
 00003b72 <_ZN7TwoWire4readEv>:
-    3b72:	90 91 af 05 	lds	r25, 0x05AF	; 0x8005af <_ZN7TwoWire13rxBufferIndexE>
-    3b76:	80 91 ae 05 	lds	r24, 0x05AE	; 0x8005ae <_ZN7TwoWire14rxBufferLengthE>
+    3b72:	90 91 bb 05 	lds	r25, 0x05BB	; 0x8005bb <_ZN7TwoWire13rxBufferIndexE>
+    3b76:	80 91 ba 05 	lds	r24, 0x05BA	; 0x8005ba <_ZN7TwoWire14rxBufferLengthE>
     3b7a:	98 17       	cp	r25, r24
     3b7c:	50 f4       	brcc	.+20     	; 0x3b92 <_ZN7TwoWire4readEv+0x20>
     3b7e:	e9 2f       	mov	r30, r25
     3b80:	f0 e0       	ldi	r31, 0x00	; 0
-    3b82:	e0 55       	subi	r30, 0x50	; 80
+    3b82:	e4 54       	subi	r30, 0x44	; 68
     3b84:	fa 4f       	sbci	r31, 0xFA	; 250
     3b86:	20 81       	ld	r18, Z
     3b88:	30 e0       	ldi	r19, 0x00	; 0
     3b8a:	9f 5f       	subi	r25, 0xFF	; 255
-    3b8c:	90 93 af 05 	sts	0x05AF, r25	; 0x8005af <_ZN7TwoWire13rxBufferIndexE>
+    3b8c:	90 93 bb 05 	sts	0x05BB, r25	; 0x8005bb <_ZN7TwoWire13rxBufferIndexE>
     3b90:	02 c0       	rjmp	.+4      	; 0x3b96 <_ZN7TwoWire4readEv+0x24>
     3b92:	2f ef       	ldi	r18, 0xFF	; 255
     3b94:	3f ef       	ldi	r19, 0xFF	; 255
@@ -8672,12 +8670,12 @@ void TwoWire::onRequest( void (*function)(void) )
     3b98:	08 95       	ret
 
 00003b9a <_ZN7TwoWire4peekEv>:
-    3b9a:	e0 91 af 05 	lds	r30, 0x05AF	; 0x8005af <_ZN7TwoWire13rxBufferIndexE>
-    3b9e:	80 91 ae 05 	lds	r24, 0x05AE	; 0x8005ae <_ZN7TwoWire14rxBufferLengthE>
+    3b9a:	e0 91 bb 05 	lds	r30, 0x05BB	; 0x8005bb <_ZN7TwoWire13rxBufferIndexE>
+    3b9e:	80 91 ba 05 	lds	r24, 0x05BA	; 0x8005ba <_ZN7TwoWire14rxBufferLengthE>
     3ba2:	e8 17       	cp	r30, r24
     3ba4:	30 f4       	brcc	.+12     	; 0x3bb2 <_ZN7TwoWire4peekEv+0x18>
     3ba6:	f0 e0       	ldi	r31, 0x00	; 0
-    3ba8:	e0 55       	subi	r30, 0x50	; 80
+    3ba8:	e4 54       	subi	r30, 0x44	; 68
     3baa:	fa 4f       	sbci	r31, 0xFA	; 250
     3bac:	80 81       	ld	r24, Z
     3bae:	90 e0       	ldi	r25, 0x00	; 0
@@ -8693,12 +8691,12 @@ void TwoWire::onRequest( void (*function)(void) )
     3bba:	cf 93       	push	r28
     3bbc:	df 93       	push	r29
     3bbe:	ec 01       	movw	r28, r24
-    3bc0:	e0 91 86 05 	lds	r30, 0x0586	; 0x800586 <_ZN7TwoWire14user_onReceiveE>
-    3bc4:	f0 91 87 05 	lds	r31, 0x0587	; 0x800587 <_ZN7TwoWire14user_onReceiveE+0x1>
+    3bc0:	e0 91 92 05 	lds	r30, 0x0592	; 0x800592 <_ZN7TwoWire14user_onReceiveE>
+    3bc4:	f0 91 93 05 	lds	r31, 0x0593	; 0x800593 <_ZN7TwoWire14user_onReceiveE+0x1>
     3bc8:	30 97       	sbiw	r30, 0x00	; 0
     3bca:	f1 f0       	breq	.+60     	; 0x3c08 <_ZN7TwoWire16onReceiveServiceEPhi+0x4e>
-    3bcc:	90 91 af 05 	lds	r25, 0x05AF	; 0x8005af <_ZN7TwoWire13rxBufferIndexE>
-    3bd0:	80 91 ae 05 	lds	r24, 0x05AE	; 0x8005ae <_ZN7TwoWire14rxBufferLengthE>
+    3bcc:	90 91 bb 05 	lds	r25, 0x05BB	; 0x8005bb <_ZN7TwoWire13rxBufferIndexE>
+    3bd0:	80 91 ba 05 	lds	r24, 0x05BA	; 0x8005ba <_ZN7TwoWire14rxBufferLengthE>
     3bd4:	98 17       	cp	r25, r24
     3bd6:	c0 f0       	brcs	.+48     	; 0x3c08 <_ZN7TwoWire16onReceiveServiceEPhi+0x4e>
     3bd8:	90 e0       	ldi	r25, 0x00	; 0
@@ -8712,13 +8710,13 @@ void TwoWire::onRequest( void (*function)(void) )
     3be8:	b3 1f       	adc	r27, r19
     3bea:	4c 91       	ld	r20, X
     3bec:	d9 01       	movw	r26, r18
-    3bee:	a0 55       	subi	r26, 0x50	; 80
+    3bee:	a4 54       	subi	r26, 0x44	; 68
     3bf0:	ba 4f       	sbci	r27, 0xFA	; 250
     3bf2:	4c 93       	st	X, r20
     3bf4:	9f 5f       	subi	r25, 0xFF	; 255
     3bf6:	f1 cf       	rjmp	.-30     	; 0x3bda <_ZN7TwoWire16onReceiveServiceEPhi+0x20>
-    3bf8:	10 92 af 05 	sts	0x05AF, r1	; 0x8005af <_ZN7TwoWire13rxBufferIndexE>
-    3bfc:	60 93 ae 05 	sts	0x05AE, r22	; 0x8005ae <_ZN7TwoWire14rxBufferLengthE>
+    3bf8:	10 92 bb 05 	sts	0x05BB, r1	; 0x8005bb <_ZN7TwoWire13rxBufferIndexE>
+    3bfc:	60 93 ba 05 	sts	0x05BA, r22	; 0x8005ba <_ZN7TwoWire14rxBufferLengthE>
     3c00:	cb 01       	movw	r24, r22
     3c02:	df 91       	pop	r29
     3c04:	cf 91       	pop	r28
@@ -8728,12 +8726,12 @@ void TwoWire::onRequest( void (*function)(void) )
     3c0c:	08 95       	ret
 
 00003c0e <_ZN7TwoWire16onRequestServiceEv>:
-    3c0e:	e0 91 88 05 	lds	r30, 0x0588	; 0x800588 <_ZN7TwoWire14user_onRequestE>
-    3c12:	f0 91 89 05 	lds	r31, 0x0589	; 0x800589 <_ZN7TwoWire14user_onRequestE+0x1>
+    3c0e:	e0 91 94 05 	lds	r30, 0x0594	; 0x800594 <_ZN7TwoWire14user_onRequestE>
+    3c12:	f0 91 95 05 	lds	r31, 0x0595	; 0x800595 <_ZN7TwoWire14user_onRequestE+0x1>
     3c16:	30 97       	sbiw	r30, 0x00	; 0
     3c18:	29 f0       	breq	.+10     	; 0x3c24 <_ZN7TwoWire16onRequestServiceEv+0x16>
-    3c1a:	10 92 8c 05 	sts	0x058C, r1	; 0x80058c <_ZN7TwoWire13txBufferIndexE>
-    3c1e:	10 92 8b 05 	sts	0x058B, r1	; 0x80058b <_ZN7TwoWire14txBufferLengthE>
+    3c1a:	10 92 98 05 	sts	0x0598, r1	; 0x800598 <_ZN7TwoWire13txBufferIndexE>
+    3c1e:	10 92 97 05 	sts	0x0597, r1	; 0x800597 <_ZN7TwoWire14txBufferLengthE>
     3c22:	09 94       	ijmp
     3c24:	08 95       	ret
 
@@ -8749,7 +8747,7 @@ void TwoWire::onRequest( void (*function)(void) )
     3c36:	7c 01       	movw	r14, r24
     3c38:	cb 01       	movw	r24, r22
     3c3a:	8a 01       	movw	r16, r20
-    3c3c:	20 91 8a 05 	lds	r18, 0x058A	; 0x80058a <_ZN7TwoWire12transmittingE>
+    3c3c:	20 91 96 05 	lds	r18, 0x0596	; 0x800596 <_ZN7TwoWire12transmittingE>
     3c40:	22 23       	and	r18, r18
     3c42:	89 f0       	breq	.+34     	; 0x3c66 <_ZN7TwoWire5writeEPKhj+0x40>
     3c44:	eb 01       	movw	r28, r22
@@ -8789,10 +8787,10 @@ void TwoWire::onRequest( void (*function)(void) )
     3c86:	cd b7       	in	r28, 0x3d	; 61
     3c88:	de b7       	in	r29, 0x3e	; 62
     3c8a:	69 83       	std	Y+1, r22	; 0x01
-    3c8c:	20 91 8a 05 	lds	r18, 0x058A	; 0x80058a <_ZN7TwoWire12transmittingE>
+    3c8c:	20 91 96 05 	lds	r18, 0x0596	; 0x800596 <_ZN7TwoWire12transmittingE>
     3c90:	22 23       	and	r18, r18
     3c92:	d1 f0       	breq	.+52     	; 0x3cc8 <_ZN7TwoWire5writeEh+0x48>
-    3c94:	20 91 8b 05 	lds	r18, 0x058B	; 0x80058b <_ZN7TwoWire14txBufferLengthE>
+    3c94:	20 91 97 05 	lds	r18, 0x0597	; 0x800597 <_ZN7TwoWire14txBufferLengthE>
     3c98:	20 32       	cpi	r18, 0x20	; 32
     3c9a:	40 f0       	brcs	.+16     	; 0x3cac <_ZN7TwoWire5writeEh+0x2c>
     3c9c:	21 e0       	ldi	r18, 0x01	; 1
@@ -8803,16 +8801,16 @@ void TwoWire::onRequest( void (*function)(void) )
     3ca6:	80 e0       	ldi	r24, 0x00	; 0
     3ca8:	90 e0       	ldi	r25, 0x00	; 0
     3caa:	15 c0       	rjmp	.+42     	; 0x3cd6 <_ZN7TwoWire5writeEh+0x56>
-    3cac:	80 91 8c 05 	lds	r24, 0x058C	; 0x80058c <_ZN7TwoWire13txBufferIndexE>
+    3cac:	80 91 98 05 	lds	r24, 0x0598	; 0x800598 <_ZN7TwoWire13txBufferIndexE>
     3cb0:	e8 2f       	mov	r30, r24
     3cb2:	f0 e0       	ldi	r31, 0x00	; 0
-    3cb4:	e3 57       	subi	r30, 0x73	; 115
+    3cb4:	e7 56       	subi	r30, 0x67	; 103
     3cb6:	fa 4f       	sbci	r31, 0xFA	; 250
     3cb8:	99 81       	ldd	r25, Y+1	; 0x01
     3cba:	90 83       	st	Z, r25
     3cbc:	8f 5f       	subi	r24, 0xFF	; 255
-    3cbe:	80 93 8c 05 	sts	0x058C, r24	; 0x80058c <_ZN7TwoWire13txBufferIndexE>
-    3cc2:	80 93 8b 05 	sts	0x058B, r24	; 0x80058b <_ZN7TwoWire14txBufferLengthE>
+    3cbe:	80 93 98 05 	sts	0x0598, r24	; 0x800598 <_ZN7TwoWire13txBufferIndexE>
+    3cc2:	80 93 97 05 	sts	0x0597, r24	; 0x800597 <_ZN7TwoWire14txBufferLengthE>
     3cc6:	05 c0       	rjmp	.+10     	; 0x3cd2 <_ZN7TwoWire5writeEh+0x52>
     3cc8:	61 e0       	ldi	r22, 0x01	; 1
     3cca:	ce 01       	movw	r24, r28
@@ -8837,17 +8835,17 @@ void TwoWire::onRequest( void (*function)(void) )
     3cee:	95 83       	std	Z+5, r25	; 0x05
     3cf0:	a6 83       	std	Z+6, r26	; 0x06
     3cf2:	b7 83       	std	Z+7, r27	; 0x07
-    3cf4:	88 eb       	ldi	r24, 0xB8	; 184
+    3cf4:	84 ec       	ldi	r24, 0xC4	; 196
     3cf6:	92 e0       	ldi	r25, 0x02	; 2
     3cf8:	91 83       	std	Z+1, r25	; 0x01
     3cfa:	80 83       	st	Z, r24
     3cfc:	08 95       	ret
 
 00003cfe <_ZN7TwoWire5beginEv>:
-    3cfe:	10 92 af 05 	sts	0x05AF, r1	; 0x8005af <_ZN7TwoWire13rxBufferIndexE>
-    3d02:	10 92 ae 05 	sts	0x05AE, r1	; 0x8005ae <_ZN7TwoWire14rxBufferLengthE>
-    3d06:	10 92 8c 05 	sts	0x058C, r1	; 0x80058c <_ZN7TwoWire13txBufferIndexE>
-    3d0a:	10 92 8b 05 	sts	0x058B, r1	; 0x80058b <_ZN7TwoWire14txBufferLengthE>
+    3cfe:	10 92 bb 05 	sts	0x05BB, r1	; 0x8005bb <_ZN7TwoWire13rxBufferIndexE>
+    3d02:	10 92 ba 05 	sts	0x05BA, r1	; 0x8005ba <_ZN7TwoWire14rxBufferLengthE>
+    3d06:	10 92 98 05 	sts	0x0598, r1	; 0x800598 <_ZN7TwoWire13txBufferIndexE>
+    3d0a:	10 92 97 05 	sts	0x0597, r1	; 0x800597 <_ZN7TwoWire14txBufferLengthE>
     3d0e:	0e 94 6b 20 	call	0x40d6	; 0x40d6 <twi_init>
     3d12:	87 e0       	ldi	r24, 0x07	; 7
     3d14:	9e e1       	ldi	r25, 0x1E	; 30
@@ -8863,24 +8861,24 @@ void TwoWire::onRequest( void (*function)(void) )
 
 00003d2a <_ZN7TwoWire17beginTransmissionEh>:
     3d2a:	81 e0       	ldi	r24, 0x01	; 1
-    3d2c:	80 93 8a 05 	sts	0x058A, r24	; 0x80058a <_ZN7TwoWire12transmittingE>
-    3d30:	60 93 ad 05 	sts	0x05AD, r22	; 0x8005ad <_ZN7TwoWire9txAddressE>
-    3d34:	10 92 8c 05 	sts	0x058C, r1	; 0x80058c <_ZN7TwoWire13txBufferIndexE>
-    3d38:	10 92 8b 05 	sts	0x058B, r1	; 0x80058b <_ZN7TwoWire14txBufferLengthE>
+    3d2c:	80 93 96 05 	sts	0x0596, r24	; 0x800596 <_ZN7TwoWire12transmittingE>
+    3d30:	60 93 b9 05 	sts	0x05B9, r22	; 0x8005b9 <_ZN7TwoWire9txAddressE>
+    3d34:	10 92 98 05 	sts	0x0598, r1	; 0x800598 <_ZN7TwoWire13txBufferIndexE>
+    3d38:	10 92 97 05 	sts	0x0597, r1	; 0x800597 <_ZN7TwoWire14txBufferLengthE>
     3d3c:	08 95       	ret
 
 00003d3e <_ZN7TwoWire15endTransmissionEh>:
     3d3e:	0f 93       	push	r16
     3d40:	06 2f       	mov	r16, r22
     3d42:	21 e0       	ldi	r18, 0x01	; 1
-    3d44:	40 91 8b 05 	lds	r20, 0x058B	; 0x80058b <_ZN7TwoWire14txBufferLengthE>
-    3d48:	6d e8       	ldi	r22, 0x8D	; 141
+    3d44:	40 91 97 05 	lds	r20, 0x0597	; 0x800597 <_ZN7TwoWire14txBufferLengthE>
+    3d48:	69 e9       	ldi	r22, 0x99	; 153
     3d4a:	75 e0       	ldi	r23, 0x05	; 5
-    3d4c:	80 91 ad 05 	lds	r24, 0x05AD	; 0x8005ad <_ZN7TwoWire9txAddressE>
+    3d4c:	80 91 b9 05 	lds	r24, 0x05B9	; 0x8005b9 <_ZN7TwoWire9txAddressE>
     3d50:	0e 94 e1 21 	call	0x43c2	; 0x43c2 <twi_writeTo>
-    3d54:	10 92 8c 05 	sts	0x058C, r1	; 0x80058c <_ZN7TwoWire13txBufferIndexE>
-    3d58:	10 92 8b 05 	sts	0x058B, r1	; 0x80058b <_ZN7TwoWire14txBufferLengthE>
-    3d5c:	10 92 8a 05 	sts	0x058A, r1	; 0x80058a <_ZN7TwoWire12transmittingE>
+    3d54:	10 92 98 05 	sts	0x0598, r1	; 0x800598 <_ZN7TwoWire13txBufferIndexE>
+    3d58:	10 92 97 05 	sts	0x0597, r1	; 0x800597 <_ZN7TwoWire14txBufferLengthE>
+    3d5c:	10 92 96 05 	sts	0x0596, r1	; 0x800596 <_ZN7TwoWire12transmittingE>
     3d60:	0f 91       	pop	r16
     3d62:	08 95       	ret
 
@@ -8944,12 +8942,12 @@ void TwoWire::onRequest( void (*function)(void) )
     3dd8:	08 f0       	brcs	.+2      	; 0x3ddc <_ZN7TwoWire11requestFromEhhmhh+0x78>
     3dda:	40 e2       	ldi	r20, 0x20	; 32
     3ddc:	2c 2d       	mov	r18, r12
-    3dde:	60 eb       	ldi	r22, 0xB0	; 176
+    3dde:	6c eb       	ldi	r22, 0xBC	; 188
     3de0:	75 e0       	ldi	r23, 0x05	; 5
     3de2:	8f 2d       	mov	r24, r15
     3de4:	0e 94 f8 20 	call	0x41f0	; 0x41f0 <twi_readFrom>
-    3de8:	10 92 af 05 	sts	0x05AF, r1	; 0x8005af <_ZN7TwoWire13rxBufferIndexE>
-    3dec:	80 93 ae 05 	sts	0x05AE, r24	; 0x8005ae <_ZN7TwoWire14rxBufferLengthE>
+    3de8:	10 92 bb 05 	sts	0x05BB, r1	; 0x8005bb <_ZN7TwoWire13rxBufferIndexE>
+    3dec:	80 93 ba 05 	sts	0x05BA, r24	; 0x8005ba <_ZN7TwoWire14rxBufferLengthE>
     3df0:	df 91       	pop	r29
     3df2:	cf 91       	pop	r28
     3df4:	1f 91       	pop	r17
@@ -8996,7 +8994,7 @@ void TwoWire::onRequest( void (*function)(void) )
 // Preinstantiate Objects //////////////////////////////////////////////////////
 
 TwoWire Wire = TwoWire();
-    3e38:	8a e7       	ldi	r24, 0x7A	; 122
+    3e38:	86 e8       	ldi	r24, 0x86	; 134
     3e3a:	95 e0       	ldi	r25, 0x05	; 5
     3e3c:	0c 94 6f 1e 	jmp	0x3cde	; 0x3cde <_ZN7TwoWireC1Ev>
 
@@ -9429,7 +9427,7 @@ void HardwareSerial::flush()
     4000:	f0 e0       	ldi	r31, 0x00	; 0
     4002:	ee 0f       	add	r30, r30
     4004:	ff 1f       	adc	r31, r31
-    4006:	e3 5e       	subi	r30, 0xE3	; 227
+    4006:	e7 5d       	subi	r30, 0xD7	; 215
     4008:	fe 4f       	sbci	r31, 0xFE	; 254
     400a:	71 83       	std	Z+1, r23	; 0x01
     400c:	60 83       	st	Z, r22
@@ -9476,8 +9474,8 @@ IMPLEMENT_ISR(INT0_vect, EXTERNAL_INT_0)
     4056:	bf 93       	push	r27
     4058:	ef 93       	push	r30
     405a:	ff 93       	push	r31
-    405c:	e0 91 1d 01 	lds	r30, 0x011D	; 0x80011d <intFunc>
-    4060:	f0 91 1e 01 	lds	r31, 0x011E	; 0x80011e <intFunc+0x1>
+    405c:	e0 91 29 01 	lds	r30, 0x0129	; 0x800129 <intFunc>
+    4060:	f0 91 2a 01 	lds	r31, 0x012A	; 0x80012a <intFunc+0x1>
     4064:	09 95       	icall
     4066:	ff 91       	pop	r31
     4068:	ef 91       	pop	r30
@@ -9516,8 +9514,8 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     40a4:	bf 93       	push	r27
     40a6:	ef 93       	push	r30
     40a8:	ff 93       	push	r31
-    40aa:	e0 91 1f 01 	lds	r30, 0x011F	; 0x80011f <intFunc+0x2>
-    40ae:	f0 91 20 01 	lds	r31, 0x0120	; 0x800120 <intFunc+0x3>
+    40aa:	e0 91 2b 01 	lds	r30, 0x012B	; 0x80012b <intFunc+0x2>
+    40ae:	f0 91 2c 01 	lds	r31, 0x012C	; 0x80012c <intFunc+0x3>
     40b2:	09 95       	icall
     40b4:	ff 91       	pop	r31
     40b6:	ef 91       	pop	r30
@@ -9544,10 +9542,10 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
   }
   return(flag);
 }
-    40d6:	10 92 43 06 	sts	0x0643, r1	; 0x800643 <twi_state>
+    40d6:	10 92 4f 06 	sts	0x064F, r1	; 0x80064f <twi_state>
     40da:	81 e0       	ldi	r24, 0x01	; 1
-    40dc:	80 93 41 06 	sts	0x0641, r24	; 0x800641 <twi_sendStop>
-    40e0:	10 92 40 06 	sts	0x0640, r1	; 0x800640 <twi_inRepStart>
+    40dc:	80 93 4d 06 	sts	0x064D, r24	; 0x80064d <twi_sendStop>
+    40e0:	10 92 4c 06 	sts	0x064C, r1	; 0x80064c <twi_inRepStart>
     40e4:	61 e0       	ldi	r22, 0x01	; 1
     40e6:	82 e1       	ldi	r24, 0x12	; 18
     40e8:	0e 94 05 0e 	call	0x1c0a	; 0x1c0a <digitalWrite>
@@ -9602,7 +9600,7 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     4152:	08 95       	ret
 
 00004154 <twi_transmit>:
-    4154:	40 91 f2 05 	lds	r20, 0x05F2	; 0x8005f2 <twi_txBufferLength>
+    4154:	40 91 fe 05 	lds	r20, 0x05FE	; 0x8005fe <twi_txBufferLength>
     4158:	26 2f       	mov	r18, r22
     415a:	30 e0       	ldi	r19, 0x00	; 0
     415c:	24 0f       	add	r18, r20
@@ -9610,7 +9608,7 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     4160:	21 32       	cpi	r18, 0x21	; 33
     4162:	31 05       	cpc	r19, r1
     4164:	dc f4       	brge	.+54     	; 0x419c <twi_transmit+0x48>
-    4166:	20 91 43 06 	lds	r18, 0x0643	; 0x800643 <twi_state>
+    4166:	20 91 4f 06 	lds	r18, 0x064F	; 0x80064f <twi_state>
     416a:	24 30       	cpi	r18, 0x04	; 4
     416c:	c9 f4       	brne	.+50     	; 0x41a0 <twi_transmit+0x4c>
     416e:	fc 01       	movw	r30, r24
@@ -9618,19 +9616,19 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     4172:	90 e0       	ldi	r25, 0x00	; 0
     4174:	86 17       	cp	r24, r22
     4176:	58 f4       	brcc	.+22     	; 0x418e <twi_transmit+0x3a>
-    4178:	30 91 f2 05 	lds	r19, 0x05F2	; 0x8005f2 <twi_txBufferLength>
+    4178:	30 91 fe 05 	lds	r19, 0x05FE	; 0x8005fe <twi_txBufferLength>
     417c:	21 91       	ld	r18, Z+
     417e:	dc 01       	movw	r26, r24
-    4180:	ac 50       	subi	r26, 0x0C	; 12
+    4180:	a0 50       	subi	r26, 0x00	; 0
     4182:	ba 4f       	sbci	r27, 0xFA	; 250
     4184:	a3 0f       	add	r26, r19
     4186:	b1 1d       	adc	r27, r1
     4188:	2c 93       	st	X, r18
     418a:	01 96       	adiw	r24, 0x01	; 1
     418c:	f3 cf       	rjmp	.-26     	; 0x4174 <twi_transmit+0x20>
-    418e:	80 91 f2 05 	lds	r24, 0x05F2	; 0x8005f2 <twi_txBufferLength>
+    418e:	80 91 fe 05 	lds	r24, 0x05FE	; 0x8005fe <twi_txBufferLength>
     4192:	68 0f       	add	r22, r24
-    4194:	60 93 f2 05 	sts	0x05F2, r22	; 0x8005f2 <twi_txBufferLength>
+    4194:	60 93 fe 05 	sts	0x05FE, r22	; 0x8005fe <twi_txBufferLength>
     4198:	80 e0       	ldi	r24, 0x00	; 0
     419a:	08 95       	ret
     419c:	81 e0       	ldi	r24, 0x01	; 1
@@ -9639,26 +9637,26 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     41a2:	08 95       	ret
 
 000041a4 <twi_attachSlaveRxEvent>:
-    41a4:	90 93 37 06 	sts	0x0637, r25	; 0x800637 <twi_onSlaveReceive+0x1>
-    41a8:	80 93 36 06 	sts	0x0636, r24	; 0x800636 <twi_onSlaveReceive>
+    41a4:	90 93 43 06 	sts	0x0643, r25	; 0x800643 <twi_onSlaveReceive+0x1>
+    41a8:	80 93 42 06 	sts	0x0642, r24	; 0x800642 <twi_onSlaveReceive>
     41ac:	08 95       	ret
 
 000041ae <twi_attachSlaveTxEvent>:
-    41ae:	90 93 39 06 	sts	0x0639, r25	; 0x800639 <twi_onSlaveTransmit+0x1>
-    41b2:	80 93 38 06 	sts	0x0638, r24	; 0x800638 <twi_onSlaveTransmit>
+    41ae:	90 93 45 06 	sts	0x0645, r25	; 0x800645 <twi_onSlaveTransmit+0x1>
+    41b2:	80 93 44 06 	sts	0x0644, r24	; 0x800644 <twi_onSlaveTransmit>
     41b6:	08 95       	ret
 
 000041b8 <twi_releaseBus>:
     41b8:	85 ec       	ldi	r24, 0xC5	; 197
     41ba:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
-    41be:	10 92 43 06 	sts	0x0643, r1	; 0x800643 <twi_state>
+    41be:	10 92 4f 06 	sts	0x064F, r1	; 0x80064f <twi_state>
     41c2:	08 95       	ret
 
 000041c4 <twi_handleTimeout>:
     41c4:	cf 93       	push	r28
     41c6:	df 93       	push	r29
     41c8:	91 e0       	ldi	r25, 0x01	; 1
-    41ca:	90 93 3b 06 	sts	0x063B, r25	; 0x80063b <twi_timed_out_flag>
+    41ca:	90 93 47 06 	sts	0x0647, r25	; 0x800647 <twi_timed_out_flag>
     41ce:	88 23       	and	r24, r24
     41d0:	61 f0       	breq	.+24     	; 0x41ea <twi_handleTimeout+0x26>
     41d2:	c0 91 b8 00 	lds	r28, 0x00B8	; 0x8000b8 <__DATA_REGION_ORIGIN__+0x58>
@@ -9699,22 +9697,22 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     4220:	0e 94 40 0d 	call	0x1a80	; 0x1a80 <micros>
     4224:	4b 01       	movw	r8, r22
     4226:	5c 01       	movw	r10, r24
-    4228:	d0 91 43 06 	lds	r29, 0x0643	; 0x800643 <twi_state>
+    4228:	d0 91 4f 06 	lds	r29, 0x064F	; 0x80064f <twi_state>
     422c:	dd 23       	and	r29, r29
     422e:	31 f1       	breq	.+76     	; 0x427c <twi_readFrom+0x8c>
-    4230:	80 91 3c 06 	lds	r24, 0x063C	; 0x80063c <twi_timeout_us>
-    4234:	90 91 3d 06 	lds	r25, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    4238:	a0 91 3e 06 	lds	r26, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    423c:	b0 91 3f 06 	lds	r27, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    4230:	80 91 48 06 	lds	r24, 0x0648	; 0x800648 <twi_timeout_us>
+    4234:	90 91 49 06 	lds	r25, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    4238:	a0 91 4a 06 	lds	r26, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    423c:	b0 91 4b 06 	lds	r27, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     4240:	89 2b       	or	r24, r25
     4242:	8a 2b       	or	r24, r26
     4244:	8b 2b       	or	r24, r27
     4246:	81 f3       	breq	.-32     	; 0x4228 <twi_readFrom+0x38>
     4248:	0e 94 40 0d 	call	0x1a80	; 0x1a80 <micros>
-    424c:	40 90 3c 06 	lds	r4, 0x063C	; 0x80063c <twi_timeout_us>
-    4250:	50 90 3d 06 	lds	r5, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    4254:	60 90 3e 06 	lds	r6, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    4258:	70 90 3f 06 	lds	r7, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    424c:	40 90 48 06 	lds	r4, 0x0648	; 0x800648 <twi_timeout_us>
+    4250:	50 90 49 06 	lds	r5, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    4254:	60 90 4a 06 	lds	r6, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    4258:	70 90 4b 06 	lds	r7, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     425c:	dc 01       	movw	r26, r24
     425e:	cb 01       	movw	r24, r22
     4260:	88 19       	sub	r24, r8
@@ -9726,45 +9724,45 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     426c:	6a 06       	cpc	r6, r26
     426e:	7b 06       	cpc	r7, r27
     4270:	d8 f6       	brcc	.-74     	; 0x4228 <twi_readFrom+0x38>
-    4272:	80 91 3a 06 	lds	r24, 0x063A	; 0x80063a <twi_do_reset_on_timeout>
+    4272:	80 91 46 06 	lds	r24, 0x0646	; 0x800646 <twi_do_reset_on_timeout>
     4276:	0e 94 e2 20 	call	0x41c4	; 0x41c4 <twi_handleTimeout>
     427a:	90 c0       	rjmp	.+288    	; 0x439c <twi_readFrom+0x1ac>
     427c:	81 e0       	ldi	r24, 0x01	; 1
-    427e:	80 93 43 06 	sts	0x0643, r24	; 0x800643 <twi_state>
-    4282:	e0 92 41 06 	sts	0x0641, r14	; 0x800641 <twi_sendStop>
+    427e:	80 93 4f 06 	sts	0x064F, r24	; 0x80064f <twi_state>
+    4282:	e0 92 4d 06 	sts	0x064D, r14	; 0x80064d <twi_sendStop>
     4286:	9f ef       	ldi	r25, 0xFF	; 255
-    4288:	90 93 d0 05 	sts	0x05D0, r25	; 0x8005d0 <twi_error>
-    428c:	10 92 15 06 	sts	0x0615, r1	; 0x800615 <twi_masterBufferIndex>
+    4288:	90 93 dc 05 	sts	0x05DC, r25	; 0x8005dc <twi_error>
+    428c:	10 92 21 06 	sts	0x0621, r1	; 0x800621 <twi_masterBufferIndex>
     4290:	9c 0f       	add	r25, r28
-    4292:	90 93 14 06 	sts	0x0614, r25	; 0x800614 <twi_masterBufferLength>
-    4296:	80 93 42 06 	sts	0x0642, r24	; 0x800642 <twi_slarw>
-    429a:	90 91 42 06 	lds	r25, 0x0642	; 0x800642 <twi_slarw>
+    4292:	90 93 20 06 	sts	0x0620, r25	; 0x800620 <twi_masterBufferLength>
+    4296:	80 93 4e 06 	sts	0x064E, r24	; 0x80064e <twi_slarw>
+    429a:	90 91 4e 06 	lds	r25, 0x064E	; 0x80064e <twi_slarw>
     429e:	8f 2d       	mov	r24, r15
     42a0:	88 0f       	add	r24, r24
     42a2:	89 2b       	or	r24, r25
-    42a4:	80 93 42 06 	sts	0x0642, r24	; 0x800642 <twi_slarw>
-    42a8:	80 91 40 06 	lds	r24, 0x0640	; 0x800640 <twi_inRepStart>
+    42a4:	80 93 4e 06 	sts	0x064E, r24	; 0x80064e <twi_slarw>
+    42a8:	80 91 4c 06 	lds	r24, 0x064C	; 0x80064c <twi_inRepStart>
     42ac:	81 30       	cpi	r24, 0x01	; 1
     42ae:	89 f5       	brne	.+98     	; 0x4312 <twi_readFrom+0x122>
-    42b0:	10 92 40 06 	sts	0x0640, r1	; 0x800640 <twi_inRepStart>
+    42b0:	10 92 4c 06 	sts	0x064C, r1	; 0x80064c <twi_inRepStart>
     42b4:	0e 94 40 0d 	call	0x1a80	; 0x1a80 <micros>
     42b8:	6b 01       	movw	r12, r22
     42ba:	7c 01       	movw	r14, r24
-    42bc:	80 91 42 06 	lds	r24, 0x0642	; 0x800642 <twi_slarw>
+    42bc:	80 91 4e 06 	lds	r24, 0x064E	; 0x80064e <twi_slarw>
     42c0:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
-    42c4:	80 91 3c 06 	lds	r24, 0x063C	; 0x80063c <twi_timeout_us>
-    42c8:	90 91 3d 06 	lds	r25, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    42cc:	a0 91 3e 06 	lds	r26, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    42d0:	b0 91 3f 06 	lds	r27, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    42c4:	80 91 48 06 	lds	r24, 0x0648	; 0x800648 <twi_timeout_us>
+    42c8:	90 91 49 06 	lds	r25, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    42cc:	a0 91 4a 06 	lds	r26, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    42d0:	b0 91 4b 06 	lds	r27, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     42d4:	89 2b       	or	r24, r25
     42d6:	8a 2b       	or	r24, r26
     42d8:	8b 2b       	or	r24, r27
     42da:	a9 f0       	breq	.+42     	; 0x4306 <twi_readFrom+0x116>
     42dc:	0e 94 40 0d 	call	0x1a80	; 0x1a80 <micros>
-    42e0:	80 90 3c 06 	lds	r8, 0x063C	; 0x80063c <twi_timeout_us>
-    42e4:	90 90 3d 06 	lds	r9, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    42e8:	a0 90 3e 06 	lds	r10, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    42ec:	b0 90 3f 06 	lds	r11, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    42e0:	80 90 48 06 	lds	r8, 0x0648	; 0x800648 <twi_timeout_us>
+    42e4:	90 90 49 06 	lds	r9, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    42e8:	a0 90 4a 06 	lds	r10, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    42ec:	b0 90 4b 06 	lds	r11, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     42f0:	dc 01       	movw	r26, r24
     42f2:	cb 01       	movw	r24, r22
     42f4:	8c 19       	sub	r24, r12
@@ -9786,22 +9784,22 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     4318:	0e 94 40 0d 	call	0x1a80	; 0x1a80 <micros>
     431c:	6b 01       	movw	r12, r22
     431e:	7c 01       	movw	r14, r24
-    4320:	80 91 43 06 	lds	r24, 0x0643	; 0x800643 <twi_state>
+    4320:	80 91 4f 06 	lds	r24, 0x064F	; 0x80064f <twi_state>
     4324:	81 30       	cpi	r24, 0x01	; 1
     4326:	31 f5       	brne	.+76     	; 0x4374 <twi_readFrom+0x184>
-    4328:	80 91 3c 06 	lds	r24, 0x063C	; 0x80063c <twi_timeout_us>
-    432c:	90 91 3d 06 	lds	r25, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    4330:	a0 91 3e 06 	lds	r26, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    4334:	b0 91 3f 06 	lds	r27, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    4328:	80 91 48 06 	lds	r24, 0x0648	; 0x800648 <twi_timeout_us>
+    432c:	90 91 49 06 	lds	r25, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    4330:	a0 91 4a 06 	lds	r26, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    4334:	b0 91 4b 06 	lds	r27, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     4338:	89 2b       	or	r24, r25
     433a:	8a 2b       	or	r24, r26
     433c:	8b 2b       	or	r24, r27
     433e:	81 f3       	breq	.-32     	; 0x4320 <twi_readFrom+0x130>
     4340:	0e 94 40 0d 	call	0x1a80	; 0x1a80 <micros>
-    4344:	80 90 3c 06 	lds	r8, 0x063C	; 0x80063c <twi_timeout_us>
-    4348:	90 90 3d 06 	lds	r9, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    434c:	a0 90 3e 06 	lds	r10, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    4350:	b0 90 3f 06 	lds	r11, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    4344:	80 90 48 06 	lds	r8, 0x0648	; 0x800648 <twi_timeout_us>
+    4348:	90 90 49 06 	lds	r9, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    434c:	a0 90 4a 06 	lds	r10, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    4350:	b0 90 4b 06 	lds	r11, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     4354:	dc 01       	movw	r26, r24
     4356:	cb 01       	movw	r24, r22
     4358:	8c 19       	sub	r24, r12
@@ -9813,14 +9811,14 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     4364:	aa 06       	cpc	r10, r26
     4366:	bb 06       	cpc	r11, r27
     4368:	d8 f6       	brcc	.-74     	; 0x4320 <twi_readFrom+0x130>
-    436a:	80 91 3a 06 	lds	r24, 0x063A	; 0x80063a <twi_do_reset_on_timeout>
+    436a:	80 91 46 06 	lds	r24, 0x0646	; 0x800646 <twi_do_reset_on_timeout>
     436e:	0e 94 e2 20 	call	0x41c4	; 0x41c4 <twi_handleTimeout>
     4372:	15 c0       	rjmp	.+42     	; 0x439e <twi_readFrom+0x1ae>
-    4374:	80 91 15 06 	lds	r24, 0x0615	; 0x800615 <twi_masterBufferIndex>
+    4374:	80 91 21 06 	lds	r24, 0x0621	; 0x800621 <twi_masterBufferIndex>
     4378:	8c 17       	cp	r24, r28
     437a:	10 f4       	brcc	.+4      	; 0x4380 <twi_readFrom+0x190>
-    437c:	c0 91 15 06 	lds	r28, 0x0615	; 0x800615 <twi_masterBufferIndex>
-    4380:	a6 e1       	ldi	r26, 0x16	; 22
+    437c:	c0 91 21 06 	lds	r28, 0x0621	; 0x800621 <twi_masterBufferIndex>
+    4380:	a2 e2       	ldi	r26, 0x22	; 34
     4382:	b6 e0       	ldi	r27, 0x06	; 6
     4384:	91 2f       	mov	r25, r17
     4386:	e1 2f       	mov	r30, r17
@@ -9882,22 +9880,22 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     43f2:	0e 94 40 0d 	call	0x1a80	; 0x1a80 <micros>
     43f6:	4b 01       	movw	r8, r22
     43f8:	5c 01       	movw	r10, r24
-    43fa:	c0 91 43 06 	lds	r28, 0x0643	; 0x800643 <twi_state>
+    43fa:	c0 91 4f 06 	lds	r28, 0x064F	; 0x80064f <twi_state>
     43fe:	cc 23       	and	r28, r28
     4400:	11 f1       	breq	.+68     	; 0x4446 <twi_writeTo+0x84>
-    4402:	80 91 3c 06 	lds	r24, 0x063C	; 0x80063c <twi_timeout_us>
-    4406:	90 91 3d 06 	lds	r25, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    440a:	a0 91 3e 06 	lds	r26, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    440e:	b0 91 3f 06 	lds	r27, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    4402:	80 91 48 06 	lds	r24, 0x0648	; 0x800648 <twi_timeout_us>
+    4406:	90 91 49 06 	lds	r25, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    440a:	a0 91 4a 06 	lds	r26, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    440e:	b0 91 4b 06 	lds	r27, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     4412:	89 2b       	or	r24, r25
     4414:	8a 2b       	or	r24, r26
     4416:	8b 2b       	or	r24, r27
     4418:	81 f3       	breq	.-32     	; 0x43fa <twi_writeTo+0x38>
     441a:	0e 94 40 0d 	call	0x1a80	; 0x1a80 <micros>
-    441e:	40 90 3c 06 	lds	r4, 0x063C	; 0x80063c <twi_timeout_us>
-    4422:	50 90 3d 06 	lds	r5, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    4426:	60 90 3e 06 	lds	r6, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    442a:	70 90 3f 06 	lds	r7, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    441e:	40 90 48 06 	lds	r4, 0x0648	; 0x800648 <twi_timeout_us>
+    4422:	50 90 49 06 	lds	r5, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    4426:	60 90 4a 06 	lds	r6, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    442a:	70 90 4b 06 	lds	r7, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     442e:	dc 01       	movw	r26, r24
     4430:	cb 01       	movw	r24, r22
     4432:	88 19       	sub	r24, r8
@@ -9911,14 +9909,14 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     4442:	d8 f6       	brcc	.-74     	; 0x43fa <twi_writeTo+0x38>
     4444:	83 c0       	rjmp	.+262    	; 0x454c <twi_writeTo+0x18a>
     4446:	82 e0       	ldi	r24, 0x02	; 2
-    4448:	80 93 43 06 	sts	0x0643, r24	; 0x800643 <twi_state>
-    444c:	00 93 41 06 	sts	0x0641, r16	; 0x800641 <twi_sendStop>
+    4448:	80 93 4f 06 	sts	0x064F, r24	; 0x80064f <twi_state>
+    444c:	00 93 4d 06 	sts	0x064D, r16	; 0x80064d <twi_sendStop>
     4450:	8f ef       	ldi	r24, 0xFF	; 255
-    4452:	80 93 d0 05 	sts	0x05D0, r24	; 0x8005d0 <twi_error>
-    4456:	10 92 15 06 	sts	0x0615, r1	; 0x800615 <twi_masterBufferIndex>
-    445a:	f0 92 14 06 	sts	0x0614, r15	; 0x800614 <twi_masterBufferLength>
+    4452:	80 93 dc 05 	sts	0x05DC, r24	; 0x8005dc <twi_error>
+    4456:	10 92 21 06 	sts	0x0621, r1	; 0x800621 <twi_masterBufferIndex>
+    445a:	f0 92 20 06 	sts	0x0620, r15	; 0x800620 <twi_masterBufferLength>
     445e:	9e 2d       	mov	r25, r14
-    4460:	a6 e1       	ldi	r26, 0x16	; 22
+    4460:	a2 e2       	ldi	r26, 0x22	; 34
     4462:	b6 e0       	ldi	r27, 0x06	; 6
     4464:	ee 2d       	mov	r30, r14
     4466:	fd 2d       	mov	r31, r13
@@ -9929,33 +9927,33 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     4470:	81 91       	ld	r24, Z+
     4472:	8d 93       	st	X+, r24
     4474:	f9 cf       	rjmp	.-14     	; 0x4468 <twi_writeTo+0xa6>
-    4476:	10 92 42 06 	sts	0x0642, r1	; 0x800642 <twi_slarw>
-    447a:	90 91 42 06 	lds	r25, 0x0642	; 0x800642 <twi_slarw>
+    4476:	10 92 4e 06 	sts	0x064E, r1	; 0x80064e <twi_slarw>
+    447a:	90 91 4e 06 	lds	r25, 0x064E	; 0x80064e <twi_slarw>
     447e:	dd 0f       	add	r29, r29
     4480:	d9 2b       	or	r29, r25
-    4482:	d0 93 42 06 	sts	0x0642, r29	; 0x800642 <twi_slarw>
-    4486:	80 91 40 06 	lds	r24, 0x0640	; 0x800640 <twi_inRepStart>
+    4482:	d0 93 4e 06 	sts	0x064E, r29	; 0x80064e <twi_slarw>
+    4486:	80 91 4c 06 	lds	r24, 0x064C	; 0x80064c <twi_inRepStart>
     448a:	81 30       	cpi	r24, 0x01	; 1
     448c:	89 f5       	brne	.+98     	; 0x44f0 <twi_writeTo+0x12e>
-    448e:	10 92 40 06 	sts	0x0640, r1	; 0x800640 <twi_inRepStart>
+    448e:	10 92 4c 06 	sts	0x064C, r1	; 0x80064c <twi_inRepStart>
     4492:	0e 94 40 0d 	call	0x1a80	; 0x1a80 <micros>
     4496:	6b 01       	movw	r12, r22
     4498:	7c 01       	movw	r14, r24
-    449a:	80 91 42 06 	lds	r24, 0x0642	; 0x800642 <twi_slarw>
+    449a:	80 91 4e 06 	lds	r24, 0x064E	; 0x80064e <twi_slarw>
     449e:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
-    44a2:	80 91 3c 06 	lds	r24, 0x063C	; 0x80063c <twi_timeout_us>
-    44a6:	90 91 3d 06 	lds	r25, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    44aa:	a0 91 3e 06 	lds	r26, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    44ae:	b0 91 3f 06 	lds	r27, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    44a2:	80 91 48 06 	lds	r24, 0x0648	; 0x800648 <twi_timeout_us>
+    44a6:	90 91 49 06 	lds	r25, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    44aa:	a0 91 4a 06 	lds	r26, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    44ae:	b0 91 4b 06 	lds	r27, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     44b2:	89 2b       	or	r24, r25
     44b4:	8a 2b       	or	r24, r26
     44b6:	8b 2b       	or	r24, r27
     44b8:	a9 f0       	breq	.+42     	; 0x44e4 <twi_writeTo+0x122>
     44ba:	0e 94 40 0d 	call	0x1a80	; 0x1a80 <micros>
-    44be:	80 90 3c 06 	lds	r8, 0x063C	; 0x80063c <twi_timeout_us>
-    44c2:	90 90 3d 06 	lds	r9, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    44c6:	a0 90 3e 06 	lds	r10, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    44ca:	b0 90 3f 06 	lds	r11, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    44be:	80 90 48 06 	lds	r8, 0x0648	; 0x800648 <twi_timeout_us>
+    44c2:	90 90 49 06 	lds	r9, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    44c6:	a0 90 4a 06 	lds	r10, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    44ca:	b0 90 4b 06 	lds	r11, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     44ce:	dc 01       	movw	r26, r24
     44d0:	cb 01       	movw	r24, r22
     44d2:	8c 19       	sub	r24, r12
@@ -9979,22 +9977,22 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     44fc:	7c 01       	movw	r14, r24
     44fe:	11 23       	and	r17, r17
     4500:	59 f1       	breq	.+86     	; 0x4558 <twi_writeTo+0x196>
-    4502:	80 91 43 06 	lds	r24, 0x0643	; 0x800643 <twi_state>
+    4502:	80 91 4f 06 	lds	r24, 0x064F	; 0x80064f <twi_state>
     4506:	82 30       	cpi	r24, 0x02	; 2
     4508:	39 f5       	brne	.+78     	; 0x4558 <twi_writeTo+0x196>
-    450a:	80 91 3c 06 	lds	r24, 0x063C	; 0x80063c <twi_timeout_us>
-    450e:	90 91 3d 06 	lds	r25, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    4512:	a0 91 3e 06 	lds	r26, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    4516:	b0 91 3f 06 	lds	r27, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    450a:	80 91 48 06 	lds	r24, 0x0648	; 0x800648 <twi_timeout_us>
+    450e:	90 91 49 06 	lds	r25, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    4512:	a0 91 4a 06 	lds	r26, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    4516:	b0 91 4b 06 	lds	r27, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     451a:	89 2b       	or	r24, r25
     451c:	8a 2b       	or	r24, r26
     451e:	8b 2b       	or	r24, r27
     4520:	71 f3       	breq	.-36     	; 0x44fe <twi_writeTo+0x13c>
     4522:	0e 94 40 0d 	call	0x1a80	; 0x1a80 <micros>
-    4526:	80 90 3c 06 	lds	r8, 0x063C	; 0x80063c <twi_timeout_us>
-    452a:	90 90 3d 06 	lds	r9, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    452e:	a0 90 3e 06 	lds	r10, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    4532:	b0 90 3f 06 	lds	r11, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    4526:	80 90 48 06 	lds	r8, 0x0648	; 0x800648 <twi_timeout_us>
+    452a:	90 90 49 06 	lds	r9, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    452e:	a0 90 4a 06 	lds	r10, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    4532:	b0 90 4b 06 	lds	r11, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     4536:	dc 01       	movw	r26, r24
     4538:	cb 01       	movw	r24, r22
     453a:	8c 19       	sub	r24, r12
@@ -10006,17 +10004,17 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     4546:	aa 06       	cpc	r10, r26
     4548:	bb 06       	cpc	r11, r27
     454a:	c8 f6       	brcc	.-78     	; 0x44fe <twi_writeTo+0x13c>
-    454c:	80 91 3a 06 	lds	r24, 0x063A	; 0x80063a <twi_do_reset_on_timeout>
+    454c:	80 91 46 06 	lds	r24, 0x0646	; 0x800646 <twi_do_reset_on_timeout>
     4550:	0e 94 e2 20 	call	0x41c4	; 0x41c4 <twi_handleTimeout>
     4554:	c5 e0       	ldi	r28, 0x05	; 5
     4556:	13 c0       	rjmp	.+38     	; 0x457e <twi_writeTo+0x1bc>
-    4558:	80 91 d0 05 	lds	r24, 0x05D0	; 0x8005d0 <twi_error>
+    4558:	80 91 dc 05 	lds	r24, 0x05DC	; 0x8005dc <twi_error>
     455c:	8f 3f       	cpi	r24, 0xFF	; 255
     455e:	79 f0       	breq	.+30     	; 0x457e <twi_writeTo+0x1bc>
-    4560:	80 91 d0 05 	lds	r24, 0x05D0	; 0x8005d0 <twi_error>
+    4560:	80 91 dc 05 	lds	r24, 0x05DC	; 0x8005dc <twi_error>
     4564:	80 32       	cpi	r24, 0x20	; 32
     4566:	41 f0       	breq	.+16     	; 0x4578 <twi_writeTo+0x1b6>
-    4568:	80 91 d0 05 	lds	r24, 0x05D0	; 0x8005d0 <twi_error>
+    4568:	80 91 dc 05 	lds	r24, 0x05DC	; 0x8005dc <twi_error>
     456c:	80 33       	cpi	r24, 0x30	; 48
     456e:	31 f0       	breq	.+12     	; 0x457c <twi_writeTo+0x1ba>
     4570:	c4 e0       	ldi	r28, 0x04	; 4
@@ -10048,10 +10046,10 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
 000045a2 <twi_stop>:
     45a2:	85 ed       	ldi	r24, 0xD5	; 213
     45a4:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
-    45a8:	80 91 3c 06 	lds	r24, 0x063C	; 0x80063c <twi_timeout_us>
-    45ac:	90 91 3d 06 	lds	r25, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    45b0:	a0 91 3e 06 	lds	r26, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    45b4:	b0 91 3f 06 	lds	r27, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    45a8:	80 91 48 06 	lds	r24, 0x0648	; 0x800648 <twi_timeout_us>
+    45ac:	90 91 49 06 	lds	r25, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    45b0:	a0 91 4a 06 	lds	r26, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    45b4:	b0 91 4b 06 	lds	r27, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     45b8:	07 96       	adiw	r24, 0x07	; 7
     45ba:	a1 1d       	adc	r26, r1
     45bc:	b1 1d       	adc	r27, r1
@@ -10065,10 +10063,10 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     45cc:	20 91 bc 00 	lds	r18, 0x00BC	; 0x8000bc <__DATA_REGION_ORIGIN__+0x5c>
     45d0:	24 ff       	sbrs	r18, 4
     45d2:	1c c0       	rjmp	.+56     	; 0x460c <twi_stop+0x6a>
-    45d4:	40 91 3c 06 	lds	r20, 0x063C	; 0x80063c <twi_timeout_us>
-    45d8:	50 91 3d 06 	lds	r21, 0x063D	; 0x80063d <twi_timeout_us+0x1>
-    45dc:	60 91 3e 06 	lds	r22, 0x063E	; 0x80063e <twi_timeout_us+0x2>
-    45e0:	70 91 3f 06 	lds	r23, 0x063F	; 0x80063f <twi_timeout_us+0x3>
+    45d4:	40 91 48 06 	lds	r20, 0x0648	; 0x800648 <twi_timeout_us>
+    45d8:	50 91 49 06 	lds	r21, 0x0649	; 0x800649 <twi_timeout_us+0x1>
+    45dc:	60 91 4a 06 	lds	r22, 0x064A	; 0x80064a <twi_timeout_us+0x2>
+    45e0:	70 91 4b 06 	lds	r23, 0x064B	; 0x80064b <twi_timeout_us+0x3>
     45e4:	45 2b       	or	r20, r21
     45e6:	46 2b       	or	r20, r22
     45e8:	47 2b       	or	r20, r23
@@ -10085,9 +10083,9 @@ IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
     45fe:	a1 09       	sbc	r26, r1
     4600:	b1 09       	sbc	r27, r1
     4602:	e4 cf       	rjmp	.-56     	; 0x45cc <twi_stop+0x2a>
-    4604:	80 91 3a 06 	lds	r24, 0x063A	; 0x80063a <twi_do_reset_on_timeout>
+    4604:	80 91 46 06 	lds	r24, 0x0646	; 0x800646 <twi_do_reset_on_timeout>
     4608:	0c 94 e2 20 	jmp	0x41c4	; 0x41c4 <twi_handleTimeout>
-    460c:	10 92 43 06 	sts	0x0643, r1	; 0x800643 <twi_state>
+    460c:	10 92 4f 06 	sts	0x064F, r1	; 0x80064f <twi_state>
     4610:	08 95       	ret
 
 00004612 <__vector_24>:
@@ -10156,7 +10154,7 @@ ISR(TWI_vect)
       break;
     case TW_MT_ARB_LOST: // lost bus arbitration
       twi_error = TW_MT_ARB_LOST;
-    4682:	80 93 d0 05 	sts	0x05D0, r24	; 0x8005d0 <twi_error>
+    4682:	80 93 dc 05 	sts	0x05DC, r24	; 0x8005dc <twi_error>
       twi_releaseBus();
     4686:	0e 94 dc 20 	call	0x41b8	; 0x41b8 <twi_releaseBus>
       break;
@@ -10228,7 +10226,7 @@ ISR(TWI_vect)
     case TW_REP_START: // sent repeated start condition
       // copy device address and r/w bit to output register and ack
       TWDR = twi_slarw;
-    46fc:	80 91 42 06 	lds	r24, 0x0642	; 0x800642 <twi_slarw>
+    46fc:	80 91 4e 06 	lds	r24, 0x064E	; 0x80064e <twi_slarw>
     4700:	10 c0       	rjmp	.+32     	; 0x4722 <__vector_24+0x110>
 
     // Master Transmitter
@@ -10236,18 +10234,18 @@ ISR(TWI_vect)
     case TW_MT_DATA_ACK: // slave receiver acked data
       // if there is data to send, send it, otherwise stop 
       if(twi_masterBufferIndex < twi_masterBufferLength){
-    4702:	90 91 15 06 	lds	r25, 0x0615	; 0x800615 <twi_masterBufferIndex>
-    4706:	80 91 14 06 	lds	r24, 0x0614	; 0x800614 <twi_masterBufferLength>
+    4702:	90 91 21 06 	lds	r25, 0x0621	; 0x800621 <twi_masterBufferIndex>
+    4706:	80 91 20 06 	lds	r24, 0x0620	; 0x800620 <twi_masterBufferLength>
     470a:	98 17       	cp	r25, r24
     470c:	70 f5       	brcc	.+92     	; 0x476a <__vector_24+0x158>
         // copy data to output register and ack
         TWDR = twi_masterBuffer[twi_masterBufferIndex++];
-    470e:	e0 91 15 06 	lds	r30, 0x0615	; 0x800615 <twi_masterBufferIndex>
+    470e:	e0 91 21 06 	lds	r30, 0x0621	; 0x800621 <twi_masterBufferIndex>
     4712:	81 e0       	ldi	r24, 0x01	; 1
     4714:	8e 0f       	add	r24, r30
-    4716:	80 93 15 06 	sts	0x0615, r24	; 0x800615 <twi_masterBufferIndex>
+    4716:	80 93 21 06 	sts	0x0621, r24	; 0x800621 <twi_masterBufferIndex>
     471a:	f0 e0       	ldi	r31, 0x00	; 0
-    471c:	ea 5e       	subi	r30, 0xEA	; 234
+    471c:	ee 5d       	subi	r30, 0xDE	; 222
     471e:	f9 4f       	sbci	r31, 0xF9	; 249
     4720:	80 81       	ld	r24, Z
     4722:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
@@ -10265,7 +10263,7 @@ void twi_reply(uint8_t ack)
       break;
     case TW_MT_DATA_NACK: // data sent, nack received
       twi_error = TW_MT_DATA_NACK;
-    472a:	80 93 d0 05 	sts	0x05D0, r24	; 0x8005d0 <twi_error>
+    472a:	80 93 dc 05 	sts	0x05DC, r24	; 0x8005dc <twi_error>
     472e:	8b c0       	rjmp	.+278    	; 0x4846 <__vector_24+0x234>
       break;
 
@@ -10273,21 +10271,21 @@ void twi_reply(uint8_t ack)
     case TW_MR_DATA_ACK: // data received, ack sent
       // put byte into buffer
       twi_masterBuffer[twi_masterBufferIndex++] = TWDR;
-    4730:	e0 91 15 06 	lds	r30, 0x0615	; 0x800615 <twi_masterBufferIndex>
+    4730:	e0 91 21 06 	lds	r30, 0x0621	; 0x800621 <twi_masterBufferIndex>
     4734:	81 e0       	ldi	r24, 0x01	; 1
     4736:	8e 0f       	add	r24, r30
-    4738:	80 93 15 06 	sts	0x0615, r24	; 0x800615 <twi_masterBufferIndex>
+    4738:	80 93 21 06 	sts	0x0621, r24	; 0x800621 <twi_masterBufferIndex>
     473c:	80 91 bb 00 	lds	r24, 0x00BB	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
     4740:	f0 e0       	ldi	r31, 0x00	; 0
-    4742:	ea 5e       	subi	r30, 0xEA	; 234
+    4742:	ee 5d       	subi	r30, 0xDE	; 222
     4744:	f9 4f       	sbci	r31, 0xF9	; 249
     4746:	80 83       	st	Z, r24
       __attribute__ ((fallthrough));
     case TW_MR_SLA_ACK:  // address sent, ack received
       // ack if more bytes are expected, otherwise nack
       if(twi_masterBufferIndex < twi_masterBufferLength){
-    4748:	90 91 15 06 	lds	r25, 0x0615	; 0x800615 <twi_masterBufferIndex>
-    474c:	80 91 14 06 	lds	r24, 0x0614	; 0x800614 <twi_masterBufferLength>
+    4748:	90 91 21 06 	lds	r25, 0x0621	; 0x800621 <twi_masterBufferIndex>
+    474c:	80 91 20 06 	lds	r24, 0x0620	; 0x800620 <twi_masterBufferLength>
     4750:	6b c0       	rjmp	.+214    	; 0x4828 <__vector_24+0x216>
         twi_reply(0);
       }
@@ -10295,24 +10293,24 @@ void twi_reply(uint8_t ack)
     case TW_MR_DATA_NACK: // data received, nack sent
       // put final byte into buffer
       twi_masterBuffer[twi_masterBufferIndex++] = TWDR;
-    4752:	e0 91 15 06 	lds	r30, 0x0615	; 0x800615 <twi_masterBufferIndex>
+    4752:	e0 91 21 06 	lds	r30, 0x0621	; 0x800621 <twi_masterBufferIndex>
     4756:	81 e0       	ldi	r24, 0x01	; 1
     4758:	8e 0f       	add	r24, r30
-    475a:	80 93 15 06 	sts	0x0615, r24	; 0x800615 <twi_masterBufferIndex>
+    475a:	80 93 21 06 	sts	0x0621, r24	; 0x800621 <twi_masterBufferIndex>
     475e:	80 91 bb 00 	lds	r24, 0x00BB	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
     4762:	f0 e0       	ldi	r31, 0x00	; 0
-    4764:	ea 5e       	subi	r30, 0xEA	; 234
+    4764:	ee 5d       	subi	r30, 0xDE	; 222
     4766:	f9 4f       	sbci	r31, 0xF9	; 249
     4768:	80 83       	st	Z, r24
       if (twi_sendStop){
-    476a:	80 91 41 06 	lds	r24, 0x0641	; 0x800641 <twi_sendStop>
+    476a:	80 91 4d 06 	lds	r24, 0x064D	; 0x80064d <twi_sendStop>
     476e:	81 11       	cpse	r24, r1
     4770:	6a c0       	rjmp	.+212    	; 0x4846 <__vector_24+0x234>
         twi_stop();
       } else {
         twi_inRepStart = true;	// we're gonna send the START
     4772:	81 e0       	ldi	r24, 0x01	; 1
-    4774:	80 93 40 06 	sts	0x0640, r24	; 0x800640 <twi_inRepStart>
+    4774:	80 93 4c 06 	sts	0x064C, r24	; 0x80064c <twi_inRepStart>
         // don't enable the interrupt. We'll generate the start, but we
         // avoid handling the interrupt until we're in the next transaction,
         // at the point where we would normally issue the start.
@@ -10326,10 +10324,10 @@ void twi_reply(uint8_t ack)
       // enter slave receiver mode
       twi_state = TWI_SRX;
     477c:	83 e0       	ldi	r24, 0x03	; 3
-    477e:	80 93 43 06 	sts	0x0643, r24	; 0x800643 <twi_state>
+    477e:	80 93 4f 06 	sts	0x064F, r24	; 0x80064f <twi_state>
       // indicate that rx buffer can be overwritten and ack
       twi_rxBufferIndex = 0;
-    4782:	10 92 d1 05 	sts	0x05D1, r1	; 0x8005d1 <twi_rxBufferIndex>
+    4782:	10 92 dd 05 	sts	0x05DD, r1	; 0x8005dd <twi_rxBufferIndex>
     4786:	cf cf       	rjmp	.-98     	; 0x4726 <__vector_24+0x114>
       twi_reply(1);
       break;
@@ -10337,19 +10335,19 @@ void twi_reply(uint8_t ack)
     case TW_SR_GCALL_DATA_ACK: // data received generally, returned ack
       // if there is still room in the rx buffer
       if(twi_rxBufferIndex < TWI_BUFFER_LENGTH){
-    4788:	80 91 d1 05 	lds	r24, 0x05D1	; 0x8005d1 <twi_rxBufferIndex>
+    4788:	80 91 dd 05 	lds	r24, 0x05DD	; 0x8005dd <twi_rxBufferIndex>
     478c:	80 32       	cpi	r24, 0x20	; 32
     478e:	08 f0       	brcs	.+2      	; 0x4792 <__vector_24+0x180>
     4790:	4e c0       	rjmp	.+156    	; 0x482e <__vector_24+0x21c>
         // put byte in buffer and ack
         twi_rxBuffer[twi_rxBufferIndex++] = TWDR;
-    4792:	e0 91 d1 05 	lds	r30, 0x05D1	; 0x8005d1 <twi_rxBufferIndex>
+    4792:	e0 91 dd 05 	lds	r30, 0x05DD	; 0x8005dd <twi_rxBufferIndex>
     4796:	81 e0       	ldi	r24, 0x01	; 1
     4798:	8e 0f       	add	r24, r30
-    479a:	80 93 d1 05 	sts	0x05D1, r24	; 0x8005d1 <twi_rxBufferIndex>
+    479a:	80 93 dd 05 	sts	0x05DD, r24	; 0x8005dd <twi_rxBufferIndex>
     479e:	80 91 bb 00 	lds	r24, 0x00BB	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
     47a2:	f0 e0       	ldi	r31, 0x00	; 0
-    47a4:	ee 52       	subi	r30, 0x2E	; 46
+    47a4:	e2 52       	subi	r30, 0x22	; 34
     47a6:	fa 4f       	sbci	r31, 0xFA	; 250
     47a8:	80 83       	st	Z, r24
     47aa:	bd cf       	rjmp	.-134    	; 0x4726 <__vector_24+0x114>
@@ -10362,28 +10360,28 @@ void twi_reply(uint8_t ack)
     47ac:	0e 94 dc 20 	call	0x41b8	; 0x41b8 <twi_releaseBus>
       // put a null char after data if there's room
       if(twi_rxBufferIndex < TWI_BUFFER_LENGTH){
-    47b0:	80 91 d1 05 	lds	r24, 0x05D1	; 0x8005d1 <twi_rxBufferIndex>
+    47b0:	80 91 dd 05 	lds	r24, 0x05DD	; 0x8005dd <twi_rxBufferIndex>
     47b4:	80 32       	cpi	r24, 0x20	; 32
     47b6:	30 f4       	brcc	.+12     	; 0x47c4 <__vector_24+0x1b2>
         twi_rxBuffer[twi_rxBufferIndex] = '\0';
-    47b8:	e0 91 d1 05 	lds	r30, 0x05D1	; 0x8005d1 <twi_rxBufferIndex>
+    47b8:	e0 91 dd 05 	lds	r30, 0x05DD	; 0x8005dd <twi_rxBufferIndex>
     47bc:	f0 e0       	ldi	r31, 0x00	; 0
-    47be:	ee 52       	subi	r30, 0x2E	; 46
+    47be:	e2 52       	subi	r30, 0x22	; 34
     47c0:	fa 4f       	sbci	r31, 0xFA	; 250
     47c2:	10 82       	st	Z, r1
       }
       // callback to user defined callback
       twi_onSlaveReceive(twi_rxBuffer, twi_rxBufferIndex);
-    47c4:	60 91 d1 05 	lds	r22, 0x05D1	; 0x8005d1 <twi_rxBufferIndex>
+    47c4:	60 91 dd 05 	lds	r22, 0x05DD	; 0x8005dd <twi_rxBufferIndex>
     47c8:	70 e0       	ldi	r23, 0x00	; 0
-    47ca:	e0 91 36 06 	lds	r30, 0x0636	; 0x800636 <twi_onSlaveReceive>
-    47ce:	f0 91 37 06 	lds	r31, 0x0637	; 0x800637 <twi_onSlaveReceive+0x1>
-    47d2:	82 ed       	ldi	r24, 0xD2	; 210
+    47ca:	e0 91 42 06 	lds	r30, 0x0642	; 0x800642 <twi_onSlaveReceive>
+    47ce:	f0 91 43 06 	lds	r31, 0x0643	; 0x800643 <twi_onSlaveReceive+0x1>
+    47d2:	8e ed       	ldi	r24, 0xDE	; 222
     47d4:	95 e0       	ldi	r25, 0x05	; 5
     47d6:	09 95       	icall
       // since we submit rx buffer to "wire" library, we can reset it
       twi_rxBufferIndex = 0;
-    47d8:	10 92 d1 05 	sts	0x05D1, r1	; 0x8005d1 <twi_rxBufferIndex>
+    47d8:	10 92 dd 05 	sts	0x05DD, r1	; 0x8005dd <twi_rxBufferIndex>
       break;
     47dc:	36 c0       	rjmp	.+108    	; 0x484a <__vector_24+0x238>
     
@@ -10393,48 +10391,48 @@ void twi_reply(uint8_t ack)
       // enter slave transmitter mode
       twi_state = TWI_STX;
     47de:	84 e0       	ldi	r24, 0x04	; 4
-    47e0:	80 93 43 06 	sts	0x0643, r24	; 0x800643 <twi_state>
+    47e0:	80 93 4f 06 	sts	0x064F, r24	; 0x80064f <twi_state>
       // ready the tx buffer index for iteration
       twi_txBufferIndex = 0;
-    47e4:	10 92 f3 05 	sts	0x05F3, r1	; 0x8005f3 <twi_txBufferIndex>
+    47e4:	10 92 ff 05 	sts	0x05FF, r1	; 0x8005ff <twi_txBufferIndex>
       // set tx buffer length to be zero, to verify if user changes it
       twi_txBufferLength = 0;
-    47e8:	10 92 f2 05 	sts	0x05F2, r1	; 0x8005f2 <twi_txBufferLength>
+    47e8:	10 92 fe 05 	sts	0x05FE, r1	; 0x8005fe <twi_txBufferLength>
       // request for txBuffer to be filled and length to be set
       // note: user must call twi_transmit(bytes, length) to do this
       twi_onSlaveTransmit();
-    47ec:	e0 91 38 06 	lds	r30, 0x0638	; 0x800638 <twi_onSlaveTransmit>
-    47f0:	f0 91 39 06 	lds	r31, 0x0639	; 0x800639 <twi_onSlaveTransmit+0x1>
+    47ec:	e0 91 44 06 	lds	r30, 0x0644	; 0x800644 <twi_onSlaveTransmit>
+    47f0:	f0 91 45 06 	lds	r31, 0x0645	; 0x800645 <twi_onSlaveTransmit+0x1>
     47f4:	09 95       	icall
       // if they didn't change buffer & length, initialize it
       if(0 == twi_txBufferLength){
-    47f6:	80 91 f2 05 	lds	r24, 0x05F2	; 0x8005f2 <twi_txBufferLength>
+    47f6:	80 91 fe 05 	lds	r24, 0x05FE	; 0x8005fe <twi_txBufferLength>
     47fa:	81 11       	cpse	r24, r1
     47fc:	05 c0       	rjmp	.+10     	; 0x4808 <__vector_24+0x1f6>
         twi_txBufferLength = 1;
     47fe:	81 e0       	ldi	r24, 0x01	; 1
-    4800:	80 93 f2 05 	sts	0x05F2, r24	; 0x8005f2 <twi_txBufferLength>
+    4800:	80 93 fe 05 	sts	0x05FE, r24	; 0x8005fe <twi_txBufferLength>
         twi_txBuffer[0] = 0x00;
-    4804:	10 92 f4 05 	sts	0x05F4, r1	; 0x8005f4 <twi_txBuffer>
+    4804:	10 92 00 06 	sts	0x0600, r1	; 0x800600 <twi_txBuffer>
       }
       __attribute__ ((fallthrough));		  
       // transmit first byte from buffer, fall
     case TW_ST_DATA_ACK: // byte sent, ack returned
       // copy data to output register
       TWDR = twi_txBuffer[twi_txBufferIndex++];
-    4808:	e0 91 f3 05 	lds	r30, 0x05F3	; 0x8005f3 <twi_txBufferIndex>
+    4808:	e0 91 ff 05 	lds	r30, 0x05FF	; 0x8005ff <twi_txBufferIndex>
     480c:	81 e0       	ldi	r24, 0x01	; 1
     480e:	8e 0f       	add	r24, r30
-    4810:	80 93 f3 05 	sts	0x05F3, r24	; 0x8005f3 <twi_txBufferIndex>
+    4810:	80 93 ff 05 	sts	0x05FF, r24	; 0x8005ff <twi_txBufferIndex>
     4814:	f0 e0       	ldi	r31, 0x00	; 0
-    4816:	ec 50       	subi	r30, 0x0C	; 12
+    4816:	e0 50       	subi	r30, 0x00	; 0
     4818:	fa 4f       	sbci	r31, 0xFA	; 250
     481a:	80 81       	ld	r24, Z
     481c:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__DATA_REGION_ORIGIN__+0x5b>
       // if there is more to send, ack, otherwise nack
       if(twi_txBufferIndex < twi_txBufferLength){
-    4820:	90 91 f3 05 	lds	r25, 0x05F3	; 0x8005f3 <twi_txBufferIndex>
-    4824:	80 91 f2 05 	lds	r24, 0x05F2	; 0x8005f2 <twi_txBufferLength>
+    4820:	90 91 ff 05 	lds	r25, 0x05FF	; 0x8005ff <twi_txBufferIndex>
+    4824:	80 91 fe 05 	lds	r24, 0x05FE	; 0x8005fe <twi_txBufferLength>
     4828:	98 17       	cp	r25, r24
     482a:	08 f4       	brcc	.+2      	; 0x482e <__vector_24+0x21c>
     482c:	7c cf       	rjmp	.-264    	; 0x4726 <__vector_24+0x114>
@@ -10461,7 +10459,7 @@ void twi_reply(uint8_t ack)
       twi_reply(1);
       // leave slave receiver state
       twi_state = TWI_READY;
-    483c:	10 92 43 06 	sts	0x0643, r1	; 0x800643 <twi_state>
+    483c:	10 92 4f 06 	sts	0x064F, r1	; 0x80064f <twi_state>
       break;
     4840:	04 c0       	rjmp	.+8      	; 0x484a <__vector_24+0x238>
 
@@ -10470,7 +10468,7 @@ void twi_reply(uint8_t ack)
       break;
     case TW_BUS_ERROR: // bus error, illegal stop/start
       twi_error = TW_BUS_ERROR;
-    4842:	10 92 d0 05 	sts	0x05D0, r1	; 0x8005d0 <twi_error>
+    4842:	10 92 dc 05 	sts	0x05DC, r1	; 0x8005dc <twi_error>
       twi_stop();
     4846:	0e 94 d1 22 	call	0x45a2	; 0x45a2 <twi_stop>
       break;
@@ -10759,8 +10757,8 @@ void twi_reply(uint8_t ack)
     4a58:	10 f4       	brcc	.+4      	; 0x4a5e <malloc+0x12>
     4a5a:	82 e0       	ldi	r24, 0x02	; 2
     4a5c:	90 e0       	ldi	r25, 0x00	; 0
-    4a5e:	e0 91 46 06 	lds	r30, 0x0646	; 0x800646 <__flp>
-    4a62:	f0 91 47 06 	lds	r31, 0x0647	; 0x800647 <__flp+0x1>
+    4a5e:	e0 91 52 06 	lds	r30, 0x0652	; 0x800652 <__flp>
+    4a62:	f0 91 53 06 	lds	r31, 0x0653	; 0x800653 <__flp+0x1>
     4a66:	20 e0       	ldi	r18, 0x00	; 0
     4a68:	30 e0       	ldi	r19, 0x00	; 0
     4a6a:	a0 e0       	ldi	r26, 0x00	; 0
@@ -10785,8 +10783,8 @@ void twi_reply(uint8_t ack)
     4a90:	13 96       	adiw	r26, 0x03	; 3
     4a92:	1c 93       	st	X, r17
     4a94:	27 c0       	rjmp	.+78     	; 0x4ae4 <malloc+0x98>
-    4a96:	00 93 46 06 	sts	0x0646, r16	; 0x800646 <__flp>
-    4a9a:	10 93 47 06 	sts	0x0647, r17	; 0x800647 <__flp+0x1>
+    4a96:	00 93 52 06 	sts	0x0652, r16	; 0x800652 <__flp>
+    4a9a:	10 93 53 06 	sts	0x0653, r17	; 0x800653 <__flp+0x1>
     4a9e:	22 c0       	rjmp	.+68     	; 0x4ae4 <malloc+0x98>
     4aa0:	21 15       	cp	r18, r1
     4aa2:	31 05       	cpc	r19, r1
@@ -10817,8 +10815,8 @@ void twi_reply(uint8_t ack)
     4ad4:	93 83       	std	Z+3, r25	; 0x03
     4ad6:	82 83       	std	Z+2, r24	; 0x02
     4ad8:	04 c0       	rjmp	.+8      	; 0x4ae2 <malloc+0x96>
-    4ada:	90 93 47 06 	sts	0x0647, r25	; 0x800647 <__flp+0x1>
-    4ade:	80 93 46 06 	sts	0x0646, r24	; 0x800646 <__flp>
+    4ada:	90 93 53 06 	sts	0x0653, r25	; 0x800653 <__flp+0x1>
+    4ade:	80 93 52 06 	sts	0x0652, r24	; 0x800652 <__flp>
     4ae2:	fe 01       	movw	r30, r28
     4ae4:	32 96       	adiw	r30, 0x02	; 2
     4ae6:	44 c0       	rjmp	.+136    	; 0x4b70 <malloc+0x124>
@@ -10832,14 +10830,14 @@ void twi_reply(uint8_t ack)
     4af6:	39 83       	std	Y+1, r19	; 0x01
     4af8:	28 83       	st	Y, r18
     4afa:	3a c0       	rjmp	.+116    	; 0x4b70 <malloc+0x124>
-    4afc:	20 91 44 06 	lds	r18, 0x0644	; 0x800644 <__brkval>
-    4b00:	30 91 45 06 	lds	r19, 0x0645	; 0x800645 <__brkval+0x1>
+    4afc:	20 91 50 06 	lds	r18, 0x0650	; 0x800650 <__brkval>
+    4b00:	30 91 51 06 	lds	r19, 0x0651	; 0x800651 <__brkval+0x1>
     4b04:	23 2b       	or	r18, r19
     4b06:	41 f4       	brne	.+16     	; 0x4b18 <malloc+0xcc>
     4b08:	20 91 02 01 	lds	r18, 0x0102	; 0x800102 <__malloc_heap_start>
     4b0c:	30 91 03 01 	lds	r19, 0x0103	; 0x800103 <__malloc_heap_start+0x1>
-    4b10:	30 93 45 06 	sts	0x0645, r19	; 0x800645 <__brkval+0x1>
-    4b14:	20 93 44 06 	sts	0x0644, r18	; 0x800644 <__brkval>
+    4b10:	30 93 51 06 	sts	0x0651, r19	; 0x800651 <__brkval+0x1>
+    4b14:	20 93 50 06 	sts	0x0650, r18	; 0x800650 <__brkval>
     4b18:	20 91 00 01 	lds	r18, 0x0100	; 0x800100 <__data_start>
     4b1c:	30 91 01 01 	lds	r19, 0x0101	; 0x800101 <__data_start+0x1>
     4b20:	21 15       	cp	r18, r1
@@ -10851,8 +10849,8 @@ void twi_reply(uint8_t ack)
     4b2e:	50 91 05 01 	lds	r21, 0x0105	; 0x800105 <__malloc_margin+0x1>
     4b32:	24 1b       	sub	r18, r20
     4b34:	35 0b       	sbc	r19, r21
-    4b36:	e0 91 44 06 	lds	r30, 0x0644	; 0x800644 <__brkval>
-    4b3a:	f0 91 45 06 	lds	r31, 0x0645	; 0x800645 <__brkval+0x1>
+    4b36:	e0 91 50 06 	lds	r30, 0x0650	; 0x800650 <__brkval>
+    4b3a:	f0 91 51 06 	lds	r31, 0x0651	; 0x800651 <__brkval+0x1>
     4b3e:	e2 17       	cp	r30, r18
     4b40:	f3 07       	cpc	r31, r19
     4b42:	a0 f4       	brcc	.+40     	; 0x4b6c <malloc+0x120>
@@ -10869,8 +10867,8 @@ void twi_reply(uint8_t ack)
     4b58:	48 f0       	brcs	.+18     	; 0x4b6c <malloc+0x120>
     4b5a:	4e 0f       	add	r20, r30
     4b5c:	5f 1f       	adc	r21, r31
-    4b5e:	50 93 45 06 	sts	0x0645, r21	; 0x800645 <__brkval+0x1>
-    4b62:	40 93 44 06 	sts	0x0644, r20	; 0x800644 <__brkval>
+    4b5e:	50 93 51 06 	sts	0x0651, r21	; 0x800651 <__brkval+0x1>
+    4b62:	40 93 50 06 	sts	0x0650, r20	; 0x800650 <__brkval>
     4b66:	81 93       	st	Z+, r24
     4b68:	91 93       	st	Z+, r25
     4b6a:	02 c0       	rjmp	.+4      	; 0x4b70 <malloc+0x124>
@@ -10893,21 +10891,21 @@ void twi_reply(uint8_t ack)
     4b88:	32 97       	sbiw	r30, 0x02	; 2
     4b8a:	13 82       	std	Z+3, r1	; 0x03
     4b8c:	12 82       	std	Z+2, r1	; 0x02
-    4b8e:	a0 91 46 06 	lds	r26, 0x0646	; 0x800646 <__flp>
-    4b92:	b0 91 47 06 	lds	r27, 0x0647	; 0x800647 <__flp+0x1>
+    4b8e:	a0 91 52 06 	lds	r26, 0x0652	; 0x800652 <__flp>
+    4b92:	b0 91 53 06 	lds	r27, 0x0653	; 0x800653 <__flp+0x1>
     4b96:	10 97       	sbiw	r26, 0x00	; 0
     4b98:	81 f4       	brne	.+32     	; 0x4bba <free+0x3e>
     4b9a:	20 81       	ld	r18, Z
     4b9c:	31 81       	ldd	r19, Z+1	; 0x01
     4b9e:	82 0f       	add	r24, r18
     4ba0:	93 1f       	adc	r25, r19
-    4ba2:	20 91 44 06 	lds	r18, 0x0644	; 0x800644 <__brkval>
-    4ba6:	30 91 45 06 	lds	r19, 0x0645	; 0x800645 <__brkval+0x1>
+    4ba2:	20 91 50 06 	lds	r18, 0x0650	; 0x800650 <__brkval>
+    4ba6:	30 91 51 06 	lds	r19, 0x0651	; 0x800651 <__brkval+0x1>
     4baa:	28 17       	cp	r18, r24
     4bac:	39 07       	cpc	r19, r25
     4bae:	51 f5       	brne	.+84     	; 0x4c04 <free+0x88>
-    4bb0:	f0 93 45 06 	sts	0x0645, r31	; 0x800645 <__brkval+0x1>
-    4bb4:	e0 93 44 06 	sts	0x0644, r30	; 0x800644 <__brkval>
+    4bb0:	f0 93 51 06 	sts	0x0651, r31	; 0x800651 <__brkval+0x1>
+    4bb4:	e0 93 50 06 	sts	0x0650, r30	; 0x800650 <__brkval>
     4bb8:	67 c0       	rjmp	.+206    	; 0x4c88 <free+0x10c>
     4bba:	ed 01       	movw	r28, r26
     4bbc:	20 e0       	ldi	r18, 0x00	; 0
@@ -10946,8 +10944,8 @@ void twi_reply(uint8_t ack)
     4bfe:	21 15       	cp	r18, r1
     4c00:	31 05       	cpc	r19, r1
     4c02:	29 f4       	brne	.+10     	; 0x4c0e <free+0x92>
-    4c04:	f0 93 47 06 	sts	0x0647, r31	; 0x800647 <__flp+0x1>
-    4c08:	e0 93 46 06 	sts	0x0646, r30	; 0x800646 <__flp>
+    4c04:	f0 93 53 06 	sts	0x0653, r31	; 0x800653 <__flp+0x1>
+    4c08:	e0 93 52 06 	sts	0x0652, r30	; 0x800652 <__flp>
     4c0c:	3d c0       	rjmp	.+122    	; 0x4c88 <free+0x10c>
     4c0e:	e9 01       	movw	r28, r18
     4c10:	fb 83       	std	Y+3, r31	; 0x03
@@ -10990,20 +10988,20 @@ void twi_reply(uint8_t ack)
     4c5a:	3f 4f       	sbci	r19, 0xFF	; 255
     4c5c:	82 0f       	add	r24, r18
     4c5e:	93 1f       	adc	r25, r19
-    4c60:	20 91 44 06 	lds	r18, 0x0644	; 0x800644 <__brkval>
-    4c64:	30 91 45 06 	lds	r19, 0x0645	; 0x800645 <__brkval+0x1>
+    4c60:	20 91 50 06 	lds	r18, 0x0650	; 0x800650 <__brkval>
+    4c64:	30 91 51 06 	lds	r19, 0x0651	; 0x800651 <__brkval+0x1>
     4c68:	28 17       	cp	r18, r24
     4c6a:	39 07       	cpc	r19, r25
     4c6c:	69 f4       	brne	.+26     	; 0x4c88 <free+0x10c>
     4c6e:	30 97       	sbiw	r30, 0x00	; 0
     4c70:	29 f4       	brne	.+10     	; 0x4c7c <free+0x100>
-    4c72:	10 92 47 06 	sts	0x0647, r1	; 0x800647 <__flp+0x1>
-    4c76:	10 92 46 06 	sts	0x0646, r1	; 0x800646 <__flp>
+    4c72:	10 92 53 06 	sts	0x0653, r1	; 0x800653 <__flp+0x1>
+    4c76:	10 92 52 06 	sts	0x0652, r1	; 0x800652 <__flp>
     4c7a:	02 c0       	rjmp	.+4      	; 0x4c80 <free+0x104>
     4c7c:	13 82       	std	Z+3, r1	; 0x03
     4c7e:	12 82       	std	Z+2, r1	; 0x02
-    4c80:	b0 93 45 06 	sts	0x0645, r27	; 0x800645 <__brkval+0x1>
-    4c84:	a0 93 44 06 	sts	0x0644, r26	; 0x800644 <__brkval>
+    4c80:	b0 93 51 06 	sts	0x0651, r27	; 0x800651 <__brkval+0x1>
+    4c84:	a0 93 50 06 	sts	0x0650, r26	; 0x800650 <__brkval>
     4c88:	df 91       	pop	r29
     4c8a:	cf 91       	pop	r28
     4c8c:	08 95       	ret

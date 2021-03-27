@@ -80,7 +80,7 @@ mosfet	p1(p1_ACM_E_Pin),
 		p7(p7_ACM_E_Pin);
 
 // Adding each mosfet object to a pointer array for easier loops
-mosfet* MosfetList[] = { &p1};//, &p2, &p3, &p4, &p5, &p6, &p7 };
+mosfet* MosfetList[] = { &p1, &p2, &p3, &p4, &p5, &p6, &p7 };
 	
 //TI_TCA6424A_S expander (adrExpander);
 
@@ -180,7 +180,6 @@ void loop() {
 		
 	}
 	blink_light();
-	//p2.close_MOSFET();
 	
 	wdt_reset();	
 }
@@ -204,7 +203,6 @@ void blink_light(){
 	if (millis() - blink_time > blink_interval){
 		STATE = !STATE;
 		digitalWrite(9, STATE);
-		//p1.close_MOSFET();
 		
 		blink_time = millis();
 	}
