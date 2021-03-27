@@ -38,7 +38,15 @@ Sketch.d Sketch.o: .././Sketch.cpp .././INA233.h \
  ..\\..\ArduinoCore\include\core/Stream.h .././Port_expander.h \
  .././Config.h ..\\..\ArduinoCore\include\core/arduino.h \
  .././errorHandler.h \
- d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\wdt.h
+ d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\wdt.h \
+ ..\\..\ArduinoCore\include\libraries\ACAN2517FD/ACAN2517FD.h \
+ ..\\..\ArduinoCore\include\libraries\ACAN2517FD/ACAN2517FDSettings.h \
+ ..\\..\ArduinoCore\include\libraries\ACAN2517FD/ACANFD_DataBitRateFactor.h \
+ ..\\..\ArduinoCore\include\libraries\ACAN2517FD/ACANFDBuffer.h \
+ ..\\..\ArduinoCore\include\libraries\ACAN2517FD/CANFDMessage.h \
+ ..\\..\ArduinoCore\include\libraries\ACAN2517FD/CANMessage.h \
+ ..\\..\ArduinoCore\include\libraries\ACAN2517FD/ACAN2517FDFilters.h \
+ ..\\..\ArduinoCore\include\libraries\SPI/SPI.h
 
 .././INA233.h:
 
@@ -125,3 +133,19 @@ d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\ut
 .././errorHandler.h:
 
 d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\wdt.h:
+
+..\\..\ArduinoCore\include\libraries\ACAN2517FD/ACAN2517FD.h:
+
+..\\..\ArduinoCore\include\libraries\ACAN2517FD/ACAN2517FDSettings.h:
+
+..\\..\ArduinoCore\include\libraries\ACAN2517FD/ACANFD_DataBitRateFactor.h:
+
+..\\..\ArduinoCore\include\libraries\ACAN2517FD/ACANFDBuffer.h:
+
+..\\..\ArduinoCore\include\libraries\ACAN2517FD/CANFDMessage.h:
+
+..\\..\ArduinoCore\include\libraries\ACAN2517FD/CANMessage.h:
+
+..\\..\ArduinoCore\include\libraries\ACAN2517FD/ACAN2517FDFilters.h:
+
+..\\..\ArduinoCore\include\libraries\SPI/SPI.h:
