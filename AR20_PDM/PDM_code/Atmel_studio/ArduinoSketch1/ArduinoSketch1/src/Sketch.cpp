@@ -1,20 +1,20 @@
 ﻿#include <Arduino.h>
-#include <avr/wdt.h>
+#include <avr/wdt.h>/*
 #include "ACAN2517FD.h"
-#include "SPI.h"
+#include "SPI.h"*/
 
 #include "INA233.h"
 #include "Port_expander.h"
 #include "Config.h"
 //#include "MemoryFree.h"
 #include "errorHandler.h"
-
+/*
 // CANBUS settings
 static const byte MCP2517_CS  = 7 ; // CS input of MCP2517
 static const byte MCP2517_INT =  2 ; // INT output of MCP2517
 
 ACAN2517FD can (MCP2517_CS, SPI, MCP2517_INT);
-	CANFDMessage frame_FD, frame;
+	CANFDMessage frame_FD, frame; */
 
 class  mosfet{
 public:
@@ -94,7 +94,10 @@ void setup() {
 
 void loop() {
 	
-	p1.open_MOSFET();
+	for (uint8_t ii = 0; ii < 7; ii++){
+		MosfetList[ii]->close_MOSFET()
+	}
+	
 	check_INA233_miscommunication();
 	
 	float current_1 = Sensor_1.getCurrent();

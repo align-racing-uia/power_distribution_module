@@ -12,7 +12,7 @@
 //#include <SPI.h>
 #include <avr/wdt.h>
 #include "Wire.h"
-#include <ACAN2517FD.h>
+/*#include <ACAN2517FD.h>
 #include <SPI.h>
 
 
@@ -22,7 +22,7 @@ static const byte MCP2517_CS  = 7 ; // CS input of MCP2517
 static const byte MCP2517_INT =  2 ; // INT output of MCP2517
 
 ACAN2517FD can (MCP2517_CS, SPI, MCP2517_INT);
-	CANFDMessage frame_FD, frame;
+	CANFDMessage frame_FD, frame;*/
 
 
 
@@ -69,13 +69,13 @@ INA233_S* SensorList[] = { &Sensor_1, &Sensor_2, &Sensor_3, &Sensor_4, &Sensor_5
 
 
 // Create instances of each mosfet object
-mosfet	p1(p1_ACM_E_Pin); 
-		/*p2(p2_ACM_E_Pin), 
+mosfet	p1(p1_ACM_E_Pin), 
+		p2(p2_ACM_E_Pin), 
 		p3(p3_ACM_E_Pin), 
 		p4(p4_ACM_E_Pin),
 		p5(p5_ACM_E_Pin),
 		p6(p6_ACM_E_Pin),
-		p7(p7_ACM_E_Pin);*/
+		p7(p7_ACM_E_Pin);
 
 // Adding each mosfet object to a pointer array for easier loops
 mosfet* MosfetList[] = { &p1};//, &p2, &p3, &p4, &p5, &p6, &p7 };
@@ -95,6 +95,8 @@ void setup() {
 	Wire.setClock(10000);
 	//Serial.begin(9600);
 	
+	pinMode(9, OUTPUT);
+	
 	// Setup for each INA233 sensor
 	for (uint8_t ii = 0; ii < 7; ii++){
 		SensorList[ii]->initialize();
@@ -104,13 +106,13 @@ void setup() {
 		SensorList[ii]->setADC_Settings(default_address);
 	}
 	
-		
+	/*
 	// ___________________________ START SPI ______________________________//
 	SPI.begin () ;
 		// For version >= 2.1.0
 	ACAN2517FDSettings settings (ACAN2517FDSettings::OSC_20MHz, 500UL * 1000UL, DataBitRateFactor::x8);
 		/* For version < 2.1.0
-			ACAN2517FDSettings settings (ACAN2517FDSettings::OSC_20MHz, 125UL * 1000UL, ACAN2517FDSettings::DATA_BITRATE_x8);*/
+			ACAN2517FDSettings settings (ACAN2517FDSettings::OSC_20MHz, 125UL * 1000UL, ACAN2517FDSettings::DATA_BITRATE_x8);
 	settings.mRequestedMode = ACAN2517FDSettings::NormalFD;
 	
 	// Default values are too high for an Arduino Uno that contains 2048 bytes of RAM: reduce them
@@ -143,15 +145,16 @@ void setup() {
 	frame_FD.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
 	
 	frame.id = 0x500;
-	frame_FD.id = 0x501;
+	frame_FD.id = 0x501;*/
 }
 
 
 void loop() {
 	
-	// Let power through MOSFET nr 1
-	p1.open_MOSFET();
-	
+	// Let power through MOSFETs
+	for (uint8_t ii = 0; ii < 7; ii++){
+		MosfetList[ii]->close_MOSFET();
+	}	
 	
 	// Make sure communication with INA233 still works, if not then open mosfet
 	check_INA233_miscommunication();
@@ -160,7 +163,7 @@ void loop() {
 	int test = 1;
 	
 	Serial.println(current_1);
-	
+	/*
 	if (can.available ()) {
 		can.receive (frame);
 		Serial.print ("Received: ");
@@ -173,7 +176,7 @@ void loop() {
 			digitalWrite(9, LOW); 
 		}
 		
-	}
+	}*/
 	blink_light();
 	//p2.close_MOSFET();
 	
@@ -198,7 +201,7 @@ void check_INA233_miscommunication(){
 void blink_light(){
 	if (millis() - blink_time > blink_interval){
 		STATE = !STATE;
-		digitalWrite(10, STATE);
+		digitalWrite(9, STATE);
 		//p1.close_MOSFET();
 		
 		blink_time = millis();

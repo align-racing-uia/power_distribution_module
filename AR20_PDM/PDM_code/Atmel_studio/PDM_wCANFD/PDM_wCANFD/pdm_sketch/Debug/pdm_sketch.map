@@ -40,20 +40,12 @@ D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCA
                               INA233.o (Serial)
 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
                               D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o (main)
-D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
-                              Sketch.o (_ZdaPv)
 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
                               INA233.o (_ZN5Print5printEPK19__FlashStringHelper)
 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
                               Sketch.o (millis)
 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                              Sketch.o (digitalWrite)
-D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                              Sketch.o (_ZN10ACAN2517FDC1EhR8SPIClassh)
-D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
-                              Sketch.o (_ZN18ACAN2517FDSettingsC1ENS_10OscillatorEm17DataBitRateFactorm)
-D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                              Sketch.o (_ZN8SPIClass5beginEv)
+                              Sketch.o (pinMode)
 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
                               INA233.o (_ZN7TwoWire9availableEv)
 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(abi.o)
@@ -62,16 +54,12 @@ D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCA
                               D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o) (_ZN14HardwareSerial9availableEv)
 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
                               D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o) (yield)
-D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
-                              D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o) (attachInterrupt)
 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
                               D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o) (twi_init)
 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
                               D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o) (__ltsf2)
 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
                               D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o) (__unordsf2)
-d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
-                              D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o) (__mulsi3)
 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
                               D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o) (__udivmodsi4)
 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
@@ -82,40 +70,10 @@ d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/
                               Sketch.o (__do_clear_bss)
 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
                               Sketch.o (__do_global_ctors)
-d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
-                              Sketch.o (__do_global_dtors)
-d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
-                              D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o) (__umulhisi3)
-d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_usmulhisi3.o)
-                              D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o) (__usmulhisi3)
-d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
-                              D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o) (__muluhisi3)
-d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulshisi3.o)
-                              D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o) (__mulshisi3)
-d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3.o)
-                              D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o) (__muldi3)
-d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
-                              d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3.o) (__muldi3_6)
-d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
-                              D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o) (__umulsidi3)
-d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
-                              D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o) (__udivdi3)
-d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
-                              d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o) (__udivmod64)
-d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
-                              D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o) (__cmpdi2)
 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
                               d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o) (__tablejump2__)
-d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                              D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o) (malloc)
 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
                               D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(abi.o) (abort)
-
-Allocating common symbols
-Common symbol       size              file
-
-__brkval            0x2               d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-__flp               0x2               d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
 
 Discarded input sections
 
@@ -174,7 +132,6 @@ Discarded input sections
  .debug_str     0x00000000      0x488 Port_expander.o
  .comment       0x00000000       0x31 Port_expander.o
  .debug_frame   0x00000000       0x88 Port_expander.o
- .group         0x00000000        0x8 Sketch.o
  .text          0x00000000        0x0 Sketch.o
  .data          0x00000000        0x0 Sketch.o
  .bss           0x00000000        0x0 Sketch.o
@@ -245,10 +202,6 @@ Discarded input sections
  .text.atexit   0x00000000        0x6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
  .text._Z8setupUSBv
                 0x00000000        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .text          0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .data          0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .bss           0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .text._ZnwjPv  0x00000000        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
  .group         0x00000000        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .group         0x00000000        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .group         0x00000000        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
@@ -272,6 +225,8 @@ Discarded input sections
                 0x00000000       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print7printlnEhi
                 0x00000000       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEmi
+                0x00000000       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print7printlnEli
                 0x00000000       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print5printEdi
@@ -291,62 +246,6 @@ Discarded input sections
                 0x00000000       0x52 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
  .progmem.data.port_to_input_PGM
                 0x00000000        0xa D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .group         0x00000000        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .group         0x00000000        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .group         0x00000000        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .group         0x00000000        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .group         0x00000000        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text          0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .data          0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .bss           0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN12CANFDMessageC2Ev
-                0x00000000       0x26 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN10ACAN2517FD23dispatchReceivedMessageEPFvmE
-                0x00000000       0x98 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN10ACAN2517FD4pollEv
-                0x00000000       0x1a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN10ACAN2517FD21enterInTransmitBufferERK12CANFDMessage
-                0x00000000       0x78 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN10ACAN2517FD10sendViaTXQERK12CANFDMessage
-                0x00000000      0x21e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN10ACAN2517FD9tryToSendERK12CANFDMessage
-                0x00000000       0x96 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN10ACAN2517FD14readRegister16Ej
-                0x00000000       0x32 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN10ACAN2517FD20currentOperationModeEv
-                0x00000000       0x10 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN10ACAN2517FD34recoverFromRestrictedOperationModeEv
-                0x00000000       0x82 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN10ACAN2517FD13errorCountersEv
-                0x00000000        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN10ACAN2517FD9diagInfosEi
-                0x00000000       0x12 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text          0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .data          0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .bss           0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .text._ZN18ACAN2517FDSettings8sysClockENS_10OscillatorE
-                0x00000000       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .text._ZNK18ACAN2517FDSettings24actualArbitrationBitRateEv
-                0x00000000       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .text._ZNK18ACAN2517FDSettings17actualDataBitRateEv
-                0x00000000       0x5e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .text._ZNK18ACAN2517FDSettings23exactArbitrationBitRateEv
-                0x00000000       0x5a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .text._ZNK18ACAN2517FDSettings16exactDataBitRateEv
-                0x00000000       0x6c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .text._ZNK18ACAN2517FDSettings32ppmFromDesiredArbitrationBitRateEv
-                0x00000000       0xb2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .text._ZNK18ACAN2517FDSettings34arbitrationSamplePointFromBitStartEv
-                0x00000000       0x2c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .text._ZNK18ACAN2517FDSettings27dataSamplePointFromBitStartEv
-                0x00000000       0x30 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .text          0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .data          0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .bss           0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .text._ZN8SPIClass3endEv
-                0x00000000       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .text._ZN8SPIClass17notUsingInterruptEh
-                0x00000000       0x36 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
  .group         0x00000000        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
  .group         0x00000000        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
  .group         0x00000000        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
@@ -416,11 +315,6 @@ Discarded input sections
  .debug_str     0x00000000      0x150 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
  .comment       0x00000000       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
  .debug_frame   0x00000000       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
- .text          0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
- .data          0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
- .bss           0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
- .text.detachInterrupt
-                0x00000000       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
  .text          0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .data          0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss           0x00000000        0x0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
@@ -438,20 +332,6 @@ Discarded input sections
  .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
  .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
  .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
- .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
- .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
- .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
- .text.libgcc.div
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
- .text.libgcc   0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
  .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
  .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
  .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
@@ -530,169 +410,6 @@ Discarded input sections
                 0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
  .text.libgcc.fixed
                 0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
- .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
- .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
- .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
- .text.libgcc.mul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
- .text.libgcc.div
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
- .text.libgcc   0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
- .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
- .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
- .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc.div
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc   0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
- .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_usmulhisi3.o)
- .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_usmulhisi3.o)
- .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_usmulhisi3.o)
- .text.libgcc.div
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_usmulhisi3.o)
- .text.libgcc   0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_usmulhisi3.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_usmulhisi3.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_usmulhisi3.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_usmulhisi3.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_usmulhisi3.o)
- .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
- .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
- .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
- .text.libgcc.div
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
- .text.libgcc   0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
- .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulshisi3.o)
- .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulshisi3.o)
- .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulshisi3.o)
- .text.libgcc.mul
-                0x00000000       0x10 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulshisi3.o)
- .text.libgcc.div
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulshisi3.o)
- .text.libgcc   0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulshisi3.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulshisi3.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulshisi3.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulshisi3.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulshisi3.o)
- .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3.o)
- .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3.o)
- .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3.o)
- .text.libgcc.div
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3.o)
- .text.libgcc   0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3.o)
- .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
- .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
- .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
- .text.libgcc.div
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
- .text.libgcc   0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
- .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
- .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
- .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
- .text.libgcc.div
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
- .text.libgcc   0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
- .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
- .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
- .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
- .text.libgcc.mul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
- .text.libgcc.div
-                0x00000000       0x1c d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
- .text.libgcc   0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
- .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
- .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
- .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
- .text.libgcc.mul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
- .text.libgcc.div
-                0x00000000       0xa2 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
- .text.libgcc   0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
- .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
- .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
- .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
- .text.libgcc.mul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
- .text.libgcc.div
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
- .text.libgcc.prologue
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
- .text.libgcc.builtins
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
- .text.libgcc.fmul
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
- .text.libgcc.fixed
-                0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
  .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
  .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
  .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
@@ -708,8 +425,6 @@ Discarded input sections
                 0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
  .text.libgcc.fixed
                 0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
- .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
- .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
  .text          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
  .data          0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
  .bss           0x00000000        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(abort.o)
@@ -848,7 +563,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x4c40
+.text           0x00000000     0x26ba
  *(.vectors)
  .vectors       0x00000000       0x68 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -909,580 +624,408 @@ END GROUP
                 0x00000156                __ctors_end = .
                 0x00000156                __dtors_start = .
  *(.dtors)
- .dtors         0x00000156        0x2 Sketch.o
-                0x00000158                __dtors_end = .
+                0x00000156                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x00000158        0x0 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x00000158                __init
+ .init0         0x00000156        0x0 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000156                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x00000158        0xc D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init2         0x00000156        0xc D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x00000164       0x16 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                0x00000164                __do_copy_data
- .init4         0x0000017a       0x10 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                0x0000017a                __do_clear_bss
+ .init4         0x00000162       0x16 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00000162                __do_copy_data
+ .init4         0x00000178       0x10 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000178                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
  *(.init6)
- .init6         0x0000018a       0x16 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
-                0x0000018a                __do_global_ctors
+ .init6         0x00000188       0x16 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                0x00000188                __do_global_ctors
  *(.init6)
  *(.init7)
  *(.init7)
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x000001a0        0x8 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init9         0x0000019e        0x8 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init9)
  *(.text)
- .text          0x000001a8        0x4 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x000001a8                __vector_22
-                0x000001a8                __vector_12
-                0x000001a8                __bad_interrupt
-                0x000001a8                __vector_6
-                0x000001a8                __vector_3
-                0x000001a8                __vector_23
-                0x000001a8                __vector_25
-                0x000001a8                __vector_11
-                0x000001a8                __vector_13
-                0x000001a8                __vector_17
-                0x000001a8                __vector_7
-                0x000001a8                __vector_5
-                0x000001a8                __vector_4
-                0x000001a8                __vector_9
-                0x000001a8                __vector_21
-                0x000001a8                __vector_15
-                0x000001a8                __vector_8
-                0x000001a8                __vector_14
-                0x000001a8                __vector_10
-                0x000001a8                __vector_20
-                0x000001ac                . = ALIGN (0x2)
+ .text          0x000001a6        0x4 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000001a6                __vector_22
+                0x000001a6                __vector_1
+                0x000001a6                __vector_12
+                0x000001a6                __bad_interrupt
+                0x000001a6                __vector_6
+                0x000001a6                __vector_3
+                0x000001a6                __vector_23
+                0x000001a6                __vector_25
+                0x000001a6                __vector_11
+                0x000001a6                __vector_13
+                0x000001a6                __vector_17
+                0x000001a6                __vector_7
+                0x000001a6                __vector_5
+                0x000001a6                __vector_4
+                0x000001a6                __vector_9
+                0x000001a6                __vector_2
+                0x000001a6                __vector_21
+                0x000001a6                __vector_15
+                0x000001a6                __vector_8
+                0x000001a6                __vector_14
+                0x000001a6                __vector_10
+                0x000001a6                __vector_20
+                0x000001aa                . = ALIGN (0x2)
  *(.text.*)
  .text._ZN8INA233_SC2Ehjj19INA233_Alarm_Config
-                0x000001ac       0x60 INA233.o
-                0x000001ac                _ZN8INA233_SC1Ehjj19INA233_Alarm_Config
-                0x000001ac                _ZN8INA233_SC2Ehjj19INA233_Alarm_Config
+                0x000001aa       0x60 INA233.o
+                0x000001aa                _ZN8INA233_SC1Ehjj19INA233_Alarm_Config
+                0x000001aa                _ZN8INA233_SC2Ehjj19INA233_Alarm_Config
  .text._ZN8INA233_S15transmitCommandEh
-                0x0000020c       0x24 INA233.o
-                0x0000020c                _ZN8INA233_S15transmitCommandEh
+                0x0000020a       0x24 INA233.o
+                0x0000020a                _ZN8INA233_S15transmitCommandEh
  .text._ZN8INA233_S10resetAlarmEv
-                0x00000230       0x1e INA233.o
-                0x00000230                _ZN8INA233_S10resetAlarmEv
+                0x0000022e       0x1e INA233.o
+                0x0000022e                _ZN8INA233_S10resetAlarmEv
  .text._ZN8INA233_S9resetChipEv
-                0x0000024e       0x1e INA233.o
-                0x0000024e                _ZN8INA233_S9resetChipEv
+                0x0000024c       0x1e INA233.o
+                0x0000024c                _ZN8INA233_S9resetChipEv
  .text._ZN8INA233_S12transmitDataEP19INA233_Data_Packageh
-                0x0000026c       0x76 INA233.o
-                0x0000026c                _ZN8INA233_S12transmitDataEP19INA233_Data_Packageh
+                0x0000026a       0x76 INA233.o
+                0x0000026a                _ZN8INA233_S12transmitDataEP19INA233_Data_Packageh
  .text._ZN8INA233_S12receiveData_Ehh
-                0x000002e2       0x84 INA233.o
-                0x000002e2                _ZN8INA233_S12receiveData_Ehh
+                0x000002e0       0x84 INA233.o
+                0x000002e0                _ZN8INA233_S12receiveData_Ehh
  .text._ZN8INA233_S13readbackCheckEP19INA233_Data_Packageh
-                0x00000366       0x84 INA233.o
-                0x00000366                _ZN8INA233_S13readbackCheckEP19INA233_Data_Packageh
+                0x00000364       0x84 INA233.o
+                0x00000364                _ZN8INA233_S13readbackCheckEP19INA233_Data_Packageh
  .text._ZN8INA233_S15setADC_SettingsEj
-                0x000003ea       0x6a INA233.o
-                0x000003ea                _ZN8INA233_S15setADC_SettingsEj
+                0x000003e8       0x6a INA233.o
+                0x000003e8                _ZN8INA233_S15setADC_SettingsEj
  .text._ZN8INA233_S15setCallibrationEj
-                0x00000454       0x80 INA233.o
-                0x00000454                _ZN8INA233_S15setCallibrationEj
+                0x00000452       0x80 INA233.o
+                0x00000452                _ZN8INA233_S15setCallibrationEj
  .text._ZN8INA233_S14setAlarmLimitsE19INA233_Alarm_Config
-                0x000004d4      0x2ce INA233.o
-                0x000004d4                _ZN8INA233_S14setAlarmLimitsE19INA233_Alarm_Config
+                0x000004d2      0x2ce INA233.o
+                0x000004d2                _ZN8INA233_S14setAlarmLimitsE19INA233_Alarm_Config
  .text._ZN8INA233_S10initializeEv
-                0x000007a2       0x60 INA233.o
-                0x000007a2                _ZN8INA233_S10initializeEv
+                0x000007a0       0x60 INA233.o
+                0x000007a0                _ZN8INA233_S10initializeEv
  .text._ZN8INA233_S10getCurrentEv
-                0x00000802       0xa6 INA233.o
-                0x00000802                _ZN8INA233_S10getCurrentEv
+                0x00000800       0xa6 INA233.o
+                0x00000800                _ZN8INA233_S10getCurrentEv
  .text._ZN8INA233_S17testCommunicationEv
-                0x000008a8       0xcc INA233.o
-                0x000008a8                _ZN8INA233_S17testCommunicationEv
- .text._ZZ5setupENUlvE_4_FUNEv
-                0x00000974        0x8 Sketch.o
- .text._ZN12CANFDMessageC2Ev
-                0x0000097c       0x26 Sketch.o
-                0x0000097c                _ZN12CANFDMessageC2Ev
-                0x0000097c                _ZN12CANFDMessageC1Ev
- .text.setup    0x000009a2      0x1a2 Sketch.o
-                0x000009a2                setup
+                0x000008a6       0xcc INA233.o
+                0x000008a6                _ZN8INA233_S17testCommunicationEv
+ .text.setup    0x00000972       0x78 Sketch.o
+                0x00000972                setup
  .text._Z29check_INA233_miscommunicationv
-                0x00000b44       0x7e Sketch.o
-                0x00000b44                _Z29check_INA233_miscommunicationv
+                0x000009ea       0x7e Sketch.o
+                0x000009ea                _Z29check_INA233_miscommunicationv
  .text._Z11blink_lightv
-                0x00000bc2       0x6c Sketch.o
-                0x00000bc2                _Z11blink_lightv
- .text.loop     0x00000c2e       0x72 Sketch.o
-                0x00000c2e                loop
- .text.startup._GLOBAL__sub_I_can
-                0x00000ca0      0x212 Sketch.o
- .text.exit._GLOBAL__sub_D_can
-                0x00000eb2       0x22 Sketch.o
+                0x00000a68       0x6c Sketch.o
+                0x00000a68                _Z11blink_lightv
+ .text.loop     0x00000ad4       0x44 Sketch.o
+                0x00000ad4                loop
+ .text.startup._GLOBAL__sub_I_default_address
+                0x00000b18      0x216 Sketch.o
  .text.avr-libc.fplib
-                0x00000ed4        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
-                0x00000ed4                __subsf3
-                0x00000ed6                __addsf3
+                0x00000d2e        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+                0x00000d2e                __subsf3
+                0x00000d30                __addsf3
  .text.avr-libc.fplib
-                0x00000ee2       0xcc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
-                0x00000f04                __addsf3x
+                0x00000d3c       0xcc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+                0x00000d5e                __addsf3x
  .text.avr-libc.fplib
-                0x00000fae        0x8 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
-                0x00000fae                __divsf3
+                0x00000e08        0x8 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                0x00000e08                __divsf3
  .text.avr-libc.fplib
-                0x00000fb6       0xdc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
-                0x00000fd6                __divsf3x
-                0x00000fdc                __divsf3_pse
+                0x00000e10       0xdc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                0x00000e30                __divsf3x
+                0x00000e36                __divsf3_pse
  .text.avr-libc.fplib
-                0x00001092        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
-                0x00001092                __fixsfsi
+                0x00000eec        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+                0x00000eec                __fixsfsi
  .text.avr-libc.fplib
-                0x000010a0       0x5e d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
-                0x000010a0                __fixunssfsi
+                0x00000efa       0x5e d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                0x00000efa                __fixunssfsi
  .text.avr-libc.fplib
-                0x000010fe       0x7a d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
-                0x000010fe                __floatunsisf
-                0x00001102                __floatsisf
+                0x00000f58       0x7a d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                0x00000f58                __floatunsisf
+                0x00000f5c                __floatsisf
  .text.avr-libc.fplib
-                0x00001178        0xc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
-                0x00001178                __fp_inf
+                0x00000fd2        0xc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                0x00000fd2                __fp_inf
  .text.avr-libc.fplib
-                0x00001184        0x6 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
-                0x00001184                __fp_nan
+                0x00000fde        0x6 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                0x00000fde                __fp_nan
  .text.avr-libc.fplib
-                0x0000118a        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
-                0x0000118a                __fp_pscA
+                0x00000fe4        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                0x00000fe4                __fp_pscA
  .text.avr-libc.fplib
-                0x00001198        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
-                0x00001198                __fp_pscB
+                0x00000ff2        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                0x00000ff2                __fp_pscB
  .text.avr-libc.fplib
-                0x000011a6       0x22 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
-                0x000011a6                __fp_round
+                0x00001000       0x22 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                0x00001000                __fp_round
  .text.avr-libc.fplib
-                0x000011c8       0x44 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
-                0x000011c8                __fp_split3
-                0x000011d8                __fp_splitA
+                0x00001022       0x44 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                0x00001022                __fp_split3
+                0x00001032                __fp_splitA
  .text.avr-libc.fplib
-                0x0000120c        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
-                0x0000120c                __fp_zero
-                0x0000120e                __fp_szero
+                0x00001066        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                0x00001066                __fp_zero
+                0x00001068                __fp_szero
  .text.avr-libc.fplib
-                0x0000121a        0xa d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
-                0x0000121a                __gesf2
-                0x0000121a                __gtsf2
+                0x00001074        0xa d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                0x00001074                __gesf2
+                0x00001074                __gtsf2
  .text.avr-libc.fplib
-                0x00001224        0x8 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
-                0x00001224                __mulsf3
+                0x0000107e        0x8 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                0x0000107e                __mulsf3
  .text.avr-libc.fplib
-                0x0000122c       0xd2 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
-                0x0000124a                __mulsf3x
-                0x00001250                __mulsf3_pse
+                0x00001086       0xd2 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                0x000010a4                __mulsf3x
+                0x000010aa                __mulsf3_pse
  .text.avr-libc.fplib
-                0x000012fe       0x48 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
-                0x000012fe                __fp_cmp
+                0x00001158       0x48 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                0x00001158                __fp_cmp
  .text._ZN5Print17availableForWriteEv
-                0x00001346        0x6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00001346                _ZN5Print17availableForWriteEv
+                0x000011a0        0x6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000011a0                _ZN5Print17availableForWriteEv
  .text.__vector_18
-                0x0000134c       0x64 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x0000134c                __vector_18
+                0x000011a6       0x64 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000011a6                __vector_18
  .text.__vector_19
-                0x000013b0       0x4c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x000013b0                __vector_19
+                0x0000120a       0x4c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x0000120a                __vector_19
  .text._Z17Serial0_availablev
-                0x000013fc       0x14 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x000013fc                _Z17Serial0_availablev
+                0x00001256       0x14 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00001256                _Z17Serial0_availablev
  .text.startup._GLOBAL__sub_I___vector_18
-                0x00001410       0x5a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x0000126a       0x5a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .text.initVariant
-                0x0000146a        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
-                0x0000146a                initVariant
+                0x000012c4        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x000012c4                initVariant
  .text.startup.main
-                0x0000146c       0x1e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
-                0x0000146c                main
- .text._Znwj    0x0000148a        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
-                0x0000148a                _Znwj
- .text._Znaj    0x0000148e        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
-                0x0000148e                _Znaj
- .text._ZdlPv   0x00001492        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
-                0x00001492                _ZdlPv
- .text._ZdaPv   0x00001496        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
-                0x00001496                _ZdaPv
+                0x000012c6       0x1e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x000012c6                main
  .text._ZN5Print5writeEPKhj
-                0x0000149a       0x54 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x0000149a                _ZN5Print5writeEPKhj
+                0x000012e4       0x54 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000012e4                _ZN5Print5writeEPKhj
  .text._ZN5Print5writeEPKc
-                0x000014ee       0x2a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000014ee                _ZN5Print5writeEPKc
+                0x00001338       0x2a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00001338                _ZN5Print5writeEPKc
  .text._ZN5Print5printEPK19__FlashStringHelper
-                0x00001518       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001518                _ZN5Print5printEPK19__FlashStringHelper
+                0x00001362       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00001362                _ZN5Print5printEPK19__FlashStringHelper
  .text._ZN5Print5printEPKc
-                0x00001560        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001560                _ZN5Print5printEPKc
+                0x000013aa        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000013aa                _ZN5Print5printEPKc
  .text._ZN5Print5printEc
-                0x00001564        0xe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001564                _ZN5Print5printEc
+                0x000013ae        0xe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000013ae                _ZN5Print5printEc
  .text._ZN5Print7printlnEv
-                0x00001572        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001572                _ZN5Print7printlnEv
+                0x000013bc        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000013bc                _ZN5Print7printlnEv
  .text._ZN5Print7printlnEPK19__FlashStringHelper
-                0x0000157a       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x0000157a                _ZN5Print7printlnEPK19__FlashStringHelper
+                0x000013c4       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000013c4                _ZN5Print7printlnEPK19__FlashStringHelper
  .text._ZN5Print7printlnEPKc
-                0x0000159e       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x0000159e                _ZN5Print7printlnEPKc
+                0x000013e8       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000013e8                _ZN5Print7printlnEPKc
  .text._ZN5Print11printNumberEmh
-                0x000015c2       0x92 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000015c2                _ZN5Print11printNumberEmh
+                0x0000140c       0x92 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0000140c                _ZN5Print11printNumberEmh
  .text._ZN5Print5printEmi
-                0x00001654       0x1a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001654                _ZN5Print5printEmi
+                0x0000149e       0x1a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0000149e                _ZN5Print5printEmi
  .text._ZN5Print5printEhi
-                0x0000166e        0xe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x0000166e                _ZN5Print5printEhi
+                0x000014b8        0xe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000014b8                _ZN5Print5printEhi
  .text._ZN5Print5printEji
-                0x0000167c        0xc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x0000167c                _ZN5Print5printEji
+                0x000014c6        0xc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000014c6                _ZN5Print5printEji
  .text._ZN5Print7printlnEji
-                0x00001688       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001688                _ZN5Print7printlnEji
- .text._ZN5Print7printlnEmi
-                0x000016ac       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000016ac                _ZN5Print7printlnEmi
+                0x000014d2       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000014d2                _ZN5Print7printlnEji
  .text._ZN5Print5printEli
-                0x000016d0       0x90 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000016d0                _ZN5Print5printEli
+                0x000014f6       0x90 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000014f6                _ZN5Print5printEli
  .text._ZN5Print5printEii
-                0x00001760        0xe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001760                _ZN5Print5printEii
+                0x00001586        0xe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00001586                _ZN5Print5printEii
  .text._ZN5Print7printlnEii
-                0x0000176e       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x0000176e                _ZN5Print7printlnEii
+                0x00001594       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00001594                _ZN5Print7printlnEii
  .text._ZN5Print10printFloatEdh
-                0x00001792      0x1b6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001792                _ZN5Print10printFloatEdh
+                0x000015b8      0x1b6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000015b8                _ZN5Print10printFloatEdh
  .text._ZN5Print7printlnEdi
-                0x00001948       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00001948                _ZN5Print7printlnEdi
+                0x0000176e       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0000176e                _ZN5Print7printlnEdi
  .text.__vector_16
-                0x0000196c       0x94 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x0000196c                __vector_16
- .text.millis   0x00001a00       0x18 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00001a00                millis
- .text.micros   0x00001a18       0x4a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00001a18                micros
- .text.init     0x00001a62       0x76 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00001a62                init
+                0x00001792       0x94 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00001792                __vector_16
+ .text.millis   0x00001826       0x18 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00001826                millis
+ .text.micros   0x0000183e       0x4a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x0000183e                micros
+ .text.init     0x00001888       0x76 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00001888                init
  .text.turnOffPWM
-                0x00001ad8       0x52 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .text.pinMode  0x00001b2a       0x78 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00001b2a                pinMode
+                0x000018fe       0x52 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x00001950       0x78 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00001950                pinMode
  .text.digitalWrite
-                0x00001ba2       0x5e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00001ba2                digitalWrite
- .text._ZL23enterU32InBufferAtIndexmPhh
-                0x00001c00       0x10 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZL20u32FromBufferAtIndexPhh
-                0x00001c10       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZL19lengthCodeForLengthh
-                0x00001c38       0x70 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN12ACANFDBuffer6appendERK12CANFDMessage.part.2
-                0x00001ca8       0x8e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN12ACANFDBuffer6removeER12CANFDMessage.part.3
-                0x00001d36       0x74 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN8SPIClass8transferEPvj.part.6
-                0x00001daa       0x34 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .text._ZN12ACANFDBuffer12initWithSizeEm
-                0x00001dde       0xa0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00001dde                _ZN12ACANFDBuffer12initWithSizeEm
- .text._ZN8SPIClass16beginTransactionE11SPISettings
-                0x00001e7e       0x34 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00001e7e                _ZN8SPIClass16beginTransactionE11SPISettings
- .text._ZN8SPIClass10transfer16Ej
-                0x00001eb2       0x3a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00001eb2                _ZN8SPIClass10transfer16Ej
- .text._ZN8SPIClass14endTransactionEv
-                0x00001eec       0x22 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00001eec                _ZN8SPIClass14endTransactionEv
- .text._ZN10ACAN2517FDC2EhR8SPIClassh
-                0x00001f0e       0x7e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00001f0e                _ZN10ACAN2517FDC2EhR8SPIClassh
-                0x00001f0e                _ZN10ACAN2517FDC1EhR8SPIClassh
- .text._ZN10ACAN2517FD9availableEv
-                0x00001f8c       0x3a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00001f8c                _ZN10ACAN2517FD9availableEv
- .text._ZN10ACAN2517FD7receiveER12CANFDMessage
-                0x00001fc6       0x52 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00001fc6                _ZN10ACAN2517FD7receiveER12CANFDMessage
- .text._ZN10ACAN2517FD8assertCSEv
-                0x00002018        0xa D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00002018                _ZN10ACAN2517FD8assertCSEv
- .text._ZN10ACAN2517FD10deassertCSEv
-                0x00002022        0xa D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00002022                _ZN10ACAN2517FD10deassertCSEv
- .text._ZN10ACAN2517FD37writeRegister32Assume_SPI_transactionEjm
-                0x0000202c       0x70 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x0000202c                _ZN10ACAN2517FD37writeRegister32Assume_SPI_transactionEjm
- .text._ZN10ACAN2517FD36writeRegister8Assume_SPI_transactionEjh
-                0x0000209c       0x42 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x0000209c                _ZN10ACAN2517FD36writeRegister8Assume_SPI_transactionEjh
- .text._ZN10ACAN2517FD36readRegister32Assume_SPI_transactionEj
-                0x000020de       0x68 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x000020de                _ZN10ACAN2517FD36readRegister32Assume_SPI_transactionEj
- .text._ZN10ACAN2517FD24appendInControllerTxFIFOERK12CANFDMessage
-                0x00002146      0x1de D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00002146                _ZN10ACAN2517FD24appendInControllerTxFIFOERK12CANFDMessage
- .text._ZN10ACAN2517FD17transmitInterruptEv
-                0x00002324       0x7a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00002324                _ZN10ACAN2517FD17transmitInterruptEv
- .text._ZN10ACAN2517FD16receiveInterruptEv
-                0x0000239e      0x27e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x0000239e                _ZN10ACAN2517FD16receiveInterruptEv
- .text._ZN10ACAN2517FD36readRegister16Assume_SPI_transactionEj
-                0x0000261c       0x4e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x0000261c                _ZN10ACAN2517FD36readRegister16Assume_SPI_transactionEj
- .text._ZN10ACAN2517FD8isr_coreEv
-                0x0000266a       0xb2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x0000266a                _ZN10ACAN2517FD8isr_coreEv
- .text._ZN10ACAN2517FD3isrEv
-                0x0000271c       0x16 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x0000271c                _ZN10ACAN2517FD3isrEv
- .text._ZN10ACAN2517FD35readRegister8Assume_SPI_transactionEj
-                0x00002732       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00002732                _ZN10ACAN2517FD35readRegister8Assume_SPI_transactionEj
- .text._ZN10ACAN2517FD14writeRegister8Ejh
-                0x0000277a       0x34 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x0000277a                _ZN10ACAN2517FD14writeRegister8Ejh
- .text._ZN10ACAN2517FD13readRegister8Ej
-                0x000027ae       0x32 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x000027ae                _ZN10ACAN2517FD13readRegister8Ej
- .text._ZN10ACAN2517FD15writeRegister32Ejm
-                0x000027e0       0x44 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x000027e0                _ZN10ACAN2517FD15writeRegister32Ejm
- .text._ZN10ACAN2517FD14readRegister32Ej
-                0x00002824       0x3e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00002824                _ZN10ACAN2517FD14readRegister32Ej
- .text._ZN10ACAN2517FD11reset2517FDEv
-                0x00002862       0x2e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00002862                _ZN10ACAN2517FD11reset2517FDEv
- .text._ZN10ACAN2517FD5beginERK18ACAN2517FDSettingsPFvvERK17ACAN2517FDFilters
-                0x00002890      0x7a4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00002890                _ZN10ACAN2517FD5beginERK18ACAN2517FDSettingsPFvvERK17ACAN2517FDFilters
- .text._ZN10ACAN2517FD5beginERK18ACAN2517FDSettingsPFvvE
-                0x00003034       0xc4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                0x00003034                _ZN10ACAN2517FD5beginERK18ACAN2517FDSettingsPFvvE
- .text._ZN18ACAN2517FDSettingsC2ENS_10OscillatorEm17DataBitRateFactorm
-                0x000030f8      0x782 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
-                0x000030f8                _ZN18ACAN2517FDSettingsC2ENS_10OscillatorEm17DataBitRateFactorm
-                0x000030f8                _ZN18ACAN2517FDSettingsC1ENS_10OscillatorEm17DataBitRateFactorm
- .text._ZNK18ACAN2517FDSettings42dataBitRateIsAMultipleOfArbitrationBitRateEv
-                0x0000387a       0x54 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
-                0x0000387a                _ZNK18ACAN2517FDSettings42dataBitRateIsAMultipleOfArbitrationBitRateEv
- .text._ZNK18ACAN2517FDSettings24CANBitSettingConsistencyEv
-                0x000038ce      0x106 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
-                0x000038ce                _ZNK18ACAN2517FDSettings24CANBitSettingConsistencyEv
- .text._ZNK18ACAN2517FDSettings8ramUsageEv
-                0x000039d4       0x70 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
-                0x000039d4                _ZNK18ACAN2517FDSettings8ramUsageEv
- .text._ZN18ACAN2517FDSettings20objectSizeForPayloadENS_11PayloadSizeE
-                0x00003a44       0x12 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
-                0x00003a44                _ZN18ACAN2517FDSettings20objectSizeForPayloadENS_11PayloadSizeE
- .text._ZN8SPIClass5beginEv
-                0x00003a56       0x6c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                0x00003a56                _ZN8SPIClass5beginEv
- .text._ZN8SPIClass14usingInterruptEh
-                0x00003ac2       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                0x00003ac2                _ZN8SPIClass14usingInterruptEh
+                0x000019c8       0x5e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000019c8                digitalWrite
  .text._ZN7TwoWire9availableEv
-                0x00003afa       0x10 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003afa                _ZN7TwoWire9availableEv
+                0x00001a26       0x10 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001a26                _ZN7TwoWire9availableEv
  .text._ZN7TwoWire4readEv
-                0x00003b0a       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003b0a                _ZN7TwoWire4readEv
+                0x00001a36       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001a36                _ZN7TwoWire4readEv
  .text._ZN7TwoWire4peekEv
-                0x00003b32       0x1e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003b32                _ZN7TwoWire4peekEv
+                0x00001a5e       0x1e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001a5e                _ZN7TwoWire4peekEv
  .text._ZN7TwoWire5flushEv
-                0x00003b50        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003b50                _ZN7TwoWire5flushEv
+                0x00001a7c        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001a7c                _ZN7TwoWire5flushEv
  .text._ZN7TwoWire16onReceiveServiceEPhi
-                0x00003b52       0x54 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003b52                _ZN7TwoWire16onReceiveServiceEPhi
+                0x00001a7e       0x54 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001a7e                _ZN7TwoWire16onReceiveServiceEPhi
  .text._ZN7TwoWire16onRequestServiceEv
-                0x00003ba6       0x18 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003ba6                _ZN7TwoWire16onRequestServiceEv
+                0x00001ad2       0x18 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001ad2                _ZN7TwoWire16onRequestServiceEv
  .text._ZN7TwoWire5writeEPKhj
-                0x00003bbe       0x5a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003bbe                _ZN7TwoWire5writeEPKhj
+                0x00001aea       0x5a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001aea                _ZN7TwoWire5writeEPKhj
  .text._ZN7TwoWire5writeEh
-                0x00003c18       0x5e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003c18                _ZN7TwoWire5writeEh
+                0x00001b44       0x5e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001b44                _ZN7TwoWire5writeEh
  .text._ZN7TwoWireC2Ev
-                0x00003c76       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003c76                _ZN7TwoWireC1Ev
-                0x00003c76                _ZN7TwoWireC2Ev
+                0x00001ba2       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001ba2                _ZN7TwoWireC1Ev
+                0x00001ba2                _ZN7TwoWireC2Ev
  .text._ZN7TwoWire5beginEv
-                0x00003c96       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003c96                _ZN7TwoWire5beginEv
+                0x00001bc2       0x24 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001bc2                _ZN7TwoWire5beginEv
  .text._ZN7TwoWire8setClockEm
-                0x00003cba        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003cba                _ZN7TwoWire8setClockEm
+                0x00001be6        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001be6                _ZN7TwoWire8setClockEm
  .text._ZN7TwoWire17beginTransmissionEh
-                0x00003cc2       0x14 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003cc2                _ZN7TwoWire17beginTransmissionEh
+                0x00001bee       0x14 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001bee                _ZN7TwoWire17beginTransmissionEh
  .text._ZN7TwoWire15endTransmissionEh
-                0x00003cd6       0x26 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003cd6                _ZN7TwoWire15endTransmissionEh
+                0x00001c02       0x26 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001c02                _ZN7TwoWire15endTransmissionEh
  .text._ZN7TwoWire11requestFromEhhmhh
-                0x00003cfc       0xa8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003cfc                _ZN7TwoWire11requestFromEhhmhh
+                0x00001c28       0xa8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001c28                _ZN7TwoWire11requestFromEhhmhh
  .text._ZN7TwoWire11requestFromEhhh
-                0x00003da4       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003da4                _ZN7TwoWire11requestFromEhhh
+                0x00001cd0       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001cd0                _ZN7TwoWire11requestFromEhhh
  .text._ZN7TwoWire11requestFromEhh
-                0x00003dc4        0x6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003dc4                _ZN7TwoWire11requestFromEhh
+                0x00001cf0        0x6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001cf0                _ZN7TwoWire11requestFromEhh
  .text._ZN7TwoWire15endTransmissionEv
-                0x00003dca        0x6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00003dca                _ZN7TwoWire15endTransmissionEv
+                0x00001cf6        0x6 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001cf6                _ZN7TwoWire15endTransmissionEv
  .text.startup._GLOBAL__sub_I__ZN7TwoWire8rxBufferE
-                0x00003dd0        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00001cfc        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
  .text._ZN14HardwareSerial9availableEv
-                0x00003dd8       0x18 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003dd8                _ZN14HardwareSerial9availableEv
+                0x00001d04       0x18 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00001d04                _ZN14HardwareSerial9availableEv
  .text._ZN14HardwareSerial4peekEv
-                0x00003df0       0x1c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003df0                _ZN14HardwareSerial4peekEv
+                0x00001d1c       0x1c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00001d1c                _ZN14HardwareSerial4peekEv
  .text._ZN14HardwareSerial4readEv
-                0x00003e0c       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003e0c                _ZN14HardwareSerial4readEv
+                0x00001d38       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00001d38                _ZN14HardwareSerial4readEv
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x00003e34       0x1e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003e34                _ZN14HardwareSerial17availableForWriteEv
+                0x00001d60       0x1e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00001d60                _ZN14HardwareSerial17availableForWriteEv
  .text._Z14serialEventRunv
-                0x00003e52       0x1c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003e52                _Z14serialEventRunv
+                0x00001d7e       0x1c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00001d7e                _Z14serialEventRunv
  .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
-                0x00003e6e       0x44 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003e6e                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x00001d9a       0x44 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00001d9a                _ZN14HardwareSerial17_tx_udr_empty_irqEv
  .text._ZN14HardwareSerial5writeEh
-                0x00003eb2       0x9a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003eb2                _ZN14HardwareSerial5writeEh
+                0x00001dde       0x9a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00001dde                _ZN14HardwareSerial5writeEh
  .text._ZN14HardwareSerial5flushEv
-                0x00003f4c       0x44 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003f4c                _ZN14HardwareSerial5flushEv
- .text.nothing  0x00003f90        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
- .text.attachInterrupt
-                0x00003f92       0x40 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
-                0x00003f92                attachInterrupt
- .text.__vector_1
-                0x00003fd2       0x4e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
-                0x00003fd2                __vector_1
- .text.__vector_2
-                0x00004020       0x4e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
-                0x00004020                __vector_2
+                0x00001e78       0x44 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00001e78                _ZN14HardwareSerial5flushEv
  .text.twi_init
-                0x0000406e       0x3c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x0000406e                twi_init
+                0x00001ebc       0x3c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00001ebc                twi_init
  .text.twi_disable
-                0x000040aa       0x1a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x000040aa                twi_disable
+                0x00001ef8       0x1a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00001ef8                twi_disable
  .text.twi_setFrequency
-                0x000040c4       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x000040c4                twi_setFrequency
+                0x00001f12       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00001f12                twi_setFrequency
  .text.twi_transmit
-                0x000040ec       0x50 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x000040ec                twi_transmit
+                0x00001f3a       0x50 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00001f3a                twi_transmit
  .text.twi_attachSlaveRxEvent
-                0x0000413c        0xa D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x0000413c                twi_attachSlaveRxEvent
+                0x00001f8a        0xa D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00001f8a                twi_attachSlaveRxEvent
  .text.twi_attachSlaveTxEvent
-                0x00004146        0xa D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00004146                twi_attachSlaveTxEvent
+                0x00001f94        0xa D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00001f94                twi_attachSlaveTxEvent
  .text.twi_releaseBus
-                0x00004150        0xc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00004150                twi_releaseBus
+                0x00001f9e        0xc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00001f9e                twi_releaseBus
  .text.twi_handleTimeout
-                0x0000415c       0x2c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x0000415c                twi_handleTimeout
+                0x00001faa       0x2c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00001faa                twi_handleTimeout
  .text.twi_readFrom
-                0x00004188      0x1d2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00004188                twi_readFrom
+                0x00001fd6      0x1d2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00001fd6                twi_readFrom
  .text.twi_writeTo
-                0x0000435a      0x1e0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x0000435a                twi_writeTo
+                0x000021a8      0x1e0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x000021a8                twi_writeTo
  .text.twi_stop
-                0x0000453a       0x70 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x0000453a                twi_stop
+                0x00002388       0x70 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00002388                twi_stop
  .text.__vector_24
-                0x000045aa      0x25a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x000045aa                __vector_24
+                0x000023f8      0x25a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x000023f8                __vector_24
  .text.avr-libc.fplib
-                0x00004804        0xa d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
-                0x00004804                __nesf2
-                0x00004804                __eqsf2
-                0x00004804                __cmpsf2
-                0x00004804                __ltsf2
-                0x00004804                __lesf2
+                0x00002652        0xa d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                0x00002652                __nesf2
+                0x00002652                __eqsf2
+                0x00002652                __cmpsf2
+                0x00002652                __ltsf2
+                0x00002652                __lesf2
  .text.avr-libc.fplib
-                0x0000480e        0xa d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
-                0x0000480e                __unordsf2
- .text.libgcc.mul
-                0x00004818       0x20 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
-                0x00004818                __mulsi3
+                0x0000265c        0xa d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+                0x0000265c                __unordsf2
  .text.libgcc.div
-                0x00004838       0x44 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x00004838                __udivmodsi4
- .text.libgcc.mul
-                0x0000487c       0x1e d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
-                0x0000487c                __umulhisi3
- .text.libgcc.mul
-                0x0000489a        0xe d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_usmulhisi3.o)
-                0x0000489a                __usmulhisi3
-                0x0000489e                __usmulhisi3_tail
- .text.libgcc.mul
-                0x000048a8       0x16 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
-                0x000048a8                __muluhisi3
- .text.libgcc.mul
-                0x000048be       0xa0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3.o)
-                0x000048be                __muldi3
- .text.libgcc.mul
-                0x0000495e       0x12 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
-                0x0000495e                __muldi3_6
- .text.libgcc.mul
-                0x00004970       0x56 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
-                0x00004970                __umulsidi3
-                0x00004972                __umulsidi3_helper
- .text.libgcc   0x000049c6       0x12 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
-                0x000049c6                __cmpdi2
- .text.libgcc   0x000049d8        0xc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
-                0x000049d8                __tablejump2__
- .text.avr-libc
-                0x000049e4      0x242 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x000049e4                malloc
-                0x00004b14                free
-                0x00004c26                . = ALIGN (0x2)
+                0x00002666       0x44 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00002666                __udivmodsi4
+ .text.libgcc   0x000026aa        0xc d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x000026aa                __tablejump2__
+                0x000026b6                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00004c26        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00004c26                _exit
-                0x00004c26                exit
+ .fini9         0x000026b6        0x0 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x000026b6                _exit
+                0x000026b6                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
  *(.fini7)
  *(.fini7)
  *(.fini6)
- .fini6         0x00004c26       0x16 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
-                0x00004c26                __do_global_dtors
  *(.fini6)
  *(.fini5)
  *(.fini5)
@@ -1495,206 +1038,179 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00004c3c        0x4 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x000026b6        0x4 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00004c40                _etext = .
+                0x000026ba                _etext = .
 
-.data           0x00800100      0x1d8 load address 0x00004c40
+.data           0x00800100      0x14a load address 0x000026ba
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
- .data          0x00800100        0x6 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x00800100                __malloc_heap_end
-                0x00800102                __malloc_heap_start
-                0x00800104                __malloc_margin
  *(.data*)
  .data.blink_interval
-                0x00800106        0x4 Sketch.o
-                0x00800106                blink_interval
- .data.STATE    0x0080010a        0x1 Sketch.o
-                0x0080010a                STATE
+                0x00800100        0x4 Sketch.o
+                0x00800100                blink_interval
+ .data.STATE    0x00800104        0x1 Sketch.o
+                0x00800104                STATE
  .data.MosfetList
-                0x0080010b        0x2 Sketch.o
-                0x0080010b                MosfetList
+                0x00800105        0x2 Sketch.o
+                0x00800105                MosfetList
  .data.SensorList
-                0x0080010d        0xe Sketch.o
-                0x0080010d                SensorList
+                0x00800107        0xe Sketch.o
+                0x00800107                SensorList
  .data.default_address
-                0x0080011b        0x2 Sketch.o
-                0x0080011b                default_address
- .data.intFunc  0x0080011d        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
+                0x00800115        0x2 Sketch.o
+                0x00800115                default_address
  *(.gnu.linkonce.d*)
  *(.rodata)
- .rodata        0x00800121        0x7 INA233.o
+ .rodata        0x00800117        0x7 INA233.o
  *(.rodata*)
  .rodata.str1.1
-                0x00800128       0xf8 INA233.o
+                0x0080011e       0xf8 INA233.o
  .rodata.str1.1
-                0x00800220       0x3f Sketch.o
- .rodata.str1.1
-                0x0080025f        0xf D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .rodata.CSWTCH.133
-                0x0080026e        0x7 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .rodata.CSWTCH.132
-                0x00800275        0x7 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .rodata._ZZN10ACAN2517FD16receiveInterruptEvE7kLength
-                0x0080027c       0x10 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .rodata.CSWTCH.26
-                0x0080028c       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .rodata._ZZN18ACAN2517FDSettings20objectSizeForPayloadENS_11PayloadSizeEE8kPayload
-                0x008002ac        0x8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
+                0x00800216        0xf D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .rodata._ZTV7TwoWire
-                0x008002b4       0x12 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x008002b4                _ZTV7TwoWire
+                0x00800225       0x12 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800225                _ZTV7TwoWire
  .rodata._ZTV14HardwareSerial
-                0x008002c6       0x12 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x008002c6                _ZTV14HardwareSerial
+                0x00800237       0x12 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00800237                _ZTV14HardwareSerial
  *(.gnu.linkonce.r*)
-                0x008002d8                . = ALIGN (0x2)
-                0x008002d8                _edata = .
-                0x008002d8                PROVIDE (__data_end, .)
+                0x0080024a                . = ALIGN (0x2)
+ *fill*         0x00800249        0x1 
+                0x0080024a                _edata = .
+                0x0080024a                PROVIDE (__data_end, .)
 
-.bss            0x008002d8      0x36a
-                0x008002d8                PROVIDE (__bss_start, .)
+.bss            0x0080024a      0x29b
+                0x0080024a                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  .bss.blink_time
-                0x008002d8        0x4 Sketch.o
-                0x008002d8                blink_time
- .bss.p1        0x008002dc        0x1 Sketch.o
-                0x008002dc                p1
- .bss.Sensor_7  0x008002dd       0x20 Sketch.o
-                0x008002dd                Sensor_7
- .bss.Sensor_6  0x008002fd       0x20 Sketch.o
-                0x008002fd                Sensor_6
- .bss.Sensor_5  0x0080031d       0x20 Sketch.o
-                0x0080031d                Sensor_5
- .bss.Sensor_4  0x0080033d       0x20 Sketch.o
-                0x0080033d                Sensor_4
- .bss.Sensor_3  0x0080035d       0x20 Sketch.o
-                0x0080035d                Sensor_3
- .bss.Sensor_2  0x0080037d       0x20 Sketch.o
-                0x0080037d                Sensor_2
- .bss.Sensor_1  0x0080039d       0x20 Sketch.o
-                0x0080039d                Sensor_1
+                0x0080024a        0x4 Sketch.o
+                0x0080024a                blink_time
+ .bss.p7        0x0080024e        0x1 Sketch.o
+                0x0080024e                p7
+ .bss.p6        0x0080024f        0x1 Sketch.o
+                0x0080024f                p6
+ .bss.p5        0x00800250        0x1 Sketch.o
+                0x00800250                p5
+ .bss.p4        0x00800251        0x1 Sketch.o
+                0x00800251                p4
+ .bss.p3        0x00800252        0x1 Sketch.o
+                0x00800252                p3
+ .bss.p2        0x00800253        0x1 Sketch.o
+                0x00800253                p2
+ .bss.p1        0x00800254        0x1 Sketch.o
+                0x00800254                p1
+ .bss.Sensor_7  0x00800255       0x20 Sketch.o
+                0x00800255                Sensor_7
+ .bss.Sensor_6  0x00800275       0x20 Sketch.o
+                0x00800275                Sensor_6
+ .bss.Sensor_5  0x00800295       0x20 Sketch.o
+                0x00800295                Sensor_5
+ .bss.Sensor_4  0x008002b5       0x20 Sketch.o
+                0x008002b5                Sensor_4
+ .bss.Sensor_3  0x008002d5       0x20 Sketch.o
+                0x008002d5                Sensor_3
+ .bss.Sensor_2  0x008002f5       0x20 Sketch.o
+                0x008002f5                Sensor_2
+ .bss.Sensor_1  0x00800315       0x20 Sketch.o
+                0x00800315                Sensor_1
  .bss.timeStamps
-                0x008003bd       0x28 Sketch.o
-                0x008003bd                timeStamps
- .bss.frame     0x008003e5       0x48 Sketch.o
-                0x008003e5                frame
- .bss.frame_FD  0x0080042d       0x48 Sketch.o
-                0x0080042d                frame_FD
- .bss.can       0x00800475       0x3c Sketch.o
-                0x00800475                can
+                0x00800335       0x28 Sketch.o
+                0x00800335                timeStamps
  .bss._ZL18alarmConfigSensor2
-                0x008004b1        0xc Sketch.o
+                0x0080035d        0xc Sketch.o
  .bss._ZL18alarmConfigSensor1
-                0x008004bd        0xc Sketch.o
- .bss.Serial    0x008004c9       0x9d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x008004c9                Serial
+                0x00800369        0xc Sketch.o
+ .bss.Serial    0x00800375       0x9d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00800375                Serial
  .bss.timer0_fract
-                0x00800566        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00800412        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .bss.timer0_millis
-                0x00800567        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00800567                timer0_millis
+                0x00800413        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00800413                timer0_millis
  .bss.timer0_overflow_count
-                0x0080056b        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x0080056b                timer0_overflow_count
- .bss._ZN8SPIClass13interruptSaveE
-                0x0080056f        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                0x0080056f                _ZN8SPIClass13interruptSaveE
- .bss._ZN8SPIClass13interruptMaskE
-                0x00800570        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                0x00800570                _ZN8SPIClass13interruptMaskE
- .bss._ZN8SPIClass13interruptModeE
-                0x00800571        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                0x00800571                _ZN8SPIClass13interruptModeE
- .bss._ZN8SPIClass11initializedE
-                0x00800572        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                0x00800572                _ZN8SPIClass11initializedE
- .bss.SPI       0x00800573        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                0x00800573                SPI
- .bss.Wire      0x00800574        0xc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800574                Wire
+                0x00800417        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00800417                timer0_overflow_count
+ .bss.Wire      0x0080041b        0xc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080041b                Wire
  .bss._ZN7TwoWire14user_onReceiveE
-                0x00800580        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800580                _ZN7TwoWire14user_onReceiveE
+                0x00800427        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800427                _ZN7TwoWire14user_onReceiveE
  .bss._ZN7TwoWire14user_onRequestE
-                0x00800582        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800582                _ZN7TwoWire14user_onRequestE
+                0x00800429        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800429                _ZN7TwoWire14user_onRequestE
  .bss._ZN7TwoWire12transmittingE
-                0x00800584        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800584                _ZN7TwoWire12transmittingE
+                0x0080042b        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080042b                _ZN7TwoWire12transmittingE
  .bss._ZN7TwoWire14txBufferLengthE
-                0x00800585        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800585                _ZN7TwoWire14txBufferLengthE
+                0x0080042c        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080042c                _ZN7TwoWire14txBufferLengthE
  .bss._ZN7TwoWire13txBufferIndexE
-                0x00800586        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800586                _ZN7TwoWire13txBufferIndexE
+                0x0080042d        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080042d                _ZN7TwoWire13txBufferIndexE
  .bss._ZN7TwoWire8txBufferE
-                0x00800587       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800587                _ZN7TwoWire8txBufferE
+                0x0080042e       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080042e                _ZN7TwoWire8txBufferE
  .bss._ZN7TwoWire9txAddressE
-                0x008005a7        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x008005a7                _ZN7TwoWire9txAddressE
+                0x0080044e        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080044e                _ZN7TwoWire9txAddressE
  .bss._ZN7TwoWire14rxBufferLengthE
-                0x008005a8        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x008005a8                _ZN7TwoWire14rxBufferLengthE
+                0x0080044f        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080044f                _ZN7TwoWire14rxBufferLengthE
  .bss._ZN7TwoWire13rxBufferIndexE
-                0x008005a9        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x008005a9                _ZN7TwoWire13rxBufferIndexE
+                0x00800450        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800450                _ZN7TwoWire13rxBufferIndexE
  .bss._ZN7TwoWire8rxBufferE
-                0x008005aa       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x008005aa                _ZN7TwoWire8rxBufferE
+                0x00800451       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800451                _ZN7TwoWire8rxBufferE
  .bss.twi_error
-                0x008005ca        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800471        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_rxBufferIndex
-                0x008005cb        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800472        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_rxBuffer
-                0x008005cc       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800473       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_txBufferLength
-                0x008005ec        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800493        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_txBufferIndex
-                0x008005ed        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800494        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_txBuffer
-                0x008005ee       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800495       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_masterBufferLength
-                0x0080060e        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004b5        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_masterBufferIndex
-                0x0080060f        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004b6        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_masterBuffer
-                0x00800610       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004b7       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_onSlaveReceive
-                0x00800630        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004d7        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_onSlaveTransmit
-                0x00800632        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004d9        0x2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_do_reset_on_timeout
-                0x00800634        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004db        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_timed_out_flag
-                0x00800635        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004dc        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_timeout_us
-                0x00800636        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004dd        0x4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_inRepStart
-                0x0080063a        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004e1        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_sendStop
-                0x0080063b        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004e2        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_slarw
-                0x0080063c        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004e3        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_state
-                0x0080063d        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004e4        0x1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  *(COMMON)
- COMMON         0x0080063e        0x4 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x0080063e                __brkval
-                0x00800640                __flp
-                0x00800642                PROVIDE (__bss_end, .)
-                0x00004c40                __data_load_start = LOADADDR (.data)
-                0x00004e18                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x008004e5                PROVIDE (__bss_end, .)
+                0x000026ba                __data_load_start = LOADADDR (.data)
+                0x00002804                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800642        0x0
+.noinit         0x008004e5        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800642                _end = .
-                0x00800642                PROVIDE (__heap_start, .)
+                0x008004e5                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -1740,18 +1256,12 @@ END GROUP
  .comment       0x00000030       0x31 Sketch.o
  .comment       0x00000030       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .comment       0x00000030       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .comment       0x00000030       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
  .comment       0x00000030       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .comment       0x00000030       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .comment       0x00000030       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .comment       0x00000030       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .comment       0x00000030       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .comment       0x00000030       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
  .comment       0x00000030       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
  .comment       0x00000030       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .comment       0x00000030       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
  .comment       0x00000030       0x31 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
- .comment       0x00000030       0x31 d:/programmer/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x40
@@ -1773,167 +1283,122 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x7b0
+.debug_aranges  0x00000000      0x500
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0xb8 INA233.o
  .debug_aranges
-                0x000000b8       0x58 Sketch.o
+                0x000000b8       0x40 Sketch.o
  .debug_aranges
-                0x00000110       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000000f8       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .debug_aranges
-                0x00000158       0x30 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x00000140       0x30 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
  .debug_aranges
-                0x00000188       0x30 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
+                0x00000170      0x100 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .debug_aranges
-                0x000001b8      0x100 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000270       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .debug_aranges
-                0x000002b8       0x48 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x000002b8       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
  .debug_aranges
-                0x00000300       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000002f0      0x110 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
  .debug_aranges
-                0x00000338      0x170 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
+                0x00000400       0x68 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
  .debug_aranges
-                0x000004a8       0x80 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .debug_aranges
-                0x00000528       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .debug_aranges
-                0x00000560      0x110 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_aranges
-                0x00000670       0x68 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_aranges
-                0x000006d8       0x40 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
- .debug_aranges
-                0x00000718       0x98 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00000468       0x98 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x151e4
+.debug_info     0x00000000     0xd04e
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_info    0x000005f4     0x1767 INA233.o
- .debug_info    0x00001d5b     0x300a Sketch.o
- .debug_info    0x00004d65     0x1b16 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_info    0x0000687b      0x237 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_info    0x00006ab2      0x15f D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_info    0x00006c11     0x28ff D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_info    0x00009510      0x2cb D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_info    0x000097db      0x5fe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_info    0x00009dd9     0x4a06 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .debug_info    0x0000e7df     0x102e D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .debug_info    0x0000f80d      0x66b D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .debug_info    0x0000fe78     0x2910 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_info    0x00012788     0x1f64 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_info    0x000146ec      0x21c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
- .debug_info    0x00014908      0x8dc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_info    0x00001d5b     0x128e Sketch.o
+ .debug_info    0x00002fe9     0x1b16 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_info    0x00004aff      0x237 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_info    0x00004d36     0x28ff D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_info    0x00007635      0x2cb D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_info    0x00007900      0x5fe D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_info    0x00007efe     0x2910 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_info    0x0000a80e     0x1f64 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_info    0x0000c772      0x8dc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
-.debug_abbrev   0x00000000     0x394f
+.debug_abbrev   0x00000000     0x2665
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_abbrev  0x000005a2      0x3c2 INA233.o
- .debug_abbrev  0x00000964      0x70c Sketch.o
- .debug_abbrev  0x00001070      0x3ce D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_abbrev  0x0000143e      0x12d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_abbrev  0x0000156b      0x109 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_abbrev  0x00001674      0x47a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_abbrev  0x00001aee      0x146 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_abbrev  0x00001c34      0x15b D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_abbrev  0x00001d8f      0x789 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .debug_abbrev  0x00002518      0x3ac D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .debug_abbrev  0x000028c4      0x283 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .debug_abbrev  0x00002b47      0x563 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_abbrev  0x000030aa      0x4b7 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_abbrev  0x00003561       0xfc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
- .debug_abbrev  0x0000365d      0x2f2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_abbrev  0x00000964      0x3df Sketch.o
+ .debug_abbrev  0x00000d43      0x3ce D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_abbrev  0x00001111      0x12d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_abbrev  0x0000123e      0x47a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_abbrev  0x000016b8      0x146 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_abbrev  0x000017fe      0x15b D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_abbrev  0x00001959      0x563 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_abbrev  0x00001ebc      0x4b7 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_abbrev  0x00002373      0x2f2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
-.debug_line     0x00000000     0x4e17
+.debug_line     0x00000000     0x2d0d
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x133 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_line    0x00000133      0x7ac INA233.o
- .debug_line    0x000008df      0x59b Sketch.o
- .debug_line    0x00000e7a      0x27a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_line    0x000010f4      0x15c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_line    0x00001250      0x133 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_line    0x00001383      0x673 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_line    0x000019f6      0x290 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_line    0x00001c86      0x249 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_line    0x00001ecf     0x1351 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .debug_line    0x00003220      0x616 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .debug_line    0x00003836      0x2d1 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .debug_line    0x00003b07      0x625 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_line    0x0000412c      0x4a9 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_line    0x000045d5      0x199 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
- .debug_line    0x0000476e      0x6a9 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_line    0x000008df      0x395 Sketch.o
+ .debug_line    0x00000c74      0x27a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_line    0x00000eee      0x15c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_line    0x0000104a      0x673 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_line    0x000016bd      0x290 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_line    0x0000194d      0x249 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_line    0x00001b96      0x625 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_line    0x000021bb      0x4a9 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_line    0x00002664      0x6a9 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
-.debug_frame    0x00000000     0x1b2c
+.debug_frame    0x00000000     0x1018
  *(.debug_frame)
  .debug_frame   0x00000000      0x36c INA233.o
- .debug_frame   0x0000036c      0x104 Sketch.o
- .debug_frame   0x00000470       0xe0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_frame   0x00000550       0x54 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_frame   0x000005a4       0x64 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_frame   0x00000608      0x3ac D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_frame   0x000009b4       0xc4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_frame   0x00000a78       0x7c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_frame   0x00000af4      0x6f8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .debug_frame   0x000011ec      0x228 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .debug_frame   0x00001414       0x5c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .debug_frame   0x00001470      0x2b0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_frame   0x00001720      0x110 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_frame   0x00001830       0xf4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
- .debug_frame   0x00001924      0x208 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_frame   0x0000036c       0xc4 Sketch.o
+ .debug_frame   0x00000430       0xe0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_frame   0x00000510       0x54 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_frame   0x00000564      0x3ac D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_frame   0x00000910       0xc4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_frame   0x000009d4       0x7c D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_frame   0x00000a50      0x2b0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_frame   0x00000d00      0x110 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_frame   0x00000e10      0x208 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
-.debug_str      0x00000000     0x5fef
+.debug_str      0x00000000     0x3257
  *(.debug_str)
  .debug_str     0x00000000      0x208 D:/Programmer/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_str     0x00000208      0x970 INA233.o
                                 0xa32 (size before relaxing)
- .debug_str     0x00000b78     0x2bf2 Sketch.o
-                               0x34c5 (size before relaxing)
- .debug_str     0x0000376a     0x10de D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_str     0x00000b78      0x5eb Sketch.o
+                                0xd82 (size before relaxing)
+ .debug_str     0x00001163     0x10ef D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
                                0x1419 (size before relaxing)
- .debug_str     0x00004848       0x5a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_str     0x00002252       0x5a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
                                 0x2c5 (size before relaxing)
- .debug_str     0x000048a2       0x4b D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
-                                0x1f0 (size before relaxing)
- .debug_str     0x000048ed      0x2d3 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_str     0x000022ac      0x2fb D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
                                0x1253 (size before relaxing)
- .debug_str     0x00004bc0      0x159 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_str     0x000025a7      0x162 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
                                 0x25b (size before relaxing)
- .debug_str     0x00004d19       0xcf D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_str     0x00002709       0xc7 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
                                 0x2c0 (size before relaxing)
- .debug_str     0x00004de8      0x4e5 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
-                               0x2e08 (size before relaxing)
- .debug_str     0x000052cd      0x1aa D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
-                               0x11f4 (size before relaxing)
- .debug_str     0x00005477       0x9f D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                                0x6be (size before relaxing)
- .debug_str     0x00005516      0x58a D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_str     0x000027d0      0x590 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
                                0x19b6 (size before relaxing)
- .debug_str     0x00005aa0      0x2cd D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_str     0x00002d60      0x2d2 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
                                0x1626 (size before relaxing)
- .debug_str     0x00005d6d       0x62 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
-                                0x248 (size before relaxing)
- .debug_str     0x00005dcf      0x220 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_str     0x00003032      0x225 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
                                 0x50a (size before relaxing)
 
-.debug_loc      0x00000000     0x9f05
+.debug_loc      0x00000000     0x55b5
  *(.debug_loc)
  .debug_loc     0x00000000     0x11a1 INA233.o
- .debug_loc     0x000011a1      0x332 Sketch.o
- .debug_loc     0x000014d3      0x1b0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_loc     0x00001683       0x72 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_loc     0x000016f5     0x1c87 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_loc     0x0000337c      0x28d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_loc     0x00003609      0x5fc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_loc     0x00003c05     0x34ca D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .debug_loc     0x000070cf     0x1007 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .debug_loc     0x000080d6      0x1e4 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .debug_loc     0x000082ba      0xcbb D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_loc     0x00008f75      0x4dc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_loc     0x00009451      0x235 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
- .debug_loc     0x00009686      0x87f D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_loc     0x000011a1      0x33e Sketch.o
+ .debug_loc     0x000014df      0x1b0 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_loc     0x0000168f     0x1c87 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_loc     0x00003316      0x28d D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_loc     0x000035a3      0x5fc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_loc     0x00003b9f      0xcbb D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_loc     0x0000485a      0x4dc D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_loc     0x00004d36      0x87f D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1953,23 +1418,18 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x788
+.debug_ranges   0x00000000      0x490
  *(.debug_ranges)
  .debug_ranges  0x00000000       0xa8 INA233.o
- .debug_ranges  0x000000a8       0x48 Sketch.o
- .debug_ranges  0x000000f0       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_ranges  0x00000128       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_ranges  0x00000148       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(new.o)
- .debug_ranges  0x00000168      0x120 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_ranges  0x00000288       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_ranges  0x000002c0       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_ranges  0x000002e8      0x1f8 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FD.o)
- .debug_ranges  0x000004e0       0x70 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(ACAN2517FDSettings.o)
- .debug_ranges  0x00000550       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .debug_ranges  0x00000578      0x100 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_ranges  0x00000678       0x58 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_ranges  0x000006d0       0x30 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(WInterrupts.o)
- .debug_ranges  0x00000700       0x88 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_ranges  0x000000a8       0x30 Sketch.o
+ .debug_ranges  0x000000d8       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_ranges  0x00000110       0x20 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_ranges  0x00000130      0x120 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_ranges  0x00000250       0x38 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_ranges  0x00000288       0x28 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_ranges  0x000002b0      0x100 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_ranges  0x000003b0       0x58 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_ranges  0x00000408       0x88 D:\Align Racing\GitHub\AR20-21\AR20_PDM\PDM_code\Atmel_studio\PDM_wCANFD\PDM_wCANFD\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
 .debug_macro
  *(.debug_macro)

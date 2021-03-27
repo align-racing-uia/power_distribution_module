@@ -54,6 +54,8 @@ src\core\WMath.cpp
 
 src\core\WString.cpp
 
+src\libraries\SPI\SPI.cpp
+
 src\libraries\Wire\utility\twi.c
 
 src\libraries\Wire\Wire.cpp

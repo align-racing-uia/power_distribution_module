@@ -1,5 +1,6 @@
-Sketch.d Sketch.o: .././Sketch.cpp .././INA233.h \
- ..\\..\ArduinoCore\include\core/Arduino.h \
+src/libraries/SPI/SPI.d src/libraries/SPI/SPI.o: \
+ ../src/libraries/SPI/SPI.cpp ..\include\libraries\SPI/SPI.h \
+ ..\include\core/Arduino.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
@@ -18,31 +19,21 @@ Sketch.d Sketch.o: .././Sketch.cpp .././INA233.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
- ..\\..\ArduinoCore\include\core/binary.h \
- ..\\..\ArduinoCore\include\core/WCharacter.h \
+ ..\include\core/binary.h ..\include\core/WCharacter.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\ctype.h \
- ..\\..\ArduinoCore\include\core/WString.h \
- ..\\..\ArduinoCore\include\core/HardwareSerial.h \
- ..\\..\ArduinoCore\include\core/Stream.h \
- ..\\..\ArduinoCore\include\core/Print.h \
+ ..\include\core/WString.h ..\include\core/HardwareSerial.h \
+ ..\include\core/Stream.h ..\include\core/Print.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h \
- ..\\..\ArduinoCore\include\core/Printable.h \
- ..\\..\ArduinoCore\include\core/USBAPI.h \
+ ..\include\core/Printable.h ..\include\core/USBAPI.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\eeprom.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
- ..\\..\ArduinoCore\include\core/Arduino.h \
- ..\\..\ArduinoCore\include\variants\standard/pins_arduino.h \
- ..\\..\ArduinoCore\include\libraries\Wire/Wire.h \
- ..\\..\ArduinoCore\include\core/Stream.h .././Port_expander.h \
- .././Config.h ..\\..\ArduinoCore\include\core/arduino.h \
- .././errorHandler.h \
- d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\wdt.h
+ ..\include\core/Arduino.h ..\include\variants\standard/pins_arduino.h
 
-.././INA233.h:
+..\include\libraries\SPI/SPI.h:
 
-..\\..\ArduinoCore\include\core/Arduino.h:
+..\include\core/Arduino.h:
 
 d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h:
 
@@ -80,27 +71,27 @@ d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\av
 
 d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h:
 
-..\\..\ArduinoCore\include\core/binary.h:
+..\include\core/binary.h:
 
-..\\..\ArduinoCore\include\core/WCharacter.h:
+..\include\core/WCharacter.h:
 
 d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\ctype.h:
 
-..\\..\ArduinoCore\include\core/WString.h:
+..\include\core/WString.h:
 
-..\\..\ArduinoCore\include\core/HardwareSerial.h:
+..\include\core/HardwareSerial.h:
 
-..\\..\ArduinoCore\include\core/Stream.h:
+..\include\core/Stream.h:
 
-..\\..\ArduinoCore\include\core/Print.h:
+..\include\core/Print.h:
 
 d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h:
 
 d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h:
 
-..\\..\ArduinoCore\include\core/Printable.h:
+..\include\core/Printable.h:
 
-..\\..\ArduinoCore\include\core/USBAPI.h:
+..\include\core/USBAPI.h:
 
 d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\eeprom.h:
 
@@ -108,20 +99,6 @@ d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\ut
 
 d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h:
 
-..\\..\ArduinoCore\include\core/Arduino.h:
+..\include\core/Arduino.h:
 
-..\\..\ArduinoCore\include\variants\standard/pins_arduino.h:
-
-..\\..\ArduinoCore\include\libraries\Wire/Wire.h:
-
-..\\..\ArduinoCore\include\core/Stream.h:
-
-.././Port_expander.h:
-
-.././Config.h:
-
-..\\..\ArduinoCore\include\core/arduino.h:
-
-.././errorHandler.h:
-
-d:\programmer\atmel\ studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\wdt.h:
+..\include\variants\standard/pins_arduino.h:
