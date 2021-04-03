@@ -46,6 +46,7 @@ public:
 	int setAlarmMask(uint8_t mask);
 	int setMFRConfig (uint8_t mask);
 	float getVoltage_L();
+	
 	float getVoltage_S();
 	float getCurrent();
 	void getAlarm();

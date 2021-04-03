@@ -47,6 +47,13 @@ private:
 	uint8_t MOSpin_;
 };
 
+union cantypes{
+	uint8_t u8[4];
+	int16_t u16[2];
+	float f;
+	};
+
+cantypes CT_1, CT_2;
 
 // Functions and global variables
 void check_INA233_miscommunication();
@@ -87,7 +94,7 @@ mosfet* MosfetList[] = { &p1, &p2, &p3, &p4, &p5, &p6, &p7 };
 
 
 void blink_light();
-uint8_t STATE = HIGH;
+uint8_t STATE = HIGH, STATE2 = HIGH;
 unsigned long blink_time = 0, blink_interval = 500;
 
 void setup() {	
@@ -148,15 +155,17 @@ void setup() {
 	
 	frame.id = 0x500;
 	frame_FD.id = 0x501;
+	
+	
+	
+	// Let power through mosfets
+	for (uint8_t ii = 0; ii < 7; ii++){
+		MosfetList[ii]->close_MOSFET();
+	}
 }
 
 
 void loop() {
-	
-	// Let power through MOSFETs
-	for (uint8_t ii = 0; ii < 7; ii++){
-		MosfetList[ii]->close_MOSFET();
-	}	
 	
 	// Make sure communication with INA233 still works, if not then open mosfet
 	check_INA233_miscommunication();
@@ -167,19 +176,43 @@ void loop() {
 	Serial.println(current_1);
 	
 	if (can.available ()) {
-		can.receive (frame);
+		can.receive (frame_FD);
 		Serial.print ("Received: ");
 		
-		if (frame.data[0] == 0x01){
+		if (frame_FD.data[0] == 0x01){
 			digitalWrite(9, HIGH);
+			MosfetList[1]->close_MOSFET();
 		}
 
-		if (frame.data[0] == 0x02){
-			digitalWrite(9, LOW); 
-		}
-		
+		if (frame_FD.data[0] == 0x02){
+			digitalWrite(9, LOW);
+			MosfetList[1]->open_MOSFET();
+		}		
 	}
-	blink_light();
+	if (millis() - timeStamps[1] > 100){		
+		frame.id = 0x10;
+		frame.len = 4;
+		float temp_test = 1.34;
+		float temp_current = Sensor_2.getCurrent() * 100;
+		float temp_voltage_L = Sensor_2.getVoltage_L() * 10;
+		int16_t current_int = (int16_t)(temp_current);
+		int16_t voltage_int = (int16_t)(temp_voltage_L);
+		
+		CT_1.u16[0] = current_int;
+		CT_1.u16[1] = voltage_int;
+		
+		frame.data[0] = CT_1.u8[0];
+		frame.data[1] = CT_1.u8[1];
+		frame.data[2] = CT_1.u8[2];
+		frame.data[3] = CT_1.u8[3];
+				
+		
+		can.tryToSend(frame);
+		
+		
+		timeStamps[1] = millis();
+	}
+	//blink_light();
 	
 	wdt_reset();	
 }
@@ -194,7 +227,6 @@ void check_INA233_miscommunication(){
 				MosfetList[ii]->open_MOSFET();
 			}
 		}		
-		
 		timeStamps[0] = millis();
 	}
 }

@@ -4,7 +4,7 @@
 #include "INA233.h"
 
 
-const uint16_t interval_INA233_checking = 10000;
+const uint16_t interval_INA233_checking = 100;
 const uint16_t interval_fanControl = 10000;
 const uint16_t interval_gear = 10000;
 const uint16_t interval_sendDataOverCAN = 10000;
@@ -60,10 +60,6 @@ const uint8_t adrSensor5 = 0x44;
 const uint8_t adrSensor6 = 0x45;
 const uint8_t adrSensor7 = 0x46;
 
-// Addresses for relay INA233
-const uint8_t adrSensor8 = 0x47;
-const uint8_t adrSensor9 = 0x48;
-
 const uint8_t adrExpander = 0x22;
 
 const uint16_t m_valueSensor1 = 820;
@@ -83,7 +79,7 @@ const uint16_t cal_valueSensor6 = 2099;
 const uint16_t cal_valueSensor7 = 2099; 
 
 
-// Gamle verdier som ikke stemmer meg schematics (gamle verier?)
+// Gamle verdier som ikke stemmer med schematics (gamle verdier?)
 const uint8_t p1_ACM_E_Pin = 3;
 const uint8_t p2_ACM_E_Pin = 5;
 const uint8_t p3_ACM_E_Pin = 6;

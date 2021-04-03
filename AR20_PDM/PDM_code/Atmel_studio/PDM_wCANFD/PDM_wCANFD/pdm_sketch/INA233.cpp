@@ -121,12 +121,12 @@ float INA233_S::getVoltage_L()
 {
     INA233_Data_Package data = receiveData_(0x88, 2);
     int16_t dataWord = unpackWord(&data);
-    return (static_cast<float>(dataWord) * 1.0 / 800.0);
+    return (static_cast<float>(dataWord) * (1.0 / m_value_));
 }
 
 float INA233_S::getVoltage_S()
 {
-    INA233_Data_Package data = receiveData_(0XD1, 2);
+    INA233_Data_Package data = receiveData_(0xD1, 2);
     int16_t dataWord = unpackWord(&data);
     return (25.0 * static_cast<float>(dataWord) / 10000000.0); //Returns shunt voltage reading.
 }
@@ -137,7 +137,7 @@ float INA233_S::getCurrent()
     int16_t dataWord = unpackWord(&data);
     Serial.print("Current bitsnbuts");
     Serial.println(dataWord);
-    return (static_cast<float>(dataWord) * (1.0 / m_value_));
+	return (static_cast<float>(dataWord) * (1.0 / m_value_));
 }
 
 void INA233_S::getAlarm()
@@ -230,11 +230,11 @@ int INA233_S::testCommunication()
     Serial.println("test communications");
     // TO DO ! Read MFR_MODEL, compare if correct.
     // Is there a way in wire.h to check for communications?
-    INA233_Data_Package data = receiveData_(0x12, 7);
-    uint8_t compare[7]{
+    INA233_Data_Package data = receiveData_(0x9A, 7);
+    uint8_t compare[7] = {
         0x06, 0x49, 0x4E, 0x41, 0x32, 0x33, 0x33};
 
-    for (int ii = 0; ii <= 6; ii++)
+    for (int ii = 0; ii < 7; ii++)
     {
         Serial.print("Readback MFR_MODEL: ");
         Serial.print(data.msg[ii]);
