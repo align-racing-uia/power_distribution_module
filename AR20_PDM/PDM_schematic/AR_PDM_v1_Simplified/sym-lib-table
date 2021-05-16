@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name AR20_PDM_v1-rescue)(type Legacy)(uri ${KIPRJMOD}/Liberary/AR20_PDM_v1-rescue.lib)(options "")(descr ""))
+  (lib (name ACM_2020_Symbol)(type Legacy)(uri ${KIPRJMOD}/Liberary/ACM_2020_Symbol.lib)(options "")(descr ""))
+)
