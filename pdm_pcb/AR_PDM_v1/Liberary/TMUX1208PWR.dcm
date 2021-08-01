@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TMUX1208PWR
+D 1-Ch, 8:1 general-purpose analog multiplexer with 1.8-V logic control
+F http://www.ti.com/lit/gpn/tmux1208
+$ENDCMP
+#
+#End Doc Library
