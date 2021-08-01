@@ -1,4 +1,4 @@
-<h1 align="center"> Align Racing 2020 </h1> <br>
+<h1 align="center"> Power Distribution Module </h1> <br>
 <p align="center">
     <a href="http://www.alignracing.no/">
       <img alt="Align Racing UiA" title="Align Racing UiA" src="https://i.imgur.com/idweYeR.png" width="400">
@@ -18,35 +18,16 @@
 
 ## Introduction
 
-This is the repository for Align Racing's 2019 formula student race car.
+This is the repository for Align Racing's formula student race car's different systems.
 
 
 ## Align Racing UiA
 
 <a href="http://www.alignracing.no/">Align Racing UiA (AR)</a> is a multidisciplinary student organisation at <a href="https://www.uia.no/">The University of Agder (UiA)</a>, that take part in the world’s largest yearly engineering competition; <a href="https://www.imeche.org/events/formula-student">Formula Student (FS)</a>. The organisation continuously consists of around 60 students, from a wide variety of disciplines. The competition includes developing, building, budgeting and marketing a small scale formula type racing car. AR takes this a bit further by having more focus on developing a strong organisation, open for all disciplines, that gives the members a taste of future work-life.
 
-## Rules for directory structure
-<h4>General directory structure:</h4>
+## Rules
 
-* AR”YEAR”
-    * AR”YEAR”_“PROJECT”
-        - AR”YEAR”_“SUBPROJECT”
-            - “PROJECT”_code
-            - “PROJECT”_datasheets
-            - “PROJECT”_images
-            - “PROJECT”_schematic
-            - “PROJECT”_simulink
-
-<h4>Directory structure example:</h4>
-
-* AR19
-    * AR19_ETC
-        - AR19_ETC_ACM_ETB
-            - ACM_ETB_code
-            - ACM_ETB_datasheets
-            - ACM_ETB_images
-            - ACM_ETB_schematic
-            - ACM_ETB_simulink
+## Contribution
 
 ## License
 All content included in this Git repository is under the license:
